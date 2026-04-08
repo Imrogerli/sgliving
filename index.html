@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>狮城生活圈 · 新加坡本地生活指南</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #e8533a;
+      --primary-light: #ff6b4a;
+      --secondary: #1a1a2e;
+      --accent: #f4a261;
+      --green: #2d9a60;
+      --blue: #2563eb;
+      --purple: #7c3aed;
+      --bg: #f8f5f0;
+      --card-bg: #ffffff;
+      --text: #1f1f1f;
+      --text-light: #666;
+      --border: #e8e3dc;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08);
+      --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans SC', 'PingFang SC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: white;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 36px;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(232,83,58,0.2);
+      border: 1px solid rgba(232,83,58,0.4);
+      color: #ff9d8a;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .hero-badge::before { content: '🦁'; }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span { color: var(--primary); }
+    .hero p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.65);
+      max-width: 500px;
+      margin-bottom: 24px;
+    }
+    .update-bar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .update-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.75);
+      font-size: 12px;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+    .dot-live { width:7px; height:7px; background:#4ade80; border-radius:50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.4;} }
+
+    /* ── NAV TABS ── */
+    .nav-tabs {
+      background: var(--secondary);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-inner::-webkit-scrollbar { display:none; }
+    .nav-tab {
+      padding: 16px 24px;
+      color: rgba(255,255,255,0.55);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-tab:hover { color: rgba(255,255,255,0.85); }
+    .nav-tab.active {
+      color: white;
+      border-bottom-color: var(--primary);
+    }
+    .tab-count {
+      background: var(--primary);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 10px;
+    }
+
+    /* ── MAIN LAYOUT ── */
+    .main { max-width: 1100px; margin: 0 auto; padding: 32px 20px 60px; }
+    .section { display: none; }
+    .section.active { display: block; }
+
+    /* ── SECTION HEADER ── */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .section-emoji { font-size: 26px; }
+    .section-sub {
+      font-size: 13px;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    /* ── SORT / FILTER BAR ── */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: white;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-light);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: white;
+    }
+    .category-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .cat-tag {
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: white;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cat-tag.active { background: var(--secondary); border-color: var(--secondary); color: white; }
+    .cat-tag:hover:not(.active) { border-color: #999; }
+
+    /* ── FOOD CARDS GRID ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .food-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.25s;
+      cursor: pointer;
+      position: relative;
+    }
+    .food-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: linear-gradient(135deg, #f0e6d6, #e8d5c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      position: relative;
+    }
+    .card-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      color: white;
+    }
+    .badge-new { background: var(--primary); }
+    .badge-hot { background: #f97316; }
+    .badge-michelin { background: #1e40af; }
+    .badge-trending { background: #7c3aed; }
+    .card-body { padding: 16px; }
+    .card-name { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+    .card-cat { font-size: 12px; color: var(--text-light); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+    .card-cat span { background: #f0ece6; padding: 2px 8px; border-radius: 10px; }
+    .card-rating {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .stars { color: #f59e0b; font-size: 14px; letter-spacing: 1px; }
+    .rating-num { font-size: 15px; font-weight: 700; color: var(--text); }
+    .rating-cnt { font-size: 12px; color: var(--text-light); }
+    .card-price { font-size: 13px; font-weight: 600; color: var(--green); margin-bottom: 10px; }
+    .card-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+    .card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .card-tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: #f0ece6;
+      color: #666;
+    }
+    .card-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .card-addr { font-size: 12px; color: var(--text-light); flex: 1; }
+    .card-link {
+      font-size: 12px;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    /* ── EVENTS ── */
+    .events-list { display: flex; flex-direction: column; gap: 16px; }
+    .event-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      display: flex;
+      overflow: hidden;
+      transition: all 0.25s;
+    }
+    .event-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+    .event-date-col {
+      width: 80px;
+      min-width: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 8px;
+      color: white;
+    }
+    .event-date-col .month { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; opacity: 0.85; }
+    .event-date-col .day { font-size: 32px; font-weight: 800; line-height: 1; }
+    .event-date-col .dow { font-size: 11px; opacity: 0.75; margin-top: 2px; }
+    .event-body { flex: 1; padding: 16px 20px; }
+    .event-name { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+    .event-type {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      color: white;
+    }
+    .event-info { font-size: 13px; color: #555; margin-bottom: 6px; line-height: 1.5; }
+    .event-meta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--text-light);
+    }
+    .event-meta span { display: flex; align-items: center; gap: 4px; }
+    .event-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 16px;
+      min-width: 100px;
+    }
+    .event-price {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .event-price small { font-size: 11px; font-weight: 400; color: var(--text-light); display: block; }
+    .btn-ticket {
+      padding: 8px 16px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .btn-ticket:hover { background: var(--primary-light); }
+
+    /* ── FAMILY ACTIVITIES ── */
+    .weekly-header {
+      background: linear-gradient(135deg, #0f3460, #16213e);
+      border-radius: 16px;
+      padding: 24px;
+      color: white;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .weekly-icon { font-size: 48px; }
+    .weekly-title { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+    .weekly-sub { font-size: 13px; color: rgba(255,255,255,0.65); }
+    .activity-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+    .activity-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: all 0.25s;
+    }
+    .activity-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .activity-top {
+      height: 10px;
+    }
+    .activity-body { padding: 20px; }
+    .activity-icon { font-size: 36px; margin-bottom: 10px; }
+    .activity-name { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+    .activity-age {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      background: #f0fdf4;
+      color: var(--green);
+      border: 1px solid #bbf7d0;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .activity-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+    .activity-highlight {
+      background: #fff8f5;
+      border-left: 3px solid var(--primary);
+      padding: 8px 12px;
+      border-radius: 0 8px 8px 0;
+      font-size: 12px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    .activity-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .meta-item {
+      background: #f8f5f0;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 12px;
+    }
+    .meta-label { color: var(--text-light); font-size: 11px; margin-bottom: 2px; }
+    .meta-value { font-weight: 600; color: var(--text); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--secondary);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+    }
+    footer strong { color: rgba(255,255,255,0.8); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .event-card { flex-direction: column; }
+      .event-date-col { width: 100%; flex-direction: row; padding: 12px 16px; justify-content: flex-start; gap: 8px; }
+      .event-date-col .day { font-size: 22px; }
+      .event-right { flex-direction: row; padding: 0 16px 16px; align-items: center; }
+      .cards-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── LOADING SHIMMER ── */
+    .data-updated {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #f0fdf4;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid #bbf7d0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HERO ── -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">狮城生活圈 · Singapore Living Guide</div>
+    <h1>新加坡<span>本地生活</span>指南</h1>
+    <p>精选美食 · 热门活动 · 亲子周末，专为在新加坡的中国家庭打造</p>
+    <div class="update-bar">
+      <div class="update-pill"><span class="dot-live"></span>每日更新 · 2026年4月</div>
+      <div class="update-pill">🍜 收录餐厅 12+</div>
+      <div class="update-pill">🎪 近期活动 10+</div>
+      <div class="update-pill">👨‍👩‍👧 亲子推荐 6+</div>
+    </div>
+  </div>
+</header>
+
+<!-- ── NAV TABS ── -->
+<nav class="nav-tabs">
+  <div class="nav-inner">
+    <div class="nav-tab active" onclick="switchTab('food', this)">🍜 美食推荐 <span class="tab-count">12</span></div>
+    <div class="nav-tab" onclick="switchTab('events', this)">🎪 近期活动 <span class="tab-count">10</span></div>
+    <div class="nav-tab" onclick="switchTab('family', this)">👨‍👩‍👧 亲子活动 <span class="tab-count">6</span></div>
+  </div>
+</nav>
+
+<!-- ── MAIN ── -->
+<main class="main">
+
+  <!-- ████ FOOD SECTION ████ -->
+  <section id="food" class="section active">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="section-emoji">🍜</span>
+        <div>
+          <h2>新加坡美食推荐</h2>
+          <div class="section-sub">精选适合中国人口味的餐厅 · 甜品 · 小吃，尤其新开好店</div>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <span style="font-size:12px;color:#999;">排序：</span>
+        <button class="filter-btn active" onclick="sortCards('rating', this)">⭐ 评分优先</button>
+        <button class="filter-btn" onclick="sortCards('newest', this)">🆕 最新开业</button>
+      </div>
+    </div>
+
+    <div class="category-tags">
+      <div class="cat-tag active" onclick="filterCat('all', this)">全部</div>
+      <div class="cat-tag" onclick="filterCat('restaurant', this)">🍽️ 正餐</div>
+      <div class="cat-tag" onclick="filterCat('dessert', this)">🧋 甜品饮料</div>
+      <div class="cat-tag" onclick="filterCat('snack', this)">🥟 小吃快食</div>
+      <div class="cat-tag" onclick="filterCat('michelin', this)">⭐ 米其林</div>
+    </div>
+
+    <div class="cards-grid" id="foodGrid">
+
+      <!-- 1 彭彭 Pang Pang -->
+      <div class="food-card" data-cat="restaurant" data-rating="4.7" data-date="2026-01">
+        <div class="card-img" style="background:linear-gradient(135deg,#ffecd2,#fcb69f);">🦀</div>
+        <div class="card-badge badge-new">🆕 新开</div>
+        <div class="card-body">
+          <div class="card-name">彭彭 Pang Pang 锅锅</div>
+          <div class="card-cat"><span>正餐</span><span>砂锅 / 中国连锁</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.7</span>
+            <span class="rating-cnt">· 国内700+门店首进新加坡</span>
+          </div>
+          <div class="card-price">人均 S$30–45</div>
+          <div class="card-desc">国内超火的大锅菜，首家新加坡店落户 Guoco Midtown。必点签名螃蟹锅（500g 约 S$78），每日新鲜斯里兰卡螃蟹，锅底浓郁鲜甜，非常适合家庭聚餐。</div>
+          <div class="card-tags">
+            <span class="card-tag">螃蟹锅</span>
+            <span class="card-tag">家庭聚餐</span>
+            <span class="card-tag">中国口味</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Guoco Midtown, 128 Beach Road, Bugis</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 温州馆 -->
+      <div class="food-card" data-cat="restaurant" data-rating="4.6" data-date="2026-02">
+        <div class="card-img" style="background:linear-gradient(135deg,#d4edda,#c3e6cb);">🐟</div>
+        <div class="card-badge badge-new">🆕 首家</div>
+        <div class="card-body">
+          <div class="card-name">温州馆 Wenzhou Mansion</div>
+          <div class="card-cat"><span>正餐</span><span>浙江菜 / 精品江浙菜</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.6</span>
+            <span class="rating-cnt">· 新加坡首家江浙精细料理</span>
+          </div>
+          <div class="card-price">人均 S$50–80</div>
+          <div class="card-desc">新加坡首家也是唯一一家江浙精品餐厅，120道菜代表温州和东海的饮食多样性。镇店之宝「葱油大黄鱼」鱼肉鲜嫩，被誉为"海之金"，地道江浙风味令人惊艳。</div>
+          <div class="card-tags">
+            <span class="card-tag">大黄鱼</span>
+            <span class="card-tag">江浙菜</span>
+            <span class="card-tag">高档宴请</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Scotts Square, 6 Scotts Road</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 莫莉茶 -->
+      <div class="food-card" data-cat="dessert" data-rating="4.8" data-date="2026-03">
+        <div class="card-img" style="background:linear-gradient(135deg,#e0c3fc,#8ec5fc);">🧋</div>
+        <div class="card-badge badge-hot">🔥 大热</div>
+        <div class="card-body">
+          <div class="card-name">茉莉奶白 Molly Tea</div>
+          <div class="card-cat"><span>甜品饮料</span><span>奶茶 / 中国网红品牌</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.8</span>
+            <span class="rating-cnt">· 全球2000+门店</span>
+          </div>
+          <div class="card-price">人均 S$6–10</div>
+          <div class="card-desc">国内超热门奶茶品牌，2026年3月正式登陆新加坡乌节路！茉莉花奶茶清香不甜腻，芝士奶盖系列更是一绝，排队人气超高。即将在 Raffles Place 开设第二家分店。</div>
+          <div class="card-tags">
+            <span class="card-tag">茉莉奶茶</span>
+            <span class="card-tag">芝士奶盖</span>
+            <span class="card-tag">中国品牌</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Orchard Central, 181 Orchard Rd（6月 Raffles Place 新店开业）</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Ban Lan 闽厨 -->
+      <div class="food-card" data-cat="restaurant" data-rating="4.6" data-date="2026-02">
+        <div class="card-img" style="background:linear-gradient(135deg,#ffeaa7,#fdcb6e);">🍲</div>
+        <div class="card-badge badge-new">🆕 新开</div>
+        <div class="card-body">
+          <div class="card-name">伴澜 Ban Lan 闽菜</div>
+          <div class="card-cat"><span>正餐</span><span>福建菜 / 苏州名店</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.6</span>
+            <span class="rating-cnt">· 苏州名厨掌舵首家海外店</span>
+          </div>
+          <div class="card-price">人均 S$60–100</div>
+          <div class="card-desc">苏州著名闽菜馆「伴澜」的首家海外门店，由主厨孙晓洋亲自坐镇，将精炼闽南菜肴带到 Scotts Square。菜品注重原汁原味，食材讲究，是品味正宗闽菜的绝佳之选。</div>
+          <div class="card-tags">
+            <span class="card-tag">闽南菜</span>
+            <span class="card-tag">海外首店</span>
+            <span class="card-tag">精品料理</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Scotts Square, 6 Scotts Road</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Golden Chopsticks 云贵川 -->
+      <div class="food-card" data-cat="restaurant" data-rating="4.5" data-date="2025-12">
+        <div class="card-img" style="background:linear-gradient(135deg,#fd79a8,#e17055);">🌶️</div>
+        <div class="card-badge badge-trending">🔥 趋势</div>
+        <div class="card-body">
+          <div class="card-name">金筷子 Golden Chopsticks</div>
+          <div class="card-cat"><span>正餐</span><span>云贵川 / 新派中餐</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★½</span>
+            <span class="rating-num">4.5</span>
+            <span class="rating-cnt">· 新加坡首家云贵川概念餐厅</span>
+          </div>
+          <div class="card-price">人均 S$35–55</div>
+          <div class="card-desc">新加坡首家云贵川概念餐厅，融合云南、贵州、四川三省风味。从麻辣火锅到酸汤鱼、贵州串串，口味层次丰富，嗜辣的朋友不容错过！特别适合爱吃辣的家庭。</div>
+          <div class="card-tags">
+            <span class="card-tag">麻辣</span>
+            <span class="card-tag">酸汤鱼</span>
+            <span class="card-tag">云南菜</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Clarke Quay 区域（请查询最新地址）</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Numb 四川 -->
+      <div class="food-card" data-cat="restaurant" data-rating="4.5" data-date="2025-11">
+        <div class="card-img" style="background:linear-gradient(135deg,#ff7675,#d63031);">🫙</div>
+        <div class="card-badge badge-hot">🔥 排队</div>
+        <div class="card-body">
+          <div class="card-name">Numb 四川风味</div>
+          <div class="card-cat"><span>小吃快食</span><span>四川菜 / 网红小馆</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★½</span>
+            <span class="rating-num">4.5</span>
+            <span class="rating-cnt">· 冒烤鸭一度断货</span>
+          </div>
+          <div class="card-price">人均 S$20–35</div>
+          <div class="card-desc">主打四川特色美食，招牌菜「叫花土豆」和「糖醋手撕包菜」大受好评，冒烤鸭因独特风味曾一度断货。性价比超高，是中国留学生和华人最爱打卡的馆子之一。</div>
+          <div class="card-tags">
+            <span class="card-tag">叫花土豆</span>
+            <span class="card-tag">冒烤鸭</span>
+            <span class="card-tag">四川菜</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 City Hall / Chinatown 区域</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 小面 Xiao Noodles -->
+      <div class="food-card" data-cat="snack" data-rating="4.4" data-date="2026-01">
+        <div class="card-img" style="background:linear-gradient(135deg,#e17055,#d63031);">🍜</div>
+        <div class="card-badge badge-new">🆕 新开</div>
+        <div class="card-body">
+          <div class="card-name">小面 Xiao Noodles</div>
+          <div class="card-cat"><span>小吃快食</span><span>重庆小面 / 中国品牌</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★</span>
+            <span class="rating-num">4.4</span>
+            <span class="rating-cnt">· 重庆麻辣风味</span>
+          </div>
+          <div class="card-price">人均 S$12–18</div>
+          <div class="card-desc">专注重庆麻辣小面，必点「红碗牛肉面」，麻辣鲜香、劲道爽口。适合工作日午餐快食，价格亲民，让你在新加坡也能吃到地道重庆味道。</div>
+          <div class="card-tags">
+            <span class="card-tag">重庆小面</span>
+            <span class="card-tag">麻辣</span>
+            <span class="card-tag">平价</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Somerset, 313@somerset 附近</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 艺 by Jereme Leung -->
+      <div class="food-card" data-cat="restaurant michelin" data-rating="4.9" data-date="2025-09">
+        <div class="card-img" style="background:linear-gradient(135deg,#2c3e50,#3498db);">🏮</div>
+        <div class="card-badge badge-michelin">⭐ 米其林</div>
+        <div class="card-body">
+          <div class="card-name">艺 yì by Jereme Leung</div>
+          <div class="card-cat"><span>正餐</span><span>地方中餐 / 莱佛士酒店</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.9</span>
+            <span class="rating-cnt">· 米其林推荐 · 五周年新菜单</span>
+          </div>
+          <div class="card-price">人均 S$120–200</div>
+          <div class="card-desc">莱佛士酒店旗下中餐名厨梁子庚的精品餐厅，庆祝五周年推出全新单点菜单。招牌「海胆醉熟老虎虾」是当季必点，下酒菜系列创意十足，是高端宴请和纪念日首选。</div>
+          <div class="card-tags">
+            <span class="card-tag">海胆虎虾</span>
+            <span class="card-tag">地方菜创新</span>
+            <span class="card-tag">莱佛士</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Raffles Hotel, 1 Beach Road</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 More Yogurt -->
+      <div class="food-card" data-cat="dessert" data-rating="4.4" data-date="2025-10">
+        <div class="card-img" style="background:linear-gradient(135deg,#a8edea,#fed6e3);">🍓</div>
+        <div class="card-badge badge-trending">🆕 中国品牌</div>
+        <div class="card-body">
+          <div class="card-name">More Yogurt 莓优格</div>
+          <div class="card-cat"><span>甜品饮料</span><span>酸奶 / 鲜果饮品</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★</span>
+            <span class="rating-num">4.4</span>
+            <span class="rating-cnt">· 中国酸奶饮品巨头</span>
+          </div>
+          <div class="card-price">人均 S$8–15</div>
+          <div class="card-desc">中国酸奶连锁巨头登陆新加坡，所有产品采用天然发酵酸奶和新鲜水果制作，杜绝糖浆和添加剂。浓郁奶香配上新鲜草莓、芒果等时令水果，清爽健康，孩子也超爱！</div>
+          <div class="card-tags">
+            <span class="card-tag">天然酸奶</span>
+            <span class="card-tag">鲜果</span>
+            <span class="card-tag">健康</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Suntec City, 3 Temasek Blvd</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 阿秋甜品 -->
+      <div class="food-card" data-cat="dessert" data-rating="4.6" data-date="2020-01">
+        <div class="card-img" style="background:linear-gradient(135deg,#f6d365,#fda085);">🥭</div>
+        <div class="card-badge badge-hot">💯 老字号</div>
+        <div class="card-body">
+          <div class="card-name">阿秋甜品 Ah Chew Desserts</div>
+          <div class="card-cat"><span>甜品饮料</span><span>港式甜品 / 老字号</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.6</span>
+            <span class="rating-cnt">· 60种甜品 · 本地必打卡</span>
+          </div>
+          <div class="card-price">人均 S$4–8</div>
+          <div class="card-desc">新加坡最知名港式甜品店之一，60+甜品种类，超级平价！强烈推荐：榴莲西米露、杨枝甘露、芋头西米露、鲜奶炖蛋。牛车水门口常年排队，绝对是甜品爱好者的天堂。</div>
+          <div class="card-tags">
+            <span class="card-tag">杨枝甘露</span>
+            <span class="card-tag">炖蛋</span>
+            <span class="card-tag">港式甜品</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 Liang Seah St, 1 Liang Seah St #01-10/11</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 松发肉骨茶 -->
+      <div class="food-card" data-cat="snack" data-rating="4.7" data-date="2000-01">
+        <div class="card-img" style="background:linear-gradient(135deg,#8b5e3c,#c8956c);">🍖</div>
+        <div class="card-badge badge-hot">💯 必吃</div>
+        <div class="card-body">
+          <div class="card-name">松发肉骨茶</div>
+          <div class="card-cat"><span>小吃快食</span><span>肉骨茶 / 新加坡国民美食</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★★</span>
+            <span class="rating-num">4.7</span>
+            <span class="rating-cnt">· 来新加坡必吃</span>
+          </div>
+          <div class="card-price">人均 S$12–18</div>
+          <div class="card-desc">新加坡最具代表性的肉骨茶名店，猪骨汤底加入中药炖煮数小时，香气浓郁，肉质软烂。是每位华人来新必打卡的美食，适合早午餐享用，配油条更是一绝！</div>
+          <div class="card-tags">
+            <span class="card-tag">猪骨汤</span>
+            <span class="card-tag">中药卤料</span>
+            <span class="card-tag">早午餐</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 New Bridge Rd / Balestier 等多个分店</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 汤的专家 -->
+      <div class="food-card" data-cat="restaurant" data-rating="4.3" data-date="2026-01">
+        <div class="card-img" style="background:linear-gradient(135deg,#dfe6e9,#b2bec3);">🫕</div>
+        <div class="card-badge badge-new">🆕 新开</div>
+        <div class="card-body">
+          <div class="card-name">汤的专家 The Soup Expert</div>
+          <div class="card-cat"><span>正餐</span><span>老火靓汤 / 上海名店</span></div>
+          <div class="card-rating">
+            <span class="stars">★★★★</span>
+            <span class="rating-num">4.3</span>
+            <span class="rating-cnt">· 上海名店进驻新加坡</span>
+          </div>
+          <div class="card-price">人均 S$25–40</div>
+          <div class="card-desc">源自上海的炖汤名店，专注老火慢炖煲汤，配合家禽和海鲜料理。每道汤都需炖煮数小时，浓缩食材精华，口感醇厚。特别适合注重养生的家庭和追求健康饮食的朋友。</div>
+          <div class="card-tags">
+            <span class="card-tag">老火靓汤</span>
+            <span class="card-tag">养生</span>
+            <span class="card-tag">上海风味</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-addr">📍 具体地址请查询 HungryGoWhere</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ████ EVENTS SECTION ████ -->
+  <section id="events" class="section">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="section-emoji">🎪</span>
+        <div>
+          <h2>近期精彩活动</h2>
+          <div class="section-sub">演唱会 · 展览 · 电影 · 嘉年华 · 2026年4–6月</div>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterEvents('all', this)">全部</button>
+        <button class="filter-btn" onclick="filterEvents('concert', this)">🎤 演唱会</button>
+        <button class="filter-btn" onclick="filterEvents('exhibition', this)">🎨 展览</button>
+        <button class="filter-btn" onclick="filterEvents('event', this)">🎪 活动</button>
+      </div>
+    </div>
+
+    <div class="events-list" id="eventsList">
+
+      <!-- ARTBOX -->
+      <div class="event-card" data-etype="event">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#e8533a,#ff6b4a);">
+          <span class="month">APR</span>
+          <span class="day">12</span>
+          <span class="dow">周六</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">ARTBOX CAMP 2026</div>
+          <div class="event-type" style="background:#e8533a;">🎪 市集嘉年华</div>
+          <div class="event-info">新加坡最大创意市集！250+独立品牌、现场演出、儿童工作坊、ARTBOX Arcade 和任天堂Switch 游戏区。两个周末举行，是家庭周末出游的绝佳选择。</div>
+          <div class="event-meta">
+            <span>📍 Singapore EXPO</span>
+            <span>📅 4月12–13 & 19–20日</span>
+            <span>⏰ 全天</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$0–15<small>部分活动收费</small></div>
+          <a href="https://www.artboxsingapore.com" target="_blank" class="btn-ticket">了解详情</a>
+        </div>
+      </div>
+
+      <!-- Sakura at Gardens by the Bay -->
+      <div class="event-card" data-etype="exhibition">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#fd79a8,#e84393);">
+          <span class="month">APR</span>
+          <span class="day">18</span>
+          <span class="dow">周六</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">花穹樱花展 · 石川縣特别版</div>
+          <div class="event-type" style="background:#e84393;">🌸 主题展览</div>
+          <div class="event-info">Gardens by the Bay 花穹馆内盛放真实樱花树！沉浸式文化展，重现日本石川县的武士和艺伎街区，还有樱花树下打卡拍照区，春日氛围超美！</div>
+          <div class="event-meta">
+            <span>📍 Gardens by the Bay · Flower Dome</span>
+            <span>📅 持续至4月底</span>
+            <span>👨‍👩‍👧 亲子适合</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$10–20<small>随票入园</small></div>
+          <a href="https://www.gardensbythebay.com.sg" target="_blank" class="btn-ticket">购票</a>
+        </div>
+      </div>
+
+      <!-- Treasure Concert -->
+      <div class="event-card" data-etype="concert">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#6c5ce7,#a29bfe);">
+          <span class="month">MAY</span>
+          <span class="day">03</span>
+          <span class="dow">周日</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">TREASURE 'PULSE ON' 世界巡演</div>
+          <div class="event-type" style="background:#6c5ce7;">🎤 K-POP 演唱会</div>
+          <div class="event-info">韩国男团 TREASURE 世界巡演新加坡站，演绎第三张迷你专辑《LOVE PULSE》全新曲目，升级的舞台制作、视觉效果和音乐编排，绝对是震撼现场！</div>
+          <div class="event-meta">
+            <span>📍 Singapore Indoor Stadium</span>
+            <span>📅 5月3日</span>
+            <span>⏰ 待公布</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$98–258<small>Ticketmaster</small></div>
+          <a href="https://www.ticketmaster.sg" target="_blank" class="btn-ticket">购票</a>
+        </div>
+      </div>
+
+      <!-- IVE Concert -->
+      <div class="event-card" data-etype="concert">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#00b894,#00cec9);">
+          <span class="month">MAY</span>
+          <span class="day">09</span>
+          <span class="dow">周六</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">IVE 2nd World Tour 新加坡站</div>
+          <div class="event-type" style="background:#00b894;">🎤 K-POP 演唱会</div>
+          <div class="event-info">韩国女团 IVE 第二次世界巡演，带来《I AM》《LOVE DIVE》《After LIKE》等热门曲目，加上扩充曲单和成员 Solo 演出，完全不能错过的巡演！</div>
+          <div class="event-meta">
+            <span>📍 Singapore Indoor Stadium</span>
+            <span>📅 5月9日</span>
+            <span>⏰ 6:00 PM</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$98–258<small>Ticketmaster</small></div>
+          <a href="https://www.ticketmaster.sg" target="_blank" class="btn-ticket">购票</a>
+        </div>
+      </div>
+
+      <!-- Laufey -->
+      <div class="event-card" data-etype="concert">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#0984e3,#74b9ff);">
+          <span class="month">MAY</span>
+          <span class="day">16</span>
+          <span class="dow">周六</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">Laufey 《Goddess》世界巡演</div>
+          <div class="event-type" style="background:#0984e3;">🎸 爵士流行</div>
+          <div class="event-info">格莱美获奖冰岛创作歌手 Laufey 首次登台新加坡！演绎新专辑《Goddess》《Promise》等温柔爵士流行曲目，适合喜欢小众音乐的朋友，票务4月13日开售。</div>
+          <div class="event-meta">
+            <span>📍 Singapore Indoor Stadium</span>
+            <span>📅 5月16日</span>
+            <span>🎫 4月13日开票</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$88–198<small>Ticketmaster</small></div>
+          <a href="https://www.ticketmaster.sg" target="_blank" class="btn-ticket">购票</a>
+        </div>
+      </div>
+
+      <!-- (G)I-DLE -->
+      <div class="event-card" data-etype="concert">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#d63031,#e17055);">
+          <span class="month">JUN</span>
+          <span class="day">13</span>
+          <span class="dow">周六</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">(G)I-DLE 'Syncopation' 世界巡演</div>
+          <div class="event-type" style="background:#d63031;">🎤 K-POP 演唱会</div>
+          <div class="event-info">韩国女团 (G)I-DLE 全新世界巡演新加坡站，带来全新演唱会概念「Syncopation」，舞台视觉效果和编排全面升级，粉丝绝不可错过！</div>
+          <div class="event-meta">
+            <span>📍 Singapore Indoor Stadium</span>
+            <span>📅 6月13日</span>
+            <span>⏰ 5:00 PM</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$98–268<small>Ticketmaster</small></div>
+          <a href="https://www.ticketmaster.sg" target="_blank" class="btn-ticket">购票</a>
+        </div>
+      </div>
+
+      <!-- NMIXX -->
+      <div class="event-card" data-etype="concert">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#fdcb6e,#e17055);">
+          <span class="month">JUN</span>
+          <span class="day">20</span>
+          <span class="dow">周六</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">NMIXX 1st World Tour 'Zero Frontier'</div>
+          <div class="event-type" style="background:#e17055;">🎤 K-POP 演唱会</div>
+          <div class="event-info">NMIXX 首次世界巡演新加坡站！带来全新专辑《Episode 1: Zero Frontier》，实验性舞台风格结合超强现场演唱实力，是 K-POP 粉丝的必看演出！</div>
+          <div class="event-meta">
+            <span>📍 Singapore Indoor Stadium</span>
+            <span>📅 6月20日</span>
+            <span>🌟 首次世界巡演</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$98–248<small>Ticketmaster</small></div>
+          <a href="https://www.ticketmaster.sg" target="_blank" class="btn-ticket">购票</a>
+        </div>
+      </div>
+
+      <!-- RoboFest -->
+      <div class="event-card" data-etype="exhibition">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#00b894,#55efc4);">
+          <span class="month">APR</span>
+          <span class="day">09</span>
+          <span class="dow">周四</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">RoboFest 2026 机器人节</div>
+          <div class="event-type" style="background:#00b894;">🤖 科技展览</div>
+          <div class="event-info">新加坡科学馆举办首届 RoboFest！孩子可以亲手触摸、操控真实机器人，还可以学习给机器人编程。寓教于乐的互动科技节，非常适合带孩子参加！</div>
+          <div class="event-meta">
+            <span>📍 Science Centre Singapore</span>
+            <span>📅 4月9–12日</span>
+            <span>👧 7岁+ 推荐</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">随票入场<small>Science Centre</small></div>
+          <a href="https://www.science.edu.sg" target="_blank" class="btn-ticket">了解详情</a>
+        </div>
+      </div>
+
+      <!-- BFG Musical -->
+      <div class="event-card" data-etype="exhibition">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#a29bfe,#6c5ce7);">
+          <span class="month">APR</span>
+          <span class="day">22</span>
+          <span class="dow">周三</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">Roald Dahl's The BFG 音乐剧</div>
+          <div class="event-type" style="background:#6c5ce7;">🎭 亲子音乐剧</div>
+          <div class="event-info">改编自罗尔德·达尔经典绘本《好心眼儿巨人》的英语音乐剧！精彩舞台呈现、魔法般的舞美效果，非常适合带孩子一起欣赏，激发小朋友的想象力。</div>
+          <div class="event-meta">
+            <span>📍 Esplanade Theatre</span>
+            <span>📅 4月22日–5月9日</span>
+            <span>👧 适合6岁+</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">S$35–95<small>SISTIC</small></div>
+          <a href="https://www.sistic.com.sg" target="_blank" class="btn-ticket">购票</a>
+        </div>
+      </div>
+
+      <!-- Bellygom Carnival -->
+      <div class="event-card" data-etype="event">
+        <div class="event-date-col" style="background:linear-gradient(135deg,#fd79a8,#fdcb6e);">
+          <span class="month">APR</span>
+          <span class="day">30</span>
+          <span class="dow">周四</span>
+        </div>
+        <div class="event-body">
+          <div class="event-name">Bellygom 嘉年华</div>
+          <div class="event-type" style="background:#fd79a8;">🐻 主题嘉年华</div>
+          <div class="event-info">韩国超人气粉色熊 Bellygom 的主题嘉年华活动，在樟宜机场设有游戏摊位、互动打卡区和可爱周边。免费入场，非常适合带孩子一起去打卡！</div>
+          <div class="event-meta">
+            <span>📍 Changi Airport</span>
+            <span>📅 持续至5月初</span>
+            <span>🎁 免费入场</span>
+          </div>
+        </div>
+        <div class="event-right">
+          <div class="event-price">免费<small>部分游戏收费</small></div>
+          <a href="https://www.changiairport.com" target="_blank" class="btn-ticket">了解详情</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ████ FAMILY SECTION ████ -->
+  <section id="family" class="section">
+    <div class="weekly-header">
+      <div class="weekly-icon">👨‍👩‍👧</div>
+      <div>
+        <div class="weekly-title">本周亲子活动推荐</div>
+        <div class="weekly-sub">精选适合 7–9 岁小朋友的周末活动 · 4月第二周 · 兼顾趣味与学习</div>
+      </div>
+    </div>
+
+    <div class="activity-grid">
+
+      <!-- RoboFest -->
+      <div class="activity-card">
+        <div class="activity-top" style="background:linear-gradient(90deg,#00b894,#55efc4);"></div>
+        <div class="activity-body">
+          <div class="activity-icon">🤖</div>
+          <div class="activity-name">RoboFest 机器人科技节</div>
+          <div class="activity-age">✅ 最适合 7–12 岁</div>
+          <div class="activity-desc">新加坡科学馆首届机器人节，孩子可以亲手触摸、操控真实机器人，甚至学习编程让机器人完成任务。互动性超强，是让孩子爱上 STEM 的绝佳机会！</div>
+          <div class="activity-highlight">💡 推荐理由：强互动性 + 激发科技兴趣，7–9岁孩子可以独立完成基础编程挑战</div>
+          <div class="activity-meta">
+            <div class="meta-item">
+              <div class="meta-label">📍 地点</div>
+              <div class="meta-value">Science Centre SG</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">📅 日期</div>
+              <div class="meta-value">4月9–12日</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">💰 费用</div>
+              <div class="meta-value">随票入场</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">⏰ 时长</div>
+              <div class="meta-value">约2–3小时</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARTBOX Kids -->
+      <div class="activity-card">
+        <div class="activity-top" style="background:linear-gradient(90deg,#e8533a,#ff6b4a);"></div>
+        <div class="activity-body">
+          <div class="activity-icon">🎨</div>
+          <div class="activity-name">ARTBOX 儿童创意工作坊</div>
+          <div class="activity-age">✅ 适合 5–12 岁</div>
+          <div class="activity-desc">ARTBOX CAMP 2026 内设有专属儿童创意工作坊（ARTBOX Kids），让孩子跟着艺术家学习手工制作。同时可以逛250+创意摊位、玩复古游乐场，全家一起嗨！</div>
+          <div class="activity-highlight">💡 推荐理由：培养创造力，亲子共同动手制作，全家活动一站搞定</div>
+          <div class="activity-meta">
+            <div class="meta-item">
+              <div class="meta-label">📍 地点</div>
+              <div class="meta-value">Singapore EXPO</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">📅 日期</div>
+              <div class="meta-value">4月12–13 & 19–20</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">💰 费用</div>
+              <div class="meta-value">S$0–15</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">⏰ 时长</div>
+              <div class="meta-value">半天或全天</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ocean Expert Series -->
+      <div class="activity-card">
+        <div class="activity-top" style="background:linear-gradient(90deg,#0984e3,#74b9ff);"></div>
+        <div class="activity-body">
+          <div class="activity-icon">🦈</div>
+          <div class="activity-name">小海洋专家系列 · 新加坡海洋馆</div>
+          <div class="activity-age">✅ 专为 7–12 岁设计</div>
+          <div class="activity-desc">新加坡海洋馆「小海洋专家」系列，45分钟专家见面会，孩子可以见识潜水员和海洋兽医的工作，还能穿上迷你制服扮演海洋专家！每周末限额开放，需提前预约。</div>
+          <div class="activity-highlight">💡 推荐理由：专为7-12岁设计，近距离接触海洋生物，开拓自然科学视野</div>
+          <div class="activity-meta">
+            <div class="meta-item">
+              <div class="meta-label">📍 地点</div>
+              <div class="meta-value">Singapore Oceanarium</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">📅 日期</div>
+              <div class="meta-value">每周末（需预约）</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">💰 费用</div>
+              <div class="meta-value">S$20–30/人</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">⏰ 时长</div>
+              <div class="meta-value">45分钟</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minion Land USS -->
+      <div class="activity-card">
+        <div class="activity-top" style="background:linear-gradient(90deg,#fdcb6e,#ffeaa7);"></div>
+        <div class="activity-body">
+          <div class="activity-icon">💛</div>
+          <div class="activity-name">小黄人乐园 · 环球影城</div>
+          <div class="activity-age">✅ 适合 5–12 岁</div>
+          <div class="activity-desc">环球影城新加坡全新「小黄人乐园」！包含 Buggie Boogie 旋转木马、Silly Swirly 旋转杯等专为小朋友打造的游乐设施，可爱的小黄人角色随时出现合影，孩子保证开心！</div>
+          <div class="activity-highlight">💡 推荐理由：全新开放游乐区，小黄人 IP 深受7-9岁孩子喜爱，亲子欢乐满分</div>
+          <div class="activity-meta">
+            <div class="meta-item">
+              <div class="meta-label">📍 地点</div>
+              <div class="meta-value">Universal Studios SG</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">📅 日期</div>
+              <div class="meta-value">每天开放</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">💰 费用</div>
+              <div class="meta-value">S$83–98/人</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">⏰ 时长</div>
+              <div class="meta-value">全天</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The BFG Musical -->
+      <div class="activity-card">
+        <div class="activity-top" style="background:linear-gradient(90deg,#a29bfe,#6c5ce7);"></div>
+        <div class="activity-body">
+          <div class="activity-icon">🎭</div>
+          <div class="activity-name">BFG 好心眼儿巨人音乐剧</div>
+          <div class="activity-age">✅ 适合 6–10 岁</div>
+          <div class="activity-desc">罗尔德·达尔经典儿童名著改编成舞台音乐剧，在新达城艺术中心上演。精彩的舞台视觉、生动的故事讲述，是培养孩子艺术欣赏力、拓展中英文阅读兴趣的好机会。</div>
+          <div class="activity-highlight">💡 推荐理由：英文语境沉浸，适合培养孩子艺术审美，看完可以读原著互动</div>
+          <div class="activity-meta">
+            <div class="meta-item">
+              <div class="meta-label">📍 地点</div>
+              <div class="meta-value">Esplanade Theatre</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">📅 日期</div>
+              <div class="meta-value">4月22日–5月9日</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">💰 费用</div>
+              <div class="meta-value">S$35–95</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">⏰ 时长</div>
+              <div class="meta-value">约90分钟</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bird Paradise Easter -->
+      <div class="activity-card">
+        <div class="activity-top" style="background:linear-gradient(90deg,#55efc4,#00b894);"></div>
+        <div class="activity-body">
+          <div class="activity-icon">🐦</div>
+          <div class="activity-name">飞禽公园 复活节彩蛋探险</div>
+          <div class="activity-age">✅ 适合 4–10 岁</div>
+          <div class="activity-desc">万礼野生动物保护区的飞禽公园举办「Ranger Buddies 彩蛋探险」活动，结合实体彩蛋寻宝和 AR 扩增实境技术，让孩子一边看鸟一边玩游戏。自然教育与科技趣味完美结合！</div>
+          <div class="activity-highlight">💡 推荐理由：AR+寻宝结合，接触自然同时体验最新科技，趣味性极高</div>
+          <div class="activity-meta">
+            <div class="meta-item">
+              <div class="meta-label">📍 地点</div>
+              <div class="meta-value">Bird Paradise, Mandai</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">📅 日期</div>
+              <div class="meta-value">持续至4月中旬</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">💰 费用</div>
+              <div class="meta-value">S$42–52/人</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">⏰ 时长</div>
+              <div class="meta-value">3–4小时</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <strong>狮城生活圈</strong> · 为新加坡中国家庭提供最新本地生活资讯<br>
+  数据来源：Eatbook.sg · TimeOut Singapore · HungryGoWhere · Harper's Bazaar SG · BYKidO · 每日自动更新
+</footer>
+
+<script>
+  // ── Tab 切换 ──
+  function switchTab(id, el) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+  }
+
+  // ── 美食排序 ──
+  function sortCards(type, btn) {
+    document.querySelectorAll('.filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const grid = document.getElementById('foodGrid');
+    const cards = Array.from(grid.querySelectorAll('.food-card'));
+    cards.sort((a, b) => {
+      if (type === 'rating') {
+        return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
+      } else {
+        return b.dataset.date.localeCompare(a.dataset.date);
+      }
+    });
+    cards.forEach(c => grid.appendChild(c));
+  }
+
+  // ── 分类筛选 ──
+  function filterCat(cat, el) {
+    document.querySelectorAll('.category-tags .cat-tag').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    document.querySelectorAll('.food-card').forEach(c => {
+      if (cat === 'all' || c.dataset.cat.includes(cat)) {
+        c.style.display = '';
+      } else {
+        c.style.display = 'none';
+      }
+    });
+  }
+
+  // ── 活动筛选 ──
+  function filterEvents(type, btn) {
+    document.querySelectorAll('#events .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.event-card').forEach(c => {
+      if (type === 'all' || c.dataset.etype === type) {
+        c.style.display = '';
+      } else {
+        c.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
