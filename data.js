@@ -684,7 +684,7 @@ const SGLIVING_DATA = {
       ticketInfo: "🎫 Ticketmaster / KLOOK",
       price: "S$108–388",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=GEM+Gloria+Singapore",
       btnText: "购票",
       sortDate: "2026-05-26",
       active: true
@@ -732,7 +732,7 @@ const SGLIVING_DATA = {
       ticketInfo: "⚠️ 票已售罄",
       price: "S$88–198",
       priceNote: "已售罄",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Laufey+Singapore",
       btnText: "候补票",
       sortDate: "2026-05-19",
       active: true
@@ -756,7 +756,7 @@ const SGLIVING_DATA = {
       ticketInfo: "🎫 SISTIC",
       price: "S$88–218",
       priceNote: "SISTIC",
-      ticketUrl: "https://www.sistic.com.sg",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Rainie+Yang",
       btnText: "购票",
       sortDate: "2026-04-26",
       active: true
@@ -783,7 +783,7 @@ const SGLIVING_DATA = {
       priceNote: "部分活动免费",
       ticketUrl: "https://www.artboxsingapore.com",
       btnText: "了解详情",
-      sortDate: "2026-04-10",
+      sortDate: "2026-04-17",
       active: true
     },
 
@@ -804,7 +804,7 @@ const SGLIVING_DATA = {
       ticketInfo: "👨‍👩‍👧 亲子适合",
       price: "S$12–20",
       priceNote: "随票入园",
-      ticketUrl: "https://www.gardensbythebay.com.sg",
+      ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events.html",
       btnText: "购票",
       sortDate: "2026-04-15",
       active: true
@@ -827,7 +827,7 @@ const SGLIVING_DATA = {
       ticketInfo: "👨‍👩‍👧 亲子必去",
       price: "S$12起",
       priceNote: "含花穹门票",
-      ticketUrl: "https://www.gardensbythebay.com.sg",
+      ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/tulipmania.html",
       btnText: "购票",
       sortDate: "2026-04-24",
       active: true
@@ -850,7 +850,7 @@ const SGLIVING_DATA = {
       ticketInfo: "🎫 Ticketmaster",
       price: "S$108–268",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=DAY6+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-04-18",
       active: true
@@ -873,7 +873,7 @@ const SGLIVING_DATA = {
       ticketInfo: "🎌 东南亚独家站",
       price: "S$28–48",
       priceNote: "现场购票",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Demon+Slayer+Singapore",
       btnText: "购票",
       sortDate: "2026-04-19",
       active: true
@@ -896,7 +896,7 @@ const SGLIVING_DATA = {
       ticketInfo: "👧 适合6岁+",
       price: "S$35–95",
       priceNote: "SISTIC",
-      ticketUrl: "https://www.sistic.com.sg",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=BFG+Singapore",
       btnText: "购票",
       sortDate: "2026-04-22",
       active: true
@@ -942,7 +942,7 @@ const SGLIVING_DATA = {
       ticketInfo: "⏰ 6:00 PM",
       price: "S$98–258",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=IVE+World+Tour+Singapore",
       btnText: "购票",
       sortDate: "2026-05-09",
       active: true
@@ -988,7 +988,7 @@ const SGLIVING_DATA = {
       ticketInfo: "🎫 4月13日开票",
       price: "S$98–258",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=TREASURE+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-05-16",
       active: true
@@ -1034,7 +1034,7 @@ const SGLIVING_DATA = {
       ticketInfo: "🖼 限量版画可购",
       price: "免费入场",
       priceNote: "周边另计",
-      ticketUrl: "https://www.instagram.com",
+      ticketUrl: "https://www.instagram.com/heartware.sg",
       btnText: "了解详情",
       sortDate: "2026-05-17",
       active: true
@@ -1057,7 +1057,7 @@ const SGLIVING_DATA = {
       ticketInfo: "⏰ 5:00 PM",
       price: "S$98–268",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=G+I-DLE+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-06-13",
       active: true
@@ -1149,7 +1149,7 @@ const SGLIVING_DATA = {
       ticketInfo: "🌟 首次世界巡演",
       price: "S$98–248",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=NMIXX+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-06-20",
       active: true

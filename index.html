@@ -306,8 +306,12 @@ function getFilteredRestaurants() {
 function renderFoodCard(r) {
   const isFineDining = r.categories.includes('finedining');
   const stars = renderStars(r.rating);
+  const mapsUrl = r.mapsUrl ||
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + ' ' + r.address + ' Singapore')}`;
   return `
-    <div class="food-card${isFineDining ? ' finedining-card' : ''}">
+    <div class="food-card${isFineDining ? ' finedining-card' : ''}"
+         onclick="window.open('${mapsUrl}','_blank')"
+         title="点击在 Google 地图中查看">
       <div class="card-img" style="background:${r.bgGradient};">${r.emoji}</div>
       <div class="card-badge badge-${r.badge}">${r.badgeText}</div>
       <div class="card-body">
@@ -323,6 +327,7 @@ function renderFoodCard(r) {
         <div class="card-tags">${r.tags.map(t => `<span class="card-tag">${t}</span>`).join('')}</div>
         <div class="card-footer">
           <div class="card-addr">📍 ${r.address}</div>
+          <span style="font-size:11px;color:var(--primary);font-weight:600;white-space:nowrap;">🗺️ 查看地图</span>
         </div>
       </div>
     </div>`;
