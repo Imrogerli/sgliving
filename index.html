@@ -41,21 +41,20 @@
     .dot-live { width:7px; height:7px; background:#4ade80; border-radius:50%; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.4;} }
 
-    /* ── NAV TABS ── */
+    /* ── STICKY NAV ── */
     .nav-tabs { background: var(--secondary); border-bottom: 1px solid rgba(255,255,255,0.08); position: sticky; top: 0; z-index: 100; }
     .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
     .nav-inner::-webkit-scrollbar { display:none; }
-    .nav-tab { padding: 16px 24px; color: rgba(255,255,255,0.55); font-size: 14px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
-    .nav-tab:hover { color: rgba(255,255,255,0.85); }
+    .nav-tab { padding: 16px 24px; color: rgba(255,255,255,0.55); font-size: 14px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .nav-tab:hover { color: rgba(255,255,255,0.85); border-bottom-color: rgba(255,255,255,0.3); }
     .nav-tab.active { color: white; border-bottom-color: var(--primary); }
     .tab-count { background: var(--primary); color: white; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 10px; }
 
     /* ── MAIN LAYOUT ── */
     .main { max-width: 1100px; margin: 0 auto; padding: 32px 20px 60px; }
-    .section { display: none; }
-    .section.active { display: block; }
 
-    /* ── SECTION HEADER ── */
+    /* ── SECTION DIVIDER ── */
+    .section { margin-bottom: 64px; scroll-margin-top: 64px; }
     .section-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
     .section-title { display: flex; align-items: center; gap: 10px; }
     .section-title h2 { font-size: 22px; font-weight: 700; color: var(--text); }
@@ -75,6 +74,7 @@
     .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
     .food-card { background: var(--card-bg); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); transition: all 0.25s; cursor: pointer; position: relative; }
     .food-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .food-card.hidden { display: none; }
     .card-img { width: 100%; height: 180px; object-fit: cover; background: linear-gradient(135deg, #f0e6d6, #e8d5c4); display: flex; align-items: center; justify-content: center; font-size: 64px; position: relative; }
     .card-badge { position: absolute; top: 12px; left: 12px; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; color: white; }
     .badge-new { background: var(--primary); }
@@ -106,7 +106,7 @@
     .events-list { display: flex; flex-direction: column; gap: 16px; }
     .event-card { background: var(--card-bg); border-radius: 16px; box-shadow: var(--shadow); display: flex; overflow: hidden; transition: all 0.25s; position: relative; }
     .event-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
-    /* 重点推荐活动 */
+    .event-card.hidden { display: none; }
     .event-card.featured { border: 2px solid var(--primary); box-shadow: 0 4px 20px rgba(232,83,58,0.15); }
     .featured-ribbon { position: absolute; top: 0; right: 16px; background: var(--primary); color: white; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 0 0 8px 8px; letter-spacing: 0.5px; z-index: 2; }
     .event-date-col { width: 80px; min-width: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px 8px; color: white; }
@@ -149,16 +149,6 @@
     .meta-label { color: var(--text-light); font-size: 11px; margin-bottom: 2px; }
     .meta-value { font-weight: 600; color: var(--text); }
 
-    /* ── PAGINATION ── */
-    .pagination { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); }
-    .page-btn { padding: 8px 20px; border: 1.5px solid var(--border); background: white; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--text-light); transition: all 0.2s; }
-    .page-btn:hover:not(:disabled) { background: var(--primary); border-color: var(--primary); color: white; }
-    .page-btn:disabled { opacity: 0.35; cursor: not-allowed; }
-    .page-info { font-size: 13px; color: var(--text-light); min-width: 120px; text-align: center; }
-    .page-dots { display: flex; gap: 6px; align-items: center; }
-    .page-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); transition: all 0.2s; cursor: pointer; }
-    .page-dot.active { background: var(--primary); transform: scale(1.3); }
-
     /* ── FOOTER ── */
     footer { background: var(--secondary); color: rgba(255,255,255,0.5); text-align: center; padding: 24px; font-size: 13px; }
     footer strong { color: rgba(255,255,255,0.8); }
@@ -194,12 +184,12 @@
   </div>
 </header>
 
-<!-- ── NAV TABS ── -->
+<!-- ── STICKY NAV ── -->
 <nav class="nav-tabs">
   <div class="nav-inner">
-    <div class="nav-tab active" onclick="switchTab('food', this)">🍜 美食推荐 <span class="tab-count" id="foodTabCount">-</span></div>
-    <div class="nav-tab" onclick="switchTab('events', this)">🎪 近期活动 <span class="tab-count" id="eventsTabCount">-</span></div>
-    <div class="nav-tab" onclick="switchTab('family', this)">👨‍👩‍👧 亲子活动 <span class="tab-count" id="familyTabCount">-</span></div>
+    <a class="nav-tab" href="#food">🍜 美食推荐 <span class="tab-count" id="foodTabCount">-</span></a>
+    <a class="nav-tab" href="#events">🎪 近期活动 <span class="tab-count" id="eventsTabCount">-</span></a>
+    <a class="nav-tab" href="#family">👨‍👩‍👧 亲子活动 <span class="tab-count" id="familyTabCount">-</span></a>
   </div>
 </nav>
 
@@ -207,7 +197,7 @@
 <main class="main">
 
   <!-- ████ FOOD SECTION ████ -->
-  <section id="food" class="section active">
+  <section id="food" class="section">
     <div class="section-header">
       <div class="section-title">
         <span class="section-emoji">🍜</span>
@@ -233,7 +223,6 @@
     </div>
 
     <div class="cards-grid" id="foodGrid"></div>
-    <div id="foodPagination"></div>
   </section>
 
   <!-- ████ EVENTS SECTION ████ -->
@@ -254,7 +243,6 @@
       </div>
     </div>
     <div class="events-list" id="eventsList"></div>
-    <div id="eventsPagination"></div>
   </section>
 
   <!-- ████ FAMILY SECTION ████ -->
@@ -267,7 +255,6 @@
       </div>
     </div>
     <div class="activity-grid" id="activityGrid"></div>
-    <div id="familyPagination"></div>
   </section>
 
 </main>
@@ -283,16 +270,12 @@
 
 <script>
 // ══════════════════════════════════════════════════
-// 状态管理
+// 状态管理（无分页）
 // ══════════════════════════════════════════════════
 const state = {
   foodFilter: 'all',
   foodSort: 'rating',
-  foodPage: 1,
-  eventsFilter: 'all',
-  eventsPage: 1,
-  familyPage: 1,
-  perPage: { food: 9, events: 10, family: 6 }
+  eventsFilter: 'all'
 };
 
 // ══════════════════════════════════════════════════
@@ -304,12 +287,8 @@ function renderStars(rating) {
   return '★'.repeat(full) + (half ? '½' : '');
 }
 
-function sortByDate(a, b) {
-  return b.sortDate ? b.sortDate.localeCompare(a.sortDate || '') : 0;
-}
-
 // ══════════════════════════════════════════════════
-// 美食渲染
+// 美食渲染（全量，无分页）
 // ══════════════════════════════════════════════════
 function getFilteredRestaurants() {
   let items = SGLIVING_DATA.restaurants.filter(r => r.active);
@@ -352,16 +331,10 @@ function renderFoodCard(r) {
 function renderFood() {
   const items = getFilteredRestaurants();
   const total = items.length;
-  const totalPages = Math.max(1, Math.ceil(total / state.perPage.food));
-  if (state.foodPage > totalPages) state.foodPage = totalPages;
-  const start = (state.foodPage - 1) * state.perPage.food;
-  const pageItems = items.slice(start, start + state.perPage.food);
 
-  document.getElementById('foodGrid').innerHTML = pageItems.map(renderFoodCard).join('') ||
+  document.getElementById('foodGrid').innerHTML = items.map(renderFoodCard).join('') ||
     '<div style="padding:40px;text-align:center;color:#999;grid-column:1/-1;">该分类暂无数据</div>';
-  renderPagination('food', state.foodPage, totalPages, total);
 
-  // 更新 tab count
   const allActive = SGLIVING_DATA.restaurants.filter(r => r.active).length;
   document.getElementById('foodTabCount').textContent = allActive;
   document.getElementById('statFood').textContent = allActive;
@@ -369,7 +342,6 @@ function renderFood() {
 
 function setFoodFilter(f, el) {
   state.foodFilter = f;
-  state.foodPage = 1;
   document.querySelectorAll('.category-tags .cat-tag').forEach(t => t.classList.remove('active'));
   el.classList.add('active');
   renderFood();
@@ -377,24 +349,22 @@ function setFoodFilter(f, el) {
 
 function setFoodSort(s, el) {
   state.foodSort = s;
-  state.foodPage = 1;
   document.querySelectorAll('#food .filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
   renderFood();
 }
 
 // ══════════════════════════════════════════════════
-// 活动渲染
+// 活动渲染（全量，无分页）
 // ══════════════════════════════════════════════════
 function getFilteredEvents() {
   let items = SGLIVING_DATA.events.filter(e => e.active);
   if (state.eventsFilter !== 'all') {
     items = items.filter(e => e.type === state.eventsFilter);
   }
-  // 重点活动排前面，组内按日期升序
   const featured = items.filter(e => e.priority === 'featured').sort((a,b) => a.sortDate.localeCompare(b.sortDate));
   const normal = items.filter(e => e.priority !== 'featured').sort((a,b) => a.sortDate.localeCompare(b.sortDate));
-  return { featured, normal, all: [...featured, ...normal] };
+  return { featured, normal };
 }
 
 function renderEventCard(e) {
@@ -425,38 +395,27 @@ function renderEventCard(e) {
 }
 
 function renderEvents() {
-  const { featured, normal, all } = getFilteredEvents();
-  const total = all.length;
-  const totalPages = Math.max(1, Math.ceil(total / state.perPage.events));
-  if (state.eventsPage > totalPages) state.eventsPage = totalPages;
-  const start = (state.eventsPage - 1) * state.perPage.events;
-
+  const { featured, normal } = getFilteredEvents();
   let html = '';
 
   if (state.eventsFilter === 'all') {
-    // 分组显示：重点推荐 + 更多活动
-    const featuredPage = featured; // featured 始终全显（数量少）
-    const normalStart = Math.max(0, start - featured.length);
-    const pageNormal = state.eventsPage === 1
-      ? normal.slice(0, state.perPage.events - featured.length)
-      : normal.slice(start - featured.length, start - featured.length + state.perPage.events);
-
-    if (featuredPage.length > 0 && state.eventsPage === 1) {
+    if (featured.length > 0) {
       html += `<div class="events-section-label">⭐ 华人演唱会 & 世界顶流</div>`;
-      html += featuredPage.map(renderEventCard).join('');
-      html += `<div class="events-section-label">🎪 更多活动</div>`;
-      html += pageNormal.map(renderEventCard).join('');
+      html += featured.map(renderEventCard).join('');
+      if (normal.length > 0) {
+        html += `<div class="events-section-label">🎪 更多活动</div>`;
+        html += normal.map(renderEventCard).join('');
+      }
     } else {
-      const pageAll = all.slice(start, start + state.perPage.events);
-      html = pageAll.map(renderEventCard).join('');
+      html += normal.map(renderEventCard).join('');
     }
   } else {
-    const pageItems = all.slice(start, start + state.perPage.events);
-    html = pageItems.map(renderEventCard).join('');
+    const all = [...featured, ...normal];
+    html = all.length ? all.map(renderEventCard).join('') :
+      '<div style="padding:40px;text-align:center;color:#999;">该分类暂无活动</div>';
   }
 
-  document.getElementById('eventsList').innerHTML = html || '<div style="padding:40px;text-align:center;color:#999;">该分类暂无活动</div>';
-  renderPagination('events', state.eventsPage, totalPages, total);
+  document.getElementById('eventsList').innerHTML = html;
 
   const allActive = SGLIVING_DATA.events.filter(e => e.active).length;
   document.getElementById('eventsTabCount').textContent = allActive;
@@ -467,14 +426,13 @@ function renderEvents() {
 
 function setEventsFilter(f, el) {
   state.eventsFilter = f;
-  state.eventsPage = 1;
-  document.querySelectorAll('#events .filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#events .filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
   renderEvents();
 }
 
 // ══════════════════════════════════════════════════
-// 亲子活动渲染
+// 亲子活动渲染（全量，无分页）
 // ══════════════════════════════════════════════════
 function renderActivityCard(a) {
   return `
@@ -498,74 +456,41 @@ function renderActivityCard(a) {
 
 function renderFamily() {
   const items = SGLIVING_DATA.familyActivities.filter(a => a.active);
-  const total = items.length;
-  const totalPages = Math.max(1, Math.ceil(total / state.perPage.family));
-  if (state.familyPage > totalPages) state.familyPage = totalPages;
-  const start = (state.familyPage - 1) * state.perPage.family;
-  const pageItems = items.slice(start, start + state.perPage.family);
-
-  document.getElementById('activityGrid').innerHTML = pageItems.map(renderActivityCard).join('');
-  renderPagination('family', state.familyPage, totalPages, total);
-
-  document.getElementById('familyTabCount').textContent = total;
-  document.getElementById('statFamily').textContent = total;
+  document.getElementById('activityGrid').innerHTML = items.map(renderActivityCard).join('');
+  document.getElementById('familyTabCount').textContent = items.length;
+  document.getElementById('statFamily').textContent = items.length;
   document.getElementById('familyUpdateLabel').textContent =
     `精选适合 7–9 岁小朋友的周末活动 · ${SGLIVING_DATA.meta.lastUpdated} 更新 · 兼顾趣味与学习`;
 }
 
 // ══════════════════════════════════════════════════
-// 分页渲染
+// 导航高亮（滚动时更新 active 状态）
 // ══════════════════════════════════════════════════
-function renderPagination(type, current, total, itemCount) {
-  const el = document.getElementById(`${type}Pagination`);
-  if (total <= 1) { el.innerHTML = ''; return; }
-
-  const dots = Array.from({length: total}, (_, i) => i + 1)
-    .map(p => `<div class="page-dot${p === current ? ' active' : ''}" onclick="changePage('${type}', ${p})" title="第${p}页"></div>`)
-    .join('');
-
-  el.innerHTML = `
-    <div class="pagination">
-      <button class="page-btn" onclick="changePage('${type}', ${current - 1})" ${current <= 1 ? 'disabled' : ''}>← 上一页</button>
-      <div>
-        <div class="page-dots">${dots}</div>
-        <div class="page-info" style="margin-top:6px;">第 ${current} 页 / 共 ${total} 页（${itemCount} 项）</div>
-      </div>
-      <button class="page-btn" onclick="changePage('${type}', ${current + 1})" ${current >= total ? 'disabled' : ''}>下一页 →</button>
-    </div>`;
+function updateNavActive() {
+  const sections = ['food', 'events', 'family'];
+  const scrollY = window.scrollY + 80;
+  let current = 'food';
+  for (const id of sections) {
+    const el = document.getElementById(id);
+    if (el && el.offsetTop <= scrollY) current = id;
+  }
+  document.querySelectorAll('.nav-tab').forEach(tab => {
+    tab.classList.toggle('active', tab.getAttribute('href') === '#' + current);
+  });
 }
 
-function changePage(type, page) {
-  if (type === 'food') { state.foodPage = page; renderFood(); }
-  else if (type === 'events') { state.eventsPage = page; renderEvents(); }
-  else if (type === 'family') { state.familyPage = page; renderFamily(); }
-  // 滚动到对应section顶部
-  document.getElementById(type === 'food' ? 'food' : type === 'events' ? 'events' : 'family')
-    .scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-// ══════════════════════════════════════════════════
-// Tab 切换
-// ══════════════════════════════════════════════════
-function switchTab(id, el) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  el.classList.add('active');
-}
+window.addEventListener('scroll', updateNavActive, { passive: true });
 
 // ══════════════════════════════════════════════════
 // 初始化
 // ══════════════════════════════════════════════════
 (function init() {
-  // 更新日期显示
   document.getElementById('heroDate').textContent = SGLIVING_DATA.meta.lastUpdated
     .replace(/(\d{4})-(\d{2})-(\d{2})/, '$1年$2月$3日');
-
-  // 渲染所有板块
   renderFood();
   renderEvents();
   renderFamily();
+  updateNavActive();
 })();
 </script>
 
