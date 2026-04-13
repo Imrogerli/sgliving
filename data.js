@@ -15,8 +15,8 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-11",
-    version: "2.1",
+    lastUpdated: "2026-04-13",
+    version: "2.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -431,6 +431,26 @@ const SGLIVING_DATA = {
       active: true
     },
 
+    {
+      id: "sushidan-hiroyuki",
+      name: "寿司段 Sushidan by Chef Hiroyuki Sato",
+      categories: ["restaurant", "michelin"],
+      rating: 4.6,
+      openDate: "2026-01",
+      price: "S$12–30",
+      description: "日本著名料理人佐藤宏幸在莱佛士城推出的亲民回转寿司！江户前寿司工艺遇上亲民价格，寿司从 S$1.99 起、刺身 S$2.99 起、套餐 S$19.90 起。米其林级师傅级品质却是美食广场价格，性价比极高，是寿司爱好者的周中福音！",
+      tags: ["江户前寿司", "刺身", "亲民价格"],
+      address: "Raffles City Shopping Centre",
+      badge: "michelin",
+      badgeText: "⭐ 米其林师傅",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#e8f4f8,#2980b9)",
+      catLabel: "正餐",
+      catDesc: "江户前寿司 / 日本米其林师傅",
+      ratingDesc: "米其林大厨操刀 · 寿司从$1.99起",
+      active: true
+    },
+
     // ── 甜品饮料 ──────────────────────────────────
 
     {
@@ -691,7 +711,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg",
       btnText: "购票",
       sortDate: "2026-04-11",
-      active: true
+      active: false
     },
 
     {
@@ -755,9 +775,9 @@ const SGLIVING_DATA = {
       dateColor: "linear-gradient(135deg,#e8533a,#ff6b4a)",
       typeLabel: "🎪 市集嘉年华",
       typeColor: "#e8533a",
-      description: "新加坡最大创意市集全新升级！250+独立品牌、现场演出、儿童工作坊、ARTBOX Arcade 和复古游乐场。两个周末举行（4月10–12 & 4月17–20日），是家庭周末出游的绝佳选择，门票仅 S$5 起。",
+      description: "新加坡最大创意市集全新升级！250+独立品牌、现场演出、儿童工作坊、ARTBOX Arcade 和复古游乐场。第二周末（4月17–20日）即将到来，错过第一波的朋友赶紧安排！门票仅 S$5 起。",
       venue: "Singapore Expo, Hall 3",
-      dateRange: "4月10–12日 & 4月17–20日 12pm–11pm",
+      dateRange: "4月17–20日（第二周末）12pm–11pm",
       ticketInfo: "⏰ 12pm–11pm",
       price: "S$5+",
       priceNote: "部分活动免费",
@@ -787,6 +807,29 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gardensbythebay.com.sg",
       btnText: "购票",
       sortDate: "2026-04-15",
+      active: true
+    },
+
+    {
+      id: "tulipmania-2026",
+      name: "花穹郁金香展 · Tulipmania 2026",
+      type: "exhibition",
+      priority: "normal",
+      month: "APR",
+      day: "24",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#fd79a8,#e84393)",
+      typeLabel: "🌷 花卉展览",
+      typeColor: "#e84393",
+      description: "Gardens by the Bay 年度花穹盛事回归！超过20万株荷兰进口郁金香铺满整个花穹，色彩缤纷、香气馥郁。今年特设荷兰风车打卡区，亲子家庭必来的春季限定体验，持续至5月17日。",
+      venue: "Gardens by the Bay · Flower Dome",
+      dateRange: "4月24日–5月17日",
+      ticketInfo: "👨‍👩‍👧 亲子必去",
+      price: "S$12起",
+      priceNote: "含花穹门票",
+      ticketUrl: "https://www.gardensbythebay.com.sg",
+      btnText: "购票",
+      sortDate: "2026-04-24",
       active: true
     },
 
@@ -1040,7 +1083,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg",
       btnText: "购票",
       sortDate: "2026-04-12",
-      active: true
+      active: false
     },
 
     {
@@ -1122,17 +1165,17 @@ const SGLIVING_DATA = {
 
     {
       id: "robofest-2026",
-      name: "RoboFest 机器人科技节 🔴明天最后一天！",
+      name: "RoboFest 机器人科技节",
       icon: "🤖",
       topGradient: "linear-gradient(90deg,#00b894,#55efc4)",
       ageRange: "最适合 7–12 岁",
-      description: "新加坡科学馆首届机器人节，明天（4月12日）就是最后一天！今天仍可前往，孩子可亲手触摸、操控真实机器人，欣赏机器狗喜剧秀，学习编程入门。互动性超强，是让孩子爱上 STEM 的绝佳机会！",
-      highlight: "明天截止！千万别错过，强互动性 + 激发科技兴趣，7–9岁孩子可独立完成基础编程挑战，错过等一年！",
+      description: "新加坡科学馆首届机器人节，孩子可亲手触摸、操控真实机器人，欣赏机器狗喜剧秀，学习编程入门。互动性超强，是让孩子爱上 STEM 的绝佳机会！",
+      highlight: "强互动性 + 激发科技兴趣，7–9岁孩子可独立完成基础编程挑战！",
       location: "Science Centre Singapore",
-      dateRange: "至4月12日（最后2天！今天+明天）",
+      dateRange: "已结束（4月9–12日）",
       cost: "S$4+随票入场",
       duration: "约2–3小时",
-      active: true
+      active: false
     },
 
     {
@@ -1297,6 +1340,21 @@ const SGLIVING_DATA = {
       dateRange: "4月25–26日",
       cost: "部分活动免费",
       duration: "2–4小时",
+      active: true
+    },
+
+    {
+      id: "tulipmania-family",
+      name: "郁金香展 · 花穹亲子打卡",
+      icon: "🌷",
+      topGradient: "linear-gradient(90deg,#fd79a8,#fdcb6e)",
+      ageRange: "适合 3–12 岁",
+      description: "4月24日起，花穹盛开超过20万株荷兰郁金香！彩虹色花海视觉震撼，荷兰风车、迷你种植区让孩子学习植物知识。傍晚光线金黄，是全家最美拍照时刻。花穹室内恒温舒适，晴雨皆宜。",
+      highlight: "室内恒温不怕天热，视觉冲击极强，让7-9岁孩子学习植物生长知识，边玩边认识不同品种郁金香",
+      location: "Gardens by the Bay · Flower Dome",
+      dateRange: "4月24日–5月17日",
+      cost: "S$12起/人",
+      duration: "约1–2小时",
       active: true
     },
 
