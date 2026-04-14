@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-13",
+    lastUpdated: "2026-04-14",
     version: "2.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -636,6 +636,46 @@ const SGLIVING_DATA = {
     },
 
     {
+      id: "karii-okinawa",
+      name: "Karii 冲绳街头美食",
+      categories: ["snack"],
+      rating: 4.4,
+      openDate: "2026-04",
+      price: "S$3–10",
+      description: "来自冲绳的街头美食小店登陆 Suntec City！招牌萨塔安达吉（冲绳炸甜甜圈，$2.50）外酥内软香甜，现点现炸；冲绳荞麦面（$8.80起）汤底清甜，猪骨加柴鱼熬制数小时。加上冲绳风格饭团，价格超亲民，逛商场时的完美轻食选择！",
+      tags: ["冲绳甜甜圈", "荞麦面", "街头小吃"],
+      address: "Suntec City, 3 Temasek Boulevard",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🍡",
+      bgGradient: "linear-gradient(135deg,#f8c471,#e67e22)",
+      catLabel: "小吃快食",
+      catDesc: "冲绳街头美食 / 日本风味",
+      ratingDesc: "冲绳正宗风味轻食",
+      active: true
+    },
+
+    {
+      id: "burnt-cones-downtown",
+      name: "Burnt Cones Downtown · 24小时咖啡馆",
+      categories: ["dessert"],
+      rating: 4.5,
+      openDate: "2026-04",
+      price: "S$7–12",
+      description: "新加坡第一家24小时营业的明胶咖啡馆（Gelato Coffee）！深夜馋甜品再也不用忍了。招牌自制蛋筒香脆可口，黑芝麻明胶、班兰椰子口味一绝；搭配现磨咖啡，是深夜续命的绝佳组合。IOI Central Boulevard 位置方便，CBD 上班族最新打卡地！",
+      tags: ["明胶咖啡", "24小时", "自制蛋筒"],
+      address: "2 Central Boulevard, IOI Central Boulevard Towers",
+      badge: "new",
+      badgeText: "🆕 24H营业",
+      emoji: "🍦",
+      bgGradient: "linear-gradient(135deg,#2c3e50,#bdc3c7)",
+      catLabel: "甜品饮料",
+      catDesc: "明胶咖啡 / 24小时营业",
+      ratingDesc: "新加坡首家24小时明胶咖啡馆",
+      active: true
+    },
+
+    {
       id: "yaowarat-cafe",
       name: "Yaowarat Café 泰式早餐",
       categories: ["snack"],
@@ -1129,6 +1169,29 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.suntecsingapore.com",
       btnText: "免费入场",
       sortDate: "2026-04-30",
+      active: true
+    },
+
+    {
+      id: "sifa-2026",
+      name: "新加坡国际艺术节 SIFA 2026",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "15",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#8e44ad,#9b59b6)",
+      typeLabel: "🎭 艺术节",
+      typeColor: "#8e44ad",
+      description: "新加坡年度最大综合表演艺术盛事，汇集来自全球的戏剧、舞蹈、音乐和多媒体跨界作品！今年特设 Empress Lawn Festival Village 户外嘉年华，部分演出免费开放。华人家庭感受国际艺术氛围、拓展文化视野的绝佳机会，部分亲子节目适合7-9岁小朋友。",
+      venue: "多场地 · Empress Lawn & Esplanade",
+      dateRange: "5月15日–30日",
+      ticketInfo: "🌟 部分演出免费",
+      price: "S$20–120",
+      priceNote: "部分免费",
+      ticketUrl: "https://www.sifa.sg/",
+      btnText: "了解详情",
+      sortDate: "2026-05-15",
       active: true
     },
 
