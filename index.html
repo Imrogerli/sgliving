@@ -290,8 +290,8 @@ const AFFILIATE = {
   // 注册：https://affiliate.klook.com/home  或通过 Involve Asia
   // 审批约 2 个工作日，获得 aid（数字 ID）后填入
   klook: {
-    enabled: false,
-    aid: 'YOUR_KLOOK_AID',           // 示例：'123456'
+    enabled: true,
+    aid: '118657',
     wrap: url =>
       `https://affiliate.klook.com/redirect?aid=${AFFILIATE.klook.aid}&aff_adid=&url=${encodeURIComponent(url)}`
   },
