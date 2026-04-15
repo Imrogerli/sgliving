@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-14",
+    lastUpdated: "2026-04-15",
     version: "2.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -676,6 +676,66 @@ const SGLIVING_DATA = {
     },
 
     {
+      id: "longjing-restaurant",
+      name: "LONGJING 绿茶餐厅",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2025-08",
+      price: "S$5.80–30",
+      description: "来自杭州西湖边的国民级浙菜品牌终于落户新加坡！招牌东坡肉慢炖软糯入味，龙井烤鸡茶香四溢，宋嫂鱼羹鲜甜如梦。白墙黛瓦的江南风装修让人恍若置身杭城，适合想念家乡味的朋友聚餐首选！平价实惠，人均不到$30。",
+      tags: ["东坡肉", "浙江菜", "江南风格"],
+      address: "Suntec City Mall #01-384, 3 Temasek Boulevard, Singapore 038983",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍃",
+      bgGradient: "linear-gradient(135deg,#2d9a60,#55efc4)",
+      catLabel: "正餐",
+      catDesc: "浙江菜 / 新达城购物中心",
+      ratingDesc: "杭州人气国民品牌 · 东坡肉必点",
+      active: true
+    },
+
+    {
+      id: "modu-high",
+      name: "MODU High 韩式参鸡汤",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$38–74",
+      description: "姐妹们！新加坡终于有高端参鸡汤了绝绝子！MODU High 在安祥山小巷里藏着，12种草药汤底随意选，从经典人参到黑松露口味任君挑剔。锅里还泡着整只鸡，戳开皮肉汁水四溢，配上糯米饭超满足。四月新开，已经排队爆了！",
+      tags: ["参鸡汤", "韩式料理", "4月新开"],
+      address: "Amoy Street, Tanjong Pagar, Singapore",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#e17055,#fdcb6e)",
+      catLabel: "正餐",
+      catDesc: "韩式参鸡汤 / 安祥山",
+      ratingDesc: "12种草药汤底 · 松露参鸡汤限定",
+      active: true
+    },
+
+    {
+      id: "niku-niku-oh-kome",
+      name: "Niku Niku Oh Kome",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-04",
+      price: "S$16.80",
+      description: "来自日本的汉堡牛排专门店，热石锅桌边烤制超有仪式感！点餐后服务员端来烧得通红的石板，经典和牛版本咬下去肉汁暴涌，配上蓬松白米饭和温泉蛋，简直是打工人的治愈午餐。$16.80 一份性价比超高，朋友推荐必去！",
+      tags: ["汉堡牛排", "日式", "热石烤制"],
+      address: "Westgate, 3 Gateway Drive, #B2, Jurong East",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#2d3436,#e17055)",
+      catLabel: "正餐",
+      catDesc: "日式汉堡牛排 / 裕廊东 Westgate",
+      ratingDesc: "热石桌边烤制 · 和牛系列必点",
+      active: true
+    },
+
+    {
       id: "yaowarat-cafe",
       name: "Yaowarat Café 泰式早餐",
       categories: ["snack"],
@@ -829,7 +889,7 @@ const SGLIVING_DATA = {
 
     {
       id: "sakura-gbtb",
-      name: "花穹樱花展 · 石川縣特别版（最后机会！）",
+      name: "花穹樱花展 · 石川縣特别版（已结束）",
       type: "exhibition",
       priority: "normal",
       month: "APR",
@@ -838,16 +898,16 @@ const SGLIVING_DATA = {
       dateColor: "linear-gradient(135deg,#fd79a8,#e84393)",
       typeLabel: "🌸 主题展览",
       typeColor: "#e84393",
-      description: "Gardens by the Bay 花穹馆内盛放真实樱花树！重现日本石川县武士和艺伎街区，还有三丽鸥角色特别亮相。4月15日截止，最后机会打卡！",
+      description: "Gardens by the Bay 花穹馆内盛放真实樱花树！重现日本石川县武士和艺伎街区，还有三丽鸥角色特别亮相。已于4月15日结束。",
       venue: "Gardens by the Bay · Flower Dome",
-      dateRange: "持续至4月15日（最后！）",
+      dateRange: "已结束（截至4月15日）",
       ticketInfo: "👨‍👩‍👧 亲子适合",
       price: "S$12–20",
       priceNote: "随票入园",
       ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events.html",
       btnText: "购票",
       sortDate: "2026-04-15",
-      active: true
+      active: false
     },
 
     {
@@ -1225,6 +1285,21 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    {
+      id: "ranger-buddies-2026",
+      name: "Ranger Buddies 任务五：探索蜜蜂世界",
+      icon: "🐝",
+      topGradient: "linear-gradient(90deg,#f59e0b,#fbbf24)",
+      ageRange: "最适合 6–10 岁",
+      description: "Ranger Buddies 全新第五季任务！孩子与吉祥物小兔 Rudy 一起出发，用 AR 应用完成户外挑战，在互动站点学习蜜蜂生态和气候变化知识。边玩手机 AR 边完成真实任务，是7-9岁孩子最爱的探索模式！全岛多个地点可参与。",
+      highlight: "AR 科技结合自然教育，自由探索无需预约，户外运动+知识学习一举两得！7-9岁孩子可独立完成全部任务挑战",
+      location: "全岛多个公园及户外场所",
+      dateRange: "3月12日–5月31日（每天开放）",
+      cost: "免费下载 App 即可参与",
+      duration: "约1.5–3小时",
+      active: true
+    },
 
     {
       id: "robofest-2026",
