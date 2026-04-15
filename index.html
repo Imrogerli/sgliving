@@ -370,11 +370,9 @@ function getFilteredRestaurants() {
 function renderFoodCard(r) {
   const isFineDining = r.categories.includes('finedining');
   const stars = renderStars(r.rating);
-  // 优先用坐标直接落针（打开商家信息页），无坐标才退回名称搜索
+  // 用店名 + 地址搜索，Google Maps 会直接匹配到对应商家信息页
   const mapsUrl = r.mapsUrl ||
-    (r.lat && r.lng
-      ? `https://maps.google.com/?q=${r.lat},${r.lng}&z=18`
-      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + ' Singapore')}`);
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + ' ' + r.address)}`;
   // 判断是否为"本月新增"：openDate 的年月 >= lastUpdated 同月
   const lastUpdatedMonth = (SGLIVING_DATA.meta.lastUpdated || '').slice(0, 7);
   const isRecentlyAdded = r.openDate && r.openDate >= lastUpdatedMonth;
