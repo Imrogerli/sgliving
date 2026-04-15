@@ -126,7 +126,7 @@ const SGLIVING_DATA = {
       price: "S$60–100",
       description: "苏州著名闽菜馆「伴澜」首家海外门店，主厨孙晓洋亲自坐镇。精炼闽南菜注重原汁原味，食材严苛讲究，是品味正宗闽南高端料理的绝佳之选，适合重要商务接待。",
       tags: ["闽南菜", "海外首店", "精品料理"],
-      address: "Scotts Square, 6 Scotts Road",
+      address: "Scotts Square #02-01/02, 6 Scotts Road, Orchard",
       badge: "new",
       badgeText: "🆕 新开",
       emoji: "🍲",
@@ -134,8 +134,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "福建菜 / 苏州名店",
       ratingDesc: "苏州名厨掌舵首家海外店",
-      lat: 1.3094,
-      lng: 103.8254,
+      lat: 1.3093,
+      lng: 103.8255,
       active: true
     },
 
@@ -216,7 +216,7 @@ const SGLIVING_DATA = {
       price: "S$35–55",
       description: "招牌「将军四宫格锅」让你同时品尝四种汤底！必点：将军地狱麻辣牛油锅（$7++）、将军鱼肚鸡汤锅（$11++，25种草药熬制）。适合一家大小同享，口味各异不再争执！",
       tags: ["四宫格火锅", "麻辣鸳鸯", "家庭聚餐"],
-      address: "Tiong Bahru Plaza, 302 Tiong Bahru Rd #02-117 | 每天11am–10pm",
+      address: "Tiong Bahru Plaza #02-117, 302 Tiong Bahru Road",
       badge: "new",
       badgeText: "🆕 4月新开",
       emoji: "🔥",
@@ -224,8 +224,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "四宫格火锅 / 中国连锁",
       ratingDesc: "四宫格锅底同时享用",
-      lat: 1.2861,
-      lng: 103.8281,
+      lat: 1.286,
+      lng: 103.8279,
       active: true
     },
 
@@ -238,7 +238,7 @@ const SGLIVING_DATA = {
       price: "S$30–45",
       description: "国内超火大锅菜，首家新加坡店落户 Guoco Midtown。必点签名螃蟹锅（500g 约 S$78），每日新鲜斯里兰卡螃蟹，锅底浓郁鲜甜，非常适合家庭聚餐。国内700+门店品质保证。",
       tags: ["螃蟹锅", "家庭聚餐", "中国口味"],
-      address: "Guoco Midtown, 128 Beach Road, Bugis",
+      address: "Guoco Midtown II #01-13, 20 Tan Quee Lan Street, Bugis",
       badge: "new",
       badgeText: "🆕 新开",
       emoji: "🦀",
@@ -246,8 +246,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "砂锅 / 中国连锁",
       ratingDesc: "国内700+门店首进新加坡",
-      lat: 1.2993,
-      lng: 103.8565,
+      lat: 1.3004,
+      lng: 103.8567,
       active: true
     },
 
@@ -326,7 +326,7 @@ const SGLIVING_DATA = {
       price: "S$15–28",
       description: "新加坡百万粉丝 YouTube 频道 The Meatmen 的首家实体餐厅！亚洲家常美食为主，招牌叻沙海鲜泡饭配椰香浓汤和脆米花，炭油收尾的秘制鱼汤，以及辛辣虾仁糯米卷，平价亲民，充满创意。",
       tags: ["叻沙泡饭", "亚洲家常菜", "网红餐厅"],
-      address: "Rasa Space, 多媒体体验馆",
+      address: "Rasa Space, 9 Raffles Place #02-01, Republic Plaza",
       badge: "new",
       badgeText: "🆕 首家实体",
       emoji: "🍚",
@@ -334,8 +334,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "亚洲家常菜 / The Meatmen Group",
       ratingDesc: "百万订阅YouTube频道首家实体店",
-      lat: 1.2835,
-      lng: 103.8519,
+      lat: 1.2832,
+      lng: 103.8516,
       active: true
     },
 
@@ -348,7 +348,7 @@ const SGLIVING_DATA = {
       price: "S$35–55",
       description: "新加坡首家云贵川概念餐厅，融合云南、贵州、四川三省风味。从麻辣火锅到酸汤鱼、贵州串串，口味层次丰富，嗜辣的朋友不容错过！特别适合爱吃辣的家庭。",
       tags: ["麻辣", "酸汤鱼", "云南菜"],
-      address: "Clarke Quay 区域",
+      address: "Century Square #02-07/28, 2 Tampines Central 5",
       badge: "trending",
       badgeText: "🔥 趋势",
       emoji: "🌶️",
@@ -356,8 +356,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "云贵川 / 新派中餐",
       ratingDesc: "新加坡首家云贵川概念餐厅",
-      lat: 1.2884,
-      lng: 103.8462,
+      lat: 1.3524,
+      lng: 103.9437,
       active: true
     },
 
@@ -370,7 +370,7 @@ const SGLIVING_DATA = {
       price: "S$25–40",
       description: "源自上海的炖汤名店，专注老火慢炖煲汤，配合家禽和海鲜料理。每道汤需炖煮数小时，浓缩食材精华，口感醇厚。特别适合注重养生的家庭和追求健康饮食的朋友。",
       tags: ["老火靓汤", "养生", "上海风味"],
-      address: "具体地址请查询 HungryGoWhere",
+      address: "Suntec City #03-315, 3 Temasek Boulevard",
       badge: "new",
       badgeText: "🆕 新开",
       emoji: "🫕",
@@ -378,8 +378,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "老火靓汤 / 上海名店",
       ratingDesc: "上海名店进驻新加坡",
-      lat: 1.284,
-      lng: 103.851,
+      lat: 1.2949,
+      lng: 103.8591,
       active: true
     },
 
@@ -392,7 +392,7 @@ const SGLIVING_DATA = {
       price: "S$35–55",
       description: "杭州人气江浙菜品牌「椿花奶奶」首家海外店落户 i12 Katong！正宗杭帮菜讲究「轻口重味」，招牌砂锅鸡汤鲜甜不腻，精致江南点心让人舍不得放筷子。在新加坡吃到杭州味道，简直不要太幸福！",
       tags: ["杭帮菜", "江浙风味", "海外首店"],
-      address: "i12 Katong, 112 East Coast Road",
+      address: "i12 Katong #02-13, 112 East Coast Road",
       badge: "new",
       badgeText: "🆕 4月新开",
       emoji: "🏮",
@@ -400,8 +400,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "杭州江浙菜 / 海外首店",
       ratingDesc: "杭州人气品牌首次出海",
-      lat: 1.3063,
-      lng: 103.9062,
+      lat: 1.3058,
+      lng: 103.9049,
       active: true
     },
 
@@ -548,7 +548,7 @@ const SGLIVING_DATA = {
       price: "S$4–8",
       description: "新加坡最知名港式甜品店之一，60+甜品种类，超级平价！强烈推荐：榴莲西米露、杨枝甘露、芋头西米露、鲜奶炖蛋。牛车水门口常年排队，绝对是甜品爱好者的天堂。",
       tags: ["杨枝甘露", "炖蛋", "港式甜品"],
-      address: "1 Liang Seah St #01-10/11",
+      address: "1 Liang Seah Street #01-10/11, Bugis",
       badge: "hot",
       badgeText: "💯 老字号",
       emoji: "🥭",
@@ -556,8 +556,8 @@ const SGLIVING_DATA = {
       catLabel: "甜品饮料",
       catDesc: "港式甜品 / 老字号",
       ratingDesc: "60种甜品 · 本地必打卡",
-      lat: 1.2983,
-      lng: 103.856,
+      lat: 1.2982,
+      lng: 103.8562,
       active: true
     },
 
@@ -616,7 +616,7 @@ const SGLIVING_DATA = {
       price: "S$20–35",
       description: "主打四川特色美食，招牌菜「叫花土豆」和「糖醋手撕包菜」大受好评，冒烤鸭因独特风味曾一度断货。性价比超高，是中国留学生和华人最爱打卡的馆子之一。",
       tags: ["叫花土豆", "冒烤鸭", "四川菜"],
-      address: "City Hall / Chinatown 区域",
+      address: "Marina One West Tower #01-12, 9 Straits View",
       badge: "hot",
       badgeText: "🔥 排队",
       emoji: "🫙",
@@ -624,8 +624,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "四川菜 / 网红小馆",
       ratingDesc: "冒烤鸭一度断货",
-      lat: 1.2837,
-      lng: 103.8449,
+      lat: 1.2771,
+      lng: 103.8601,
       active: true
     },
 
@@ -638,7 +638,7 @@ const SGLIVING_DATA = {
       price: "S$12–18",
       description: "专注重庆麻辣小面，必点「红碗牛肉面」，麻辣鲜香、劲道爽口。适合工作日午餐快食，价格亲民，让你在新加坡也能吃到地道重庆味道。",
       tags: ["重庆小面", "麻辣", "平价"],
-      address: "Somerset, 313@somerset 附近",
+      address: "313@Somerset #B3-37, 313 Orchard Road",
       badge: "new",
       badgeText: "🆕 新开",
       emoji: "🍜",
@@ -660,7 +660,7 @@ const SGLIVING_DATA = {
       price: "S$12–18",
       description: "新加坡最具代表性的肉骨茶名店，猪骨汤底加入中药炖煮数小时，香气浓郁，肉质软烂。是每位华人来新必打卡的美食，适合早午餐享用，配油条更是一绝！",
       tags: ["猪骨汤", "中药卤料", "早午餐"],
-      address: "New Bridge Rd / Balestier 等多个分店",
+      address: "11 New Bridge Road, Singapore 059383",
       badge: "hot",
       badgeText: "💯 必吃",
       emoji: "🍖",
@@ -668,8 +668,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "肉骨茶 / 新加坡国民美食",
       ratingDesc: "来新加坡必吃",
-      lat: 1.2858,
-      lng: 103.8449,
+      lat: 1.2876,
+      lng: 103.8467,
       active: true
     },
 
@@ -814,7 +814,7 @@ const SGLIVING_DATA = {
       price: "S$8–15",
       description: "4月8日新开，全天供应泰式铁板蛋（Kai Krata）！联创人有泰国血统确保正宗。招牌 Yaowarat Kai Krata（$7.80）含泰式罗勒碎肉、培根和特调蛋比，本地融合款有泰式绿茶咖椰吐司（$2）和娘惹铁板蛋（$9.80）。",
       tags: ["泰式铁板蛋", "全天早午餐", "本地融合"],
-      address: "CBD 中心商务区",
+      address: "Tanjong Pagar / CBD 区域（具体地址查 Google Maps）",
       badge: "new",
       badgeText: "🆕 4月新开",
       emoji: "🍳",
@@ -822,8 +822,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "泰式早餐 / 全天供应",
       ratingDesc: "正宗泰式铁板蛋全天供应",
-      lat: 1.284,
-      lng: 103.851,
+      lat: 1.278,
+      lng: 103.845,
       active: true
     }
   ],
