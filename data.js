@@ -1353,7 +1353,80 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-06-20",
       active: true
+    },
+
+    // ── 🎤 脱口秀 Stand-up Comedy ────────────────────
+
+    {
+      id: "vir-das-hey-stranger",
+      name: "Vir Das: Hey Stranger",
+      type: "comedy",
+      priority: "featured",
+      featuredReason: "Emmy 获奖喜剧人新加坡首演",
+      month: "MAY",
+      day: "21",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#6c5ce7,#a29bfe)",
+      typeLabel: "🎭 脱口秀",
+      typeColor: "#6c5ce7",
+      description: "Emmy 获奖印度喜剧人 Vir Das 全新巡演「Hey Stranger」新加坡站！以犀利的社会观察和幽默敏锐著称，Netflix 脱口秀特辑多次打入全球 Top 10。如果你喜欢智识型黑色幽默，这场绝对值回票价。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "5月21日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$98–138",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_virdas",
+      btnText: "购票",
+      sortDate: "2026-05-21",
+      active: true
+    },
+
+    {
+      id: "elena-gabrielle-disturb-vibe",
+      name: "Elena Gabrielle: Disturb the Vibe",
+      type: "comedy",
+      priority: "normal",
+      month: "MAY",
+      day: "16",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#fd79a8,#e84393)",
+      typeLabel: "🎭 脱口秀",
+      typeColor: "#e84393",
+      description: "澳大利亚喜剧人 Elena Gabrielle 全新单人秀，笑中带泪的现代关系观察，融合脱口秀与现场音乐的独特风格，在欧美圈广受好评。新加坡场地 Ola-Ola 是轻松的 bar 风格小剧场，非常适合轻松周六夜。",
+      venue: "Ola-Ola, Marina One（5 Straits View）",
+      dateRange: "5月16日",
+      ticketInfo: "🎫 官网购票",
+      price: "查官网",
+      priceNote: "Eventbrite",
+      ticketUrl: "https://tickets.elenagabrielle.com/events/elenagabrielle",
+      btnText: "购票",
+      sortDate: "2026-05-16",
+      active: true
+    },
+
+    {
+      id: "kumar-show-lemon-stand",
+      name: "The Kumar Show @ The Lemon Stand",
+      type: "comedy",
+      priority: "normal",
+      month: "APR",
+      day: "29",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#f9ca24,#f0932b)",
+      typeLabel: "🎭 本地脱口秀",
+      typeColor: "#f0932b",
+      description: "新加坡国宝级喜剧人 Kumar 每周三固定专场！辛辣幽默、金句频出，是感受新加坡本地文化最好的方式之一。The Lemon Stand 是亚洲最大全职喜剧俱乐部，提供饮品和小食，18岁以上入场。近期场次：4月29日、5月起每周三持续。",
+      venue: "The Lemon Stand, 12 Queen St #01-02",
+      dateRange: "每周三 8PM，近期：4月29日起",
+      ticketInfo: "⏰ 8:00 PM · 18+",
+      price: "约S$35–45",
+      priceNote: "Eventbrite",
+      ticketUrl: "https://www.thelemonstand.sg/shows",
+      btnText: "购票",
+      sortDate: "2026-04-29",
+      active: true
     }
+
   ],
 
   // ════════════════════════════════════════════════
