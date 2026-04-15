@@ -97,6 +97,7 @@
     .card-tag { font-size: 11px; padding: 2px 8px; border-radius: 20px; background: #f0ece6; color: #666; }
     .card-footer { border-top: 1px solid var(--border); padding-top: 12px; display: flex; align-items: flex-start; gap: 6px; }
     .card-addr { font-size: 12px; color: var(--text-light); flex: 1; }
+    .badge-updated { position: absolute; top: 12px; right: 12px; background: rgba(16,185,129,0.92); color: white; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px; letter-spacing: 0.3px; backdrop-filter: blur(4px); }
 
     /* 高端餐厅特别样式 */
     .food-card.finedining-card { border: 1.5px solid rgba(184,134,11,0.3); }
@@ -208,8 +209,8 @@
       </div>
       <div class="filter-bar">
         <span style="font-size:12px;color:#999;">排序：</span>
-        <button class="filter-btn active" onclick="setFoodSort('rating', this)">⭐ 评分优先</button>
-        <button class="filter-btn" onclick="setFoodSort('newest', this)">🆕 最新开业</button>
+        <button class="filter-btn" onclick="setFoodSort('rating', this)">⭐ 评分优先</button>
+        <button class="filter-btn active" onclick="setFoodSort('newest', this)">🆕 最新优先</button>
       </div>
     </div>
 
@@ -274,7 +275,7 @@
 // ══════════════════════════════════════════════════
 const state = {
   foodFilter: 'all',
-  foodSort: 'rating',
+  foodSort: 'newest',
   eventsFilter: 'all'
 };
 
@@ -308,12 +309,16 @@ function renderFoodCard(r) {
   const stars = renderStars(r.rating);
   const mapsUrl = r.mapsUrl ||
     `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + ' ' + r.address + ' Singapore')}`;
+  // 判断是否为"本月新增"：openDate 的年月 >= lastUpdated 同月
+  const lastUpdatedMonth = (SGLIVING_DATA.meta.lastUpdated || '').slice(0, 7);
+  const isRecentlyAdded = r.openDate && r.openDate >= lastUpdatedMonth;
   return `
     <div class="food-card${isFineDining ? ' finedining-card' : ''}"
          onclick="window.open('${mapsUrl}','_blank')"
          title="点击在 Google 地图中查看">
       <div class="card-img" style="background:${r.bgGradient};">${r.emoji}</div>
       <div class="card-badge badge-${r.badge}">${r.badgeText}</div>
+      ${isRecentlyAdded ? '<div class="badge-updated">✨ 本月新增</div>' : ''}
       <div class="card-body">
         <div class="card-name">${r.name}</div>
         <div class="card-cat"><span>${r.catLabel}</span><span>${r.catDesc}</span></div>
