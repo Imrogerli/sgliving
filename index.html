@@ -98,6 +98,9 @@
     .card-footer { border-top: 1px solid var(--border); padding-top: 12px; display: flex; align-items: flex-start; gap: 6px; }
     .card-addr { font-size: 12px; color: var(--text-light); flex: 1; }
     .badge-updated { position: absolute; top: 12px; right: 12px; background: rgba(16,185,129,0.92); color: white; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px; letter-spacing: 0.3px; backdrop-filter: blur(4px); }
+    .card-dist { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; color: var(--blue); background: rgba(37,99,235,0.08); border-radius: 12px; padding: 2px 8px; white-space: nowrap; }
+    .filter-btn.locating { opacity: 0.65; cursor: wait; }
+    .filter-btn.locating::after { content: '…'; }
 
     /* 高端餐厅特别样式 */
     .food-card.finedining-card { border: 1.5px solid rgba(184,134,11,0.3); }
@@ -211,6 +214,7 @@
         <span style="font-size:12px;color:#999;">排序：</span>
         <button class="filter-btn" onclick="setFoodSort('rating', this)">⭐ 评分优先</button>
         <button class="filter-btn active" onclick="setFoodSort('newest', this)">🆕 最新优先</button>
+        <button class="filter-btn" id="nearBtn" onclick="requestNearSort(this)">📍 最近优先</button>
       </div>
     </div>
 
@@ -276,7 +280,9 @@
 const state = {
   foodFilter: 'all',
   foodSort: 'newest',
-  eventsFilter: 'all'
+  eventsFilter: 'all',
+  userLat: null,
+  userLng: null
 };
 
 // ══════════════════════════════════════════════════
@@ -286,6 +292,57 @@ function renderStars(rating) {
   const full = Math.floor(rating);
   const half = (rating - full) >= 0.4 ? 1 : 0;
   return '★'.repeat(full) + (half ? '½' : '');
+}
+
+// Haversine 公式：计算两点间距离（km）
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2) ** 2 +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLng/2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+// 格式化距离显示
+function fmtDist(km) {
+  return km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`;
+}
+
+// 获取用户定位并切换到「最近优先」
+function requestNearSort(btn) {
+  if (!navigator.geolocation) {
+    alert('您的浏览器不支持定位功能');
+    return;
+  }
+  // 如果已有坐标，直接切换
+  if (state.userLat !== null) {
+    setFoodSort('nearest', btn);
+    return;
+  }
+  btn.classList.add('locating');
+  btn.disabled = true;
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      state.userLat = pos.coords.latitude;
+      state.userLng = pos.coords.longitude;
+      btn.classList.remove('locating');
+      btn.disabled = false;
+      setFoodSort('nearest', btn);
+    },
+    err => {
+      btn.classList.remove('locating');
+      btn.disabled = false;
+      const msg = {
+        1: '定位权限被拒绝，请在浏览器设置中允许位置访问。',
+        2: '无法获取位置信息，请检查网络或设备设置。',
+        3: '定位超时，请重试。'
+      }[err.code] || '定位失败，请重试。';
+      alert(msg);
+    },
+    { timeout: 8000, maximumAge: 300000 }
+  );
 }
 
 // ══════════════════════════════════════════════════
@@ -298,6 +355,12 @@ function getFilteredRestaurants() {
   }
   if (state.foodSort === 'rating') {
     items.sort((a, b) => b.rating - a.rating);
+  } else if (state.foodSort === 'nearest' && state.userLat !== null) {
+    items.sort((a, b) => {
+      const da = (a.lat && a.lng) ? haversine(state.userLat, state.userLng, a.lat, a.lng) : Infinity;
+      const db = (b.lat && b.lng) ? haversine(state.userLat, state.userLng, b.lat, b.lng) : Infinity;
+      return da - db;
+    });
   } else {
     items.sort((a, b) => b.openDate.localeCompare(a.openDate));
   }
@@ -332,7 +395,10 @@ function renderFoodCard(r) {
         <div class="card-tags">${r.tags.map(t => `<span class="card-tag">${t}</span>`).join('')}</div>
         <div class="card-footer">
           <div class="card-addr">📍 ${r.address}</div>
-          <span style="font-size:11px;color:var(--primary);font-weight:600;white-space:nowrap;">🗺️ 查看地图</span>
+          ${state.foodSort === 'nearest' && state.userLat !== null && r.lat && r.lng
+            ? `<span class="card-dist">📍 ${fmtDist(haversine(state.userLat, state.userLng, r.lat, r.lng))}</span>`
+            : `<span style="font-size:11px;color:var(--primary);font-weight:600;white-space:nowrap;">🗺️ 查看地图</span>`
+          }
         </div>
       </div>
     </div>`;

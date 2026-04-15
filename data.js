@@ -46,6 +46,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "地方中餐 / 莱佛士酒店",
       ratingDesc: "米其林推荐 · 五周年新菜单",
+      lat: 1.2946,
+      lng: 103.8527,
       active: true
     },
 
@@ -66,6 +68,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "法式当代 / 江振诚 · 莱佛士酒店",
       ratingDesc: "2026年新加坡最受期待顶级餐厅",
+      lat: 1.2946,
+      lng: 103.8527,
       active: true
     },
 
@@ -86,6 +90,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "意大利精品 / 圣瑞吉酒店",
       ratingDesc: "11大区意大利菜系全覆盖",
+      lat: 1.3063,
+      lng: 103.8202,
       active: true
     },
 
@@ -106,6 +112,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "浙江菜 / 精品江浙菜",
       ratingDesc: "新加坡首家江浙精细料理",
+      lat: 1.3094,
+      lng: 103.8254,
       active: true
     },
 
@@ -126,6 +134,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "福建菜 / 苏州名店",
       ratingDesc: "苏州名厨掌舵首家海外店",
+      lat: 1.3094,
+      lng: 103.8254,
       active: true
     },
 
@@ -146,6 +156,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "西班牙料理 / Chijmes庭院",
       ratingDesc: "西班牙传统 Tapas & Paella 专家",
+      lat: 1.2973,
+      lng: 103.8525,
       active: true
     },
 
@@ -166,6 +178,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "韩式烤肉 / 国家美术馆",
       ratingDesc: "艺术与高端韩牛烤肉完美融合",
+      lat: 1.2899,
+      lng: 103.8509,
       active: true
     },
 
@@ -188,6 +202,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "烧烤 / 中国No.1烤肉连锁",
       ratingDesc: "中国烤肉连锁第一品牌",
+      lat: 1.2999,
+      lng: 103.8563,
       active: true
     },
 
@@ -208,6 +224,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "四宫格火锅 / 中国连锁",
       ratingDesc: "四宫格锅底同时享用",
+      lat: 1.2861,
+      lng: 103.8281,
       active: true
     },
 
@@ -228,6 +246,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "砂锅 / 中国连锁",
       ratingDesc: "国内700+门店首进新加坡",
+      lat: 1.2993,
+      lng: 103.8565,
       active: true
     },
 
@@ -248,6 +268,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "日式意面 / 米其林6连载",
       ratingDesc: "东京米其林指南6年连续上榜",
+      lat: 1.2933,
+      lng: 103.8536,
       active: true
     },
 
@@ -268,6 +290,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "炸猪排 / 大阪道顿堀风味",
       ratingDesc: "大阪道顿堀米其林名店进驻",
+      lat: 1.3038,
+      lng: 103.8318,
       active: true
     },
 
@@ -288,6 +312,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "精品汉堡 / Scarpetta团队",
       ratingDesc: "30次迭代完美牛肉饼配方",
+      lat: 1.2799,
+      lng: 103.8463,
       active: true
     },
 
@@ -308,6 +334,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "亚洲家常菜 / The Meatmen Group",
       ratingDesc: "百万订阅YouTube频道首家实体店",
+      lat: 1.2835,
+      lng: 103.8519,
       active: true
     },
 
@@ -328,6 +356,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "云贵川 / 新派中餐",
       ratingDesc: "新加坡首家云贵川概念餐厅",
+      lat: 1.2884,
+      lng: 103.8462,
       active: true
     },
 
@@ -348,6 +378,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "老火靓汤 / 上海名店",
       ratingDesc: "上海名店进驻新加坡",
+      lat: 1.284,
+      lng: 103.851,
       active: true
     },
 
@@ -368,6 +400,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "杭州江浙菜 / 海外首店",
       ratingDesc: "杭州人气品牌首次出海",
+      lat: 1.3063,
+      lng: 103.9062,
       active: true
     },
 
@@ -388,6 +422,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "福建菜 / 闽南海鲜",
       ratingDesc: "地道正宗闽南风味",
+      lat: 1.294,
+      lng: 103.8576,
       active: true
     },
 
@@ -408,6 +444,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "四川菜 / 日本米其林监制",
       ratingDesc: "2颗米其林星 · 顶级川菜殿堂",
+      lat: 1.304,
+      lng: 103.8335,
       active: true
     },
 
@@ -428,6 +466,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "一人食火锅 / 奶茶组合",
       ratingDesc: "国内1000+门店首进新加坡",
+      lat: 1.297,
+      lng: 103.8508,
       active: true
     },
 
@@ -448,6 +488,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "江户前寿司 / 日本米其林师傅",
       ratingDesc: "米其林大厨操刀 · 寿司从$1.99起",
+      lat: 1.2933,
+      lng: 103.8536,
       active: true
     },
 
@@ -470,6 +512,8 @@ const SGLIVING_DATA = {
       catLabel: "甜品饮料",
       catDesc: "奶茶 / 中国网红品牌",
       ratingDesc: "全球2000+门店",
+      lat: 1.3011,
+      lng: 103.8329,
       active: true
     },
 
@@ -490,6 +534,8 @@ const SGLIVING_DATA = {
       catLabel: "甜品饮料",
       catDesc: "酸奶 / 鲜果饮品",
       ratingDesc: "中国酸奶饮品巨头",
+      lat: 1.294,
+      lng: 103.8576,
       active: true
     },
 
@@ -510,6 +556,8 @@ const SGLIVING_DATA = {
       catLabel: "甜品饮料",
       catDesc: "港式甜品 / 老字号",
       ratingDesc: "60种甜品 · 本地必打卡",
+      lat: 1.2983,
+      lng: 103.856,
       active: true
     },
 
@@ -530,6 +578,8 @@ const SGLIVING_DATA = {
       catLabel: "甜品饮料",
       catDesc: "菲律宾甜品咖啡 / 海外首店",
       ratingDesc: "菲律宾国宝甜品品牌首家海外店",
+      lat: 1.2768,
+      lng: 103.844,
       active: true
     },
 
@@ -550,6 +600,8 @@ const SGLIVING_DATA = {
       catLabel: "甜品饮料",
       catDesc: "全日咖啡馆 / 新加坡植物园",
       ratingDesc: "PS.Cafe全新植物园旗舰概念店",
+      lat: 1.3138,
+      lng: 103.8159,
       active: true
     },
 
@@ -572,6 +624,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "四川菜 / 网红小馆",
       ratingDesc: "冒烤鸭一度断货",
+      lat: 1.2837,
+      lng: 103.8449,
       active: true
     },
 
@@ -592,6 +646,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "重庆小面 / 中国品牌",
       ratingDesc: "重庆麻辣风味",
+      lat: 1.3007,
+      lng: 103.8387,
       active: true
     },
 
@@ -612,6 +668,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "肉骨茶 / 新加坡国民美食",
       ratingDesc: "来新加坡必吃",
+      lat: 1.2858,
+      lng: 103.8449,
       active: true
     },
 
@@ -632,6 +690,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "美式炸鸡 / 全球最大连锁之一",
       ratingDesc: "美国最受欢迎炸鸡连锁",
+      lat: 1.2999,
+      lng: 103.8563,
       active: true
     },
 
@@ -652,6 +712,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "冲绳街头美食 / 日本风味",
       ratingDesc: "冲绳正宗风味轻食",
+      lat: 1.294,
+      lng: 103.8576,
       active: true
     },
 
@@ -672,6 +734,8 @@ const SGLIVING_DATA = {
       catLabel: "甜品饮料",
       catDesc: "明胶咖啡 / 24小时营业",
       ratingDesc: "新加坡首家24小时明胶咖啡馆",
+      lat: 1.2803,
+      lng: 103.8521,
       active: true
     },
 
@@ -692,6 +756,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "浙江菜 / 新达城购物中心",
       ratingDesc: "杭州人气国民品牌 · 东坡肉必点",
+      lat: 1.294,
+      lng: 103.8576,
       active: true
     },
 
@@ -712,6 +778,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "韩式参鸡汤 / 安祥山",
       ratingDesc: "12种草药汤底 · 松露参鸡汤限定",
+      lat: 1.2799,
+      lng: 103.8463,
       active: true
     },
 
@@ -732,6 +800,8 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "日式汉堡牛排 / 裕廊东 Westgate",
       ratingDesc: "热石桌边烤制 · 和牛系列必点",
+      lat: 1.3329,
+      lng: 103.7436,
       active: true
     },
 
@@ -752,6 +822,8 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "泰式早餐 / 全天供应",
       ratingDesc: "正宗泰式铁板蛋全天供应",
+      lat: 1.284,
+      lng: 103.851,
       active: true
     }
   ],
