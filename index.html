@@ -99,6 +99,8 @@
     .card-addr { font-size: 12px; color: var(--text-light); flex: 1; }
     .badge-updated { position: absolute; top: 12px; right: 12px; background: rgba(16,185,129,0.92); color: white; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px; letter-spacing: 0.3px; backdrop-filter: blur(4px); }
     .card-dist { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; color: var(--blue); background: rgba(37,99,235,0.08); border-radius: 12px; padding: 2px 8px; white-space: nowrap; }
+    .btn-chope { display: inline-flex; align-items: center; gap: 5px; margin-top: 10px; width: 100%; justify-content: center; padding: 8px 0; border-radius: 10px; background: linear-gradient(135deg,#e8533a,#ff6b4a); color: white; font-size: 13px; font-weight: 600; text-decoration: none; transition: opacity .2s; }
+    .btn-chope:hover { opacity: .85; }
     .filter-btn.locating { opacity: 0.65; cursor: wait; }
     .filter-btn.locating::after { content: '…'; }
 
@@ -275,6 +277,57 @@
 
 <script>
 // ══════════════════════════════════════════════════
+// 联盟营销配置（获得 ID 后填入此处即自动生效）
+// ══════════════════════════════════════════════════
+const AFFILIATE = {
+
+  // ① Klook — 活动/景点预订，佣金 5–6.5%
+  // 注册：https://affiliate.klook.com/home  或通过 Involve Asia
+  // 审批约 2 个工作日，获得 aid（数字 ID）后填入
+  klook: {
+    enabled: false,
+    aid: 'YOUR_KLOOK_AID',           // 示例：'123456'
+    wrap: url =>
+      `https://affiliate.klook.com/redirect?aid=${AFFILIATE.klook.aid}&aff_adid=&url=${encodeURIComponent(url)}`
+  },
+
+  // ② Ticketmaster — 演唱会/演出购票，佣金约 1%
+  // 注册：https://developer.ticketmaster.com/partners/distribution-partners/affiliate-sign-up/
+  // 通过 Impact 平台，获得专属链接前缀后填入 impactPrefix
+  ticketmaster: {
+    enabled: false,
+    impactPrefix: 'YOUR_IMPACT_PREFIX', // 示例：'https://goto.ticketmaster.sg/c/1234567'
+    wrap: url =>
+      `${AFFILIATE.ticketmaster.impactPrefix}?u=${encodeURIComponent(url)}`
+  },
+
+  // ③ Chope — 餐厅预订佣金
+  // 注册：https://www.chope.co/singapore-restaurants/pages/affiliateprogram
+  // 获得 affiliate_id 后填入
+  chope: {
+    enabled: false,
+    affiliateId: 'YOUR_CHOPE_ID',      // 示例：'sgliving2026'
+    // 使用方式：在餐厅对象中设 chopeSlug 字段，自动生成带佣金的预订链接
+    getUrl: slug =>
+      `https://www.chope.co/singapore-restaurants/restaurant/${slug}?ref=${AFFILIATE.chope.affiliateId}`
+  }
+};
+
+// 将购票/预订链接自动包装为联盟链接（未启用则原链接透传）
+function wrapTicketUrl(url) {
+  if (!url) return '#';
+  // Ticketmaster 链接 → Ticketmaster affiliate
+  if (AFFILIATE.ticketmaster.enabled && url.includes('ticketmaster.sg')) {
+    return AFFILIATE.ticketmaster.wrap(url);
+  }
+  // Klook 链接 → Klook affiliate
+  if (AFFILIATE.klook.enabled && url.includes('klook.com')) {
+    return AFFILIATE.klook.wrap(url);
+  }
+  return url;
+}
+
+// ══════════════════════════════════════════════════
 // 状态管理（无分页）
 // ══════════════════════════════════════════════════
 const state = {
@@ -403,6 +456,13 @@ function renderFoodCard(r) {
             : `<span style="font-size:11px;color:var(--primary);font-weight:600;white-space:nowrap;">🗺️ 查看地图</span>`
           }
         </div>
+        ${r.chopeSlug ? `
+        <a class="btn-chope"
+           href="${AFFILIATE.chope.enabled ? AFFILIATE.chope.getUrl(r.chopeSlug) : `https://www.chope.co/singapore-restaurants/restaurant/${r.chopeSlug}`}"
+           target="_blank"
+           onclick="event.stopPropagation()">
+          🍽️ 立即预订座位
+        </a>` : ''}
       </div>
     </div>`;
 }
@@ -468,7 +528,7 @@ function renderEventCard(e) {
       </div>
       <div class="event-right">
         <div class="event-price">${e.price}<small>${e.priceNote}</small></div>
-        <a href="${e.ticketUrl}" target="_blank" class="btn-ticket">${e.btnText || '购票'}</a>
+        <a href="${wrapTicketUrl(e.ticketUrl)}" target="_blank" class="btn-ticket">${e.btnText || '购票'}</a>
       </div>
     </div>`;
 }

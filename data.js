@@ -46,6 +46,7 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "地方中餐 / 莱佛士酒店",
       ratingDesc: "米其林推荐 · 五周年新菜单",
+      chopeSlug: "yi-by-jereme-leung",
       lat: 1.2946,
       lng: 103.8527,
       active: true
@@ -112,6 +113,7 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "浙江菜 / 精品江浙菜",
       ratingDesc: "新加坡首家江浙精细料理",
+      chopeSlug: "wenzhou-mansion",
       lat: 1.3094,
       lng: 103.8254,
       active: true
@@ -134,6 +136,7 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "福建菜 / 苏州名店",
       ratingDesc: "苏州名厨掌舵首家海外店",
+      chopeSlug: "ban-lan-hokkien-cuisine",
       lat: 1.3093,
       lng: 103.8255,
       active: true
@@ -444,6 +447,7 @@ const SGLIVING_DATA = {
       catLabel: "正餐",
       catDesc: "四川菜 / 日本米其林监制",
       ratingDesc: "2颗米其林星 · 顶级川菜殿堂",
+      chopeSlug: "shisen-hanten-chen-kentaro",
       lat: 1.304,
       lng: 103.8335,
       active: true
@@ -624,6 +628,7 @@ const SGLIVING_DATA = {
       catLabel: "小吃快食",
       catDesc: "四川菜 / 网红小馆",
       ratingDesc: "冒烤鸭一度断货",
+      chopeSlug: "numb",
       lat: 1.2771,
       lng: 103.8601,
       active: true
