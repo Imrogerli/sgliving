@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-04-11
- * 版本：2.1
+ * 最后更新：2026-04-16
+ * 版本：2.3
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-15",
-    version: "2.2",
+    lastUpdated: "2026-04-16",
+    version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -830,6 +830,50 @@ const SGLIVING_DATA = {
       lat: 1.278,
       lng: 103.845,
       active: true
+    },
+
+    {
+      id: "bari-bari-steak-j8",
+      name: "Bari Bari Steak（香港铁板扒）",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$24–55",
+      description: "来自香港的人气铁板扒连锁第二家新加坡分店落户 Junction 8！烧得滚烫的石锅铁板端上桌，牛肉在你面前滋滋作响、烤出完美焦边，配上日式黄芥末酱和特调酱汁，层次丰富。对战周（4月6–9日）限时 1-for-1 优惠已引爆队伍，从$23.90起，Bishan 居民的新宠地！",
+      tags: ["铁板牛扒", "香港品牌", "热石烤制"],
+      address: "Junction 8 Shopping Centre, 9 Bishan Place, Bishan",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#2c3e50,#e74c3c)",
+      catLabel: "正餐",
+      catDesc: "铁板牛扒 / 香港连锁",
+      ratingDesc: "香港人气铁板扒进驻碧山",
+      lat: 1.3505,
+      lng: 103.8484,
+      active: true
+    },
+
+    {
+      id: "douhua-tart",
+      name: "豆花挞 · 米其林师傅甜品工作室",
+      categories: ["dessert"],
+      rating: 4.8,
+      openDate: "2026-03",
+      price: "S$8–15",
+      description: "姐妹们！这家小众甜品已经在小红书炸裂了绝绝子！主理人魏美欣曾在多家米其林餐厅担任甜点主厨，把新加坡传统豆花做成精致法式挞的造型——软滑豆花填在酥脆挞壳里，配上黄糖糖浆和姜汁，一口下去中西融合、惊喜拉满！小红书已有8000+赞，想吃趁早去，限量供应容易踩空！",
+      tags: ["豆花挞", "米其林师傅", "中西融合甜品"],
+      address: "Tiong Bahru 区域（具体地址见小红书最新帖）",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍮",
+      bgGradient: "linear-gradient(135deg,#f9ca24,#f0932b)",
+      catLabel: "甜品饮料",
+      catDesc: "创意甜品 / 米其林师傅",
+      ratingDesc: "小红书8000+赞 · 限量供应",
+      lat: 1.286,
+      lng: 103.8279,
+      active: true
     }
   ],
 
@@ -898,20 +942,20 @@ const SGLIVING_DATA = {
       priority: "featured",
       featuredReason: "格莱美奖得主",
       month: "MAY",
-      day: "19",
-      dow: "周二",
+      day: "16",
+      dow: "周六",
       dateColor: "linear-gradient(135deg,#0984e3,#74b9ff)",
       typeLabel: "🎸 格莱美得主",
       typeColor: "#0984e3",
       description: "格莱美奖得主冰岛创作歌手 Laufey 亚洲巡演新加坡站！演绎新专辑《Goddess》《Promise》等温柔爵士流行曲目，深受全球乐迷追捧。票已售罄，关注候补票平台。",
       venue: "Singapore Indoor Stadium",
-      dateRange: "5月19日",
+      dateRange: "5月16日（周六）",
       ticketInfo: "⚠️ 票已售罄",
       price: "S$88–198",
       priceNote: "已售罄",
       ticketUrl: "https://www.ticketmaster.sg/search?q=Laufey+Singapore",
       btnText: "候补票",
-      sortDate: "2026-05-19",
+      sortDate: "2026-05-16",
       active: true
     },
 
@@ -1402,6 +1446,52 @@ const SGLIVING_DATA = {
       btnText: "查看场次",
       sortDate: "2026-04-30",
       active: true
+    },
+
+    {
+      id: "candlelight-hans-zimmer",
+      name: "Candlelight · 汉斯·季默经典曲目烛光音乐会",
+      type: "concert",
+      priority: "normal",
+      month: "APR",
+      day: "29",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#f9ca24,#e67e22)",
+      typeLabel: "🕯️ 烛光音乐会",
+      typeColor: "#e67e22",
+      description: "在 The Arts House 烛光围绕下，聆听弦乐四重奏现场演绎《狮子王》《加勒比海盗》《星际穿越》《盗梦空间》等汉斯·季默震撼电影配乐。票已几乎售罄，请抓紧候补！极致浪漫的约会之选。",
+      venue: "The Arts House, Old Parliament Lane",
+      dateRange: "4月29日",
+      ticketInfo: "⚠️ 即将售罄",
+      price: "S$48–88",
+      priceNote: "Fever / Candlelight",
+      ticketUrl: "https://feverup.com/en/singapore/candlelight",
+      btnText: "抢票",
+      sortDate: "2026-04-29",
+      active: true
+    },
+
+    {
+      id: "daniel-caesar-sg",
+      name: "Daniel Caesar · Son of Spergy Tour",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "16",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#2d3436,#74b9ff)",
+      typeLabel: "🎤 R&B 演唱会",
+      typeColor: "#2d3436",
+      description: "格莱美最佳 R&B 专辑得主 Daniel Caesar 全新「Son of Spergy」巡演新加坡站！演绎《Best Part》《Peaches》《Japanese Denim》等丝滑 R&B 名曲，温柔沙嗓现场感染力爆棚，是独特气质音乐人不可错过的演出！",
+      venue: "新加坡（具体场地待公布）",
+      dateRange: "5月16日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$88–188",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Daniel+Caesar+Singapore",
+      btnText: "购票",
+      sortDate: "2026-05-16",
+      active: true
     }
 
   ],
@@ -1635,6 +1725,36 @@ const SGLIVING_DATA = {
       dateRange: "每周开放（建议提前预约）",
       cost: "S$15–30/人",
       duration: "约2小时",
+      active: true
+    },
+
+    {
+      id: "temasek-shophouse-kids",
+      name: "Temasek Shophouse · 社区花园 & 攀岩墙",
+      icon: "🌱",
+      topGradient: "linear-gradient(90deg,#2d9a60,#55efc4)",
+      ageRange: "适合 5–12 岁",
+      description: "武吉士附近的 Temasek Shophouse 每周末化身亲子乐园！户外社区花园带孩子认识本地植物和可持续种植，室内还有互动攀岩墙挑战体力和协调性。适合喜欢户外和运动的孩子，免费参与！逛完旁边还有美食广场，非常适合一家人周末半日游。",
+      highlight: "攀岩+种植双体验，7-9岁孩子体力消耗足，锻炼手脚协调和探索精神，免费无压力",
+      location: "Temasek Shophouse, Bras Basah Road",
+      dateRange: "4月3日–5月10日（每周末）",
+      cost: "🆓 免费参与",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "bellygom-kids-changi",
+      name: "Bellygom 粉色巨熊 · 樟宜机场打卡",
+      icon: "🐻",
+      topGradient: "linear-gradient(90deg,#fd79a8,#fdcb6e)",
+      ageRange: "适合 3–10 岁",
+      description: "7米高的粉色 Bellygom 巨熊矗立在樟宜机场T3！孩子们可以与这只来自韩国的超萌角色拍照打卡，旁边还有美食小摊和互动游戏区，顺便体验新加坡世界最佳机场内的探索乐趣。完全免费入场，雨天也超适合！",
+      highlight: "免费！7米巨熊视觉冲击感超强，孩子打卡照片极好拍，顺便感受樟宜机场的精彩，小朋友疯狂喜欢！",
+      location: "Changi Airport Terminal 3",
+      dateRange: "持续至5月3日",
+      cost: "🆓 免费入场",
+      duration: "约1小时",
       active: true
     }
   ]
