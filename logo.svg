@@ -6,25 +6,54 @@
     </linearGradient>
   </defs>
 
-  <!-- 图标背景 -->
+  <!-- 图标背景 (44×44 圆角方块) -->
   <rect x="0" y="2" width="44" height="44" rx="10" fill="url(#icong)"/>
 
-  <!-- 简化狮子耳朵 -->
-  <path d="M9 16 Q11 10 13 15" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1.8" stroke-linecap="round"/>
-  <path d="M31 15 Q33 10 35 16" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- 水柱 (蓝色水滴，从头顶喷出) -->
+  <ellipse cx="22" cy="6"   rx="2"   ry="3.5" fill="rgba(130,215,255,0.92)"/>
+  <ellipse cx="17.5" cy="9" rx="1.5" ry="2.6" fill="rgba(130,215,255,0.75)"/>
+  <ellipse cx="26.5" cy="9" rx="1.5" ry="2.6" fill="rgba(130,215,255,0.75)"/>
 
-  <!-- 狮字 -->
-  <text x="22" y="34" text-anchor="middle" fill="white"
-    font-family="'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif"
-    font-size="20" font-weight="700">狮</text>
+  <!-- 鬃毛 (淡色大圆，在头部后方) -->
+  <circle cx="22" cy="22" r="11.5" fill="rgba(255,220,155,0.38)"/>
+
+  <!-- 鱼尾巴 -->
+  <path d="M 13 28.5 Q 10 36 12 42.5 Q 16.5 40 22 41 Q 27.5 40 32 42.5 Q 34 36 31 28.5 Q 28 31.5 22 32 Q 16 31.5 13 28.5 Z" fill="white" opacity="0.93"/>
+
+  <!-- 鳞纹装饰 -->
+  <path d="M 15 33.5 Q 22 35.5 29 33.5" fill="none" stroke="rgba(232,83,58,0.18)" stroke-width="0.8"/>
+
+  <!-- 头部 -->
+  <circle cx="22" cy="22" r="10.5" fill="white"/>
+
+  <!-- 耳朵 (狮子耳) -->
+  <path d="M 13 16 Q 10.5 11 15 13.5" fill="none" stroke="rgba(255,205,140,0.95)" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M 31 16 Q 33.5 11 29 13.5" fill="none" stroke="rgba(255,205,140,0.95)" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- 眼睛 -->
+  <circle cx="18" cy="20.5" r="2.3" fill="#c0392b"/>
+  <circle cx="26" cy="20.5" r="2.3" fill="#c0392b"/>
+  <!-- 眼白高光 -->
+  <circle cx="18.85" cy="19.6" r="0.9" fill="white"/>
+  <circle cx="26.85" cy="19.6" r="0.9" fill="white"/>
+
+  <!-- 腮红 -->
+  <ellipse cx="15" cy="24" rx="2.6" ry="1.5" fill="rgba(255,120,90,0.22)"/>
+  <ellipse cx="29" cy="24" rx="2.6" ry="1.5" fill="rgba(255,120,90,0.22)"/>
+
+  <!-- 鼻子 -->
+  <ellipse cx="22" cy="24" rx="1.4" ry="0.95" fill="#c0392b" opacity="0.48"/>
+
+  <!-- 嘴 (微笑) -->
+  <path d="M 19 26 Q 22 28 25 26" fill="none" stroke="#c0392b" stroke-width="1" stroke-linecap="round" opacity="0.55"/>
 
   <!-- 主标题 -->
-  <text x="58" y="23" fill="white"
+  <text x="54" y="23" fill="white"
     font-family="'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif"
     font-size="17" font-weight="700" letter-spacing="1">狮城生活圈</text>
 
   <!-- 副标题 -->
-  <text x="59" y="38" fill="rgba(255,255,255,0.60)"
+  <text x="55" y="38" fill="rgba(255,255,255,0.60)"
     font-family="'PingFang SC','Noto Sans SC',Arial,sans-serif"
     font-size="11" letter-spacing="0.3">Singapore Living Guide</text>
 </svg>
