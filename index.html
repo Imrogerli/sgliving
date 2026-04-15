@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>狮城生活圈 · 新加坡本地生活指南</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="favicon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <style>
@@ -31,8 +34,7 @@
     .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 0; position: relative; overflow: hidden; }
     .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
     .hero-inner { max-width: 1100px; margin: 0 auto; padding: 48px 24px 36px; position: relative; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(232,83,58,0.2); border: 1px solid rgba(232,83,58,0.4); color: #ff9d8a; font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
-    .hero-badge::before { content: '🦁'; }
+    .hero-logo { display: block; margin-bottom: 20px; height: 44px; width: auto; }
     .hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 700; margin-bottom: 10px; letter-spacing: -0.5px; }
     .hero h1 span { color: var(--primary); }
     .hero p { font-size: 16px; color: rgba(255,255,255,0.65); max-width: 500px; margin-bottom: 24px; }
@@ -45,6 +47,8 @@
     .nav-tabs { background: var(--secondary); border-bottom: 1px solid rgba(255,255,255,0.08); position: sticky; top: 0; z-index: 100; }
     .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
     .nav-inner::-webkit-scrollbar { display:none; }
+    .nav-logo { height: 26px; width: auto; padding: 12px 16px 12px 20px; display: flex; align-items: center; flex-shrink: 0; }
+    .nav-logo img { height: 26px; }
     .nav-tab { padding: 16px 24px; color: rgba(255,255,255,0.55); font-size: 14px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; display: flex; align-items: center; gap: 8px; text-decoration: none; }
     .nav-tab:hover { color: rgba(255,255,255,0.85); border-bottom-color: rgba(255,255,255,0.3); }
     .nav-tab.active { color: white; border-bottom-color: var(--primary); }
@@ -178,7 +182,7 @@
 <!-- ── HERO ── -->
 <header class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">狮城生活圈 · Singapore Living Guide</div>
+    <img src="logo.svg" alt="狮城生活圈" class="hero-logo">
     <h1>新加坡<span>本地生活</span>指南</h1>
     <p>精选美食 · 热门活动 · 亲子周末，专为在新加坡的中国家庭打造</p>
     <div class="update-bar">
@@ -193,6 +197,7 @@
 <!-- ── STICKY NAV ── -->
 <nav class="nav-tabs">
   <div class="nav-inner">
+    <div class="nav-logo"><img src="favicon.svg" alt="狮城生活圈"></div>
     <a class="nav-tab" href="#food">🍜 美食推荐 <span class="tab-count" id="foodTabCount">-</span></a>
     <a class="nav-tab" href="#events">🎪 近期活动 <span class="tab-count" id="eventsTabCount">-</span></a>
     <a class="nav-tab" href="#family">👨‍👩‍👧 亲子活动 <span class="tab-count" id="familyTabCount">-</span></a>

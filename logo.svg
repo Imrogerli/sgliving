@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48">
+  <defs>
+    <linearGradient id="icong" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8533a"/>
+      <stop offset="100%" stop-color="#f4a261"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 图标背景 -->
+  <rect x="0" y="2" width="44" height="44" rx="10" fill="url(#icong)"/>
+
+  <!-- 简化狮子耳朵 -->
+  <path d="M9 16 Q11 10 13 15" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M31 15 Q33 10 35 16" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- 狮字 -->
+  <text x="22" y="34" text-anchor="middle" fill="white"
+    font-family="'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif"
+    font-size="20" font-weight="700">狮</text>
+
+  <!-- 主标题 -->
+  <text x="58" y="23" fill="white"
+    font-family="'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif"
+    font-size="17" font-weight="700" letter-spacing="1">狮城生活圈</text>
+
+  <!-- 副标题 -->
+  <text x="59" y="38" fill="rgba(255,255,255,0.60)"
+    font-family="'PingFang SC','Noto Sans SC',Arial,sans-serif"
+    font-size="11" letter-spacing="0.3">Singapore Living Guide</text>
+</svg>
