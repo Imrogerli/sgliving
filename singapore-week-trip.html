@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新加坡一周休闲游</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C9A96E;
+            --gold-light: #E8D5B0;
+            --dark: #1A1A2E;
+            --dark-soft: #2D2D44;
+            --cream: #FFF9F0;
+            --cream-dark: #F5EDE0;
+            --text: #3A3A3A;
+            --text-light: #6B6B6B;
+            --white: #FFFFFF;
+            --shadow: 0 8px 32px rgba(0,0,0,0.08);
+            --shadow-hover: 0 16px 48px rgba(0,0,0,0.12);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1920&q=80') center/cover no-repeat;
+            opacity: 0.35;
+        }
+
+        .hero-content {
+            position: relative;
+            text-align: center;
+            color: var(--white);
+            padding: 2rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 24px;
+            border: 1px solid rgba(201,169,110,0.6);
+            border-radius: 30px;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--gold-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            font-size: 1.15rem;
+            font-weight: 300;
+            color: rgba(255,255,255,0.75);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 2;
+        }
+
+        .scroll-hint {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold-light);
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-hint svg { width: 24px; height: 24px; }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        /* ===== INTRO ===== */
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 100px 2rem;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .intro p {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            line-height: 2.2;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 3rem auto;
+        }
+
+        .divider span {
+            width: 60px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .divider-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        /* ===== TIPS BAR ===== */
+        .tips-bar {
+            background: var(--dark);
+            color: var(--white);
+            padding: 60px 2rem;
+        }
+
+        .tips-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .tip-item h4 {
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .tip-item p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
+            font-weight: 300;
+        }
+
+        /* ===== DAY CARDS ===== */
+        .days-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+        }
+
+        .day-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin-bottom: 80px;
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.4s ease;
+        }
+
+        .day-card:hover { box-shadow: var(--shadow-hover); }
+
+        .day-card:nth-child(even) { direction: rtl; }
+        .day-card:nth-child(even) > * { direction: ltr; }
+
+        .day-img {
+            position: relative;
+            min-height: 400px;
+            overflow: hidden;
+        }
+
+        .day-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .day-card:hover .day-img img { transform: scale(1.05); }
+
+        .day-number {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            background: rgba(26,26,46,0.85);
+            backdrop-filter: blur(10px);
+            color: var(--gold-light);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            font-weight: 500;
+            z-index: 2;
+        }
+
+        .day-card:nth-child(even) .day-number {
+            left: auto;
+            right: 24px;
+        }
+
+        .day-content {
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .day-theme {
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .day-content h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .day-content p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            line-height: 2;
+        }
+
+        .day-schedule {
+            margin-top: 20px;
+            border-top: 1px solid var(--cream-dark);
+            padding-top: 20px;
+        }
+
+        .schedule-item {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 14px;
+            align-items: baseline;
+        }
+
+        .schedule-time {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--gold);
+            min-width: 48px;
+            letter-spacing: 1px;
+        }
+
+        .schedule-desc {
+            font-size: 0.9rem;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .highlight {
+            display: inline;
+            background: linear-gradient(transparent 60%, var(--gold-light) 60%);
+            font-weight: 500;
+        }
+
+        /* ===== NOTES ===== */
+        .notes-section {
+            background: var(--dark);
+            padding: 80px 2rem;
+            color: var(--white);
+        }
+
+        .notes-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .notes-inner h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.8rem;
+            color: var(--gold-light);
+            margin-bottom: 3rem;
+        }
+
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .note-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .note-card h4 {
+            font-size: 0.95rem;
+            color: var(--gold-light);
+            margin-bottom: 10px;
+        }
+
+        .note-card p {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.8;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 40px 2rem;
+            background: var(--cream);
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .day-card,
+            .day-card:nth-child(even) {
+                grid-template-columns: 1fr;
+                direction: ltr;
+            }
+
+            .day-card:nth-child(even) .day-number {
+                left: 24px;
+                right: auto;
+            }
+
+            .day-img { min-height: 260px; }
+
+            .day-content { padding: 32px 24px; }
+
+            .hero { min-height: 600px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">Singapore · 7 Days</div>
+        <h1>新加坡一周休闲游</h1>
+        <p class="hero-sub">
+            为岳父岳母精心定制的慢节奏旅行方案<br>
+            每天只去一两个地方，不赶路、不排队、不疲惫
+        </p>
+        <div class="scroll-hint">
+            <span>向下探索</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="intro">
+    <h2>悠然七日，尽享狮城</h2>
+    <p>
+        新加坡虽小，却处处精彩。这份行程专为长辈设计——<br>
+        每天安排充裕，中午可以回酒店休息，<br>
+        尽量选择室内有空调的场所，避开正午暴晒。<br>
+        让每一天都舒适自在，留下美好回忆。
+    </p>
+    <div class="divider">
+        <span></span>
+        <div class="divider-dot"></div>
+        <span></span>
+    </div>
+</section>
+
+<!-- ===== TIPS BAR ===== -->
+<section class="tips-bar">
+    <div class="tips-grid">
+        <div class="tip-item">
+            <h4>气候</h4>
+            <p>全年 28-32°C，紫外线强<br>建议带伞和薄外套</p>
+        </div>
+        <div class="tip-item">
+            <h4>语言</h4>
+            <p>华人占 75%<br>大部分场所可讲中文</p>
+        </div>
+        <div class="tip-item">
+            <h4>交通</h4>
+            <p>地铁 MRT + Grab 打车<br>覆盖所有景点</p>
+        </div>
+        <div class="tip-item">
+            <h4>美食</h4>
+            <p>Hawker Centre 熟食中心<br>平价美味，干净卫生</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== DAY CARDS ===== -->
+<section class="days-section">
+
+    <!-- DAY 1 -->
+    <div class="day-card">
+        <div class="day-img">
+            <div class="day-number">DAY 01</div>
+            <img src="https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=800&q=80" alt="Marina Bay Skyline">
+        </div>
+        <div class="day-content">
+            <div class="day-theme">抵达 · 初见狮城</div>
+            <h3>滨海湾夜色漫步</h3>
+            <p>第一天不赶景点，让长辈缓解旅途疲劳。傍晚去滨海湾散步，感受这座花园城市的第一印象。</p>
+            <div class="day-schedule">
+                <div class="schedule-item">
+                    <span class="schedule-time">白天</span>
+                    <span class="schedule-desc">抵达新加坡，入住酒店，充分休息</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">傍晚</span>
+                    <span class="schedule-desc"><span class="highlight">滨海湾金沙</span>一带散步，鱼尾狮公园拍照留念</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">晚餐</span>
+                    <span class="schedule-desc"><span class="highlight">老巴刹熟食中心</span> — 百年建筑里的沙嗲一条街</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">夜晚</span>
+                    <span class="schedule-desc">滨海湾 Spectra 灯光秀（免费，每晚 8:00）</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class="day-card">
+        <div class="day-img">
+            <div class="day-number">DAY 02</div>
+            <img src="https://images.unsplash.com/photo-1574227492706-f65b24c3688a?w=800&q=80" alt="Singapore Zoo">
+        </div>
+        <div class="day-content">
+            <div class="day-theme">自然 · 万达贵野生动物</div>
+            <h3>新加坡动物园</h3>
+            <p>全球最佳雨林动物园，开放式设计让动物自由活动。园内提供<span class="highlight">免费导览车</span>，35 分钟穿越七大栖息地，老人家不用走太多路也能尽览全园。</p>
+            <div class="day-schedule">
+                <div class="schedule-item">
+                    <span class="schedule-time">上午</span>
+                    <span class="schedule-desc"><span class="highlight">新加坡动物园</span>（8:30 开园）— 乘导览车游览，看红毛猩猩自由早餐秀</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">午餐</span>
+                    <span class="schedule-desc">园内 Ah Meng 餐厅，边吃边看动物</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">下午</span>
+                    <span class="schedule-desc">回酒店午休，避开午后高温</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">傍晚</span>
+                    <span class="schedule-desc">可选：<span class="highlight">河川生态园</span>（River Wonders）就在隔壁，轻松游览</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">晚餐</span>
+                    <span class="schedule-desc">酒店附近觅食，早点休息</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 3 -->
+    <div class="day-card">
+        <div class="day-img">
+            <div class="day-number">DAY 03</div>
+            <img src="https://images.unsplash.com/photo-1506351421178-63b52a2d2562?w=800&q=80" alt="Chinatown Singapore">
+        </div>
+        <div class="day-content">
+            <div class="day-theme">文化 · 华人历史</div>
+            <h3>牛车水与国家博物馆</h3>
+            <p>上午逛华人街区，感受南洋华侨的历史痕迹。下午参观国家博物馆，2026 年新展 "Once Upon a Tide" 讲述新加坡 700 年故事。</p>
+            <div class="day-schedule">
+                <div class="schedule-item">
+                    <span class="schedule-time">上午</span>
+                    <span class="schedule-desc"><span class="highlight">牛车水</span> — 佛牙寺、老街巷弄，买点零食小吃</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">午餐</span>
+                    <span class="schedule-desc"><span class="highlight">麦士威熟食中心</span> — 天天海南鸡饭、真真粥品</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">下午</span>
+                    <span class="schedule-desc">回酒店午休</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">傍晚</span>
+                    <span class="schedule-desc"><span class="highlight">新加坡国家博物馆</span> — 馆内有空调，舒适惬意</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 4 -->
+    <div class="day-card">
+        <div class="day-img">
+            <div class="day-number">DAY 04</div>
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80" alt="Gardens by the Bay">
+        </div>
+        <div class="day-content">
+            <div class="day-theme">园林 · 未来花园</div>
+            <h3>滨海湾花园</h3>
+            <p>两大温室 <span class="highlight">花穹</span> 和 <span class="highlight">云雾林</span> 是全程最适合长辈的景点——室内凉爽、花卉繁盛、步道平缓，可以慢慢欣赏。</p>
+            <div class="day-schedule">
+                <div class="schedule-item">
+                    <span class="schedule-time">上午</span>
+                    <span class="schedule-desc"><span class="highlight">滨海湾花园</span> — 花穹 + 云雾林，室内空调舒适</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">午餐</span>
+                    <span class="schedule-desc">金沙商城美食广场，中西餐选择丰富</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">下午</span>
+                    <span class="schedule-desc">金沙购物城逛逛，或空中花园观景台俯瞰全城</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">晚餐</span>
+                    <span class="schedule-desc"><span class="highlight">松发肉骨茶</span>（克拉码头店）— 经典南洋味道</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 5 -->
+    <div class="day-card">
+        <div class="day-img">
+            <div class="day-number">DAY 05</div>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80" alt="Botanic Gardens">
+        </div>
+        <div class="day-content">
+            <div class="day-theme">绿荫 · 世界遗产</div>
+            <h3>植物园与乌节路</h3>
+            <p>新加坡植物园是 UNESCO 世界遗产，160 年历史的热带花园。早上凉快时漫步最惬意，之后到乌节路的大商场里吹着冷气慢慢逛。</p>
+            <div class="day-schedule">
+                <div class="schedule-item">
+                    <span class="schedule-time">上午</span>
+                    <span class="schedule-desc"><span class="highlight">新加坡植物园</span> — 免费入园，国家兰花园必看</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">午餐</span>
+                    <span class="schedule-desc">乌节路 ION Orchard 美食层</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">下午</span>
+                    <span class="schedule-desc"><span class="highlight">乌节路</span>购物休闲，累了在商场咖啡厅小憩</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">晚餐</span>
+                    <span class="schedule-desc"><span class="highlight">Newton 熟食中心</span> — 海鲜烧烤、炒粿条、萝卜糕</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 6 -->
+    <div class="day-card">
+        <div class="day-img">
+            <div class="day-number">DAY 06</div>
+            <img src="https://images.unsplash.com/photo-1444459094717-a39f1e3e0903?w=800&q=80" alt="Sentosa Island">
+        </div>
+        <div class="day-content">
+            <div class="day-theme">海岛 · 悠闲一日</div>
+            <h3>圣淘沙海洋馆与海滩</h3>
+            <p>S.E.A. 海洋馆是全球最大海洋馆之一，室内凉爽，慢慢看很惬意。下午到巴拉湾海滩散步，走到亚洲大陆最南端打卡。</p>
+            <div class="day-schedule">
+                <div class="schedule-item">
+                    <span class="schedule-time">上午</span>
+                    <span class="schedule-desc">圣淘沙捷运上岛 → <span class="highlight">S.E.A. 海洋馆</span></span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">午餐</span>
+                    <span class="schedule-desc">名胜世界马来西亚美食街</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">下午</span>
+                    <span class="schedule-desc"><span class="highlight">巴拉湾海滩</span>散步，亚洲最南端拍照留念</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">傍晚</span>
+                    <span class="schedule-desc"><span class="highlight">时光之翼烟花秀</span>（2026 全新升级版，7:40pm）</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DAY 7 -->
+    <div class="day-card">
+        <div class="day-img">
+            <div class="day-number">DAY 07</div>
+            <img src="https://images.unsplash.com/photo-1562602833-0f4ab2fc46e3?w=800&q=80" alt="Haji Lane colorful street">
+        </div>
+        <div class="day-content">
+            <div class="day-theme">多元 · 异域风情</div>
+            <h3>小印度、甘榜格南与克拉码头</h3>
+            <p>新加坡最迷人之处在于多元文化交融。上午体验印度和马来文化街区，傍晚在克拉码头河畔享用招牌辣椒螃蟹，为旅程画上完美句号。</p>
+            <div class="day-schedule">
+                <div class="schedule-item">
+                    <span class="schedule-time">上午</span>
+                    <span class="schedule-desc"><span class="highlight">小印度</span> — 竹脚中心吃印度煎饼 Roti Prata</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">中午</span>
+                    <span class="schedule-desc"><span class="highlight">甘榜格南</span> — 苏丹回教堂、<span class="highlight">哈芝巷</span>彩色涂鸦街拍照</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">下午</span>
+                    <span class="schedule-desc">回酒店午休 + 收拾行李</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="schedule-time">晚餐</span>
+                    <span class="schedule-desc"><span class="highlight">珍宝海鲜</span>（克拉码头）— 辣椒螃蟹告别宴，建议提前预约</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ===== NOTES ===== -->
+<section class="notes-section">
+    <div class="notes-inner">
+        <h2>温馨提示</h2>
+        <div class="notes-grid">
+            <div class="note-card">
+                <h4>防暑防晒</h4>
+                <p>户外活动安排在上午 10 点前或下午 4 点后，中午回酒店或去室内景点避暑。</p>
+            </div>
+            <div class="note-card">
+                <h4>随身补水</h4>
+                <p>新加坡湿热，老人家容易脱水，随身携带水壶，多喝水。</p>
+            </div>
+            <div class="note-card">
+                <h4>舒适穿着</h4>
+                <p>穿一双好走的鞋，随身带薄外套——商场和地铁冷气很足。</p>
+            </div>
+            <div class="note-card">
+                <h4>交通卡</h4>
+                <p>购买 Singapore Tourist Pass，地铁公交无限次乘坐，非常划算。</p>
+            </div>
+            <div class="note-card">
+                <h4>餐厅预约</h4>
+                <p>珍宝海鲜等热门餐厅建议提前 1-2 天在官网或 Google 预约。</p>
+            </div>
+            <div class="note-card">
+                <h4>常用药物</h4>
+                <p>老人常用药随身带齐。新加坡药房也方便购买基本药品。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p style="color: var(--gold); margin-bottom: 8px;">✦</p>
+    <p>新加坡一周休闲游方案 · 为家人定制</p>
+    <p style="margin-top: 4px; font-size: 0.8rem;">Singapore Week Trip · Crafted with Care</p>
+</footer>
+
+</body>
+</html>
