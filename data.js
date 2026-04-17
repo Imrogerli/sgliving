@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-16",
+    lastUpdated: "2026-04-17",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -874,6 +874,50 @@ const SGLIVING_DATA = {
       lat: 1.286,
       lng: 103.8279,
       active: true
+    },
+
+    {
+      id: "broth-and-beyond",
+      name: "Broth & Beyond 云南生态火锅",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$30–50",
+      description: "深藏在 Chijmes 庭院里的云南生态火锅，锅底每日新鲜熬制，全程不加味精！招牌「黑松露八菌汤」浓郁鲜香、后劲十足；「金耳鸡汤」用25种草本慢炖，暖胃又养生。单人锅底仅 $7.99 起，亦可多人共享。食材均来自云南高原直供，清爽又健康，是喜欢养生、不嗜辣朋友的完美选择。",
+      tags: ["云南火锅", "无MSG", "黑松露菌汤"],
+      address: "Chijmes, 30 Victoria Street",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#2ecc71,#27ae60)",
+      catLabel: "正餐",
+      catDesc: "云南生态火锅 / Chijmes",
+      ratingDesc: "无MSG养生锅底 · 日日新鲜熬制",
+      lat: 1.2973,
+      lng: 103.8525,
+      active: true
+    },
+
+    {
+      id: "error-404",
+      name: "Error 404 · 甜品工作室",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$12–22",
+      description: "姐妹们！Capitol Singapore 开了一家超绝中式甜品店，名字就叫「Error 404：Dessert Not Found」，主理人 Pang Kok Keong 可是有米其林背景的甜点大师！招牌是用芋泥做的「假华夫饼」，外脆内滑、造型超级骗人，端上来直接惊呼绝绝子！传统芋头配上法式技法，每道甜品都是可以发朋友圈的神仙颜值。吃完保证立刻发小红书！限量供应，建议工作日去排队避免扑空～",
+      tags: ["芋泥甜品", "米其林师傅", "打卡必备"],
+      address: "Capitol Singapore, 13 Stamford Road",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍡",
+      bgGradient: "linear-gradient(135deg,#a29bfe,#6c5ce7)",
+      catLabel: "甜品饮料",
+      catDesc: "中式创意甜品 / 米其林出品",
+      ratingDesc: "米其林甜点师打造 · 芋头艺术甜品",
+      lat: 1.2934,
+      lng: 103.8513,
+      active: true
     }
   ],
 
@@ -996,7 +1040,7 @@ const SGLIVING_DATA = {
       dateColor: "linear-gradient(135deg,#e8533a,#ff6b4a)",
       typeLabel: "🎪 市集嘉年华",
       typeColor: "#e8533a",
-      description: "新加坡最大创意市集全新升级！250+独立品牌、现场演出、儿童工作坊、ARTBOX Arcade 和复古游乐场。第二周末（4月17–20日）即将到来，错过第一波的朋友赶紧安排！门票仅 S$5 起。",
+      description: "新加坡最大创意市集全新升级！250+独立品牌、现场演出、儿童工作坊、ARTBOX Arcade 和复古游乐场。第二周末（4月17–20日）正在进行中，今明两天还有机会！每天12pm–11pm开放，门票仅 S$5 起。",
       venue: "Singapore Expo, Hall 3",
       dateRange: "4月17–20日（第二周末）12pm–11pm",
       ticketInfo: "⏰ 12pm–11pm",
@@ -1194,24 +1238,24 @@ const SGLIVING_DATA = {
 
     {
       id: "treasure-concert",
-      name: "TREASURE 新加坡演唱会",
+      name: "TREASURE · PULSE ON 世界巡演 新加坡站",
       type: "concert",
       priority: "normal",
       month: "MAY",
-      day: "16",
-      dow: "周六",
+      day: "03",
+      dow: "周日",
       dateColor: "linear-gradient(135deg,#6c5ce7,#a29bfe)",
       typeLabel: "🎤 K-POP 演唱会",
       typeColor: "#6c5ce7",
-      description: "韩国男团 TREASURE 新加坡演唱会，演绎最新专辑及经典曲目，升级的舞台制作、视觉效果和音乐编排，绝对是震撼现场！票务4月13日开售。",
+      description: "韩国男团 TREASURE「PULSE ON」世界巡演新加坡站！5月3日（周日）在新加坡室内体育馆震撼上演，演绎专辑《LOVE PULSE》及经典曲目，充满活力的舞台制作和现场表演令人心跳加速！票价 $178–368，现可在 Ticketmaster 购票。",
       venue: "Singapore Indoor Stadium",
-      dateRange: "5月16日",
-      ticketInfo: "🎫 4月13日开票",
-      price: "S$98–258",
+      dateRange: "5月3日（周日）",
+      ticketInfo: "🎫 Ticketmaster 有票",
+      price: "S$178–368",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg/search?q=TREASURE+Singapore+2026",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_treasure",
       btnText: "购票",
-      sortDate: "2026-05-16",
+      sortDate: "2026-05-03",
       active: true
     },
 
@@ -1492,6 +1536,75 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-05-16",
       active: true
+    },
+
+    {
+      id: "anson-seabra-sg",
+      name: "Anson Seabra · 新加坡演唱会",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "02",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#74b9ff,#0984e3)",
+      typeLabel: "🎤 流行演唱会",
+      typeColor: "#0984e3",
+      description: "美国创作歌手 Anson Seabra 新加坡演唱会！以温柔细腻的嗓音和充满感情的词曲著称，代表作《Broken》《Welcome to the Show》深受治愈系音乐爱好者喜爱。小而美的亲密场地演出，感受零距离现场音乐的温度。",
+      venue: "The Theatre at MediaCorp",
+      dateRange: "6月2日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$68–158",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Anson+Seabra+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-02",
+      active: true
+    },
+
+    {
+      id: "bus-thai-concert",
+      name: "BUS (บัส) 泰国男团 新加坡演唱会",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "05",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#00b894,#55efc4)",
+      typeLabel: "🎤 泰流演唱会",
+      typeColor: "#00b894",
+      description: "来自泰国的当红男孩团 BUS 首次新加坡演唱会！凭借甜美外型和抓耳流行曲目迅速圈粉东南亚，是泰流文化在新加坡升温的最佳证明。粉丝圈超活跃，入场氛围超嗨！",
+      venue: "The Star Theatre",
+      dateRange: "6月5日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$88–198",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=BUS+Thailand+Singapore+2026",
+      btnText: "购票",
+      sortDate: "2026-06-05",
+      active: true
+    },
+
+    {
+      id: "sheila-majid-sg",
+      name: "Sheila Majid · 经典爵士流行演唱会",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "06",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      typeLabel: "🎤 经典流行",
+      typeColor: "#e17055",
+      description: "马来西亚传奇天后 Sheila Majid 新加坡演唱会！被誉为「东南亚爵士皇后」，经典曲目《Antara Anyer dan Jakarta》《Sinaran》《Emosi》历经数十年仍令人动容。带父母一起来感受跨越世代的音乐魅力，是难得的高质量现场体验！",
+      venue: "Esplanade Concert Hall",
+      dateRange: "6月6日",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$68–178",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Sheila+Majid+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-06",
+      active: true
     }
 
   ],
@@ -1755,6 +1868,21 @@ const SGLIVING_DATA = {
       dateRange: "持续至5月3日",
       cost: "🆓 免费入场",
       duration: "约1小时",
+      active: true
+    },
+
+    {
+      id: "garden-of-senses-acm",
+      name: "Garden of Senses · 茶文化五感展 · 亚文博",
+      icon: "🍵",
+      topGradient: "linear-gradient(90deg,#2d9a60,#a29bfe)",
+      ageRange: "最适合 7–12 岁",
+      description: "亚洲文明博物馆正在举办超特别的茶文化多感官展览「Garden of Senses: A Tea Reverie」！六大感官体验区让孩子通过视觉、嗅觉、听觉和触觉认识东方茶文化。走进茶叶迷宫、亲手制作茶香包、聆听茶山自然声音，还有互动茶艺体验区。展览内容深度和趣味性兼具，是融合历史、文化、自然科学于一体的绝佳课外教育体验，而且室内全程冷气！",
+      highlight: "6大感官互动区，让7-9岁孩子从「听说」到「亲历」认识茶文化，学习东方传统，拓展中英双语知识，雨天室内首选",
+      location: "Asian Civilisations Museum, 1 Empress Place",
+      dateRange: "至6月7日",
+      cost: "S$10–20/人",
+      duration: "约1.5–2小时",
       active: true
     }
   ]
