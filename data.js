@@ -8,7 +8,7 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-04-16
+ * 最后更新：2026-04-20
  * 版本：2.3
  */
 
@@ -964,6 +964,73 @@ const SGLIVING_DATA = {
       lat: 1.4297,
       lng: 103.7986,
       active: true
+    },
+    // ── 4月20日新增 ──────────────────────────────
+
+    {
+      id: "aifokato",
+      name: "Aifokato · 意式冰淇淋咖啡",
+      categories: ["dessert"],
+      rating: 4.4,
+      openDate: "2026-04",
+      price: "S$8–15",
+      description: "4月新开！从意大利汲取灵感的精品阿芙佳朵专门店落户 Telok Ayer！招牌自定义阿芙佳朵（$10）：浓缩咖啡浇在手工冰淇淋上，热与冷瞬间相遇、层次丰富。黑芝麻、玫瑰荔枝、班兰等本地风味之外还有黑松露杏仁特选款，CBD 白领下午茶新宠。装修简约精致，超适合打卡！",
+      tags: ["阿芙佳朵", "意式冰淇淋", "精品咖啡"],
+      address: "Telok Ayer, CBD",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🍨",
+      bgGradient: "linear-gradient(135deg,#2c3e50,#a29bfe)",
+      catLabel: "甜品饮料",
+      catDesc: "阿芙佳朵 / Telok Ayer",
+      ratingDesc: "意式阿芙佳朵专门店 · CBD新宠",
+      lat: 1.2799,
+      lng: 103.8463,
+      active: true
+    },
+
+    {
+      id: "sushiro-new-outlets",
+      name: "寿司郎 Sushiro 新增两家分店",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-04",
+      price: "S$2–15",
+      description: "日本最大回转寿司连锁「寿司郎 Sushiro」本月在新加坡新开两家分店！全球每年提供超过5亿份寿司，食材新鲜度严格把控。招牌金枪鱼、三文鱼、甜虾寿司从$2.30起，海胆、蟹肉等高端料理也能以回转价格享用，是家庭实惠聚餐的绝佳选择。分店开在两处购物中心，位置更方便了！",
+      tags: ["回转寿司", "日本连锁", "平价寿司"],
+      address: "新加坡（多分店，详见 Google Maps）",
+      badge: "new",
+      badgeText: "🆕 4月新开两家",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#e8f4f8,#2980b9)",
+      catLabel: "正餐",
+      catDesc: "日本回转寿司 / 全球最大连锁",
+      ratingDesc: "日本最大回转寿司连锁新增两家分店",
+      lat: 1.2933,
+      lng: 103.8536,
+      active: true
+    },
+
+    {
+      id: "nongjingji-sg",
+      name: "农耕记·湘菜 Nongjingji",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2023-06",
+      price: "S$25–50",
+      description: "姐妹们！小红书上新加坡华人圈最火湖南菜馆绝绝子！国内3000+门店的农耕记让我们在新加坡也能吃到正宗湘菜！必点：剁椒鱼头鲜辣爆汁、辣椒炒肉香到升天、紫苏炒田螺下饭神器三重奏。装修超有农家乐情怀，分量足性价比高。华人聚会必选，踩点成功率极高！避雷：周末翻台等位超长，强烈建议工作日午市来～",
+      tags: ["剁椒鱼头", "湘菜", "小红书爆款"],
+      address: "Chinatown Point, 133 New Bridge Road",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#c0392b,#e74c3c)",
+      catLabel: "正餐",
+      catDesc: "湖南菜 / 中国3000+门店",
+      ratingDesc: "华人圈超火湘菜 · 剁椒鱼头必点",
+      lat: 1.2825,
+      lng: 103.8434,
+      active: true
     }
   ],
 
@@ -1699,6 +1766,31 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-05-30",
       active: true
+    },
+    // ── 4月20日新增 ──────────────────────────────
+
+    {
+      id: "charlie-chocolate-factory-sg",
+      name: "查理与巧克力工厂音乐剧",
+      type: "exhibition",
+      priority: "featured",
+      featuredReason: "罗尔德·达尔经典 · 亲子必看",
+      month: "MAY",
+      day: "19",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      typeLabel: "🎭 亲子音乐剧",
+      typeColor: "#e17055",
+      description: "改编自罗尔德·达尔同名经典著作的全球热演音乐剧首登新加坡！将电影《欢乐糖果屋》经典歌曲与全新原创曲目融合，带观众走进 Willy Wonka 奇幻巧克力工厂。精美舞台特效、甜蜜惊喜不断，5月19日至6月7日在滨海金沙剧场上演，是适合全家的顶级观剧体验！",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "5月19日–6月7日",
+      ticketInfo: "🎫 SISTIC 购票",
+      price: "S$55–175",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Charlie+Chocolate+Factory+Singapore",
+      btnText: "购票",
+      sortDate: "2026-05-19",
+      active: true
     }
 
   ],
@@ -1992,6 +2084,37 @@ const SGLIVING_DATA = {
       dateRange: "至6月7日",
       cost: "S$10–20/人",
       duration: "约1.5–2小时",
+      active: true
+    },
+    // ── 4月20日新增 ──────────────────────────────
+
+    {
+      id: "charlie-chocolate-kids",
+      name: "查理与巧克力工厂 · 亲子音乐剧",
+      icon: "🍫",
+      topGradient: "linear-gradient(90deg,#fdcb6e,#e17055)",
+      ageRange: "适合 6–12 岁",
+      description: "百老汇经典音乐剧改编自罗尔德·达尔著作，Willy Wonka 奇幻巧克力工厂的故事在新加坡滨海金沙剧场惊艳登场！融合经典老电影主题曲与全新原创歌曲，舞台特效炫目，甜蜜惊喜连连。带7-9岁孩子感受顶级舞台艺术，是培养艺术欣赏力和激发英文阅读兴趣的绝佳机会！",
+      highlight: "全球经典IP改编，英文语境沉浸式体验，帮助7-9岁孩子爱上英文文学，观剧后可一起阅读原著互动！",
+      location: "Sands Theatre, Marina Bay Sands",
+      dateRange: "5月19日–6月7日",
+      cost: "S$55–175",
+      duration: "约2.5小时（含中场休息）",
+      active: true
+    },
+
+    {
+      id: "bird-society-paragon",
+      name: "新加坡鸟类协会 · 城市鸟鸣探索展",
+      icon: "🐦",
+      topGradient: "linear-gradient(90deg,#55efc4,#00b894)",
+      ageRange: "最适合 5–10 岁",
+      description: "新加坡鸟类协会在 Paragon 购物中心 L1 举办特别展览！沉浸式声景体验让孩子辨认隐藏在城市中的鸟叫，互动展板学习配对鸟鸣与鸟形，专业爱好者现场讲解本地常见鸟类习性。融入商场逛街行程，是最轻松的城市自然科学教育！",
+      highlight: "在购物中心完成的自然教育！7-9岁孩子通过听声辨鸟培养自然观察力，免费参与无压力，顺便逛商场一举两得",
+      location: "Paragon Shopping Centre, Level 1 Atrium",
+      dateRange: "4月9日–5月3日",
+      cost: "🆓 免费参与",
+      duration: "约30–60分钟",
       active: true
     }
   ]
