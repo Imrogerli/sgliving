@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-17",
+    lastUpdated: "2026-04-20",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -918,6 +918,52 @@ const SGLIVING_DATA = {
       lat: 1.2934,
       lng: 103.8513,
       active: true
+    },
+
+    // ── 4月新增 ──────────────────────────────────
+
+    {
+      id: "taste-ipoh",
+      name: "Taste Ipoh 怡保风味",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2026-04",
+      price: "S$10–20",
+      description: "来自马来西亚的正宗怡保美食首次在新加坡 Raffles City 开店！招牌怡保芽菜鸡（清蒸嫩鸡配脆豆芽）、怡保鸡汤米粉鲜甜清澈，以及招牌冻白咖啡。这里的水质好、鸡肉嫩，在新加坡能吃到这么地道的怡保味道，真的太难得了！很多马来西亚华人来了就一直回头。",
+      tags: ["怡保鸡米粉", "芽菜鸡", "白咖啡"],
+      address: "Raffles City Shopping Centre, 252 North Bridge Road",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#f6d365,#fda085)",
+      catLabel: "正餐",
+      catDesc: "怡保风味 / 马来西亚正宗",
+      ratingDesc: "正宗怡保芽菜鸡 · 城中美食进驻",
+      lat: 1.2933,
+      lng: 103.8536,
+      active: true
+    },
+
+    {
+      id: "house-plus-buffet",
+      name: "House Plus 24H 奢华自助餐",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-04",
+      price: "S$79–119",
+      description: "新加坡第一家24小时营业的精品自助餐厅！购买套票可全天随时进入享用海鲜自助（基围虾、生蚝、肉类铁板烧）、上海点心（小笼包、虾饺、蟹黄汤包）以及鱼子酱吧。S$79精品自助价格却有五星享受，适合好友聚餐、生日派对，深夜宵夜场也可以来！",
+      tags: ["24小时", "海鲜自助", "上海点心"],
+      address: "1 Venture Avenue, #01-02, Perennial Business City, Woodlands",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🦞",
+      bgGradient: "linear-gradient(135deg,#2c3e50,#4ca1af)",
+      catLabel: "正餐",
+      catDesc: "奢华自助 / 24小时营业",
+      ratingDesc: "24小时不打烊 · 海鲜+点心全有",
+      lat: 1.4297,
+      lng: 103.7986,
+      active: true
     }
   ],
 
@@ -1118,7 +1164,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=DAY6+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-04-18",
-      active: true
+      active: false
     },
 
     {
@@ -1371,7 +1417,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.palmtreemusicfestival.com",
       btnText: "购票",
       sortDate: "2026-04-18",
-      active: true
+      active: false
     },
 
     {
@@ -1604,6 +1650,54 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Sheila+Majid+Singapore",
       btnText: "购票",
       sortDate: "2026-06-06",
+      active: true
+    },
+
+    // ── 4月20日新增 ──────────────────────────────
+
+    {
+      id: "kraftwerk-multimedia-sg",
+      name: "Kraftwerk · Multimedia Tour 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "08",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#2d3436,#0984e3)",
+      typeLabel: "🎵 电子音乐传奇",
+      typeColor: "#0984e3",
+      description: "德国电子音乐先驱 Kraftwerk 标志性多媒体巡演登陆新加坡！《Autobahn》《Trans-Europe Express》《The Robots》等经典曲目配合震撼3D视觉投影，是电子音乐史上最具影响力的现场演出之一。推荐佩戴3D眼镜体验完整视听盛宴，乐迷和音乐爱好者不可错过！",
+      venue: "The Star Theatre",
+      dateRange: "5月8日（周五）8:00 PM",
+      ticketInfo: "🎫 Ticketmaster / Live Nation",
+      price: "S$138–248",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Kraftwerk+Singapore",
+      btnText: "购票",
+      sortDate: "2026-05-08",
+      active: true
+    },
+
+    {
+      id: "gmmtv-musicon-sg",
+      name: "GMMTV MUSICON 2026 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "30",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#00b894,#55efc4)",
+      typeLabel: "🎤 泰流演唱会",
+      typeColor: "#00b894",
+      description: "泰国最大娱乐公司 GMMTV 旗下明星大集结！BRIGHT & WIN、GULF & MAME、KHAOTUNG PAWIN、MEAN PHIRAVICH 等多位泰剧超人气演员兼歌手同台演出，两天连演（5月30–31日）。泰流文化在东南亚掀起热潮，是泰剧粉丝不可错过的年度盛事！",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "5月30–31日，两天连演",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$98–298",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=GMMTV+MUSICON+Singapore",
+      btnText: "购票",
+      sortDate: "2026-05-30",
       active: true
     }
 
@@ -1868,6 +1962,21 @@ const SGLIVING_DATA = {
       dateRange: "持续至5月3日",
       cost: "🆓 免费入场",
       duration: "约1小时",
+      active: true
+    },
+
+    {
+      id: "istana-open-house-labour",
+      name: "伊斯塔纳开放日 · 劳动节",
+      icon: "🏛️",
+      topGradient: "linear-gradient(90deg,#e8533a,#fdcb6e)",
+      ageRange: "适合全家（含7–12岁）",
+      description: "新加坡总统府「伊斯塔纳」一年仅数次向公众开放，劳动节是其中一次！孩子们可以踏入这座建于1869年的新古典主义建筑参观，欣赏精美花园、了解新加坡历史，还有现场表演和社区游乐区。免费入场，感受狮城历史与文化的难得机会！",
+      highlight: "免费入场！感受新加坡历史建筑，适合7-9岁孩子了解本地历史，配合学校课程的好机会，每年只有几次开放",
+      location: "Istana, 35 Orchard Road",
+      dateRange: "5月1日（劳动节）",
+      cost: "🆓 免费入场",
+      duration: "约1–2小时",
       active: true
     },
 
