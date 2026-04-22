@@ -1100,6 +1100,51 @@ const SGLIVING_DATA = {
       lng: 103.8434,
       active: true
     }
+
+    // ── 4月22日搜索新增 ──────────────────────────────
+
+    {
+      id: "lady-m-jewel",
+      name: "Lady M 精品甜品店 · Jewel 复开",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$10–28",
+      description: "纽约顶级 Lady M 蛋糕店重返 Jewel 樟宜机场！4月21日以全新44座精品咖啡馆形式重启。招牌千层蛋糕（Mille Crepes）每层薄如纸、奶油香滑细腻，同步推出新加坡限定班兰口味。乘机或逛 Jewel 的好时机打卡，在候机时享受纽约贵族甜品体验！",
+      tags: ["千层蛋糕", "纽约甜品", "Jewel复开"],
+      address: "Jewel Changi Airport, 78 Airport Boulevard",
+      badge: "new",
+      badgeText: "🆕 4月复开",
+      emoji: "🎂",
+      bgGradient: "linear-gradient(135deg,#f8d7a0,#e84393)",
+      catLabel: "甜品饮料",
+      catDesc: "千层蛋糕 / 纽约顶级甜品",
+      ratingDesc: "Jewel全新44座旗舰店 · 班兰限定新口味",
+      lat: 1.3592,
+      lng: 103.9892,
+      active: true
+    },
+
+    {
+      id: "the-beehive-sg",
+      name: "The Beehive 蜂巢蛋糕",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-01",
+      price: "S$12–25",
+      description: "姐妹们！小红书圈子里这家甜品shop已经火到一票难求了绝绝子！主理人魏美欣有正经米其林餐厅甜点师背景，招牌蜂巢蛋糕外观精致绝美、口感绵密蓬松，拍完朋友圈还舍不得吃那种！下午茶氛围感满分，环境温馨好拍，是新加坡小红书博主指定打卡地。建议平日来避开周末人潮，还有季节性限定款值得追！",
+      tags: ["蜂巢蛋糕", "米其林师傅", "下午茶"],
+      address: "新加坡（具体地址见小红书或 Google 搜索 The Beehive Singapore）",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍯",
+      bgGradient: "linear-gradient(135deg,#f9ca24,#fdcb6e)",
+      catLabel: "甜品饮料",
+      catDesc: "精品蛋糕 / 米其林甜点师出品",
+      ratingDesc: "小红书下午茶热门打卡 · 米其林级甜点师",
+      active: true
+    }
+
   ],
 
   // ════════════════════════════════════════════════
@@ -1910,6 +1955,31 @@ const SGLIVING_DATA = {
       active: true
     }
 
+
+
+    {
+      id: "earth-wind-fire-sg",
+      name: "Earth, Wind & Fire Experience · Al McKay",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "28",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#e8533a,#fdcb6e)",
+      typeLabel: "🎵 经典灵魂乐",
+      typeColor: "#e8533a",
+      description: "由 Earth, Wind & Fire 创始成员 Al McKay 领衔的全球巡演新加坡站！在 Capitol Theatre 演绎《September》《Boogie Wonderland》《Shining Star》等半世纪经典灵魂乐神曲。现场铜管乐团+弦乐团全编制演出，带父母一起来感受跨越世代的音乐魅力！",
+      venue: "Capitol Theatre",
+      dateRange: "5月28日（周四）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$88–188",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Earth+Wind+Fire+Singapore+2026",
+      btnText: "购票",
+      sortDate: "2026-05-28",
+      active: true
+    }
+
   ],
 
   // ════════════════════════════════════════════════
@@ -2266,5 +2336,21 @@ const SGLIVING_DATA = {
       duration: "约30–60分钟",
       active: true
     }
+,
+    {
+      id: "yachting-festival-2026",
+      name: "新加坡帆船节 · 亲子海洋探索",
+      icon: "⛵",
+      topGradient: "linear-gradient(90deg,#0984e3,#00b894)",
+      ageRange: "最适合 7–12 岁（14岁以下免费）",
+      description: "4月23–26日圣淘沙湾帆船节！14岁以下小朋友完全免费入场，可近距离欣赏豪华游艇和帆船，还能参与航海模拟区和海上安全教育工作坊。园区设有户外游乐场、水上活动摊位和美食区，是风光如画的家庭周末好去处。让孩子感受新加坡与海洋的深厚渊源！",
+      highlight: "14岁以下完全免费入场！近距离触摸真实帆船，体验航海互动，7-9岁孩子好奇心爆发的理想探索活动，圣淘沙海景超适合打卡！",
+      location: "ONE°15 Marina Sentosa Cove, Sentosa Island",
+      dateRange: "4月23–26日（周四至周日）",
+      cost: "🆓 14岁以下免费（成人票另计）",
+      duration: "约2–3小时",
+      active: true
+    }
+
   ]
 };
