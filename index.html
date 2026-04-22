@@ -738,14 +738,14 @@ window.addEventListener('scroll', updateNavActive, { passive: true });
 
     function makeItem(r) {
       const badgeText = r.badgeText || (r.badge ? (badgeMap[r.badge] || '') : '');
-      const parts = [];
-      parts.push('<span class="ticker-item" onclick="document.getElementById('food').scrollIntoView({behavior:'smooth'})">');
-      parts.push('<span class="ticker-emoji">' + (r.emoji || '🍴') + '</span>');
-      parts.push('<span class="ticker-name">' + r.name + '</span>');
-      if (badgeText) parts.push('<span class="ticker-badge">' + badgeText + '</span>');
-      parts.push('<span style="font-size:12px;opacity:.75;margin-left:2px">' + (r.price || '') + '</span>');
-      parts.push('</span><span class="ticker-sep"></span>');
-      return parts.join('');
+      const openTag = '<span class="ticker-item" onclick="document.getElementById(&#39;food&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">';
+      let s = openTag;
+      s += '<span class="ticker-emoji">' + (r.emoji || '🍴') + '</span>';
+      s += '<span class="ticker-name">' + r.name + '</span>';
+      if (badgeText) s += '<span class="ticker-badge">' + badgeText + '</span>';
+      s += '<span style="font-size:12px;opacity:.75;margin-left:2px">' + (r.price || '') + '</span>';
+      s += '</span><span class="ticker-sep"></span>';
+      return s;
     }
 
     const inner = items.map(makeItem).join('');
