@@ -175,6 +175,86 @@
       .cards-grid { grid-template-columns: 1fr; }
       .featured-ribbon { display: none; }
     }
+
+    /* ── FOOD TICKER BANNER ── */
+    .food-ticker {
+      background: linear-gradient(90deg, #e8533a 0%, #c0392b 100%);
+      color: white;
+      height: 44px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .food-ticker::before {
+      content: '🍽️ 最新美食';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 14px 0 16px;
+      background: rgba(0,0,0,0.25);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      z-index: 2;
+    }
+    .food-ticker::after {
+      content: '';
+      position: absolute;
+      left: 110px;
+      top: 0;
+      bottom: 0;
+      width: 32px;
+      background: linear-gradient(90deg, #c0392b, transparent);
+      z-index: 1;
+    }
+    .ticker-track {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      padding-left: 120px;
+      animation: ticker-scroll 40s linear infinite;
+      white-space: nowrap;
+      will-change: transform;
+    }
+    .ticker-track:hover { animation-play-state: paused; }
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 0 28px 0 0;
+      font-size: 13px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      flex-shrink: 0;
+    }
+    .ticker-item:hover { opacity: 0.85; text-decoration: underline; }
+    .ticker-emoji { font-size: 15px; }
+    .ticker-name { font-weight: 600; }
+    .ticker-badge {
+      font-size: 11px;
+      padding: 1px 7px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.22);
+      font-weight: 500;
+    }
+    .ticker-sep {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      margin-right: 28px;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -193,6 +273,14 @@
     </div>
   </div>
 </header>
+
+
+<!-- ── FOOD TICKER BANNER ── -->
+<div class="food-ticker" id="foodTicker">
+  <div class="ticker-track" id="tickerTrack">
+    <!-- 由 JS 动态生成 -->
+  </div>
+</div>
 
 <!-- ── STICKY NAV ── -->
 <nav class="nav-tabs">
@@ -635,6 +723,36 @@ window.addEventListener('scroll', updateNavActive, { passive: true });
   renderFood();
   renderEvents();
   renderFamily();
+
+  // 构建美食 ticker
+  (function buildTicker() {
+    const items = SGLIVING_DATA.restaurants
+      .filter(function(r) { return r.active; })
+      .sort(function(a, b) { return (b.openDate || '').localeCompare(a.openDate || ''); })
+      .slice(0, 16);
+
+    const badgeMap = {
+      new: '🆕 新开', hot: '🔥 热门', michelin: '⭐ 米其林',
+      trending: '📈 趋势', classic: '💯 经典', finedining: '🍾 精品'
+    };
+
+    function makeItem(r) {
+      const badgeText = r.badgeText || (r.badge ? (badgeMap[r.badge] || '') : '');
+      const parts = [];
+      parts.push('<span class="ticker-item" onclick="document.getElementById('food').scrollIntoView({behavior:'smooth'})">');
+      parts.push('<span class="ticker-emoji">' + (r.emoji || '🍴') + '</span>');
+      parts.push('<span class="ticker-name">' + r.name + '</span>');
+      if (badgeText) parts.push('<span class="ticker-badge">' + badgeText + '</span>');
+      parts.push('<span style="font-size:12px;opacity:.75;margin-left:2px">' + (r.price || '') + '</span>');
+      parts.push('</span><span class="ticker-sep"></span>');
+      return parts.join('');
+    }
+
+    const inner = items.map(makeItem).join('');
+    // 复制两份实现无缝循环
+    document.getElementById('tickerTrack').innerHTML = inner + inner;
+  })();
+
   updateNavActive();
 })();
 </script>
