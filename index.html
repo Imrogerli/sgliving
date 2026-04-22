@@ -217,7 +217,7 @@
       align-items: center;
       gap: 0;
       padding-left: 120px;
-      animation: ticker-scroll 40s linear infinite;
+      animation: ticker-scroll 75s linear infinite;
       white-space: nowrap;
       will-change: transform;
     }
@@ -726,10 +726,14 @@ window.addEventListener('scroll', updateNavActive, { passive: true });
 
   // 构建美食 ticker
   (function buildTicker() {
+    // 非美食内容黑名单（活动/体验类误入餐厅数组）
+    const nonFoodIds = ['lego-driving-experience', 'garden-of-senses-tea'];
+    // 按数组顺序倒序 = 最新录入的排最前（每日新增追加在末尾）
     const items = SGLIVING_DATA.restaurants
-      .filter(function(r) { return r.active; })
-      .sort(function(a, b) { return (b.openDate || '').localeCompare(a.openDate || ''); })
-      .slice(0, 16);
+      .filter(function(r) { return r.active && nonFoodIds.indexOf(r.id) === -1; })
+      .slice()
+      .reverse()
+      .slice(0, 18);
 
     const badgeMap = {
       new: '🆕 新开', hot: '🔥 热门', michelin: '⭐ 米其林',
