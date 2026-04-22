@@ -255,6 +255,18 @@
       margin-right: 28px;
       flex-shrink: 0;
     }
+
+    /* ── CARD HIGHLIGHT（banner点击跳转） ── */
+    @keyframes card-flash {
+      0%   { box-shadow: 0 0 0 3px var(--primary), 0 8px 32px rgba(232,83,58,0.4); transform: translateY(-6px) scale(1.02); }
+      60%  { box-shadow: 0 0 0 3px var(--primary), 0 8px 32px rgba(232,83,58,0.2); transform: translateY(-4px) scale(1.01); }
+      100% { box-shadow: var(--shadow); transform: translateY(0) scale(1); }
+    }
+    .food-card.highlight-flash {
+      animation: card-flash 1.4s ease-out forwards;
+      position: relative;
+      z-index: 10;
+    }
   </style>
 </head>
 <body>
@@ -514,6 +526,31 @@ function getFilteredRestaurants() {
   return items;
 }
 
+// ── 从 banner 点击跳转到指定卡片 ─────────────────────────────────────────
+function jumpToCard(id) {
+  // 重置过滤器为"全部"，确保目标卡片可见
+  document.querySelectorAll('.cat-tag').forEach(function(el) {
+    el.classList.toggle('active', el.textContent.trim().startsWith('全部'));
+  });
+  state.foodFilter = 'all';
+  renderFood();
+
+  // 等渲染完成后再滚动
+  setTimeout(function() {
+    const card = document.querySelector('.food-card[data-id="' + id + '"]');
+    if (!card) return;
+    // 先滚动 section
+    document.getElementById('food').scrollIntoView({ behavior: 'smooth' });
+    setTimeout(function() {
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      card.classList.remove('highlight-flash');
+      void card.offsetWidth; // reflow 触发重新播放
+      card.classList.add('highlight-flash');
+      setTimeout(function() { card.classList.remove('highlight-flash'); }, 1500);
+    }, 400);
+  }, 80);
+}
+
 function renderFoodCard(r) {
   const isFineDining = r.categories.includes('finedining');
   const stars = renderStars(r.rating);
@@ -526,7 +563,7 @@ function renderFoodCard(r) {
   const lastUpdatedMonth = (SGLIVING_DATA.meta.lastUpdated || '').slice(0, 7);
   const isRecentlyAdded = r.openDate && r.openDate >= lastUpdatedMonth;
   return `
-    <div class="food-card${isFineDining ? ' finedining-card' : ''}"
+    <div class="food-card${isFineDining ? ' finedining-card' : ''}" data-id="${r.id}"
          onclick="window.open('${mapsUrl}','_blank')"
          title="点击在 Google 地图中查看">
       <div class="card-img" style="background:${r.bgGradient};">${r.emoji}</div>
@@ -742,7 +779,8 @@ window.addEventListener('scroll', updateNavActive, { passive: true });
 
     function makeItem(r) {
       const badgeText = r.badgeText || (r.badge ? (badgeMap[r.badge] || '') : '');
-      const openTag = '<span class="ticker-item" onclick="document.getElementById(&#39;food&#39;).scrollIntoView({behavior:&#39;smooth&#39;})">';
+      const safeId = r.id.replace(/'/g, '');
+      const openTag = '<span class="ticker-item" onclick="jumpToCard(&#39;' + safeId + '&#39;)">';
       let s = openTag;
       s += '<span class="ticker-emoji">' + (r.emoji || '🍴') + '</span>';
       s += '<span class="ticker-name">' + r.name + '</span>';
