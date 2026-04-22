@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-04-20
+ * 最后更新：2026-04-22
  * 版本：2.3
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-20",
+    lastUpdated: "2026-04-22",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1011,6 +1011,74 @@ const SGLIVING_DATA = {
       active: true
     },
 
+    // ── 4月22日新增 ──────────────────────────────
+
+    {
+      id: "shu-da-xia",
+      name: "蜀大侠 Shu Da Xia 火锅",
+      categories: ["restaurant"],
+      rating: 4.8,
+      openDate: "2026-04",
+      price: "S$35–60",
+      description: "姐妹们注意了！中国Top10火锅之一「蜀大侠」正式登陆新加坡！选址 Tampines 1 非常方便，招牌汤底用牛油发酵整整100小时打底，麻辣度可自选，入口香气丰富、层次超足。锅底仅 $18–22 性价比超高！必点：爆汁毛肚、手打虾滑、黄金脆豆腐。国内已是排队名店，新加坡首站快去打卡，绝绝子！",
+      tags: ["四川火锅", "中国Top10", "麻辣鲜香", "小红书爆款"],
+      address: "Tampines 1, 10 Tampines Central 1, Singapore 529536",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#c0392b,#e74c3c)",
+      catLabel: "正餐",
+      catDesc: "四川火锅 / 中国Top10品牌",
+      ratingDesc: "中国Top10火锅 · 百小时发酵牛油锅底",
+      lat: 1.3525,
+      lng: 103.9446,
+      active: true
+    },
+
+    {
+      id: "lego-driving-experience",
+      name: "LEGO 驾驶梦想 · 超好玩互动体验",
+      categories: ["snack"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$20–30",
+      description: "孩子爱 LEGO，家长爱合影打卡！圣淘沙 HyperDrive 全新「LEGO 搭建梦想赛车」体验，搭好的积木赛车放上跑道测速，还有换轮计时赛！完成挑战可领独家小人仔。旁边连着卡丁车赛道，亲子全天不无聊，下午来个下午茶完美收官！",
+      tags: ["LEGO体验", "亲子互动", "圣淘沙"],
+      address: "HyperDrive, 1 Palawan Beach Walk, Sentosa",
+      badge: "new",
+      badgeText: "🆕 限时体验",
+      emoji: "🧱",
+      bgGradient: "linear-gradient(135deg,#e8533a,#fdcb6e)",
+      catLabel: "小吃快食",
+      catDesc: "LEGO 互动体验 / 圣淘沙",
+      ratingDesc: "搭积木赛车 · 独家小人仔奖励",
+      lat: 1.2501,
+      lng: 103.8219,
+      active: true
+    },
+
+    {
+      id: "garden-of-senses-tea",
+      name: "茶语·五感展 🍵 亚洲文明博物馆",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-03",
+      price: "S$10–20",
+      description: "不是在喝茶，是在「体验」茶！亚洲文明博物馆的「Garden of Senses: A Tea Reverie」用六大感官区重新诠释东方茶文化：嗅觉茶香迷宫、触觉茶叶工坊、视觉沉浸茶山、听觉茶山自然声景……每一区都让人想拍照发朋友圈。和孩子一起来，边玩边学茶知识，看完整个人都静下来了，强烈推荐！",
+      tags: ["茶文化展", "五感体验", "亲子教育"],
+      address: "Asian Civilisations Museum, 1 Empress Place, Singapore 179555",
+      badge: "trending",
+      badgeText: "🔥 趋势",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#2d9a60,#a29bfe)",
+      catLabel: "甜品饮料",
+      catDesc: "茶文化展览 / 亚洲文明博物馆",
+      ratingDesc: "六大感官体验区 · 东方茶文化沉浸展",
+      lat: 1.2893,
+      lng: 103.8508,
+      active: true
+    },
+
     {
       id: "nongjingji-sg",
       name: "农耕记·湘菜 Nongjingji",
@@ -1162,7 +1230,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.artboxsingapore.com",
       btnText: "了解详情",
       sortDate: "2026-04-17",
-      active: true
+      active: false
     },
 
     {
@@ -1769,6 +1837,55 @@ const SGLIVING_DATA = {
     },
     // ── 4月20日新增 ──────────────────────────────
 
+    // ── 4月22日新增 ──────────────────────────────
+
+    {
+      id: "hokkien-hits-concert-2026",
+      name: "Hokkien Hits Concert 2026 · 福建金曲演唱会",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "福建华人文化经典",
+      month: "MAY",
+      day: "16",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#e8533a,#fdcb6e)",
+      typeLabel: "🎤 华语演唱会",
+      typeColor: "#e8533a",
+      description: "2026年度新加坡福建华人文化演出年度盛事！两晚连演（5月16–17日），演绎《爱拼才会赢》《家后》《向前走》《感恩的心》等几代人心中的闽南语经典金曲。带父母长辈一起来，感受乡音情怀，全场大合唱气氛感人！也是了解新加坡华人文化根脉的绝佳机会。",
+      venue: "新加坡（具体场地待公布）",
+      dateRange: "5月16–17日，两晚连演",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$58–138",
+      priceNote: "SISTIC 售票",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Hokkien+Hits+Concert+2026",
+      btnText: "购票",
+      sortDate: "2026-05-16",
+      active: true
+    },
+
+    {
+      id: "vir-das-hey-stranger",
+      name: "Vir Das · Hey Stranger 喜剧专场",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "23",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#f9ca24,#f0932b)",
+      typeLabel: "🎭 英语脱口秀",
+      typeColor: "#f0932b",
+      description: "印度最著名英语脱口秀演员 Vir Das 全新「Hey Stranger」专场登陆新加坡！Netflix 特辑备受全球好评，以机智犀利的视角调侃文化差异和现代生活，笑点密集且充满思考深度。英语良好的观众强烈推荐，是5月最受期待的喜剧之夜！",
+      venue: "新加坡（具体场地待公布）",
+      dateRange: "5月23日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$68–138",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Vir+Das+Singapore+2026",
+      btnText: "购票",
+      sortDate: "2026-05-23",
+      active: true
+    },
+
     {
       id: "charlie-chocolate-factory-sg",
       name: "查理与巧克力工厂音乐剧",
@@ -1844,7 +1961,7 @@ const SGLIVING_DATA = {
       dateRange: "4月10–12日 & 17–20日（两个周末）",
       cost: "S$5–15",
       duration: "半天或全天",
-      active: true
+      active: false
     },
 
     {
@@ -2100,6 +2217,38 @@ const SGLIVING_DATA = {
       dateRange: "5月19日–6月7日",
       cost: "S$55–175",
       duration: "约2.5小时（含中场休息）",
+      active: true
+    },
+
+    // ── 4月22日新增 ──────────────────────────────
+
+    {
+      id: "tesla-junior-driving",
+      name: "迷你电动车 Junior Driving · 儿童驾驶体验",
+      icon: "🚗",
+      topGradient: "linear-gradient(90deg,#2d3436,#00b894)",
+      ageRange: "适合 3–9 岁",
+      description: "孩子们可以开上真实的迷你电动车上路啦！在专属小型驾驶赛道上体验红绿灯、转弯、停车场等真实交通场景，边玩边学基本交通规则。孩子穿上小小驾驶员制服拍照超帅！7-9岁孩子可独立驾驶，成就感满满。非常适合车迷小朋友，也是寓教于乐的亲子体验！可在 Klook 提前预约。",
+      highlight: "7-9岁可独立驾驶真实迷你电动车！学习交通规则于游戏中，成就感十足，拍照超好看，是新加坡独特亲子体验！",
+      location: "Sentosa / 新加坡指定地点（Klook 查询最新地点）",
+      dateRange: "定期开放（需提前在 Klook 预约）",
+      cost: "S$20–35/人",
+      duration: "约30–60分钟",
+      active: true
+    },
+
+    {
+      id: "bellygom-carnival-family",
+      name: "Bellygom 粉色巨熊嘉年华 · 亲子打卡",
+      icon: "🐻",
+      topGradient: "linear-gradient(90deg,#fd79a8,#fdcb6e)",
+      ageRange: "适合 3–10 岁",
+      description: "樟宜机场T3的7米高粉色 Bellygom 巨熊还在等你！以hawker摊档为主题的嘉年华，各种美食小摊、互动游戏、拍照打卡一应俱全。免费入场，活动持续至5月初，正好趁着周末带孩子顺便体验世界最佳机场的精彩！绝对不虚此行！",
+      highlight: "免费！超大IP打卡必拍，孩子超爱大型充气熊，顺带体验樟宜机场室内奇景，雨天完美选项",
+      location: "Changi Airport Terminal 3",
+      dateRange: "持续至5月3日",
+      cost: "🆓 免费入场",
+      duration: "约1–2小时",
       active: true
     },
 
