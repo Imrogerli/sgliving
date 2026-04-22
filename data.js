@@ -1099,7 +1099,7 @@ const SGLIVING_DATA = {
       lat: 1.2825,
       lng: 103.8434,
       active: true
-    }
+    },
 
     // ── 4月22日搜索新增 ──────────────────────────────
 
@@ -1953,9 +1953,7 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-05-19",
       active: true
-    }
-
-
+    },
 
     {
       id: "earth-wind-fire-sg",
