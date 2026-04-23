@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-22",
+    lastUpdated: "2026-04-23",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1143,6 +1143,68 @@ const SGLIVING_DATA = {
       catDesc: "精品蛋糕 / 米其林甜点师出品",
       ratingDesc: "小红书下午茶热门打卡 · 米其林级甜点师",
       active: true
+    },
+
+    // ── 4月23日新增 ──────────────────────────────
+
+    {
+      id: "nonyanita-cafe",
+      name: "Nonyanita Café 娘惹传家菜",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$16–30",
+      description: "娘惹菜主厨 Jean Tan 接管 Chef X 空间，以妈妈传授的家传秘方重现地道土生华人家常风味！招牌木瓜虾汤（$16）清甜鲜美，纳西乌兰谷物碗（$20）色彩斑斓，椰汁黑糯米甜点（$8）温暖治愈。正宗娘惹家常菜在新加坡珍贵难求，限时至5月17日，要吃要快！",
+      tags: ["娘惹菜", "土生华人", "限时菜单"],
+      address: "Chef X, 90 Club Street, Chinatown",
+      badge: "hot",
+      badgeText: "🔥 限时5月17日",
+      emoji: "🍃",
+      bgGradient: "linear-gradient(135deg,#2ecc71,#27ae60)",
+      catLabel: "正餐",
+      catDesc: "娘惹土生华人菜 / 限时开放",
+      ratingDesc: "妈妈传承秘方 · 家常娘惹珍味",
+      active: true
+    },
+
+    {
+      id: "xing-yue-xuan",
+      name: "星粤轩 Xing Yue Xuan 精品粤菜",
+      categories: ["restaurant", "finedining"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$50–100",
+      description: "姐妹们！圣淘沙全新商场 WEAVE 里藏着这家超惊艳的高端粤菜馆！细腻粤菜工艺融合当代创新，招牌点心精致如艺术品，食材极其考究，环境优雅大气。小红书博主亲测好评如潮，适合重要家庭聚会和商务宴请。圣淘沙度假胜地新地标，绝对不踩雷！",
+      tags: ["粤菜", "精品点心", "圣淘沙"],
+      address: "WEAVE at Sentosa, Sentosa Island",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#d4a017,#8b6914)",
+      catLabel: "正餐",
+      catDesc: "精品粤菜 / 圣淘沙WEAVE",
+      ratingDesc: "小红书热推 · 圣淘沙高端粤菜新地标",
+      active: true
+    },
+
+    {
+      id: "keming-bing-sat",
+      name: "其明冰室 Keming Bing Sat",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$12–25",
+      description: "香港超火冰室连锁5月22日登陆新加坡！香港及中国内地已有逾140家分店，招牌叉烧饭以23种秘制食材酱汁腌制，肥瘦适中、皮脆肉嫩。港式奶茶、菠萝包、猪扒包一应俱全，完美还原港式茶餐厅情怀。未开先热，下个月最期待新店！",
+      tags: ["港式冰室", "叉烧饭", "港式奶茶"],
+      address: "新加坡（5月22日开业，具体地址待公布）",
+      badge: "new",
+      badgeText: "🆕 5月22日开业",
+      emoji: "🍱",
+      bgGradient: "linear-gradient(135deg,#d63031,#e17055)",
+      catLabel: "正餐",
+      catDesc: "港式冰室 / 140+门店首进新加坡",
+      ratingDesc: "港澳名店 · 23种秘制叉烧饭",
+      active: true
     }
 
   ],
@@ -1976,6 +2038,32 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-05-28",
       active: true
+    },
+
+    // ── 4月23日新增 ──────────────────────────────
+
+    {
+      id: "singapore-garden-festival-2026",
+      name: "新加坡花园节 2026 · 第10届",
+      type: "exhibition",
+      priority: "featured",
+      featuredReason: "十年一届 · 全球最大户外园艺盛典",
+      month: "JUL",
+      day: "4",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#2d9a60,#55efc4)",
+      typeLabel: "🌺 园艺展览",
+      typeColor: "#2d9a60",
+      description: "第10届新加坡花园节7月4–12日盛大回归滨海湾花园！全球顶级景观设计师云集，打造震撼人心的大型花园装置和主题展区。涵盖世界各地珍奇植物展示、园艺竞赛和亲子自然教育活动。每10年才有的园艺界奥斯卡，2026年必须打卡的年度文化盛事！",
+      venue: "Gardens by the Bay",
+      dateRange: "7月4日–12日（共9天）",
+      ticketInfo: "🎫 GBTB 官网",
+      price: "S$20–38",
+      priceNote: "早鸟购票更优惠",
+      ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/singapore-garden-festival.html",
+      btnText: "了解详情",
+      sortDate: "2026-07-04",
+      active: true
     }
 
   ],
@@ -2349,6 +2437,25 @@ const SGLIVING_DATA = {
       duration: "约2–3小时",
       active: true
     }
+
+,
+    // ── 4月23日新增 ──────────────────────────────
+
+    {
+      id: "exploria-mandai",
+      name: "Exploria · 东南亚最大室内自然探险馆",
+      icon: "🦁",
+      topGradient: "linear-gradient(90deg,#2d9a60,#00b894)",
+      ageRange: "最适合 5–12 岁",
+      description: "东南亚最大室内自然主题探险馆，落地万礼野生动物保护区！超过1万平方米双层探险空间，30+多媒体沉浸式互动展项，带孩子在「自然冒险」故事线中探索热带雨林、海洋和沙漠生态。可以触摸、听见、感受大自然震撼——全程冷气，雨天晴天都完美！紧邻新加坡动物园，打包一整天轻松搞定！",
+      highlight: "东南亚最大！30+互动展项让7-9岁孩子主动探索，紧邻动物园可打包全天亲子游，室内冷气无惧新加坡大太阳",
+      location: "Mandai Wildlife Reserve",
+      dateRange: "现已开放（每天）",
+      cost: "S$20–30/人（可与万礼其他景点套票购买）",
+      duration: "约2–3小时",
+      active: true
+    }
+
 
   ]
 };
