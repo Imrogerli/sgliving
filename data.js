@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-23",
+    lastUpdated: "2026-04-24",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1205,6 +1205,53 @@ const SGLIVING_DATA = {
       catDesc: "港式冰室 / 140+门店首进新加坡",
       ratingDesc: "港澳名店 · 23种秘制叉烧饭",
       active: true
+    },
+
+
+    // ── 4月24日新增 ──────────────────────────────
+
+    {
+      id: "black-pearl-cantonese",
+      name: "The Black Pearl 黑珍珠 · 粤菜天台餐厅",
+      categories: ["restaurant", "finedining"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$60–120",
+      description: "姐妹们！这家就在国家美术馆顶层、新开的粤菜餐厅绝绝子！The Black Pearl 主打「当代精粤」新派菜，招牌「75°C 醉虾」口感弹嫩、酒香层叠，「八宝冬瓜盅」精工细作超有仪式感。主厨将经典粤菜技艺与当代创新融合，食材极其讲究。环境优雅俯瞰国家美术馆广场，适合重要约会和高端宴请，朋友圈发出去立刻被问地址那种！",
+      tags: ["新派粤菜", "醉虾", "国家美术馆"],
+      address: "National Gallery Singapore, 1 St Andrew's Road",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🦐",
+      bgGradient: "linear-gradient(135deg,#2c3e50,#d4a017)",
+      catLabel: "正餐",
+      catDesc: "新派粤菜 / 国家美术馆天台",
+      ratingDesc: "当代精粤 · 75°C醉虾必点",
+      lat: 1.2899,
+      lng: 103.8509,
+      active: true
+    },
+
+    {
+      id: "nishikane-omakase",
+      name: "Nishikane 锦家 · 日本百年传承 Omakase",
+      categories: ["restaurant", "michelin", "finedining"],
+      rating: 4.8,
+      openDate: "2026-04",
+      price: "S$180–280",
+      description: "超震撼！拥有176年历史的日本老字号「Nishikane」第六代传人主厨 Nobuhiro Nishi 亲自来新加坡坐镇，位于 Tras Street 的私密 Omakase 专间！以当季食材演绎江户前割烹精髓，每一道菜都是百年技艺与当季风土的对话。席位极为稀缺，强烈建议提前数周预约，不然绝对抢不到！朋友说来一次终生难忘，高端食客的新加坡必去Omakase！",
+      tags: ["Omakase", "百年传承", "江户前割烹"],
+      address: "Tras Street, Tanjong Pagar",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🍱",
+      bgGradient: "linear-gradient(135deg,#1a1a2e,#e8c99a)",
+      catLabel: "正餐",
+      catDesc: "日式Omakase / 176年老字号",
+      ratingDesc: "第六代主厨亲自坐镇 · 百年日本传承",
+      lat: 1.2768,
+      lng: 103.844,
+      active: true
     }
 
   ],
@@ -1720,7 +1767,7 @@ const SGLIVING_DATA = {
       typeLabel: "🎤 K-POP 演唱会",
       typeColor: "#e17055",
       description: "NMIXX 首次世界巡演新加坡站！带来全新专辑《Episode 1: Zero Frontier》，实验性舞台风格结合超强现场演唱实力，是 K-POP 粉丝的必看演出！",
-      venue: "Singapore Indoor Stadium",
+      venue: "The Star Theatre",
       dateRange: "6月20日",
       ticketInfo: "🌟 首次世界巡演",
       price: "S$98–248",
@@ -2454,7 +2501,25 @@ const SGLIVING_DATA = {
       cost: "S$20–30/人（可与万礼其他景点套票购买）",
       duration: "约2–3小时",
       active: true
+    },
+
+    // ── 4月24日新增 ──────────────────────────────
+
+    {
+      id: "minecraft-mandai-2026",
+      name: "Minecraft 体验：拯救村庄 · 万礼野生动物保护区",
+      icon: "⛏️",
+      topGradient: "linear-gradient(90deg,#5b8731,#8bc34a)",
+      ageRange: "最适合 7–12 岁",
+      description: "超惊喜！全球最受孩子欢迎的 Minecraft 游戏现在有真实世界版体验了！在万礼野生动物东区（Mandai Wildlife EAST）的沉浸式体验馆穿越8个关卡，化身真实英雄击退僵尸、拯救被围困的村庄！场景道具1:1还原游戏画面，可以动手「挖矿」「建造」，过关后领取专属纪念品。孩子看到会原地爆发！可与旁边动物园联票打包全天亲子游，超值！",
+      highlight: "7-9岁 Minecraft 玩家的梦幻体验！游戏场景真实化，8关互动挑战激发成就感，与万礼动物园联票性价比超高，暑假前必打卡活动！",
+      location: "Mandai Wildlife EAST, Mandai Wildlife Reserve",
+      dateRange: "4月24日–9月13日",
+      cost: "S$22–38/人（可联票购买）",
+      duration: "约1.5–2小时",
+      active: true
     }
+
 
 
   ]
