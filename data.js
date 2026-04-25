@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-24",
+    lastUpdated: "2026-04-25",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1252,6 +1252,52 @@ const SGLIVING_DATA = {
       lat: 1.2768,
       lng: 103.844,
       active: true
+    },
+
+    // ── 4月25日新增 ──────────────────────────────
+
+    {
+      id: "yangs-dumplings",
+      name: "小杨生煎 Yang's Dumplings 上海煎包",
+      categories: ["snack", "restaurant"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$8–18",
+      description: "姐妹们！上海最火的「小杨生煎」终于来新加坡啦绝绝子！从1947年家传老手艺到现在全球连锁，武吉士结庄B1首店一开业就排大队！招牌原味生煎包皮薄酥脆、底部金黄酥香，咬开一口汤汁狂喷，配蟹粉款更是鲜香升华。必点：经典猪肉生煎（4粒装$7.90）、蟹粉生煎包（$10.90）、上海小笼包。避雷：饭点直接排长队，建议工作日下午三点错峰去，才能无压力爽吃！",
+      tags: ["生煎包", "上海口味", "小红书爆款"],
+      address: "Bugis Junction #B1-K1/K2, 200 Victoria Street, Singapore 188021",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥟",
+      bgGradient: "linear-gradient(135deg,#f39c12,#e67e22)",
+      catLabel: "小吃快食",
+      catDesc: "上海生煎 / 1947年传承",
+      ratingDesc: "上海百年生煎名店 · 首登新加坡",
+      lat: 1.2999,
+      lng: 103.8563,
+      active: true
+    },
+
+    {
+      id: "hawkers-street-100am",
+      name: "Hawkers' Street · 100AM 米其林美食广场",
+      categories: ["snack"],
+      rating: 4.5,
+      openDate: "2026-04",
+      price: "S$5–15",
+      description: "丹戎巴葛 CBD 核心地带新开的「Hawkers' Street」美食广场，集合5家米其林评级档口一站式享用！有老字号福建面、炒粿条、炭烧叉烧饭，还有新派本地美食创意搭配。位置绝佳，每逢午市排满CBD上班族，是丹戎巴葛区觅食新地标。平价享米其林级别口味，吃一次就会变回头客！",
+      tags: ["本地美食", "米其林认证", "丹戎巴葛"],
+      address: "100AM Mall, 100 Tras Street, Tanjong Pagar, Singapore 079027",
+      badge: "michelin",
+      badgeText: "⭐ 5档米其林认证",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      catLabel: "小吃快食",
+      catDesc: "美食广场 / 5档米其林认证档口",
+      ratingDesc: "米其林档口聚集 · CBD最新美食地标",
+      lat: 1.2768,
+      lng: 103.844,
+      active: true
     }
 
   ],
@@ -2111,6 +2157,31 @@ const SGLIVING_DATA = {
       btnText: "了解详情",
       sortDate: "2026-07-04",
       active: true
+    },
+
+    // ── 4月25日新增 ──────────────────────────────
+
+    {
+      id: "boutiques-sg-may-2026",
+      name: "Boutiques Singapore 2026 · 精品生活市集",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "09",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#a29bfe,#fd79a8)",
+      typeLabel: "🛍️ 精品市集",
+      typeColor: "#a29bfe",
+      description: "新加坡年度最受期待的精品生活市集 Boutiques Singapore 5月回归！汇聚来自亚洲及全球的独立设计师品牌、艺术家原创作品和精选美食摊位，超过100个精选摊档。逛展览、发现隐藏好货、感受新加坡本地文创氛围。不管是买礼物、寻觅独特设计单品还是带孩子感受文创文化，都非常适合一家人周末来走走！",
+      venue: "F1 Pit Building, Paddock",
+      dateRange: "5月9日–10日（周末两天）",
+      ticketInfo: "🛍️ 入场约 S$5",
+      price: "S$5",
+      priceNote: "官网购票",
+      ticketUrl: "https://www.boutiques.sg",
+      btnText: "了解详情",
+      sortDate: "2026-05-09",
+      active: true
     }
 
   ],
@@ -2517,6 +2588,38 @@ const SGLIVING_DATA = {
       dateRange: "4月24日–9月13日",
       cost: "S$22–38/人（可联票购买）",
       duration: "约1.5–2小时",
+      active: true
+    },
+
+    // ── 4月25日新增 ──────────────────────────────
+
+    {
+      id: "artscience-future-world",
+      name: "ArtScience Museum · Future World 数字艺术互动展",
+      icon: "🌌",
+      topGradient: "linear-gradient(90deg,#6c5ce7,#a29bfe)",
+      ageRange: "最适合 6–12 岁",
+      description: "滨海湾金沙 ArtScience Museum 的常设镇馆展览「Future World」是新加坡最适合带孩子的室内艺术体验！由日本顶级数字艺术团队 teamLab 参与打造，四大主题区融合互动数字艺术：踩在屏幕上鱼儿会四散游开、画出的动物能投影到真实场景中跑动、在发光积木城市里搭建自己的建筑……每个装置都让孩子「玩起来根本停不下来」！7-9岁孩子特别爱「Crystal Universe」宇宙水晶隧道和「Light Ball Orchestra」发光球互动区，艺术审美和科技感知双重培养，下雨天室内首选！",
+      highlight: "teamLab 数字互动艺术 · 踩出脚印 · 画出动物投影真实动起来！7-9岁孩子100%玩嗨，配合金沙购物一站搞定全天亲子游，雨天完美室内避暑首选！",
+      location: "ArtScience Museum, 6 Bayfront Avenue, Marina Bay Sands",
+      dateRange: "每天开放（周一休馆）10am–7pm",
+      cost: "S$19–22/人",
+      duration: "约1.5–2.5小时",
+      active: true
+    },
+
+    {
+      id: "river-wonders-capybara-100",
+      name: "River Wonders · 水豚宝宝百日庆 限定活动",
+      icon: "🦫",
+      topGradient: "linear-gradient(90deg,#00b894,#55efc4)",
+      ageRange: "适合 4–12 岁",
+      description: "River Wonders 河川生态园正在庆祝超萌水豚宝宝出生100天！专属限定寻宝路线、水豚主题打卡点、动物丰容互动和管理员深度讲解——让孩子了解世界最大啮齿动物的生活习性和亚马逊雨林生态。配合亚马逊展馆参观整个学习旅程非常完整，活动只到5月3日，要趁早去！7-9岁孩子会对「宝宝成长故事」特别着迷，拍照超萌出片！",
+      highlight: "限定百日庆！水豚是全球超萌网红动物，7-9岁孩子见到会原地尖叫，生态知识寓教于乐，活动截至5月3日，错过再等一年！",
+      location: "River Wonders, 80 Mandai Lake Road",
+      dateRange: "至5月3日（每天开放）",
+      cost: "S$37–48/人",
+      duration: "约2–3小时",
       active: true
     }
 
