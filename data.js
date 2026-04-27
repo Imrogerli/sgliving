@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-25",
+    lastUpdated: "2026-04-27",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1300,6 +1300,52 @@ const SGLIVING_DATA = {
       active: true
     }
 
+
+    // ── 4月27日新增 ─────────────────────────────
+
+    {
+      id: "tutto-da-paolo",
+      name: "Tutto by Da Paolo 意大利餐厅",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-04",
+      price: "S$15–35",
+      description: "新加坡知名意大利餐饮品牌 Da Paolo 旗下全新休闲概念店，落户充满生活气息的 One Holland Village！主打现做手工意面和手拉那不勒斯披萨，配料每日新鲜到货，面团手工醒发超过24小时。适合全家周末悠闲用餐，孩子们超爱亲眼看师傅甩披萨面团的互动感！",
+      tags: ["手工意面", "那不勒斯披萨", "Da Paolo"],
+      address: "One Holland Village, 3 Holland Village Way",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🍕",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#f39c12)",
+      catLabel: "正餐",
+      catDesc: "意大利休闲 / One Holland Village",
+      ratingDesc: "Da Paolo旗舰新概念 · 手工披萨现做",
+      lat: 1.3112,
+      lng: 103.7957,
+      active: true
+    },
+
+    {
+      id: "nong-geng-ji-sg",
+      name: "农耕记 湘菜馆",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$25–45",
+      description: "姐妹们！去年在国内爆火的湘菜连锁「农耕记」终于出海来新加坡了，绝绝子！招牌手撕鸡（$18++）蘸碟蘸酱超丰富，辣卤拼盘下饭神器，外婆菜炒饭闻香就已经先走了三碗！整体装修超有湖南农村田园风，文艺感拉满超出片。辣度可以按需调节，不嗜辣也能吃得很爽！朋友实测踩雷率为零，强烈安利！",
+      tags: ["湘菜", "手撕鸡", "小红书爆款"],
+      address: "Bugis Junction, 200 Victoria Street, Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍗",
+      bgGradient: "linear-gradient(135deg,#e17055,#d63031)",
+      catLabel: "正餐",
+      catDesc: "湖南菜 / 中国热门连锁",
+      ratingDesc: "湘菜连锁爆款 · 手撕鸡人气王",
+      lat: 1.2999,
+      lng: 103.8554,
+      active: true
+    }
   ],
 
   // ════════════════════════════════════════════════
@@ -1405,7 +1451,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Rainie+Yang",
       btnText: "购票",
       sortDate: "2026-04-26",
-      active: true
+      active: false
     },
 
     // ── 普通活动 ──────────────────────────────────
@@ -2385,7 +2431,7 @@ const SGLIVING_DATA = {
       dateRange: "4月25–26日",
       cost: "部分活动免费",
       duration: "2–4小时",
-      active: true
+      active: false
     },
 
     {
