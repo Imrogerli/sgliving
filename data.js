@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-27",
+    lastUpdated: "2026-04-28",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1345,7 +1345,55 @@ const SGLIVING_DATA = {
       lat: 1.2999,
       lng: 103.8554,
       active: true
+    },
+
+    // ── 4月28日新增 ──────────────────────────────
+
+    {
+      id: "shuai-jiang-jun",
+      name: "帅将军 · 重庆老火锅（40年传承）",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$30–55",
+      description: "姐妹们！从重庆飘来的40年老字号火锅「帅将军」悄悄在新加坡开门啦绝绝子！不是连锁品牌打造的那种流水线味道，是真真切切祖传秘方熬制的牛油红汤——香辣层次足、回甜不腻，一口就能把你整个人送回重庆解放碑！必点：手切毛肚（脆嫩爽口脆到你怀疑人生）、鸭血、现做虾滑。两人吃约 $50–70 性价比超高，堂食不排队不预约，就是那种「酒香不怕巷子深」的好店。赶快去，开业初期人还不多！",
+      tags: ["重庆火锅", "40年老字号", "牛油红汤"],
+      address: "Tiong Bahru Road, Singapore",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#c0392b,#8e1d0e)",
+      catLabel: "正餐",
+      catDesc: "重庆火锅 / 40年传承",
+      ratingDesc: "40年祖传秘方 · 正宗重庆牛油锅底",
+      lat: 1.286,
+      lng: 103.8279,
+      active: true
+    },
+
+    {
+      id: "tang-yuan-xiao-ma",
+      name: "汤圆小妈 · 港式花式汤圆专门店",
+      categories: ["dessert"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$6–14",
+      description: "姐妹们！四月末最新发现的宝藏甜品店！「汤圆小妈」把传统汤圆做到了新高度——黑芝麻爆浆、抹茶红豆、流心榴莲、奥利奥奶盖口味，光看色泽就已经发朋友圈冲动了！全程现点现做，花糯米粉皮软糯Q弹，甜而不腻，搭配姜汁暖糖水超级治愈。价格超亲民，两个人吃一顿不超$30。怕踩雷的姐妹放心来，绝对不虚此行！",
+      tags: ["花式汤圆", "爆浆甜品", "小红书爆款"],
+      address: "Chinatown Complex, 335 Smith Street, Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍡",
+      bgGradient: "linear-gradient(135deg,#fd79a8,#fdcb6e)",
+      catLabel: "甜品饮料",
+      catDesc: "花式汤圆 / 港式甜品创新",
+      ratingDesc: "花式爆浆汤圆 · 小红书打卡新宠",
+      lat: 1.2825,
+      lng: 103.8434,
+      active: true
     }
+
+
   ],
 
   // ════════════════════════════════════════════════
@@ -1413,20 +1461,20 @@ const SGLIVING_DATA = {
       priority: "featured",
       featuredReason: "格莱美奖得主",
       month: "MAY",
-      day: "16",
-      dow: "周六",
+      day: "19",
+      dow: "周二",
       dateColor: "linear-gradient(135deg,#0984e3,#74b9ff)",
       typeLabel: "🎸 格莱美得主",
       typeColor: "#0984e3",
       description: "格莱美奖得主冰岛创作歌手 Laufey 亚洲巡演新加坡站！演绎新专辑《Goddess》《Promise》等温柔爵士流行曲目，深受全球乐迷追捧。票已售罄，关注候补票平台。",
       venue: "Singapore Indoor Stadium",
-      dateRange: "5月16日（周六）",
+      dateRange: "5月19日（周二）",
       ticketInfo: "⚠️ 票已售罄",
       price: "S$88–198",
       priceNote: "已售罄",
       ticketUrl: "https://www.ticketmaster.sg/search?q=Laufey+Singapore",
       btnText: "候补票",
-      sortDate: "2026-05-16",
+      sortDate: "2026-05-19",
       active: true
     },
 
@@ -1747,9 +1795,9 @@ const SGLIVING_DATA = {
       venue: "Singapore Indoor Stadium",
       dateRange: "6月13日",
       ticketInfo: "⏰ 5:00 PM",
-      price: "S$98–268",
+      price: "S$188–348",
       priceNote: "Ticketmaster",
-      ticketUrl: "https://www.ticketmaster.sg/search?q=G+I-DLE+Singapore+2026",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_idle",
       btnText: "购票",
       sortDate: "2026-06-13",
       active: true
@@ -2596,10 +2644,10 @@ const SGLIVING_DATA = {
       description: "4月23–26日圣淘沙湾帆船节！14岁以下小朋友完全免费入场，可近距离欣赏豪华游艇和帆船，还能参与航海模拟区和海上安全教育工作坊。园区设有户外游乐场、水上活动摊位和美食区，是风光如画的家庭周末好去处。让孩子感受新加坡与海洋的深厚渊源！",
       highlight: "14岁以下完全免费入场！近距离触摸真实帆船，体验航海互动，7-9岁孩子好奇心爆发的理想探索活动，圣淘沙海景超适合打卡！",
       location: "ONE°15 Marina Sentosa Cove, Sentosa Island",
-      dateRange: "4月23–26日（周四至周日）",
+      dateRange: "4月23–26日（已结束）",
       cost: "🆓 14岁以下免费（成人票另计）",
       duration: "约2–3小时",
-      active: true
+      active: false
     }
 
 ,
@@ -2667,7 +2715,26 @@ const SGLIVING_DATA = {
       cost: "S$37–48/人",
       duration: "约2–3小时",
       active: true
+    },
+
+    // ── 4月28日新增 ──────────────────────────────
+
+    {
+      id: "borealis-supertree-gbtb",
+      name: "Borealis 极光幻境 · 超级树免费灯光秀",
+      icon: "🌌",
+      topGradient: "linear-gradient(90deg,#0652dd,#1289a7)",
+      ageRange: "适合全家（含7–9岁）",
+      description: "滨海湾花园「Borealis」极光幻境免费登场！在超级树林间用层叠光束和云粒子模拟绚丽极光效果，营造出宛若置身挪威或冰岛观赏北极光的梦幻体验。每周一和周末限定演出，叠加在每日「花园狂想曲」灯光秀之外，是今年新加坡最美的免费夜间家庭活动！带孩子来一边听音乐、一边仰望「极光」，记得带野餐垫铺在草坪上，小朋友躺着看保证开心！",
+      highlight: "完全免费！极光效果视觉震撼，7-9岁孩子超爱夜间户外体验，周一和周末限定不要错过！与「花园狂想曲」叠加观看效果翻倍",
+      location: "Gardens by the Bay · Supertree Grove",
+      dateRange: "每周一 & 周末（持续至5月底）",
+      cost: "🆓 免费入场",
+      duration: "约30–60分钟",
+      active: true
     }
+
+
 
 
 
