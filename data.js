@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-28",
+    lastUpdated: "2026-04-29",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1298,7 +1298,7 @@ const SGLIVING_DATA = {
       lat: 1.2768,
       lng: 103.844,
       active: true
-    }
+    },
 
 
     // ── 4月27日新增 ─────────────────────────────
@@ -1390,6 +1390,68 @@ const SGLIVING_DATA = {
       ratingDesc: "花式爆浆汤圆 · 小红书打卡新宠",
       lat: 1.2825,
       lng: 103.8434,
+      active: true
+    },
+
+    // ── 4月29日新增 ──────────────────────────────
+
+    {
+      id: "tan-jin-ji-sg",
+      name: "谭鸭血 谭锦记 · 四川老鹰茶火锅",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$28–60/人",
+      description: "来自成都的网红品牌「谭鸭血」正式进驻新加坡乌节路Forum！区别于市面所有火锅的最大亮点：以四川高山老鹰茶作为锅底基底，清香回甘、养胃去腻，搭配秘制有料锅底（毛肚、鸭血、黄喉一起下锅），口感层次丰富。招牌「鸭血拼盘」必点，细嫩顺滑是城中一绝。麻辣档可灵活调整，不辣的小朋友和家人都能一起涮，是全家火锅出行新选择！",
+      tags: ["四川火锅", "老鹰茶锅底", "谭鸭血", "乌节路"],
+      address: "Forum The Shopping Mall, 583 Orchard Road, Singapore",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🫕",
+      bgGradient: "linear-gradient(135deg,#c0392b,#e74c3c)",
+      catLabel: "正餐",
+      catDesc: "四川火锅 / 老鹰茶创意锅底",
+      ratingDesc: "成都网红品牌首登新加坡",
+      active: true
+    },
+
+    {
+      id: "chagee-sg",
+      name: "霸王茶姬 CHAGEE · 东方茶饮",
+      categories: ["dessert", "snack"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$5–9",
+      description: "姐妹们！小红书上爆火的云南东方茶饮品牌「霸王茶姬」在新加坡扩店啦！不同于普通奶茶，霸王茶姬坚持用真茶叶、鲜奶，拒绝植脂末。招牌「伯牙绝弦」（乌龙拿铁）丝滑顺口不甜腻，「赤白玉壶」（白茶牛乳）清新爽口，绝绝子！装修走的是中式茶馆风，拍照氛围感超强。比喜茶更有文化感，喝一口直接被圈粉！手机下单取杯更方便，赶快去打卡！",
+      tags: ["云南茶饮", "东方奶茶", "小红书爆款", "真茶鲜奶"],
+      address: "Orchard Road, Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#2d9a60,#a29bfe)",
+      catLabel: "甜品饮料",
+      catDesc: "云南东方茶饮 / 真茶鲜奶",
+      ratingDesc: "中国顶流茶饮 · 小红书长期爆款",
+      active: true
+    },
+
+    {
+      id: "mala-tang-xiaomeng",
+      name: "小梦麻辣烫 · 云南风味自选麻辣烫",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$12–22",
+      description: "五月新开的云南风味自选麻辣烫！与重庆火锅不同，主打云南山胡椒清香型麻辣汤底，鲜甜不燥热。80+种食材自由搭配，宽粉、豆腐皮、嫩豆腐、牛肉卷都是必点选手。价格按重量计，性价比超高，一个人吃饱约$12。特别适合单人用餐或两三人便饭之选——简单、实惠、入口满足感拉满！",
+      tags: ["云南麻辣烫", "自选食材", "性价比", "一人食"],
+      address: "Tanjong Pagar Plaza, 7 Tanjong Pagar Plaza, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#e17055,#fdcb6e)",
+      catLabel: "小吃",
+      catDesc: "云南风味麻辣烫 / 自选套餐",
+      ratingDesc: "5月新开 · 性价比首选",
       active: true
     }
 
@@ -2276,7 +2338,57 @@ const SGLIVING_DATA = {
       btnText: "了解详情",
       sortDate: "2026-05-09",
       active: true
+    },
+
+
+    // ── 4月29日新增 ──────────────────────────────
+
+    {
+      id: "kid-laroi-sg-2026",
+      name: "The Kid LAROI · The LOVE Tour 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "01",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#6c5ce7,#a29bfe)",
+      typeLabel: "🎤 欧美流行",
+      typeColor: "#6c5ce7",
+      description: "澳大利亚说唱流行天才 The Kid LAROI 全新「The LOVE Tour」新加坡站！《STAY》《WITHOUT YOU》《THOUSAND MILES》等TikTok全球爆款金曲现场燃爆，是Z世代心目中最炙热的流行说唱明星。7月1日在 Singapore Expo Arena 震撼上演，夏日演唱会首选！",
+      venue: "Arena Expo Hall 7, Singapore",
+      dateRange: "7月1日（周三）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$98–218",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Kid+LAROI+Singapore+2026",
+      btnText: "购票",
+      sortDate: "2026-07-01",
+      active: true
+    },
+
+    {
+      id: "kumar-got-balls-sg",
+      name: "Kumar Got Balls · 新加坡喜剧女王特辑",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "25",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#f9ca24,#f0932b)",
+      typeLabel: "🎭 英语喜剧",
+      typeColor: "#f0932b",
+      description: "新加坡本土喜剧女王 Kumar 全新脱口秀《Got Balls》6月底隆重登场！借世界杯时机，110分钟脱口秀+歌舞+辛辣社会批评，笑点密集。Kumar 以大胆辛辣的风格打破性别与文化边界，深受新加坡各族群喜爱，6月25日至7月12日在滨海金沙剧场多场上演！",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "6月25日–7月12日（多场）",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$58–128",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Kumar+Got+Balls+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-25",
+      active: true
     }
+
 
   ],
 
@@ -2736,6 +2848,37 @@ const SGLIVING_DATA = {
 
 
 
+    // ── 4月29日新增 ──────────────────────────────
+
+    ,{
+      id: "navy-day-2026",
+      name: "新加坡海军节 · 海军博物馆家庭日",
+      icon: "⚓",
+      topGradient: "linear-gradient(90deg,#0652dd,#1289a7)",
+      ageRange: "适合 6–12 岁",
+      description: "5月1–2日劳动节长周末！新加坡海军博物馆举办年度海军节家庭日，完全免费入场。孩子可以近距离参观真实海军船舰、体验航海模拟器、了解新加坡海军的成长历史。户外展示、军事装备实物展览和现场互动活动让小朋友大开眼界，是寓教于乐的绝佳历史教育！",
+      highlight: "完全免费！近距离登上真实军舰，7-9岁孩子对工程机械和军事设备超感兴趣，了解新加坡建国故事的难得机会",
+      location: "RSS Singapura – Delta Museum, Labrador Park",
+      dateRange: "5月1–2日（劳动节假期）",
+      cost: "🆓 免费入场",
+      duration: "约2–3小时",
+      active: true
+    },
+
+    {
+      id: "singapore-garden-festival-family",
+      name: "新加坡花园节 · 亲子自然探索",
+      icon: "🌺",
+      topGradient: "linear-gradient(90deg,#2d9a60,#55efc4)",
+      ageRange: "适合 5–12 岁",
+      description: "第10届新加坡花园节7月4–12日在滨海湾花园盛大举行！全球顶级园艺设计师打造震撼大型花园装置，让孩子在真实的植物海洋里漫步探索。设有专属亲子自然教育区，孩子可学习热带植物知识、参与园艺体验工作坊、认识来自世界各地的珍奇植物。「小自然学家」挑战集章活动让7-9岁孩子边玩边学，是暑假最有价值的户外体验！",
+      highlight: "每10年举办一次！全球最顶级的园艺展览，7-9岁孩子通过植物和自然艺术培养科学思维，暑假亲子游的年度顶流活动",
+      location: "Gardens by the Bay, Marina Bay",
+      dateRange: "7月4日–12日",
+      cost: "S$20–38/人",
+      duration: "约2–4小时",
+      active: true
+    }
 
 
   ]
