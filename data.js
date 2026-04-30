@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-29",
+    lastUpdated: "2026-04-30",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1453,8 +1453,75 @@ const SGLIVING_DATA = {
       catDesc: "云南风味麻辣烫 / 自选套餐",
       ratingDesc: "5月新开 · 性价比首选",
       active: true
-    }
+    },
 
+
+
+    {
+      id: "noci-bakehouse",
+      name: "Noci Bakehouse 韩式欧法烘焙",
+      categories: ["dessert", "snack"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$5–15",
+      description: "Suntec City 全新登场的韩式欧法烘焙坊！白砖墙+小屋风装修一秒穿越首尔圣水洞，盐可颂、法式吐司、海盐红豆麵包都是排队必抢。早上8:30到晚上9点都开门，下班顺路买一袋当早餐，颜值和味道都超治愈。商场购物逛累了来歇脚最合适。",
+      tags: ["韩式烘焙", "盐可颂", "Suntec City"],
+      address: "Suntec City Mall, 3 Temasek Boulevard, Singapore 038983",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🥐",
+      bgGradient: "linear-gradient(135deg,#fab1a0,#fdcb6e)",
+      catLabel: "甜品/烘焙",
+      catDesc: "韩式欧法 / Suntec City",
+      ratingDesc: "首尔圣水洞风格 · 盐可颂招牌",
+      lat: 1.2952,
+      lng: 103.8589,
+      active: true
+    },
+
+    {
+      id: "hen-le-shan-skewers",
+      name: "很乐山 Hen Le Shan · 四川乐山炸串",
+      categories: ["restaurant", "snack"],
+      rating: 4.7,
+      openDate: "2026-03",
+      price: "S$15–35",
+      description: "姐妹们！四川乐山地道炸串店落户Tan Quee Lan St绝绝子！麻辣鲜香的乐山炸串、嗦一口爽到天的米线、夏天必点冰粉冰凉解辣，每一样都还原了国内乐山街头的味道。装修小复古，氛围感拉满，朋友约饭撸串首选。营业到晚上11点，宵夜也能吃。打卡过的都说比金沙的川菜馆还正！",
+      tags: ["乐山炸串", "米线", "冰粉", "小红书爆款"],
+      address: "Tan Quee Lan Street, near Bugis MRT, Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#c0392b)",
+      catLabel: "正餐",
+      catDesc: "四川乐山菜 / Bugis",
+      ratingDesc: "小红书爆款 · 乐山街头味道",
+      lat: 1.2999,
+      lng: 103.8593,
+      active: true
+    },
+
+    {
+      id: "xin-yuan-ji-fish",
+      name: "新源记 Xin Yuan Ji · 鲜炖鱼头炉",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-03",
+      price: "S$25–55",
+      description: "排队都要吃的鱼头炉！姐妹真的不踩雷，汤头是文火慢炖4小时的奶白色，鱼肉滑嫩到入口即化，配料还能加豆腐青菜年糕。一锅就够3-4人吃，性价比超高。Tan Quee Lan St小巷子里，外观不起眼但人气爆棚，建议提前打电话订位，不然容易等到怀疑人生。下雨天来一碗暖心又暖胃，真·新加坡人冬日YYDS。",
+      tags: ["鱼头炉", "煲汤", "小红书爆款"],
+      address: "Tan Quee Lan Street, near Bugis MRT, Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🐟",
+      bgGradient: "linear-gradient(135deg,#0984e3,#74b9ff)",
+      catLabel: "正餐",
+      catDesc: "鱼头炉 / Bugis",
+      ratingDesc: "4小时慢炖鱼汤 · 排队网红",
+      lat: 1.2999,
+      lng: 103.8593,
+      active: true
+    }
 
   ],
 
@@ -2049,7 +2116,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://feverup.com/en/singapore/candlelight",
       btnText: "抢票",
       sortDate: "2026-04-29",
-      active: true
+      active: false
     },
 
     {
@@ -2387,8 +2454,55 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-06-25",
       active: true
-    }
+    },
 
+
+
+    {
+      id: "exo-singapore-2026",
+      name: "EXO · 亚洲巡演新加坡站",
+      type: "concert",
+      priority: "featured",
+      month: "JUL",
+      day: "26",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#f368e0,#ff9ff3)",
+      typeLabel: "🎤 K-pop天团",
+      typeColor: "#f368e0",
+      description: "K-pop传奇天团 EXO 亚洲巡演最后一站新加坡！《Growl》《Love Shot》《Tempo》等十年金曲连唱，EXO-L们准备好荧光棒和应援口号了吗？时隔多年再度合体，伯贤、灿烈、世勋、KAI、SUHO等成员齐聚舞台，是回忆杀+情怀双爆击的演唱会！7月26日新加坡室内体育馆见。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月26日（周日）",
+      ticketInfo: "🎫 EXO-L必抢",
+      price: "S$148–388",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=EXO+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-26",
+      active: true
+    },
+
+    {
+      id: "irene-solo-tour-sg",
+      name: "Red Velvet IRENE · 首次个人亚洲巡演",
+      type: "concert",
+      priority: "featured",
+      month: "JUL",
+      day: "04",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#fd79a8,#e84393)",
+      typeLabel: "🎤 K-pop solo",
+      typeColor: "#e84393",
+      description: "Red Velvet 队长 IRENE 首次个人亚洲巡演新加坡站！告别团体框架，IRENE首次以独立艺人身份呈现solo舞台，融合性感、酷飒、典雅多元风格。Mediacorp Theatre近距离演出，每一次眼神交流都是粉丝心动瞬间，ReVeluv必抢！",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "7月4日（周六）",
+      ticketInfo: "🎫 ReVeluv专场",
+      price: "S$128–288",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=IRENE+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-04",
+      active: true
+    }
 
   ],
 
@@ -2878,8 +2992,54 @@ const SGLIVING_DATA = {
       cost: "S$20–38/人",
       duration: "约2–4小时",
       active: true
-    }
+    },
 
+
+
+    {
+      id: "heritagefest-coastal-lives-2026",
+      name: "新加坡传统节 · 海岸生活亲子体验",
+      icon: "⚓",
+      topGradient: "linear-gradient(90deg,#0984e3,#00cec9)",
+      ageRange: "最适合 6–12 岁",
+      description: "Singapore HeritageFest 2026以新加坡海洋历史为主题盛大回归！「Coastal Lives」家庭专场是7-9岁孩子最适合的活动：从儿童博物馆出发体验传统蜡染印章，再坐巴士前往 Reflections at Bukit Chandu 进行手作捕鱼工艺工作坊。孩子在亲手做、亲眼看、亲耳听的多感官体验中，学习新加坡渔村文化、海洋贸易历史，是绝佳的本地文化启蒙活动。全程有英文解说和音频故事，免费参与！",
+      highlight: "新加坡国宝级文化节，免费参与！7-9岁孩子可独立完成蜡染创作和渔具DIY，文化教育+动手能力双丰收，比博物馆更生动",
+      location: "Children's Museum Singapore + Reflections at Bukit Chandu",
+      dateRange: "5月1日–24日",
+      cost: "免费（部分需预约）",
+      duration: "约半日",
+      active: true
+    },
+
+    {
+      id: "heritagefest-bumboat-2026",
+      name: "新加坡河剧场驳船 · A Bump Through Time",
+      icon: "🚢",
+      topGradient: "linear-gradient(90deg,#6c5ce7,#a29bfe)",
+      ageRange: "最适合 7–12 岁",
+      description: "Singapore HeritageFest 2026 重磅首推！全新加坡首次「剧场+驳船」融合体验：孩子坐上传统 bumboat 沿新加坡河巡游，演员们边演边讲述河两岸的百年商贸故事，从英殖民时代到现代金融区，时间线在水上徐徐展开。约45分钟航程，5月9、16、23日多个时段可选，下午3:30到晚上8:30各有班次，傍晚场夕阳特别浪漫。7-9岁孩子可以学到生动的本地历史，全程互动性强。",
+      highlight: "唯一在新加坡河上演出的沉浸式剧场！7-9岁孩子在水上看戏学历史，比传统讲解更吸睛，傍晚班次还能看夕阳",
+      location: "Singapore River（Clarke Quay 登船）",
+      dateRange: "5月9、16、23日",
+      cost: "S$15–25/人",
+      duration: "约45分钟",
+      active: true
+    },
+
+    {
+      id: "artground-holland-village",
+      name: "The Artground 全新升级版室内乐园",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#fd79a8,#fdcb6e)",
+      ageRange: "最适合 5–10 岁",
+      description: "搬迁至 One Holland Village 后焕然一新的 The Artground 重装开业！艺术+游戏的室内乐园专为儿童设计，互动装置每季更换主题，目前的「光影森林」让孩子在投影森林里追逐发光蝴蝶、用身体动作触发墙面互动画面。还有可触摸的纺织雕塑、儿童艺术工作坊，7-9岁孩子在玩耍中培养艺术感知和创造力。空调环境，下雨天的完美遛娃首选！每月还有不同主题工作坊。",
+      highlight: "新加坡最有艺术气息的室内乐园！7-9岁孩子在沉浸式互动装置中激发创造力，工作日下午人少最好玩",
+      location: "One Holland Village #02-01, 7 Holland Village Way",
+      dateRange: "全年开放",
+      cost: "免费入场（部分工作坊收费）",
+      duration: "约1.5–3小时",
+      active: true
+    }
 
   ]
 };
