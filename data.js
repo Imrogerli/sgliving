@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-04-30",
+    lastUpdated: "2026-05-02",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1521,8 +1521,95 @@ const SGLIVING_DATA = {
       lat: 1.2999,
       lng: 103.8593,
       active: true
-    }
+    },
 
+    {
+      id: "jiin-omakase",
+      name: "Jiin Omakase 仁",
+      categories: ["restaurant", "finedining"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$280–450",
+      description: "Les Amis 集团5月8日全新开业的高端日式 omakase，主打日本「omotenashi」体贴待客之道。12席板前位+3间私人包厢（6-8人），主厨精选每日空运而来的日本顶级海鲜与季节食材，从开胃汁物到甜品20道精致呈现。环境采用日式传统工艺设计，氛围静谧雅致，是商务宴请、纪念日、米其林尝鲜首选。",
+      tags: ["日式omakase", "Les Amis集团", "顶级食材"],
+      address: "Shaw Centre, 1 Scotts Road, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#2c3e50,#e74c3c)",
+      catLabel: "正餐",
+      catDesc: "日式omakase / Shaw Centre",
+      ratingDesc: "Les Amis集团 · 5月8日开业",
+      lat: 1.3052,
+      lng: 103.8307,
+      active: true
+    },
+
+    {
+      id: "quan-hotpot-rws",
+      name: "QUAN Hotpot 全 · 五味火锅",
+      categories: ["restaurant", "finedining"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$80–150",
+      description: "圣淘沙名胜世界全新开业的高端火锅，以中国哲学「酸甜苦辣咸」五味元素为主题，每口锅底、每种食材都对应一种味觉体验。空间由本地艺术家 Sam Lo 手绘墙面装饰，氛围温暖现代。配备 Josper 高温烤炉为肉类与海鲜增添烟熏风味，是火锅+创意烹饪的双重享受，亲友聚会与高端约会都合适。",
+      tags: ["五味火锅", "Sentosa", "Josper烤炉"],
+      address: "Grand Steps, Hotel Michael, Resorts World Sentosa, 8 Sentosa Gateway",
+      badge: "new",
+      badgeText: "🆕 4月新开",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#f39c12)",
+      catLabel: "正餐",
+      catDesc: "高端火锅 / 圣淘沙名胜世界",
+      ratingDesc: "酸甜苦辣咸五味哲学 · 名胜世界新店",
+      lat: 1.2540,
+      lng: 103.8238,
+      active: true
+    },
+
+    {
+      id: "onigiri-gon",
+      name: "Onigiri GON · 现做饭团专门店",
+      categories: ["snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$5–15",
+      description: "Fortune Centre 新开的现做饭团小店，由福冈出生的店主亲手包制，每个饭团点单后才捏。约20款选择：基础款 ume、konbu、okaka、nori 海苔佐料从 S$4.90 起，进阶款有 ikura 鲑鱼籽（S$10.90）、otoro 大腩（S$12.90）、和牛 sukiyaki（S$12.90）。米饭温热松软，海苔现包香脆，外卖打包 5 分钟解决一餐，是逛 Bugis 一带的快手好物。",
+      tags: ["饭团", "日式快餐", "Fortune Centre"],
+      address: "Fortune Centre, 190 Middle Road, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍙",
+      bgGradient: "linear-gradient(135deg,#27ae60,#1abc9c)",
+      catLabel: "小吃",
+      catDesc: "现做饭团 / Bugis",
+      ratingDesc: "福冈店主手工捏制 · 20款选择",
+      lat: 1.3001,
+      lng: 103.8538,
+      active: true
+    },
+
+    {
+      id: "zheng-liu-ji-sg",
+      name: "蒸浏记 · 上海生煎包",
+      categories: ["restaurant", "snack"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$8–25",
+      description: "姐妹们！上海火出圈的蒸浏记终于在新加坡开新店了，这次是绝绝子的生煎包专门店！金黄酥脆的底+爆汁的猪肉馅，咬下去先听咔嚓一声，再尝肉汁喷发，吃过一次就上头。最近还推出了蟹黄生煎和虾仁版本，味道完全不踩雷。小红书已经爆了，下午茶时段去基本要排队，建议错峰或者打包带走。配一碗咖喱牛肉粉丝汤就是一顿完美沪式早午餐！",
+      tags: ["生煎包", "上海菜", "小红书爆款"],
+      address: "Multiple outlets including Suntec City and Bugis+, Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥟",
+      bgGradient: "linear-gradient(135deg,#d63031,#fdcb6e)",
+      catLabel: "正餐",
+      catDesc: "上海生煎 / 多店",
+      ratingDesc: "小红书爆款 · 蟹黄生煎排队网红",
+      lat: 1.2934,
+      lng: 103.8585,
+      active: true
+    }
   ],
 
   // ════════════════════════════════════════════════
@@ -1699,7 +1786,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/tulipmania.html",
       btnText: "购票",
       sortDate: "2026-04-24",
-      active: true
+      active: false
     },
 
     {
@@ -1745,7 +1832,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Demon+Slayer+Singapore",
       btnText: "购票",
       sortDate: "2026-04-19",
-      active: true
+      active: false
     },
 
     {
@@ -1768,7 +1855,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=BFG+Singapore",
       btnText: "购票",
       sortDate: "2026-04-22",
-      active: true
+      active: false
     },
 
     {
@@ -1791,7 +1878,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.changiairport.com",
       btnText: "了解详情",
       sortDate: "2026-04-30",
-      active: true
+      active: false
     },
 
     {
@@ -1998,7 +2085,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.suntecsingapore.com",
       btnText: "免费入场",
       sortDate: "2026-04-30",
-      active: true
+      active: false
     },
 
     {
@@ -2070,7 +2157,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/dyswt0526",
       btnText: "购票",
       sortDate: "2026-05-01",
-      active: true
+      active: false
     },
 
     {
@@ -2093,7 +2180,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.cancancomedy.com/upcoming",
       btnText: "查看场次",
       sortDate: "2026-04-30",
-      active: true
+      active: false
     },
 
     {
@@ -2780,7 +2867,7 @@ const SGLIVING_DATA = {
       dateRange: "5月1日（劳动节）",
       cost: "🆓 免费入场",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -3038,6 +3125,51 @@ const SGLIVING_DATA = {
       dateRange: "全年开放",
       cost: "免费入场（部分工作坊收费）",
       duration: "约1.5–3小时",
+      active: true
+    },
+
+    {
+      id: "jurassic-cloud-forest-2026",
+      name: "Jurassic World: The Experience · 云雾林恐龙世界",
+      icon: "🦖",
+      topGradient: "linear-gradient(90deg,#10b981,#34d399)",
+      ageRange: "最适合 4–12 岁",
+      description: "Gardens by the Bay 云雾林（Cloud Forest）变身侏罗纪世界！由 NEON 与 Universal Live Entertainment 联手打造，13 个互动展区里布满真人比例动画恐龙：高达三层楼的腕龙、可触摸的婴儿恐龙托儿所、还有突然咆哮的霸王龙。云雾林本身的 7.2 万株植物中有 50+ 种和侏罗纪同源（蕨类、苏铁、针叶树），化身天然的史前丛林背景。7-9 岁孩子最爱这种「真的能走进去」的恐龙世界，比看电影更刺激！每天 9am–9pm 开放，最后入场 8pm，参观约 1 小时。注意有突然的灯光和咆哮音效，对声光敏感的孩子要做好心理准备。",
+      highlight: "新加坡今年最火的家庭打卡点！7-9岁孩子可以亲手触摸婴儿恐龙、近距离看霸王龙咆哮，云雾林本身的植物景观就是天然侏罗纪片场",
+      location: "Cloud Forest, Gardens by the Bay",
+      dateRange: "每天 9am–9pm（最后入场 8pm）",
+      cost: "S$26成人 / S$22儿童",
+      duration: "约1小时",
+      active: true
+    },
+
+    {
+      id: "gateway-kids-club-may-2026",
+      name: "Gateway Kids Club · 5月「呵护自然」主题",
+      icon: "📚",
+      topGradient: "linear-gradient(90deg,#22d3ee,#67e8f9)",
+      ageRange: "最适合 4–10 岁",
+      description: "Gateway Theatre 每周六的免费亲子故事会，5月主题是「Nurturing Nature 呵护自然」。每周邀请讲故事达人和孩子们围坐在剧场暖场区，朗读环保主题绘本，搭配手工活动（如做种子卡片、画自然观察日记），让孩子从小理解可持续生活。7-9 岁孩子能参与讨论提问，活动后还有亲子拍照打卡区。免费但需提前线上登记座位，下午时段最多。",
+      highlight: "完全免费的高品质亲子活动！7-9岁孩子在专业剧场氛围中学环保知识，故事+互动+手工三合一，雨天遛娃首选",
+      location: "Gateway Theatre, 3615 Jalan Bukit Merah",
+      dateRange: "5月每周六（需线上预约）",
+      cost: "免费",
+      duration: "约1小时",
+      active: true
+    },
+
+    {
+      id: "homeground-acm-may-2026",
+      name: "Homeground @ ACM Green · 亚洲文明博物馆户外艺术节",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#f59e0b,#fbbf24)",
+      ageRange: "最适合 5–12 岁",
+      description: "亚洲文明博物馆户外草坪 ACM Green 持续到5月24日的免费亲子艺术节！每周末都有不同活动：娘惹蜡染钥匙扣 DIY、香料拓印、老电影露天放映、街头艺人表演。7-9 岁孩子可以在工作坊里学传统东南亚手工艺，亲手做出可以带回家的小作品；露天电影场地铺野餐垫，傍晚凉风+亚洲电影经典片段，是周末闲适遛娃的好去处。所有活动免费，无需预约直接到场，配套 ACM 博物馆参观更完整。",
+      highlight: "免费的高品质户外文化体验！7-9岁孩子能在草坪上学手工、看电影、看表演，新加坡河畔风景一流，适合一家三口完整玩半天",
+      location: "ACM Green, Asian Civilisations Museum, 1 Empress Place",
+      dateRange: "至5月24日（每周末）",
+      cost: "免费",
+      duration: "约2–4小时",
       active: true
     }
 
