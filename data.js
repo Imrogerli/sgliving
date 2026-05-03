@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-04-22
+ * 最后更新：2026-05-03
  * 版本：2.3
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-02",
+    lastUpdated: "2026-05-03",
     version: "2.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1610,6 +1610,74 @@ const SGLIVING_DATA = {
       lng: 103.8585,
       active: true
     }
+    ,
+    // ── 5月3日新增 ──────────────────────────────
+
+    {
+      id: "yogurt-planet-millenia",
+      name: "Yogurt Planet · 雪域酸奶 · 千禧广场",
+      categories: ["dessert"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$8–14",
+      description: "姐妹们！中国超火的拉丝酸奶 Yogurt Planet 进军新加坡啦！第一家旗舰店开在千禧广场，主打那种「能拉一米长的雪域酸奶」，五种口味都香迷糊：原味、黑五谷、草莓、翡翠（抹茶）、海椰子。新加坡天气这么热，下午来一杯冰冰凉凉的拉丝酸奶绝绝子，比奶茶清爽还低卡！排队不算太夸张，工作日下午基本不用等。",
+      tags: ["拉丝酸奶", "中国品牌", "小红书爆款"],
+      address: "Millenia Walk, 9 Raffles Boulevard, Singapore 039596",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥛",
+      bgGradient: "linear-gradient(135deg,#74b9ff,#a29bfe)",
+      catLabel: "甜品",
+      catDesc: "中式酸奶 / 千禧广场",
+      ratingDesc: "中国300+店爆款 · 拉丝酸奶首次登陆狮城",
+      lat: 1.2920,
+      lng: 103.8606,
+      active: true
+    },
+
+    {
+      id: "ramen-club-japan-popup",
+      name: "The Ramen Club Japan · 限定快闪",
+      categories: ["snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$10–22",
+      description: "Boutiques Singapore 2026 春夏季快闪带来日本最有创意的拉面新概念！The Ramen Club Japan 把经典拉面变成「能边逛边吃」的零食化呈现：手持迷你拉面杯、酥脆拉面棒、酱油焦糖爆米花，连吃货都没见过这种玩法。5月15–17日 F1 看台限定，拉面控+创意美食控千万别错过，逛集市顺手吃个新潮版日式快餐，超出片！",
+      tags: ["日式拉面", "限定快闪", "Boutiques Fair"],
+      address: "F1 Pit Building, 1 Republic Boulevard, Singapore 038975",
+      badge: "new",
+      badgeText: "🆕 5月限定",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#ff6b4a,#fdcb6e)",
+      catLabel: "小吃",
+      catDesc: "日式创意拉面 / 限时快闪",
+      ratingDesc: "Boutiques Fair 春夏季限定 · 5月15–17日",
+      lat: 1.2914,
+      lng: 103.8633,
+      active: true
+    },
+
+    {
+      id: "onigiri-fortune-fukuoka",
+      name: "Onigiri Counter · 福冈职人手作饭团",
+      categories: ["snack"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$3.5–8/个",
+      description: "Fortune Centre 新开的柜台式饭团专卖店，老板是福冈本地人，每个饭团都是现点现捏。20种馅料任选——明太子、鲑鱼、梅子、海带、烤味噌……米粒分明、海苔脆响，咬下去那种刚捏好的温热感，跟便利店真空包装完全是两个世界。早午餐来一个手作饭团配味噌汤，简单但治愈。Lunch 时段忙到飞起，建议早到或者晚一点。",
+      tags: ["手作饭团", "日式简餐", "福冈职人"],
+      address: "Fortune Centre, 190 Middle Road, Singapore 188979",
+      badge: "new",
+      badgeText: "🆕 新开业",
+      emoji: "🍙",
+      bgGradient: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      catLabel: "小吃",
+      catDesc: "日式饭团 / Fortune Centre",
+      ratingDesc: "现点现捏 · 20种馅料任选",
+      lat: 1.3009,
+      lng: 103.8550,
+      active: true
+    }
   ],
 
   // ════════════════════════════════════════════════
@@ -2590,7 +2658,124 @@ const SGLIVING_DATA = {
       sortDate: "2026-07-04",
       active: true
     }
+    ,
 
+    // ── 5月3日新增活动 ──────────────────────────────
+
+    {
+      id: "songs-that-keep-us-together",
+      name: "Songs That Keep Us Together · 怀旧合家欢音乐会",
+      type: "concert",
+      priority: "normal",
+      month: "5月",
+      day: "16",
+      dow: "周六",
+      dateColor: "#ff7675",
+      typeLabel: "音乐会",
+      typeColor: "#ff7675",
+      description: "怀旧粤语和华语金曲合唱演出，专为家庭与跨代观众打造，让爷爷奶奶到孩子都能找到熟悉的旋律。一场暖心又欢乐的城市音乐之夜。",
+      venue: "Esplanade Concert Hall",
+      dateRange: "5月16日 8:00 PM",
+      ticketInfo: "🎫 全家合家欢",
+      price: "S$58–128",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=songs+that+keep+us+together",
+      btnText: "购票",
+      sortDate: "2026-05-16",
+      active: true
+    },
+
+    {
+      id: "richard-clayderman-2026",
+      name: "Richard Clayderman · Forever Love 钢琴音乐会",
+      type: "concert",
+      priority: "featured",
+      month: "6月",
+      day: "13",
+      dow: "周六",
+      dateColor: "#a29bfe",
+      typeLabel: "钢琴音乐会",
+      typeColor: "#a29bfe",
+      description: "「钢琴王子」理查德·克莱德曼亚洲巡演新加坡场！《梦中的婚礼》《水边的阿狄丽娜》《秋日私语》全部经典名曲一次听完，跨越时代的浪漫旋律，最适合带父母一起怀旧。",
+      venue: "The Star Theatre",
+      dateRange: "6月13日 8:00 PM",
+      ticketInfo: "🎫 父母最爱",
+      price: "S$98–388",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=richard+clayderman",
+      btnText: "购票",
+      sortDate: "2026-06-13",
+      active: true
+    },
+
+    {
+      id: "yuika-2nd-asia-tour",
+      name: "Yuika 2nd Asia Tour · 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "6月",
+      day: "5",
+      dow: "周五",
+      dateColor: "#fd79a8",
+      typeLabel: "J-pop",
+      typeColor: "#fd79a8",
+      description: "日本新生代女声 Yuika 第二次亚洲巡演来到新加坡！主打温柔疗愈系城市流行，最近因《好朋友的恋曲》在 TikTok 爆火，现场更有惊喜的英文翻唱环节。",
+      venue: "Capitol Theatre",
+      dateRange: "6月5日 8:00 PM",
+      ticketInfo: "🎫 限量座位",
+      price: "S$108–238",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Yuika+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-05",
+      active: true
+    },
+
+    {
+      id: "billkin-feelquency-2026",
+      name: "Billkin Feelquency Tour · 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "6月",
+      day: "6",
+      dow: "周六",
+      dateColor: "#fdcb6e",
+      typeLabel: "T-pop",
+      typeColor: "#fdcb6e",
+      description: "泰国顶流 Billkin 个人巡演 Feelquency 来到狮城！从《以你的心诠释我的爱》原声带到最新单曲全部囊括，泰剧粉丝准备好屏幕亮起来！",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "6月6日 8:00 PM",
+      ticketInfo: "🎫 全场可拍照",
+      price: "S$148–328",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Billkin+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-06",
+      active: true
+    },
+
+    {
+      id: "idle-syncopation-sg",
+      name: "(G)I-DLE WORLD TOUR Syncopation · 新加坡站",
+      type: "concert",
+      priority: "featured",
+      month: "6月",
+      day: "13",
+      dow: "周六",
+      dateColor: "#e84393",
+      typeLabel: "K-pop",
+      typeColor: "#e84393",
+      description: "(G)I-DLE 世界巡演 Syncopation 杀回新加坡！从《Tomboy》《Queencard》到最新主打《Klaxon》全部要现场炸开！Neverland 必抢舞台前排，本年度新加坡 K-pop 重磅！",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "6月13日 5:00 PM",
+      ticketInfo: "🎫 Neverland 必抢",
+      price: "S$168–388",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=I-DLE+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-13",
+      active: true
+    }
   ],
 
   // ════════════════════════════════════════════════
@@ -2672,7 +2857,7 @@ const SGLIVING_DATA = {
       dateRange: "4月至5月3日",
       cost: "S$37–48/人",
       duration: "2–3小时",
-      active: true
+      active: false
     },
 
     {
@@ -2852,7 +3037,7 @@ const SGLIVING_DATA = {
       dateRange: "持续至5月3日",
       cost: "🆓 免费入场",
       duration: "约1小时",
-      active: true
+      active: false
     },
 
     {
@@ -2930,7 +3115,7 @@ const SGLIVING_DATA = {
       dateRange: "持续至5月3日",
       cost: "🆓 免费入场",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -2945,7 +3130,7 @@ const SGLIVING_DATA = {
       dateRange: "4月9日–5月3日",
       cost: "🆓 免费参与",
       duration: "约30–60分钟",
-      active: true
+      active: false
     }
 ,
     {
@@ -3027,7 +3212,7 @@ const SGLIVING_DATA = {
       dateRange: "至5月3日（每天开放）",
       cost: "S$37–48/人",
       duration: "约2–3小时",
-      active: true
+      active: false
     },
 
     // ── 4月28日新增 ──────────────────────────────
@@ -3172,6 +3357,67 @@ const SGLIVING_DATA = {
       duration: "约2–4小时",
       active: true
     }
+    ,
+    // ── 5月3日新增 · 6月学校假期 & 5月推荐 ──────────────────────────────
 
+    {
+      id: "curiosity-cove-mandai-2026",
+      name: "Curiosity Cove · 万礼最大室内自然探索乐园",
+      icon: "🌳",
+      topGradient: "linear-gradient(90deg,#10b981,#34d399)",
+      ageRange: "最适合 4–12 岁",
+      description: "万礼野生动物保护区全新「Curiosity Cove」是新加坡最大的室内自然主题游乐场！四大主题区（湿地、林地、草原、旱地）融合实体游乐设施和数字互动装置。孩子可以在攀爬网中模拟猴子穿越雨林，在数字水池里追逐虚拟青蛙，在沙盘上「重塑」河流地貌。空调全开，雨天也照样玩，配合动物园联票一天搞定全家亲子游！",
+      highlight: "全新加坡最大室内自然乐园！7-9岁孩子可独立穿梭四大生态区，体力消耗+知识吸收双满分，配合6月学校假期完美打卡",
+      location: "Mandai Wildlife Reserve, 80 Mandai Lake Road",
+      dateRange: "每天开放（建议提前订票）",
+      cost: "S$15–28/人（可联票）",
+      duration: "约2–3小时",
+      active: true
+    },
+
+    {
+      id: "science-centre-summer-2026",
+      name: "新加坡科学馆 · 6月学校假期主题展",
+      icon: "🔬",
+      topGradient: "linear-gradient(90deg,#3b82f6,#60a5fa)",
+      ageRange: "最适合 6–12 岁",
+      description: "6月学校假期来啦！新加坡科学馆专为孩子推出多个动手主题展览：气候变化互动区、动力学游乐场、Omni-Theatre 360°巨幕电影。7-9岁孩子最爱「KidsSTOP」体能+认知双训练区，可以「开飞机」、当小医生、做小记者。配套的暑期主题工作坊每周更新，是新加坡最好的暑假寓教于乐选择！",
+      highlight: "经典必打卡！7-9岁孩子可独立探索30+互动展项，6月暑假主题更新，下雨天也不怕",
+      location: "Science Centre Singapore, 15 Science Centre Road",
+      dateRange: "5月30日–6月28日（学校假期）",
+      cost: "S$12–25/人",
+      duration: "约3–5小时",
+      active: true
+    },
+
+    {
+      id: "newtonshow-camps-2026",
+      name: "Newtonshow 暑期主题营 · 多元主题任选",
+      icon: "🎒",
+      topGradient: "linear-gradient(90deg,#fbbf24,#f59e0b)",
+      ageRange: "适合 2.5–14 岁",
+      description: "Newtonshow 暑期营 6月2日–8月29日全新升级！7-9岁孩子可选 Sanrio Science World（用 Hello Kitty 学科学）、Superhero Science（漫威主题物理实验）、Harry Potter 魔法学院（魔药与变形术体验）、World Chef 烹饪营（学做各国美食）。每个营期5天，老师全程英文授课，是孩子放假期间提升英语+实操能力的好选择。",
+      highlight: "5天主题营让7-9岁孩子在玩中学，多个英文沉浸主题任选，是新加坡暑假最热门的非学术营之一",
+      location: "Newtonshow 各分校",
+      dateRange: "6月2日–8月29日（每周一开营）",
+      cost: "S$280–680/营期",
+      duration: "5天/营期",
+      active: true
+    },
+
+    {
+      id: "boutiques-singapore-2026-family",
+      name: "Boutiques Singapore 春夏季 · 亲子集市",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#fd79a8,#fdcb6e)",
+      ageRange: "适合全家（含7–9岁）",
+      description: "5月15–17日 F1 看台 Boutiques Singapore 2026 春夏季回归！150+ 时尚生活摊位，新增儿童手作专区、亲子工作坊和 The Ramen Club Japan 限定快闪美食。带7-9岁孩子来逛集市、做手作、品尝创意美食，全家可以轻松玩半天。免费入场，下午凉快时段最适合。",
+      highlight: "免费入场！150+创意摊位+亲子工作坊+创意美食，是新加坡5月最热门的家庭逛集市选择",
+      location: "F1 Pit Building, 1 Republic Boulevard",
+      dateRange: "5月15–17日",
+      cost: "🆓 免费入场",
+      duration: "约2–4小时",
+      active: true
+    }
   ]
 };
