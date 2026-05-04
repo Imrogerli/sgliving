@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-03
- * 版本：2.3
+ * 最后更新：2026-05-04
+ * 版本：2.4
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-03",
-    version: "2.3",
+    lastUpdated: "2026-05-04",
+    version: "2.4",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -1677,6 +1677,96 @@ const SGLIVING_DATA = {
       lat: 1.3009,
       lng: 103.8550,
       active: true
+    },
+
+    // ── 5月新增（2026-05-04 更新）─────────────────
+
+    {
+      id: "casa-vostra-tampines",
+      name: "Casa Vostra · Tampines Mall",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$25–45",
+      description: "姐妹们！排队王 Casa Vostra 终于开到东部啦！第三家分店 5 月 15 日落户淡滨尼商场，主理人 Chef Antonio Miscellaneo 招牌「Newpolitan 红/白」披萨绝绝子，36小时冷发酵面团烤出来的边缘酥脆内里 Q 弹。「Doublecrunch」三明治披萨更是小红书必拍，意大利原产芝士拉丝爆好看，价格还很亲民，住东部的家人千万别再羡慕市区了！",
+      tags: ["小红书爆款", "意式披萨", "Newpolitan"],
+      address: "4 Tampines Central 5, #01-33A, Tampines Mall",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍕",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#fdcb6e)",
+      catLabel: "正餐",
+      catDesc: "意式餐厅 / 淡滨尼商场",
+      ratingDesc: "Casa Vostra 第三家分店，东部首店",
+      lat: 1.3527,
+      lng: 103.9447,
+      active: true
+    },
+
+    {
+      id: "matsu-matcha-guoco",
+      name: "Matsu Matcha · Guoco Tower",
+      categories: ["dessert"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$8–15",
+      description: "从线上预订正式开实体店！Guoco Tower 全新抹茶专门店，最大亮点是从京都空运来的石臼，每小时仅磨 40 克抹茶粉，慢工细活才是真讲究。一杯纯抹茶 Latte 入口顺滑回甘，毫无苦涩感，茶香扎实。CBD 上班族午后小憩首选，也适合周末来打卡。",
+      tags: ["京都石臼", "纯抹茶", "CBD"],
+      address: "Guoco Tower, 1 Wallich Street",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#a8e063,#56ab2f)",
+      catLabel: "甜品",
+      catDesc: "抹茶专门店 / Guoco Tower",
+      ratingDesc: "京都石臼现磨，慢工细活",
+      lat: 1.2766,
+      lng: 103.8463,
+      active: true
+    },
+
+    {
+      id: "top-quali-tea-kallang",
+      name: "Top Quali Tea Kyoto · Leisure Park Kallang",
+      categories: ["dessert"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$10–18",
+      description: "Top Quali Tea Kyoto 第二家门店开在 Leisure Park Kallang！创办人 Ayano Makino 曾是教师后转身研究茶道，主打京都宇治产「仪式级」头采抹茶。除了纯抹茶饮品，还有抹茶提拉米苏、抹茶白巧蒙布朗等限量甜品，季节性食材随月份变化，茶味浓郁不甜腻，是抹茶控的天堂。",
+      tags: ["京都宇治", "仪式级抹茶", "限量甜品"],
+      address: "Leisure Park Kallang, 5 Stadium Walk",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍡",
+      bgGradient: "linear-gradient(135deg,#56ab2f,#a8e063)",
+      catLabel: "甜品",
+      catDesc: "京都抹茶 / Kallang Leisure Park",
+      ratingDesc: "宇治头采抹茶 + 限量手作甜品",
+      lat: 1.3018,
+      lng: 103.8745,
+      active: true
+    },
+
+    {
+      id: "muhan-sikdang-jurong",
+      name: "Muhan Sikdang 无限食堂 · Jurong Point",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-05",
+      price: "S$25–40",
+      description: "西部家人福音！Jurong Point 全新韩式料理「无限食堂」开业，主打韩国家庭料理 + 韩式烤肉自助。招牌部队锅、芝士辣炒鸡排、韩式炸鸡都做得地道，配菜小料种类多到让人犹豫，重点是性价比超高。带小朋友来吃也很合适，环境干净桌距宽敞，周末记得提前预约。",
+      tags: ["韩式自助", "部队锅", "芝士辣炒鸡"],
+      address: "Jurong Point, 1 Jurong West Central 2",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🇰🇷",
+      bgGradient: "linear-gradient(135deg,#fd79a8,#e84393)",
+      catLabel: "正餐",
+      catDesc: "韩式料理 / Jurong Point",
+      ratingDesc: "西部首家韩式无限自助",
+      lat: 1.3398,
+      lng: 103.7064,
+      active: true
     }
   ],
 
@@ -2015,7 +2105,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_treasure",
       btnText: "购票",
       sortDate: "2026-05-03",
-      active: true
+      active: false
     },
 
     {
@@ -2775,6 +2865,54 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-06-13",
       active: true
+    },
+
+    // ── 5月新增（2026-05-04 更新）─────────────────
+
+    {
+      id: "pokemon-plaza-singapura-2026",
+      name: "宝可梦 Pokémon Pokopia 快闪店",
+      type: "exhibition",
+      priority: "normal",
+      month: "MAY",
+      day: "04",
+      dow: "持续中",
+      dateColor: "linear-gradient(135deg,#ffd166,#fcbf49)",
+      typeLabel: "🎮 主题快闪",
+      typeColor: "#fcbf49",
+      description: "Plaza Singapura 全新 Pokémon Pokopia 巨型快闪体验！配合 Nintendo Switch 2 全球首发，主商场设有打卡拍照区、儿童涂色角，以及 Pokopia 限定周边店。皮卡丘指定周末现身合影，玩游戏可领贴纸，免费派送 Pokémon 遮阳帽（送完即止）。带娃逛街顺便看皮卡丘，性价比满满。",
+      venue: "Plaza Singapura, 68 Orchard Road",
+      dateRange: "持续至 6月21日",
+      ticketInfo: "🎟️ 免费入场",
+      price: "免费",
+      priceNote: "无需购票",
+      ticketUrl: "https://www.capitaland.com/sg/malls/plazasingapura/en/whats-on.html",
+      btnText: "了解详情",
+      sortDate: "2026-05-04",
+      active: true
+    },
+
+    {
+      id: "skyline-luge-june-2026",
+      name: "Skyline Luge 圣淘沙 · 学校假期特惠",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "12",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#36d399,#3abff8)",
+      typeLabel: "🛞 户外娱乐",
+      typeColor: "#36d399",
+      description: "六月学校假期专属优惠！Skyline Luge 圣淘沙在 6月12-14日、19-21日、26-28日推出限时套票：两次组合 S$28、四次组合 S$34，85-110cm 小朋友仅需 S$15。坐空中缆车上山，再驾迷你雪橇车飞驰而下，是新加坡最经典的亲子户外项目之一，假期带娃放电首选。",
+      venue: "Skyline Luge Sentosa",
+      dateRange: "6月12-14日 / 19-21日 / 26-28日",
+      ticketInfo: "🎫 Klook / 官网",
+      price: "S$15–34",
+      priceNote: "学校假期特惠价",
+      ticketUrl: "https://www.skylineluge.com/en/sentosa/",
+      btnText: "了解详情",
+      sortDate: "2026-06-12",
+      active: true
     }
   ],
 
@@ -3248,7 +3386,7 @@ const SGLIVING_DATA = {
       dateRange: "5月1–2日（劳动节假期）",
       cost: "🆓 免费入场",
       duration: "约2–3小时",
-      active: true
+      active: false
     },
 
     {
@@ -3417,6 +3555,53 @@ const SGLIVING_DATA = {
       dateRange: "5月15–17日",
       cost: "🆓 免费入场",
       duration: "约2–4小时",
+      active: true
+    },
+
+    // ── 5月新增（2026-05-04 更新）─────────────────
+
+    {
+      id: "pokemon-pokopia-family-2026",
+      name: "宝可梦 Pokopia 快闪体验 · Plaza Singapura",
+      icon: "⚡",
+      topGradient: "linear-gradient(90deg,#ffd166,#fcbf49)",
+      ageRange: "适合 4–12 岁",
+      description: "Plaza Singapura 联手 Nintendo Switch 2 全球首发推出的 Pokémon Pokopia 大型快闪！主商场内有 Pokopia 主题打卡区、儿童涂色专区，还可玩到全新 Switch 2 游戏 Demo。皮卡丘指定周末巡场合影，玩游戏可领贴纸，限量派送 Pokémon 遮阳帽。免费入场，可逛可玩可拍，是5-6月全家市中心轻松出游首选。",
+      highlight: "免费入场+IP超治愈，7-9岁孩子能玩到 Switch 2 demo 还能合影皮卡丘，是宝可梦小迷弟小迷妹的圆梦时刻",
+      location: "Plaza Singapura, 68 Orchard Road",
+      dateRange: "持续至 6月21日（皮卡丘指定周末出现）",
+      cost: "🆓 免费入场",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "skyline-luge-june-holiday-2026",
+      name: "Skyline Luge · 学校假期亲子特惠",
+      icon: "🛞",
+      topGradient: "linear-gradient(90deg,#36d399,#3abff8)",
+      ageRange: "最适合 7–12 岁",
+      description: "六月学校假期专属优惠！Skyline Luge 圣淘沙在 6月12-14日、19-21日、26-28日三个周末推出限时套票，两次组合 S$28、四次组合 S$34，85-110cm 小朋友仅 S$15。坐空中缆车欣赏圣淘沙海景，再驾迷你雪橇车飞驰山道，速度可控、转弯刺激，7-9岁的孩子能独立驾驶单人车，胆大的还能挑战夜光场次。",
+      highlight: "户外+速度+海景三合一，7-9岁孩子可独立驾驶感受成就感，假期放电神器",
+      location: "Skyline Luge Sentosa, 45 Siloso Beach Walk",
+      dateRange: "6月12-14日 / 19-21日 / 26-28日",
+      cost: "S$15–34（学校假期特惠）",
+      duration: "1.5–2小时",
+      active: true
+    },
+
+    {
+      id: "curiosium-science-museum-2026",
+      name: "Curiosium 科学好奇心博物馆",
+      icon: "🔬",
+      topGradient: "linear-gradient(90deg,#0984e3,#74b9ff)",
+      ageRange: "最适合 5–10 岁",
+      description: "新开业的 Curiosium 是一座为孩子设计的科学游乐博物馆，五十多个互动展区让孩子动手探索：光绘画、空气动力学游戏、画画实验、磁力轨道、巨型万花筒……每个展区都是一次小实验，玩中学超有效。完全沉浸式互动，工作人员会引导讲解，7-9岁的孩子最容易开窍，是培养 STEM 兴趣的最佳启蒙之地。",
+      highlight: "50+ 互动科学展区，7-9岁孩子能完全独立探索一整个下午，是激发科学好奇心的不二之选",
+      location: "Curiosium Singapore（详细地址请查官网）",
+      dateRange: "每天开放（建议提前订票）",
+      cost: "S$25–35/人",
+      duration: "2–3小时",
       active: true
     }
   ]
