@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-04
+ * 最后更新：2026-05-05
  * 版本：2.4
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-04",
+    lastUpdated: "2026-05-05",
     version: "2.4",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1766,6 +1766,96 @@ const SGLIVING_DATA = {
       ratingDesc: "西部首家韩式无限自助",
       lat: 1.3398,
       lng: 103.7064,
+      active: true
+    },
+
+    // ── 5月5日新增（2026-05-05 更新）──────────────
+
+    {
+      id: "king-of-dessert-simlim",
+      name: "King of Dessert 中式甜品",
+      categories: ["dessert"],
+      rating: 4.9,
+      openDate: "2026-05",
+      price: "S$8–25",
+      description: "姐妹们！Sim Lim Square 二楼藏着一家小红书爆款甜品店！一家专做中式糖水甜品的小店，4.9星好评不是吹的。XL 芒果雪冰（$23.80）芒果堆成山，三人吃都嫌多；芋泥牛奶雪冰（$12.80）芋泥绵密甜而不腻，还有港式杨枝甘露和潮汕橙汁桃胶。20多种甜品任选，逛街+电脑城后过来一站式打卡，绝绝子！",
+      tags: ["小红书爆款", "芒果雪冰", "芋泥甜品"],
+      address: "Sim Lim Square #02-06, 1 Rochor Canal Road",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥭",
+      bgGradient: "linear-gradient(135deg,#fdcb6e,#fd79a8)",
+      catLabel: "甜品",
+      catDesc: "中式糖水 / Sim Lim Square",
+      ratingDesc: "Google 4.9星 · 小红书姐妹打卡新地标",
+      lat: 1.3032,
+      lng: 103.8538,
+      active: true
+    },
+
+    {
+      id: "tiantai-hotpot-ppc",
+      name: "天台火锅 Tiantai Hotpot · 隐藏顶楼",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$45–70",
+      description: "新加坡也有「秘密火锅」啦！People's Park Complex 顶层天台被改造成露天火锅店，登顶后视野开阔、夜风吹得正好。麻辣四川锅底香气扑鼻，云南野生菌鸡汤底养生又鲜美，自家手打牛肉丸 Q 弹弹，必点黑松露蘸料牛舌。氛围感拉满，约会聚会都合适，下班来一顿绝对治愈。",
+      tags: ["天台火锅", "夜景", "网红打卡"],
+      address: "People's Park Complex 顶楼, 1 Park Road",
+      badge: "hot",
+      badgeText: "🔥 网红新店",
+      emoji: "🌃",
+      bgGradient: "linear-gradient(135deg,#2c3e50,#e74c3c)",
+      catLabel: "正餐",
+      catDesc: "火锅 / 天台露天",
+      ratingDesc: "People's Park Complex 顶楼隐藏火锅",
+      lat: 1.2848,
+      lng: 103.8430,
+      active: true
+    },
+
+    {
+      id: "pompompurin-japan-rail",
+      name: "布丁狗 Pompompurin × Japan Rail Cafe 限定快闪",
+      categories: ["restaurant", "dessert"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$22–35",
+      description: "三丽鸥布丁狗超萌限定！Tanjong Pagar 的 Japan Rail Cafe 联手 Pompompurin 推出主题快闪，5月4日至6月14日限时一个多月。布丁狗咖喱饭（$22.90++）造型可爱到舍不得吃，同时还有日本东北地区灵感菜单：限定酱油拉面、仙台风牛舌饭和秋田米菓。布丁狗忠粉和带娃来打卡的姐妹们，这次绝对不能错过！",
+      tags: ["三丽鸥联名", "限时快闪", "亲子合影"],
+      address: "Japan Rail Cafe, 100 Tras Street, Tanjong Pagar",
+      badge: "new",
+      badgeText: "🆕 5月限定",
+      emoji: "🐶",
+      bgGradient: "linear-gradient(135deg,#fdcb6e,#ffeaa7)",
+      catLabel: "主题餐厅",
+      catDesc: "三丽鸥联名 / Tanjong Pagar",
+      ratingDesc: "5月4日–6月14日限时主题快闪",
+      lat: 1.2768,
+      lng: 103.8454,
+      active: true
+    },
+
+    {
+      id: "superstar-cafe-uss",
+      name: "Superstar Cafe · 环球影城 Sanrio 主题",
+      categories: ["restaurant", "dessert"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$18–35",
+      description: "环球影城 Hollywood 区域全新 Superstar Cafe 与 Sanrio 联名！Hello Kitty、My Melody、Cinnamoroll、库洛米四大顶流人物轮番出现在菜单上，主打超萌瑞士卷蛋糕（每个角色一款不同口味），配 Hello Kitty 拿铁、Kuromi 黑芝麻奶昔等饮品。隔壁 Superstar Boutique 还能买到独家联名周边，和孩子玩完游乐设施过来歇脚拍照刚刚好。",
+      tags: ["三丽鸥主题", "瑞士卷", "环球影城"],
+      address: "Universal Studios Singapore Hollywood Zone, Sentosa",
+      badge: "new",
+      badgeText: "🆕 USS新开",
+      emoji: "🎀",
+      bgGradient: "linear-gradient(135deg,#fd79a8,#a29bfe)",
+      catLabel: "主题餐厅",
+      catDesc: "三丽鸥主题 / 环球影城",
+      ratingDesc: "Hello Kitty/Kuromi 四大主角联动",
+      lat: 1.2540,
+      lng: 103.8238,
       active: true
     }
   ],
@@ -3603,6 +3693,84 @@ const SGLIVING_DATA = {
       cost: "S$25–35/人",
       duration: "2–3小时",
       active: true
+    },
+
+    // ── 5月5日新增（2026-05-05 更新）──────────────
+
+    {
+      id: "sccc-cultural-playground-2026",
+      name: "SCCC 文化游乐场 · 首届中文亲子节",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#e8533a,#fdcb6e)",
+      ageRange: "适合 0–12 岁",
+      description: "新加坡华族文化中心（SCCC）首届中文儿童节「Cultural Playground 2026」隆重登场！6月19-21日三天集结16场节目，专为12岁以下孩子设计。重头戏「哪吒闹海」由纸猴剧团手工杖偶演出，让7-9岁孩子在木偶戏中爱上中国传奇；「童谣计划」第四回重新演绎《小白船》《妈妈最好》等本地华语童谣。还为家长准备2场免费工作坊，教家庭让孩子学中文学得更有趣。中文学习+文化体验一站式，是让孩子爱上中文的绝佳机会！",
+      highlight: "新加坡首个中文亲子节！16场节目让7-9岁孩子沉浸式接触中华文化，传奇故事+童谣戏剧，比补习班有效100倍",
+      location: "Singapore Chinese Cultural Centre, 1 Straits Boulevard",
+      dateRange: "6月19–21日（首日 Vesak Day 公假）",
+      cost: "S$15–35/人（家长工作坊免费）",
+      duration: "约2–3小时",
+      active: true
+    },
+
+    {
+      id: "pokemon-truck-singapore-2026",
+      name: "Pokémon Pokopia 巡回卡车 · 全岛巡回",
+      icon: "🚛",
+      topGradient: "linear-gradient(90deg,#ef4444,#fbbf24)",
+      ageRange: "适合 5–12 岁",
+      description: "宝可梦巡回卡车驶进新加坡！24英尺 LED 卡车配备5台 Nintendo Switch 2 试玩站，孩子可以亲手玩到全新游戏《Pokémon Pokopia》Demo。每周二至周四在市区流动，周五至周日驻扎大型商场（含 CapitaLand 旗下商场），现场还有 Pokopia 主题打卡区、低龄儿童涂色角，7-9岁的小迷弟小迷妹一路追下来超嗨。活动持续至6月4日，免费入场任意玩。",
+      highlight: "免费！Switch 2 试玩+宝可梦合影+亲子涂色，全岛巡回带娃顺路打卡，赶着6月初截止前抓紧体验",
+      location: "全岛各大商场（具体场次详见 CapitaLand Malls 公告）",
+      dateRange: "持续至 6月4日（周末驻扎商场）",
+      cost: "🆓 免费体验",
+      duration: "约30–60分钟",
+      active: true
+    },
+
+    {
+      id: "stitch-childrens-festival-2026",
+      name: "迪士尼史迪奇亲子节 · 滨海湾花园",
+      icon: "👽",
+      topGradient: "linear-gradient(90deg,#3b82f6,#a855f7)",
+      ageRange: "适合 3–12 岁",
+      description: "亚太首届迪士尼《Lilo & Stitch》主题儿童节降临滨海湾花园！超级树林被改造成史迪奇宇宙乐园，传闻设有近7米巨型滑梯、太空与岛屿主题游戏摊位，史迪奇限定周末出没合影。配合学校假期推出，免费户外区+少量付费体验区，6月学校假期带娃去最经典的拍照打卡点，免费看灯光秀也别错过。",
+      highlight: "亚太首届史迪奇主题节！7-9岁的迪士尼粉丝看到大型史迪奇会疯掉，免费入场拍照超出片",
+      location: "Gardens by the Bay · Supertree Grove",
+      dateRange: "5月底–6月（具体日期以官网公告为准）",
+      cost: "免费入场（部分体验另购）",
+      duration: "2–3小时",
+      active: true
+    },
+
+    {
+      id: "childrens-season-2026",
+      name: "儿童季 Children's Season 2026 · 博物馆集印章",
+      icon: "🏛️",
+      topGradient: "linear-gradient(90deg,#10b981,#22d3ee)",
+      ageRange: "适合 6–12 岁",
+      description: "国家博物馆与国家文物局联合主办的「Children's Season 2026」整个6月开启！今年主题「可持续 Sustainability」，孩子穿梭多家博物馆完成「集印章活动 Stamp Rally」，每盖一枚印章就是一段历史与环保科普知识。7-9岁孩子最适合的「主动学习+集邮趣味」组合，几个博物馆下来不仅长见识，还能换取限定纪念品。是全家暑假超有意义的免费亲子任务。",
+      highlight: "全月免费集印章！孩子边玩边认识可持续发展，跑遍狮城博物馆等于上了一堂超立体的环保课",
+      location: "国家博物馆等多个博物馆联合参与",
+      dateRange: "6月1日–6月30日",
+      cost: "🆓 免费（部分馆需购票）",
+      duration: "可分多次完成",
+      active: true
+    },
+
+    {
+      id: "cold-storage-giant-kids-run-2026",
+      name: "Cold Storage × Giant 儿童跑 2026",
+      icon: "🏃",
+      topGradient: "linear-gradient(90deg,#f87171,#fbbf24)",
+      ageRange: "适合 4–12 岁",
+      description: "新加坡最大型亲子跑步赛事回归！Cold Storage × Giant Kids Run 2026 为 4-12 岁孩子设置不同距离组别（800m / 1.6km / 3.2km），赛后嘉年华区还有充气堡、面部彩绘、健康试吃和小朋友最爱的吉祥物合影。让7-9岁孩子第一次体验真实赛事氛围，培养运动习惯+团队精神。早鸟价持续至5月6日截止，建议尽快报名。",
+      highlight: "新加坡最受欢迎的亲子跑！7-9岁正好可参加 1.6km 组，赛后嘉年华全家嗨，是最好的运动启蒙",
+      location: "Bishan-Ang Mo Kio Park（具体地点以官方为准）",
+      dateRange: "6月（详情请见官网；早鸟优惠至 5月6日）",
+      cost: "S$30–55（早鸟价）",
+      duration: "半天",
+      active: true
     }
   ]
+
 };
