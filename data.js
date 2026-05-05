@@ -9,14 +9,14 @@
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
  * 最后更新：2026-05-05
- * 版本：2.4
+ * 版本：2.5
  */
 
 const SGLIVING_DATA = {
 
   meta: {
     lastUpdated: "2026-05-05",
-    version: "2.4",
+    version: "2.5",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -1857,7 +1857,120 @@ const SGLIVING_DATA = {
       lat: 1.2540,
       lng: 103.8238,
       active: true
+    },
+
+    // ── 5月新增：5月初最新搜集 ──────────────────────
+
+    {
+      id: "wolfgangs-steakhouse-rq",
+      name: "Wolfgang's Steakhouse · 罗伯逊码头新店",
+      categories: ["restaurant", "finedining"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$120–250",
+      description: "来自纽约的传奇牛排馆 Wolfgang's Steakhouse 在新加坡开新店啦！全新落地于罗伯逊码头洲际酒店，干式熟成 28 天的 Porterhouse 是绝对招牌，外焦里嫩、咬下去满嘴肉香。空间宽敞复古，红酒柜从地板直通天花板，约会、商务宴请、家庭聚餐都很有面子。",
+      tags: ["美式牛排", "干式熟成", "约会聚餐"],
+      address: "1 Nanson Road, #02-01 InterContinental Singapore Robertson Quay",
+      badge: "new",
+      badgeText: "🆕 5月新店",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#5d4037,#d84315)",
+      catLabel: "正餐",
+      catDesc: "美式牛排 / 罗伯逊码头",
+      ratingDesc: "纽约传奇牛排馆 · 5月新店",
+      lat: 1.2911,
+      lng: 103.8389,
+      active: true
+    },
+
+    {
+      id: "big-mouth-bakehouse",
+      name: "Big Mouth Bakehouse · 芽笼士乃新派烘焙",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$8–18",
+      description: "Fluff Bakery 和 Penny University 强强联手，5月新开烘焙店「Big Mouth Bakehouse」！招牌 Matilda 蛋糕（$8）灵感来自罗尔德·达尔的童话，八层巧克力甘纳许夹心，浓郁丝滑像在嘴里融化，是孩子大人都会爱上的那种甜点。咖啡也很有水准，下午茶来一杯绝配，朋友推荐必试！",
+      tags: ["新派烘焙", "Matilda蛋糕", "下午茶"],
+      address: "Wisma Geylang Serai, 1 Engku Aman Turn",
+      badge: "new",
+      badgeText: "🆕 5月新店",
+      emoji: "🍰",
+      bgGradient: "linear-gradient(135deg,#8d4925,#fab1a0)",
+      catLabel: "甜品",
+      catDesc: "新派烘焙 / 芽笼士乃",
+      ratingDesc: "Fluff x Penny 联手新作",
+      lat: 1.3170,
+      lng: 103.8980,
+      active: true
+    },
+
+    {
+      id: "hues-canele-chinatown",
+      name: "Hues Canele · 牛车水手工可丽露",
+      categories: ["dessert"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$5–10",
+      description: "原本只是家庭烘焙的 Hues Canele 终于在牛车水开实体店啦！穆斯林家庭经营，主打法式经典手工可丽露，外层焦糖脆壳带咔嚓声，里面蛋奶香嫩到拉丝。除了原味还有抹茶、海盐焦糖等多种口味，每一颗都用心烤到刚刚好。家庭手作的温度感扑面而来，朋友推荐必去打卡！",
+      tags: ["法式可丽露", "穆斯林友好", "牛车水"],
+      address: "Chinatown, Singapore",
+      badge: "new",
+      badgeText: "🆕 新开实体店",
+      emoji: "🥯",
+      bgGradient: "linear-gradient(135deg,#a55b3d,#fdcb6e)",
+      catLabel: "甜品",
+      catDesc: "法式烘焙 / 牛车水",
+      ratingDesc: "穆斯林家庭烘焙 · 新开实体店",
+      lat: 1.2840,
+      lng: 103.8439,
+      active: true
+    },
+
+    {
+      id: "japan-rail-pompompurin",
+      name: "Japan Rail Cafe x 布丁狗主题快闪",
+      categories: ["dessert", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$15–25",
+      description: "三丽鸥布丁狗主题快闪来啦！Japan Rail Cafe 在丹戎巴葛与 Pompompurin 合作，5月4日—6月14日限时登场。招牌「布丁狗咖喱饭」（$22.90++）做成布丁狗造型的鸡蛋米饭浮在浓郁咖喱里，旁边配脆脆的鸡块卡拉啊给，可爱到舍不得吃。还有限定饮品和周边周末必抢，三丽鸥粉和亲子家庭快冲！",
+      tags: ["三丽鸥主题", "限时快闪", "亲子拍照"],
+      address: "Japan Rail Cafe, Tanjong Pagar",
+      badge: "new",
+      badgeText: "🆕 限时快闪",
+      emoji: "🍮",
+      bgGradient: "linear-gradient(135deg,#fdcb6e,#f8b500)",
+      catLabel: "小吃",
+      catDesc: "三丽鸥主题 / 丹戎巴葛",
+      ratingDesc: "5月4日–6月14日限时",
+      lat: 1.2766,
+      lng: 103.8456,
+      active: true
+    },
+
+    {
+      id: "jianghu-buffet-orchard",
+      name: "九门江湖火锅 JIANGHU Buffet · 乌节路自助",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$27.80–32.80",
+      description: "姐妹们！乌节路 Orchard Gateway 的九门江湖火锅简直是性价比之王！旋转传送带模式，食材随手取，平日午餐 $27.80++、晚餐 $29.80++，周末 $32.80++ 吃到饱。锅底有麻辣、番茄、菌菇、椰子鸡好几种选，肉品包括牛舌、肥牛、虾滑都很实在。装修走江湖武侠风，超出片！懒人/学生党/姐妹聚会无脑冲，绝绝子！",
+      tags: ["小红书爆款", "江湖风", "传送带火锅", "自助"],
+      address: "Orchard Gateway, 277 Orchard Road",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#c0392b,#f39c12)",
+      catLabel: "正餐",
+      catDesc: "传送带自助火锅 / 乌节路",
+      ratingDesc: "小红书博主热推 · 性价比之王",
+      lat: 1.3010,
+      lng: 103.8400,
+      active: true
     }
+
   ],
 
   // ════════════════════════════════════════════════
@@ -2979,7 +3092,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.capitaland.com/sg/malls/plazasingapura/en/whats-on.html",
       btnText: "了解详情",
       sortDate: "2026-05-04",
-      active: true
+      active: false
     },
 
     {
@@ -3003,7 +3116,126 @@ const SGLIVING_DATA = {
       btnText: "了解详情",
       sortDate: "2026-06-12",
       active: true
+    },
+
+    // ── 5月新增：5月初最新搜集 ──────────────────────
+
+    {
+      id: "le-sserafim-vr-2026",
+      name: "LE SSERAFIM VR 演唱会 · INVITATION",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "17",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#6c5ce7,#a29bfe)",
+      typeLabel: "🎤 K-POP VR 体验",
+      typeColor: "#6c5ce7",
+      description: "韩国女团 LE SSERAFIM 全新 VR 沉浸式演唱会登陆新加坡 GV Bugis+ 影院！戴上 VR 头显，仿佛站在舞台正前方，看 Chaewon、Sakura 等成员近距离表演新单曲与经典舞台。粉丝必入，价格亲民，适合一个人去也不尴尬的全新观演体验！",
+      venue: "GV Bugis+ 影院",
+      dateRange: "5月17日–6月2日",
+      ticketInfo: "🎫 GV 影院",
+      price: "S$25–35",
+      priceNote: "GV 影院",
+      ticketUrl: "https://www.gv.com.sg",
+      btnText: "购票",
+      sortDate: "2026-05-17",
+      active: true
+    },
+
+    {
+      id: "blue-beauties-gbtb-2026",
+      name: "花穹蓝色花海 · Blue Beauties 蓝色奇迹",
+      type: "exhibition",
+      priority: "normal",
+      month: "MAY",
+      day: "26",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#0984e3,#74b9ff)",
+      typeLabel: "🌷 花卉展览",
+      typeColor: "#0984e3",
+      description: "Gardens by the Bay 花穹换季新展！蓝色蜀葵、绣球花和康乃馨铺成一片梦幻蓝色花海，中间矗立伊斯坦布尔托普卡帕宫和少女塔的精美复刻，搭配伊兹尼克瓷砖艺术，土耳其异国风情拉满。亲子打卡、约会拍照都美得让人窒息。",
+      venue: "Gardens by the Bay · Flower Dome",
+      dateRange: "5月26日–6月21日",
+      ticketInfo: "👨‍👩‍👧 亲子适合",
+      price: "S$12起",
+      priceNote: "含花穹门票",
+      ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/blue-beauties.html",
+      btnText: "购票",
+      sortDate: "2026-05-26",
+      active: true
+    },
+
+    {
+      id: "i-light-singapore-2026",
+      name: "i Light Singapore 2026 · 滨海湾光影艺术节",
+      type: "event",
+      priority: "featured",
+      featuredReason: "新加坡年度光影盛事 · 全程免费",
+      month: "JUN",
+      day: "5",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#00cec9,#0984e3)",
+      typeLabel: "✨ 光影艺术节",
+      typeColor: "#00cec9",
+      description: "新加坡最盛大的光影艺术节回归！今年主题「Movement 律动」，国际艺术家在滨海湾、South Beach、莱佛士坊和新加坡河沿线打造数十组互动光影装置，夜晚整个城市变成超大艺术游乐场。GastroBeats 美食市集同步开张，全家散步看灯吃宵夜，免费入场超惊艳。",
+      venue: "Marina Bay 沿线 / South Beach / Raffles Place",
+      dateRange: "6月5日–6月28日（每晚）",
+      ticketInfo: "🆓 免费入场",
+      price: "免费",
+      priceNote: "全程免费",
+      ticketUrl: "https://www.ilightsingapore.gov.sg/",
+      btnText: "了解详情",
+      sortDate: "2026-06-05",
+      active: true
+    },
+
+    {
+      id: "dip-n-splash-bedok-2026",
+      name: "Dip 'N Splash · 勿洛蓄水池水上嘉年华",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "6",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0984e3,#00cec9)",
+      typeLabel: "🌊 水上嘉年华",
+      typeColor: "#0984e3",
+      description: "学校假期开启日，勿洛蓄水池超大型水上派对来啦！充气障碍赛、皮划艇体验、Aqua Adventure 水上探险，孩子玩到不肯回家。爸妈也可以下水撒野，全家清凉一夏。提前预订名额抢手，6月6–7日两天限定！",
+      venue: "Bedok Reservoir 勿洛蓄水池",
+      dateRange: "6月6日–6月7日",
+      ticketInfo: "👨‍👩‍👧 亲子推荐",
+      price: "S$20起",
+      priceNote: "现场报名",
+      ticketUrl: "https://www.pa.gov.sg/get-involved/water-venture",
+      btnText: "了解详情",
+      sortDate: "2026-06-06",
+      active: true
+    },
+
+    {
+      id: "treasure-pulse-on-2026",
+      name: "TREASURE · PULSE ON 巡演（已结束）",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "3",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#fd79a8,#e17055)",
+      typeLabel: "🎤 K-POP 演唱会",
+      typeColor: "#e17055",
+      description: "韩国男团 TREASURE「PULSE ON」世界巡演新加坡站，5月3日已在新加坡室内体育馆完美收官。下次回归请关注 Ticketmaster。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "5月3日（已结束）",
+      ticketInfo: "🔁 已结束",
+      price: "S$148–268",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=TREASURE+Singapore",
+      btnText: "了解详情",
+      sortDate: "2026-05-03",
+      active: false
     }
+
   ],
 
   // ════════════════════════════════════════════════
@@ -3769,6 +4001,51 @@ const SGLIVING_DATA = {
       dateRange: "6月（详情请见官网；早鸟优惠至 5月6日）",
       cost: "S$30–55（早鸟价）",
       duration: "半天",
+      active: true
+    },
+
+    {
+      id: "i-light-singapore-family-2026",
+      name: "i Light Singapore 2026 · 滨海湾光影艺术节（亲子）",
+      icon: "✨",
+      topGradient: "linear-gradient(90deg,#00cec9,#0984e3)",
+      ageRange: "适合全家（3–12岁尤佳）",
+      description: "新加坡年度光影盛事 i Light 2026 终于回来了！滨海湾、South Beach、莱佛士坊、新加坡河沿岸搬来数十组互动光影装置，今年主题「Movement 律动」，许多装置专为孩子设计：有的踩一下就发光、有的能挥手控制色彩。GastroBeats 美食市集就在旁边，散步看灯吃宵夜，全程免费。傍晚 7 点开始最适合带孩子出门，凉爽不晒。",
+      highlight: "免费！互动装置超多，7-9岁孩子能亲手触发光影变化，全家散步打卡的暑假必去清单顶配",
+      location: "Marina Bay 沿线 / South Beach / Raffles Place / Singapore River",
+      dateRange: "6月5日–6月28日（每晚 7:30–11pm）",
+      cost: "🆓 免费入场",
+      duration: "2–3小时（含晚餐）",
+      active: true
+    },
+
+    {
+      id: "dip-n-splash-bedok-family-2026",
+      name: "Dip 'N Splash · 勿洛蓄水池水上嘉年华",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#0984e3,#00cec9)",
+      ageRange: "最适合 6–12 岁",
+      description: "学校假期一开启就来一场酣畅淋漓的水上派对！勿洛蓄水池搭建了超大充气障碍赛道、Aqua Adventure 水上探险区，还能体验皮划艇。两天限定，对7-9岁的孩子来说是全方位放电+体能挑战，水中钻洞翻滚、跳水滑梯、踏皮划艇，玩到不肯回家。要会基础水性更安全，记得带换洗衣物和防晒。",
+      highlight: "充气障碍+皮划艇双重体验，7-9岁孩子可独立闯关，体力消耗+协调挑战，一次过瘾两天",
+      location: "Bedok Reservoir 勿洛蓄水池",
+      dateRange: "6月6日–6月7日",
+      cost: "S$20起（建议提前预订）",
+      duration: "半天",
+      active: true
+    },
+
+    {
+      id: "mandarin-kids-festival-2026",
+      name: "全新华语儿童节 · 16档剧场+故事+音乐",
+      icon: "🎭",
+      topGradient: "linear-gradient(90deg,#e84393,#fdcb6e)",
+      ageRange: "适合 4–12 岁（华语家庭尤佳）",
+      description: "6月学校假期重磅首发！新加坡首届以华语为主线的儿童节正式登场，16 个节目涵盖戏剧、音乐、说故事和动手工作坊，所有内容都用孩子听得懂的中文呈现。对在新加坡的中国家庭来说，这是难得让孩子在玩中学中文的机会，7-9岁孩子可以全程跟着剧情、参与互动，还能跟家里讨论故事情节，文化输出+亲子时光双丰收。",
+      highlight: "首届华语儿童节！7-9岁孩子能完整看懂节目并参与互动，是新加坡难得的中文沉浸亲子体验",
+      location: "多个剧场（详情请见官网）",
+      dateRange: "6月19日–6月21日",
+      cost: "S$15–35/场",
+      duration: "每场 45–90 分钟",
       active: true
     }
   ]
