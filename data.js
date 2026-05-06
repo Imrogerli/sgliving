@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-05
+ * 最后更新：2026-05-06
  * 版本：2.5
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-05",
+    lastUpdated: "2026-05-06",
     version: "2.5",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -1970,6 +1970,117 @@ const SGLIVING_DATA = {
       lng: 103.8400,
       active: true
     }
+,
+
+    {
+      id: "bouillon-gavroche-mandarin",
+      name: "Bouillon Gavroche · 巴黎传统平价法餐",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$15–35",
+      description: "新加坡首家正宗巴黎 Bouillon 风格餐厅，落户乌节路 Mandarin Gallery！主打 1850 年巴黎工人阶级最爱的家常法餐：勃艮第红酒炖牛肉、油封鸭腿、Coq au Vin 红酒鸡，全部 S$30 内搞定。气氛热闹复古，适合朋友小聚或一个人放松吃顿好的，让你不用飞巴黎也能尝到地道法式风味。",
+      tags: ["巴黎风", "平价法餐", "炖牛肉"],
+      address: "Mandarin Gallery, 333A Orchard Road",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🇫🇷",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#f39c12)",
+      catLabel: "正餐",
+      catDesc: "传统法餐 / 乌节路",
+      ratingDesc: "新加坡首家 Bouillon 风格法餐",
+      lat: 1.3036,
+      lng: 103.8345,
+      active: true
+    },
+
+    {
+      id: "asin-ace-tan",
+      name: "Asin · 陈宪进新派亚洲创意",
+      categories: ["restaurant", "finedining"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$188",
+      description: "名厨陈宪进（Ace Tan）携手 Suguru 主厨 Desmond Heng 强势回归，全新概念主打「Progressive Asian」。八道式季节品鉴菜单 S$188，食材跟着季节走，每一道都讲一个亚洲风味故事。环境精致低调，是2026年最受关注的高端创意亚洲餐厅之一，老饕和约会都很合适。",
+      tags: ["创意亚洲菜", "Tasting Menu", "名厨回归"],
+      address: "Ann Siang Hill area",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍶",
+      bgGradient: "linear-gradient(135deg,#16a085,#1abc9c)",
+      catLabel: "正餐",
+      catDesc: "新派亚洲 / Tasting Menu",
+      ratingDesc: "名厨 Ace Tan 全新概念回归",
+      lat: 1.2810,
+      lng: 103.8458,
+      active: true
+    },
+
+    {
+      id: "all-hands-shokupan",
+      name: "All Hands · 百年老铺手作生吐司",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$12–28",
+      description: "藏在百年老店屋里的早餐圣地，每天现烤招牌 Shokupan 生吐司！必点「自制咖椰土司配溏心蛋 + 黑松露黄油」，松软的吐司+流心蛋+南洋咖椰酱，咬下去那一口幸福感爆棚。装修保留了老建筑原有的木梁和地砖，复古文艺氛围超出片，朋友约早午餐或一个人放空都很合适。",
+      tags: ["生吐司", "咖椰", "老店屋"],
+      address: "Tanjong Pagar shophouse",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍞",
+      bgGradient: "linear-gradient(135deg,#d4a574,#e8b58a)",
+      catLabel: "餐厅",
+      catDesc: "手作吐司 / 早午餐",
+      ratingDesc: "百年老店屋复古早餐圣地",
+      lat: 1.2766,
+      lng: 103.8458,
+      active: true
+    },
+
+    {
+      id: "suntec-noci-bakery",
+      name: "Suntec Café-Bakery by Noci · 韩风烘焙",
+      categories: ["restaurant", "snack"],
+      rating: 4.4,
+      openDate: "2026-05",
+      price: "S$2.50–12",
+      description: "Noci Pasta Bar 团队的全新韩式烘焙咖啡店进驻 Suntec City！招牌「黄油打糕」(Butter Tteok) S$2.50/个外脆内糯，「酥脆海盐面包」S$4.40 越嚼越香，「葱花奶油芝士贝果」S$7 咸甜平衡到刚刚好。CBD 上班族下午茶/早餐扫货新去处，韩剧女主同款 vibe。",
+      tags: ["韩式烘焙", "黄油打糕", "Suntec"],
+      address: "Suntec City Mall, 3 Temasek Boulevard",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🥯",
+      bgGradient: "linear-gradient(135deg,#f1c40f,#e67e22)",
+      catLabel: "小吃",
+      catDesc: "韩式烘焙咖啡 / 滨海中心",
+      ratingDesc: "Noci 团队跨界韩风烘焙",
+      lat: 1.2952,
+      lng: 103.8590,
+      active: true
+    },
+
+    {
+      id: "coucou-hotpot-jewel",
+      name: "凑凑火锅 Coucou · 火锅+茶饮跨界",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2025-12",
+      price: "S$45–80",
+      description: "姐妹们！来自中国200+门店的凑凑火锅终于在新加坡开到第三家分店啦！必点「番茄汤底+草原羊肉卷+手打虾滑」，家里人均S$50–60就能吃得超满足。最绝的是他家自制的「大红袍珍珠奶茶」和火锅简直是天作之合！i12 乌节、Jewel 樟宜机场、Suntec City 三家分店随你选，约会聚会绝绝子，避雷高峰期一定要预约！",
+      tags: ["小红书爆款", "火锅+奶茶", "中国连锁", "番茄锅"],
+      address: "Jewel Changi Airport, 78 Airport Boulevard",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#d63031,#e17055)",
+      catLabel: "正餐",
+      catDesc: "火锅+茶饮 / 樟宜星耀",
+      ratingDesc: "小红书博主推荐 · 中国200+门店连锁",
+      lat: 1.3601,
+      lng: 103.9893,
+      active: true
+    }
 
   ],
 
@@ -3235,6 +3346,53 @@ const SGLIVING_DATA = {
       sortDate: "2026-05-03",
       active: false
     }
+,
+
+    {
+      id: "discover-magic-music-quek-2026",
+      name: "DiSCOver the Magic of Music with Professor Quek",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "22",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#74b9ff,#0984e3)",
+      typeLabel: "🎵 古典音乐普及",
+      typeColor: "#0984e3",
+      description: "新加坡华乐团联手郭勇德教授带来的古典音乐普及音乐会，现场用孩子能听懂的语言讲解+演奏。是带7-9岁孩子启蒙古典音乐的好机会，也适合一家人来一次轻松的文化体验。连演5天，可挑工作日或周末场次。",
+      venue: "Singapore Chinese Orchestra Concert Hall",
+      dateRange: "5月22–26日",
+      ticketInfo: "🎟️ 现场购票 / SISTIC",
+      price: "S$25–45",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Professor+Quek",
+      btnText: "查购票链接",
+      sortDate: "2026-05-22",
+      active: true
+    },
+
+    {
+      id: "navy-day-singapore-2026",
+      name: "Navy Day 2026 · 新加坡海军日开放日",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "1",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#74b9ff,#0984e3)",
+      typeLabel: "🚢 免费亲子",
+      typeColor: "#0984e3",
+      description: "新加坡海军每年仅一次的开放日，海军博物馆免费参观+互动家庭活动，可以登舰拍照、看制服展示、玩亲子游戏。亲眼看一次真实的军舰是孩子的大开眼界时刻。已结束。",
+      venue: "Singapore Navy Museum",
+      dateRange: "5月1–2日（已结束）",
+      ticketInfo: "🆓 免费入场",
+      price: "免费",
+      priceNote: "官方活动",
+      ticketUrl: "https://www.mindef.gov.sg/web/portal/navy/news-events/events",
+      btnText: "了解详情",
+      sortDate: "2026-05-01",
+      active: false
+    }
 
   ],
 
@@ -4046,6 +4204,52 @@ const SGLIVING_DATA = {
       dateRange: "6月19日–6月21日",
       cost: "S$15–35/场",
       duration: "每场 45–90 分钟",
+      active: true
+    }
+,
+
+    {
+      id: "skatecross-seletar-2026",
+      name: "Skatecross Downmall Challenge · 滚轴竞速嘉年华",
+      icon: "🛼",
+      topGradient: "linear-gradient(90deg,#0984e3,#74b9ff)",
+      ageRange: "适合 4–12 岁（7-9岁推荐）",
+      description: "Seletar Mall 五月最热闹的家庭活动！现场设有滚轴障碍赛道，5月9日特别举办「Junior Rollercross Race」，专为4–12岁孩子设计的竞速比赛。7-9岁正是体能、平衡感、竞技意识发展的黄金期，让孩子穿上滚轴鞋冲一次终点线，比起室内活动更有满足感和成就感。",
+      highlight: "5月9日的 Junior Rollercross 是7-9岁孩子的专场比赛，能锻炼平衡力和团队竞争意识，比室内课程刺激多了",
+      location: "The Seletar Mall, 33 Sengkang West Avenue",
+      dateRange: "5月7日–5月10日",
+      cost: "免费观赛 / 报名比赛 S$15–25",
+      duration: "半天",
+      active: true
+    },
+
+    {
+      id: "dorifto-indoor-drift-2026",
+      name: "DORIFTO! · 室内迷你漂移卡丁车",
+      icon: "🏎️",
+      topGradient: "linear-gradient(90deg,#e17055,#fdcb6e)",
+      ageRange: "需 7 岁+ 且身高 120cm+（7-9岁刚好）",
+      description: "新加坡首家室内漂移卡丁车体验馆，专门给小朋友设计的安全竞速车型，工作人员全程指导。7-9岁孩子刚好满足身高要求，能独自驾驶、感受漂移的肾上腺素冲击。下雨天/暑假家长找不到地方放电？这里就对了。",
+      highlight: "7岁是入场最低年龄，刚好踩在年龄门槛上的孩子能体验「我可以独立驾驶」的成就感，比父母陪坐有意义多了",
+      location: "新加坡室内卡丁车场（详情见官网）",
+      dateRange: "全年开放",
+      cost: "S$30–60/场",
+      duration: "30分钟–1小时",
+      active: true
+    },
+
+    {
+      id: "hay-dairies-farm-2026",
+      name: "Hay Dairies · 800只山羊农场亲子游",
+      icon: "🐐",
+      topGradient: "linear-gradient(90deg,#10b981,#34d399)",
+      ageRange: "适合 3–10 岁（7-9岁喜欢动手喂养）",
+      description: "新加坡唯一的山羊牧场，养着800多只山羊！孩子可以近距离看挤奶、喂草、买刚装瓶的鲜山羊奶。藏在 Lim Chu Kang 西北郊野，开车30分钟就能从城市进入「另一个新加坡」。7-9岁的孩子特别喜欢动手喂养小动物，是城市孩子接触农场最方便的一站。",
+      highlight: "新加坡难得的农场体验，让7-9岁孩子真正接触动物、了解食物来源，比绘本和动画片立体得多",
+      location: "Hay Dairies, 3 Lim Chu Kang Lane 4",
+      dateRange: "全年开放（周二闭馆）",
+      cost: "免费入场，山羊奶 S$10–15",
+      duration: "1–2小时",
       active: true
     }
   ]
