@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-06
+ * 最后更新：2026-05-07
  * 版本：2.5
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-06",
+    lastUpdated: "2026-05-07",
     version: "2.5",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2080,7 +2080,76 @@ const SGLIVING_DATA = {
       lat: 1.3601,
       lng: 103.9893,
       active: true
+    },
+
+    // ── 5月7日新增 ──────────────────────────────
+
+    {
+      id: "sushi-kenshin-clarke-quay",
+      name: "Sushi Kenshin · 江户前职人寿司",
+      categories: ["restaurant", "finedining"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$88–328",
+      description: "Clarke Quay Central 5月新开的江户前 Omakase 寿司店，主厨 Kevin Ho 是新加坡寿司界传奇老师傅，前 Nogawa 主厨，30年握寿司经验。米饭用宫城 Sasanishiki 配自调红白醋，每一贯都讲究节奏与温度。20席小空间（12席板前+8席包间）能感受到职人现场捏制的功夫。Omakase S$88 起，进阶 S$328++ 可吃到喉黑、大腹等当季顶级食材。约会、商务、馋寿司发烧友首选。",
+      tags: ["江户前寿司", "Omakase", "Clarke Quay"],
+      address: "Clarke Quay Central, 6 Eu Tong Sen Street",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#34495e,#2c3e50)",
+      catLabel: "正餐",
+      catDesc: "江户前 Omakase / Clarke Quay",
+      ratingDesc: "30年老师傅 · S$88 起 Omakase",
+      lat: 1.2885,
+      lng: 103.8442,
+      active: true
+    },
+
+    {
+      id: "milli-national-gallery",
+      name: "Milli · 国家美术馆顶楼天台餐酒夜店",
+      categories: ["restaurant", "finedining"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$60–150",
+      description: "5月31日盛大开业！国家美术馆顶楼接替原 Smoke & Mirrors 的全新天台餐酒+夜店概念，主厨是米其林一星 Labyrinth 名厨 LG Han，鸡尾酒由 Native 主理人 Vijay Mudaliar 操刀。6 楼 Sky Dining 主打改良版本地小吃（米其林版 Prata、海南鸡饭、蚝煎），招牌鸡尾酒「Milli」致敬被遗忘的本地经典 Million Dollar，和 Singapore Sling 同源。5 楼 Lounge 派对到凌晨 4 点，免入场费。市中心顶楼俯瞰 Padang，约会、纪念日、夜店一站搞定。",
+      tags: ["顶楼夜景", "米其林主厨", "Padang 视野"],
+      address: "National Gallery Singapore, 1 St Andrew's Road, Level 5–6",
+      badge: "new",
+      badgeText: "🆕 5月31日开",
+      emoji: "🌃",
+      bgGradient: "linear-gradient(135deg,#0a3d62,#3c6382)",
+      catLabel: "正餐",
+      catDesc: "天台餐酒夜店 / 国家美术馆",
+      ratingDesc: "米其林主厨改良小吃 · 6楼俯瞰 Padang",
+      lat: 1.2904,
+      lng: 103.8516,
+      active: true
+    },
+
+    {
+      id: "mozmoji-southbridge",
+      name: "Mozmoji Café · 南桥街抹茶陶艺咖啡馆",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$8–22",
+      description: "姐妹们！小红书已经悄悄爆款的宝藏新店——南桥路二楼一间老店屋上，一半咖啡馆一半陶艺画廊，文艺感氛围拉满！主打石磨抹茶系列：「抹茶草莓蛋糕」香气扑鼻、抹茶慕斯丝滑入口，「抹茶提拉米苏」是博主们的拍照神器。咖啡用本地烘焙豆子，杯具也都是店里手作陶器，连杯子都能买回家。安静、出片、不踩雷，是约姐妹下午茶或一个人发呆的小确幸。",
+      tags: ["小红书爆款", "石磨抹茶", "陶艺咖啡馆"],
+      address: "South Bridge Road（具体见 IG @mozmoji.sg）",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#27ae60,#16a085)",
+      catLabel: "甜品饮料",
+      catDesc: "抹茶咖啡 / 陶艺画廊",
+      ratingDesc: "小红书博主推荐 · 石磨抹茶+手作陶器",
+      lat: 1.2849,
+      lng: 103.8460,
+      active: true
     }
+
 
   ],
 
@@ -3392,7 +3461,103 @@ const SGLIVING_DATA = {
       btnText: "了解详情",
       sortDate: "2026-05-01",
       active: false
+    },
+
+    // ── 5月7日新增 ──────────────────────────────
+
+    {
+      id: "grasshopper-three-in-love",
+      name: "草蜢 Grasshopper · THREE IN LOVE 40周年世界巡回",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "粤语经典天团40周年",
+      month: "JUN",
+      day: "20",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#16a085,#27ae60)",
+      typeLabel: "🎤 粤语天团",
+      typeColor: "#16a085",
+      description: "蘇志威、蔡一智、蔡一傑组成的香港粤语经典天团草蜢迎来出道40周年世界巡演，第一站来到新加坡！连唱《失恋》《忘情森巴舞》《爱不爱我》《暴风女神 Lorelei》等几代华人共同回忆的金曲。舞台焕新升级，劲歌热舞配抒情慢歌，是 80/90/00 后华人不容错过的情怀演出，带上爸妈一起回忆青春！",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "6月20日（周六）20:00",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$118–388",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/gh0626",
+      btnText: "购票",
+      sortDate: "2026-06-20",
+      active: true
+    },
+
+    {
+      id: "ron-maxim-piano-recital",
+      name: "Ron Maxim 钢琴独奏音乐会 2026",
+      type: "concert",
+      priority: "normal",
+      month: "MAY",
+      day: "29",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#7f8c8d,#34495e)",
+      typeLabel: "🎹 古典钢琴",
+      typeColor: "#34495e",
+      description: "新加坡华裔青年钢琴家 Ron Maxim 个人独奏音乐会，演绎肖邦、拉赫玛尼诺夫等大师经典作品。是亲子周末文艺活动的好选择，孩子可借此感受古典音乐现场氛围。",
+      venue: "Esplanade Recital Studio",
+      dateRange: "5月29日（周五）20:00",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$58–98",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Ron+Maxim",
+      btnText: "购票",
+      sortDate: "2026-05-29",
+      active: true
+    },
+
+    {
+      id: "milli-grand-opening-event",
+      name: "Milli · 国家美术馆顶楼盛大开业派对",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "31",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#0a3d62,#3c6382)",
+      typeLabel: "🌃 餐酒夜店",
+      typeColor: "#0a3d62",
+      description: "5月31日盛大开业！国家美术馆顶楼接替原 Smoke & Mirrors 的全新天台餐酒+夜店概念，主厨是米其林一星 Labyrinth 名厨 LG Han，鸡尾酒由 Native 主理人 Vijay Mudaliar 操刀。6 楼 Sky Dining 主打改良版本地小吃，5 楼 Lounge 派对至凌晨 4 点（免入场费）。开业首晚有 DJ 派对+主理人见面会，是新加坡夜生活新热点。",
+      venue: "Milli, National Gallery Singapore L5–6",
+      dateRange: "5月31日（周日）开业",
+      ticketInfo: "ℹ️ 官网预约",
+      price: "免入场费",
+      priceNote: "免入场费",
+      ticketUrl: "https://www.millisingapore.com/",
+      btnText: "了解详情",
+      sortDate: "2026-05-31",
+      active: true
+    },
+
+    {
+      id: "sso-mothers-day-2026",
+      name: "新加坡交响乐团 · 母亲节户外音乐会",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "10",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#e84393,#fd79a8)",
+      typeLabel: "🎻 古典户外",
+      typeColor: "#e84393",
+      description: "新加坡交响乐团 SSO 在新加坡植物园 Shaw Foundation Symphony Stage 户外草坪举办的免费母亲节音乐会，全家人带上野餐垫、零食和妈妈一起在落日余晖中感受古典名曲！是带妈妈过节、亲子共享的暖心活动，免费入场，需提前到场占好位。",
+      venue: "Singapore Botanic Gardens, Shaw Foundation Symphony Stage",
+      dateRange: "5月10日（周日）傍晚",
+      ticketInfo: "✨ 免费入场",
+      price: "免费",
+      priceNote: "免费",
+      ticketUrl: "https://www.sso.org.sg/",
+      btnText: "了解详情",
+      sortDate: "2026-05-10",
+      active: true
     }
+
 
   ],
 
@@ -4250,6 +4415,51 @@ const SGLIVING_DATA = {
       dateRange: "全年开放（周二闭馆）",
       cost: "免费入场，山羊奶 S$10–15",
       duration: "1–2小时",
+      active: true
+    },
+
+    {
+      id: "sso-mothers-day-family-2026",
+      name: "新加坡交响乐团 · 母亲节户外野餐音乐会",
+      icon: "🎻",
+      topGradient: "linear-gradient(90deg,#e84393,#fd79a8)",
+      ageRange: "适合全家（5岁+ 最佳）",
+      description: "5月10日母亲节，新加坡交响乐团 SSO 在新加坡植物园 Shaw Foundation Symphony Stage 户外草坪上演免费母亲节音乐会！全家带上野餐垫、零食、玩具一起享受落日余晖配古典名曲。7-9岁孩子第一次接触现场古典音乐再合适不过，妈妈也能感受到来自孩子的浪漫心意。",
+      highlight: "免费户外古典音乐会+母亲节双重 buff，让7-9岁孩子第一次感受现场交响乐魅力，是亲子文化启蒙的天然场景",
+      location: "Singapore Botanic Gardens, Shaw Foundation Symphony Stage",
+      dateRange: "5月10日（周日）傍晚",
+      cost: "免费入场（需提前到场占位）",
+      duration: "约1.5–2小时",
+      active: true
+    },
+
+    {
+      id: "june-holiday-skyline-luge-may-pass",
+      name: "Skyline Luge 圣淘沙 · 五月暑前热身",
+      icon: "🛷",
+      topGradient: "linear-gradient(90deg,#f59e0b,#f97316)",
+      ageRange: "适合 6–12 岁（独驾要求 6岁+ 110cm）",
+      description: "圣淘沙岛上的 Skyline Luge 全年开放，是暑假前给孩子放电的好选择。Skyride 四人吊椅缓缓升上山顶，孩子可以独自驾着小雪橇沿着4条赛道滑下来，速度可控、刺激又安全。5月底学校放暑假前的周末来玩，避开暑假人潮，是7-9岁孩子练习独立操控、积累成就感的好场景。",
+      highlight: "6岁起即可独驾，比卡丁车更友好；从山顶滑下来的速度刚刚好，7-9岁孩子能完成3-5圈不腻",
+      location: "Skyline Luge Sentosa, 45 Siloso Beach Walk",
+      dateRange: "全年开放（5月底前避开暑假高峰）",
+      cost: "S$28–48/人 多圈通票更划算",
+      duration: "1.5–2.5小时",
+      active: true
+    },
+
+    {
+      id: "minion-land-uss-may-2026",
+      name: "Minion Land · 环球影城小黄人主题园区",
+      icon: "🍌",
+      topGradient: "linear-gradient(90deg,#fbbf24,#facc15)",
+      ageRange: "最适合 5–12 岁",
+      description: "环球影城最新开放的小黄人主题园区！三大区域 Super Silly Fun Land、Gru's Neighbourhood 与 Minion Marketplace 全部沉浸式打造，新设备「Despicable Me Minion Mayhem」全家共乘体验小黄人疯狂任务。园区内有专属餐车、互动喷水池、限定周边店铺，是全岛最适合 7-9 岁孩子撒欢的全新主题区。建议早上开门即到避开人潮。",
+      highlight: "全新开放的沉浸式主题园区，互动设备、装饰、零食都自带高萌值，7-9岁孩子的尖叫指数 MAX",
+      location: "Universal Studios Singapore, 8 Sentosa Gateway",
+      dateRange: "5月起全面开放",
+      cost: "USS 门票 S$83–88（已含）",
+      duration: "半天–全天",
       active: true
     }
   ]
