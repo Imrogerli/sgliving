@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-07
+ * 最后更新：2026-05-08
  * 版本：2.5
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-07",
+    lastUpdated: "2026-05-08",
     version: "2.5",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2148,6 +2148,95 @@ const SGLIVING_DATA = {
       lat: 1.2849,
       lng: 103.8460,
       active: true
+    },
+    // ── ⭐ 2026-05-08 新增：5月最新美食 ─────────
+
+    {
+      id: "lujiang-suntec-2026",
+      name: "绿茶餐厅 · 新加坡首店（新达城）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$30–60",
+      description: "姐妹们！绿茶餐厅来新加坡了！开在新达城商场1楼，标志性的江南水乡风格延续国内人气，由名厨俞斌担任首席顾问。招牌「面饼酱香五花肉」（$22）一上桌就香气四溢，绿茶烤鸡、东坡肉也都是国内吃过的熟悉味道，菜品大多$4-30新元。性价比超高，怀念国内中餐的小伙伴必冲！周末记得提前订位。",
+      tags: ["小红书爆款", "江浙菜", "新店开业"],
+      address: "Suntec City Mall #01-K, 3 Temasek Boulevard",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#27ae60,#2ecc71)",
+      catLabel: "正餐",
+      catDesc: "江浙菜 / 新达城",
+      ratingDesc: "国内人气连锁 · 新加坡首店",
+      lat: 1.2954,
+      lng: 103.8576,
+      active: true
+    },
+
+    {
+      id: "tongxin-ruyi-hotpot-2026",
+      name: "同心如意火锅 · 三牛合一香辣锅",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$60–80",
+      description: "宝子们冲！这家网红火锅最近在小红书疯狂刷屏！招牌「三牛合一香辣锅」一锅三种牛肉，「八秒牛肉」名不虚传，下锅就熟，嫩到爆汁。「蛙蛙串」「鲜虾滑」也是必点，麻辣鲜香超够味。人均$70左右，会员还能享85折，绝对是和小姐妹聚餐的心头好！店在 Lorong Telok 老街区，氛围超有感觉，拍照也好看。",
+      tags: ["小红书爆款", "川渝火锅", "网红打卡"],
+      address: "6 Lorong Telok",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#c0392b)",
+      catLabel: "正餐",
+      catDesc: "川渝火锅 / Lorong Telok",
+      ratingDesc: "小红书人气网红火锅",
+      lat: 1.2870,
+      lng: 103.8466,
+      active: true
+    },
+
+    {
+      id: "long-ge-hotpot-buffet-2026",
+      name: "龙哥地摊火锅自助 · S$19.90 神价",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-03",
+      price: "S$19.90+",
+      description: "学生党/打工人的火锅天堂！$19.90++ 自助火锅，超过100种食材随便涮，性价比之王。5月底前来还送免费烤扇贝和生蚝（真的太顶了），三五朋友一起去保证吃到撑。位置在 Vision Exchange，商场内停车方便。地摊风装修很有亲切感，姐妹聚餐、家庭聚餐都合适。",
+      tags: ["小红书爆款", "火锅自助", "高性价比"],
+      address: "Vision Exchange, 2 Venture Drive #02-46",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥘",
+      bgGradient: "linear-gradient(135deg,#d35400,#e67e22)",
+      catLabel: "正餐",
+      catDesc: "火锅自助 / Jurong East",
+      ratingDesc: "$19.90 自助 · 性价比火锅",
+      lat: 1.3340,
+      lng: 103.7430,
+      active: true
+    },
+
+    {
+      id: "lady-m-jewel-reopen-2026",
+      name: "Lady M · Jewel 樟宜回归首店",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$11.80–13.85",
+      description: "千层蛋糕女王 Lady M 回归新加坡啦！经历今年早些时候新加坡门店全部关闭后，Lady M 在 Jewel Changi 樟宜机场重新开业，44 座的精品店和咖啡馆。招牌千层（$11.80++）、抹茶千层（$12.80++）、开心果千层（$13.85++）全部回归，下飞机第一站直接打卡，仪式感满满。Lady M 死忠粉绝对要来朝圣一波！",
+      tags: ["千层蛋糕", "回归新店", "樟宜机场"],
+      address: "Jewel Changi Airport #B2-228, 78 Airport Boulevard",
+      badge: "new",
+      badgeText: "🆕 5月回归",
+      emoji: "🍰",
+      bgGradient: "linear-gradient(135deg,#fab1a0,#fd79a8)",
+      catLabel: "甜品",
+      catDesc: "千层蛋糕 / 樟宜机场",
+      ratingDesc: "Lady M 回归首店 · Jewel",
+      lat: 1.3601,
+      lng: 103.9892,
+      active: true
     }
 
 
@@ -3556,7 +3645,104 @@ const SGLIVING_DATA = {
       btnText: "了解详情",
       sortDate: "2026-05-10",
       active: true
+    },
+    // ── 2026-05-08 新增：5月最新活动 ─────────
+
+    {
+      id: "into-the-ocean-artscience-2026",
+      name: "Into the Ocean: Journey Beneath · 深海之旅展",
+      type: "exhibition",
+      priority: "normal",
+      month: "JUN",
+      day: "01",
+      dow: "全月",
+      dateColor: "linear-gradient(135deg,#0984e3,#0c2461)",
+      typeLabel: "🌊 海洋大展",
+      typeColor: "#0984e3",
+      description: "ArtScience 艺术科学博物馆与 OceanX 联合呈现的世界首映级海洋大展！带领观众从阳光斑驳的海面，一路潜入最幽暗的深海未知地带，沉浸式光影互动体验震撼人心。海洋探险迷、科技迷、亲子家庭都不能错过！",
+      venue: "ArtScience Museum, Marina Bay Sands",
+      dateRange: "6月起开展（建议提前订票）",
+      ticketInfo: "🎫 ArtScience Museum 官方/Klook",
+      price: "S$22–32",
+      priceNote: "成人/儿童",
+      ticketUrl: "https://www.marinabaysands.com/museum/exhibitions/into-the-ocean.html",
+      btnText: "购票",
+      sortDate: "2026-06-01",
+      active: true
+    },
+
+    {
+      id: "pompompurin-popup-event-2026",
+      name: "Pompompurin × Japan Rail Cafe 30周年快闪",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "04",
+      dow: "至6月14日",
+      dateColor: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      typeLabel: "🍮 三丽鸥快闪",
+      typeColor: "#fdcb6e",
+      description: "庆祝三丽鸥布丁狗 Pompompurin 30周年！Japan Rail Cafe 在丹戎巴葛举办主题快闪，限定布丁狗咖喱饭、布丁狗布丁帕菲，每单还赠送独家周边。三丽鸥粉、亲子家庭、爱拍照的姐妹必到！",
+      venue: "Japan Rail Cafe, 100 Tras Street, Tanjong Pagar",
+      dateRange: "5月4日–6月14日",
+      ticketInfo: "🎫 无需购票，直接到店",
+      price: "S$22.90+",
+      priceNote: "餐点价格",
+      ticketUrl: "https://eatbook.sg/pompompurin-cafe-singapore/",
+      btnText: "查看详情",
+      sortDate: "2026-05-04",
+      active: true
+    },
+
+    {
+      id: "ive-singapore-2026",
+      name: "IVE 世界巡演 · 新加坡站",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "韩国顶流女团巡演",
+      month: "MAY",
+      day: "09",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#a29bfe,#6c5ce7)",
+      typeLabel: "🎤 K-Pop 顶流",
+      typeColor: "#6c5ce7",
+      description: "韩国顶流女团 IVE 世界巡演新加坡站！第二轮巡演升级版，曲目大量增加，每位成员还会带来未发表的 solo 曲目，粉丝惊喜满满。《I AM》《After LIKE》《Love Dive》等爆款必听，K-Pop 迷不容错过！",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "5月9日 18:00",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148–388",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=IVE+Singapore",
+      btnText: "购票",
+      sortDate: "2026-05-09",
+      active: true
+    },
+
+    {
+      id: "skyline-luge-june-promo-2026",
+      name: "圣淘沙 Skyline Luge · 六月假期亲子优惠",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "12",
+      dow: "周末",
+      dateColor: "linear-gradient(135deg,#16a085,#1abc9c)",
+      typeLabel: "🛷 亲子活动",
+      typeColor: "#16a085",
+      description: "新加坡六月学校假期来啦！圣淘沙 Skyline Luge 推出三个连续周末亲子优惠（6月12-14日、19-21日、26-28日），85cm-110cm 的小朋友$15 起就能玩，全家一起体验空中缆车+刺激滑车，性价比超高！",
+      venue: "Skyline Luge Sentosa",
+      dateRange: "6月12-14日、19-21日、26-28日",
+      ticketInfo: "🎫 官网/Klook",
+      price: "S$15+",
+      priceNote: "儿童起",
+      ticketUrl: "https://www.skylineluge.com/en/sentosa/",
+      btnText: "查看优惠",
+      sortDate: "2026-06-12",
+      active: true
     }
+
+
+
 
 
   ],
@@ -4461,7 +4647,69 @@ const SGLIVING_DATA = {
       cost: "USS 门票 S$83–88（已含）",
       duration: "半天–全天",
       active: true
+    },
+    // ── 2026-05-08 新增：亲子最新推荐 ─────────
+
+    {
+      id: "into-the-ocean-family-2026",
+      name: "Into the Ocean: Journey Beneath · 深海之旅亲子展",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#0984e3,#0c2461)",
+      ageRange: "最适合 6–12 岁",
+      description: "ArtScience 艺术科学博物馆联合 OceanX 推出全球首映级海洋大展！沉浸式光影装置带孩子从阳光斑驳的海面，一路潜入最幽暗的深海。互动展区可以「操控」水下机器人、看深海生物投影互动，结合科技与海洋知识，是7-9岁孩子最爱的探索式学习。建议工作日下午前往避开人潮。",
+      highlight: "沉浸式深海探索 + 海洋科学教育，激发孩子对地球未知世界的好奇心，比单纯看图鉴震撼100倍",
+      location: "ArtScience Museum, Marina Bay Sands",
+      dateRange: "6月起开展",
+      cost: "S$22-32（成人/儿童）",
+      duration: "约2-3小时",
+      active: true
+    },
+
+    {
+      id: "pompompurin-cafe-family-2026",
+      name: "布丁狗 30周年主题快闪 · 亲子打卡",
+      icon: "🐶",
+      topGradient: "linear-gradient(90deg,#fdcb6e,#ffeaa7)",
+      ageRange: "最适合 5–12 岁",
+      description: "三丽鸥布丁狗 30 周年限定主题快闪！Japan Rail Cafe 限定布丁狗咖喱饭，造型超萌；布丁狗布丁帕菲奶香浓郁，孩子吃完还能带走限定周边礼物。咖啡馆内布满布丁狗装饰墙，是亲子拍照宝藏地。最适合给孩子一个「惊喜午餐日」，吃完去附近 Maxwell 美食广场走走也很棒。",
+      highlight: "限时主题餐厅+独家周边，7-9岁孩子吃完不想走，自带高萌仪式感和拍照素材",
+      location: "Japan Rail Cafe, 100 Tras Street, Tanjong Pagar",
+      dateRange: "5月4日–6月14日（限时）",
+      cost: "约S$22.90+/人",
+      duration: "约1.5小时",
+      active: true
+    },
+
+    {
+      id: "june-holiday-skyline-luge-2026",
+      name: "Skyline Luge · 六月学校假期亲子优惠",
+      icon: "🛷",
+      topGradient: "linear-gradient(90deg,#16a085,#1abc9c)",
+      ageRange: "最适合 7–12 岁",
+      description: "圣淘沙 Skyline Luge 六月学校假期推出三个连续周末亲子优惠（6月12-14日、19-21日、26-28日）！85cm-110cm 小朋友$15 起就能玩，搭配空中缆车环游圣淘沙海景，再坐刺激滑车一路冲下来，7-9岁孩子玩到尖叫不停。建议早上场次少人快，玩完顺便逛 Sensoryscape 一举两得。",
+      highlight: "户外刺激+海景缆车，综合体验感MAX，小朋友$15起的特惠价不容错过！7-9岁安全又好玩",
+      location: "Skyline Luge Sentosa",
+      dateRange: "6月12-14日、19-21日、26-28日",
+      cost: "S$15起（小朋友）",
+      duration: "约2-3小时",
+      active: true
+    },
+
+    {
+      id: "garden-rhapsody-may-family-2026",
+      name: "Garden Rhapsody · 滨海湾花园灯光音乐秀",
+      icon: "🌳",
+      topGradient: "linear-gradient(90deg,#27ae60,#2ecc71)",
+      ageRange: "最适合 全年龄",
+      description: "滨海湾花园 Supertree Grove 经典夜景灯光音乐秀又升级了！每周一、六、日晚8点-8:30点上演30分钟震撼灯光秀，全程免费！树阵随音乐变换色彩，超大尺度的视觉冲击让7-9岁孩子目不转睛。看完顺便去 PropNex Family Zone 新户外游乐场（攀爬架+沙池+小市集），晚饭加灯光秀加儿童游乐场，一晚搞定。",
+      highlight: "全程免费 + 全年龄通吃，新加坡夜晚必打卡，新增的儿童游乐场更适合7-9岁",
+      location: "Supertree Grove, Gardens by the Bay",
+      dateRange: "每周一/六/日 20:00-20:30",
+      cost: "免费",
+      duration: "约1-2小时",
+      active: true
     }
+
   ]
 
 };
