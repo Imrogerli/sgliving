@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-08
+ * 最后更新：2026-05-11
  * 版本：2.5
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-08",
+    lastUpdated: "2026-05-11",
     version: "2.5",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2237,7 +2237,75 @@ const SGLIVING_DATA = {
       lat: 1.3601,
       lng: 103.9892,
       active: true
+    },
+
+    {
+      id: "sakeshi-salmon-house",
+      name: "Sakeshi · 三文鱼之家",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$30–60",
+      description: "Beauty World 新晋日料神店！招牌「瀑布三文鱼柚子荞麦面」（$50.80++）整碗都是厚切三文鱼刺身做成的「面条」，桌边淋上冰镇柚子高汤，仪式感拉满。三文鱼胶原蛋白汤用鱼骨熬足6小时，温润滋补，三文鱼控必去朝圣。位置就在 Beauty World 地铁站走3分钟，环境安静很适合姐妹小聚。",
+      tags: ["三文鱼控", "网红日料", "柚子荞麦面"],
+      address: "17 Lorong Kilat, Kilat Court #01-05, Singapore 598139",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#ff7675,#fd79a8)",
+      catLabel: "正餐",
+      catDesc: "日料 / Beauty World",
+      ratingDesc: "网红三文鱼面 · 整碗都是刺身",
+      lat: 1.3411,
+      lng: 103.7758,
+      active: true
+    },
+
+    {
+      id: "quan-hotpot-michael",
+      name: "Quan 一锅一人火锅 · 圣淘沙",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-04",
+      price: "S$58–88",
+      description: "圣淘沙 Hotel Michael 全新一人一锅火锅店！按中医五行（酸甜苦辣咸）设计汤底，新加坡叻沙汤、四川麻辣、骨胡椒、胶原乌鸡、传统粥底任选，每人一锅干净卫生。套餐 $58++ 起，环境精致优雅，约会、家庭聚餐都合适。圣淘沙游玩顺路打卡，避开旅游团美食，性价比挺不错。",
+      tags: ["一人一锅", "五行汤底", "圣淘沙"],
+      address: "Hotel Michael, Resorts World Sentosa, 8 Sentosa Gateway",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#e17055,#fdcb6e)",
+      catLabel: "正餐",
+      catDesc: "精致火锅 / 圣淘沙",
+      ratingDesc: "中医五行汤底 · 一人一锅",
+      lat: 1.2545,
+      lng: 103.8225,
+      active: true
+    },
+
+    {
+      id: "bukit-timah-frog-porridge",
+      name: "武吉知马砂煲活田鸡粥",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2024-12",
+      price: "S$25–35",
+      description: "姐妹们！小红书上爆火的新加坡田鸡粥就是这家了！老字号砂煲活田鸡粥，宫保田鸡和姜葱田鸡是双绝，肉质 Q 弹超鲜，粥底咸香浓郁喝到见底。人均25-35新币，分量大三个人吃刚好。在地中国人都爱来这里夜宵打卡，深夜营业到凌晨，加班晚归救星。绝绝子，吃过的都来夸！",
+      tags: ["小红书爆款", "田鸡粥", "夜宵首选"],
+      address: "Geylang Lor 9, 248 Geylang Road",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥘",
+      bgGradient: "linear-gradient(135deg,#d35400,#e67e22)",
+      catLabel: "正餐",
+      catDesc: "田鸡粥 / Geylang",
+      ratingDesc: "小红书爆款 · 田鸡控必打卡",
+      lat: 1.3137,
+      lng: 103.8870,
+      active: true
     }
+
+
 
 
   ],
@@ -2531,7 +2599,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=IVE+World+Tour+Singapore",
       btnText: "购票",
       sortDate: "2026-05-09",
-      active: true
+      active: false
     },
 
     {
@@ -2950,7 +3018,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Kraftwerk+Singapore",
       btnText: "购票",
       sortDate: "2026-05-08",
-      active: true
+      active: false
     },
 
     {
@@ -3121,7 +3189,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.boutiques.sg",
       btnText: "了解详情",
       sortDate: "2026-05-09",
-      active: true
+      active: false
     },
 
 
@@ -3644,7 +3712,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sso.org.sg/",
       btnText: "了解详情",
       sortDate: "2026-05-10",
-      active: true
+      active: false
     },
     // ── 2026-05-08 新增：5月最新活动 ─────────
 
@@ -3691,7 +3759,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://eatbook.sg/pompompurin-cafe-singapore/",
       btnText: "查看详情",
       sortDate: "2026-05-04",
-      active: true
+      active: false
     },
 
     {
@@ -3715,7 +3783,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=IVE+Singapore",
       btnText: "购票",
       sortDate: "2026-05-09",
-      active: true
+      active: false
     },
 
     {
@@ -3739,7 +3807,102 @@ const SGLIVING_DATA = {
       btnText: "查看优惠",
       sortDate: "2026-06-12",
       active: true
+    },
+
+    {
+      id: "sipf-piano-festival-2026",
+      name: "Singapore International Piano Festival 第32届",
+      type: "exhibition",
+      priority: "normal",
+      month: "JUL",
+      day: "02",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#74b9ff,#0984e3)",
+      typeLabel: "🎹 古典钢琴",
+      typeColor: "#0984e3",
+      description: "新加坡国际钢琴节 2026 第32届回归，4天连办4场大师演奏会与公开课，国际顶尖钢琴家齐聚。古典乐迷一定不能错过，亲子家庭带孩子接触高品质音乐启蒙也很合适。",
+      venue: "Victoria Concert Hall & Play Den, The Arts House",
+      dateRange: "7月2–5日，4天连演",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$30–80",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Singapore+International+Piano+Festival",
+      btnText: "购票",
+      sortDate: "2026-07-02",
+      active: true
+    },
+
+    {
+      id: "rainforest-wild-adventure-phase2",
+      name: "Rainforest Wild Adventure 二期开放 · 万态野趣",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "20",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#00b894,#55efc4)",
+      typeLabel: "🌳 户外冒险",
+      typeColor: "#00b894",
+      description: "万态野趣丛林冒险二期正式开放！原 Rainforest Wild Asia 升级为 Rainforest Wild Adventure，新增非洲园区，Canopy Glider 林冠滑翔、Ravine Swing 峡谷大摆、11米 Split Rock Summit 攀岩、Treetop Traverse 125米树顶绳索冒险全部上线。亲子 + 户外党暑期必玩，赶在 6 月假期前先冲！",
+      venue: "Mandai Wildlife Reserve, 80 Mandai Lake Road",
+      dateRange: "5月20日起常设开放",
+      ticketInfo: "🎫 万态官网",
+      price: "S$48–88",
+      priceNote: "Mandai 官网",
+      ticketUrl: "https://www.mandai.com/en/rainforest-wild-asia.html",
+      btnText: "购票",
+      sortDate: "2026-05-20",
+      active: true
+    },
+
+    {
+      id: "national-family-festival-2026",
+      name: "全国家庭节 NFF 2026 · 5–6月家庭嘉年华",
+      type: "event",
+      priority: "normal",
+      month: "MAY",
+      day: "30",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#fd79a8,#fab1a0)",
+      typeLabel: "👨‍👩‍👧‍👦 家庭活动",
+      typeColor: "#fd79a8",
+      description: "「家始于我」主题家庭嘉年华回归！5月30–31日 Singapore EXPO 主会场最大型，10am–7pm 互动游戏、体育挑战、亲子手作工作坊全部免费。6月还有 Bedok Mall、Lot One、White Sands、Kampung Admiralty、Sengkang Grand Mall 多个商场分会场，周末全家一起出门走起。",
+      venue: "Singapore EXPO Hall 3 主会场 + 多商场分会场",
+      dateRange: "5月30日–6月28日，多周末",
+      ticketInfo: "🎫 免费入场",
+      price: "免费",
+      priceNote: "免费",
+      ticketUrl: "https://familiesforlife.sg/pages/event/nff-2026-family-carnival-expo",
+      btnText: "查看详情",
+      sortDate: "2026-05-30",
+      active: true
+    },
+
+    {
+      id: "another-world-is-possible-2026",
+      name: "Another World Is Possible · ArtScience 大型沉浸艺术展",
+      type: "exhibition",
+      priority: "normal",
+      month: "MAY",
+      day: "11",
+      dow: "周一",
+      dateColor: "linear-gradient(135deg,#6c5ce7,#a29bfe)",
+      typeLabel: "🎨 沉浸艺术",
+      typeColor: "#6c5ce7",
+      description: "ArtScience Museum 新一波大型沉浸式艺术展，结合 AI、科技与未来想象，整层空间黑科技装置让你穿越到「另一个世界」。展期长，工作日下午人少氛围更好，情侣约会、亲子探索都合适。",
+      venue: "ArtScience Museum, 6 Bayfront Avenue",
+      dateRange: "5月起常设展，建议工作日下午",
+      ticketInfo: "🎫 ArtScience 官网",
+      price: "S$20–30",
+      priceNote: "Marina Bay Sands",
+      ticketUrl: "https://www.marinabaysands.com/museum/exhibitions/another-world-is-possible.html",
+      btnText: "购票",
+      sortDate: "2026-05-11",
+      active: true
     }
+
+
+
 
 
 
@@ -4708,7 +4871,70 @@ const SGLIVING_DATA = {
       cost: "免费",
       duration: "约1-2小时",
       active: true
+    },
+
+    {
+      id: "rainforest-wild-adventure-family-2026",
+      name: "Rainforest Wild Adventure 二期 · 万态野趣丛林冒险",
+      icon: "🌳",
+      topGradient: "linear-gradient(90deg,#00b894,#55efc4)",
+      ageRange: "最适合 7–12 岁",
+      description: "万态野趣丛林冒险升级版！原亚洲区 + 全新非洲区一次玩透，125米树顶绳索（Treetop Traverse）、11米 Split Rock Summit 攀岩、Canopy Glider 林冠滑翔、Ravine Swing 大摆，每一项都是真·肾上腺素拉满！7–9岁小朋友安全装备齐全可独立挑战，户外大男孩女孩的暑期最爱。",
+      highlight: "全岛唯一冒险型野生动物园，户外攀爬+滑索+树顶冒险，体能大消耗，玩完直接睡到天亮",
+      location: "Mandai Wildlife Reserve, 80 Mandai Lake Road",
+      dateRange: "5月20日二期正式开放",
+      cost: "S$48–88（套票更优惠）",
+      duration: "半天–全天",
+      active: true
+    },
+
+    {
+      id: "national-family-festival-2026-family",
+      name: "全国家庭节 NFF 2026 · 全岛免费家庭嘉年华",
+      icon: "👨‍👩‍👧‍👦",
+      topGradient: "linear-gradient(90deg,#fd79a8,#fab1a0)",
+      ageRange: "全家适合，重点 4–12 岁",
+      description: "5–6月全岛多商场联动的家庭嘉年华全部免费！5月30–31日 Singapore EXPO 主会场最大型，互动体育、艺术手作、亲子合作小游戏统统玩到爽。6月还有 Bedok Mall、Lot One、White Sands 等商场分会场，周末可以全家就近出动。7–9岁小朋友的最爱：合作型游戏摊位特别多，家长一起参与不无聊。",
+      highlight: "全程免费 + 多个商场分会场 + 周末连续两个月可玩，性价比之王",
+      location: "Singapore EXPO + 全岛多商场",
+      dateRange: "5月30日–6月28日",
+      cost: "完全免费",
+      duration: "2–4小时",
+      active: true
+    },
+
+    {
+      id: "snyo-singapore-ballet-2026",
+      name: "SNYO × 新加坡芭蕾舞团 · Ma mère l'Oye 鹅妈妈组曲",
+      icon: "🩰",
+      topGradient: "linear-gradient(90deg,#a29bfe,#6c5ce7)",
+      ageRange: "最适合 6–12 岁",
+      description: "新加坡国家青年交响乐团 SNYO 联手新加坡芭蕾舞团，演绎拉威尔经典《Ma mère l'Oye 鹅妈妈组曲》。古典音乐 + 芭蕾舞双重艺术启蒙，绝美舞台让 7–9 岁小朋友第一次接触交响乐和芭蕾就难忘。Esplanade 音乐厅档次满分，仪式感拉满。",
+      highlight: "古典音乐 + 芭蕾启蒙双合一，世界一流音乐厅，给孩子留下高质量艺术记忆",
+      location: "Esplanade Concert Hall",
+      dateRange: "6月12–13日",
+      cost: "S$25–80（SISTIC 购票）",
+      duration: "约90分钟",
+      active: true
+    },
+
+    {
+      id: "sakura-gardens-may-family-2026",
+      name: "Gardens by the Bay · 5月限时花展系列",
+      icon: "🌸",
+      topGradient: "linear-gradient(90deg,#fab1a0,#fd79a8)",
+      ageRange: "全家适合，重点 5–12 岁",
+      description: "滨海湾花园 Flower Dome 5月限时花展，浪漫拍照圣地，配合 Children's Garden 户外水上乐园，凉快又解暑。建议早10点先逛花展（人少凉爽），出来到 Children's Garden 玩水到下午，再去 Supertree Grove 晚 7:45 看灯光秀，一天行程顺畅又省力。7–9岁小朋友户外水上活动玩到尽兴。",
+      highlight: "花展 + 水上乐园 + 灯光秀一日多重打卡，避开烈日玩水最舒服",
+      location: "Gardens by the Bay, 18 Marina Gardens Drive",
+      dateRange: "5月全月（限时花展轮换）",
+      cost: "Children's Garden 免费 · Flower Dome S$12+",
+      duration: "半天–全天",
+      active: true
     }
+
+
+
 
   ]
 
