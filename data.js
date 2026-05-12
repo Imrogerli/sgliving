@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-11
- * 版本：2.5
+ * 最后更新：2026-05-12
+ * 版本：2.6
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-11",
-    version: "2.5",
+    lastUpdated: "2026-05-12",
+    version: "2.6",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -2303,10 +2303,73 @@ const SGLIVING_DATA = {
       lat: 1.3137,
       lng: 103.8870,
       active: true
+    },
+
+    {
+      id: "tofu-g-ue-square-2026",
+      name: "Tofu G · 韩国豆腐冰激凌",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$8–15",
+      description: "韩国爆款豆腐冰激凌品牌 Tofu G 第 4 家分店落地 UE Square！每一勺冰激凌都用韩国传统手工豆腐做基底，奶香淡雅、甘甜不腻，主打健康低卡，乳糖不耐党的福音。招牌「黑芝麻豆腐冰激凌」浓郁顺滑，撒上现磨黄豆粉，回味无穷。CBD 上班族午后甜品续命首选，姐妹聚会拍照都很出片。",
+      tags: ["豆腐冰激凌", "健康甜品", "韩国网红"],
+      address: "UE Square, 81 Clemenceau Avenue, Singapore 239917",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🍨",
+      bgGradient: "linear-gradient(135deg,#f8b500,#fceabb)",
+      catLabel: "甜品",
+      catDesc: "韩国冰激凌 / CBD",
+      ratingDesc: "韩国爆款 · 豆腐基底健康甜品",
+      lat: 1.2922,
+      lng: 103.8395,
+      active: true
+    },
+
+    {
+      id: "obongzip-star-vista-2026",
+      name: "Obongzip 五福家 · The Star Vista 新分店",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$45–85",
+      description: "韩国 300+ 门店连锁 Obongzip 第 2 家新加坡分店 5 月中旬登陆 The Star Vista！招牌「巨型烤年糕（XXL Grilled Tteok）」一上桌就拍照刷屏，年糕厚实有嚼劲、酱汁香辣过瘾。辣炒章鱼五花肉、泡菜锅都是必点，地道首尔风味，K-BBQ 爱好者一定要二刷三刷。位置就在地铁 Buona Vista 站旁，周末聚餐方便。",
+      tags: ["韩国连锁", "巨型年糕", "K-BBQ"],
+      address: "The Star Vista, 1 Vista Exchange Green, Singapore 138617",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#c0392b,#e74c3c)",
+      catLabel: "正餐",
+      catDesc: "韩国烤肉 / Buona Vista",
+      ratingDesc: "韩国 300+ 门店 · 巨型烤年糕招牌",
+      lat: 1.3070,
+      lng: 103.7888,
+      active: true
+    },
+
+    {
+      id: "minghui-frog-porridge-2026",
+      name: "明辉活田鸡粥",
+      categories: ["restaurant", "snack"],
+      rating: 4.7,
+      openDate: "2024-03",
+      price: "S$28–40",
+      description: "姐妹们！这家小红书上呼声超高的田鸡粥老店一定要来打卡！白粥火候掌握绝绝子，米粒煮到开花仍保持颗粒分明，喝起来又香又细腻。宫保田鸡蒜香辣味十足，肉质 Q 弹一咬就汁水四溢；姜葱田鸡口味清淡，最适合不吃辣的小伙伴。营业到深夜，夜宵党救星！血泪建议：人多务必先预约或提早到，过 7 点排队真要排到天荒地老。",
+      tags: ["小红书爆款", "田鸡粥", "深夜美食"],
+      address: "270 Joo Chiat Road, Singapore 427526",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥘",
+      bgGradient: "linear-gradient(135deg,#a8e063,#56ab2f)",
+      catLabel: "正餐",
+      catDesc: "田鸡粥 / Joo Chiat",
+      ratingDesc: "小红书爆款 · 老字号白粥细腻",
+      lat: 1.3138,
+      lng: 103.9013,
+      active: true
     }
-
-
-
 
   ],
 
@@ -3898,15 +3961,125 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.marinabaysands.com/museum/exhibitions/another-world-is-possible.html",
       btnText: "购票",
       sortDate: "2026-05-11",
+      active: false
+    },
+
+    {
+      id: "mamamoo-world-tour-sg-2026",
+      name: "MAMAMOO · 2026 World Tour 新加坡站",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "K-POP 实力女团回归",
+      month: "JUL",
+      day: "31",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#fd79a8,#e84393)",
+      typeLabel: "🎤 K-POP 演唱会",
+      typeColor: "#e84393",
+      description: "韩国唱跳实力女团 MAMAMOO 2026 世界巡演新加坡站重磅来袭！四位姐姐合体演唱《HIP》《gogobebe》《Egotistic》等爆款金曲，强势舞台和高音轰炸轮番上演，是回忆杀与高燃 Live 兼具的演唱会，姐姐 fans 们抢票千万别手软。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月31日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148–298",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=MAMAMOO+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-31",
+      active: true
+    },
+
+    {
+      id: "exo-singapore-july-2026",
+      name: "EXO · Planet 6 EXhOrizon 新加坡站（双场）",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "EXO 世界巡演收官站",
+      month: "JUL",
+      day: "24",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#0984e3,#74b9ff)",
+      typeLabel: "🎤 K-POP 演唱会",
+      typeColor: "#0984e3",
+      description: "EXO 第 6 次世界巡演 EXhOrizon 收官将在新加坡连开两晚（7月24日 & 26日）！老粉期盼多年的回归舞台，行星饭们的青春纪念碑，《Growl》《Love Shot》《Tempo》等经典曲目一网打尽。粉丝间约定的「重逢之地」，别让自己错过这一晚。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月24日 & 26日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$168–388",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=EXO+EXhOrizon+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-24",
+      active: true
+    },
+
+    {
+      id: "and-team-blaze-the-way-sg-2026",
+      name: "&TEAM · Blaze the Way 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "22",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#e17055,#fdcb6e)",
+      typeLabel: "🎤 J-POP 演唱会",
+      typeColor: "#e17055",
+      description: "HYBE Labels Japan 旗下新生代 9 人男团 &TEAM 首次登陆新加坡！「Blaze the Way」巡演收官选址新加坡，融合 J-POP 与 K-POP 风格，预计将有特别 Setlist 和限定彩蛋。Luné（粉丝名）期待已久的合体舞台，新加坡是亚洲最后一站！",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "8月22日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148–328",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=AND+TEAM+Blaze+the+Way+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-22",
+      active: true
+    },
+
+    {
+      id: "splashtopia-sentosa-2026",
+      name: "Splashtopia 2026 · Sentosa Palawan Green 水上嘉年华",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "01",
+      dow: "周一",
+      dateColor: "linear-gradient(135deg,#00b894,#00cec9)",
+      typeLabel: "🌊 主题活动",
+      typeColor: "#00b894",
+      description: "圣淘沙年度水上嘉年华回归第 3 季！Palawan Green 化身夏威夷风格水上乐园：充气滑梯、波利尼西亚 hula 表演、巨型泡泡屋、亲子水战区，外加海岛风 BBQ 摊位。6 月 1 日至 28 日学校假期天天开放，避暑亲子两不误。",
+      venue: "Sentosa · Palawan Green",
+      dateRange: "6月1日–6月28日（每日10am–8pm）",
+      ticketInfo: "🆓 部分活动免费",
+      price: "S$15起",
+      priceNote: "Sentosa 官网",
+      ticketUrl: "https://www.sentosa.com.sg/en/things-to-do/attractions/splashtopia/",
+      btnText: "了解详情",
+      sortDate: "2026-06-01",
+      active: true
+    },
+
+    {
+      id: "david-hockney-bigger-closer-2026",
+      name: "David Hockney · Bigger & Closer 沉浸式展览",
+      type: "exhibition",
+      priority: "normal",
+      month: "JUN",
+      day: "30",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      typeLabel: "🎨 艺术展览",
+      typeColor: "#e17055",
+      description: "英国艺术大师 David Hockney 沉浸式投影展即将收官！现场360°巨幕投影呈现他逾 60 年艺术生涯代表作，从游泳池到 iPad 涂鸦尽收眼底，色彩冲击力极强，是夏日避暑+亲子艺术启蒙的理想去处。展期至 6 月 30 日截止。",
+      venue: "IMBA Theatre",
+      dateRange: "持续至6月30日",
+      ticketInfo: "🎟️ 票务即将售罄",
+      price: "S$28–48",
+      priceNote: "官网购票",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=David+Hockney",
+      btnText: "购票",
+      sortDate: "2026-06-30",
       active: true
     }
-
-
-
-
-
-
-
 
   ],
 
@@ -4931,10 +5104,58 @@ const SGLIVING_DATA = {
       cost: "Children's Garden 免费 · Flower Dome S$12+",
       duration: "半天–全天",
       active: true
+    },
+
+    {
+      id: "splashtopia-sentosa-family-2026",
+      name: "Splashtopia 2026 圣淘沙水上嘉年华",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#00b894,#00cec9)",
+      ageRange: "最适合 5–12 岁",
+      ageHighlight: "👍 7-9 岁孩子超 LOVE",
+      description: "夏威夷主题水上嘉年华回归第 3 季！充气大滑梯、Aqua Adventure 水战、波利尼西亚 hula 互动舞蹈，再加上室外戏水池、水枪互射区，7-9 岁孩子玩到不愿走。配套手作工坊（草编花环、贝壳画）让孩子安静下来动手玩，软硬兼备。",
+      highlights: "✨ 充气滑梯 · 水战池 · hula 互动舞蹈",
+      whyKidsLove: "💡 孩子能跑能跳能玩水，家长能坐在椰子树下喝椰子水，亲子双赢",
+      whenWhere: "📍 Sentosa · Palawan Green · 6月1日–28日 · 10am–8pm",
+      price: "S$15起 / 单项体验",
+      bookingUrl: "https://www.sentosa.com.sg/en/things-to-do/attractions/splashtopia/",
+      btnText: "购票",
+      active: true
+    },
+
+    {
+      id: "coral-reef-maritime-gallery-2026",
+      name: "Coral Reef 沉浸海洋历险 · 海事博物馆",
+      icon: "🐠",
+      topGradient: "linear-gradient(90deg,#0984e3,#74b9ff)",
+      ageRange: "最适合 6–10 岁",
+      ageHighlight: "👍 7-9 岁动手党最爱",
+      description: "Singapore Maritime Gallery 联手剧团推出沉浸式儿童海洋秀！通过戏剧表演、互动手工和情景搭建，让孩子亲手「搭建」一片珊瑚礁。每场约 60 分钟，融合海洋知识与环保理念，7-9 岁正是好奇心爆棚的年纪，能学也能玩。",
+      highlights: "✨ 戏剧+手工+科普一体 · 60 分钟全程互动",
+      whyKidsLove: "💡 不是看展，而是「成为海洋的设计师」，孩子参与感拉满",
+      whenWhere: "📍 Singapore Maritime Gallery · 6月19、20、26、27日（共4场）",
+      price: "免费（须预约）",
+      bookingUrl: "https://www.maritimegallery.gov.sg/",
+      btnText: "预约",
+      active: true
+    },
+
+    {
+      id: "empire-ai-code-camp-7to9-2026",
+      name: "Empire AI · Learn to Code with AI 7-9 岁编程营",
+      icon: "🤖",
+      topGradient: "linear-gradient(90deg,#a29bfe,#6c5ce7)",
+      ageRange: "最适合 7–9 岁",
+      ageHighlight: "👍 7-9 岁专属",
+      description: "6 月学校假期最值得报的 AI 启蒙夏令营！专为 7-9 岁设计，孩子在 ChatGPT、Microsoft Story Maker、Gemini AI Camera 中练习「如何向 AI 提问」，再用 AI 工具拼图、写故事、做相册，建立计算思维和数字素养。每天 3 小时，全程英文授课，老师中英双语辅助。",
+      highlights: "✨ AI 提示词训练 · 故事创作 · 图像生成",
+      whyKidsLove: "💡 玩 ChatGPT 比刷 iPad 更有成就感，娃自己能做出 AI 故事书",
+      whenWhere: "📍 Empire AI Studio（Bras Basah）· 6月2日–27日多档期 · 每天 3 小时",
+      price: "S$280–520 / 营期",
+      bookingUrl: "https://www.empire.ai/sg/kids-camp",
+      btnText: "报名",
+      active: true
     }
-
-
-
 
   ]
 
