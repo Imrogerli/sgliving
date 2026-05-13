@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-12
- * 版本：2.6
+ * 最后更新：2026-05-13
+ * 版本：2.7
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-12",
-    version: "2.6",
+    lastUpdated: "2026-05-13",
+    version: "2.7",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -2369,6 +2369,94 @@ const SGLIVING_DATA = {
       lat: 1.3138,
       lng: 103.9013,
       active: true
+    },
+
+    {
+      id: "asin-progressive-asian-2026",
+      name: "ASIN · Progressive Asian Cuisine",
+      categories: ["restaurant", "finedining"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$160–280",
+      description: "5 月 6 日开幕的全新概念餐厅，主厨 Ace Tan（曾任 Restaurant André、Restaurant Born）回归本地，用「Progressive Asian Cuisine（前卫亚洲菜）」串起东南亚、韩国、日本与中国的味觉根脉。试菜的「红咖喱羔羊配印度香米」与「发酵柚子鲈鱼」将传统调味拆解重组，又能找回家乡味。Tasting Menu 八道菜起跳，适合特别的纪念日或同好聚餐。",
+      tags: ["新店", "前卫亚洲菜", "Chef Ace Tan"],
+      address: "11 Stanley Street, Singapore 068730",
+      badge: "new",
+      badgeText: "🆕 5月开业",
+      emoji: "🥢",
+      bgGradient: "linear-gradient(135deg,#0f172a,#7c3aed)",
+      catLabel: "正餐",
+      catDesc: "前卫亚洲菜 / Telok Ayer",
+      ratingDesc: "Chef Ace Tan 全新作品 · Tasting Menu",
+      lat: 1.2807,
+      lng: 103.8479,
+      active: true
+    },
+
+    {
+      id: "pompompurin-cafe-tanjong-2026",
+      name: "Pompompurin Café · Japan Rail Cafe",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$22–35",
+      description: "Pompompurin（布丁狗）30 周年限定主题咖啡馆登陆 Japan Rail Cafe！招牌「布丁狗咖喱饭」（S$22.90++）是松软的鸡蛋包饭塑成布丁狗造型，浸在浓郁日式咖喱里，配上脆口的鸡肉唐扬，连大人都被萌化。每单还送布丁狗限定周边，吃完打包带走小礼物。带小朋友或闺蜜来打卡都超合适，只到 6 月 14 日，先到先得！",
+      tags: ["主题咖啡馆", "布丁狗", "限时打卡"],
+      address: "Japan Rail Cafe, 100 Tras Street, #03-15 Tanjong Pagar 100AM",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🐶",
+      bgGradient: "linear-gradient(135deg,#fde68a,#f59e0b)",
+      catLabel: "正餐",
+      catDesc: "日式咖啡馆 / Tanjong Pagar",
+      ratingDesc: "30 周年限定 · 5月4日–6月14日",
+      lat: 1.2761,
+      lng: 103.8453,
+      active: true
+    },
+
+    {
+      id: "jiin-omakase-2026",
+      name: "Jiin Omakase · Les Amis Group",
+      categories: ["restaurant", "finedining"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$220–380",
+      description: "Les Amis Group 最新力作，5 月 8 日开幕。以日本「おもてなし（omotenashi）」无微不至的款待哲学为核心，依日本「七十二候」微季节调整菜单，每两周更换一次食材主角。开放式板前 12 席，主厨亲手呈献当季鲍鱼、毛蟹、白桃和酸柚，每一道菜都讲一段属于此刻的故事。预定要靠运气，纪念日和商务宴请都是上选。",
+      tags: ["新店", "Les Amis", "日式 Omakase"],
+      address: "Shaw Centre, 1 Scotts Road, #02-19, Singapore 228208",
+      badge: "new",
+      badgeText: "🆕 5月开业",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#0c1e3e,#c39a52)",
+      catLabel: "正餐",
+      catDesc: "日式高端 Omakase / Orchard",
+      ratingDesc: "Les Amis 集团力作 · 板前 12 席",
+      lat: 1.3050,
+      lng: 103.8311,
+      active: true
+    },
+
+    {
+      id: "matsu-matcha-guoco-2026",
+      name: "Matsu Matcha · Guoco Tower",
+      categories: ["restaurant", "snack"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$8–16",
+      description: "抹茶姐妹冲冲冲！小红书上爆红的 Matsu Matcha 终于从网单转线下，落户 Guoco Tower 地下二层。京都直运石臼现场磨粉，浓度直接卷飞市面奶茶店——「冰抹茶拿铁」入口苦回甘，不加糖也回味无穷；招牌「抹茶生巧软曲奇」（S$6.5）外脆里熔岩，强烈建议外带打包慢慢吃。柜台超小只能站喝，姐妹要错峰，工作日 3 点 + 周末早 11 点都香！",
+      tags: ["小红书爆款", "抹茶专门", "京都石臼"],
+      address: "Guoco Tower, 1 Wallich Street, #B2-15, Singapore 078881",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#a3c293,#3d5b3a)",
+      catLabel: "甜品",
+      catDesc: "抹茶专门 / Tanjong Pagar",
+      ratingDesc: "小红书爆款 · 京都石臼现磨",
+      lat: 1.2766,
+      lng: 103.8458,
+      active: true
     }
 
   ],
@@ -4079,6 +4167,100 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-06-30",
       active: true
+    },
+
+    {
+      id: "flesh-bones-artscience-2026",
+      name: "Flesh and Bones · 解剖学艺术大展 · ArtScience Museum",
+      type: "exhibition",
+      priority: "normal",
+      month: "MAY",
+      day: "13",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#6b2c39,#c4536f)",
+      typeLabel: "🎨 重磅展览",
+      typeColor: "#6b2c39",
+      description: "ArtScience Museum 15 周年大展，与洛杉矶 Getty 博物馆联合呈现！160+ 件横跨数百年的解剖图、木刻版画、稀有典籍与塩田千春、Bill Viola 的当代艺术装置同场亮相。展览把医学、艺术、宗教与文化层层拨开，让人重新看见「身体」这件作品。适合艺术发烧友与对人体科学好奇的家庭，亲子都能各取所需。",
+      venue: "ArtScience Museum (6 Bayfront Ave)",
+      dateRange: "至 8月16日（10am–7pm，周五六延至 9pm）",
+      ticketInfo: "🎫 Marina Bay Sands / SISTIC",
+      price: "S$16.50起",
+      priceNote: "本地居民 S$19.50/成人",
+      ticketUrl: "https://www.sistic.com.sg/events/asmfb2026",
+      btnText: "购票",
+      sortDate: "2026-08-16",
+      active: true
+    },
+
+    {
+      id: "disney-esplanade-june-2026",
+      name: "Disney 经典演出 · Esplanade Theatres",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "26",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#1e3a8a,#3b82f6)",
+      typeLabel: "🎭 家庭演出",
+      typeColor: "#1e3a8a",
+      description: "Esplanade Theatres on the Bay 在 6 月 26 日与 28 日两天连演迪士尼经典舞台秀，米奇、小美人鱼、冰雪奇缘和阿拉丁全员登场。歌舞、特技与互动节目轮番上演，特别适合 3–12 岁孩子。家庭票座位有限，建议尽早通过 Esplanade 官方或 SISTIC 抢票。",
+      venue: "Esplanade – Theatres on the Bay",
+      dateRange: "6月26日 & 28日",
+      ticketInfo: "🎫 SISTIC / Esplanade Box Office",
+      price: "S$48–128",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Disney+Esplanade",
+      btnText: "购票",
+      sortDate: "2026-06-26",
+      active: true
+    },
+
+    {
+      id: "glow-festival-sentosa-2026",
+      name: "Glow Festival 2026 · 圣淘沙音乐节",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "首届新加坡音乐节",
+      month: "JUL",
+      day: "10",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#7c3aed,#ec4899)",
+      typeLabel: "🎶 音乐节",
+      typeColor: "#7c3aed",
+      description: "圣淘沙首届 Glow Festival 2026 正式官宣！横跨 7 月 10–19 日整整十天，韩国独立摇滚天团 HYUKOH 领衔登场，更有日韩与本地艺人轮番演出，沙滩边看演出还能跨年炸开夜空。提早购票享早鸟价，K-Indie 与亚洲新锐音乐迷必冲！",
+      venue: "Sentosa Island",
+      dateRange: "7月10–19日（共10天）",
+      ticketInfo: "🎫 官网 / Ticketmaster",
+      price: "S$98起",
+      priceNote: "早鸟价",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Glow+Festival+Sentosa",
+      btnText: "购票",
+      sortDate: "2026-07-10",
+      active: true
+    },
+
+    {
+      id: "joji-solaris-sg-2026",
+      name: "Joji · SOLARIS World Tour 新加坡站",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "Joji 全球巡演开抢",
+      month: "NOV",
+      day: "21",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0f172a,#7c3aed)",
+      typeLabel: "🎤 国际天王",
+      typeColor: "#0f172a",
+      description: "Joji 全球巡演「SOLARIS Tour」官宣新加坡两连场！日本籍美国创作人 Joji 凭《SLOW DANCING IN THE DARK》《Glimpse of Us》登顶全球榜单。两晚 setlist 预计涵盖新专辑《SMITHEREENS II》全曲与历年金曲，舞台视效升级，粉丝必买！票早鸟现已开抢，场地待官宣。",
+      venue: "Singapore (场地待官宣)",
+      dateRange: "11月21日 & 22日（两晚）",
+      ticketInfo: "🎫 Ticketmaster / Live Nation",
+      price: "S$148–428",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Joji+Singapore",
+      btnText: "购票",
+      sortDate: "2026-11-21",
+      active: true
     }
 
   ],
@@ -4177,7 +4359,7 @@ const SGLIVING_DATA = {
       dateRange: "4月22日–5月9日",
       cost: "S$35–95",
       duration: "约90分钟",
-      active: true
+      active: false
     },
 
     {
@@ -4327,7 +4509,7 @@ const SGLIVING_DATA = {
       dateRange: "4月3日–5月10日（每周末）",
       cost: "🆓 免费参与",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -4907,7 +5089,7 @@ const SGLIVING_DATA = {
       dateRange: "5月7日–5月10日",
       cost: "免费观赛 / 报名比赛 S$15–25",
       duration: "半天",
-      active: true
+      active: false
     },
 
     {
@@ -4952,7 +5134,7 @@ const SGLIVING_DATA = {
       dateRange: "5月10日（周日）傍晚",
       cost: "免费入场（需提前到场占位）",
       duration: "约1.5–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -5154,6 +5336,74 @@ const SGLIVING_DATA = {
       price: "S$280–520 / 营期",
       bookingUrl: "https://www.empire.ai/sg/kids-camp",
       btnText: "报名",
+      active: true
+    },
+
+    {
+      id: "sanrio-superstar-uss-family-2026",
+      name: "Sanrio Superstar Café & Boutique · USS",
+      icon: "🎀",
+      topGradient: "linear-gradient(90deg,#fb7185,#fda4af)",
+      ageRange: "适合 5–12 岁",
+      ageHighlight: "👍 7-9 岁少女心爆棚",
+      description: "新加坡环球影城好莱坞区刚开的 Sanrio 主题咖啡馆与精品店！Hello Kitty、酷洛米、美乐蒂、大耳狗轮番出场，主推「酷洛米黑芝麻香草卷」「美乐蒂荔枝玫瑰卷」（每款 S$10++），餐具与杯垫都是限定款，吃完直接逛旁边精品店。一站满足 7-9 岁小女生的整套愿望清单，男生也能玩大耳狗主题区。",
+      highlights: "✨ 四大 Sanrio 角色主题 · 限定甜品+周边",
+      whyKidsLove: "💡 拍照打卡 + 限定收藏，进园就奔过来",
+      whenWhere: "📍 Universal Studios Singapore · Hollywood Zone · 现已开放",
+      price: "需购买环球影城门票 S$83+",
+      bookingUrl: "https://www.rwsentosa.com/en/attractions/universal-studios-singapore",
+      btnText: "前往",
+      active: true
+    },
+
+    {
+      id: "camp-asia-golden-summer-2026",
+      name: "Camp Asia Golden Summer 暑期营 2026",
+      icon: "🏕️",
+      topGradient: "linear-gradient(90deg,#f59e0b,#facc15)",
+      ageRange: "适合 3–16 岁",
+      ageHighlight: "👍 7-9 岁多元发展首选",
+      description: "Camp Asia 全岛最受欢迎的暑期营，6 月 15 日开营，覆盖学术辅导、运动、创意艺术、STEM 科技、烹饪、戏剧等十多个主题。7-9 岁可选「Multi-Activity」综合营，一周内体验编程、机器人、剧场、攀岩四大项目，孩子认识新朋友又能解锁新技能。半天/全天/连周三档可选，热门档期通常 5 月底前满。",
+      highlights: "✨ 十大主题任选 · 半天/全天/连周",
+      whyKidsLove: "💡 一周内换四种新玩法，回家天天有新故事",
+      whenWhere: "📍 多校区（Tanglin Trust / Dover Court 等）· 6月15日–7月31日",
+      price: "S$330+/天起",
+      bookingUrl: "https://www.campasia.asia/",
+      btnText: "报名",
+      active: true
+    },
+
+    {
+      id: "flesh-bones-family-2026",
+      name: "Flesh and Bones 解剖学艺术展（亲子向）",
+      icon: "🦴",
+      topGradient: "linear-gradient(90deg,#9333ea,#c084fc)",
+      ageRange: "建议 7 岁以上",
+      ageHighlight: "👍 7-9 岁好奇心补给站",
+      description: "ArtScience Museum 15 周年大展，与 Getty 博物馆联合带来 160+ 件解剖艺术作品。展厅设有亲子互动区，孩子可触摸 NTU 提供的真实标本复制品、玩 AR 透视身体游戏，把生硬的医学知识变成探险关卡。展期长，建议工作日下午前往，避开学校团参观高峰。",
+      highlights: "✨ AR 透视游戏 · 触摸标本 · 互动学习区",
+      whyKidsLove: "💡 看艺术也学科学，回家追问爸妈骨头几块",
+      whenWhere: "📍 ArtScience Museum · 3月21日–8月16日",
+      price: "本地居民 S$19.50/成人，儿童 S$12.50",
+      bookingUrl: "https://www.marinabaysands.com/museum/exhibitions/flesh-and-bones.html",
+      btnText: "购票",
+      active: true
+    },
+
+    {
+      id: "disney-esplanade-family-2026",
+      name: "迪士尼舞台秀 · Esplanade",
+      icon: "🏰",
+      topGradient: "linear-gradient(90deg,#3b82f6,#60a5fa)",
+      ageRange: "最适合 3–10 岁",
+      ageHighlight: "👍 学龄前到 9 岁都嗨",
+      description: "Esplanade 6 月底两场迪士尼现场秀，米奇、艾莎、爱丽儿、阿拉丁全员到齐。歌舞与杂耍穿插，孩子可上台和角色互动。座位临近舞台的「家庭票」体验最佳，开演前的小型化妆 photo wall 也是必拍。看完顺道在 Esplanade 公园野餐，一整天家庭日就排满了。",
+      highlights: "✨ 经典 IP · 现场互动 · 适合学龄前+小学低年级",
+      whyKidsLove: "💡 童话角色就在面前唱歌跳舞，一秒入戏",
+      whenWhere: "📍 Esplanade Theatres on the Bay · 6月26日 & 28日",
+      price: "S$48–128",
+      bookingUrl: "https://www.sistic.com.sg/events/search?q=Disney+Esplanade",
+      btnText: "购票",
       active: true
     }
 
