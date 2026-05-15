@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-13
- * 版本：2.7
+ * 最后更新：2026-05-15
+ * 版本：2.8
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-13",
-    version: "2.7",
+    lastUpdated: "2026-05-15",
+    version: "2.8",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -2457,9 +2457,76 @@ const SGLIVING_DATA = {
       lat: 1.2766,
       lng: 103.8458,
       active: true
+    },
+
+    {
+      id: "centro-matcha-shaw-lido-2026",
+      name: "Centro Espresso & Matcha Bar · Shaw Lido",
+      categories: ["restaurant", "snack"],
+      rating: 4.7,
+      openDate: "2026-04",
+      price: "S$8–18",
+      description: "姐妹们！乌节路 Shaw House 5 楼这家新开的 Centro 是真的踩进了我的菜单 Top 1——刚走出 Lido 电影院就能瘫坐在落地窗前喝抹茶看车水马龙。咖啡是 Toby's Estate 烘焙、抹茶选的是 Matcha Project，招牌「柚子燕麦冰抹茶拿铁」喝起来是冰柚子先冲鼻、再被抹茶奶香拉回，没有一秒钟苦涩。看完晚场电影顺便外带一杯，绝杀！",
+      tags: ["小红书爆款", "抹茶拿铁", "Orchard"],
+      address: "350 Orchard Road, Level 5, Shaw House, Singapore 238868",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#7fa86b,#3d5b3a)",
+      catLabel: "甜品",
+      catDesc: "咖啡 & 抹茶 / Orchard",
+      ratingDesc: "Toby's Estate 咖啡 + Matcha Project 抹茶",
+      lat: 1.3036,
+      lng: 103.8336,
+      active: true
+    },
+
+    {
+      id: "pastamo-circular-road-2026",
+      name: "Pastamo · Circular Road",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-05",
+      price: "S$19.90 套餐",
+      description: "Circular Road 闹中取静的新意面吧，S$19.90 套餐含一份意面+一杯饮品，无 GST 无服务费——这价位在 CBD 简直业界良心。菜单从传统肉酱、奶油培根，一路开到「叻沙意面」「麻辣牛肉奶油」这种本地融合脑洞，配抹茶或咖啡也行。CBD 上班族午饭快闪 OK，朋友 Catch-up 也舒服。",
+      tags: ["新店", "意面套餐", "CBD"],
+      address: "Circular Road, Boat Quay area, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍝",
+      bgGradient: "linear-gradient(135deg,#e67e22,#d35400)",
+      catLabel: "正餐",
+      catDesc: "意面 Pasta Bar / CBD",
+      ratingDesc: "S$19.90 套餐 · 无加价",
+      lat: 1.2870,
+      lng: 103.8500,
+      active: true
+    },
+
+    {
+      id: "yukkuri-kohi-alexandra-2026",
+      name: "Yukkuri Kohi · Alexandra Central",
+      categories: ["restaurant", "snack"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$6–14",
+      description: "Alexandra Central 三楼的隐藏精品咖啡吧，名字「ゆっくり珈琲」就是「慢慢喝咖啡」的意思——主理人专程飞日本选豆烘焙，单一产地豆每月轮换，可以指定意式 Espresso、手冲 Pour Over、或 Cold Brew。柜台只有 6 个高脚位，跟咖啡师可以聊一整下午豆子的故事。咖啡控周末别错过，配套自制布丁也是隐藏菜单。",
+      tags: ["精品咖啡", "日式手冲", "Queenstown"],
+      address: "Alexandra Central, Level 3, 321 Alexandra Road, Singapore 159971",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "☕",
+      bgGradient: "linear-gradient(135deg,#7d5a3c,#3e2723)",
+      catLabel: "甜品",
+      catDesc: "精品咖啡 / Queenstown",
+      ratingDesc: "日本单一产地豆 · 每月轮换",
+      lat: 1.2738,
+      lng: 103.8030,
+      active: true
     }
 
   ],
+
 
   // ════════════════════════════════════════════════
   // 活动数据
@@ -4261,9 +4328,80 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-11-21",
       active: true
+    },
+
+    {
+      id: "irene-i-will-sg-2026",
+      name: "Red Velvet IRENE · I-WILL Asia Tour",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "韩团门面首次个人巡演",
+      month: "JUL",
+      day: "04",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#ec4899,#be185d)",
+      typeLabel: "🎤 K-POP",
+      typeColor: "#ec4899",
+      description: "Red Velvet 队长兼门面 IRENE 首次个人 Asia Tour「I-WILL」新加坡站！MediaCorp 剧院容量不大，等于近距离演唱会，VIP 票还含送机环节和签名海报抽奖。ReVeluv 想看本命独唱版《Naughty》《Monster》这是唯一一站，机会只有一次！",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "7月4日（周六）18:00",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$138–288",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=IRENE+I-WILL+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-04",
+      active: true
+    },
+
+    {
+      id: "legally-blonde-musical-esplanade-2026",
+      name: "Legally Blonde · The Musical（律政俏佳人音乐剧）",
+      type: "event",
+      priority: "normal",
+      month: "JUL",
+      day: "29",
+      dow: "周三起",
+      dateColor: "linear-gradient(135deg,#f472b6,#ec4899)",
+      typeLabel: "🎭 音乐剧",
+      typeColor: "#f472b6",
+      description: "SRT 重金打造的本地版《律政俏佳人》音乐剧，新加坡本土西区明星 Nathania Ong 领衔主演 Elle Woods，加入 K-Pop 风格编排。带粉色羊角辫与小狗的青春励志故事，全女生家庭夜的好选择。预演夜从 S$30 起，性价比够高，演出周期长可以慢慢挑日子。",
+      venue: "Esplanade Theatre",
+      dateRange: "7月29日起 · 长期演出",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$30–228",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Legally+Blonde",
+      btnText: "购票",
+      sortDate: "2026-07-29",
+      active: true
+    },
+
+    {
+      id: "yang-yoseop-sg-2026",
+      name: "梁耀燮 Yang Yoseop · Solo Concert",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "31",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#6366f1,#4338ca)",
+      typeLabel: "🎤 K-POP",
+      typeColor: "#6366f1",
+      description: "Highlight 主唱梁耀燮首次新加坡个人公演！主打抒情慢歌嗓音迷人，是 KPOP 老饭重温青春的必到场。具体场地与开票信息预计 5–6 月公布，建议先关注 Ticketmaster 通知。",
+      venue: "场地待官宣",
+      dateRange: "7月31日（周五）",
+      ticketInfo: "🎫 Ticketmaster（即将开售）",
+      price: "待官宣",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Yang+Yoseop+Singapore",
+      btnText: "关注开票",
+      sortDate: "2026-07-31",
+      active: true
     }
 
   ],
+
 
   // ════════════════════════════════════════════════
   // 亲子活动
@@ -5405,8 +5543,60 @@ const SGLIVING_DATA = {
       bookingUrl: "https://www.sistic.com.sg/events/search?q=Disney+Esplanade",
       btnText: "购票",
       active: true
+    },
+
+    {
+      id: "glow-play-carnival-bb-2026",
+      name: "Glow Play Carnival · HomeTeamNS Bukit Batok",
+      icon: "🌟",
+      topGradient: "linear-gradient(90deg,#a855f7,#ec4899)",
+      ageRange: "最适合 5–12 岁",
+      ageHighlight: "👍 7–9 岁玩得最起劲",
+      description: "HomeTeamNS Bukit Batok 6 月学校假期重头戏！整个会所变成「夜光游乐场」，霓虹油彩涂鸦、互动光影游戏、主题闯关，亲子组队边玩边集卡片。每位小朋友 S$8 起含游玩 + 食物兑换券 + 礼品袋，性价比超高。家长免费同行，可以一起加入亲子互动环节。",
+      highlights: "✨ 室内活动 · 夜光主题 · 食物券 + 礼品袋全包",
+      whyKidsLove: "💡 霓虹涂鸦 + 光影互动 + 拍照超出片，沉浸式玩 5 小时不腻",
+      whenWhere: "📍 HomeTeamNS Bukit Batok（2 Bukit Batok West Ave 7）· 6月27日 10:00–17:00",
+      price: "S$8 起 / 小朋友（家长免费）",
+      bookingUrl: "https://www.hometeamns.sg/events/june-school-holiday-with-hometeamns-2026/",
+      btnText: "购票",
+      active: true
+    },
+
+    {
+      id: "centro-matcha-shaw-family-2026",
+      name: "Shaw Lido 电影 + 抹茶亲子日",
+      icon: "🍵",
+      topGradient: "linear-gradient(90deg,#65a30d,#16a34a)",
+      ageRange: "最适合 6–12 岁",
+      ageHighlight: "👍 7–9 岁电影甜品组合舒适",
+      description: "Shaw Lido 5 楼新开的 Centro Espresso & Matcha Bar，配一场暑期 IP 电影（《疯狂动物城 2》《超人特攻队》等）就是最舒服的乌节路亲子日。落地窗位可以看车水马龙，孩子点抹茶布丁、家长来杯柚子抹茶拿铁，电影散场不用挪窝。坐 NS22 Orchard 站直达，雨天也不怕。",
+      highlights: "✨ 室内放空 · 一站式电影 + 餐饮 · 落地窗位",
+      whyKidsLove: "💡 7–9 岁孩子坐得住一场电影 + 一杯甜品，家长终于能喘口气",
+      whenWhere: "📍 Shaw House Level 5（Orchard 站）· 全年开放",
+      price: "电影 S$13–17 · 饮品 S$8–14",
+      bookingUrl: "https://www.shaw.sg/",
+      btnText: "查询电影",
+      active: true
+    },
+
+    {
+      id: "national-museum-river-2026",
+      name: "国家博物馆「Get Curious! All About the River」",
+      icon: "🛶",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#0284c7)",
+      ageRange: "最适合 3–12 岁",
+      ageHighlight: "👍 7–9 岁认知历史正好",
+      description: "新加坡国家博物馆 Children's Season 2026 重头戏！6 月学校假期开放，孩子可以扮演开埠时期的船工、商人和先民，从新加坡河视角了解城市起源。20–21 日还有专为 6–12 岁孩子设计的互动剧场表演，演员现场带小朋友走进历史场景，沉浸式体验。免费 + 收费活动都有。",
+      highlights: "✨ 历史教育 · 角色扮演 · 部分活动免费",
+      whyKidsLove: "💡 不是看展板，是亲手摇船、当商人，7–9 岁孩子玩得停不下来",
+      whenWhere: "📍 National Museum of Singapore（93 Stamford Rd）· 5月30日–6月28日",
+      price: "免费 + 部分付费工作坊",
+      bookingUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/childrens-season/events",
+      btnText: "查看活动",
+      active: true
     }
 
   ]
 
 };
+
