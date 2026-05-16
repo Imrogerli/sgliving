@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-15
+ * 最后更新：2026-05-16
  * 版本：2.8
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-15",
+    lastUpdated: "2026-05-16",
     version: "2.8",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2523,6 +2523,72 @@ const SGLIVING_DATA = {
       lat: 1.2738,
       lng: 103.8030,
       active: true
+    },
+
+    {
+      id: "cheese-wonder-ion-2026",
+      name: "Cheese Wonder · ION Orchard 限定快闪",
+      categories: ["dessert"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$35.90–42.90",
+      description: "全亚洲小红书姐妹刷屏的「神之芝士蛋糕」终于来新加坡！ION B4 楼 8 周限定快闪，原味免烤芝士蛋糕用北海道奶酪和走地鸡蛋打造两层口感——上层轻盈芝士舒芙蕾，下层浓郁芝士慕斯，再压在脆脆 cookie 底上。限定红色草莓款颜值更绝，4 颗 S$42.90。下班顺道带回家，老公孩子都会拍手叫好！",
+      tags: ["免烤芝士蛋糕", "北海道奶油", "ION Orchard", "小红书爆款"],
+      address: "ION Orchard B4-K1, 2 Orchard Turn, Singapore 238801",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🧀",
+      bgGradient: "linear-gradient(135deg,#f6d365,#fda085)",
+      catLabel: "甜品",
+      catDesc: "免烤芝士蛋糕 / 乌节路",
+      ratingDesc: "8 周限定 · 北海道奶酪招牌",
+      lat: 1.3043,
+      lng: 103.8318,
+      active: true
+    },
+
+    {
+      id: "mandai-zooschool-cafe-2026",
+      name: "Sakeshi · 三文鱼面瀑布",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$30–55",
+      description: "Beauty World MRT 旁的小众日料，最近因为「瀑布三文鱼柚子荞麦面」($50.80) 爆红小红书——服务员现场把厚切三文鱼刺身像瀑布一样倒进冰镇柚子荞麦面里，鱼肉肥嫩、汤底带柚子清香，姐妹们都说「绝绝子」必拍照！量大管够，两个人 share 一份刚好。喜欢三文鱼的别错过。",
+      tags: ["三文鱼", "日式荞麦面", "Beauty World", "小红书爆款"],
+      address: "144 Upper Bukit Timah Road, #01-01, Beauty World Plaza, Singapore 588177",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#f78ca0,#f9748f)",
+      catLabel: "正餐",
+      catDesc: "日式料理 / Beauty World",
+      ratingDesc: "瀑布三文鱼面 · 视觉系新品",
+      lat: 1.3411,
+      lng: 103.7768,
+      active: true
+    },
+
+    {
+      id: "pompompurin-jr-cafe-2026",
+      name: "Pompompurin × Japan Rail Café",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$12.90–28.90",
+      description: "丹绒巴葛的 Japan Rail Café 庆祝布丁狗 30 岁生日，5月4日–6月14日限定快闪！招牌 Pompompurin 咖喱饭 ($22.90++) 把蛋包饭捏成布丁狗造型，配香酥唐扬鸡和浓郁咖喱，可爱到舍不得吃。布丁狗焦糖布丁芭菲 ($12.90++) 顶层鲜奶油超绵密。每份套餐都送独家周边，亲子家庭周末打卡首选。",
+      tags: ["三丽鸥联名", "布丁狗", "丹绒巴葛", "限定快闪"],
+      address: "Japan Rail Café, 100AM Mall, 100 Tras Street #03-22, Singapore 079027",
+      badge: "new",
+      badgeText: "🆕 5月限定",
+      emoji: "🐶",
+      bgGradient: "linear-gradient(135deg,#f6d365,#fad0c4)",
+      catLabel: "甜品",
+      catDesc: "三丽鸥主题 / 丹绒巴葛",
+      ratingDesc: "5月4日–6月14日限定 · 30周年纪念",
+      lat: 1.2755,
+      lng: 103.8444,
+      active: true
     }
 
   ],
@@ -4398,6 +4464,75 @@ const SGLIVING_DATA = {
       btnText: "关注开票",
       sortDate: "2026-07-31",
       active: true
+    },
+
+    {
+      id: "legally-blonde-musical-sg-2026",
+      name: "Legally Blonde: The Musical · 律政俏佳人音乐剧",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "25",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#ec4899,#f472b6)",
+      typeLabel: "🎭 音乐剧",
+      typeColor: "#ec4899",
+      description: "百老汇人气音乐剧《律政俏佳人》登陆滨海湾金沙剧院！跟着金发美少女 Elle Woods 从洛杉矶时尚名媛逆袭哈佛法学院的爆笑励志故事，全程 powdered pink、活泼歌舞、女性视角励志金句，适合姐妹团 + 13 岁以上少女观赏。6月25日–7月（具体闭幕日待定），SISTIC 已经在售。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "6月25日–7月",
+      ticketInfo: "🎫 SISTIC（在售）",
+      price: "S$78 起",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Legally+Blonde",
+      btnText: "立即购票",
+      sortDate: "2026-06-25",
+      active: true
+    },
+
+    {
+      id: "the-kid-laroi-sg-jul-2026",
+      name: "The Kid LAROI · End Of The World 巡演",
+      type: "concert",
+      priority: "featured",
+      month: "JUL",
+      day: "01",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#a78bfa,#7c3aed)",
+      typeLabel: "🎤 流行",
+      typeColor: "#a78bfa",
+      description: "澳洲嘻哈+流行天才小子 The Kid LAROI 首次正式来新加坡！招牌《Stay》《Without You》当年全球榜首神曲，现场气氛炸裂。Arena @ Expo 万人场，建议早一小时入场抢位。Ticketmaster 已经在售，速锁后排亲友票。",
+      venue: "Arena @ Expo",
+      dateRange: "7月1日（周三）",
+      ticketInfo: "🎫 Ticketmaster（在售）",
+      price: "S$148 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=The+Kid+LAROI+Singapore",
+      btnText: "立即购票",
+      sortDate: "2026-07-01",
+      active: true
+    },
+
+    {
+      id: "exo-singapore-jul-2026",
+      name: "EXO · Exist Tour Singapore 安可",
+      type: "concert",
+      priority: "featured",
+      month: "JUL",
+      day: "24",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#fbbf24,#f59e0b)",
+      typeLabel: "🎤 K-POP",
+      typeColor: "#fbbf24",
+      description: "EXO 世界巡演新加坡终章，7月24日 & 26日连开两场！这次将是 EXO 在亚洲巡演的收官站，老饭们准备好二字应援棒了吗？Ticketmaster 已开售，热门 VIP 区基本秒空，请尽快锁票。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月24日 & 26日",
+      ticketInfo: "🎫 Ticketmaster（在售）",
+      price: "S$188 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=EXO+Singapore",
+      btnText: "立即购票",
+      sortDate: "2026-07-24",
+      active: true
     }
 
   ],
@@ -5593,6 +5728,57 @@ const SGLIVING_DATA = {
       price: "免费 + 部分付费工作坊",
       bookingUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/childrens-season/events",
       btnText: "查看活动",
+      active: true
+    },
+
+    {
+      id: "flipside-esplanade-2026",
+      name: "Flipside 2026 · 滨海艺术中心嘉年华",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#f472b6,#ec4899)",
+      ageRange: "最适合 5–12 岁",
+      ageHighlight: "👍 7–9 岁笑到捂肚子",
+      description: "Esplanade 滨海艺术中心一年一度家庭嘉年华回归！5月29日–6月7日，集合马戏团杂技、互动喜剧、木偶剧、街头表演，户外公共空间全部免费，剧场票价亲民。今年特设国际杂耍剧团 + 默剧大师工作坊，孩子可以亲手学翻滚和小丑技。是孩子放假初期的最佳预热活动！",
+      highlights: "✨ 室内外结合 · 免费 + 付费票多种选择 · 国际表演艺术家",
+      whyKidsLove: "💡 现场互动太多，7–9 岁孩子忍不住跟着上台一起玩",
+      whenWhere: "📍 Esplanade – Theatres on the Bay · 5月29日–6月7日",
+      price: "公共空间免费 · 剧场 S$15–35",
+      bookingUrl: "https://www.esplanade.com/flipside",
+      btnText: "查看节目",
+      active: true
+    },
+
+    {
+      id: "mandai-zooschool-2026",
+      name: "Mandai ZooSchool · 万态动物学堂",
+      icon: "🐅",
+      topGradient: "linear-gradient(90deg,#84cc16,#65a30d)",
+      ageRange: "最适合 3–12 岁",
+      ageHighlight: "👍 7–9 岁动物迷必上",
+      description: "新加坡动物园全新推出动手型野生动物体验课，2026年6月2日开课。专业园林教官带孩子近距离接触动物（视主题而定）、做动物食物配方、参观幕后饲养区。每堂 90 分钟左右，分龄设计课程内容；7-9 岁版课程涵盖动物行为学、保育议题、生态友好饮食等，比单纯逛动物园学到更多。",
+      highlights: "✨ 幕后参观 · 分龄课程 · 真实动物管理员授课",
+      whyKidsLove: "💡 7–9 岁动物迷可以问问题、做配方、近距离观察，远超日常游园体验",
+      whenWhere: "📍 Mandai Wildlife Reserve · 6月2日起常态开课",
+      price: "S$45–75（含园区门票）",
+      bookingUrl: "https://www.mandai.com/en/mandai-wildlife-reserve/learning/zooschool.html",
+      btnText: "预约课程",
+      active: true
+    },
+
+    {
+      id: "national-family-carnival-2026",
+      name: "National Family Carnival · 全国家庭嘉年华",
+      icon: "🎠",
+      topGradient: "linear-gradient(90deg,#22d3ee,#0891b2)",
+      ageRange: "最适合 3–12 岁",
+      ageHighlight: "👍 7–9 岁玩到不想回家",
+      description: "Singapore EXPO Hall 6 的免费家庭嘉年华回归！运动试玩区、Becky Bunny 吉祥物见面会、舞台游戏互动、餐车美食、文创市集应有尽有。最棒的是免费入场，孩子可以试羽毛球、跆拳道、攀岩等多个体育项目，是开启 6月学校假期的最佳第一站。建议错峰早去，下午人会非常多。",
+      highlights: "✨ 完全免费 · 多项运动试玩 · 表演 + 美食一站式",
+      whyKidsLove: "💡 7–9 岁孩子可以一次试好多种运动，回家好选课外班",
+      whenWhere: "📍 Singapore EXPO Hall 6 · 5月31日–6月1日",
+      price: "免费入场",
+      bookingUrl: "https://www.familiesforlife.sg/",
+      btnText: "查看详情",
       active: true
     }
 
