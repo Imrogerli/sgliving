@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-16
- * 版本：2.8
+ * 最后更新：2026-05-18
+ * 版本：2.9
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-16",
-    version: "2.8",
+    lastUpdated: "2026-05-18",
+    version: "2.9",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -2589,6 +2589,50 @@ const SGLIVING_DATA = {
       lat: 1.2755,
       lng: 103.8444,
       active: true
+    },
+
+    {
+      id: "panda-cafe-559-somerset",
+      name: "5:59+ Cafe & Bistro · 熊猫主题",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2025-10",
+      price: "S$18–35",
+      description: "姐妹们！成都顶流熊猫主题餐厅 5:59+ 终于落地新加坡！313 Somerset 一楼，整间店都是萌萌哒大熊猫，麻辣披萨、麻辣咖啡、熊猫造型甜品太上头了！川西融合西餐+四川风味，麻辣党和打卡党都能满足。绝绝子！周末记得提前来，避免排队。",
+      tags: ["小红书爆款", "熊猫主题", "麻辣咖啡", "成都名店"],
+      address: "313@Somerset, 313 Orchard Road #01-28, Singapore 238895",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🐼",
+      bgGradient: "linear-gradient(135deg,#2d3436,#dfe6e9)",
+      catLabel: "正餐",
+      catDesc: "川西融合西餐 / 313 Somerset",
+      ratingDesc: "成都顶流熊猫主题餐厅 · 海外首店",
+      lat: 1.3013,
+      lng: 103.8388,
+      active: true
+    },
+
+    {
+      id: "niku-iku-lotone",
+      name: "NiKU iKU · Lot One 首家堂食店",
+      categories: ["restaurant", "snack"],
+      rating: 4.4,
+      openDate: "2026-05",
+      price: "S$7.80–22",
+      description: "新加坡知名日式定食品牌 NiKU iKU 5月13日在 Lot One 开出首家堂食店！招牌 iKU 便当从 S$7.80 起，烧肉（鳗鱼、牛肉、三文鱼、鸡肉）和煮物（鲣鱼酱油煮）两大日式风味随心选，搭配独家牛蒡米饭香气惊艳。性价比高，是工作日午餐和带娃晚餐的省心选择。",
+      tags: ["日式定食", "首店堂食", "Lot One", "牛蒡米饭"],
+      address: "Lot One Shoppers' Mall, 21 Choa Chu Kang Avenue 4, Singapore 689812",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍱",
+      bgGradient: "linear-gradient(135deg,#fd7e14,#ffa94d)",
+      catLabel: "小吃",
+      catDesc: "日式便当 / Lot One",
+      ratingDesc: "5月13日开业 · 首家堂食店",
+      lat: 1.3851,
+      lng: 103.7444,
+      active: true
     }
 
   ],
@@ -2975,7 +3019,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.instagram.com/heartware.sg",
       btnText: "了解详情",
       sortDate: "2026-05-17",
-      active: true
+      active: false
     },
 
     {
@@ -3208,7 +3252,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Daniel+Caesar+Singapore",
       btnText: "购票",
       sortDate: "2026-05-16",
-      active: true
+      active: false
     },
 
     {
@@ -3352,7 +3396,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Hokkien+Hits+Concert+2026",
       btnText: "购票",
       sortDate: "2026-05-16",
-      active: true
+      active: false
     },
 
     {
@@ -3596,7 +3640,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=songs+that+keep+us+together",
       btnText: "购票",
       sortDate: "2026-05-16",
-      active: true
+      active: false
     },
 
     {
