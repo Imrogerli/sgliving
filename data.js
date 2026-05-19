@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-18
- * 版本：2.9
+ * 最后更新：2026-05-19
+ * 版本：3.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-18",
-    version: "2.9",
+    lastUpdated: "2026-05-19",
+    version: "3.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -2633,6 +2633,72 @@ const SGLIVING_DATA = {
       lat: 1.3851,
       lng: 103.7444,
       active: true
+    },
+
+    {
+      id: "emir-brasserie-bugis",
+      name: "Emir Brasserie · 清真欧陆小酒馆",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-02",
+      price: "S$30–60",
+      description: "Bugis 北桥路上的清真欧陆小酒馆，红色调情调浓郁。主厨用法式与欧式经典手法料理本地清真食材，招牌 $38 无限牛排薯条吃到饱（午市 11:00–15:30）刷爆本地美食圈。环境像欧洲老派 brasserie，朋友聚会、约会、商务餐都合适，回教徒朋友也能放心带。",
+      tags: ["清真认证", "欧陆料理", "无限牛排"],
+      address: "743 North Bridge Road, Singapore 198711",
+      badge: "new",
+      badgeText: "🆕 新晋热门",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#c0392b,#8b0000)",
+      catLabel: "正餐",
+      catDesc: "清真欧陆 / Bugis 北桥路",
+      ratingDesc: "无限牛排薯条 S$38 · 红色经典欧陆装潢",
+      lat: 1.3036,
+      lng: 103.8625,
+      active: true
+    },
+
+    {
+      id: "chimis-especial-customs",
+      name: "Chimi's Especial · 南美洲海滨概念店",
+      categories: ["restaurant", "finedining"],
+      rating: 4.6,
+      openDate: "2026-03",
+      price: "S$50–120",
+      description: "本地拉美餐厅 Chimichanga 十周年旗舰新店，落户 Customs House 海滨黄金位置，180 个座位含超大露天平台，正对滨海湾全景！菜单覆盖秘鲁、阿根廷、委内瑞拉、波多黎各等南美洲多国风味，必点秘鲁炭烤鸡 Pollo a la Brasa、炭烤章鱼 Pulpo Asado。还是亚洲唯一供应委内瑞拉国酒 Cocuy 的地方。约会、商务餐、周末日落小酌一站搞定。",
+      tags: ["南美洲菜", "海景平台", "亚洲独家Cocuy"],
+      address: "70 Collyer Quay, #01-01 Customs House, Singapore 049323",
+      badge: "new",
+      badgeText: "🆕 海景新店",
+      emoji: "🌮",
+      bgGradient: "linear-gradient(135deg,#e67e22,#d35400)",
+      catLabel: "正餐",
+      catDesc: "南美洲料理 / Customs House",
+      ratingDesc: "180座海滨平台 · 滨海湾全景",
+      lat: 1.2858,
+      lng: 103.8527,
+      active: true
+    },
+
+    {
+      id: "molly-tea-raffles-place",
+      name: "茉莉奶白 Molly Tea · Raffles Place 第二店",
+      categories: ["dessert", "snack"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$5.20–8",
+      description: "姐妹们！深圳爆款茉莉奶白 Molly Tea 5月11日空降 Raffles Place 第二店，新加坡最大 CBD 旗舰！招牌「茉莉鲜奶茶」($5.20) 七步窨花工艺香到上头，奶香茉莉香缠绕舌尖，绝绝子！比 Orchard Central 首店空间大很多，午休来打卡完全不挤。开业前几天 1-for-1 优惠刷爆小红书，CBD 上班族续命好物已锁定！",
+      tags: ["小红书爆款", "茉莉奶茶", "CBD旗舰", "中国品牌"],
+      address: "50 Raffles Place, #B1-32, Singapore Land Tower, Singapore 048623",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🫖",
+      bgGradient: "linear-gradient(135deg,#a29bfe,#dfe6e9)",
+      catLabel: "小吃",
+      catDesc: "茉莉奶茶 / Singapore Land Tower",
+      ratingDesc: "5月11日开业 · 新加坡最大 CBD 旗舰",
+      lat: 1.2843,
+      lng: 103.8517,
+      active: true
     }
 
   ],
@@ -2950,7 +3016,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gardensbythebay.com.sg",
       btnText: "了解详情",
       sortDate: "2026-05-15",
-      active: true
+      active: false
     },
 
     {
@@ -2996,7 +3062,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.dopamineland.com",
       btnText: "购票",
       sortDate: "2026-05-15",
-      active: true
+      active: false
     },
 
     {
@@ -4577,6 +4643,29 @@ const SGLIVING_DATA = {
       btnText: "立即购票",
       sortDate: "2026-07-24",
       active: true
+    },
+
+    {
+      id: "disney-garden-of-wonder-2026",
+      name: "Disney Garden of Wonder · 迪士尼公主花园奇境",
+      type: "exhibition",
+      priority: "normal",
+      month: "JUN",
+      day: "08",
+      dow: "周一",
+      dateColor: "linear-gradient(135deg,#ec4899,#a855f7)",
+      typeLabel: "🌸 迪士尼花园",
+      typeColor: "#ec4899",
+      description: "Gardens by the Bay 与迪士尼联手回归！6月8日起在 Floral Fantasy 全新升级，新加入迪士尼公主系列——长发公主 Rapunzel、贝儿 Belle、茉莉 Jasmine 的园艺造景与场景立体复刻。带娃打卡少女心爆棚，是夏天遛娃 + 出片的双赢选择。展期到2027年3月14日，6月开幕季限定主题表演与互动 workshop 千万别错过。",
+      venue: "Floral Fantasy, Gardens by the Bay",
+      dateRange: "6月8日–2027年3月14日",
+      ticketInfo: "🎫 Gardens by the Bay 官网",
+      price: "S$10–20",
+      priceNote: "Gardens by the Bay 官网",
+      ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/floral-fantasy.html",
+      btnText: "购票入园",
+      sortDate: "2026-06-08",
+      active: true
     }
 
   ],
@@ -4796,7 +4885,7 @@ const SGLIVING_DATA = {
       dateRange: "4月24日–5月17日",
       cost: "S$12起/人",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -5823,6 +5912,40 @@ const SGLIVING_DATA = {
       price: "免费入场",
       bookingUrl: "https://www.familiesforlife.sg/",
       btnText: "查看详情",
+      active: true
+    },
+
+    {
+      id: "winnie-pooh-childrens-festival-2026",
+      name: "小熊维尼100周年儿童节 · Gardens by the Bay",
+      icon: "🍯",
+      topGradient: "linear-gradient(90deg,#fbbf24,#f59e0b)",
+      ageRange: "最适合 3–10 岁",
+      ageHighlight: "👍 7–9 岁也会甘心当小粉丝",
+      description: "Gardens by the Bay 一年一度免费儿童节回归！2026 主题为小熊维尼诞生 100 周年，Supertree Grove 户外大型装置、小熊维尼相关角色合照点、互动游戏区、亲子工作坊、舞台演出全部免费开放。100 年的小熊维尼依旧温柔治愈，孩子可在自然环境里跟着 Pooh、Tigger、Piglet 跑跳认识友谊与善意。6 月学校假期最佳遛娃地，记得早上去人少又凉爽。",
+      highlights: "✨ 100% 免费 · Supertree Grove 户外装置 · 工作坊 + 角色见面",
+      whyKidsLove: "💡 7–9 岁可玩可拍可上台互动，还能学到100年友情故事",
+      whenWhere: "📍 Supertree Grove, Gardens by the Bay · 6月学校假期",
+      price: "免费入场（部分工作坊预约制）",
+      bookingUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events.html",
+      btnText: "查看节目表",
+      active: true
+    },
+
+    {
+      id: "splashtopia-palawan-2026",
+      name: "Splashtopia 2026 · 巴拉湾热带玩水嘉年华",
+      icon: "🏝️",
+      topGradient: "linear-gradient(90deg,#06b6d4,#3b82f6)",
+      ageRange: "最适合 4–12 岁",
+      ageHighlight: "👍 7–9 岁尖叫玩水首选",
+      description: "Sentosa 巴拉湾 Palawan Green 的「Splashtopia」第三度回归！夏威夷 + 波利尼西亚主题大型户外水上乐园，水上滑梯、巨型泡泡池、感官互动区、椰风沙滩游戏一次玩个够。6 月学校假期日日开放，傍晚还有 Tiki 主题演出。7–9 岁孩子最爱的就是各种水弹、水门挑战和巨型水滑梯，玩到不愿离场，建议穿速干衣物，带换洗一套。",
+      highlights: "✨ 户外水乐园 · 波利尼西亚主题 · 多滑梯多互动区",
+      whyKidsLove: "💡 7–9 岁可以独立挑战所有滑梯，玩一天都不嫌累",
+      whenWhere: "📍 Palawan Green, Sentosa · 6月学校假期日日开放",
+      price: "S$25–45/人",
+      bookingUrl: "https://www.sentosa.com.sg/en/explore/whats-on/events/splashtopia",
+      btnText: "查看票价",
       active: true
     }
 
