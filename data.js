@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-19
+ * 最后更新：2026-05-20
  * 版本：3.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-19",
+    lastUpdated: "2026-05-20",
     version: "3.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2699,6 +2699,96 @@ const SGLIVING_DATA = {
       lat: 1.2843,
       lng: 103.8517,
       active: true
+    },
+
+    // ── 5月20日新增（2026-05-20 更新）─────────────
+
+    {
+      id: "mary-grace-tanjong-pagar",
+      name: "Mary Grace · 菲律宾国民咖啡屋",
+      categories: ["dessert", "snack"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$8–25",
+      description: "菲律宾国民级 Mary Grace 五月空降丹戎巴葛！28席小店里坐着，咬一口招牌 Ensaymada 黄油奶酪面包，奶香在嘴里炸开；Cheese Rolls 入口酥脆奶馅流心，配一杯热巧克力（Tsokolate）才算完整。下午茶想换换口味的姐妹们一定要试，本地媒体首周就被刷爆。",
+      tags: ["菲律宾甜点", "Ensaymada", "丹戎巴葛"],
+      address: "78 Tanjong Pagar Road, Singapore 088498",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🥐",
+      bgGradient: "linear-gradient(135deg,#f6d365,#fda085)",
+      catLabel: "甜点",
+      catDesc: "菲律宾烘焙 / 丹戎巴葛",
+      ratingDesc: "菲律宾国民品牌 · 首登新加坡",
+      lat: 1.2766,
+      lng: 103.8458,
+      active: true
+    },
+
+    {
+      id: "xiaolongbao-secret-spot-2026",
+      name: "无名小笼包小馆 · 小红书发现店",
+      categories: ["restaurant", "snack"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$15–25",
+      description: "姐妹们！小红书最近爆推一家「藏在 Tanjong Pagar 楼上的小笼包小馆」，皮薄到几乎透光，咬开瞬间汤汁喷涌——绝绝子！老板是上海阿姨，每天限量出炉，去晚就没了。蟹粉小笼一笼仅 S$15，蟹黄拌面也是必点，姐妹打卡都说「这才叫家乡味」。位子超小要早去，避雷高峰排队！",
+      tags: ["小红书爆款", "上海小笼包", "蟹粉拌面", "限量出品"],
+      address: "Tanjong Pagar Road shophouses (Level 2)",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥟",
+      bgGradient: "linear-gradient(135deg,#fab1a0,#ffeaa7)",
+      catLabel: "正餐",
+      catDesc: "沪上小馆 / 丹戎巴葛",
+      ratingDesc: "小红书近期热推 · 上海家庭味",
+      lat: 1.2755,
+      lng: 103.8455,
+      active: true
+    },
+
+    {
+      id: "mozmoji-hidden-shophouse",
+      name: "Mozmoji 陌迹 · 隐藏铺前甜点店",
+      categories: ["dessert", "snack"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$12–22",
+      description: "藏在 South Bridge Road 老店屋二楼的「陌迹」，玻璃门一推开像走进民国茶馆。招牌「黑芝麻可丽露」外脆内糯，配一壶手冲乌龙就是周末小确幸。空间窄但有故事感，朋友圈拍照随手出片，新加坡少有的中式 dessert café，懂的人才上去坐坐。",
+      tags: ["小红书爆款", "中式甜点", "店屋二楼"],
+      address: "South Bridge Road (Level 2 shophouse), Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#dfe6e9,#b2bec3)",
+      catLabel: "甜点",
+      catDesc: "中式甜点 · 茶饮 / 牛车水",
+      ratingDesc: "小红书藏宝店 · 二楼店屋私享",
+      lat: 1.2843,
+      lng: 103.8458,
+      active: true
+    },
+
+    {
+      id: "kidz-streetfood-festival-popup-2026",
+      name: "Sands Expo · 亚太街头美食市集",
+      categories: ["snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$5–18/份",
+      description: "5月底滨海湾金沙 Expo 厅又来一波亚太街头小吃市集！港式咖喱鱼蛋、台式珍珠奶茶、韩国炒年糕、马来沙嗲、泰国船面，一次吃个够。带娃逛展正好顺路解决一顿，价格亲民，孩子最爱港式咖喱鱼蛋摊，老板还会按要求加酱。",
+      tags: ["亚太美食", "市集", "亲子顺路"],
+      address: "Sands Expo & Convention Centre, 10 Bayfront Avenue",
+      badge: "new",
+      badgeText: "🆕 5月限时",
+      emoji: "🍢",
+      bgGradient: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      catLabel: "小吃",
+      catDesc: "美食市集 / 滨海湾",
+      ratingDesc: "5月23–25日限时摆摊 · 25+摊位",
+      lat: 1.2839,
+      lng: 103.8593,
+      active: true
     }
 
   ],
@@ -2783,7 +2873,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Laufey+Singapore",
       btnText: "候补票",
       sortDate: "2026-05-19",
-      active: true
+      active: false
     },
 
     {
@@ -4666,6 +4756,148 @@ const SGLIVING_DATA = {
       btnText: "购票入园",
       sortDate: "2026-06-08",
       active: true
+    },
+
+    // ── 5月20日新增（2026-05-20 更新）─────────────
+
+    {
+      id: "kidz-pop-con-asia-2026",
+      name: "Kidz Pop Con Asia 2026 · 亚洲少儿流行嘉年华",
+      type: "event",
+      priority: "normal",
+      month: "5月",
+      day: "23",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#10b981,#a7f3d0)",
+      typeLabel: "🎪 亲子嘉年华",
+      typeColor: "#10b981",
+      description: "周末带娃去金沙 Expo 一站搞定！七大主题充气城堡（Baby Shark、Bluey 等）、Cosplay 大赛、吉祥物合影、儿童舞台 live 表演，5月23–24日两天活动满满。基础票 S$10/天，2岁以下免费，全访问票 S$25，是带 7–9 岁孩子周末放电的好去处。",
+      venue: "Sands Expo & Convention Centre",
+      dateRange: "5月23–24日 10AM–8PM",
+      ticketInfo: "🎫 现场或官网购票",
+      price: "S$10–25",
+      priceNote: "现场购票",
+      ticketUrl: "https://www.kidzpopcon.asia",
+      btnText: "购票",
+      sortDate: "2026-05-23",
+      active: true
+    },
+
+    {
+      id: "national-family-festival-carnival-may-2026",
+      name: "国家家庭节嘉年华 · National Family Festival",
+      type: "event",
+      priority: "normal",
+      month: "5月",
+      day: "30",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#f59e0b,#fde68a)",
+      typeLabel: "🎈 免费嘉年华",
+      typeColor: "#f59e0b",
+      description: "新加坡国家家庭节年度大轴：5月30–31日 Hall 3 全岛家庭涌入。免费入场、亲子摊位、舞台演出、互动游戏、家庭运动赛等，是华人家庭周末免费遛娃的首选。强烈建议早去，10点开门就最热闹。",
+      venue: "Singapore Expo Hall 3",
+      dateRange: "5月30–31日 10AM–7PM",
+      ticketInfo: "🌟 免费入场",
+      price: "免费",
+      priceNote: "免费入场",
+      ticketUrl: "https://familyfestival.gov.sg",
+      btnText: "了解详情",
+      sortDate: "2026-05-30",
+      active: true
+    },
+
+    {
+      id: "post-malone-bigass-world-tour-2026",
+      name: "Post Malone · Big Ass World Tour 新加坡站",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "全球流行天王首次新加坡场",
+      month: "8月",
+      day: "22",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#7c3aed,#a78bfa)",
+      typeLabel: "🎤 欧美流行",
+      typeColor: "#7c3aed",
+      description: "Post Malone 全球巡演 Big Ass World Tour 终于来新加坡！8月22日 Arena @ EXPO 一晚专场，从《Sunflower》《Circles》到最新乡村专辑曲目通通现场。粉丝准备好嗓子，售票一开放就抢，是2026下半年最受期待的欧美演唱会之一。",
+      venue: "Arena @ EXPO",
+      dateRange: "8月22日（周六）",
+      ticketInfo: "🎫 Ticketmaster 即将开售",
+      price: "S$148–428",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Post+Malone+Singapore",
+      btnText: "关注开票",
+      sortDate: "2026-08-22",
+      active: true
+    },
+
+    {
+      id: "the-weeknd-national-stadium-2026",
+      name: "The Weeknd · 新加坡国家体育场",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "国家体育场年度顶流场",
+      month: "9月",
+      day: "25",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#1f2937,#ef4444)",
+      typeLabel: "🎤 欧美天王",
+      typeColor: "#ef4444",
+      description: "The Weeknd 9月25日空降新加坡国家体育场！连演两晚回顾整个音乐生涯，从《Blinding Lights》《Starboy》到最新主打，日本嘻哈组合 Creepy Nuts 担任开场嘉宾。国家体育场容量超大，亚洲粉丝最大狂欢，记得带荧光棒。",
+      venue: "Singapore National Stadium",
+      dateRange: "9月25–26日 连演两晚",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$168–498",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=The+Weeknd+Singapore",
+      btnText: "购票",
+      sortDate: "2026-09-25",
+      active: true
+    },
+
+    {
+      id: "bjorn-again-abba-forever-2026",
+      name: "Bjorn Again · The ABBA Forever Tour",
+      type: "concert",
+      priority: "normal",
+      month: "8月",
+      day: "14",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#facc15)",
+      typeLabel: "🎶 经典再现",
+      typeColor: "#0ea5e9",
+      description: "ABBA 经典致敬乐队 Bjorn Again 重返新加坡，8月14–16日 Sands Theatre 连演四场。《Dancing Queen》《Mamma Mia》《Waterloo》怀旧金曲全场嗨翻，全家三代一起去最 high，孩子也能跟着唱。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "8月14–16日 共四场",
+      ticketInfo: "🎫 SISTIC 购票",
+      price: "S$68–168",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Bjorn+Again",
+      btnText: "购票",
+      sortDate: "2026-08-14",
+      active: true
+    },
+
+    {
+      id: "belle-sebastian-esplanade-2026",
+      name: "Belle and Sebastian · 滨海艺术中心音乐厅",
+      type: "concert",
+      priority: "normal",
+      month: "9月",
+      day: "20",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#9333ea,#c084fc)",
+      typeLabel: "🎸 独立流行",
+      typeColor: "#9333ea",
+      description: "苏格兰传奇独立乐队 Belle and Sebastian 9月20日空降滨海艺术中心音乐厅。文艺青年必到的现场，《The Boy with the Arab Strap》《Get Me Away from Here, I'm Dying》经典曲目唤起90末年的回忆。座位舒适、氛围安静的精品演出。",
+      venue: "Esplanade Concert Hall",
+      dateRange: "9月20日 7:30 PM",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$98–198",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Belle+and+Sebastian",
+      btnText: "购票",
+      sortDate: "2026-09-20",
+      active: true
     }
 
   ],
@@ -5946,6 +6178,92 @@ const SGLIVING_DATA = {
       price: "S$25–45/人",
       bookingUrl: "https://www.sentosa.com.sg/en/explore/whats-on/events/splashtopia",
       btnText: "查看票价",
+      active: true
+    },
+
+    // ── 5月20日新增（2026-05-20 更新）─────────────
+
+    {
+      id: "kidz-pop-con-may-family-2026",
+      name: "Kidz Pop Con Asia 2026 · 充气城堡嘉年华",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#10b981,#a7f3d0)",
+      ageRange: "最适合 4–10 岁",
+      ageHighlight: "👍 7–9 岁尽情奔跑放电",
+      description: "金沙 Expo 一站式遛娃神器！七大主题充气城堡（Baby Shark、Bluey 等），cosplay 大赛、儿童舞台演出、吉祥物合影，全程嗨到不行。7–9 岁孩子尺寸刚好，能挑战所有充气项目，玩到不愿走。",
+      highlight: "💡 7–9 岁可以独立挑战所有充气城堡，跑两小时都不嫌累",
+      whyKidsLove: "💡 7–9 岁可以独立挑战所有充气项目，运动量爆表",
+      whenWhere: "📍 Sands Expo & Convention Centre · 5月23–24日 10AM–8PM",
+      location: "Sands Expo & Convention Centre",
+      dateRange: "5月23–24日（周末两天）",
+      cost: "S$10 基础 / S$25 全访问 · 2岁以下免费",
+      duration: "约2–4小时",
+      price: "S$10–25",
+      bookingUrl: "https://www.kidzpopcon.asia",
+      btnText: "购票",
+      active: true
+    },
+
+    {
+      id: "ranger-buddies-finale-may-2026",
+      name: "Ranger Buddies AR 任务 · 5月最后冲刺",
+      icon: "🐝",
+      topGradient: "linear-gradient(90deg,#f59e0b,#fbbf24)",
+      ageRange: "最适合 6–10 岁",
+      ageHighlight: "👍 7–9 岁独立闯关",
+      description: "Ranger Buddies AR 任务5月31日就要结束！趁周末带 7–9 岁孩子去全岛公园做最后一波 AR 解谜，跟着小兔 Rudy 探索蜜蜂世界，每完成一个站点解锁新成就。AR 玩法新鲜、户外又能运动，结束前最后两个周末别错过。",
+      highlight: "💡 AR 科技+户外探索，7–9 岁孩子最爱的解谜模式",
+      whyKidsLove: "💡 7–9 岁可独立用 App 找站点闯关，越玩越上瘾",
+      whenWhere: "📍 全岛多个公园 · 5月31日前每天开放",
+      location: "全岛公园（详见 App）",
+      dateRange: "3月12日–5月31日（5月最后两个周末）",
+      cost: "免费 · 下载 App 即可参与",
+      duration: "约1.5–3小时",
+      price: "免费",
+      bookingUrl: "https://www.nparks.gov.sg/activities/family-time-with-nature/learning",
+      btnText: "下载 App",
+      active: true
+    },
+
+    {
+      id: "homeground-acm-final-weekend-2026",
+      name: "Homeground @ ACM · 最后一周艺术嘉年华",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#8b5cf6,#c4b5fd)",
+      ageRange: "最适合 5–10 岁",
+      ageHighlight: "👍 7–9 岁动手最爱",
+      description: "亚洲文明博物馆 ACM Green 的免费亲子艺术营 Homeground 来到最后一周（5月24日截止）！手工 workshop、说故事、免费露天电影、亲子互动游戏，全部免费。7–9 岁孩子最爱独立完成手工作品带回家，是周末免费遛娃的绝佳选择。",
+      highlight: "💡 全部免费！7–9 岁可独立参与手工工作坊",
+      whyKidsLove: "💡 7–9 岁孩子独立做完手工作品超有成就感",
+      whenWhere: "📍 ACM Green, 1 Empress Place · 5月24日前每天",
+      location: "Asian Civilisations Museum (ACM Green)",
+      dateRange: "至5月24日（最后周末）",
+      cost: "免费",
+      duration: "约1.5–3小时",
+      price: "免费",
+      bookingUrl: "https://www.nhb.gov.sg/acm/programmes",
+      btnText: "查看节目",
+      active: true
+    },
+
+    {
+      id: "dip-n-splash-bedok-jun-2026",
+      name: "Dip 'N Splash 碧山-勿洛水库水上嘉年华",
+      icon: "💦",
+      topGradient: "linear-gradient(90deg,#06b6d4,#67e8f9)",
+      ageRange: "最适合 7–12 岁",
+      ageHighlight: "👍 7–9 岁尖叫戏水",
+      description: "6月6–7日勿洛蓄水池上限时开放大型充气障碍水道、皮划艇、Aqua Adventure 闯关赛！7–9 岁孩子可以独立报名所有项目（含救生衣指导），是放学假期开端最刺激的水上活动。记得带防晒、速干衣、毛巾，玩完就在湖畔野餐。",
+      highlight: "💡 7–9 岁可独立挑战水上障碍道，刺激安全两不误",
+      whyKidsLove: "💡 7–9 岁体力刚好够通关，挑战感强又安全",
+      whenWhere: "📍 Bedok Reservoir · 6月6–7日（学校假期首周末）",
+      location: "Bedok Reservoir Park",
+      dateRange: "6月6–7日",
+      cost: "S$15–35/项",
+      duration: "约2–4小时",
+      price: "S$15–35",
+      bookingUrl: "https://www.activesg.com/events",
+      btnText: "查看活动",
       active: true
     }
 
