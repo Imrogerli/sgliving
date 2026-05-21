@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-20
+ * 最后更新：2026-05-21
  * 版本：3.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-20",
+    lastUpdated: "2026-05-21",
     version: "3.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2789,6 +2789,72 @@ const SGLIVING_DATA = {
       lat: 1.2839,
       lng: 103.8593,
       active: true
+    },
+
+    {
+      id: "between-buns-deli-robinson",
+      name: "Between Buns Deli · 复古三明治店",
+      categories: ["restaurant", "snack"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$14–22",
+      description: "从家庭快闪到 CBD 第一家实体店，主厨 Ahmir Arshad 六年磨一剑，终于在 Robinson Road SBF Centre 开业。四种自制面包（酸种、佛卡夏、Hoagie、布里欧）撑起菜单，招牌脆皮炸鸡布里欧 (S$16) 一上桌就被秒空，复古美式 Deli 风格，CBD 上班族午餐第一站。",
+      tags: ["三明治", "复古美式", "CBD午餐"],
+      address: "160 Robinson Rd, SBF Centre, #01-01, Singapore 068914",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🥪",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#d97706)",
+      catLabel: "正餐",
+      catDesc: "美式 Deli / CBD",
+      ratingDesc: "六年快闪终于开店 · CBD 午餐黑马",
+      lat: 1.2790,
+      lng: 103.8500,
+      active: true
+    },
+
+    {
+      id: "auntea-jenny-xhs-sg",
+      name: "沪上阿姨 · 现熬五谷茶",
+      categories: ["snack", "dessert"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$5–9",
+      description: "姐妹们！沪上阿姨终于开到新加坡了！主打现熬五谷茶（红豆薏米、桂圆红枣这些），还有招牌血糯米奶茶、芋泥啵啵奶茶。比茶百道还要更养生路线，每杯都现熬现做，加料免费！小红书最近一周新加坡探店帖刷屏，姐妹们冲就完事了，记得避开下午4点排队高峰！",
+      tags: ["小红书爆款", "现熬五谷茶", "中国奶茶"],
+      address: "313 Orchard Road, 313@Somerset, B3-15",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🧋",
+      bgGradient: "linear-gradient(135deg,#ec4899,#f43f5e)",
+      catLabel: "甜品",
+      catDesc: "中国奶茶 / Somerset",
+      ratingDesc: "小红书新加坡探店周冠军 · 五谷茶现熬",
+      lat: 1.3009,
+      lng: 103.8389,
+      active: true
+    },
+
+    {
+      id: "xhs-xita-sichuan-jurong",
+      name: "西塔老太太 · 老坛酸菜鱼（裕廊店）",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$28–48",
+      description: "小红书博主集体打卡！来自东北的西塔老太太裕廊新店刚开就排队两小时——招牌老坛酸菜鱼酸到上头，鱼片厚到能折叠，配上一锅秘制汤底配米饭绝绝子。姐妹们说『比国内的还正宗，连酸菜都是空运的』。除了酸菜鱼，烤鱼、毛血旺、宫保鸡丁也都是踩雷无地雷的水准，组团去吃最划算！",
+      tags: ["小红书爆款", "酸菜鱼", "东北菜"],
+      address: "Jurong Point, 1 Jurong West Central 2, #03-K1",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🐟",
+      bgGradient: "linear-gradient(135deg,#dc2626,#f59e0b)",
+      catLabel: "正餐",
+      catDesc: "东北川菜 / 裕廊",
+      ratingDesc: "小红书探店周热搜 · 老坛酸菜鱼必点",
+      lat: 1.3398,
+      lng: 103.7064,
+      active: true
     }
 
   ],
@@ -4898,6 +4964,76 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-09-20",
       active: true
+    },
+
+    {
+      id: "5sos-everyone-star-sg-2026",
+      name: "5 Seconds of Summer · EVERYONE'S A STAR! 世界巡演",
+      type: "concert",
+      priority: "normal",
+      month: "11月",
+      day: "16",
+      dow: "周一",
+      dateColor: "linear-gradient(135deg,#e11d48,#fb7185)",
+      typeLabel: "🎸 流行摇滚",
+      typeColor: "#e11d48",
+      description: "澳洲国民乐团 5SOS 终于回归新加坡！全新《EVERYONE'S A STAR!》世界巡演 11月16日登陆 The Star Theatre，《Youngblood》《She Looks So Perfect》《Teeth》经典曲目全收录。粉丝催了好几年终于等到，门票一开售直接秒杀，记得提前蹲点抢。",
+      venue: "The Star Theatre",
+      dateRange: "11月16日 8:00 PM",
+      ticketInfo: "🎫 Live Nation 售票",
+      price: "S$128–268",
+      priceNote: "Live Nation",
+      ticketUrl: "https://www.livenation.sg/event/5-seconds-of-summer-everyone-s-a-star-world-tour-singapore-tickets-edp1669851",
+      btnText: "购票",
+      sortDate: "2026-11-16",
+      active: true
+    },
+
+    {
+      id: "le-sserafim-pureflow-sg-2026",
+      name: "LE SSERAFIM · PUREFLOW 世界巡演",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "出道4年首次新加坡线下个唱 · 粉丝必抢",
+      month: "11月",
+      day: "28",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#a78bfa)",
+      typeLabel: "🎤 K-POP 个唱",
+      typeColor: "#0ea5e9",
+      description: "韩国五人女团 LE SSERAFIM 全新《PUREFLOW》世界巡演11月28日空降新加坡室内体育馆！这是 Chaewon、Sakura、Yunjin、Kazuha、Eunchae 出道以来首次新加坡线下个唱（之前只有 VR 体验），FEARNOT 们等了4年终于等到。预计 set list 涵盖《FEARLESS》《ANTIFRAGILE》《Perfect Night》全部主打曲。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "11月28日 7:30 PM",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$148–388",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=LE+SSERAFIM",
+      btnText: "购票",
+      sortDate: "2026-11-28",
+      active: true
+    },
+
+    {
+      id: "ftisland-singapore-jun27-2026",
+      name: "FTISLAND · 出道20周年纪念巡演",
+      type: "concert",
+      priority: "normal",
+      month: "6月",
+      day: "27",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#dc2626,#f97316)",
+      typeLabel: "🎸 K-ROCK",
+      typeColor: "#dc2626",
+      description: "韩国国民乐队 FTISLAND 出道20周年纪念巡演6月27日登陆新加坡！Hongki 的高音、Jaejin 的贝斯依然在线，《Hello Hello》《Pray》《I Wish》经典歌曲一首不落。出道20年的老粉绝对泪目，新粉也能被现场感染力打动，是K-ROCK 必到现场。",
+      venue: "Capitol Theatre",
+      dateRange: "6月27日 8:00 PM",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$128–268",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=FTISLAND+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-27",
+      active: true
     }
 
   ],
@@ -6264,6 +6400,69 @@ const SGLIVING_DATA = {
       price: "S$15–35",
       bookingUrl: "https://www.activesg.com/events",
       btnText: "查看活动",
+      active: true
+    },
+
+    {
+      id: "mandai-wild-rescue-rangers-jun-2026",
+      name: "Mandai ZooSchool · WILD Rescue Rangers 三日营",
+      icon: "🦁",
+      topGradient: "linear-gradient(90deg,#f59e0b,#fcd34d)",
+      ageRange: "专为 7–12 岁设计",
+      ageHighlight: "👍 7–9 岁刚刚好的挑战难度",
+      description: "新加坡动物园出品的全日制野生动物救援营，专为7–12岁设计，三天满满课程：学习基本急救技能、照顾受伤动物、解决问题挑战，最后一天还能亲手给大象喂食！由动物园 keeper 全程带队，是7–9岁孩子最难忘的暑期体验。报名要趁早，6月场次秒空。",
+      highlight: "💡 7–9 岁可独立参加，全日制专业课程，给大象喂食一辈子的记忆",
+      whyKidsLove: "💡 真正的动物园 keeper 带队，能近距离接触和喂食大型动物",
+      whenWhere: "📍 Singapore Zoo · 6月学校假期场次",
+      location: "Singapore Zoo, 80 Mandai Lake Road",
+      dateRange: "6月学校假期（三日营）",
+      cost: "S$520/三日",
+      duration: "8小时/天 × 3天",
+      price: "S$520",
+      bookingUrl: "https://www.mandai.com/en/learn-with-us.html",
+      btnText: "报名营队",
+      active: true
+    },
+
+    {
+      id: "zero-waste-heroes-childrens-museum-2026",
+      name: "Ms. Nat 与零废弃英雄 · 儿童博物馆环保剧场",
+      icon: "♻️",
+      topGradient: "linear-gradient(90deg,#10b981,#6ee7b7)",
+      ageRange: "最适合 5–10 岁",
+      ageHighlight: "👍 7–9 岁互动深度刚好",
+      description: "新加坡儿童博物馆 Children's Season 2026 重磅节目！孩子化身 Earth Hero，与 Ms. Nat 和小伙伴一起降低『垃圾值』——通过生动的故事讲述、肢体律动、动手活动，了解食物浪费、节约用水、可持续生活习惯。每场以英雄宣言+回收材料手工徽章结束，环保意识从小培养。",
+      highlight: "💡 7–9 岁互动参与度最高 · 寓教于乐 · 现场可带回手工徽章",
+      whyKidsLove: "💡 戏剧+互动+手工三合一，孩子玩中学，环保观念自然种下",
+      whenWhere: "📍 Children's Museum Singapore · 6月学校假期",
+      location: "Children's Museum Singapore, 23-B Coleman Street",
+      dateRange: "6月学校假期（每周末多场）",
+      cost: "免费（含博物馆门票）",
+      duration: "约45分钟",
+      price: "免费",
+      bookingUrl: "https://www.heritage.sg/childrensmuseum",
+      btnText: "查看场次",
+      active: true
+    },
+
+    {
+      id: "raja-lost-journal-cms-2026",
+      name: "Raja 与失踪的日记 · 儿童博物馆历史游戏",
+      icon: "📖",
+      topGradient: "linear-gradient(90deg,#7c3aed,#a78bfa)",
+      ageRange: "最适合 7–12 岁",
+      ageHighlight: "👍 7–9 岁探索游戏正好上手",
+      description: "Children's Season 2026 另一重头戏！让孩子通过趣味游戏和想象力，揭开新加坡早期移民的生活、旅程与回忆。Raja 是移民后代主角，孩子跟着他寻找失踪日记，每完成一站任务可集印章兑换专属奖品（由儿童博物馆、HPB、NEA 联合赞助）。",
+      highlight: "💡 7–9 岁正好理解历史叙事 · 边玩边学习新加坡移民史",
+      whyKidsLove: "💡 寻宝玩法 + 集章兑奖 + 历史故事，比看博物馆牌牌有趣10倍",
+      whenWhere: "📍 Children's Museum Singapore · 6月儿童季",
+      location: "Children's Museum Singapore, 23-B Coleman Street",
+      dateRange: "6月学校假期",
+      cost: "含博物馆门票",
+      duration: "约1–2小时",
+      price: "S$15",
+      bookingUrl: "https://www.heritage.sg/childrensmuseum",
+      btnText: "查看节目",
       active: true
     }
 
