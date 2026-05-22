@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-21
+ * 最后更新：2026-05-22
  * 版本：3.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-21",
+    lastUpdated: "2026-05-22",
     version: "3.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2855,6 +2855,71 @@ const SGLIVING_DATA = {
       lat: 1.3398,
       lng: 103.7064,
       active: true
+    },
+    {
+      id: "liho-pooh-hunny-suntec-2026",
+      name: "LiHO Tea × 小熊维尼 · Hunny-Licious 限定",
+      categories: ["dessert", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$5.50–8.90",
+      description: "姐妹们冲！LiHO 牵手小熊维尼联名「Hunny-Licious」系列5月1日上线，全岛门店同步发售。Suntec City Level 3 旗舰店整层 takeover——百亩森林主题装饰、Pooh & Friends 打卡墙、限量周边玩偶杯垫。招牌「蜂蜜柚子青提奶霜」($7.90) 和「Pooh 限定芋圆奶茶」($8.90) 颜值与味道双在线，小红书已被打卡帖刷屏，带小朋友逛 Suntec 顺路打卡刚刚好。",
+      tags: ["小熊维尼联名", "Hunny-Licious", "Suntec City", "小红书爆款"],
+      address: "Suntec City Mall, Level 3, 3 Temasek Boulevard, Singapore 038983",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍯",
+      bgGradient: "linear-gradient(135deg,#fed330,#f7b731)",
+      catLabel: "甜品",
+      catDesc: "联名限定奶茶 / Suntec City",
+      ratingDesc: "Pooh 主题限定 · 全岛门店同步",
+      lat: 1.2954,
+      lng: 103.8589,
+      active: true
+    },
+
+    {
+      id: "keming-bing-sat-funan-2025",
+      name: "克茗冰室 Keming Bing Sat · Funan 分店",
+      categories: ["restaurant", "snack"],
+      rating: 4.6,
+      openDate: "2025-11",
+      price: "S$10–25",
+      description: "香港爆红茶餐厅克茗冰室第二家新加坡分店落户 Funan Mall！招牌「冰熊奶茶」(港式奶茶 + 巨型小熊冰雕) 仍然是镇店之宝，Funan 限定推出「咖喱牛腩奶油猪扒包」和「酥皮蛋挞」，比 Plaza Singapura 一店更安静好坐。商场近 City Hall 地铁站，办公族午餐和周末家庭饮茶都方便，平价就能吃到正宗港味。",
+      tags: ["港式茶餐厅", "冰熊奶茶", "Funan", "二号店"],
+      address: "107 North Bridge Road, #B1-29, Funan Mall, Singapore 179105",
+      badge: "new",
+      badgeText: "🆕 新分店",
+      emoji: "🧊",
+      bgGradient: "linear-gradient(135deg,#74b9ff,#0984e3)",
+      catLabel: "正餐",
+      catDesc: "港式茶餐厅 / Funan Mall",
+      ratingDesc: "克茗第二分店 · 限定咖喱牛腩猪扒包",
+      lat: 1.2916,
+      lng: 103.8503,
+      active: true
+    },
+
+    {
+      id: "wonder-sand-cookie-ion-2026",
+      name: "Wonder Sand · 北海道奶酪饼干夹心",
+      categories: ["dessert", "snack"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$15.90–28.90",
+      description: "小红书姐妹们已经被刷屏！Cheese Wonder 在 ION B4 快闪同步上线姐妹产品「Wonder Sand」——两片北海道黄油曲奇夹一块芝士奶油，咬下去咔嚓脆又奶香爆汁。6 颗装 S$28.90，原味+巧克力双口味组合最划算。买回家放冷冻30分钟更绝，办公室下午茶神物，限定 8 周售完即止，看到不要犹豫直接冲！",
+      tags: ["免烤芝士", "北海道曲奇", "ION Orchard", "小红书爆款"],
+      address: "ION Orchard B4-K1, 2 Orchard Turn, Singapore 238801",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍪",
+      bgGradient: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      catLabel: "甜品",
+      catDesc: "曲奇夹心芝士 / 乌节路",
+      ratingDesc: "Cheese Wonder 姐妹品 · 限定 8 周",
+      lat: 1.3043,
+      lng: 103.8318,
+      active: true
     }
 
   ],
@@ -3356,7 +3421,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sifa.sg/",
       btnText: "了解详情",
       sortDate: "2026-05-15",
-      active: true
+      active: false
     },
 
     {
@@ -3665,7 +3730,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Charlie+Chocolate+Factory+Singapore",
       btnText: "购票",
       sortDate: "2026-05-19",
-      active: true
+      active: false
     },
 
     {
@@ -4027,7 +4092,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gv.com.sg",
       btnText: "购票",
       sortDate: "2026-05-17",
-      active: true
+      active: false
     },
 
     {
@@ -4402,7 +4467,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.mandai.com/en/rainforest-wild-asia.html",
       btnText: "购票",
       sortDate: "2026-05-20",
-      active: true
+      active: false
     },
 
     {
@@ -5033,6 +5098,76 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=FTISLAND+Singapore",
       btnText: "购票",
       sortDate: "2026-06-27",
+      active: true
+    },
+
+    {
+      id: "gastrobeats-i-light-2026",
+      name: "GastroBeats × i Light · 滨海湾光影美食市集",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "05",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#fdcb6e,#e17055)",
+      typeLabel: "🍢 美食市集",
+      typeColor: "#fdcb6e",
+      description: "i Light Singapore 2026 官方美食节庆活动！GastroBeats 重返 Bayfront Event Space，化身灯光节村庄。40+ 美食摊位、街头小吃、精酿啤酒、现场乐队、复古游乐场，以及与 EPIC 世界锦标赛合作的 pickleball 体验。逛完14件互动光艺装置正好来填饱肚子，全家夜游滨海湾一站搞定。免费入场。",
+      venue: "Bayfront Event Space, 12A Bayfront Avenue",
+      dateRange: "6月5–28日 每日 17:30–22:30",
+      ticketInfo: "🎟️ 免费入场",
+      price: "免费",
+      priceNote: "美食摊位单独收费",
+      ticketUrl: "https://www.ilightsingapore.gov.sg/",
+      btnText: "查看详情",
+      sortDate: "2026-06-05",
+      active: true
+    },
+
+    {
+      id: "childrens-season-carnival-armenian-2026",
+      name: "Children's Season 嘉年华 · 亚美尼亚街",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "12",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#10b981,#059669)",
+      typeLabel: "🎪 亲子嘉年华",
+      typeColor: "#10b981",
+      description: "Children's Season 2026 大型嘉年华登陆儿童博物馆 + 亚美尼亚街！连办三天，主题「可持续生活」。亮点：彩色拌饭手工 (Bibimbap × 健康饮食)、零废弃手工坊、户外剧场、互动游戏摊位。新加坡传统建筑街道整体改造，孩子可集印章兑换奖品。7–9岁孩子最适合，三个晚上不重样的玩法。",
+      venue: "Children's Museum Singapore & Armenian Street",
+      dateRange: "6月12–14日（周五至周日）",
+      ticketInfo: "🎫 免费入场",
+      price: "免费",
+      priceNote: "部分工作坊需预约",
+      ticketUrl: "https://www.heritage.sg/childrensmuseum/whatson/childrens-season---listing-page",
+      btnText: "查看详情",
+      sortDate: "2026-06-12",
+      active: true
+    },
+
+    {
+      id: "milli-rooftop-opening-2026",
+      name: "Milli · 国家美术馆顶楼新派开幕",
+      type: "event",
+      priority: "featured",
+      featuredReason: "城中最受期待夜生活新地标",
+      month: "MAY",
+      day: "31",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#6c5ce7,#a29bfe)",
+      typeLabel: "🍸 顶楼新派",
+      typeColor: "#6c5ce7",
+      description: "国家美术馆顶楼 5月31日全新开幕！前 Smoke & Mirrors 和 Yan Cantonese 空间换上新派 Milli——L6 Sky Dining & Bar 高空餐酒、L5 Milli Lounge 派对至凌晨4点。米其林星厨 LG Han 操刀菜单，「龙虾叻沙肠粉」「蚝煎舒芙蕾」「皇帝蟹」是开幕主打。套餐午餐 S$38 起，鸡尾酒 S$26 起，俯瞰 Padang 和滨海湾。庆生约会值得一去。",
+      venue: "National Gallery Singapore, Level 5-6, 1 St Andrew's Road",
+      dateRange: "5月31日盛大开幕（持续运营）",
+      ticketInfo: "🍽️ 现订位",
+      price: "S$38起 / 鸡尾酒 S$26起",
+      priceNote: "Chope / 官网订位",
+      ticketUrl: "https://www.chope.co/singapore-restaurants/restaurant/milli-singapore",
+      btnText: "查看订位",
+      sortDate: "2026-05-31",
       active: true
     }
 
@@ -6463,6 +6598,69 @@ const SGLIVING_DATA = {
       price: "S$15",
       bookingUrl: "https://www.heritage.sg/childrensmuseum",
       btnText: "查看节目",
+      active: true
+    },
+
+    {
+      id: "acm-me-softplay-jun-2026",
+      name: "ACM & Me · 亚洲文明博物馆儿童艺术游乐",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#f59e0b,#fbbf24)",
+      ageRange: "最适合 4–10 岁",
+      ageHighlight: "👍 7–9 岁创作互动正合适",
+      description: "Children's Season 2026 重磅亮点！亚洲文明博物馆开放整层 ACM & Me 互动游乐空间——孩子可以自由设计「我的肖像」（数码 + 实物拼贴）、重新想象亚洲神话生物、还有专属软玩区和迷你 disco 房。每日下午有讲故事时段，安静角落让父母也能歇歇脚。整体免费随票入场，雨天首选去处。",
+      highlight: "💡 7–9 岁正好独立完成肖像创作 · 软玩+艺术+故事三合一",
+      whyKidsLove: "💡 数码画板可即时打印带回家，孩子的小作品立刻变作业展品",
+      whenWhere: "📍 亚洲文明博物馆 · Children's Season 6月学校假期",
+      location: "Asian Civilisations Museum, 1 Empress Place",
+      dateRange: "6月学校假期全月开放（每天 10am–7pm）",
+      cost: "免费随票入场（本地人免费）",
+      duration: "约1–2小时",
+      price: "免费",
+      bookingUrl: "https://www.nhb.gov.sg/acm/whats-on",
+      btnText: "查看详情",
+      active: true
+    },
+
+    {
+      id: "i-light-wave-promontory-2026",
+      name: "i Light · WAVE 互动光艺装置",
+      icon: "💡",
+      topGradient: "linear-gradient(90deg,#0984e3,#74b9ff)",
+      ageRange: "最适合 5–12 岁",
+      ageHighlight: "👍 7–9 岁敲击节奏最 enjoy",
+      description: "i Light Singapore 2026 主推互动装置！滨海湾 The Promontory 上立着一排发光的银色「光棒」，孩子可以挥舞、敲击、奔跑触发不同灯效与音效组合，类似一台超大型乐器。每晚 7:30–10:30 开放，免费体验。家长拍照、孩子跑动消耗体力两全，是凉爽夜晚遛娃首选。",
+      highlight: "💡 7–9 岁孩子能玩 1 小时不嫌累 · 全程户外免费 · 互动出片",
+      whyKidsLove: "💡 挥棒就出声光反馈，比电子游戏还过瘾，还能跑动消耗体力",
+      whenWhere: "📍 The Promontory @ 滨海湾 · 6月5–28日",
+      location: "The Promontory, Marina Bay",
+      dateRange: "6月5日–28日（每晚 19:30–22:30）",
+      cost: "免费入场",
+      duration: "建议预留 1 小时以上",
+      price: "免费",
+      bookingUrl: "https://www.ilightsingapore.gov.sg/",
+      btnText: "查看地图",
+      active: true
+    },
+
+    {
+      id: "macritchie-treetop-jun-2026",
+      name: "MacRitchie TreeTop Walk · 雨林吊桥探索",
+      icon: "🌳",
+      topGradient: "linear-gradient(90deg,#10b981,#34d399)",
+      ageRange: "最适合 7–12 岁",
+      ageHighlight: "👍 7–9 岁体力刚够走完全程",
+      description: "新加坡唯一悬空雨林吊桥！全长 250 米、距地面 25 米高，从 MacRitchie 自然保护区出发，单程约 7 公里。一路可见长尾猕猴、巨松鼠、稀有鸟类。7–9 岁孩子第一次完成这种「真正的徒步」会超有成就感，强烈推荐携带望远镜+水壶，避开正午高温段。免费入场。",
+      highlight: "💡 7–9 岁可独立完成全程 · 真实雨林+悬空体验 · 培养体能与观察力",
+      whyKidsLove: "💡 高空悬桥比游乐场刺激，野生动物随时出现像在打怪",
+      whenWhere: "📍 MacRitchie 自然保护区 · 6月假期最佳",
+      location: "TreeTop Walk, MacRitchie Reservoir Park",
+      dateRange: "全年开放（周二–周日 9am–5pm，最后入场 4:45pm）",
+      cost: "免费入场",
+      duration: "全程徒步约 3–4 小时（环线）",
+      price: "免费",
+      bookingUrl: "https://www.nparks.gov.sg/gardens-parks-and-nature/parks-and-nature-reserves/central-catchment-nature-reserve",
+      btnText: "查看路线",
       active: true
     }
 
