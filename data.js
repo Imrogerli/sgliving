@@ -9,14 +9,14 @@
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
  * 最后更新：2026-05-24
- * 版本：3.0
+ * 版本：3.1
  */
 
 const SGLIVING_DATA = {
 
   meta: {
     lastUpdated: "2026-05-24",
-    version: "3.0",
+    version: "3.1",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -3032,6 +3032,72 @@ const SGLIVING_DATA = {
       ratingDesc: "小红书藏宝小馆 · 红烧肉一绝",
       lat: 1.3110,
       lng: 103.9170,
+      active: true
+    },
+
+    {
+      id: "wonderful-chinese-hotpot-buffet-2026",
+      name: "Wonderful Chinese · 19.9 火锅自助",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$19.90 自助",
+      description: "全城最实惠的火锅自助！S$19.90 全天供应，80+ 菜品任拿——羊肉卷、黑椒鸡、五花肉、涮肥牛、虎虾、花蟹、各种丸子海鲜豆腐通通自助。汤底有麻辣、番茄、菌菇可选，多间分店覆盖全岛。家庭聚餐、学生党、加班党一锅吃饱不超支，性价比天花板！需注意：午晚高峰排队较长，建议错峰前往。",
+      tags: ["自助火锅", "19.9超值", "家庭聚餐", "多家分店"],
+      address: "Multiple outlets across Singapore — check website",
+      badge: "new",
+      badgeText: "🆕 性价比之王",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#dc2626,#f97316)",
+      catLabel: "正餐",
+      catDesc: "火锅自助 / 多家分店",
+      ratingDesc: "S$19.90 自助 · 80+ 菜品任拿",
+      lat: 1.3000,
+      lng: 103.8500,
+      active: true
+    },
+
+    {
+      id: "monster-planet-halal-curry-2026",
+      name: "Monster Planet · 清真日式咖喱+可丽饼",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$15–25",
+      description: "全新清真认证日式咖喱店！主打慢炖 12 小时的 demi-glace 黑咖喱，香浓不辣，配脆嫩鸡排、炸虾或汉堡排，米饭管饱。店内还设有「Monster Crepes Lab」，现做日式可丽饼，草莓奶油、芒果芝士、招牌奶盖款款都能拍照打卡。穆斯林家庭和爱日料的中国人都能放心吃，午餐套餐性价比高。",
+      tags: ["清真日料", "demi-glace咖喱", "日式可丽饼", "5月新开"],
+      address: "Check website for outlet details, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍛",
+      bgGradient: "linear-gradient(135deg,#7c2d12,#facc15)",
+      catLabel: "正餐",
+      catDesc: "清真日式咖喱 / 含可丽饼",
+      ratingDesc: "清真认证 · 5月全新开业",
+      lat: 1.3050,
+      lng: 103.8550,
+      active: true
+    },
+
+    {
+      id: "xhs-matcha-uji-cafe-2026",
+      name: "Top Quali Tea Kyoto · 宇治抹茶第二家",
+      categories: ["dessert"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$8–18",
+      description: "姐妹们！小红书最近被一家「Leisure Park Kallang 新开的京都宇治抹茶」刷屏——Top Quali Tea Kyoto 第二家分店来咯！全部用京都宇治第一摘仪式级抹茶，浓而不苦回甘超久。招牌「抹茶提拉米苏」「宇治冰激凌歌帕菲」「抹茶可丽饼卷」每一口都是浓郁茶香，颜值在线适合凹造型。绝绝子，京都没去成在新加坡也能解馋！排队中等，平日下午最佳。",
+      tags: ["小红书爆款", "京都宇治抹茶", "抹茶甜品", "Kallang新开"],
+      address: "Leisure Park Kallang, 5 Stadium Walk, Singapore 397693",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#16a34a,#84cc16)",
+      catLabel: "甜品",
+      catDesc: "京都宇治抹茶 / 第二分店",
+      ratingDesc: "小红书爆款 · 京都仪式级抹茶",
+      lat: 1.3036,
+      lng: 103.8722,
       active: true
     }
 
