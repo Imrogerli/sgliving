@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-22
+ * 最后更新：2026-05-24
  * 版本：3.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-22",
+    lastUpdated: "2026-05-24",
     version: "3.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -2921,6 +2921,120 @@ const SGLIVING_DATA = {
       lng: 103.8318,
       active: true
     }
+,
+
+    // ── 5月24日新增（2026-05-24 更新）─────────────
+
+    {
+      id: "xiaolongkan-orchard-2026",
+      name: "小龙坎老火锅 · 乌节路新店",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$35–65",
+      description: "国内顶流牛油火锅终于在乌节路落地！小龙坎招牌牛油锅一锅可选四种汤底，麻辣鲜香一次到位。鸭肠、毛肚、虾滑都是空运保鲜，蘸料台干料湿料随便配。午餐满 S$50 立减 S$10，晚 10 点后整单 8 折，半夜聚会党最爱。装修延续国内门店红黑配色，川渝氛围感拉满。",
+      tags: ["牛油火锅", "国内品牌", "宵夜折扣"],
+      address: "Orchard Road area, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7c2d12)",
+      catLabel: "正餐",
+      catDesc: "川渝牛油火锅 / 乌节路",
+      ratingDesc: "国内顶流牛油火锅 · 宵夜场8折",
+      lat: 1.3048,
+      lng: 103.8318,
+      active: true
+    },
+
+    {
+      id: "jin-ting-wan-mbs-l55",
+      name: "金蜓湾 Jin Ting Wan · 滨海湾金沙55楼粤菜",
+      categories: ["restaurant", "finedining"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$120–260",
+      description: "滨海湾金沙首家完全自营的顶级中餐——金蜓湾盘踞酒店 1 号楼 55 层，整片新加坡天际线尽收眼底。以粤菜为骨，融入潮州、客家、顺德经典做法，「黑松露虾饺」「炭烤伊比利亚黑叉烧」「老火靓汤」都是必点。包间适合家宴与商务，鼎级红酒搭配粤菜难得讲究。预订需提前两周，纪念日和接待长辈首选。",
+      tags: ["高空粤菜", "MBS自营", "纪念日宴请"],
+      address: "Marina Bay Sands Tower 1, Level 55, 10 Bayfront Avenue",
+      badge: "finedining",
+      badgeText: "🍷 高端",
+      emoji: "🏙️",
+      bgGradient: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+      catLabel: "正餐",
+      catDesc: "高端粤菜 / 滨海湾金沙",
+      ratingDesc: "MBS 首家自营中餐 · 55 楼景观",
+      lat: 1.2834,
+      lng: 103.8607,
+      active: true
+    },
+
+    {
+      id: "seoul-so-national-gallery-2026",
+      name: "Seoul & So · 国家美术馆新派韩烧",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$45–95",
+      description: "国家美术馆里新开的现代韩烧餐厅，告别传统桌边烤炉，改成开放式中央烤台——主厨现场操作，烟雾全程被高效抽走，约会穿白衬衫也不怕。木材+不锈钢的极简空间很出片，招牌「济州黑猪五花」和「韩式 dry-aged 牛小排」搭配自家发酵泡菜，味道层次比连锁烤肉高一截。午市套餐 S$45 起，性价比惊喜。",
+      tags: ["现代韩烧", "国家美术馆", "中央烤台"],
+      address: "National Gallery Singapore, 1 St Andrew's Road",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#3f3f46,#71717a)",
+      catLabel: "正餐",
+      catDesc: "现代韩国烧烤 / 政府大厦",
+      ratingDesc: "中央烤台不熏衣 · 国家美术馆内",
+      lat: 1.2902,
+      lng: 103.8520,
+      active: true
+    },
+
+    {
+      id: "shabu-days-bukit-panjang-2026",
+      name: "Shabu Days · 一人锅 (Hillion Mall)",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$24–40",
+      description: "Hillion Mall Kopitiam 里新开的一人锅小店——每位一锅，告别人多吃多分钱的小心思！套餐 S$39.90 封顶，含主食、汤底、配菜、肉蛋全配，寿喜烧、番茄、鲣鱼昆布、麻辣鲜香四款汤底任选。位子不大但每位都有自己的小天地，独食党、加班族下班一个人也能放心点。临近 Bukit Panjang 地铁站，西区独食天堂。",
+      tags: ["单人锅", "套餐封顶", "Bukit Panjang"],
+      address: "Hillion Mall Kopitiam, 17 Petir Road, Singapore 678278",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#fb7185,#f97316)",
+      catLabel: "正餐",
+      catDesc: "一人份火锅 / 武吉班让",
+      ratingDesc: "套餐 S$39.90 封顶 · 一位一锅",
+      lat: 1.3786,
+      lng: 103.7626,
+      active: true
+    },
+
+    {
+      id: "xhs-jiangzhe-xiao-guan-2026",
+      name: "江浙小馆 · 红烧肉藏家味",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$20–38",
+      description: "姐妹们！小红书最近被一家「藏在 East Coast 组屋楼下的江浙小馆」刷屏——老板是上海阿姨，红烧肉一炖三小时，肥而不腻入口即化，配一碗白米饭直接干掉两碗。腌笃鲜、糖醋小排、本帮葱油拌面都是地道家乡味，价格亲民人均 S$25 就能吃饱。位子少要提前预订，避雷晚高峰直接撞墙。绝绝子，吃完想喊一声「妈妈我回家了」！",
+      tags: ["小红书爆款", "江浙菜", "本帮红烧肉", "组屋小店"],
+      address: "East Coast Road HDB block (call before visit), Singapore",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥢",
+      bgGradient: "linear-gradient(135deg,#92400e,#ea580c)",
+      catLabel: "正餐",
+      catDesc: "江浙本帮菜 / East Coast",
+      ratingDesc: "小红书藏宝小馆 · 红烧肉一绝",
+      lat: 1.3110,
+      lng: 103.9170,
+      active: true
+    }
+
 
   ],
 
@@ -3706,7 +3820,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Vir+Das+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-05-23",
-      active: true
+      active: false
     },
 
     {
@@ -4209,7 +4323,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Professor+Quek",
       btnText: "查购票链接",
       sortDate: "2026-05-22",
-      active: true
+      active: false
     },
 
     {
@@ -4911,7 +5025,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.kidzpopcon.asia",
       btnText: "购票",
       sortDate: "2026-05-23",
-      active: true
+      active: false
     },
 
     {
@@ -5170,6 +5284,31 @@ const SGLIVING_DATA = {
       sortDate: "2026-05-31",
       active: true
     }
+,
+
+    {
+      id: "muque-glhf-tour-sg-2026",
+      name: "muque LIVE TOUR 2026 \"GLHF\" 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "20",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#22d3ee)",
+      typeLabel: "🎸 日本乐队",
+      typeColor: "#0ea5e9",
+      description: "日本人气四人乐队 muque 全新「GLHF」世界巡演来到新加坡！主打《Lily》《Hopper》《SPARKLE》等独立流行曲风，现场氛围介于摇滚与电子之间，年轻乐迷与日系动漫粉丝必收。",
+      venue: "待公布场馆（详情见 Ticketmaster）",
+      dateRange: "6月20日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "待公布",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=muque+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-20",
+      active: true
+    }
+
 
   ],
 
@@ -6663,6 +6802,71 @@ const SGLIVING_DATA = {
       btnText: "查看路线",
       active: true
     }
+,
+
+    {
+      id: "sportacular-family-playday-2026",
+      name: "Sportacular Family PlayDay 2026 · 全家运动试玩日",
+      icon: "🏃",
+      topGradient: "linear-gradient(90deg,#22c55e,#84cc16)",
+      ageRange: "最适合 5–12 岁",
+      ageHighlight: "👍 7–9 岁正适合体力挑战",
+      description: "首届 Sportacular Family PlayDay 来了！6月20日在 Orchid Country Club 一整天「Try-It-All Sports Playground」，从飞盘、迷你高尔夫、攀岩到地板冰壶任意切换，没有比赛压力，全家自由节奏挑站点。7–9 岁孩子刚好能独立完成大部分项目，家长跟着拍照打气两不误，是把孩子从屏幕里拉出来的好机会。",
+      highlight: "💡 7–9 岁能独立挑战 4–6 个站点 · 户外+室内全包 · 一日票全家通玩",
+      whyKidsLove: "💡 每个站点都是新体验，像逛运动游乐场，比上一节运动课好玩 10 倍",
+      whenWhere: "📍 Orchid Country Club · 6月20日（周六）",
+      location: "Orchid Country Club, 1 Orchid Club Road",
+      dateRange: "6月20日（周六）一日活动",
+      cost: "票务详见官方网站（家庭票优惠）",
+      duration: "建议预留 3–5 小时",
+      price: "查官网",
+      bookingUrl: "https://www.sportsingapore.gov.sg/",
+      btnText: "查看详情",
+      active: true
+    },
+
+    {
+      id: "bykido-day-of-play-2026",
+      name: "BYKidO Day of Play · 全岛19场地免费试玩",
+      icon: "🎈",
+      topGradient: "linear-gradient(90deg,#ec4899,#f97316)",
+      ageRange: "最适合 3–10 岁",
+      ageHighlight: "👍 7–9 岁能体验多类活动",
+      description: "BYKidO 首届 Day of Play 联合全岛 19 家亲子场地——室内蹦床、儿童艺术教室、感统游乐场、烘焙工坊等等，6月11日当天全部开放免费试玩时段！7–9 岁孩子可以一天换 3-4 个场地尝鲜，找出最喜欢的兴趣班。提前注册抢名额，6月学校假期开场必抢福利。",
+      highlight: "💡 一天19选3 · 试出孩子兴趣 · 完全免费",
+      whyKidsLove: "💡 像逛主题乐园集章，每个站点都是没玩过的新鲜玩意",
+      whenWhere: "📍 全岛 19 个亲子场地 · 6月11日（周四）",
+      location: "全岛多个亲子活动场地",
+      dateRange: "6月11日（周四）单日活动",
+      cost: "免费（需提前注册）",
+      duration: "建议预留半天–全天",
+      price: "免费",
+      bookingUrl: "https://www.bykido.com/",
+      btnText: "注册名额",
+      active: true
+    },
+
+    {
+      id: "national-museum-once-upon-tide-2026",
+      name: "国家博物馆 · Once Upon a Tide 海岸故事展",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#3b82f6,#06b6d4)",
+      ageRange: "最适合 6–12 岁",
+      ageHighlight: "👍 7–9 岁读字量刚好",
+      description: "新加坡国家博物馆为家庭量身订做的展览「Once Upon a Tide」延续至 6 月学校假期。孩子用专属导览册一站站完成「舢板挑战」「Singlish 趣味问答」「制作自己的海岸 avatar」，沉浸式回到新加坡港口岁月。空间凉爽舒适，配套故事时段每天两场，雨天遛娃首选。",
+      highlight: "💡 7–9 岁可独立完成全本任务册 · 文化历史+互动游戏 · 室内凉爽全程不晒",
+      whyKidsLove: "💡 像玩闯关游戏，集满章还能换小礼品",
+      whenWhere: "📍 新加坡国家博物馆 · 6月学校假期",
+      location: "National Museum of Singapore, 93 Stamford Road",
+      dateRange: "6月学校假期全月开放（10am–7pm）",
+      cost: "本地家庭免费 · 游客 S$15/人",
+      duration: "约 1.5–2.5 小时",
+      price: "本地免费",
+      bookingUrl: "https://www.nhb.gov.sg/nationalmuseum/",
+      btnText: "查看详情",
+      active: true
+    }
+
 
   ]
 
