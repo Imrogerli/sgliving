@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-24
+ * 最后更新：2026-05-26
  * 版本：3.1
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-24",
+    lastUpdated: "2026-05-26",
     version: "3.1",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -3099,6 +3099,94 @@ const SGLIVING_DATA = {
       lat: 1.3036,
       lng: 103.8722,
       active: true
+    },
+
+    {
+      id: "fei-zap-mai-laan-vivocity-2026-05",
+      name: "Fei Zap Mai Laan · 上海港式车仔面",
+      categories: ["restaurant", "snack"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$12–22",
+      description: "上海超人气连锁「肥扎米粉」首次进驻新加坡！VivoCity 新店主打港式车仔面，可自选粉面（米粉、油面、河粉等）+ 浇头（咖喱牛筋、卤鸡翼、鱼蛋、猪皮、牛腩）+ 汤底（清汤、咖喱、麻辣）。中国 60+ 分店人气保证，份量足、料实在，是逛 VivoCity 时的快手晚餐好选。",
+      tags: ["港式车仔面", "上海连锁", "VivoCity"],
+      address: "VivoCity, 1 HarbourFront Walk",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#dc2626,#f59e0b)",
+      catLabel: "小吃",
+      catDesc: "港式车仔面 / 中国连锁",
+      ratingDesc: "中国60+分店首店 · 自由配料",
+      lat: 1.2647,
+      lng: 103.8222,
+      active: true
+    },
+
+    {
+      id: "home-dusk-hunan-2026-05",
+      name: "Home Dusk · 湖南家味（仅晚市）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$35–60",
+      description: "新一家专攻湖南菜的家庭式餐厅，只做晚市供应，环境像走进湘西老宅。剁椒鱼头、湘西小炒肉、辣椒炒肉、湖南腊味煲仔饭样样到位，辣度可调适合带不太能吃辣的家人。老板亲自掌勺，份量足，是想念湘味的朋友强烈推荐！",
+      tags: ["湘菜", "晚市专属", "剁椒鱼头"],
+      address: "Tanjong Pagar Road, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新店",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#7c2d12)",
+      catLabel: "正餐",
+      catDesc: "湖南菜 / 家庭式晚市",
+      ratingDesc: "晚市湘菜专门店 · 老板亲掌",
+      lat: 1.2766,
+      lng: 103.8451,
+      active: true
+    },
+
+    {
+      id: "xhs-chagee-new-flavor-2026-05",
+      name: "霸王茶姬 · 五月新品「青山伴茶」",
+      categories: ["dessert", "snack"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$5–9",
+      description: "姐妹们！霸王茶姬新加坡门店5月推出限定新品「青山伴茶」，小红书已经开始铺天盖地刷屏！主打乌龙茶底配青提冷萃，杯子上印着山水水墨纹路，颜值在线绝绝子。中山公园店、ION店、VivoCity店都能买到。建议三分糖+少冰，乌龙茶香超清雅，喝完不上火。在新加坡也能喝到国内同款限定，必冲！",
+      tags: ["小红书爆款", "霸王茶姬", "限定新品", "茶饮"],
+      address: "霸王茶姬 ION Orchard / VivoCity / 中山公园门店",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#166534,#22c55e)",
+      catLabel: "甜品",
+      catDesc: "限定新品茶饮 / 国内同款",
+      ratingDesc: "小红书爆款 · 5月限定青山伴茶",
+      lat: 1.3036,
+      lng: 103.8326,
+      active: true
+    },
+
+    {
+      id: "xhs-shanghai-shengjianbao-2026-05",
+      name: "上海生煎包 · 中央广场小红书新店",
+      categories: ["snack", "restaurant"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$8–18",
+      description: "踩雷无数次终于踩到宝藏！中央广场新开的上海生煎包小店，老板是上海阿姨亲自带师傅来开的。皮薄汤多、底脆焦香，咬一口汁水四溅记得先嘬汤！招牌「鲜肉生煎」「蟹粉生煎」「咖喱牛肉生煎」三件套必点，配一碗咖喱粉丝汤，10分钟解决一餐。小红书上博主真实测评一致好评，新加坡难得吃到这么正宗的上海早点！",
+      tags: ["小红书爆款", "上海生煎", "中央广场", "正宗早点"],
+      address: "Central Plaza area, Singapore (近 Tiong Bahru)",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥟",
+      bgGradient: "linear-gradient(135deg,#eab308,#f59e0b)",
+      catLabel: "小吃",
+      catDesc: "上海生煎包 / 正宗早点",
+      ratingDesc: "小红书博主真实推荐 · 上海阿姨亲掌",
+      lat: 1.2828,
+      lng: 103.8294,
+      active: true
     }
 
 
@@ -5373,8 +5461,55 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-06-20",
       active: true
-    }
+    },
 
+    {
+      id: "les-miserables-arena-spectacular-jun-2026",
+      name: "Les Misérables · The Arena Spectacular 音乐剧",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "世界经典音乐剧 · 沉浸式四日演出",
+      month: "JUN",
+      day: "25",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#7c2d12,#dc2626)",
+      typeLabel: "🎭 经典音乐剧",
+      typeColor: "#7c2d12",
+      description: "雨果名著《悲惨世界》音乐剧重磅来袭！Arena Spectacular 大型沉浸式制作，超100人演员阵容+360度环绕舞台，呈现《Do You Hear the People Sing》《I Dreamed a Dream》《On My Own》等经典曲目。Sands Theatre 四天演出，是全家共赏的音乐剧盛宴。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "6月25–28日（周四–周日）",
+      ticketInfo: "🎫 Marina Bay Sands / Ticketmaster",
+      price: "S$68 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Les+Miserables+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-25",
+      active: true
+    },
+
+    {
+      id: "the-neighbourhood-singapore-jul-2026",
+      name: "The Neighbourhood · 新加坡首演",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "美式 indie 摇滚 · 复出新加坡首演",
+      month: "JUL",
+      day: "15",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#1f2937,#6b7280)",
+      typeLabel: "🎸 美式 indie",
+      typeColor: "#1f2937",
+      description: "宣告复出后首次亚洲巡演！The Neighbourhood 长红代表作《Sweater Weather》《Daddy Issues》《Softcore》将首次在新加坡现场演出。乐迷等了多年的 dream show，indie 摇滚/另类青年文化粉丝绝对不可错过。",
+      venue: "待公布场馆（详情见 Ticketmaster）",
+      dateRange: "7月（具体日期以官方公告为准）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$88 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=The+Neighbourhood+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-15",
+      active: true
+    }
 
   ],
 
@@ -6018,7 +6153,7 @@ const SGLIVING_DATA = {
       dateRange: "5月15–17日",
       cost: "🆓 免费入场",
       duration: "约2–4小时",
-      active: true
+      active: false
     },
 
     // ── 5月新增（2026-05-04 更新）─────────────────
@@ -6654,7 +6789,7 @@ const SGLIVING_DATA = {
       price: "S$25–45/人",
       bookingUrl: "https://www.sentosa.com.sg/en/explore/whats-on/events/splashtopia",
       btnText: "查看票价",
-      active: true
+      active: false
     },
 
     // ── 5月20日新增（2026-05-20 更新）─────────────
@@ -6719,7 +6854,7 @@ const SGLIVING_DATA = {
       price: "免费",
       bookingUrl: "https://www.nhb.gov.sg/acm/programmes",
       btnText: "查看节目",
-      active: true
+      active: false
     },
 
     {
