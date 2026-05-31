@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-26
+ * 最后更新：2026-05-31
  * 版本：3.1
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-26",
+    lastUpdated: "2026-05-31",
     version: "3.1",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -3188,6 +3188,95 @@ const SGLIVING_DATA = {
       lng: 103.8294,
       active: true
     }
+,
+
+    {
+      id: "asin-ace-tan-2026-05",
+      name: "ASIN · Chef Ace Tan 全新 Progressive Asian",
+      categories: ["restaurant", "finedining"],
+      rating: 4.8,
+      openDate: "2026-05",
+      price: "S$188++",
+      description: "Chef Ace Tan 又开新店！「ASIN」（读作 Ace-in）5月6日在 Carpenter Street 开业，名字来自他菲律宾/印尼语「盐」的概念——盐是所有味道的根基。8 道 tasting menu S$188++，融合东南亚、韩国、日本、中国元素，22 个座位的精致小空间，10 座吧台 + 4 座主厅 + 8 座私厅。Foodie 一定要来打卡！",
+      tags: ["新开业", "Progressive Asian", "Fine Dining", "Ace Tan"],
+      address: "38 Carpenter Street, Singapore",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🧂",
+      bgGradient: "linear-gradient(135deg,#0f172a,#1e3a8a)",
+      catLabel: "高端",
+      catDesc: "Progressive Asian / 8 道 tasting",
+      ratingDesc: "Ace Tan 最新力作 · 5月6日开业",
+      lat: 1.2867,
+      lng: 103.8474,
+      active: true
+    },
+
+    {
+      id: "bouillon-gavroche-may-2026",
+      name: "Bouillon Gavroche · 亚洲首家巴黎平价法餐",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$10–28",
+      description: "想吃法餐但被价格劝退？这家就是答案。Mandarin Gallery 新开的 Bouillon Gavroche 是亚洲首家传统巴黎 Bouillon 餐厅，复刻 19 世纪巴黎工人阶级的平价法餐传统——所有主菜都不超过 S$28！招牌「红酒炖牛肉」「鸭肉土豆派」「三文鱼炖菜」「鸡汤细面」分量足够吃饱。每天 11:30am–10pm 营业，walk-in 不接受预订，乌节路逛街饿了直接进。",
+      tags: ["新开业", "法餐", "Mandarin Gallery", "平价"],
+      address: "333A Orchard Road, Mandarin Gallery #01-16/17, Singapore 238897",
+      badge: "new",
+      badgeText: "🆕 5月新开",
+      emoji: "🥖",
+      bgGradient: "linear-gradient(135deg,#dc2626,#fbbf24)",
+      catLabel: "餐厅",
+      catDesc: "传统巴黎法餐 / 主菜不超过 S$28",
+      ratingDesc: "亚洲首家 Bouillon · 走 19 世纪巴黎风",
+      lat: 1.3036,
+      lng: 103.8333,
+      active: true
+    },
+
+    {
+      id: "xhs-gongxi-rd-bistro-2026-05",
+      name: "恭锡路法式小酒馆 · 小红书氛围感约会神店",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$45–80",
+      description: "姐妹们！小红书最近狂刷的恭锡路（Keong Saik Road）一家法式小酒馆，灯光、酒柜、复古地砖每一帧都能出片！博主真实测评——招牌「黄油焗田螺」「鸭肝慕斯吐司」「红酒炖牛颊」绝绝子，rosé 单杯只要 S$15。坐窗边看店外街灯，浪漫氛围拉满！适合纪念日、约会、姐妹局，提前一周预订才有位。新加坡难得不踩雷的法式氛围地。",
+      tags: ["小红书爆款", "氛围感", "法餐", "恭锡路", "约会"],
+      address: "Keong Saik Road, Singapore (具体门牌见小红书定位)",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍷",
+      bgGradient: "linear-gradient(135deg,#7c2d12,#c2410c)",
+      catLabel: "餐厅",
+      catDesc: "法式小酒馆 / 氛围感约会",
+      ratingDesc: "小红书博主真实推荐 · 出片+好吃",
+      lat: 1.2795,
+      lng: 103.8410,
+      active: true
+    },
+
+    {
+      id: "xhs-douhua-tart-may-2026",
+      name: "豆花挞 · 小红书新加坡甜品爆款",
+      categories: ["dessert", "snack"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$5–9",
+      description: "小红书新加坡甜品博主集体安利！「豆花挞」把传统豆花做成可拿着走的小塔形，底是脆酥饼皮，上面铺嫩滑豆花再淋黑糖珍珠/芒果/抹茶。原味就够上头，建议一次买两个口味对比。一份才几块钱，逛街边走边吃。博主点评「比单纯豆花更精致，比挞更滑嫩」，姐妹买完都说还要再来一份！",
+      tags: ["小红书爆款", "豆花", "创意甜品", "拿走吃"],
+      address: "多家小店分布全岛（详见小红书定位）",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍮",
+      bgGradient: "linear-gradient(135deg,#fbbf24,#f97316)",
+      catLabel: "甜品",
+      catDesc: "豆花 + 塔皮 / 创意中式甜品",
+      ratingDesc: "小红书甜品博主集体安利 · 边走边吃",
+      lat: 1.3030,
+      lng: 103.8400,
+      active: true
+    }
 
 
   ],
@@ -5510,6 +5599,149 @@ const SGLIVING_DATA = {
       sortDate: "2026-07-15",
       active: true
     }
+,
+
+    {
+      id: "5sos-singapore-jun-2026",
+      name: "5 Seconds of Summer · 新加坡演唱会",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "澳洲流行摇滚顶流 · The Star Theatre 一晚限定",
+      month: "JUN",
+      day: "20",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#a855f7)",
+      typeLabel: "🎸 流行摇滚",
+      typeColor: "#0ea5e9",
+      description: "澳洲流行摇滚乐队 5SOS 重磅来到新加坡！《Youngblood》《She Looks So Perfect》《Easier》全场大合唱必爆。Star Theatre 室内场馆音响一流，距离感拉到最近。乐迷等了多年的一晚，不要错过。",
+      venue: "The Star Theatre",
+      dateRange: "6月20日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "待公布",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=5+Seconds+of+Summer+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-20",
+      active: true
+    },
+
+    {
+      id: "nmixx-singapore-jun-2026",
+      name: "NMIXX 1st World Tour 新加坡站",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "JYP 新生代女团首次世巡 · K-pop 必抢",
+      month: "JUN",
+      day: "20",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#ec4899,#a855f7)",
+      typeLabel: "💜 K-pop",
+      typeColor: "#ec4899",
+      description: "JYP 旗下 7 人女团 NMIXX 首次世界巡演来到新加坡！主打《O.O》《DICE》《Love Me Like This》《Run For Roses》。爆发力强、舞台调度复杂，是 4 代女团里业务能力顶级的现场担当。K-pop 粉丝必抢。",
+      venue: "The Star Theatre",
+      dateRange: "6月20日（周六）下午 5 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$178 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=NMIXX+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-20",
+      active: true
+    },
+
+    {
+      id: "legally-blonde-musical-jun-2026",
+      name: "Legally Blonde · The Musical 音乐剧",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "25",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#ec4899,#f472b6)",
+      typeLabel: "🎭 音乐剧",
+      typeColor: "#ec4899",
+      description: "粉嫩少女风音乐剧《律政俏佳人》登陆 Sands Theatre！金发律师 Elle Woods 闯哈佛法学院的爆笑故事改编自电影，原班好莱坞编排，超过 20 首百老汇热歌串烧。亲子、姐妹局、约会通吃，6月25日–7月12日多场次。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "6月25日–7月12日（多场次）",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$68 起",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Legally+Blonde",
+      btnText: "购票",
+      sortDate: "2026-06-25",
+      active: true
+    },
+
+    {
+      id: "kid-laroi-perfect-world-jul-2026",
+      name: "The Kid LAROI · A Perfect World Tour 新加坡站",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "澳洲新生代 hip-hop 顶流 · 全球巡演新加坡限定",
+      month: "JUL",
+      day: "01",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#1e293b,#dc2626)",
+      typeLabel: "🎤 Hip-hop / Pop",
+      typeColor: "#1e293b",
+      description: "Justin Bieber 力捧的澳洲新生代说唱歌手 The Kid LAROI 来啦！《STAY》《WITHOUT YOU》《Thousand Miles》全场副歌大合唱，A Perfect World 巡演视效和节奏都拉满。Arena @ Expo 大场地适合蹦迪，是 Z 世代音乐节级体验。",
+      venue: "Arena @ Expo",
+      dateRange: "7月1日（周三）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$128 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=The+Kid+LAROI+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-01",
+      active: true
+    },
+
+    {
+      id: "irene-redvelvet-jul-2026",
+      name: "RED VELVET 队长 IRENE · 新加坡 Fan Concert",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "Red Velvet 队长首次个人新加坡见面会",
+      month: "JUL",
+      day: "04",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#dc2626,#7c2d12)",
+      typeLabel: "💜 K-pop",
+      typeColor: "#dc2626",
+      description: "Red Velvet 队长 IRENE 首次个人新加坡 fan concert！预计带来个人 solo + Red Velvet 经典曲目混搭，包括《Bad Boy》《Psycho》《Feel My Rhythm》。Mediacorp Theatre 中型场馆，与偶像距离近到能对视。Reveluv 必抢。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "7月4日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "待公布",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Irene+Red+Velvet+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-04",
+      active: true
+    },
+
+    {
+      id: "yang-yoseop-jul-2026",
+      name: "Yang Yoseop（Highlight 主唱）· 新加坡演唱会",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "11",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#3b82f6,#06b6d4)",
+      typeLabel: "🎤 K-pop / 抒情",
+      typeColor: "#3b82f6",
+      description: "Highlight（前 Beast）主唱 Yang Yoseop 新加坡个唱！高音清亮、舞台稳如老狗，《Where I Am Gone》《네가 없는 곳》等solo曲目+Highlight 经典。Mediacorp Theatre 小场馆音响极佳，是 K-pop 老粉的 dream show。5月18日 SISTIC 开票。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "7月11日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "待公布",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Yang+Yoseop",
+      btnText: "购票",
+      sortDate: "2026-07-11",
+      active: true
+    }
 
   ],
 
@@ -7064,6 +7296,70 @@ const SGLIVING_DATA = {
       duration: "约 1.5–2.5 小时",
       price: "本地免费",
       bookingUrl: "https://www.nhb.gov.sg/nationalmuseum/",
+      btnText: "查看详情",
+      active: true
+    }
+,
+
+    {
+      id: "kiztopia-marina-jun-2026",
+      name: "Kiztopia Marina Square · 全新升级 18000 sqft 室内乐园",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#ec4899,#a855f7)",
+      ageRange: "最适合 3–12 岁",
+      ageHighlight: "👍 7–9 岁多个新设施可独立玩",
+      description: "Kiztopia Marina Square 6月升级开业，18000 平方英尺室内空间新增 3 大杀手锏：「The Floor Is Your Adventure」沉浸式互动地板、「Mark's Sandpool」感统沙池、「G-JUMP」交互式蹦床。7–9 岁孩子体力刚好，能自己挑战所有装置，蹦床馆和地板游戏区可以玩到大汗淋漓。室内冷气环境，雨天暴晒首选，家长边看孩子边喝咖啡。",
+      highlight: "💡 3 大新设施一次玩透 · 室内冷气 · 7–9 岁挑战 G-JUMP 蹦床",
+      whyKidsLove: "💡 跳上去地板会变颜色！像踩进游戏里",
+      whenWhere: "📍 Kiztopia, Marina Square · 6月每日开放",
+      location: "Marina Square, 6 Raffles Boulevard",
+      dateRange: "6月学校假期每日开放（10am–8pm）",
+      cost: "工作日 S$32 / 周末 S$42（含家长一名）",
+      duration: "建议 2–3 小时",
+      price: "S$32 起",
+      bookingUrl: "https://kiztopia.com/",
+      btnText: "查看详情",
+      active: true
+    },
+
+    {
+      id: "minecraft-experience-sg-2026",
+      name: "Minecraft Experience Singapore · 真人版方块世界",
+      icon: "⛏️",
+      topGradient: "linear-gradient(90deg,#22c55e,#16a34a)",
+      ageRange: "最适合 6–14 岁",
+      ageHighlight: "👍 7–9 岁 Minecraft 粉丝必去",
+      description: "Minecraft 真人沉浸式体验首次登陆新加坡！孩子拿着发光「魔法球」进入真实搭建的 Minecraft 世界——一路打 mob、挖矿、寻宝、闯过不同生物群系。互动矿洞游戏厅+寻宝任务关，7–9 岁玩 Minecraft 的小孩进去眼睛都在发光。全程室内、安全感强、有故事线，比游乐场更有沉浸式叙事感。",
+      highlight: "💡 真实重现 Minecraft 世界 · 互动光剑挖矿 · 7–9 岁粉丝最佳年龄",
+      whyKidsLove: "💡 游戏里的世界变成真的可以走进去！家长拍照一秒上头",
+      whenWhere: "📍 Singapore Expo · 6月学校假期",
+      location: "Singapore Expo",
+      dateRange: "6月学校假期每日开放（10am–7pm，需预订时段）",
+      cost: "S$45–65（按时段）",
+      duration: "约 60–90 分钟",
+      price: "S$45 起",
+      bookingUrl: "https://minecraft-experience.com/singapore/",
+      btnText: "购票预订",
+      active: true
+    },
+
+    {
+      id: "gardens-pooh-childrens-festival-jun-2026",
+      name: "Gardens by the Bay · Disney Winnie the Pooh 100 年儿童节",
+      icon: "🐻",
+      topGradient: "linear-gradient(90deg,#fbbf24,#f59e0b)",
+      ageRange: "最适合 4–10 岁",
+      ageHighlight: "👍 7–9 岁能完成全部互动任务",
+      description: "Disney 联名 Gardens by the Bay 儿童节庆祝 Winnie the Pooh 100 周年！Supertree Grove 巨型小熊维尼装置、Christopher Robin 100 亩森林互动场景、Pooh 蜂蜜寻宝活动一站全。5月30日–6月21日，免费入场（部分互动需购票）。7–9 岁孩子能独立完成寻宝任务，傍晚还能看夜间灯光秀，是一站式遛娃首选。",
+      highlight: "💡 免费入场 · Pooh 100 周年限定 · 夜晚 Garden Rhapsody 灯光秀加映",
+      whyKidsLove: "💡 巨型小熊维尼可以合照！还能拿到限量小熊贴纸",
+      whenWhere: "📍 Gardens by the Bay, Supertree Grove · 5月30日–6月21日",
+      location: "Gardens by the Bay, 18 Marina Gardens Drive",
+      dateRange: "5月30日–6月21日（每日开放）",
+      cost: "免费入场（部分互动收费）",
+      duration: "建议 2–3 小时",
+      price: "免费",
+      bookingUrl: "https://www.gardensbythebay.com.sg/",
       btnText: "查看详情",
       active: true
     }
