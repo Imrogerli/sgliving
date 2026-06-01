@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-05-31
+ * 最后更新：2026-06-01
  * 版本：3.1
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-05-31",
+    lastUpdated: "2026-06-01",
     version: "3.1",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -3276,8 +3276,117 @@ const SGLIVING_DATA = {
       lat: 1.3030,
       lng: 103.8400,
       active: true
-    }
+    },
 
+    {
+      id: "pizza-studio-tamaki-tanjong-pagar-2026-06",
+      name: "Pizza Studio Tamaki (PST) Tanjong Pagar",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-06",
+      price: "S$22–38",
+      description: "东京顶级 pizzaiolo 玉木 Tsubasa Tamaki 把他的 Cult 级东京拿坡里 pizza 带到丹戎巴葛！招牌是 30 小时低温发酵的轻盈酥脆饼底，配空运日本食材：明太子玛格丽特、和牛意大利香肠、樱花虾胡椒……6月10日 38 Tanjong Pagar Road 正式开业，预约爆满。爱 pizza 的姐妹直接冲！",
+      tags: ["东京拿坡里", "30小时发酵", "明太子"],
+      address: "38 Tanjong Pagar Road",
+      badge: "new",
+      badgeText: "🆕 6月新开",
+      emoji: "🍕",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#f39c12)",
+      catLabel: "正餐",
+      catDesc: "东京拿坡里 Pizza / Pizzaiolo Tsubasa Tamaki",
+      ratingDesc: "30小时低温发酵 · 空运日本食材",
+      lat: 1.2766,
+      lng: 103.8442,
+      active: true
+    },
+
+    {
+      id: "broth-beyond-hotpot-chijmes-2026-06",
+      name: "Broth & Beyond 云南生态火锅 · CHIJMES",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "S$7.99起 / 人均 S$35–60",
+      description: "CHIJMES 新晋宝藏火锅！主打云南生态汤底，每天现熬不放味精/防腐剂，云南野生菌+本地有机食材。招牌「黑松露八菌汤」「金耳鸡汤」鲜到掉眉毛，单人锅 S$7.99 起，朋友三五个聚餐共享锅也超划算。环境复古教堂气氛+滋补汤底，闺蜜约饭新去处！",
+      tags: ["云南生态", "野生菌汤底", "单人锅", "CHIJMES"],
+      address: "30 Victoria Street, #B1-01/02 CHIJMES, Singapore 187996",
+      badge: "new",
+      badgeText: "🆕 6月新开",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#27ae60,#16a085)",
+      catLabel: "火锅",
+      catDesc: "云南生态火锅 / CHIJMES",
+      ratingDesc: "现熬野生菌汤底 · 无味精无防腐剂",
+      lat: 1.2948,
+      lng: 103.8520,
+      active: true
+    },
+
+    {
+      id: "citadines-rooftop-sea-cuisine-2026-06",
+      name: "Citadines Rooftop · 当代东南亚 Rooftop",
+      categories: ["restaurant", "finedining"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "S$45–80",
+      description: "Citadines Connect City Centre 屋顶新晋东南亚 fine casual！招牌「Roti John 改造版海南包」把街头小吃做成蓬松奶香面包，「Pork Chop Bakar」用马来烤肉技法处理猪排——传统与当代的完美融合。屋顶夜景+创新菜，约会和姐妹聚会都加分！",
+      tags: ["东南亚创新", "屋顶餐厅", "Roti John"],
+      address: "Citadines Connect City Centre Singapore",
+      badge: "new",
+      badgeText: "🆕 6月新开",
+      emoji: "🌆",
+      bgGradient: "linear-gradient(135deg,#8e44ad,#f39c12)",
+      catLabel: "正餐",
+      catDesc: "当代东南亚 / 屋顶景观",
+      ratingDesc: "传统东南亚 × 现代创意 · 夜景一流",
+      lat: 1.2965,
+      lng: 103.8517,
+      active: true
+    },
+
+    {
+      id: "xhs-broth-beyond-yunnan-2026-06",
+      name: "云南八菌汤底火锅 · 小红书新加坡爆款",
+      categories: ["restaurant"],
+      rating: 4.7,
+      openDate: "2026-06",
+      price: "S$25–45",
+      description: "姐妹们！小红书新加坡博主集体安利的云南菌菇火锅终于来了！CHIJMES 新店「Broth & Beyond」主打野生菌+黑松露汤底，喝一口鲜到掉眉毛，绝绝子！博主点评「云南菌菇控福音」「比传统火锅清淡养生但味道炸裂」。单人锅起价 S$7.99，姐妹聚会也能放心冲。建议工作日去避免排队！",
+      tags: ["小红书爆款", "云南菌菇", "黑松露", "CHIJMES"],
+      address: "30 Victoria Street, #B1-01/02 CHIJMES, Singapore 187996",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍄",
+      bgGradient: "linear-gradient(135deg,#d35400,#c0392b)",
+      catLabel: "火锅",
+      catDesc: "云南菌菇火锅 / 小红书爆款新店",
+      ratingDesc: "小红书博主集体安利 · 鲜到掉眉毛",
+      lat: 1.2948,
+      lng: 103.8520,
+      active: true
+    },
+
+    {
+      id: "xhs-shu-da-xia-tampines-2026-06",
+      name: "蜀大侠火锅 · 小红书重庆火锅必打卡",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "S$30–55",
+      description: "踩雷避雷指南来了！小红书姐妹一致推荐——中国十大火锅之一「蜀大侠」终于在 Tampines 1 落户。100 小时发酵牛油辣底油亮香爆，毛肚鸭血嫩到没朋友。博主实测：辣度可调（怕辣选番茄锅），3 种锅型选择 Single S$22++ / Dual S$20++ / Triple S$18++。姐妹建议工作日午市去，性价比 max！",
+      tags: ["小红书爆款", "重庆火锅", "100小时牛油", "Tampines"],
+      address: "Tampines 1",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🔥",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#c0392b)",
+      catLabel: "火锅",
+      catDesc: "重庆蜀大侠 / 中国十大火锅",
+      ratingDesc: "小红书姐妹一致推荐 · 100小时发酵牛油",
+      lat: 1.3535,
+      lng: 103.9447,
+      active: true
+    }
 
   ],
 
@@ -3313,7 +3422,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=GEM+Gloria+Singapore",
       btnText: "购票",
       sortDate: "2026-05-26",
-      active: true
+      active: false
     },
 
     {
@@ -4013,7 +4122,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=GMMTV+MUSICON+Singapore",
       btnText: "购票",
       sortDate: "2026-05-30",
-      active: true
+      active: false
     },
     // ── 4月20日新增 ──────────────────────────────
 
@@ -4110,7 +4219,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Earth+Wind+Fire+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-05-28",
-      active: true
+      active: false
     },
 
     // ── 4月23日新增 ──────────────────────────────
@@ -4472,7 +4581,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/blue-beauties.html",
       btnText: "购票",
       sortDate: "2026-05-26",
-      active: true
+      active: false
     },
 
     {
@@ -4638,7 +4747,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Ron+Maxim",
       btnText: "购票",
       sortDate: "2026-05-29",
-      active: true
+      active: false
     },
 
     {
@@ -4661,7 +4770,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.millisingapore.com/",
       btnText: "了解详情",
       sortDate: "2026-05-31",
-      active: true
+      active: false
     },
 
     {
@@ -4847,7 +4956,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://familiesforlife.sg/pages/event/nff-2026-family-carnival-expo",
       btnText: "查看详情",
       sortDate: "2026-05-30",
-      active: true
+      active: false
     },
 
     {
@@ -5291,7 +5400,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://familyfestival.gov.sg",
       btnText: "了解详情",
       sortDate: "2026-05-30",
-      active: true
+      active: false
     },
 
     {
@@ -5525,7 +5634,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.chope.co/singapore-restaurants/restaurant/milli-singapore",
       btnText: "查看订位",
       sortDate: "2026-05-31",
-      active: true
+      active: false
     }
 ,
 
@@ -5740,6 +5849,123 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Yang+Yoseop",
       btnText: "购票",
       sortDate: "2026-07-11",
+      active: true
+    },
+
+    {
+      id: "ftisland-singapore-2026-06-27",
+      name: "FTISLAND \"X-MAS\" 新加坡专场 2026",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "27",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#4f46e5,#3b82f6)",
+      typeLabel: "🎸 韩国乐队",
+      typeColor: "#4f46e5",
+      description: "韩国传奇 K-Rock 乐队 FTISLAND 新加坡专场！主唱李洪基 + 全员现场演奏，演绎《Pray》《Hello Hello》《Severely》等经典摇滚金曲，乐迷集体高潮夜。摇滚迷千万别错过！",
+      venue: "TBC",
+      dateRange: "6月27日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148–328",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=FTISLAND+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-27",
+      active: true
+    },
+
+    {
+      id: "international-day-of-play-2026-06-11",
+      name: "International Day of Play · 国际游戏日嘉年华",
+      type: "event",
+      priority: "featured",
+      featuredReason: "亲子免费嘉年华",
+      month: "JUN",
+      day: "11",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#f59e0b,#fbbf24)",
+      typeLabel: "🎪 家庭嘉年华",
+      typeColor: "#f59e0b",
+      description: "全球首个联合国「国际游戏日」庆祝活动，新加坡国家博物馆+儿童博物馆+亚洲文明博物馆联动！亚美尼亚街 Armenian Street 周末嘉年华：充气城堡、LEGO 互动、足球挑战、手工 DIY，全部免费！配合 Children\'s Season 主题「Sustainability 可持续」，孩子可在博物馆集邮换礼物。",
+      venue: "Armenian Street + 多间博物馆",
+      dateRange: "6月11日（核心日）/ 6月13–14日周末嘉年华",
+      ticketInfo: "🎫 免费入场",
+      price: "免费",
+      priceNote: "全部活动免费",
+      ticketUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/childrens-season",
+      btnText: "查看详情",
+      sortDate: "2026-06-11",
+      active: true
+    },
+
+    {
+      id: "5sos-everyone-singapore-2026-06-20",
+      name: "5 Seconds of Summer · Everyone\'s a Star! 巡演",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "澳洲流行天团",
+      month: "JUN",
+      day: "20",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#3b82f6,#ec4899)",
+      typeLabel: "🎤 国际巡演",
+      typeColor: "#3b82f6",
+      description: "澳洲国民流行摇滚天团 5SOS 时隔多年回归新加坡！The Star Theatre 之夜，演绎《Youngblood》《She Looks So Perfect》《Easier》《Amnesia》等流行金曲。粉丝集体合唱场面震撼！",
+      venue: "The Star Theatre",
+      dateRange: "6月20日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148–328",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=5+Seconds+of+Summer+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-20",
+      active: true
+    },
+
+    {
+      id: "get-curious-river-national-museum-2026-06",
+      name: "Get Curious! All About the River · 国家博物馆儿童季",
+      type: "exhibition",
+      priority: "normal",
+      month: "JUN",
+      day: "01",
+      dow: "全月",
+      dateColor: "linear-gradient(135deg,#10b981,#22c55e)",
+      typeLabel: "🌊 博物馆展览",
+      typeColor: "#10b981",
+      description: "新加坡国家博物馆「儿童季 2026」核心展览！围绕「新加坡河」历史展开：互动装置、走入式投影、动手 DIY 工作坊，孩子可亲手「划船」「捕鱼」「贸易」，了解新加坡建国故事。免费入场，6月每天开放！",
+      venue: "National Museum of Singapore",
+      dateRange: "6月1–30日（每日开放）",
+      ticketInfo: "🎫 免费入场（儿童季期间）",
+      price: "免费",
+      priceNote: "儿童季期间博物馆 12 岁以下免费",
+      ticketUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/childrens-season",
+      btnText: "查看详情",
+      sortDate: "2026-06-01",
+      active: true
+    },
+
+    {
+      id: "childrens-season-acm-sustainability-2026-06",
+      name: "亚洲文明博物馆 · 可持续手作工作坊 ACM",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "01",
+      dow: "全月",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#06b6d4)",
+      typeLabel: "🎨 文化工作坊",
+      typeColor: "#0ea5e9",
+      description: "亚洲文明博物馆儿童季 2026 主题「可持续」工作坊！孩子用回收材料制作亚洲传统手工艺品：日式纸艺、印度蜡染、印尼蜡染、中国剪纸等。亲手 DIY+学历史，7-9岁孩子最爱！周末场需提前预约。",
+      venue: "Asian Civilisations Museum",
+      dateRange: "6月1–30日（部分场次周末）",
+      ticketInfo: "🎫 免费 / 部分工作坊需预约",
+      price: "免费",
+      priceNote: "儿童季期间免费",
+      ticketUrl: "https://www.nhb.gov.sg/acm/whats-on/programmes",
+      btnText: "查看详情",
+      sortDate: "2026-06-01",
       active: true
     }
 
@@ -7362,8 +7588,82 @@ const SGLIVING_DATA = {
       bookingUrl: "https://www.gardensbythebay.com.sg/",
       btnText: "查看详情",
       active: true
-    }
+    },
 
+    {
+      id: "childrens-season-sustainability-2026-jun",
+      name: "Children\'s Season 2026 · 可持续大主题（全月）",
+      icon: "♻️",
+      topGradient: "linear-gradient(90deg,#10b981,#22c55e)",
+      ageRange: "最适合 4–12 岁",
+      description: "2026 儿童季全月开跑！国家博物馆、儿童博物馆、亚洲文明博物馆、土生华人博物馆全部参与，主题「Sustainability 可持续」。孩子用回收材料做乐器、做手工、玩软体游乐场，集邮换礼物，逛多间博物馆全免费！6月11日「国际游戏日」+ 13–14 日亚美尼亚街周末嘉年华是高潮。",
+      highlight: "全月免费博物馆通票，7-9岁孩子最适合「Get Curious! All About the River」国家博物馆主题展，可亲手互动体验新加坡河历史故事",
+      location: "国家博物馆 / 儿童博物馆 / ACM / 土生华人博物馆等",
+      dateRange: "6月1–30日（每天开放）",
+      cost: "免费（12 岁以下博物馆全免）",
+      duration: "可逛一整天",
+      active: true
+    },
+
+    {
+      id: "national-museum-river-get-curious-2026",
+      name: "Get Curious! All About the River · 国家博物馆儿童展",
+      icon: "🚣",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#06b6d4)",
+      ageRange: "最适合 6–10 岁",
+      description: "新加坡国家博物馆儿童季 2026 重头戏！围绕「新加坡河」展开：互动装置让孩子「划船」「捕鱼」「贸易」，走入式投影还原新加坡建国故事，动手 DIY 工作坊学历史。每天 hands-on，7-9岁孩子可独立完成全部任务。",
+      highlight: "强互动 + 学历史，孩子边玩边了解新加坡建国故事，免费入场无需预约！亲子打卡国家博物馆首选",
+      location: "National Museum of Singapore",
+      dateRange: "6月1–30日（每天开放）",
+      cost: "免费（儿童季期间 12 岁以下免费）",
+      duration: "约 2–3 小时",
+      active: true
+    },
+
+    {
+      id: "armenian-street-carnival-jun13-14-2026",
+      name: "亚美尼亚街周末嘉年华 · 国际游戏日",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#f59e0b,#fbbf24)",
+      ageRange: "最适合 3–12 岁",
+      description: "Children\'s Season 2026 周末超大型嘉年华！亚美尼亚街整条街变身户外游乐场：充气城堡、LEGO 巨型积木、足球挑战、手工 DIY、街头表演，全部免费！配合国际游戏日（6月11日）主题，全家出动玩一天都不腻。",
+      highlight: "户外开放空间+多元玩法，7-9岁孩子可独立挑战 LEGO 大型积木和足球游戏，家长拍照打卡 perfect spot！",
+      location: "Armenian Street（国家博物馆、儿童博物馆门前）",
+      dateRange: "6月13–14日（周末嘉年华）+ 6月11日（核心日）",
+      cost: "免费",
+      duration: "可玩一整天",
+      active: true
+    },
+
+    {
+      id: "acm-sustainability-workshops-jun-2026",
+      name: "ACM 可持续亚洲手作工作坊",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#8b5cf6,#a78bfa)",
+      ageRange: "最适合 7–12 岁",
+      description: "亚洲文明博物馆儿童季 2026 主题「可持续」！孩子用回收纸/布/竹材制作亚洲传统手工艺：日式纸艺、印度蜡染、印尼蜡染、中国剪纸等。每场工作坊由专业老师指导，孩子学到的不止手艺还有亚洲文化历史。7-9岁孩子最佳互动年龄！",
+      highlight: "亚洲传统文化 + 环保手作双结合，是让 7-9 岁孩子建立文化认同感和环保意识的最佳活动！",
+      location: "Asian Civilisations Museum",
+      dateRange: "6月每周末（部分场次需预约）",
+      cost: "免费 / 部分工作坊小额材料费",
+      duration: "约 1–1.5 小时",
+      active: true
+    },
+
+    {
+      id: "childrens-museum-stamp-quest-jun-2026",
+      name: "儿童博物馆集邮换礼 · CMSG 主题任务",
+      icon: "🎫",
+      topGradient: "linear-gradient(90deg,#ec4899,#f472b6)",
+      ageRange: "最适合 4–10 岁",
+      description: "新加坡儿童博物馆（CMSG）儿童季 2026 独家！孩子拿到「集邮护照」，逛遍博物馆每个互动展区盖章——回收材料做乐器、Pop-up 游乐场、软体大区任意玩。集满 stamps 可换专属纪念品。整个6月每天开放，免费入场。",
+      highlight: "任务+收集模式让7-9岁孩子玩到停不下来，全程互动激发动手能力+成就感！",
+      location: "Children\'s Museum Singapore",
+      dateRange: "6月1–30日（每日开放，每月最后一周一闭馆）",
+      cost: "免费入场（儿童季期间）",
+      duration: "约 2–4 小时",
+      active: true
+    }
 
   ]
 
