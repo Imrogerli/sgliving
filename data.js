@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-01
- * 版本：3.1
+ * 最后更新：2026-06-02
+ * 版本：3.2
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-01",
-    version: "3.1",
+    lastUpdated: "2026-06-02",
+    version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -3387,6 +3387,73 @@ const SGLIVING_DATA = {
       lng: 103.9447,
       active: true
     }
+    ,
+
+    {
+      id: "lulus-lounge-chinatown-2026-06",
+      name: "Lulu's Lounge · 1930 上海滩 Supper Club",
+      categories: ["restaurant", "dessert"],
+      rating: 4.7,
+      openDate: "2026-06",
+      price: "S$60–120",
+      description: "6月强势回归唐人街！1930年代上海风情 Supper Club，复古旗袍灯光配老上海留声机。点心精致、鸡尾酒考究，夜场每晚轮番上演爵士现场、Cabaret、Burlesque、Drag Queen 与 DJ Set。聚会、约会、生日趴绝佳氛围地。",
+      tags: ["上海风情", "夜场表演", "鸡尾酒", "点心"],
+      address: "Chinatown, Singapore",
+      badge: "new",
+      badgeText: "🆕 6月回归",
+      emoji: "🎷",
+      bgGradient: "linear-gradient(135deg,#7e1f3e,#d4af37)",
+      catLabel: "正餐",
+      catDesc: "上海点心 / 爵士现场 / 唐人街",
+      ratingDesc: "夜场点心+爵士，沉浸式上海滩氛围",
+      lat: 1.2840,
+      lng: 103.8434,
+      active: true
+    },
+
+    {
+      id: "xhs-king-of-dessert-revisit-2026-06",
+      name: "King of Dessert · 小红书爆款甜品店",
+      categories: ["dessert", "snack"],
+      rating: 4.9,
+      openDate: "2026-05",
+      price: "S$8–25",
+      description: "姐妹们！Sim Lim Square 这家中式糖水店在小红书爆火，Google 4.9 星，20多种甜品任选！招牌芋泥奶雪冰（$12.80）份量大到能两人分，超巨型芒果雪冰（$23.80）芒果给到爆！糖水甜度可以选，姐妹聚会必去！",
+      tags: ["小红书爆款", "雪冰", "中式糖水", "份量大"],
+      address: "Sim Lim Square, 1 Rochor Canal Rd",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍧",
+      bgGradient: "linear-gradient(135deg,#ff6b9d,#feca57)",
+      catLabel: "甜品",
+      catDesc: "中式糖水 / 雪冰 / Sim Lim",
+      ratingDesc: "小红书姐妹大爱 · Google 4.9 星",
+      lat: 1.3036,
+      lng: 103.8521,
+      active: true
+    },
+
+    {
+      id: "xhs-molly-tea-orchard-revisit-2026-06",
+      name: "Molly Tea 茉莉奶白 · 乌节中心",
+      categories: ["dessert", "snack"],
+      rating: 4.6,
+      openDate: "2026-02",
+      price: "S$5–9",
+      description: "深圳网红奶茶 Molly Tea 茉莉奶白进驻新加坡！全球 2000+ 门店，主打七步窨香茉莉奶绿（$5.20），茶香清雅不齁甜。小红书姐妹打卡圣地，杯身设计超出片！乌节中心 Yochi 旁，逛街顺路必点。",
+      tags: ["小红书爆款", "深圳网红", "茉莉奶绿", "出片"],
+      address: "Orchard Central, 181 Orchard Rd",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🧋",
+      bgGradient: "linear-gradient(135deg,#a8e6cf,#7bc9a0)",
+      catLabel: "饮品",
+      catDesc: "中国网红奶茶 / 乌节中心",
+      ratingDesc: "小红书出片必拍 · 七步窨香茉莉奶绿",
+      lat: 1.3011,
+      lng: 103.8395,
+      active: true
+    }
 
   ],
 
@@ -5968,6 +6035,76 @@ const SGLIVING_DATA = {
       sortDate: "2026-06-01",
       active: true
     }
+    ,
+
+    {
+      id: "makis-kolorcoaster-jun16-2026",
+      name: "MAKI's KOLORCOASTER · 演唱会",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "16",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#ec4899,#f472b6)",
+      typeLabel: "🎤 流行演唱会",
+      typeColor: "#ec4899",
+      description: "MAKI's 全新演唱会「KOLORCOASTER」新加坡站！色彩斑斓的舞台设计，融合流行+视觉系演出，沉浸式体验。Ticketmaster 售票，喜欢新晋流行歌手的朋友不容错过。",
+      venue: "Singapore",
+      dateRange: "6月16日（周二）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$88–248",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=MAKI+KOLORCOASTER+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-16",
+      active: true
+    },
+
+    {
+      id: "comedy-masala-sasha-frank-jun20-2026",
+      name: "Comedy Masala ft. Sasha Frank · 喜剧之夜",
+      type: "event",
+      priority: "normal",
+      month: "JUN",
+      day: "20",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#f59e0b,#fbbf24)",
+      typeLabel: "🎭 喜剧脱口秀",
+      typeColor: "#f59e0b",
+      description: "Comedy Masala 6月特别专场，邀请 Sasha Frank 加盟！连续多年人气最高的英语脱口秀之一，周末晚上和朋友一起放松大笑超解压。买票早入场更好选位。",
+      venue: "Singapore",
+      dateRange: "6月20日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$25–60",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Comedy+Masala+Sasha+Frank",
+      btnText: "购票",
+      sortDate: "2026-06-20",
+      active: true
+    },
+
+    {
+      id: "legally-blonde-musical-sands-2026",
+      name: "Legally Blonde 律政俏佳人 · 音乐剧",
+      type: "exhibition",
+      priority: "normal",
+      month: "JUN",
+      day: "25",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#ec4899,#f472b6)",
+      typeLabel: "🎭 音乐剧",
+      typeColor: "#ec4899",
+      description: "百老汇经典《律政俏佳人》音乐剧首度登陆新加坡 Sands Theatre！粉红色舞美+励志故事，跟着 Elle Woods 在哈佛法学院逆袭。三周连演（6/25–28、7/1–5、7/9–12），SISTIC 售票。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "6月25–28日、7月1–5日、7月9–12日",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$68–198",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Legally+Blonde",
+      btnText: "购票",
+      sortDate: "2026-06-25",
+      active: true
+    }
 
   ],
 
@@ -7662,6 +7799,52 @@ const SGLIVING_DATA = {
       dateRange: "6月1–30日（每日开放，每月最后一周一闭馆）",
       cost: "免费入场（儿童季期间）",
       duration: "约 2–4 小时",
+      active: true
+    }
+    ,
+
+    {
+      id: "wild-wild-wet-summer-fiesta-2026",
+      name: "Wild Wild Wet 夏日水上运动嘉年华",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#06b6d4,#3b82f6)",
+      ageRange: "最适合 3–12 岁",
+      description: "Downtown East 的 Wild Wild Wet 水上乐园夏日特别企划！全新「海洋生物主题游乐场」首次亮相，配合刺激的滑梯、人工造浪和儿童戏水区。7-9岁孩子身高刚好可以玩 80% 项目，是新加坡热天最爽的亲子活动。",
+      highlight: "全新海洋生物游乐场首发，戏水+刺激滑梯一站玩，7-9岁孩子身高刚好能玩大部分项目，全家躲热避暑首选！",
+      location: "Wild Wild Wet, Downtown East, Pasir Ris",
+      dateRange: "6月1日–7月19日（嘉年华期间）",
+      cost: "S$26（孩童）/ S$32（成人）",
+      duration: "半天–全天",
+      active: true
+    },
+
+    {
+      id: "dip-n-splash-bedok-reservoir-jun6-7-2026",
+      name: "Dip 'N Splash · Bedok Reservoir 水上嘉年华",
+      icon: "🛶",
+      topGradient: "linear-gradient(90deg,#06b6d4,#0ea5e9)",
+      ageRange: "最适合 4–12 岁",
+      description: "勿洛蓄水池本周末 Dip 'N Splash 水上嘉年华！充气障碍赛道+皮划艇+水上玩水站，全部一票通玩。7-9岁孩子可独立参加充气障碍赛，皮划艇有教练带，零基础也能玩。免费入场+小额体验费。",
+      highlight: "户外开放水域，皮划艇、充气赛道、戏水三合一，7-9岁孩子可独立挑战障碍赛，培养水性+冒险精神！",
+      location: "Bedok Reservoir",
+      dateRange: "6月6–7日（本周末）",
+      cost: "免费入场 / 部分项目 S$5–15",
+      duration: "约 2–4 小时",
+      active: true
+    },
+
+    {
+      id: "disney-garden-of-wonder-gbtb-jun8-2026",
+      name: "Disney Garden of Wonder · GBTB 公主主题花园",
+      icon: "👑",
+      topGradient: "linear-gradient(90deg,#ec4899,#a78bfa)",
+      ageRange: "最适合 4–10 岁",
+      description: "滨海湾花园重磅回归「Disney Garden of Wonder」！Rapunzel、Belle、Jasmine 三位迪士尼公主主题装置花园打卡区，配合 Flower Dome 内特别花艺布景。6月8日开放，配合 Winnie Pooh 儿童节双重打卡，公主控女孩必去！",
+      highlight: "迪士尼三公主花园主题装置，与 Winnie Pooh 儿童节同期开放，7-9岁公主控女孩超爱的打卡拍照天堂！",
+      location: "Gardens by the Bay, Flower Dome & 户外装置",
+      dateRange: "6月8日起开放（暑假期间持续）",
+      cost: "户外装置免费 / Flower Dome 入门票 S$12（儿童）",
+      duration: "约 2–3 小时",
       active: true
     }
 
