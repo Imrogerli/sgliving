@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-02",
+    lastUpdated: "2026-06-04",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -3454,6 +3454,97 @@ const SGLIVING_DATA = {
       lng: 103.8395,
       active: true
     }
+    ,
+
+    // ── 2026-06 新增：日式餐厅 & 网红打卡 ──────────
+
+    {
+      id: "torikizoku-vivocity-2026-06",
+      name: "Torikizoku 鸟贵族 · VivoCity 全球最大店",
+      categories: ["restaurant", "snack"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$3.90/件均一价",
+      description: "日本第一连锁烤鸡串「鸟贵族」首店登陆狮城，VivoCity 174 席位是全球最大旗舰！所有烤串、米饭、面、甜点、无酒精饮料统统 S$3.90 均一价，现点现烤碳火香十足。6/15 正式开业，5/29 已开始软营业，是大人小孩一起吃也不会肉痛的日式宵夜首选。",
+      tags: ["新店开业", "均一价3.90", "全球最大店", "性价比"],
+      address: "VivoCity #01-104/105, 1 HarbourFront Walk",
+      badge: "new",
+      badgeText: "✨ 新店",
+      emoji: "🍢",
+      bgGradient: "linear-gradient(135deg,#e74c3c,#f39c12)",
+      catLabel: "正餐",
+      catDesc: "日式烤串 / VivoCity",
+      ratingDesc: "日本第一烤鸡串连锁 · 全球最大旗舰店",
+      lat: 1.2640,
+      lng: 103.8222,
+      active: true
+    },
+
+    {
+      id: "hikiniku-to-come-vivocity-2026-06",
+      name: "Hikiniku To Come · 东京炭火汉堡排",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$27.90++",
+      description: "东京吉祥寺爆红的炭火汉堡排专门店空降 VivoCity！招牌套餐 S$27.90 一次享 3 块 90g 汉堡排，现烤现切现上桌，配生鸡蛋黄、味噌汤和无限白饭。Menu 只有这一道，专注度满分，肉食控的极简幸福。",
+      tags: ["新店开业", "东京来的", "炭火汉堡", "无限白饭"],
+      address: "VivoCity #01-102/103, 1 HarbourFront Walk",
+      badge: "trending",
+      badgeText: "🔥 爆款",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#8e44ad,#c0392b)",
+      catLabel: "正餐",
+      catDesc: "日式汉堡排 / VivoCity",
+      ratingDesc: "东京 Hikiniku 海外分店 · 极致单品店",
+      lat: 1.2640,
+      lng: 103.8222,
+      active: true
+    },
+
+    {
+      id: "sukiyakijin-shaw-centre-2026-06",
+      name: "SukiyakiJIN · A5 和牛山寿喜锅",
+      categories: ["restaurant", "finedining"],
+      rating: 4.7,
+      openDate: "2026-05",
+      price: "S$45–80",
+      description: "Les Amis 集团旗下日本料理品牌全新概念！招牌「番茄山寿喜锅」一座高高耸立的 A5 和牛山伴着 chili padi 微辣番茄汤底，戏剧性十足。S$48/人起（限两人同行），乌节路 Shaw Centre 一楼，午市便当性价比超高。",
+      tags: ["新店开业", "Les Amis 集团", "A5和牛", "番茄寿喜锅"],
+      address: "Shaw Centre #01-11, 1 Scotts Road",
+      badge: "new",
+      badgeText: "✨ 新店",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#c0392b,#e67e22)",
+      catLabel: "正餐",
+      catDesc: "日式寿喜锅 / 乌节",
+      ratingDesc: "Les Amis 集团出品 · A5 和牛山寿喜锅",
+      lat: 1.3061,
+      lng: 103.8316,
+      active: true
+    },
+
+    {
+      id: "xhs-happy-little-lamb-2026-06",
+      name: "快乐小羊 Happy Little Lamb · 内蒙古羔羊火锅",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-04",
+      price: "S$45–70",
+      description: "姐妹们！小红书爆炸推的内蒙古羔羊火锅终于在新加坡有分店了！招牌是 5 个月以内的羔羊，肉质细嫩到入口即化，清水锅就够鲜，蘸料只放一点点海盐就绝绝子。配上现烤芝麻烧饼，比海底捞高级感强多了，约会聚会都很合适，避雷一定要预订！",
+      tags: ["小红书爆款", "内蒙古火锅", "羔羊肉", "清汤锅"],
+      address: "Marina Square, 6 Raffles Boulevard",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🐑",
+      bgGradient: "linear-gradient(135deg,#dd6b20,#c05621)",
+      catLabel: "正餐",
+      catDesc: "中国火锅连锁 / Marina Square",
+      ratingDesc: "小红书姐妹力推 · 5个月羔羊肉",
+      lat: 1.2917,
+      lng: 103.8576,
+      active: true
+    }
 
   ],
 
@@ -4095,7 +4186,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Anson+Seabra+Singapore",
       btnText: "购票",
       sortDate: "2026-06-02",
-      active: true
+      active: false
     },
 
     {
@@ -6105,6 +6196,30 @@ const SGLIVING_DATA = {
       sortDate: "2026-06-25",
       active: true
     }
+    ,
+
+    {
+      id: "bandmate-concert-jun13-2026",
+      name: "Bandmate · 韩国新乐队首次亚洲巡演",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "13",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#7c3aed,#ec4899)",
+      typeLabel: "🎤 韩团演唱会",
+      typeColor: "#7c3aed",
+      description: "韩国新生代乐队 Bandmate 首次亚洲巡演新加坡站！实力派四人组现场演奏，融合摇滚与韩流元素，年轻乐迷不容错过。Singapore Indoor Stadium 单场，6月13日（周六）夜场。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "6月13日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$108–268",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Bandmate+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-13",
+      active: true
+    }
 
   ],
 
@@ -6128,7 +6243,7 @@ const SGLIVING_DATA = {
       dateRange: "3月12日–5月31日（每天开放）",
       cost: "免费下载 App 即可参与",
       duration: "约1.5–3小时",
-      active: true
+      active: false
     },
 
     {
@@ -6233,7 +6348,7 @@ const SGLIVING_DATA = {
       dateRange: "至5月31日",
       cost: "S$10–16/人",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -6278,7 +6393,7 @@ const SGLIVING_DATA = {
       dateRange: "每周末至5月31日",
       cost: "🆓 完全免费",
       duration: "约1小时",
-      active: true
+      active: false
     },
 
     {
@@ -6560,7 +6675,7 @@ const SGLIVING_DATA = {
       dateRange: "每周一 & 周末（持续至5月底）",
       cost: "🆓 免费入场",
       duration: "约30–60分钟",
-      active: true
+      active: false
     }
 
 
@@ -6611,7 +6726,7 @@ const SGLIVING_DATA = {
       dateRange: "5月1日–24日",
       cost: "免费（部分需预约）",
       duration: "约半日",
-      active: true
+      active: false
     },
 
     {
@@ -6626,7 +6741,7 @@ const SGLIVING_DATA = {
       dateRange: "5月9、16、23日",
       cost: "S$15–25/人",
       duration: "约45分钟",
-      active: true
+      active: false
     },
 
     {
@@ -6671,7 +6786,7 @@ const SGLIVING_DATA = {
       dateRange: "5月每周六（需线上预约）",
       cost: "免费",
       duration: "约1小时",
-      active: true
+      active: false
     },
 
     {
@@ -6686,7 +6801,7 @@ const SGLIVING_DATA = {
       dateRange: "至5月24日（每周末）",
       cost: "免费",
       duration: "约2–4小时",
-      active: true
+      active: false
     }
     ,
     // ── 5月3日新增 · 6月学校假期 & 5月推荐 ──────────────────────────────
@@ -7129,7 +7244,7 @@ const SGLIVING_DATA = {
       dateRange: "5月全月（限时花展轮换）",
       cost: "Children's Garden 免费 · Flower Dome S$12+",
       duration: "半天–全天",
-      active: true
+      active: false
     },
 
     {
@@ -7407,7 +7522,7 @@ const SGLIVING_DATA = {
       price: "S$10–25",
       bookingUrl: "https://www.kidzpopcon.asia",
       btnText: "购票",
-      active: true
+      active: false
     },
 
     {
@@ -7428,7 +7543,7 @@ const SGLIVING_DATA = {
       price: "免费",
       bookingUrl: "https://www.nparks.gov.sg/activities/family-time-with-nature/learning",
       btnText: "下载 App",
-      active: true
+      active: false
     },
 
     {
@@ -7845,6 +7960,22 @@ const SGLIVING_DATA = {
       dateRange: "6月8日起开放（暑假期间持续）",
       cost: "户外装置免费 / Flower Dome 入门票 S$12（儿童）",
       duration: "约 2–3 小时",
+      active: true
+    }
+    ,
+
+    {
+      id: "acm-and-me-playspace-jun-2026",
+      name: "ACM & Me · 亚洲文明博物馆儿童创艺乐园",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#06b6d4,#3b82f6)",
+      ageRange: "最适合 4–10 岁",
+      description: "亚洲文明博物馆儿童季 2026 全新「ACM & Me」互动游乐空间！孩子可以自画亚洲风格自画像、用拼贴重新设计神兽、还能进迪斯科儿童室自由舞蹈。软包游乐区+艺术创作区+亲子打卡墙三合一，雨天遛娃神器，免费入场。",
+      highlight: "新加坡博物馆首个亲子自由创作互动空间，免费入场+室内雨天首选+7-9岁孩子可全程独立游玩",
+      location: "Asian Civilisations Museum, 1 Empress Place",
+      dateRange: "6月起常驻开放（儿童季期间免费）",
+      cost: "免费入场（儿童季 12 岁以下免费）",
+      duration: "约 1.5–2.5 小时",
       active: true
     }
 
