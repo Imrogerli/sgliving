@@ -108,20 +108,28 @@
     /* ── 电影卡片样式 ── */
     .movie-card { position: relative; background: var(--card-bg); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); transition: transform .2s, box-shadow .2s; cursor: default; display: flex; flex-direction: column; }
     .movie-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
-    .movie-poster { height: 180px; display: flex; align-items: center; justify-content: center; font-size: 88px; position: relative; }
-    .movie-release-tag { position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.65); color: white; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; backdrop-filter: blur(4px); }
-    .movie-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-    .movie-title { font-size: 18px; font-weight: 700; line-height: 1.3; }
-    .movie-en-title { font-size: 12px; color: var(--text-light); }
-    .movie-meta { display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; color: var(--text-light); margin-top: 2px; }
+    .movie-poster { height: 280px; position: relative; background-size: cover; background-position: center top; background-repeat: no-repeat; overflow: hidden; }
+    .movie-poster.no-image { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px; color: white; }
+    .movie-poster.no-image .movie-poster-emoji { font-size: 88px; }
+    .movie-poster.no-image .movie-poster-title { font-size: 22px; font-weight: 700; padding: 0 20px; text-align: center; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+    .movie-poster::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.55) 90%, rgba(0,0,0,0.85) 100%); pointer-events: none; }
+    .movie-release-tag { position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.7); color: white; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; backdrop-filter: blur(4px); z-index: 2; }
+    .movie-badge-top { position: absolute; top: 12px; right: 12px; background: rgba(232,83,58,0.92); color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; z-index: 2; backdrop-filter: blur(4px); }
+    .movie-poster-titlebar { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 16px 14px; color: white; z-index: 2; }
+    .movie-poster-titlebar .cn { font-size: 19px; font-weight: 700; line-height: 1.2; text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+    .movie-poster-titlebar .en { font-size: 12px; opacity: 0.85; margin-top: 2px; text-shadow: 0 1px 4px rgba(0,0,0,0.6); }
+    .movie-body { padding: 14px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .movie-meta { display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; color: var(--text-light); }
     .movie-meta span { background: var(--bg); padding: 3px 8px; border-radius: 8px; }
     .movie-rating { display: flex; align-items: center; gap: 4px; font-size: 13px; }
     .movie-rating .stars { color: #f59e0b; }
-    .movie-desc { font-size: 13px; color: var(--text-light); line-height: 1.55; margin-top: 4px; }
-    .movie-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
+    .movie-highlights { background: linear-gradient(135deg, rgba(232,83,58,0.06), rgba(252,176,69,0.08)); border-left: 3px solid var(--primary); padding: 8px 12px; border-radius: 6px; margin-top: 4px; display: flex; flex-direction: column; gap: 4px; }
+    .movie-highlights .highlight-row { font-size: 12.5px; color: var(--text); line-height: 1.5; font-weight: 500; }
+    .movie-desc { font-size: 13px; color: var(--text-light); line-height: 1.55; }
+    .movie-tags { display: flex; gap: 5px; flex-wrap: wrap; }
     .movie-tag { font-size: 11px; color: var(--primary); background: rgba(232,83,58,0.08); padding: 2px 8px; border-radius: 10px; }
-    .movie-platforms { display: flex; gap: 6px; margin-top: 10px; }
-    .movie-platforms a { flex: 1; text-align: center; padding: 8px 0; border-radius: 8px; font-size: 12px; font-weight: 600; text-decoration: none; transition: opacity .2s; color: white; }
+    .movie-platforms { display: flex; gap: 6px; margin-top: 4px; }
+    .movie-platforms a { flex: 1; text-align: center; padding: 9px 0; border-radius: 8px; font-size: 12px; font-weight: 600; text-decoration: none; transition: opacity .2s; color: white; }
     .movie-platforms a:hover { opacity: 0.85; }
     .btn-shaw { background: linear-gradient(135deg,#dc2626,#b91c1c); }
     .btn-gv { background: linear-gradient(135deg,#facc15,#ca8a04); color: #1f1f1f !important; }
@@ -809,15 +817,29 @@ function renderMovieCard(m) {
   const releaseLabel = isComingSoon
     ? `⏳ ${m.releaseDate.slice(5).replace('-', '/')} 上映`
     : `🎬 ${m.releaseDate.slice(5).replace('-', '/')} 起热映`;
+  // 有海报 → background-image；无海报 → 渐变 + emoji + 中文片名
+  const hasPoster = m.posterUrl && m.posterUrl.trim().length > 0;
+  const posterStyle = hasPoster
+    ? `background-image:url('${m.posterUrl.replace(/'/g, '%27')}');`
+    : `background:${m.bgGradient};`;
+  const posterClass = hasPoster ? 'movie-poster' : 'movie-poster no-image';
+  const posterInner = hasPoster ? '' : `
+        <div class="movie-poster-emoji">${m.posterEmoji}</div>
+        <div class="movie-poster-title">${m.chineseTitle}</div>`;
+  const highlights = (m.highlights || []).map(h => `<div class="highlight-row">${h}</div>`).join('');
   return `
     <div class="movie-card" data-id="${m.id}">
-      <div class="movie-poster" style="background:${m.bgGradient};">
-        <span>${m.posterEmoji}</span>
+      <div class="${posterClass}" style="${posterStyle}">
+        ${posterInner}
         <div class="movie-release-tag">${releaseLabel}</div>
+        <div class="movie-badge-top">${m.badgeText}</div>
+        ${hasPoster ? `
+        <div class="movie-poster-titlebar">
+          <div class="cn">${m.chineseTitle}</div>
+          <div class="en">${m.title}</div>
+        </div>` : ''}
       </div>
       <div class="movie-body">
-        <div class="movie-title">${m.chineseTitle}</div>
-        <div class="movie-en-title">${m.title}</div>
         <div class="movie-meta">
           <span>${m.genre}</span>
           <span>${m.duration}</span>
@@ -828,6 +850,7 @@ function renderMovieCard(m) {
           <span style="font-weight:600;">${m.rating}</span>
           <span style="color:var(--text-light);font-size:12px;">· ${m.language}</span>
         </div>
+        ${highlights ? `<div class="movie-highlights">${highlights}</div>` : ''}
         <div class="movie-desc">${m.description}</div>
         <div class="movie-tags">${(m.tags || []).map(t => `<span class="movie-tag">${t}</span>`).join('')}</div>
         <div class="movie-platforms">

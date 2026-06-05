@@ -8010,6 +8010,12 @@ const SGLIVING_DATA = {
       badge: "family",
       badgeText: "👨‍👩‍👧 家庭片",
       ageGuide: "PG · 全家适宜",
+      posterUrl: "https://image.tmdb.org/t/p/w500/upHWNFAi2fkOiyJq0qXmqlV3v7N.jpg",
+      highlights: [
+        "🎬 导演 Andrew Stanton（《海底总动员》《WALL-E》）",
+        "🌟 Tom Hanks 汤姆·汉克斯 · Tim Allen · Joan Cusack · Keanu Reeves · Conan O'Brien · Greta Lee",
+        "🏆 皮克斯回归 IP · 全球首日观看 1.4 亿次的预告片",
+      ],
       active: true
     },
 
@@ -8032,6 +8038,12 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 经典重映",
       ageGuide: "PG · 6 岁以上",
+      posterUrl: "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+      highlights: [
+        "🎬 导演 宫崎骏（《天空之城》《龙猫》《风之谷》）",
+        "🌟 柊瑠美 · 入野自由 · 夏木真理（日语原版配音）",
+        "🏆 奥斯卡最佳动画长片 · 柏林金熊奖 · 25 周年重映",
+      ],
       active: true
     },
 
@@ -8054,6 +8066,12 @@ const SGLIVING_DATA = {
       badge: "chinese",
       badgeText: "🇨🇳 华语片",
       ageGuide: "R21 · 仅限成人",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Heather Young",
+        "🌟 梁咏琪 等华语演员",
+        "📍 加拿大蒙特利尔取景 · 华语 + 法语 双语对白",
+      ],
       active: true
     },
 
@@ -8076,6 +8094,12 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "✨ 新上映",
       ageGuide: "NC16 · 16 岁以上",
+      posterUrl: "",
+      highlights: [
+        "💥 2026 暑期档高分动作惊悚片",
+        "🎬 好莱坞资深动作导演操刀",
+        "🎬 IMAX 大银幕推荐 · 影院音响加持",
+      ],
       active: true
     },
 
@@ -8098,6 +8122,12 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 热映",
       ageGuide: "NC16 · 16 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🚗 高速追逐 + 爆破系硬汉动作片",
+        "🌟 好莱坞动作明星阵容",
+        "🎬《速度与激情》粉丝必看的同类爽片",
+      ],
       active: true
     },
 
@@ -8120,6 +8150,12 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "✨ 即将上映",
       ageGuide: "M18 · 18 岁以上",
+      posterUrl: "",
+      highlights: [
+        "👻 韩国 2026 年度恐怖大片",
+        "🌟 韩国实力派演员阵容",
+        "🎬 本土民俗 + 超自然氛围 · 同类《釜山行》《哭声》",
+      ],
       active: true
     },
 
@@ -8142,6 +8178,12 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "✨ 即将上映",
       ageGuide: "PG13 · 13 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 日本小众科幻佳作",
+        "🌟 日本实力派演员阵容",
+        "🧠 哲学派科幻 · 探讨意识与现实的边界",
+      ],
       active: true
     },
 
@@ -8164,6 +8206,12 @@ const SGLIVING_DATA = {
       badge: "family",
       badgeText: "👨‍👩‍👧 家庭片",
       ageGuide: "G · 全年龄",
+      posterUrl: "",
+      highlights: [
+        "🍌 小黄人 IP 暑假新作",
+        "🎬 Illumination Entertainment 出品（《神偷奶爸》系列）",
+        "🎉 7-9 岁孩子全场欢笑保证",
+      ],
       active: true
     },
 
@@ -8186,6 +8234,12 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 年度大片",
       ageGuide: "PG13 · 13 岁以上",
+      posterUrl: "https://image.tmdb.org/t/p/w500/dFGGttCSL5JxDFOXLEC2pSjEEZ4.jpg",
+      highlights: [
+        "🎬 导演 Christopher Nolan 诺兰（《奥本海默》《星际穿越》《盗梦空间》）",
+        "🌟 Matt Damon · Anne Hathaway · Tom Holland · Robert Pattinson · Zendaya · Charlize Theron · Lupita Nyong'o",
+        "🏆 史上首部全程 IMAX 70mm 胶片拍摄 · 预算 2.5 亿美元",
+      ],
       active: true
     }
 
