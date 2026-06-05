@@ -8010,7 +8010,7 @@ const SGLIVING_DATA = {
       badge: "family",
       badgeText: "👨‍👩‍👧 家庭片",
       ageGuide: "PG · 全家适宜",
-      posterUrl: "https://image.tmdb.org/t/p/w500/upHWNFAi2fkOiyJq0qXmqlV3v7N.jpg",
+      posterUrl: "https://upload.wikimedia.org/wikipedia/en/0/08/Toy_Story_5_poster.jpg",
       highlights: [
         "🎬 导演 Andrew Stanton（《海底总动员》《WALL-E》）",
         "🌟 Tom Hanks 汤姆·汉克斯 · Tim Allen · Joan Cusack · Keanu Reeves · Conan O'Brien · Greta Lee",
@@ -8178,7 +8178,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "✨ 即将上映",
       ageGuide: "PG13 · 13 岁以上",
-      posterUrl: "",
+      posterUrl: "https://upload.wikimedia.org/wikipedia/en/b/bd/Sheep_in_the_Box_2026.jpg",
       highlights: [
         "🎬 日本小众科幻佳作",
         "🌟 日本实力派演员阵容",
@@ -8234,7 +8234,7 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 年度大片",
       ageGuide: "PG13 · 13 岁以上",
-      posterUrl: "https://image.tmdb.org/t/p/w500/dFGGttCSL5JxDFOXLEC2pSjEEZ4.jpg",
+      posterUrl: "https://upload.wikimedia.org/wikipedia/en/9/90/The_Odyssey_%282026_film%29_poster.jpg",
       highlights: [
         "🎬 导演 Christopher Nolan 诺兰（《奥本海默》《星际穿越》《盗梦空间》）",
         "🌟 Matt Damon · Anne Hathaway · Tom Holland · Robert Pattinson · Zendaya · Charlize Theron · Lupita Nyong'o",
