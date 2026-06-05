@@ -7979,6 +7979,216 @@ const SGLIVING_DATA = {
       active: true
     }
 
+  ],
+
+
+  // ════════════════════════════════════════════════
+  // 电影数据 movies（新增分类）
+  // type: now-showing / coming-soon / chinese / family
+  // 卡片 onClick 跳转 Google 搜索 + Shaw / GV / Cathay 三平台购票
+  // releaseDate: YYYY-MM-DD（标记发行/上映日期）
+  // active: false 表示已下映
+  // ════════════════════════════════════════════════
+  movies: [
+
+    {
+      id: "toy-story-5-2026-06",
+      title: "Toy Story 5",
+      chineseTitle: "玩具总动员 5",
+      type: "family",
+      rating: 8.5,
+      releaseDate: "2026-06-18",
+      genre: "动画 / 冒险 / 家庭",
+      language: "英语原版 / 中英文字幕",
+      duration: "约 100 分钟",
+      cast: "Tom Hanks · Tim Allen · Joan Cusack",
+      director: "Andrew Stanton",
+      description: "皮克斯回归经典 IP！玩具们这次要面对一个比 Bonnie 更难搞的对手：科技。Buzz、Woody 和小伙伴们要在数字时代里寻找属于自己的位置。全家欢必看，7-9 岁孩子的童年新回忆。",
+      tags: ["家庭", "动画", "全家欢", "皮克斯"],
+      posterEmoji: "🤠",
+      bgGradient: "linear-gradient(135deg,#fbbf24,#3b82f6)",
+      badge: "family",
+      badgeText: "👨‍👩‍👧 家庭片",
+      ageGuide: "PG · 全家适宜",
+      active: true
+    },
+
+    {
+      id: "spirited-away-rerun-2026-06",
+      title: "Spirited Away",
+      chineseTitle: "千与千寻（重映）",
+      type: "now-showing",
+      rating: 9.3,
+      releaseDate: "2026-06-06",
+      genre: "动画 / 奇幻",
+      language: "日语原版 / 中英文字幕",
+      duration: "125 分钟",
+      cast: "宫崎骏 作品",
+      director: "宫崎骏",
+      description: "吉卜力封神之作 25 周年重映！千寻误闯神秘澡堂世界，无脸男、白龙、汤婆婆经典角色再现大银幕。比家里小屏幕看震撼十倍，亲子一起看也不会无聊，国民动画大片必刷。",
+      tags: ["重映", "宫崎骏", "经典动画", "全家欢"],
+      posterEmoji: "🐉",
+      bgGradient: "linear-gradient(135deg,#10b981,#06b6d4)",
+      badge: "hot",
+      badgeText: "🔥 经典重映",
+      ageGuide: "PG · 6 岁以上",
+      active: true
+    },
+
+    {
+      id: "montreal-my-beautiful-2026-06",
+      title: "Montreal, My Beautiful",
+      chineseTitle: "蒙特利尔我的美人",
+      type: "chinese",
+      rating: 7.8,
+      releaseDate: "2026-06-06",
+      genre: "剧情 / 爱情",
+      language: "华语 / 法语 · 英文字幕",
+      duration: "108 分钟",
+      cast: "梁咏琪 等",
+      director: "Heather Young",
+      description: "华语剧情片新作，讲述一位华人女性在蒙特利尔追寻自我的故事。中英双语对白，情感细腻，是华人题材作品中值得关注的一部。R21 限制级，仅限成人观众。",
+      tags: ["华语片", "剧情", "R21"],
+      posterEmoji: "🎬",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#ec4899)",
+      badge: "chinese",
+      badgeText: "🇨🇳 华语片",
+      ageGuide: "R21 · 仅限成人",
+      active: true
+    },
+
+    {
+      id: "thunderball-2026-06",
+      title: "Thunderball",
+      chineseTitle: "霹雳弹",
+      type: "now-showing",
+      rating: 7.5,
+      releaseDate: "2026-06-05",
+      genre: "动作 / 惊悚",
+      language: "英语 / 中英文字幕",
+      duration: "约 130 分钟",
+      cast: "动作大片明星阵容",
+      director: "—",
+      description: "2026 年度暑期档动作惊悚大片，节奏紧凑、特效火爆，IMAX 大银幕观影更过瘾。适合周末和朋友一起看的爽片首选。",
+      tags: ["动作", "暑期档", "IMAX"],
+      posterEmoji: "💥",
+      bgGradient: "linear-gradient(135deg,#dc2626,#f59e0b)",
+      badge: "new",
+      badgeText: "✨ 新上映",
+      ageGuide: "NC16 · 16 岁以上",
+      active: true
+    },
+
+    {
+      id: "the-furious-2026-06",
+      title: "The Furious",
+      chineseTitle: "怒火追击",
+      type: "now-showing",
+      rating: 7.6,
+      releaseDate: "2026-06-11",
+      genre: "动作 / 犯罪",
+      language: "英语 / 中英文字幕",
+      duration: "约 125 分钟",
+      cast: "—",
+      director: "—",
+      description: "高速追逐+爆破场面拉满，2026 年暑期档动作系硬汉片，影院音响和大银幕加持下体验最佳。爱看《速度与激情》系列的影迷不能错过。",
+      tags: ["动作", "犯罪", "暑期档"],
+      posterEmoji: "🚗",
+      bgGradient: "linear-gradient(135deg,#1e293b,#ef4444)",
+      badge: "hot",
+      badgeText: "🔥 热映",
+      ageGuide: "NC16 · 16 岁以上",
+      active: true
+    },
+
+    {
+      id: "the-shrine-2026-06",
+      title: "The Shrine",
+      chineseTitle: "神龛",
+      type: "coming-soon",
+      rating: 7.2,
+      releaseDate: "2026-06-25",
+      genre: "恐怖 / 悬疑",
+      language: "韩语 / 中英文字幕",
+      duration: "约 105 分钟",
+      cast: "韩国实力派演员阵容",
+      director: "—",
+      description: "韩国 2026 年度恐怖大片，结合本土民俗与超自然元素，氛围渲染功力一流。胆大的影迷月底不妨买夜场票挑战，喜欢《釜山行》《哭声》的不要错过。",
+      tags: ["恐怖", "韩国片", "悬疑"],
+      posterEmoji: "👻",
+      bgGradient: "linear-gradient(135deg,#0f172a,#7c3aed)",
+      badge: "new",
+      badgeText: "✨ 即将上映",
+      ageGuide: "M18 · 18 岁以上",
+      active: true
+    },
+
+    {
+      id: "sheep-in-the-box-2026-06",
+      title: "Sheep In The Box",
+      chineseTitle: "盒中羊",
+      type: "coming-soon",
+      rating: 7.4,
+      releaseDate: "2026-06-25",
+      genre: "剧情 / 科幻",
+      language: "日语 / 中英文字幕",
+      duration: "约 115 分钟",
+      cast: "日本实力派演员阵容",
+      director: "—",
+      description: "日本 2026 年小众科幻佳作，以「盒中羊」隐喻探讨意识与现实的边界。哲学派科幻迷的菜，喜欢《攻壳机动队》《新世纪福音战士》风格的不能错过。",
+      tags: ["日本片", "科幻", "文艺"],
+      posterEmoji: "🐑",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#a78bfa)",
+      badge: "new",
+      badgeText: "✨ 即将上映",
+      ageGuide: "PG13 · 13 岁以上",
+      active: true
+    },
+
+    {
+      id: "minions-monsters-2026-07",
+      title: "Minions & Monsters",
+      chineseTitle: "小黄人与怪兽",
+      type: "family",
+      rating: 8.0,
+      releaseDate: "2026-07-01",
+      genre: "动画 / 喜剧 / 家庭",
+      language: "英语原版 / 中英文字幕",
+      duration: "约 95 分钟",
+      cast: "小黄人系列原班配音",
+      director: "—",
+      description: "小黄人 IP 新作！这次他们要和怪兽世界混搭，捣蛋指数爆表。7-9 岁孩子的欢笑保证，家长也跟着乐。学校假期最后一波亲子电影首选。",
+      tags: ["小黄人", "家庭", "暑假大片", "动画"],
+      posterEmoji: "🍌",
+      bgGradient: "linear-gradient(135deg,#fde047,#f59e0b)",
+      badge: "family",
+      badgeText: "👨‍👩‍👧 家庭片",
+      ageGuide: "G · 全年龄",
+      active: true
+    },
+
+    {
+      id: "the-odyssey-2026-07",
+      title: "The Odyssey",
+      chineseTitle: "奥德赛",
+      type: "coming-soon",
+      rating: 8.3,
+      releaseDate: "2026-07-17",
+      genre: "史诗 / 冒险",
+      language: "英语 / 中英文字幕",
+      duration: "约 165 分钟",
+      cast: "好莱坞 A 咖阵容",
+      director: "Christopher Nolan",
+      description: "诺兰新作！改编自荷马史诗《奥德赛》，IMAX 70mm 胶片拍摄，视觉震撼期待值拉满。2026 年暑期档最重磅大片，建议买 IMAX 场次。",
+      tags: ["诺兰", "史诗大片", "IMAX", "暑期档"],
+      posterEmoji: "⚔️",
+      bgGradient: "linear-gradient(135deg,#1e3a8a,#0c4a6e)",
+      badge: "hot",
+      badgeText: "🔥 年度大片",
+      ageGuide: "PG13 · 13 岁以上",
+      active: true
+    }
+
   ]
 
 };

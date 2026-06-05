@@ -105,6 +105,27 @@
     .card-dist { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; color: var(--blue); background: rgba(37,99,235,0.08); border-radius: 12px; padding: 2px 8px; white-space: nowrap; }
     .btn-chope { display: inline-flex; align-items: center; gap: 5px; margin-top: 10px; width: 100%; justify-content: center; padding: 8px 0; border-radius: 10px; background: linear-gradient(135deg,#e8533a,#ff6b4a); color: white; font-size: 13px; font-weight: 600; text-decoration: none; transition: opacity .2s; }
     .btn-chope:hover { opacity: .85; }
+    /* ── 电影卡片样式 ── */
+    .movie-card { position: relative; background: var(--card-bg); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); transition: transform .2s, box-shadow .2s; cursor: default; display: flex; flex-direction: column; }
+    .movie-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+    .movie-poster { height: 180px; display: flex; align-items: center; justify-content: center; font-size: 88px; position: relative; }
+    .movie-release-tag { position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.65); color: white; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; backdrop-filter: blur(4px); }
+    .movie-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .movie-title { font-size: 18px; font-weight: 700; line-height: 1.3; }
+    .movie-en-title { font-size: 12px; color: var(--text-light); }
+    .movie-meta { display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; color: var(--text-light); margin-top: 2px; }
+    .movie-meta span { background: var(--bg); padding: 3px 8px; border-radius: 8px; }
+    .movie-rating { display: flex; align-items: center; gap: 4px; font-size: 13px; }
+    .movie-rating .stars { color: #f59e0b; }
+    .movie-desc { font-size: 13px; color: var(--text-light); line-height: 1.55; margin-top: 4px; }
+    .movie-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
+    .movie-tag { font-size: 11px; color: var(--primary); background: rgba(232,83,58,0.08); padding: 2px 8px; border-radius: 10px; }
+    .movie-platforms { display: flex; gap: 6px; margin-top: 10px; }
+    .movie-platforms a { flex: 1; text-align: center; padding: 8px 0; border-radius: 8px; font-size: 12px; font-weight: 600; text-decoration: none; transition: opacity .2s; color: white; }
+    .movie-platforms a:hover { opacity: 0.85; }
+    .btn-shaw { background: linear-gradient(135deg,#dc2626,#b91c1c); }
+    .btn-gv { background: linear-gradient(135deg,#facc15,#ca8a04); color: #1f1f1f !important; }
+    .btn-cathay { background: linear-gradient(135deg,#1e40af,#1d4ed8); }
     .filter-btn.locating { opacity: 0.65; cursor: wait; }
     .filter-btn.locating::after { content: '…'; }
 
@@ -282,6 +303,7 @@
       <div class="update-pill">🍜 收录餐厅 <span id="statFood">-</span>+</div>
       <div class="update-pill">🎪 近期活动 <span id="statEvents">-</span>+</div>
       <div class="update-pill">👨‍👩‍👧 亲子推荐 <span id="statFamily">-</span>+</div>
+      <div class="update-pill">🎬 院线电影 <span id="statMovies">-</span>+</div>
     </div>
   </div>
 </header>
@@ -301,6 +323,7 @@
     <a class="nav-tab" href="#food">🍜 美食推荐 <span class="tab-count" id="foodTabCount">-</span></a>
     <a class="nav-tab" href="#events">🎪 近期活动 <span class="tab-count" id="eventsTabCount">-</span></a>
     <a class="nav-tab" href="#family">👨‍👩‍👧 亲子活动 <span class="tab-count" id="familyTabCount">-</span></a>
+    <a class="nav-tab" href="#movies">🎬 院线电影 <span class="tab-count" id="moviesTabCount">-</span></a>
   </div>
 </nav>
 
@@ -368,6 +391,27 @@
       </div>
     </div>
     <div class="activity-grid" id="activityGrid"></div>
+  </section>
+
+  <!-- ████ MOVIES SECTION ████ -->
+  <section id="movies" class="section">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="section-emoji">🎬</span>
+        <div>
+          <h2>新加坡院线电影</h2>
+          <div class="section-sub" id="moviesUpdateLabel">正在上映 · 即将上映 · 华语片 · 家庭片 · Shaw / GV / Cathay 多平台购票</div>
+        </div>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="setMoviesFilter('all', this)">全部</button>
+        <button class="filter-btn" onclick="setMoviesFilter('now-showing', this)">🎬 正在上映</button>
+        <button class="filter-btn" onclick="setMoviesFilter('coming-soon', this)">⏳ 即将上映</button>
+        <button class="filter-btn" onclick="setMoviesFilter('chinese', this)">🇨🇳 华语片</button>
+        <button class="filter-btn" onclick="setMoviesFilter('family', this)">👨‍👩‍👧 家庭片</button>
+      </div>
+    </div>
+    <div class="cards-grid" id="moviesGrid"></div>
   </section>
 
 </main>
@@ -440,6 +484,7 @@ const state = {
   foodFilter: 'all',
   foodSort: 'newest',
   eventsFilter: 'all',
+  moviesFilter: 'all',
   userLat: null,
   userLng: null
 };
@@ -734,10 +779,89 @@ function renderFamily() {
 }
 
 // ══════════════════════════════════════════════════
+// 电影渲染（全量，无分页）
+// ══════════════════════════════════════════════════
+function buildCinemaSearchUrl(platform, title) {
+  // 用 Google 搜索 "电影名 + 影院 + Singapore"，命中影院页或售票页
+  const cinemaMap = {
+    shaw: 'Shaw Theatres Singapore',
+    gv: 'Golden Village Singapore GV',
+    cathay: 'Cathay Cineplexes Singapore'
+  };
+  const q = encodeURIComponent(title + ' ' + cinemaMap[platform] + ' showtimes');
+  return 'https://www.google.com/search?q=' + q;
+}
+
+function getFilteredMovies() {
+  let items = (SGLIVING_DATA.movies || []).filter(m => m.active);
+  if (state.moviesFilter !== 'all') {
+    items = items.filter(m => m.type === state.moviesFilter);
+  }
+  // 即将上映优先按发行日期升序，正在上映按倒序
+  items.sort((a, b) => a.releaseDate.localeCompare(b.releaseDate));
+  return items;
+}
+
+function renderMovieCard(m) {
+  const stars = renderStars(m.rating);
+  const today = SGLIVING_DATA.meta.lastUpdated;
+  const isComingSoon = m.releaseDate > today;
+  const releaseLabel = isComingSoon
+    ? `⏳ ${m.releaseDate.slice(5).replace('-', '/')} 上映`
+    : `🎬 ${m.releaseDate.slice(5).replace('-', '/')} 起热映`;
+  return `
+    <div class="movie-card" data-id="${m.id}">
+      <div class="movie-poster" style="background:${m.bgGradient};">
+        <span>${m.posterEmoji}</span>
+        <div class="movie-release-tag">${releaseLabel}</div>
+      </div>
+      <div class="movie-body">
+        <div class="movie-title">${m.chineseTitle}</div>
+        <div class="movie-en-title">${m.title}</div>
+        <div class="movie-meta">
+          <span>${m.genre}</span>
+          <span>${m.duration}</span>
+          <span>${m.ageGuide}</span>
+        </div>
+        <div class="movie-rating">
+          <span class="stars">${stars}</span>
+          <span style="font-weight:600;">${m.rating}</span>
+          <span style="color:var(--text-light);font-size:12px;">· ${m.language}</span>
+        </div>
+        <div class="movie-desc">${m.description}</div>
+        <div class="movie-tags">${(m.tags || []).map(t => `<span class="movie-tag">${t}</span>`).join('')}</div>
+        <div class="movie-platforms">
+          <a href="${buildCinemaSearchUrl('shaw', m.title)}" target="_blank">🎟️ Shaw</a>
+          <a href="${buildCinemaSearchUrl('gv', m.title)}" target="_blank">🎟️ GV</a>
+          <a href="${buildCinemaSearchUrl('cathay', m.title)}" target="_blank">🎟️ Cathay</a>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderMovies() {
+  const items = getFilteredMovies();
+  document.getElementById('moviesGrid').innerHTML = items.map(renderMovieCard).join('') ||
+    '<div style="padding:40px;text-align:center;color:#999;grid-column:1/-1;">该分类暂无电影</div>';
+  const allActive = (SGLIVING_DATA.movies || []).filter(m => m.active).length;
+  document.getElementById('moviesTabCount').textContent = allActive;
+  document.getElementById('statMovies').textContent = allActive;
+  document.getElementById('moviesUpdateLabel').textContent =
+    `正在上映 · 即将上映 · 华语片 · 家庭片 · ${SGLIVING_DATA.meta.lastUpdated} 更新 · Shaw / GV / Cathay 一键搜索`;
+}
+
+function setMoviesFilter(f, el) {
+  state.moviesFilter = f;
+  document.querySelectorAll('#movies .filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  renderMovies();
+}
+
+// ══════════════════════════════════════════════════
 // 导航高亮（滚动时更新 active 状态）
 // ══════════════════════════════════════════════════
 function updateNavActive() {
-  const sections = ['food', 'events', 'family'];
+  const sections = ['food', 'events', 'family', 'movies'];
   const scrollY = window.scrollY + 80;
   let current = 'food';
   for (const id of sections) {
@@ -760,6 +884,7 @@ window.addEventListener('scroll', updateNavActive, { passive: true });
   renderFood();
   renderEvents();
   renderFamily();
+  renderMovies();
 
   // 构建美食 ticker
   (function buildTicker() {
