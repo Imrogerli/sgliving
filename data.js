@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-04",
+    lastUpdated: "2026-06-08",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -3544,6 +3544,86 @@ const SGLIVING_DATA = {
       lat: 1.2917,
       lng: 103.8576,
       active: true
+    },
+
+    {
+      id: "hikiniku-to-come",
+      name: "Hikiniku to Come 碳火汉堡扒",
+      categories: ["restaurant", "snack"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$27.90++",
+      description: "东京爆红炭火汉堡扒登陆怡丰城！每天店内现磨100%日本和牛，备长炭现烤，配土锅现煮米饭。整间店只卖一种套餐——三块90g肉饼，简单到极致却让人念念不忘。爱吃肉的朋友闭眼冲，性价比超高。",
+      tags: ["炭火汉堡扒", "日本和牛", "怡丰城"],
+      address: "VivoCity, 1 HarbourFront Walk, #01, Singapore 098585",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🍔",
+      bgGradient: "linear-gradient(135deg,#7b341e,#c05621)",
+      catLabel: "小吃",
+      catDesc: "东京炭火汉堡扒 / VivoCity",
+      ratingDesc: "现磨和牛 · 一日一套餐",
+      active: true
+    },
+
+    {
+      id: "torikizoku-vivocity",
+      name: "Torikizoku 鸟贵族",
+      categories: ["restaurant", "snack"],
+      rating: 4.4,
+      openDate: "2026-05",
+      price: "S$3.90++/串",
+      description: "来自日本、全球600+分店的国民串烧居酒屋，怡丰城开出全球最大旗舰店（174座，海景位）。全菜单几乎每样都是S$3.90两串，现点现烤，下班约朋友小酌撸串首选。价格友好到让人想天天来。",
+      tags: ["日式串烧", "居酒屋", "海景"],
+      address: "VivoCity, 1 HarbourFront Walk, #01-104/105, Singapore 098585",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🍢",
+      bgGradient: "linear-gradient(135deg,#b7791f,#975a16)",
+      catLabel: "小吃",
+      catDesc: "日本国民串烧居酒屋 / VivoCity",
+      ratingDesc: "全球最大店 · 串串$3.90",
+      active: true
+    },
+
+    {
+      id: "obongzip-star-vista",
+      name: "Obongzip 火烤辣炒章鱼",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$25–40",
+      description: "韩国超火的Obongzip西部开新店啦（Star Vista）！招牌火烤辣炒章鱼镬气十足，还有爆红的XXL烤年糕「枕头年糕」——外脆内糯撒上黄豆粉配蜂蜜，甜咸两吃。Buona Vista、荷兰村一带的朋友终于不用跑去丹戎巴葛了。",
+      tags: ["韩式烤肉", "辣炒章鱼", "巨型年糕"],
+      address: "The Star Vista, 1 Vista Exchange Green, #01-43/K4, Singapore 138617",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🐙",
+      bgGradient: "linear-gradient(135deg,#c53030,#9b2c2c)",
+      catLabel: "正餐",
+      catDesc: "韩国人气烤肉 / The Star Vista",
+      ratingDesc: "火烤辣章鱼 · 枕头烤年糕",
+      active: true
+    },
+
+    {
+      id: "xiaolongkan-hotpot-sg",
+      name: "小龙坎老火锅",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2025-12",
+      price: "S$40–60",
+      description: "姐妹们！在新加坡想吃地道成都味就冲小龙坎！牛油锅底是真的香，麻辣够劲不齁嗓子，毛肚鸭肠鲜货品质在线。午市满50减10、晚上10点后还有8折，留学生党和打工人深夜续命绝绝子。蘸干碟才是灵魂，避雷麻酱党～",
+      tags: ["成都火锅", "牛油锅底", "小红书爆款"],
+      address: "Clarke Quay Central, 6 Eu Tong Sen St, Singapore 059817",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#e53e3e,#c53030)",
+      catLabel: "正餐",
+      catDesc: "正宗成都麻辣火锅 / Clarke Quay",
+      ratingDesc: "小红书姐妹力推 · 牛油锅底香",
+      active: true
     }
 
   ],
@@ -4209,7 +4289,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=BUS+Thailand+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-06-05",
-      active: true
+      active: false
     },
 
     {
@@ -4232,7 +4312,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Sheila+Majid+Singapore",
       btnText: "购票",
       sortDate: "2026-06-06",
-      active: true
+      active: false
     },
 
     // ── 4月20日新增 ──────────────────────────────
@@ -4597,7 +4677,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Yuika+Singapore",
       btnText: "购票",
       sortDate: "2026-06-05",
-      active: true
+      active: false
     },
 
     {
@@ -4620,7 +4700,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Billkin+Singapore",
       btnText: "购票",
       sortDate: "2026-06-06",
-      active: true
+      active: false
     },
 
     {
@@ -4763,7 +4843,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ilightsingapore.gov.sg/",
       btnText: "了解详情",
       sortDate: "2026-06-05",
-      active: true
+      active: false
     },
 
     {
@@ -4786,7 +4866,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.pa.gov.sg/get-involved/water-venture",
       btnText: "了解详情",
       sortDate: "2026-06-06",
-      active: true
+      active: false
     },
 
     {
@@ -4975,7 +5055,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.marinabaysands.com/museum/exhibitions/into-the-ocean.html",
       btnText: "购票",
       sortDate: "2026-06-01",
-      active: true
+      active: false
     },
 
     {
@@ -5231,7 +5311,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sentosa.com.sg/en/things-to-do/attractions/splashtopia/",
       btnText: "了解详情",
       sortDate: "2026-06-01",
-      active: true
+      active: false
     },
 
     {
@@ -5745,7 +5825,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ilightsingapore.gov.sg/",
       btnText: "查看详情",
       sortDate: "2026-06-05",
-      active: true
+      active: false
     },
 
     {
@@ -6101,7 +6181,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/childrens-season",
       btnText: "查看详情",
       sortDate: "2026-06-01",
-      active: true
+      active: false
     },
 
     {
@@ -6124,7 +6204,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.nhb.gov.sg/acm/whats-on/programmes",
       btnText: "查看详情",
       sortDate: "2026-06-01",
-      active: true
+      active: false
     }
     ,
 
@@ -8239,6 +8319,62 @@ const SGLIVING_DATA = {
         "🎬 导演 Christopher Nolan 诺兰（《奥本海默》《星际穿越》《盗梦空间》）",
         "🌟 Matt Damon · Anne Hathaway · Tom Holland · Robert Pattinson · Zendaya · Charlize Theron · Lupita Nyong'o",
         "🏆 史上首部全程 IMAX 70mm 胶片拍摄 · 预算 2.5 亿美元",
+      ],
+      active: true
+    },
+
+    {
+      id: "being-towards-death-2026-06",
+      title: "Being Towards Death",
+      chineseTitle: "向死而生",
+      type: "chinese",
+      rating: 7.6,
+      releaseDate: "2026-06-11",
+      genre: "剧情 / 喜剧",
+      language: "华语 / 中英文字幕",
+      duration: "约 130 分钟",
+      cast: "蒋龙 · 齐溪 · 杨超越 · 倪大红 · 蔡明",
+      director: "陈思诚",
+      description: "陈思诚转型之作，笑中带泪的现实题材。落魄又丧的张小兵在癌症病房做起「替人尽孝」的陪护，与一群绝症病友相互取暖，重新找回活下去的力气。看似荒诞的设定却笑到流泪、哭到破防，适合想看点有温度国产片的你。",
+      tags: ["华语片", "陈思诚", "笑中带泪", "现实题材"],
+      posterEmoji: "🕯️",
+      bgGradient: "linear-gradient(135deg,#475569,#1e293b)",
+      badge: "new",
+      badgeText: "🆕 华语新片",
+      ageGuide: "PG13 · 13 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 陈思诚（《唐人街探案》系列《消失的她》）",
+        "🌟 蒋龙 · 齐溪 · 杨超越 · 倪大红 · 蔡明",
+        "🏆 北京国际电影节首映 · 已获英国发行 · 喜剧外壳下的生命题材",
+      ],
+      active: true
+    },
+
+    {
+      id: "backrooms-2026-06",
+      title: "Backrooms",
+      chineseTitle: "后室",
+      type: "now-showing",
+      rating: 7.4,
+      releaseDate: "2026-06-18",
+      genre: "悬疑 / 科幻 / 恐怖",
+      language: "英语 / 中英文字幕",
+      duration: "111 分钟",
+      cast: "Chiwetel Ejiofor · Renate Reinsve · Mark Duplass",
+      director: "Kane Parsons",
+      description: "由YouTube爆红同名系列改编，19岁鬼才导演Kane Parsons长片处女作。困在无尽黄墙迷宫「后室」里的诡异空间美学，看得人头皮发麻。A24出品，已成其影史票房最高作品，胆大的影迷别错过大银幕沉浸惊吓。",
+      tags: ["A24", "悬疑恐怖", "话题新片"],
+      posterEmoji: "🚪",
+      bgGradient: "linear-gradient(135deg,#a16207,#713f12)",
+      badge: "hot",
+      badgeText: "🔥 话题新片",
+      ageGuide: "R · 限制级",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Kane Parsons（YouTube《The Backrooms》近 1 亿播放）",
+        "🌟 Chiwetel Ejiofor · Renate Reinsve · Mark Duplass · Avan Jogia",
+        "🏆 A24 影史票房最高作品 · 全球票房破 1.9 亿美元",
       ],
       active: true
     }
