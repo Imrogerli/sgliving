@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-02
+ * 最后更新：2026-06-09
  * 版本：3.2
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-08",
+    lastUpdated: "2026-06-09",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,69 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-09 每日更新新增 ──────────────────
+
+    {
+      id: "visitors-cafe-tanjong-pagar",
+      name: "Visitors Cafe · 丹戎巴葛韩系网红咖啡馆",
+      categories: ["dessert", "restaurant"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$10–25",
+      description: "姐妹们！丹戎巴葛新开的这家 Visitors Cafe 真的绝绝子，白墙黑框玻璃门一秒拍出首尔圣水洞 (Seongsu) 那味儿，随手一拍都是大片！是 Noci Pasta Bar、Seoul Noodle Shop 同一团队出品，所以颜值和出品都在线。全天供应咖啡和韩式 brunch，奶咖丝滑、欧帕 barista 颜值高，开业就刷屏小红书。想拍照打卡又想好好吃顿早午餐的姐妹冲就对了，工作日去人少不踩雷～",
+      tags: ["韩系咖啡", "网红打卡", "小红书爆款", "brunch"],
+      address: "7 Tanjong Pagar Plaza #01-106, Singapore 081007",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "☕",
+      bgGradient: "linear-gradient(135deg,#f8fafc,#cbd5e1)",
+      catLabel: "咖啡甜点",
+      catDesc: "韩系咖啡馆 / 丹戎巴葛",
+      ratingDesc: "小红书爆款 · 圣水洞风格 brunch",
+      active: true
+    },
+
+    {
+      id: "mimmo-bakery-cafe-asia-square",
+      name: "Mimmo Bakery Cafe · 港式开心果菠萝包",
+      categories: ["dessert", "restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$6–18",
+      description: "藏在 CBD Asia Square 的港式烘焙咖啡馆，把香港老味道和欧式酥皮手艺揉在一起。招牌「开心果菠萝包 (Pistachio Bolo Bao)」一口下去酥脆夹心爆浆，还有各式可颂和蛋糕。上班族下午茶、CBD 约会续命咖啡都很合适，港式情怀党必试。",
+      tags: ["港式烘焙", "开心果", "CBD", "菠萝包"],
+      address: "Asia Square Tower 1 #01-05, 8 Marina View, Singapore 018960",
+      badge: "new",
+      badgeText: "🆕 新开业",
+      emoji: "🥐",
+      bgGradient: "linear-gradient(135deg,#84cc16,#fbbf24)",
+      catLabel: "咖啡甜点",
+      catDesc: "港式烘焙咖啡 / Marina View",
+      ratingDesc: "香港人气烘焙概念进驻 CBD",
+      active: true
+    },
+
+    {
+      id: "mozmoji-south-bridge",
+      name: "MOZmoji 陌迹 · 牛车水隐藏二楼陶艺咖啡",
+      categories: ["dessert"],
+      rating: 4.6,
+      openDate: "2026-05",
+      price: "S$8–18",
+      description: "牛车水 South Bridge Road 二楼的隐藏咖啡馆兼陶艺空间，文艺安静、出片率超高。手作陶器盛着的咖啡和甜点格外有质感：棉花芝士蛋糕、抹茶草莓蛋糕、豆乳芝士、红茶巴斯克都值得点。想躲开人潮、找个角落发呆喝咖啡的话，这里就是答案。",
+      tags: ["陶艺咖啡", "隐藏小店", "甜点", "牛车水"],
+      address: "252 South Bridge Road #02-01, Singapore 058801",
+      badge: "new",
+      badgeText: "🆕 新开业",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#a78bfa,#6d28d9)",
+      catLabel: "咖啡甜点",
+      catDesc: "陶艺咖啡馆 / 牛车水",
+      ratingDesc: "隐藏二楼 · 手作陶器 × 慢咖啡",
+      active: true
+    },
+
 
     // ── 高端餐厅 Fine Dining ──────────────────────
 
@@ -3637,6 +3700,103 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-09 每日更新新增 ──────────────────
+
+    {
+      id: "xinyao-44th-reunion-2026",
+      name: "新谣 44 周年大团圆演唱会 Xinyao 44th Reunion",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "本地新谣经典大团圆",
+      month: "JUL",
+      day: "03",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#0984e3,#74b9ff)",
+      typeLabel: "🎤 本地经典",
+      typeColor: "#0984e3",
+      description: "新加坡本土「新谣」文化 44 周年大团圆！一众新谣元老与歌手齐聚室内体育馆，唱回那些陪伴几代华人长大的经典旋律。对在新加坡的华人家庭来说，这是一场跨越世代的集体回忆，带爸妈一起去最合适。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月3日 晚 7:30",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$78–228",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Xinyao+Reunion+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-03",
+      active: true
+    },
+
+    {
+      id: "li-jian-encore-2026",
+      name: "李健「向往」世界巡演 新加坡安可场",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "音乐诗人加场",
+      month: "JUL",
+      day: "17",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#2d3436,#636e72)",
+      typeLabel: "🎤 华语唱作",
+      typeColor: "#2d3436",
+      description: "「音乐诗人」李健带着《向往》世界巡演安可场重返新加坡！《贝加尔湖畔》《传奇》《风吹麦浪》现场清澈空灵，配上他温柔幽默的谈吐，是一场治愈系的听觉享受。喜欢安静走心唱作的乐迷千万别错过。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月17日 晚",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$108–328",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Li+Jian+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-17",
+      active: true
+    },
+
+    {
+      id: "ungu-wali-concert-2026",
+      name: "UNGU & WALI 印尼摇滚双团联合演唱会",
+      type: "concert",
+      priority: "normal",
+      month: "JUN",
+      day: "27",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#e17055,#d63031)",
+      typeLabel: "🎸 印尼摇滚",
+      typeColor: "#d63031",
+      description: "印尼传奇流行摇滚双团 UNGU 与 WALI 史上首次联合开唱！两支乐队的金曲连唱，能量爆棚。新加坡的印尼乐迷和喜欢东南亚流行摇滚的朋友别错过这场难得的双团同台。",
+      venue: "The Star Theatre",
+      dateRange: "6月27日",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$98–268",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Ungu+Wali+Singapore",
+      btnText: "购票",
+      sortDate: "2026-06-27",
+      active: true
+    },
+
+    {
+      id: "madama-butterfly-opera-2026",
+      name: "歌剧《蝴蝶夫人》Madama Butterfly",
+      type: "event",
+      priority: "normal",
+      month: "JUL",
+      day: "02",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#6c5ce7,#a29bfe)",
+      typeLabel: "🎭 经典歌剧",
+      typeColor: "#6c5ce7",
+      description: "普契尼经典歌剧《蝴蝶夫人》登陆维多利亚剧院！凄美动人的爱情悲剧配上现场交响乐团，是高雅艺术爱好者的盛宴。想带孩子或长辈体验一次正统西洋歌剧、或安排一个有格调的约会夜，这场很合适。",
+      venue: "Victoria Theatre",
+      dateRange: "7月2–4日",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$48–168",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Madama+Butterfly",
+      btnText: "购票",
+      sortDate: "2026-07-02",
+      active: true
+    },
+
+
     // ── ⭐ 重点推荐：华人演唱会 & 世界顶流 ─────────
 
     {
@@ -5590,7 +5750,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/floral-fantasy.html",
       btnText: "购票入园",
       sortDate: "2026-06-08",
-      active: true
+      active: false
     },
 
     // ── 5月20日新增（2026-05-20 更新）─────────────
@@ -6310,6 +6470,54 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-09 每日更新新增 ──────────────────
+
+    {
+      id: "one-ocean-science-centre-jun-2026",
+      name: "ONE Ocean 一片海洋 · 科学馆全球首展",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#2563eb)",
+      ageRange: "最适合 6–12 岁",
+      description: "新加坡科学馆全球首发的沉浸式海洋大展！源自 Tara 海洋基金会 20 多年真实科考成果，10 个互动展区把深海科学变成多感官游乐场。压轴的「海洋七大奇观」360 度环幕投影，蓝鲸迁徙、发光生物、大堡礁就在眼前游过，孩子看得目不转睛。",
+      highlight: "强互动+真实科考内容，7-9岁孩子能边玩边学海洋生态与环保，360度环幕震撼到大人也舍不得走；可玩 1-2 小时不嫌闷",
+      location: "Science Centre Singapore",
+      dateRange: "2026年5月30日–2027年1月3日（每天开放）",
+      cost: "门票 S$13 起",
+      duration: "约1.5–2小时",
+      active: true
+    },
+
+    {
+      id: "playland-hometeamns-khatib-jun14-2026",
+      name: "PLAYLAND 室内嘉年华 · HomeTeamNS Khatib",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#f59e0b,#ef4444)",
+      ageRange: "最适合 4–12 岁",
+      description: "六月学校假期 PLAYLAND 室内嘉年华回归 Khatib！超大充气城堡、嘉年华游戏摊、舞台魔术秀、脸部彩绘一站玩到嗨。一张票含 20 张游戏券和小礼包（前 500 名价值 S$40），家长免费陪同入场。室内空调环境，再热也不怕。",
+      highlight: "室内空调避暑，7-9岁孩子可独立闯关玩 20 个游戏摊换奖品，魔术秀+充气城堡放电一整天，性价比高",
+      location: "HomeTeamNS Khatib, 2 Yishun Walk",
+      dateRange: "6月14日 10:00–19:00（仅此一天）",
+      cost: "儿童 S$10 起，家长免费陪同",
+      duration: "半天或全天",
+      active: true
+    },
+
+    {
+      id: "wild-wild-wet-summer-fiesta-jun-2026",
+      name: "Wild Wild Wet 夏日水上运动嘉年华",
+      icon: "🏄",
+      topGradient: "linear-gradient(90deg,#06b6d4,#0ea5e9)",
+      ageRange: "最适合 6–12 岁",
+      description: "Downtown East 的 Wild Wild Wet 水上乐园推出夏日运动嘉年华，新增海洋生物主题水上游乐场，滑道、漂流、戏水池一应俱全。新加坡的大热天里，没什么比泡在水里更爽了。让孩子放电消暑、全家一起戏水的最佳去处。",
+      highlight: "消暑放电首选，7-9岁孩子有专属深度水池和滑道，新海洋主题乐园好玩又安全，玩一整天不重样",
+      location: "Wild Wild Wet, Downtown East",
+      dateRange: "2026年6月1日–7月19日（暑期限定）",
+      cost: "门票 S$24 起",
+      duration: "半天或全天",
+      active: true
+    },
+
 
     {
       id: "ranger-buddies-2026",
@@ -8071,6 +8279,93 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   movies: [
 
+    // ── 🆕 2026-06-09 每日更新新增 ──────────────────
+
+    {
+      id: "dear-you-ama-2026-06",
+      title: "Dear You",
+      chineseTitle: "给阿嬷的情书",
+      type: "chinese",
+      rating: 7.6,
+      releaseDate: "2026-06-18",
+      genre: "剧情 / 家庭 / 亲情",
+      language: "华语 / 潮汕方言 · 中英文字幕",
+      duration: "约 110 分钟",
+      cast: "李思潼 · 王彦桐 · 吴少卪 · 郑润奇 · 王晓慧",
+      director: "蓝鸿春",
+      description: "一封跨越南洋的「侨批」家书，牵起祖孙两代的思念。导演蓝鸿春用潮汕方言和细腻镜头，讲一段华侨家庭的亲情与乡愁。对在新加坡的华人家庭来说格外戳心——那些写给家乡长辈的信、说不出口的牵挂，看着看着就红了眼眶。适合带爸妈一起看的温情片。",
+      tags: ["华语片", "亲情", "侨批", "潮汕"],
+      posterEmoji: "💌",
+      bgGradient: "linear-gradient(135deg,#b45309,#78350f)",
+      badge: "new",
+      badgeText: "🆕 华语新片",
+      ageGuide: "PG · 全家适宜",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 蓝鸿春（潮汕方言电影《爸，我一定行的》）",
+        "🌟 李思潼 · 王彦桐 · 吴少卪 · 郑润奇 · 王晓慧",
+        "🏆 取材世界记忆遗产「侨批」· 港澳新马文同步上映 · 华侨家庭催泪之作",
+      ],
+      active: true
+    },
+
+    {
+      id: "disclosure-day-2026-06",
+      title: "Disclosure Day",
+      chineseTitle: "揭露日",
+      type: "coming-soon",
+      rating: 7.3,
+      releaseDate: "2026-06-11",
+      genre: "科幻 / 悬疑 / 剧情",
+      language: "英语 / 中英文字幕",
+      duration: "约 120 分钟",
+      cast: "Emily Blunt · Josh O'Connor · Colin Firth",
+      director: "United International Pictures 发行",
+      description: "当人类正式确认外星文明存在的那一天，世界会怎样？三位实力派演员撑起这部高概念科幻悬疑。Emily Blunt 和 Colin Firth 同框飙戏，比起特效爆炸，它更想聊「我们准备好了吗」。喜欢《降临》那种烧脑又有温度的科幻片的影迷必看。",
+      tags: ["科幻", "悬疑", "话题新片"],
+      posterEmoji: "🛸",
+      bgGradient: "linear-gradient(135deg,#1e3a8a,#0f172a)",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "PG13 · 13 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🌟 Emily Blunt · Josh O'Connor · Colin Firth 实力派阵容",
+        "🎬 高概念「第一次接触」科幻题材，主打思辨而非爆破",
+        "🏆 暑期档话题之作 · 适合《降临》《抵达》系科幻迷",
+      ],
+      active: true
+    },
+
+    {
+      id: "animal-farm-2026-06",
+      title: "Animal Farm",
+      chineseTitle: "动物庄园",
+      type: "now-showing",
+      rating: 7.5,
+      releaseDate: "2026-06-11",
+      genre: "动画 / 剧情 / 寓言",
+      language: "英语 / 中英文字幕",
+      duration: "约 100 分钟",
+      cast: "动画配音阵容",
+      director: "Shaw Organisation 发行",
+      description: "改编自乔治·奥威尔传世寓言名著的动画新版。农场里的动物揭竿而起赶走人类、自治建国，却一步步走向新的不平等。表面是会说话的动物，内里是辛辣的政治寓言。家长可以带大一点的孩子一起看，看完聊聊「公平」和「权力」，是很好的思辨启蒙。",
+      tags: ["动画", "寓言", "经典改编"],
+      posterEmoji: "🐖",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      badge: "hot",
+      badgeText: "🔥 经典改编",
+      ageGuide: "PG · 建议 9 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 改编自乔治·奥威尔同名经典寓言小说《动物庄园》",
+        "🌟 全动画呈现，会说话的农场动物群像",
+        "🏆 寓言外壳下的思辨内核 · 适合亲子共看后讨论",
+      ],
+      active: true
+    },
+
+
     {
       id: "toy-story-5-2026-06",
       title: "Toy Story 5",
@@ -8193,20 +8488,20 @@ const SGLIVING_DATA = {
       genre: "动作 / 犯罪",
       language: "英语 / 中英文字幕",
       duration: "约 125 分钟",
-      cast: "—",
-      director: "—",
-      description: "高速追逐+爆破场面拉满，2026 年暑期档动作系硬汉片，影院音响和大银幕加持下体验最佳。爱看《速度与激情》系列的影迷不能错过。",
-      tags: ["动作", "犯罪", "暑期档"],
-      posterEmoji: "🚗",
+      cast: "谢苗 · Joe Taslim · 茶井加奈 Jeeja Yanin · Yayan Ruhian",
+      director: "谷垣健治 Kenji Tanigaki",
+      description: "真打实斗的硬核动作片！谢苗饰演的普通工匠为救被绑架的女儿，单挑整个犯罪帝国。导演谷垣健治是甄子丹御用动作指导，全程拳拳到肉、零替身实拍，多伦多电影节首映口碑爆棚。爱看《杀破狼》《突袭》这类生猛动作戏的影迷别错过大银幕。",
+      tags: ["硬核动作", "实拍打斗", "话题新片"],
+      posterEmoji: "🥊",
       bgGradient: "linear-gradient(135deg,#1e293b,#ef4444)",
       badge: "hot",
       badgeText: "🔥 热映",
       ageGuide: "NC16 · 16 岁以上",
       posterUrl: "",
       highlights: [
-        "🚗 高速追逐 + 爆破系硬汉动作片",
-        "🌟 好莱坞动作明星阵容",
-        "🎬《速度与激情》粉丝必看的同类爽片",
+        "🎬 导演 谷垣健治（甄子丹御用动作指导，《杀破狼2》《导火线》动作设计）",
+        "🌟 谢苗 · Joe Taslim · Jeeja Yanin · Yayan Ruhian · Brian Le",
+        "🏆 多伦多国际电影节首映 · 零替身实拍打斗 · 暑期动作爽片",
       ],
       active: true
     },
