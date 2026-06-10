@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-09",
+    lastUpdated: "2026-06-10",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,28 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-10 每日更新新增 ──────────────────
+
+    {
+      id: "orh-gao-peh-gao-new-bahru-2026-06",
+      name: "Orh Gao Peh Gao · 新潮南洋咖啡店 × 精酿啤酒吧",
+      categories: ["restaurant", "dessert"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "S$3–20",
+      description: "藏在 New Bahru 创意园区里的「日夜双面」概念店：白天是新潮南洋咖啡店 Peh Gao，手工咖椰吐司、咖椰法式吐司配一杯 kopi 唤醒早晨；傍晚 5 点变身 Orh Gao Taproom，14 个精酿啤酒龙头每周轮换，配啷啷叻沙 mee tai mak、螃蟹炒饭、惹味黄姜鸡炒饭。一家店从早坐到晚都不腻，带娃吃早午餐、约朋友小酌都合适，还宠物友好。",
+      tags: ["南洋咖啡", "精酿啤酒", "New Bahru", "宠物友好"],
+      address: "58 Kim Yan Road #02-02, New Bahru, Singapore 239539",
+      badge: "new",
+      badgeText: "🆕 新开业",
+      emoji: "☕",
+      bgGradient: "linear-gradient(135deg,#92400e,#f59e0b)",
+      catLabel: "咖啡 / 餐酒",
+      catDesc: "日咖啡夜精酿 / New Bahru",
+      ratingDesc: "Serene Centre 人气概念进驻 New Bahru",
+      active: true
+    },
 
     // ── 🆕 2026-06-09 每日更新新增 ──────────────────
 
@@ -8278,6 +8300,120 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-06-10 每日更新新增 ──────────────────
+
+    {
+      id: "supergirl-2026-06",
+      title: "Supergirl",
+      chineseTitle: "超级少女",
+      type: "coming-soon",
+      rating: 7.2,
+      releaseDate: "2026-06-26",
+      genre: "动作 / 科幻 / 冒险",
+      language: "英语 · 中英文字幕",
+      duration: "约 130 分钟",
+      cast: "Milly Alcock · Matthias Schoenaerts · Eve Ridley · Jason Momoa · Emily Beecham",
+      director: "Craig Gillespie",
+      description: "DC 新宇宙「神与怪物」篇章的重头戏！《龙之家族》小龙女 Milly Alcock 接棒披上超级少女战袍，演一个比表哥超人更叛逆、更带刺的卡拉。导演说这是一个「反英雄」故事，少了伟光正多了少女心事，还有 Jason Momoa 客串赏金猎人 Lobo。喜欢超英片又想看不一样女主角的别错过暑期档这部。",
+      tags: ["DC", "超级英雄", "暑期大片"],
+      posterEmoji: "🦸‍♀️",
+      bgGradient: "linear-gradient(135deg,#dc2626,#1d4ed8)",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "PG13 · 13 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Craig Gillespie（《我，花样女王》《Cruella》）",
+        "🌟 Milly Alcock · Matthias Schoenaerts · Eve Ridley · Jason Momoa",
+        "🏆 DCU「神与怪物」篇章核心作 · James Gunn 新宇宙重磅角色登场",
+      ],
+      active: true
+    },
+
+    {
+      id: "michael-jackson-2026-06",
+      title: "Michael",
+      chineseTitle: "迈克尔（杰克逊传记）",
+      type: "now-showing",
+      rating: 7.4,
+      releaseDate: "2026-06-06",
+      genre: "传记 / 音乐 / 剧情",
+      language: "英语 · 中英文字幕",
+      duration: "约 140 分钟",
+      cast: "Jaafar Jackson · Colman Domingo · Nia Long · Miles Teller",
+      director: "Antoine Fuqua",
+      description: "「流行之王」迈克尔·杰克逊的传记大片终于上映！由他的亲侄子 Jaafar Jackson 出演，从 Jackson Five 的童星岁月唱到月球漫步封神，舞台内外的高光与争议都搬上银幕。重现《Thriller》《Billie Jean》经典名场面，配上震撼现场感，资深歌迷和喜欢音乐传记片的影迷一定看得热血沸腾。",
+      tags: ["传记", "音乐", "迈克尔·杰克逊"],
+      posterEmoji: "🕺",
+      bgGradient: "linear-gradient(135deg,#1e293b,#7c3aed)",
+      badge: "hot",
+      badgeText: "🔥 话题热映",
+      ageGuide: "PG13 · 13 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Antoine Fuqua（《训练日》《伸冤人》）",
+        "🌟 Jaafar Jackson（MJ 亲侄）· Colman Domingo · Miles Teller",
+        "🏆 重现《Thriller》《Billie Jean》经典名场面 · 流行之王传记巨制",
+      ],
+      active: true
+    },
+
+    {
+      id: "mortal-kombat-2-2026-06",
+      title: "Mortal Kombat II",
+      chineseTitle: "真人快打 2",
+      type: "now-showing",
+      rating: 6.8,
+      releaseDate: "2026-06-05",
+      genre: "动作 / 奇幻 / 武打",
+      language: "英语 · 中英文字幕",
+      duration: "约 115 分钟",
+      cast: "Karl Urban · Lewis Tan · Jessica McNamee · Hiroyuki Sanada",
+      director: "Simon McQuoid",
+      description: "经典格斗游戏改编续集回归！这一部加入了万众期待的 Johnny Cage（Karl Urban 饰），地球勇士们要在外域的生死擂台上力阻 Shao Kahn 的黑暗统治。招式还原游戏、血脉偾张的「Fatality」终结技一个不少，喜欢爽快打斗和游戏 IP 情怀的影迷可以放心进场。",
+      tags: ["动作", "游戏改编", "格斗"],
+      posterEmoji: "🐉",
+      bgGradient: "linear-gradient(135deg,#991b1b,#0f172a)",
+      badge: "new",
+      badgeText: "🆕 正在热映",
+      ageGuide: "M18 · 18 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Simon McQuoid（《真人快打》系列）",
+        "🌟 Karl Urban 饰 Johnny Cage · Lewis Tan · Hiroyuki Sanada",
+        "🎬 经典格斗游戏改编 · 招牌「Fatality」终结技还原",
+      ],
+      active: true
+    },
+
+    {
+      id: "digital-circus-last-act-2026-06",
+      title: "The Amazing Digital Circus: The Last Act",
+      chineseTitle: "神奇数字马戏团：最终章",
+      type: "family",
+      rating: 7.6,
+      releaseDate: "2026-06-05",
+      genre: "动画 / 冒险 / 喜剧",
+      language: "英语 · 中英文字幕",
+      duration: "约 95 分钟",
+      cast: "Lizzie Freeman · Michael Kovach · Alex Rochon",
+      director: "Gooseworx",
+      description: "全网爆红的独立动画《神奇数字马戏团》终于登上大银幕！被困在虚拟马戏团世界里的 Pomni 和小伙伴们，要一起闯过最后的冒险关卡。色彩绚烂、脑洞大开、又夹着一点温情，7-9 岁孩子看得咯咯笑，大人也会被天马行空的设定圈粉。亲子一起看的轻松动画首选。",
+      tags: ["动画", "家庭", "网红 IP"],
+      posterEmoji: "🎪",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#ec4899)",
+      badge: "new",
+      badgeText: "🆕 家庭动画",
+      ageGuide: "PG · 全家适宜（建议 7 岁以上）",
+      posterUrl: "",
+      highlights: [
+        "🎬 创作者 Gooseworx（YouTube 现象级动画原班人马）",
+        "🌟 Lizzie Freeman · Michael Kovach · Alex Rochon 原版配音",
+        "🎬 全网爆红独立动画大银幕完结篇 · 脑洞与温情兼具",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-06-09 每日更新新增 ──────────────────
 
