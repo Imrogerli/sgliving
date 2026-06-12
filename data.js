@@ -27,6 +27,88 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   restaurants: [
 
+    // ── 🐸 2026-06-12 牛蛙/田鸡专题新增 ──────────────
+
+    {
+      id: "geylang-lor9-lion-city-frog-2026-06",
+      name: "芽笼九巷活田鸡（狮城 Lion City）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "S$15–30/人",
+      description: "说到新加坡最嫩的田鸡，绕不开芽笼九巷这家招牌老店！现点现做的活田鸡，宫保口味是镇店之宝——浓稠微辣带甜的酱汁裹着 Q 弹嫩滑的蛙腿肉，轻轻一抿就脱骨，配一碗绵滑到拉丝的白粥，深夜来一锅幸福感爆棚。营业到凌晨 3 点半，是本地人公认的夜宵圣地，吃完再沿着芽笼散个步，老新加坡的烟火气都在这了。",
+      tags: ["田鸡粥", "夜宵", "芽笼", "老字号"],
+      address: "235 Geylang Road, Lorong 9, Singapore 389294",
+      badge: "classic",
+      badgeText: "🏆 老字号名店",
+      emoji: "🐸",
+      bgGradient: "linear-gradient(135deg,#b45309,#16a34a)",
+      catLabel: "🍲 砂煲田鸡",
+      catDesc: "芽笼九巷 · 宫保田鸡",
+      ratingDesc: "本地人夜宵首选",
+      active: true
+    },
+
+    {
+      id: "g7-sinma-frog-porridge-2026-06",
+      name: "G7 新马活海鲜·田鸡粥（芽笼三巷）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "S$8/只起（买二送一）",
+      description: "1999 年开到现在的芽笼老店，田鸡和辣椒螃蟹双招牌！干辣椒牛蛙和姜葱牛蛙都是现杀现煮，肉质鲜嫩弹牙，酱汁浓郁下粥一绝。最香的是它的算法：买 2 只送 1 只，买 3 只送 2 只还送粥，人多去吃越吃越划算。砂煲上桌还在咕嘟咕嘟冒泡，配一杯蜂蜜柠檬爱玉冰，宵夜吃到凌晨 2 点半都没问题。",
+      tags: ["田鸡粥", "海鲜", "芽笼", "夜宵"],
+      address: "161/163 Geylang Road, Lorong 3, Singapore 389239",
+      badge: "classic",
+      badgeText: "🏆 27 年老店",
+      emoji: "🦞",
+      bgGradient: "linear-gradient(135deg,#dc2626,#16a34a)",
+      catLabel: "🍲 田鸡+海鲜",
+      catDesc: "买二送一 · 越多越划算",
+      ratingDesc: "芽笼人气老店",
+      active: true
+    },
+
+    {
+      id: "tiong-shian-porridge-2026-06",
+      name: "Tiong Shian 长城砂煲田鸡粥（牛车水）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "S$8–20/人",
+      description: "不想跑芽笼？牛车水 New Bridge Road 这家粥品老店帮你解决田鸡瘾！砂煲田鸡粥的粥底是灵魂——绵密带米香，还有一丝料酒的暖意，大块姜葱田鸡腿嫩得筷子一碰就散。最贴心的是营业到凌晨 4 点，唐人街逛到半夜随时有热粥等你，加一颗卤蛋更是点睛之笔。住市区的朋友想吃宵夜，认准它就对了。",
+      tags: ["田鸡粥", "牛车水", "深夜营业", "粥品"],
+      address: "265 New Bridge Road, Singapore 088745",
+      badge: "classic",
+      badgeText: "🏆 深夜食堂",
+      emoji: "🥣",
+      bgGradient: "linear-gradient(135deg,#0f766e,#fbbf24)",
+      catLabel: "🍲 砂煲粥品",
+      catDesc: "牛车水 · 营业到凌晨4点",
+      ratingDesc: "市区田鸡粥代表",
+      active: true
+    },
+
+    {
+      id: "sin-heng-kee-porridge-2026-06",
+      name: "新兴记粥品 Sin Heng Kee（后港）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "S$8–25/人",
+      description: "自封「粥品专家」可不是吹的——20 多种粥任选，干辣椒田鸡腿是隐藏王牌！田鸡新鲜嫩滑，但真正封神的是那碗粥底：熬到米水交融、入口像奶油一样顺滑，配 8 毛钱一份的酥脆油条，咸香交织好吃到舔碗。东北部的家庭想吃田鸡不用跑芽笼，后港这家从早上 7 点开到晚上 9 点半，带娃吃早午晚餐都合适。",
+      tags: ["田鸡粥", "后港", "粥品专家", "亲子友好"],
+      address: "Blk 685 Hougang Street 61, #01-150, Singapore 530685",
+      badge: "hot",
+      badgeText: "🔥 粥品专家",
+      emoji: "🍚",
+      bgGradient: "linear-gradient(135deg,#65a30d,#fde68a)",
+      catLabel: "🍲 滑粥田鸡",
+      catDesc: "后港 · 20+ 种粥品",
+      ratingDesc: "东北部人气王",
+      active: true
+    },
+
     // ── 🆕 2026-06-12 每日更新新增 ──────────────────
 
     {
