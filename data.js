@@ -27,6 +27,48 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   restaurants: [
 
+    // ── 🐸 2026-06-12 牛蛙专题追加（非田鸡粥） ────────
+
+    {
+      id: "gelaoguan-bullfrog-hotpot-2026",
+      name: "哥老官 Ge Lao Guan 重庆美蛙鱼头火锅（武吉士）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-01",
+      price: "自助 S$28.80++ 起/人",
+      description: "排队王中王来新加坡了！2014 年上海开业 10 个月卖掉 50 万只牛蛙、常年霸榜商场排队榜第一的哥老官，首店落地 Liang Seah Street。牛油锅底里咕嘟着的美蛙嫩到筷子一夹肉就离骨，麻辣鲜香一口上头，鱼头吸饱汤汁更是精华。有单点也有自助，工作日午市自助 S$28.80++ 就能牛蛙吃到饱，还送冰淇淋甜品。在国内排过三小时队的朋友，这里不用等那么久，冲！",
+      tags: ["牛蛙火锅", "美蛙鱼头", "重庆火锅", "中国品牌", "武吉士"],
+      address: "26 Liang Seah Street, Singapore 189047",
+      badge: "hot",
+      badgeText: "🔥 中国排队王",
+      emoji: "🐸",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#f59e0b)",
+      catLabel: "🍲 美蛙火锅",
+      catDesc: "上海神级排队品牌首店",
+      ratingDesc: "牛蛙火锅天花板",
+      active: true
+    },
+
+    {
+      id: "frog-meat-fish-head-mosque-2026",
+      name: "美蛙鱼头自助火锅 Frog Meat Fish Head（牛车水）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-06",
+      price: "自助 S$24.80–29.80/人",
+      description: "牛车水的宝藏自助火锅！锅底直接选「美蛙+鱼头」双拼，蛙肉嫩滑、鱼头胶质满满，60 多种食材免费续：美国肥牛、猪五花、羊肉卷随便涮。最戳中国胃的是 DIY 奶茶站——珍珠自己加，奶茶无限续杯，吃辣吃到冒汗来一口太治愈了。工作日午市 S$24.80 的价格在新加坡算良心，营业到凌晨 1:30，夜宵局也安排得上。",
+      tags: ["牛蛙火锅", "自助餐", "牛车水", "免费奶茶", "夜宵"],
+      address: "5 Mosque Street, Singapore 059485",
+      badge: "hot",
+      badgeText: "🔥 高性价比自助",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#ea580c,#84cc16)",
+      catLabel: "🍲 美蛙自助",
+      catDesc: "60+ 食材 · 奶茶免费续",
+      ratingDesc: "牛车水人气自助",
+      active: true
+    },
+
     // ── 🐸 2026-06-12 牛蛙/田鸡专题新增 ──────────────
 
     {
