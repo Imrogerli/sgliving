@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-10",
+    lastUpdated: "2026-06-12",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,128 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-12 每日更新新增 ──────────────────
+
+    {
+      id: "xhs-wah-kungfu-2026-06",
+      name: "蛙功夫 Wah KungFu（牛车水店）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "S$30–60/人",
+      description: "姐妹们！新加坡吃蛙首选真的非它莫属！全岛第一家夜店风炭烧牛蛙店，10 种口味花式牛蛙＋8 种特色烤鱼，紫苏牛蛙嫩到筷子一夹就脱骨，麻辣烤鱼是正宗川渝那个味儿！套餐 S$29.8++ 起还有折扣，人均不贵。牛车水店是酷酷夜店风，武吉士店是日式居酒屋风，拍照都好出片，晚上想吃宵夜烧烤直接冲，绝绝子！",
+      tags: ["小红书爆款", "牛蛙", "烤鱼", "川菜", "宵夜"],
+      address: "27 Mosque Street, Singapore 059505",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🐸",
+      bgGradient: "linear-gradient(135deg,#16a34a,#b91c1c)",
+      catLabel: "🌶️ 川味炭烧",
+      catDesc: "牛蛙·烤鱼·烧烤",
+      ratingDesc: "小红书高赞打卡",
+      active: true
+    },
+
+    {
+      id: "jiho-hanbang-samgyetang-2026-06",
+      name: "JIHO Hanbang Samgyetang SBCD（韩方参鸡汤）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "S$25–45/人",
+      description: "1991 年创立的韩国国民参鸡汤老字号，全球 80 多家店，刚刚在牛车水 18 Cross Street 开出新加坡首店！招牌是用「韩方」草本古法炖足火候的参鸡汤，汤头浓郁回甘，鸡肚里塞满糯米和人参，一碗下肚整个人都暖了。新加坡常年空调房里待着的朋友，来这碗滋补汤水比 K-BBQ 舒服多了，带爸妈来也特别合适。",
+      tags: ["韩餐", "参鸡汤", "滋补", "牛车水"],
+      address: "18 Cross Street, #B1-01, 18 Cross, Singapore 048423",
+      badge: "new",
+      badgeText: "🆕 6月新店",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#92400e,#fbbf24)",
+      catLabel: "🇰🇷 韩式滋补",
+      catDesc: "韩国 80+ 店老字号",
+      ratingDesc: "韩国国民级连锁",
+      active: true
+    },
+
+    {
+      id: "planet-melmac-haji-lane-2026-06",
+      name: "Planet Melmac Chick 'N Chips（美式炸鸡）",
+      categories: ["snack"],
+      rating: 4.4,
+      openDate: "2026-05",
+      price: "S$9.90–22.90/人",
+      description: "被称为「新加坡版 Raising Cane's」的宇宙主题美式炸鸡店，开在 Arab Street 网红街区！炸鸡外皮酥到掉渣、里面汁水丰盈，辣味版更上头。灵魂在蘸酱——Cheesy Cosmos 芝士酱和 Milky Way 蒜香蛋黄酱，蘸薯条都能吃出幸福感。单人套餐 S$9.90 起，逛完哈芝巷来一份，性价比和满足感都在线。",
+      tags: ["美式炸鸡", "网红店", "Arab Street"],
+      address: "23 Arab Street, Singapore 199722",
+      badge: "hot",
+      badgeText: "🔥 排队新店",
+      emoji: "🍗",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#f59e0b)",
+      catLabel: "🍟 美式快餐",
+      catDesc: "Raising Cane's 平替",
+      ratingDesc: "开业即排队",
+      active: true
+    },
+
+    {
+      id: "freshio-gelato-maxwell-2026-06",
+      name: "Freshio Gelato（Maxwell 新店）",
+      categories: ["dessert"],
+      rating: 4.9,
+      openDate: "2026-06",
+      price: "S$5.80–12/人",
+      description: "70 岁老夫妇经营的宝藏 Gelato 店开二店了！Bencoolen 老店 1500+ 条 Google 评价稳稳 4.9 星，新店开进 Maxwell 旁边 1920 年代老洋楼改造的 KADA，离麦士威熟食中心两分钟。16 种口味每天现做，西西里开心果和土耳其榛子是镇店之宝，开心果 Affogato 热咖啡浇冰淇淋一口入魂。吃完田鸡粥来一球，完美收尾。",
+      tags: ["Gelato", "甜品", "Maxwell", "老字号"],
+      address: "1 Kadayanallur Street, KADA, Singapore 069184",
+      badge: "new",
+      badgeText: "🆕 6月新店",
+      emoji: "🍨",
+      bgGradient: "linear-gradient(135deg,#10b981,#a7f3d0)",
+      catLabel: "🍦 手工冰淇淋",
+      catDesc: "4.9 星神店二号店",
+      ratingDesc: "1500+ 评价 4.9 星",
+      active: true
+    },
+
+    {
+      id: "skai-pooh-high-tea-2026-06",
+      name: "SKAI · 维尼熊主题下午茶「Tea with a Little Hunny」",
+      categories: ["dessert", "finedining"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "成人 S$78++ / 儿童 S$39++",
+      description: "Swissôtel 70 楼高空下午茶变身百亩森林！6 月 1 日至 8 月 31 日限定的维尼熊主题 high tea，金色蜂蜜柠檬泡芙做成气球形状，白桃蜂蜜「花蜜花园」上还停着一只白巧克力小蜜蜂，咸点有帕尔马火腿野餐卷。配着全城最高的天际线景观，带孩子来过生日或纪念日，仪式感直接拉满。记得提前订位！",
+      tags: ["下午茶", "维尼熊", "高空景观", "亲子"],
+      address: "2 Stamford Road, Level 70, Swissôtel The Stamford, Singapore 178882",
+      badge: "new",
+      badgeText: "🆕 限定下午茶",
+      emoji: "🍯",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#fde68a)",
+      catLabel: "🐻 主题下午茶",
+      catDesc: "6/1–8/31 限定",
+      ratingDesc: "70 楼天际线景观",
+      active: true
+    },
+
+    {
+      id: "malaysia-boleh-jurong-point-2026-06",
+      name: "Malaysia Boleh!（裕廊坊翻新重开）",
+      categories: ["snack"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "S$5–15/人",
+      description: "西部人民的食堂回来了！Jurong Point 的 Malaysia Boleh! 翻新重开，槟城炒粿条、巴生肉骨茶、KL 辣椒板面、砂煲鸡饭、槟城路驰名煎蕊这些老朋友都在，还多了几样独家：南记包的手工菠菜面汤，以及新加坡首发的芙蓉烧包——黑胡椒猪肉馅酥皮烤包，一口下去满嘴香。不用过长堤，马来西亚街头味一站吃齐。",
+      tags: ["大马美食", "美食广场", "裕廊", "平价"],
+      address: "1 Jurong West Central 2, #03-28, Jurong Point, Singapore 648886",
+      badge: "hot",
+      badgeText: "🔥 翻新重开",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#dc2626,#fbbf24)",
+      catLabel: "🇲🇾 大马风味",
+      catDesc: "独家新档口进驻",
+      ratingDesc: "西部人气美食广场",
+      active: true
+    },
 
     // ── 🆕 2026-06-10 每日更新新增 ──────────────────
 
@@ -3722,6 +3844,31 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-12 每日更新新增 ──────────────────
+
+    {
+      id: "park-jihoon-reflect-2026-07",
+      name: "朴志训 PARK JIHOON · [RE:FLECT] Fancon Tour",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "11",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#8b5cf6,#ec4899)",
+      typeLabel: "🎤 K-pop Fancon",
+      typeColor: "#8b5cf6",
+      description: "Wanna One 出身的「眨眼狂魔」朴志训带着 [RE:FLECT] fancon 巡演来新加坡！演员·歌手双栖发展的他，这次近距离 fancon 形式既有舞台表演又有互动环节，粉丝福利拉满。The Theatre at Mediacorp 场地不大，座位离舞台都很近，追星性价比超高。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "7月11日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "票价以 SISTIC 公布为准",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Park+Jihoon",
+      btnText: "购票",
+      sortDate: "2026-07-11",
+      active: true
+    },
+
     // ── 🆕 2026-06-09 每日更新新增 ──────────────────
 
     {
@@ -6493,6 +6640,23 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-06-12 每日更新新增 ──────────────────
+
+    {
+      id: "skai-pooh-family-high-tea-2026",
+      name: "维尼熊主题高空下午茶 · SKAI 70 楼",
+      icon: "🍯",
+      topGradient: "linear-gradient(90deg,#f59e0b,#fde68a)",
+      ageRange: "适合 4–12 岁（儿童价 S$39++）",
+      description: "Swissôtel The Stamford 70 楼的「Tea with a Little Hunny」维尼熊主题下午茶，6 月 1 日–8 月 31 日限定。气球形状的金色蜂蜜柠檬泡芙、停着白巧克力小蜜蜂的白桃甜品、野餐篮造型的咸点，每一道都是百亩森林的小心思，还配主题无酒精特调。",
+      highlight: "7-9 岁孩子正是熟悉维尼熊故事的年纪，找甜品里的彩蛋像寻宝；70 楼俯瞰全城天际线，雨天也能玩，是放电一上午后最优雅的休息站",
+      location: "SKAI, Swissôtel The Stamford, 2 Stamford Road Level 70",
+      dateRange: "6月1日–8月31日（每天 12:15pm–5:30pm）",
+      cost: "成人 S$78++ / 儿童 S$39++",
+      duration: "约1.5–2小时",
+      active: true
+    },
+
     // ── 🆕 2026-06-09 每日更新新增 ──────────────────
 
     {
@@ -6823,7 +6987,7 @@ const SGLIVING_DATA = {
       dateRange: "至6月7日",
       cost: "S$10–20/人",
       duration: "约1.5–2小时",
-      active: true
+      active: false
     },
     // ── 4月20日新增 ──────────────────────────────
 
@@ -6839,7 +7003,7 @@ const SGLIVING_DATA = {
       dateRange: "5月19日–6月7日",
       cost: "S$55–175",
       duration: "约2.5小时（含中场休息）",
-      active: true
+      active: false
     },
 
     // ── 4月22日新增 ──────────────────────────────
@@ -7252,7 +7416,7 @@ const SGLIVING_DATA = {
       dateRange: "持续至 6月4日（周末驻扎商场）",
       cost: "🆓 免费体验",
       duration: "约30–60分钟",
-      active: true
+      active: false
     },
 
     {
@@ -7327,7 +7491,7 @@ const SGLIVING_DATA = {
       dateRange: "6月6日–6月7日",
       cost: "S$20起（建议提前预订）",
       duration: "半天",
-      active: true
+      active: false
     },
 
     {
@@ -7895,7 +8059,7 @@ const SGLIVING_DATA = {
       price: "S$15–35",
       bookingUrl: "https://www.activesg.com/events",
       btnText: "查看活动",
-      active: true
+      active: false
     },
 
     {
@@ -8064,7 +8228,7 @@ const SGLIVING_DATA = {
       price: "免费",
       bookingUrl: "https://www.bykido.com/",
       btnText: "注册名额",
-      active: true
+      active: false
     },
 
     {
@@ -8255,7 +8419,7 @@ const SGLIVING_DATA = {
       dateRange: "6月6–7日（本周末）",
       cost: "免费入场 / 部分项目 S$5–15",
       duration: "约 2–4 小时",
-      active: true
+      active: false
     },
 
     {
@@ -8300,6 +8464,120 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-06-12 每日更新新增 ──────────────────
+
+    {
+      id: "moana-live-action-2026-07",
+      title: "Moana",
+      chineseTitle: "海洋奇缘（真人版）",
+      type: "family",
+      rating: 7.0,
+      releaseDate: "2026-07-09",
+      genre: "冒险 / 奇幻 / 家庭",
+      language: "英语 · 中英文字幕",
+      duration: "约 120 分钟",
+      cast: "Catherine Laga'aia · Dwayne Johnson · John Tui · Frankie Adams · Rena Owen",
+      director: "Thomas Kail",
+      description: "迪士尼《海洋奇缘》真人版七月扬帆！巨石强森回归亲自出演半神毛伊，17 岁萨摩亚裔新人 Catherine Laga'aia 银幕首秀就挑大梁演莫阿娜。大海选中的少女、会卖萌的大海、加上《汉密尔顿》导演 Thomas Kail 执导的实景南太平洋风光，看过动画版的孩子一定想看真人版有多燃。暑期亲子档首选，记得留到片尾听《How Far I'll Go》。",
+      tags: ["迪士尼", "真人版", "亲子", "暑期档"],
+      posterEmoji: "🌊",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#14b8a6)",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "PG · 全家适宜",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Thomas Kail（音乐剧《汉密尔顿》艾美+托尼奖得主）",
+        "🌟 Catherine Laga'aia · Dwayne Johnson · Rena Owen",
+        "🏆 迪士尼年度真人化巨制 · 巨石强森回归毛伊一角",
+      ],
+      active: true
+    },
+
+    {
+      id: "the-death-of-robin-hood-2026-07",
+      title: "The Death of Robin Hood",
+      chineseTitle: "罗宾汉之死",
+      type: "coming-soon",
+      rating: 7.1,
+      releaseDate: "2026-07-09",
+      genre: "动作 / 剧情 / 历史",
+      language: "英语 · 中英文字幕",
+      duration: "约 120 分钟",
+      cast: "Hugh Jackman · Jodie Comer · Bill Skarsgård",
+      director: "Michael Sarnoski",
+      description: "狼叔休·杰克曼演一个迟暮的罗宾汉！这不是你熟悉的侠盗冒险片，而是一个伤痕累累的老英雄回望血与谎言的一生，在生死关头做最后抉择的暗黑寓言。《杀死伊芙》Jodie Comer 同台飙戏，导演是把《猪》和《寂静之地：入侵日》拍出灵气的 Michael Sarnoski。想看实力派演技对决的，七月就等它。",
+      tags: ["休·杰克曼", "暗黑史诗", "实力派"],
+      posterEmoji: "🏹",
+      bgGradient: "linear-gradient(135deg,#374151,#065f46)",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "NC16 · 16 岁以上（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Michael Sarnoski（《猪》《寂静之地：入侵日》）",
+        "🌟 Hugh Jackman · Jodie Comer · Bill Skarsgård",
+        "🎬 颠覆传统的暗黑版罗宾汉 · 双影帝影后级演技对决",
+      ],
+      active: true
+    },
+
+    {
+      id: "evil-dead-burn-2026-07",
+      title: "Evil Dead Burn",
+      chineseTitle: "鬼玩人：燃烧",
+      type: "coming-soon",
+      rating: 7.0,
+      releaseDate: "2026-07-09",
+      genre: "恐怖 / 惊悚",
+      language: "英语 · 中英文字幕",
+      duration: "约 100 分钟",
+      cast: "Souheila Yacoub · Hunter Doohan · Luciane Buchanan",
+      director: "Sébastien Vaniček",
+      description: "经典恐怖 IP《鬼玩人》最新篇章！上一部《Evil Dead Rise》口碑票房双丰收，这次由法国新锐导演 Sébastien Vaniček（《群居蜘蛛》）接棒，恐怖氛围只升不降。胆大的恐怖片爱好者七月有福了——记得别一个人看。未成年人就别惦记了，这是纯正 M18 硬核恐怖。",
+      tags: ["恐怖", "经典 IP", "胆大者入"],
+      posterEmoji: "🔥",
+      bgGradient: "linear-gradient(135deg,#7f1d1d,#18181b)",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "M18 · 18 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Sébastien Vaniček（《群居蜘蛛》法国恐怖新锐）",
+        "🌟 Souheila Yacoub · Hunter Doohan · Luciane Buchanan",
+        "🎬 《鬼玩人》系列最新篇 · 前作口碑票房双爆",
+      ],
+      active: true
+    },
+
+    {
+      id: "spider-man-brand-new-day-2026-07",
+      title: "Spider-Man: Brand New Day",
+      chineseTitle: "蜘蛛侠：崭新的一天",
+      type: "coming-soon",
+      rating: 7.5,
+      releaseDate: "2026-07-31",
+      genre: "动作 / 科幻 / 超级英雄",
+      language: "英语 · 中英文字幕",
+      duration: "约 140 分钟",
+      cast: "Tom Holland · Zendaya · Sadie Sink · Jon Bernthal · Mark Ruffalo",
+      director: "Destin Daniel Cretton",
+      description: "荷兰弟回来了！《英雄无归》四年后，全世界都忘记了 Peter Parker，他独自一人在纽约做着无名英雄。这一部由《尚气》导演 Destin Daniel Cretton 执导，惩罚者 Jon Bernthal 和浩克 Mark Ruffalo 都来了，《怪奇物语》Sadie Sink 神秘角色加盟。暑期档压轴超英大片，漫威粉七月底锁定。",
+      tags: ["漫威", "蜘蛛侠", "暑期压轴"],
+      posterEmoji: "🕷️",
+      bgGradient: "linear-gradient(135deg,#dc2626,#1e3a8a)",
+      badge: "hot",
+      badgeText: "🔥 万众期待",
+      ageGuide: "PG13 · 13 岁以上",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Destin Daniel Cretton（《尚气》《正义的慈悲》）",
+        "🌟 Tom Holland · Zendaya · Sadie Sink · Jon Bernthal",
+        "🏆 漫威 2026 暑期压轴 · 惩罚者+浩克同框助阵",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-06-10 每日更新新增 ──────────────────
 
