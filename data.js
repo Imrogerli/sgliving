@@ -27,6 +27,48 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   restaurants: [
 
+    // ── 🐸 2026-06-12 牛蛙专题追加（川菜炒蛙类） ──────
+
+    {
+      id: "old-chengdu-pagoda-2026",
+      name: "老成都川菜馆 Old Cheng Du（牛车水）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "S$30–50/人",
+      description: "想吃地道川味炒牛蛙，认准牛车水 Pagoda Street 这家老字号！泡椒牛蛙是招牌——仔姜的鲜、泡椒的酸辣全部炝进嫩滑的蛙腿肉里，下饭程度危险，配碗白饭能连炫三碗。这家店正宗到上过 CCTV4《一带一路》纪录片，麻婆豆腐、浪子鲶鱼（当天现买需预订）也是必点。营业到凌晨 1:30，吃完还能逛逛夜晚的牛车水。",
+      tags: ["川菜", "泡椒牛蛙", "牛车水", "老字号"],
+      address: "80 Pagoda Street, Singapore 059239",
+      badge: "classic",
+      badgeText: "🏆 央视认证川味",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7c2d12)",
+      catLabel: "🥘 川味炒蛙",
+      catDesc: "泡椒牛蛙 · 正宗成都味",
+      ratingDesc: "牛车水川菜代表",
+      active: true
+    },
+
+    {
+      id: "charcoal-grill-legend-kovan-2026",
+      name: "炉火传奇 The Charcoal Grill Legend（高文）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-06",
+      price: "S$25–45/人",
+      description: "东北部川湘菜宝藏！招牌泡椒牛蛙（S$26.8）蛙肉嫩得像豆腐，泡椒酸辣开胃，连汤汁都想打包回家拌饭。另一绝是腰果酱烤鱼——烤得外香里嫩再浇上浓郁酱汁，咕嘟咕嘟端上桌，香到隔壁桌探头。开在 Kovan 心怡广场，住后港、实龙岗一带的川菜爱好者不用进城就能解馋。",
+      tags: ["川湘菜", "泡椒牛蛙", "烤鱼", "高文"],
+      address: "Heartland Mall, 205 Hougang Street 21, Singapore 530205",
+      badge: "hot",
+      badgeText: "🔥 东北部人气",
+      emoji: "🔥",
+      bgGradient: "linear-gradient(135deg,#ea580c,#991b1b)",
+      catLabel: "🥘 川湘炒蛙",
+      catDesc: "泡椒牛蛙 · 烤鱼双绝",
+      ratingDesc: "Kovan 邻里宝藏",
+      active: true
+    },
+
     // ── 🐸 2026-06-12 牛蛙专题追加（非田鸡粥） ────────
 
     {
