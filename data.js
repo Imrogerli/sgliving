@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-12",
+    lastUpdated: "2026-06-13",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,48 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-13 每日更新新增 ──────────────────
+
+    {
+      id: "bibim-deli-suntec-2026-06",
+      name: "Bibim Deli 拌饭吧（Suntec City）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-03",
+      price: "S$10–20/人（按重量 S$3.88++/100g）",
+      description: "姐妹们！追《黑白厨师：料理阶级大战》的快冲——第一季人气主厨闵庸赫（Min Yohan）首次海外开店就落在新加坡 Suntec City！招牌是 DIY 拌饭，20 多种每日轮换小菜随便夹，按重量秤价超有参与感，自动出饭机太治愈了。CIA 科班出身、在韩国手握 53 家小菜店的大厨手艺，拌进石锅里那一勺辣酱真的绝绝子。人均不到 S$20 就能吃到综艺同款，性价比天花板，避雷点是饭点要排队，错峰去更舒服。",
+      tags: ["韩餐", "DIY拌饭", "黑白厨师同款", "Suntec", "小红书爆款"],
+      address: "3 Temasek Boulevard, Suntec City #B1-172, Singapore 038983",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍚",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#dc2626)",
+      catLabel: "🍚 韩式拌饭",
+      catDesc: "DIY 拌饭 · 综艺主厨同款",
+      ratingDesc: "黑白厨师人气主厨海外首店",
+      active: true
+    },
+
+    {
+      id: "yi-jereme-leung-5th-menu-2026-06",
+      name: "艺 yì by Jereme Leung · 五周年全新菜单（莱佛士酒店）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "S$120–250/人",
+      description: "名厨梁子庚坐镇的莱佛士酒店中餐厅「艺」迎来五周年，端出全新单点与点心菜单，把中国各地方菜重新解构演绎。想找一个有仪式感的场合宴请长辈或谈事，这里的环境、摆盘和服务都拿得出手，地方菜的根脉又让人吃得熟悉安心。预算充足、想体验高阶中餐的可以列入清单。",
+      tags: ["高端中餐", "梁子庚", "莱佛士酒店", "五周年新菜单"],
+      address: "Raffles Hotel Singapore, 1 Beach Road #02-13, Singapore 189673",
+      badge: "finedining",
+      badgeText: "✨ 名厨新菜单",
+      emoji: "🥢",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#1e3a8a)",
+      catLabel: "🥢 高阶中餐",
+      catDesc: "地方菜新演绎 · 五周年",
+      ratingDesc: "莱佛士酒店名厨餐厅",
+      active: true
+    },
 
     // ── 🐸 2026-06-12 牛蛙专题追加（川菜炒蛙类） ──────
 
@@ -4010,6 +4052,101 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-13 每日更新新增 ──────────────────
+
+    {
+      id: "stella-chang-timeless-2026-07",
+      name: "张清芳 Stella Chang · TimeLESS 演唱会·花见",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "华语乐坛常青天后经典重现",
+      month: "JUL",
+      day: "11",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#ec4899,#f59e0b)",
+      typeLabel: "🎤 华语经典",
+      typeColor: "#ec4899",
+      description: "被誉为「华语歌坛百变天后」的张清芳带着 TimeLESS 演唱会登陆圣淘沙名胜世界！横跨数十年的金曲串烧，《激情》《加州阳光》《我还年轻》一首接一首，是 80、90 后回忆杀的现场。想带爸妈一起去看的，这场最合适。",
+      venue: "Resorts World Sentosa",
+      dateRange: "7月11日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "票价以 SISTIC 公布为准",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/stella0726",
+      btnText: "购票",
+      sortDate: "2026-07-11",
+      active: true
+    },
+
+    {
+      id: "centimillimental-cafune-2026-07",
+      name: "Centimillimental World Tour 2026「Cafune」",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "12",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#6366f1,#06b6d4)",
+      typeLabel: "🎤 日系乐队",
+      typeColor: "#6366f1",
+      description: "日本人气乐队 Centimillimental 世界巡演「Cafune」来新加坡！以《干杯》等动漫主题曲走红，旋律抓耳、现场情绪饱满，喜欢日系摇滚和动漫歌的别错过。",
+      venue: "待官方公布",
+      dateRange: "7月12日（周日）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以官方公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://ticketmaster.sg/search?q=Centimillimental+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-12",
+      active: true
+    },
+
+    {
+      id: "nexz-global-showcase-2026-07",
+      name: "NEXZ Global Showcase「Mmchk : Not Typical」",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "17",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#8b5cf6,#ec4899)",
+      typeLabel: "🎤 K-pop Showcase",
+      typeColor: "#8b5cf6",
+      description: "JYP 推出的国际男团 NEXZ 全球 showcase 巡演来新加坡！新生代偶像近距离 showcase 形式，舞台+互动满满，喜欢追新团的粉丝可以抢先打卡。",
+      venue: "待官方公布",
+      dateRange: "7月17日（周五）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以官方公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://ticketmaster.sg/search?q=NEXZ+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-17",
+      active: true
+    },
+
+    {
+      id: "siti-nurhaliza-next-wave-2026-07",
+      name: "Dato' Sri Siti Nurhaliza · The Next Wave Live",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "26",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#22c55e)",
+      typeLabel: "🎤 国民天后",
+      typeColor: "#0ea5e9",
+      description: "马来西亚国宝级歌后 Siti Nurhaliza 以「The Next Wave」纪念出道 30 年，登上新加坡室内体育馆！跨越世代的马来金曲与磅礴现场，马来听众和喜欢东南亚流行的乐迷都值得一去。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月26日（周日）晚 8 点",
+      ticketInfo: "🎫 SISTIC",
+      price: "票价以 SISTIC 公布为准",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Siti+Nurhaliza",
+      btnText: "购票",
+      sortDate: "2026-07-26",
+      active: true
+    },
+
     // ── 🆕 2026-06-12 每日更新新增 ──────────────────
 
     {
@@ -5266,7 +5403,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.skylineluge.com/en/sentosa/",
       btnText: "了解详情",
       sortDate: "2026-06-12",
-      active: true
+      active: false
     },
 
     // ── 5月新增：5月初最新搜集 ──────────────────────
@@ -5620,7 +5757,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.skylineluge.com/en/sentosa/",
       btnText: "查看优惠",
       sortDate: "2026-06-12",
-      active: true
+      active: false
     },
 
     {
@@ -6343,7 +6480,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.heritage.sg/childrensmuseum/whatson/childrens-season---listing-page",
       btnText: "查看详情",
       sortDate: "2026-06-12",
-      active: true
+      active: false
     },
 
     {
@@ -6629,7 +6766,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/childrens-season",
       btnText: "查看详情",
       sortDate: "2026-06-11",
-      active: true
+      active: false
     },
 
     {
@@ -6805,6 +6942,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-13 每日更新新增 ──────────────────
+
+    {
+      id: "super-knockout-suntec-2026-06",
+      name: "SUPER KNOCKOUT 障碍竞技场 · Suntec City 中庭",
+      icon: "🥷",
+      topGradient: "linear-gradient(90deg,#f59e0b,#ef4444)",
+      ageRange: "适合 5–12 岁（含成人挑战区）",
+      description: "Suntec City 中庭变身肾上腺素爆棚的障碍竞技场！忍者式攀爬、闪避区、竞速 Race Night 一应俱全，孩子可以跑跳闯关放电一整个下午。室内空调环境，逛街顺便玩，家长也能下场比拼。",
+      highlight: "7-9 岁孩子体能和好胜心正旺，忍者障碍赛能练协调与平衡，竞速环节激发团队和挑战欲；室内避暑、就在地铁上盖，交通超方便",
+      location: "The Atrium @ Suntec City",
+      dateRange: "六月学校假期期间（详情见商场官网）",
+      cost: "部分项目免费 / 闯关券另购",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "score-big-nex-2026-06",
+      name: "Score Big @ NEX 足球主题游乐场",
+      icon: "⚽",
+      topGradient: "linear-gradient(90deg,#22c55e,#0ea5e9)",
+      ageRange: "适合 4–12 岁",
+      description: "世界杯氛围拉满！NEX 商场变身互动足球乐园，射门挑战、趣味竞技摊位适合全家参与，孩子边玩边学传球射门，热闹又好动。",
+      highlight: "7-9 岁孩子爱跑爱球，射门挑战和互动游戏正好释放精力、培养运动兴趣；商场室内有空调，玩完顺手解决吃饭购物",
+      location: "NEX, 23 Serangoon Central",
+      dateRange: "六月学校假期期间",
+      cost: "多数互动项目免费",
+      duration: "约1小时",
+      active: true
+    },
+
+    {
+      id: "summer-sports-fiesta-downtown-east-2026",
+      name: "Summer Sports Fiesta 2026 · Downtown East",
+      icon: "🏓",
+      topGradient: "linear-gradient(90deg,#06b6d4,#3b82f6)",
+      ageRange: "适合 4–12 岁全家",
+      description: "Downtown East 整个暑期的运动嘉年华，从 6 月 1 日玩到 7 月 19 日！匹克球、戏水区、亲子运动游戏轮番上阵，户外+水上项目结合，是一整个假期都能反复来的放电基地。",
+      highlight: "7-9 岁孩子可尝试匹克球这类新兴运动、建立规则意识；戏水区夏天清凉解暑，活动横跨整个假期，随时来都有得玩",
+      location: "Downtown East, Pasir Ris",
+      dateRange: "2026年6月1日–7月19日",
+      cost: "部分免费 / 部分项目收费",
+      duration: "半天",
+      active: true
+    },
 
     // ── 🆕 2026-06-12 每日更新新增 ──────────────────
 
@@ -8630,6 +8814,64 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-06-13 每日更新新增 ──────────────────
+
+    {
+      id: "letter-to-ama-2026-06",
+      title: "A Letter to A-Ma",
+      chineseTitle: "给阿嬷的情书",
+      type: "chinese",
+      rating: 7.3,
+      releaseDate: "2026-06-18",
+      genre: "剧情 / 家庭 / 亲情",
+      language: "潮汕话 / 华语 · 中英文字幕",
+      duration: "约 110 分钟",
+      cast: "李思潼 · 王彦桐 · 吴少卿 · 郑润奇 · 王晓慧",
+      director: "蓝鸿春",
+      description: "一封跨越南洋的侨批，牵出潮汕阿嬷与孙子两代人的牵挂。背债的孙子远赴泰国寻找传说中的有钱阿公，却揭开多年通信背后一段动人真相。全片以潮汕话讲述、以世界记忆遗产「侨批」为线索，南洋华人家庭的乡愁与情义满满。适合带长辈、带孩子一起看的温情之作，听得懂潮汕话的更会破防。",
+      tags: ["华语片", "亲情", "潮汕", "侨批", "催泪"],
+      posterEmoji: "💌",
+      bgGradient: "linear-gradient(135deg,#b45309,#78350f)",
+      badge: "new",
+      badgeText: "🆕 华语新片",
+      ageGuide: "PG · 全家适宜（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 蓝鸿春（潮汕方言电影代表作《爸,我一定行的》）",
+        "🌟 李思潼 · 王彦桐 · 吴少卿 · 郑润奇 · 王晓慧",
+        "🏆 以世界记忆遗产「侨批」为线索 · 6月18日新马同步上映",
+      ],
+      active: true
+    },
+
+    {
+      id: "gintama-yoshiwara-2026-06",
+      title: "Gintama: Yoshiwara in Flames",
+      chineseTitle: "银魂剧场版：吉原炎上篇",
+      type: "now-showing",
+      rating: 8.2,
+      releaseDate: "2026-06-11",
+      genre: "动画 / 动作 / 喜剧",
+      language: "日语 · 中英文字幕",
+      duration: "约 100 分钟",
+      cast: "杉田智和 · 阪口大助 · 钉宫理惠 · 中井和哉",
+      director: "高松信司",
+      description: "《银魂》经典「吉原炎上篇」剧场版登陆新加坡大银幕！万事屋三人组卷入夜之街吉原的天人之乱，热血战斗与无厘头吐槽照旧两不误，老粉看了直接梦回。笑点和泪点齐飞，是银魂迷绝不能错过的大银幕重温。",
+      tags: ["银魂", "日本动画", "热血", "剧场版"],
+      posterEmoji: "⚔️",
+      bgGradient: "linear-gradient(135deg,#475569,#0f172a)",
+      badge: "hot",
+      badgeText: "🔥 正在热映",
+      ageGuide: "PG13 · 13 岁以上（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 高松信司（《银魂》TV 动画系列总导演）",
+        "🌟 杉田智和 · 阪口大助 · 钉宫理惠 · 中井和哉",
+        "🎬 经典「吉原炎上篇」剧场版 · 热血与吐槽齐飞",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-06-12 每日更新新增 ──────────────────
 
