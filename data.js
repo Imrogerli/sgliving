@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-13",
+    lastUpdated: "2026-06-14",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-14 每日更新新增 ──────────
+
+    {
+      id: "hikiniku-to-come-vivocity-2026-06",
+      name: "Hikiniku to Come 挽肉与米（VivoCity）",
+      categories: ["restaurant"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "S$27.90++/人（套餐）",
+      description: "姐妹们！东京排队排到发指的「挽肉与米」终于来新加坡了，首店就开在 VivoCity！整个菜单只有一个套餐——3 块 90g 炭火烤汉堡排，100% 牛肉店内现绞现烤，一块一块端上桌，配无限量白饭、味噌汤、生鸡蛋和萝卜泥。第一块吃原味、第二块打生鸡蛋、第三块淋酱汁拌饭，一餐三种吃法真的绝绝子！肉汁锁得满满，炭火香气足、火候刚刚好，人均不到 S$30 就能吃到东京同款。避雷点：饭点要排队，错峰去更从容。",
+      tags: ["日式烤汉堡排", "东京网红", "VivoCity", "炭火烧", "小红书爆款"],
+      address: "1 Harbourfront Walk, #01-102/103, VivoCity, Singapore 098585",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍔",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#7c2d12)",
+      catLabel: "🍔 日式汉堡排",
+      catDesc: "炭火现烤 · 东京人气名店",
+      ratingDesc: "东京排队神店海外店",
+      active: true
+    },
+
+    {
+      id: "obongzip-star-vista-2026-06",
+      name: "Obongzip 五福家（The Star Vista）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "S$30–60/人",
+      description: "韩国坐拥 300+ 门店的国民级 K-BBQ「Obongzip 五福家」在 Tanjong Pagar 首店排队不断，终于西进开到 The Star Vista 二店！镇店招牌是那块超大 Grilled Tteok（烤年糕 S$28）——外脆内软、裹上黄豆粉淋蜂蜜，拍照超出片。想多人分食可以点 Obongzip Special（S$108++），火烤辣章鱼、包肉（Bossam）、辣荞麦面一次集齐，小菜还无限续。辣度可选，带朋友来吃最热闹。",
+      tags: ["韩式烤肉", "烤年糕", "Buona Vista", "聚餐"],
+      address: "1 Vista Exchange Green, #01-43/K4, The Star Vista, Singapore 138617",
+      badge: "new",
+      badgeText: "🆕 新开幕",
+      emoji: "🍖",
+      bgGradient: "linear-gradient(135deg,#ea580c,#9a3412)",
+      catLabel: "🍖 韩式烤肉",
+      catDesc: "韩国 300+ 店 · 超大烤年糕",
+      ratingDesc: "韩国国民级 K-BBQ 连锁",
+      active: true
+    },
+
+    {
+      id: "casa-vostra-tampines-2026-06",
+      name: "Casa Vostra（Tampines Mall）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-05",
+      price: "S$20–40/人",
+      description: "东部居民有福了！网红意大利餐厅 Casa Vostra 开到 Tampines Mall，开业即排队。招牌 Newpolitan 披萨、Doublecrunch，以及 Mamma’s Aglio e Olio（S$15++）、阿根廷大虾 Gamberi（S$28++）都吃得到。最惊喜的是与意大利「Carbonara 之王」Chef Luciano Monosilio 联名的招牌 Carbonara Spaghetti（S$21++），猪颊肉配佩科里诺芝士和蛋黄，亲民价吃到米其林级手艺。",
+      tags: ["意大利菜", "Carbonara", "披萨", "Tampines", "性价比"],
+      address: "4 Tampines Central 5, #01-33A, Tampines Mall, Singapore 529510",
+      badge: "trending",
+      badgeText: "🔥 人气意餐",
+      emoji: "🍝",
+      bgGradient: "linear-gradient(135deg,#16a34a,#166534)",
+      catLabel: "🍝 意大利菜",
+      catDesc: "名厨 Carbonara · 人气披萨",
+      ratingDesc: "网红意餐东部新店",
+      active: true
+    },
 
     // ── 🆕 2026-06-13 每日更新新增 ──────────────────
 
@@ -4052,6 +4114,79 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-14 每日更新新增 ──────────
+
+    {
+      id: "my-chemical-romance-sg-2026-07",
+      name: "My Chemical Romance · Live in Singapore",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "情绪摇滚天团时隔多年再临狮城",
+      month: "JUL",
+      day: "18",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#111827,#dc2626)",
+      typeLabel: "🎸 摇滚现场",
+      typeColor: "#dc2626",
+      description: "情绪摇滚传奇 My Chemical Romance 终于来新加坡了！《Welcome to the Black Parade》《Helena》《Teenagery》等金曲现场大合唱，是无数 80、90 后的青春回忆杀。喜欢摇滚、想去现场嘶吼一整晚的别错过，门票 6 月 2 日已在 Ticketmaster 开售。",
+      venue: "Arena @ Singapore EXPO",
+      dateRange: "7月18日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以 Ticketmaster 公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=My+Chemical+Romance+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-18",
+      active: true
+    },
+
+    {
+      id: "douglas-lim-vital-stats-2026-08",
+      name: "Douglas Lim · Vital Stats 栋笃笑",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "22",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#f59e0b,#ec4899)",
+      typeLabel: "🎤 喜剧脱口秀",
+      typeColor: "#f59e0b",
+      description: "马来西亚喜剧才子 Douglas Lim 带着全新单口喜剧 Vital Stats 登陆 Mediacorp 剧院！中英夹杂的本地化段子、对生活与中年的犀利吐槽，笑点密集又接地气，想轻松解压看一场爆笑现场的别错过。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "8月22日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$68–98",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Douglas+Lim",
+      btnText: "购票",
+      sortDate: "2026-08-22",
+      active: true
+    },
+
+    {
+      id: "sigur-ros-sg-2026-08",
+      name: "Sigur Rós · Live in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "17",
+      dow: "周一",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      typeLabel: "🎸 后摇/氛围",
+      typeColor: "#0ea5e9",
+      description: "冰岛后摇传奇 Sigur Rós 重返新加坡！空灵嗓音配上交响乐编制，现场像一场漫游极光的声音之旅，疗愈感拉满。喜欢氛围音乐、想静静沉浸一晚的乐迷强烈推荐。",
+      venue: "待官方公布",
+      dateRange: "8月17日（周一）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以官方公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Sigur+Ros+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-17",
+      active: true
+    },
+
+
     // ── 🆕 2026-06-13 每日更新新增 ──────────────────
 
     {
@@ -4665,7 +4800,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_idle",
       btnText: "购票",
       sortDate: "2026-06-13",
-      active: true
+      active: false
     },
 
     {
@@ -5286,7 +5421,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=richard+clayderman",
       btnText: "购票",
       sortDate: "2026-06-13",
-      active: true
+      active: false
     },
 
     {
@@ -5355,7 +5490,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=I-DLE+Singapore",
       btnText: "购票",
       sortDate: "2026-06-13",
-      active: true
+      active: false
     },
 
     // ── 5月新增（2026-05-04 更新）─────────────────
@@ -6930,7 +7065,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Bandmate+Singapore",
       btnText: "购票",
       sortDate: "2026-06-13",
-      active: true
+      active: false
     }
 
   ],
@@ -6942,6 +7077,24 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-14 每日更新新增 ──────────
+
+    {
+      id: "jewel-lego-stamp-rally-2026-06",
+      name: "Jewel 樟宜 LEGO 集章寻宝 · 学校假期",
+      icon: "🧱",
+      topGradient: "linear-gradient(90deg,#eab308,#ef4444)",
+      ageRange: "适合 4–12 岁",
+      description: "学校假期来 Jewel 樟宜玩集章寻宝！在七个打卡点之间穿梭盖章，集满就能到 LEGO 快闪店兑换专属 LEGO 纪念品。边走边找的动线刚好把整座 Jewel 逛个遍，瀑布、森林谷顺道打卡，室内空调一整天都凉爽。",
+      highlight: "7-9 岁孩子正爱寻宝闯关，七点集章要看地图、记路线，顺便锻炼方向感和耐心；终点的 LEGO 礼物超有成就感，逛完还能在 Jewel 解决吃饭",
+      location: "Jewel Changi Airport",
+      dateRange: "六月学校假期期间（详情见 Jewel 官网）",
+      cost: "集章活动免费 / 消费满额可兑换",
+      duration: "约1–2小时",
+      active: true
+    },
+
 
     // ── 🆕 2026-06-13 每日更新新增 ──────────────────
 
