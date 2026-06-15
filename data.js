@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-14",
+    lastUpdated: "2026-06-15",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-15 每日更新新增 ──────────
+
+    {
+      id: "niku-iku-tampines-hub-2026-06",
+      name: "NiKU iKU 肉行く（Our Tampines Hub 首家堂食店）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "丼饭 S$7.80 起/份",
+      description: "WOK HEY 旗下日式烤肉饭品牌 NiKU iKU，终于在 Our Tampines Hub 开出首家堂食店！店名意思是「要不要去吃肉」，主打现点现烤的烧肉丼和炖煮丼，鳗鱼、牛肉、三文鱼、鸡肉任选，开放式明档看着师傅一份份现烤超有食欲。招牌牛蒡饭把牛蒡直接焖进米饭里多了股清香，还能加蛋卷、温泉蛋、南瓜。最香的是——全程清真认证，S$7.80 起就能吃到，带娃随便点都不心疼。",
+      tags: ["日式烤肉饭", "清真认证", "Our Tampines Hub", "平价丼饭"],
+      address: "1 Tampines Walk, #B1-K10/K11 Our Tampines Hub, Singapore 528523",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🍱",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#b45309)",
+      catLabel: "日式 · 烤肉丼",
+      catDesc: "现点现烤的日式烧肉丼",
+      ratingDesc: "平价又清真，家庭友好",
+      active: true
+    },
+
+    {
+      id: "dudu-yue-cai-eunos-2026-06",
+      name: "DUDU YUE CAI 嘟嘟粤菜",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "人均 S$25–40",
+      description: "姐妹们！这家藏在 Eunos 的嘟嘟粤菜最近在小红书被刷爆了，号称「新加坡首创酥脆蚝煎」——蚝煎不再是软趴趴一坨，而是煎到金黄酥脆、边缘咔嚓响，里面还是爆汁嫩蚝，绝绝子！招牌砂锅煲仔饭锅气十足，揭盖那一刻焦香直冲，锅巴脆到能听见声音。粤式风味做得地道、份量实在，还很贴心地是宠物友好餐厅，遛狗的姐妹可以放心来。避雷提醒：周末饭点人多，建议早点到或先订位。",
+      tags: ["粤菜", "酥脆蚝煎", "煲仔饭", "宠物友好", "小红书爆款"],
+      address: "29 Eunos Ave 6, Singapore 409579",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🦪",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      catLabel: "粤菜 · 煲仔饭",
+      catDesc: "首创酥脆蚝煎与砂锅煲仔饭",
+      ratingDesc: "小红书博主亲测好评",
+      active: true
+    },
+
+    {
+      id: "chagee-tampines1-2026-06",
+      name: "CHAGEE 霸王茶姬（Tampines 1 新店）",
+      categories: ["dessert"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "S$5–8/杯",
+      description: "中国国民茶饮霸王茶姬六月中在 Tampines 1 又开新店啦！招牌「伯牙绝弦」原叶鲜奶茶，茶香浓、奶味顺，主打 0 奶精、低卡无负担，不加料也好喝，是想喝奶茶又怕罪恶感时的稳妥之选。杯身国风插画颜值在线，随手一拍就很出片。东部的姐妹终于不用跑远，逛街顺手带一杯刚刚好。",
+      tags: ["中国茶饮", "原叶鲜奶茶", "低卡", "Tampines 1"],
+      address: "10 Tampines Central 1, Tampines 1, Singapore 529536",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🧋",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#1f2937)",
+      catLabel: "茶饮 · 鲜奶茶",
+      catDesc: "国风原叶鲜奶茶",
+      ratingDesc: "低卡无负担的人气茶饮",
+      active: true
+    },
 
     // ── 🆕 2026-06-14 每日更新新增 ──────────
 
@@ -3957,27 +4019,6 @@ const SGLIVING_DATA = {
       active: true
     },
 
-    {
-      id: "hikiniku-to-come-vivocity-2026-06",
-      name: "Hikiniku To Come · 东京炭火汉堡排",
-      categories: ["restaurant"],
-      rating: 4.6,
-      openDate: "2026-05",
-      price: "S$27.90++",
-      description: "东京吉祥寺爆红的炭火汉堡排专门店空降 VivoCity！招牌套餐 S$27.90 一次享 3 块 90g 汉堡排，现烤现切现上桌，配生鸡蛋黄、味噌汤和无限白饭。Menu 只有这一道，专注度满分，肉食控的极简幸福。",
-      tags: ["新店开业", "东京来的", "炭火汉堡", "无限白饭"],
-      address: "VivoCity #01-102/103, 1 HarbourFront Walk",
-      badge: "trending",
-      badgeText: "🔥 爆款",
-      emoji: "🥩",
-      bgGradient: "linear-gradient(135deg,#8e44ad,#c0392b)",
-      catLabel: "正餐",
-      catDesc: "日式汉堡排 / VivoCity",
-      ratingDesc: "东京 Hikiniku 海外分店 · 极致单品店",
-      lat: 1.2640,
-      lng: 103.8222,
-      active: true
-    },
 
     {
       id: "sukiyakijin-shaw-centre-2026-06",
@@ -4113,6 +4154,102 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   events: [
+
+    // ── 🆕 2026-06-15 每日更新新增 ──────────
+
+    {
+      id: "itzy-tour-sg-2026-10",
+      name: "ITZY · World Tour in Singapore",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "JYP 人气女团连开两晚国家体育场",
+      month: "OCT",
+      day: "02",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#db2777,#7c3aed)",
+      typeLabel: "🎤 K-pop 演唱会",
+      typeColor: "#db2777",
+      description: "JYP 人气女团 ITZY 十月空降新加坡，连开两晚！《WANNABE》《LOCO》《CAKE》等劲歌热舞现场炸裂，五位成员舞台能量爆棚。喜欢 K-pop、想去现场应援打 call 的姐妹快约起来，门票已在 Ticketmaster 开售。",
+      venue: "National Stadium, Singapore Sports Hub",
+      dateRange: "10月2–3日（周五、周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以 Ticketmaster 公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=ITZY+Singapore",
+      btnText: "购票",
+      sortDate: "2026-10-02",
+      active: true
+    },
+
+    {
+      id: "tws-tour-sg-2026-10",
+      name: "TWS · 24/7:FOR:YOU Tour in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "OCT",
+      day: "10",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#6366f1)",
+      typeLabel: "🎤 K-pop 演唱会",
+      typeColor: "#0ea5e9",
+      description: "新生代 K-pop 男团 TWS 带着「24/7:FOR:YOU」巡演首次来新加坡！青春洋溢的旋律加上元气满满的舞台，《plot twist》《Last Festival》一开口就让人跟着蹦。喜欢清新系男团、想感受高能量应援现场的别错过。",
+      venue: "待官方公布",
+      dateRange: "10月10日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以 Ticketmaster 公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=TWS+Singapore",
+      btnText: "购票",
+      sortDate: "2026-10-10",
+      active: true
+    },
+
+    {
+      id: "super-junior-83z-sg-2026-10",
+      name: "SUPER JUNIOR-83z · Fancon Tour [1983] in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "OCT",
+      day: "16",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#2563eb,#1e3a8a)",
+      typeLabel: "🎤 K-pop 见面会",
+      typeColor: "#2563eb",
+      description: "元祖级偶像团体 Super Junior 子单元 83z 带着粉丝见面会巡演 [1983] 来到新加坡！老牌 ELF 的青春回忆杀，舞台与互动满满，经典曲目现场大合唱，资深粉丝绝对要冲。",
+      venue: "待官方公布",
+      dateRange: "10月16日（周五）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以 Ticketmaster 公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Super+Junior+Singapore",
+      btnText: "购票",
+      sortDate: "2026-10-16",
+      active: true
+    },
+
+    {
+      id: "takashimaya-food-fiesta-2026-06",
+      name: "Takashimaya Food Fiesta 2026 美食节",
+      type: "event",
+      priority: "featured",
+      featuredReason: "55 个品牌、23 家新摊主齐聚乌节路",
+      month: "JUN",
+      day: "11",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#e11d48,#f59e0b)",
+      typeLabel: "🍢 美食市集",
+      typeColor: "#e11d48",
+      description: "一年一度的高岛屋美食节回来了！6 月 11–29 日在 Ngee Ann City 地下二层开市，55 个品牌、23 家全新摊主，日式、韩式、台式、本地小吃应有尽有。抹茶控有 Kremi、Gotcha Matcha，还有爆红可定制 affogato，以及 Soon Soon、Joo Chiat Kim Choo 等粽子点心。逛街顺便扫货吃货，一站式满足。",
+      venue: "Takashimaya Square, B2, Ngee Ann City, 391 Orchard Road",
+      dateRange: "6月11–29日 · 每日 10:30am–9:30pm",
+      ticketInfo: "🆓 免费入场",
+      price: "免费入场（美食另购）",
+      priceNote: "Takashimaya",
+      ticketUrl: "https://www.takashimaya.com.sg/takashimaya-square/food-fiesta-2026",
+      btnText: "活动详情",
+      sortDate: "2026-06-29",
+      active: true
+    },
 
     // ── 🆕 2026-06-14 每日更新新增 ──────────
 
@@ -7078,6 +7215,53 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-06-15 每日更新新增 ──────────
+
+    {
+      id: "snow-city-one-last-snowfall-2026",
+      name: "Snow City「One Last Snowfall」告别季",
+      icon: "❄️",
+      topGradient: "linear-gradient(90deg,#38bdf8,#6366f1)",
+      ageRange: "适合 3–12 岁全家",
+      description: "陪伴新加坡 26 年的室内雪城 Snow City 将于 9 月 30 日永久关闭，6 月起推出「One Last Snowfall」告别季！趁还在，带孩子去 -5°C 的室内雪场堆雪人、坐雪圈滑道、打雪仗，体验热带难得的冰雪世界。告别季还有限时 Snow Play 优惠（成人 S$19、儿童 S$16，约 3 折），错过这一冬就真的没有了。",
+      highlight: "7-9 岁孩子在热带很少有机会玩真雪，雪圈滑道又刺激又安全，堆雪人打雪仗能尽情放电；这是关闭前最后的机会、很有纪念意义，记得给孩子穿厚袜、备件外套",
+      location: "Snow City, 21 Jurong Town Hall Road",
+      dateRange: "2026年6月–9月30日（关闭前告别季）",
+      cost: "Snow Play 告别优惠：成人 S$19 / 儿童 S$16",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "scifi-popup-library-parkway-2026",
+      name: "科幻快闪图书馆 · Parkway Parade",
+      icon: "🚀",
+      topGradient: "linear-gradient(90deg,#6366f1,#0ea5e9)",
+      ageRange: "适合 6 岁以上至成人",
+      description: "Parkway Parade 四楼开出一座科幻主题快闪图书馆，近 4000 本科幻小说、漫画、图像小说免费随便读！还有互动电子阅读屏、原版书封画展，以及用生成式 AI 重新演绎经典故事的 StoryGen 沉浸体验。带孩子来一个下午，凉快又长见识。开放到 2027 年 4 月，学校假期超适合。",
+      highlight: "7-9 岁正是爱读图像小说、漫画的年纪，海量科幻藏书能点燃阅读兴趣和想象力；互动电子屏和 AI 故事生成很新奇，免费入场、室内空调，逛商场顺便就能来",
+      location: "Parkway Parade Level 4, 80 Marine Parade Road",
+      dateRange: "即日起至2027年4月11日 · 每日 10am–10pm",
+      cost: "免费入场",
+      duration: "约1小时",
+      active: true
+    },
+
+    {
+      id: "childrens-season-national-museum-2026",
+      name: "博物馆儿童季 · Get Curious! All About The River",
+      icon: "🛶",
+      topGradient: "linear-gradient(90deg,#0d9488,#22c55e)",
+      ageRange: "适合 4–12 岁全家",
+      description: "一年一度的「博物馆儿童季」回来了！国家博物馆这次的主题是「Get Curious! 关于河流的一切」，围绕新加坡河展开互动展览与动手工作坊，今年整体走可持续主题，带孩子边玩边认识水资源、城市与历史的关系。多数活动免费，是六月学校假期最划算的室内长知识去处之一。",
+      highlight: "7-9 岁孩子正爱问「为什么」，河流主题把历史、地理、环保串成一条线，互动展品和工作坊让他们动手又动脑；位于市区交通方便、室内空调，大多免费，性价比超高",
+      location: "National Museum of Singapore, 93 Stamford Road",
+      dateRange: "2026年5月30日–6月28日（学校假期儿童季）",
+      cost: "多数活动免费（部分需报名）",
+      duration: "约1.5–2小时",
+      active: true
+    },
+
     // ── 🆕 2026-06-14 每日更新新增 ──────────
 
     {
@@ -8967,6 +9151,64 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-06-15 每日更新新增 ──────────────────
+
+    {
+      id: "demon-slayer-infinity-castle-2026-08",
+      title: "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      chineseTitle: "鬼灭之刃 无限城篇 剧场版",
+      type: "coming-soon",
+      rating: 8.5,
+      releaseDate: "2026-08-14",
+      genre: "动画 / 动作 / 奇幻",
+      language: "日语 · 中英文字幕",
+      duration: "约 155 分钟",
+      cast: "花江夏树 · 鬼头明里 · 下野紘 · 松冈祯丞 · 樱井孝宏",
+      director: "外崎春雄",
+      description: "现象级动画《鬼灭之刃》最终章「无限城篇」剧场版三部曲第一部，8 月 14 日登陆新加坡大银幕！鬼杀队被卷入无限城，炭治郎、祢豆子与柱们与上弦之鬼展开生死决战，对决无惨的最终战正式拉开序幕。ufotable 封神级作画、燃到炸裂的战斗场面，IMAX 看更过瘾。原作粉与动画迷绝对不能错过的年度大作。",
+      tags: ["鬼灭之刃", "日本动画", "热血", "剧场版", "ufotable"],
+      posterEmoji: "🗡️",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#0f172a)",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "PG13 · 13 岁以上（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 外崎春雄（《鬼灭之刃》TV 动画系列总导演）",
+        "🌟 花江夏树 · 鬼头明里 · 下野紘 · 松冈祯丞 · 樱井孝宏",
+        "🏆 无限城篇三部曲首部 · ufotable 神级作画 · 8月14日新加坡上映",
+      ],
+      active: true
+    },
+
+    {
+      id: "scary-movie-2026-06",
+      title: "Scary Movie",
+      chineseTitle: "惊声尖笑（2026）",
+      type: "now-showing",
+      rating: 6.0,
+      releaseDate: "2026-06-04",
+      genre: "喜剧 / 恐怖 / 恶搞",
+      language: "英语 · 中英文字幕",
+      duration: "约 90 分钟",
+      cast: "Anna Faris · Regina Hall · Marlon Wayans",
+      director: "Keenen Ivory Wayans",
+      description: "经典恶搞喜剧《惊声尖笑》系列时隔多年重启回归大银幕！Wayans 兄弟操刀，原班人马 Anna Faris、Regina Hall 回归，把近年的卖座恐怖片挨个拿来一通无厘头吐槽与戏仿。想轻松解压、跟朋友一起边看边笑到喷的成年观众首选，胆小也不怕——它吓人是假，搞笑是真。",
+      tags: ["恶搞喜剧", "经典重启", "爆笑"],
+      posterEmoji: "🔪",
+      bgGradient: "linear-gradient(135deg,#7f1d1d,#1f2937)",
+      badge: "hot",
+      badgeText: "🔥 正在热映",
+      ageGuide: "M18 · 18 岁以上（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Keenen Ivory Wayans（《惊声尖笑》初代系列缔造者）",
+        "🌟 Anna Faris · Regina Hall · Marlon Wayans 原班人马回归",
+        "🎬 经典恶搞喜剧 IP 重启 · 把当代恐怖片一锅端式吐槽",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-06-13 每日更新新增 ──────────────────
 
