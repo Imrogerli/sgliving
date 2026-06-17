@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-15",
+    lastUpdated: "2026-06-17",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,69 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-17 每日更新新增 ──────────
+
+    {
+      id: "modu-high-amoy-2026-06",
+      name: "Modu High 慕度高级参鸡汤（Amoy Street 旗舰店）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "参鸡汤 S$38 起 / 2人套餐 S$118",
+      description: "姐妹们养生女孩看过来！Mandarin Gallery 排到爆的 Modu 终于在 Amoy Street 开了两层楼的高级店 Modu High，韩屋风装修高级又出片，氛围感拉满。招牌人参鸡汤用 21 天龄有机春鸡塞满糯米、蒜头、红枣、人参，文火慢炖 12 小时，汤头浓到挂勺！新增黑蒜参鸡汤和加了鲍鱼八爪鱼的海鲜版，喝完整个人从里暖到外。还有美容胶原参鸡汤——边吃边变美，绝绝子！避雷提醒：饭点人多记得订位。",
+      tags: ["韩式参鸡汤", "养生", "胶原美容", "Amoy Street", "小红书爆款"],
+      address: "96 Amoy Street, Singapore 069916",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#0d9488,#134e4a)",
+      catLabel: "韩式 · 参鸡汤",
+      catDesc: "12小时慢炖养生参鸡汤",
+      ratingDesc: "养生又出片，小红书热门",
+      active: true
+    },
+
+    {
+      id: "sukiyakijin-shaw-centre-2026-06",
+      name: "SukiyakiJin（Les Amis 寿喜烧新概念）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "人均 S$45++ 起（每锅最少 2 份）",
+      description: "Les Amis 集团最新力作 SukiyakiJin 落户 Shaw Centre 一楼，主打传统寿喜烧但玩出新花样——一座用 A5 和牛堆出来的「和牛山」端上桌，肉食爱好者直接沦陷！招牌番茄寿喜烧酸甜咸鲜交织，和牛吸饱汤汁入口即化，还配小米辣可以加点辣度。汤底最后别浪费，店员会帮你做「第二餐」：芝士烩饭或稻庭乌冬，吸满肉汁香到舔碗。约上家人朋友聚餐、庆生都很合适。",
+      tags: ["寿喜烧", "A5和牛", "Shaw Centre", "聚餐首选"],
+      address: "1 Scotts Road, #01-11 Shaw Centre, Singapore 228208",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      catLabel: "日式 · 寿喜烧",
+      catDesc: "番茄汤底与 A5 和牛山",
+      ratingDesc: "聚餐庆生的和牛盛宴",
+      active: true
+    },
+
+    {
+      id: "asin-carpenter-2026-06",
+      name: "Asin（陈彦宏主厨进阶亚洲料理）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "晚市品尝菜单 S$188++ / 位",
+      description: "去年 Asu 结业曾让食客惋惜，如今主厨 Ace Tan 携手 Suguru 的 Desmond Heng 在 Carpenter Street 开出 Asin，延续他「进阶亚洲料理」的理念。极简空间里有一棵会随季节变化的大树和一幅主厨伴侣专门创作的巨型艺术品，光是看就值回票价。招牌解构版蚝煎小巧却风味十足，泰式 yum pu ma 凉面、胡椒韩牛都让人惊艳，甜点枇杷蜂蜜西米露最合亚洲胃。想找一顿慢悠悠、有格调的庆祝晚餐就是这里了。",
+      tags: ["进阶亚洲料理", "Fine Dining", "品尝菜单", "庆祝约会"],
+      address: "38 Carpenter Street, Singapore 059917",
+      badge: "finedining",
+      badgeText: "🍷 高级餐厅",
+      emoji: "🌿",
+      bgGradient: "linear-gradient(135deg,#475569,#1e293b)",
+      catLabel: "Fine Dining · 亚洲创意",
+      catDesc: "主厨 Ace Tan 进阶亚洲菜单",
+      ratingDesc: "格调与创意兼具的庆祝之选",
+      active: true
+    },
+
 
     // ── 🆕 2026-06-15 每日更新新增 ──────────
 
@@ -4155,6 +4218,102 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-17 每日更新新增 ──────────
+
+    {
+      id: "honne-capitol-sg-2026-08",
+      name: "HONNE · 十周年巡演 in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "04",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#6366f1)",
+      typeLabel: "🎤 流行演唱会",
+      typeColor: "#0ea5e9",
+      description: "英国电子流行二人组 HONNE 带着十周年纪念巡演连开三晚！《Day 1》《Location Unknown》《Warm on a Cold Night》这些柔到心里的旋律现场听更醉人，慵懒又治愈，适合喜欢氛围感、想和另一半一起沉浸的姐妹。门票已在 Ticketmaster 开售。",
+      venue: "Capitol Theatre",
+      dateRange: "8月4–6日（周二至周四）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以 Ticketmaster 公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=HONNE+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-04",
+      active: true
+    },
+
+    {
+      id: "kodaline-star-theatre-sg-2026-08",
+      name: "Kodaline · 告别巡演 in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "08",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#16a34a,#065f46)",
+      typeLabel: "🎤 流行演唱会",
+      typeColor: "#16a34a",
+      description: "爱尔兰乐队 Kodaline 带着告别巡演来新加坡，这可能是现场听《All I Want》《High Hopes》《Brother》的最后机会！主唱真挚的嗓音加上大合唱的氛围，emo 又温暖。喜欢欧美抒情摇滚的别错过，票价 S$148 起。",
+      venue: "The Star Theatre",
+      dateRange: "8月8日（周六）晚 8 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Kodaline+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-08",
+      active: true
+    },
+
+    {
+      id: "mcr-indoor-stadium-sg-2026-11",
+      name: "My Chemical Romance in Singapore",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "传奇摇滚乐队连开两晚室内体育馆",
+      month: "NOV",
+      day: "10",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#b91c1c,#1f2937)",
+      typeLabel: "🎸 摇滚演唱会",
+      typeColor: "#b91c1c",
+      description: "情绪摇滚传奇 My Chemical Romance 重组巡演登陆新加坡，连开两晚！《Welcome to the Black Parade》《Helena》《I'm Not Okay》经典一响起全场起鸡皮疙瘩，老粉的青春回忆杀直接拉满。喜欢摇滚、想在现场嘶吼大合唱的快冲，门票在 SISTIC 开售。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "11月10–11日（周二、周三）",
+      ticketInfo: "🎫 SISTIC",
+      price: "票价以 SISTIC 公布为准",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=My+Chemical+Romance",
+      btnText: "购票",
+      sortDate: "2026-11-10",
+      active: true
+    },
+
+    {
+      id: "douglas-lim-mediacorp-sg-2026-08",
+      name: "Douglas Lim · Vital Stats 栋笃笑",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "22",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#f59e0b,#b45309)",
+      typeLabel: "🎙️ 喜剧脱口秀",
+      typeColor: "#f59e0b",
+      description: "马来西亚知名喜剧人 Douglas Lim 带来全新单口喜剧专场《Vital Stats》！用爆梗吐槽生活日常，中英夹杂接地气，全场笑到肚子痛。想轻松解压、和朋友看场喜剧的别错过，票价 S$68–98，SISTIC 开售。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "8月22日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$68–98",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Douglas+Lim",
+      btnText: "购票",
+      sortDate: "2026-08-22",
+      active: true
+    },
+
+
     // ── 🆕 2026-06-15 每日更新新增 ──────────
 
     {
@@ -7132,7 +7291,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=MAKI+KOLORCOASTER+Singapore",
       btnText: "购票",
       sortDate: "2026-06-16",
-      active: true
+      active: false
     },
 
     {
@@ -7214,6 +7373,54 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-17 每日更新新增 ──────────
+
+    {
+      id: "changi-t3-summer-sports-park-2026",
+      name: "樟宜机场 T3 夏日运动乐园 Summer Sports Park",
+      icon: "🏅",
+      topGradient: "linear-gradient(90deg,#f59e0b,#ef4444)",
+      ageRange: "适合 4–12 岁全家",
+      description: "樟宜机场 T3 把整个航站楼变成夏日运动主题乐园！互动体育游戏、运动主题打卡点、明星见面会轮番上演，凉快的室内空间让孩子尽情奔跑放电，玩累了顺便逛吃机场美食。活动到 7 月 12 日，趁暑假快带娃去。",
+      highlight: "7-9 岁正是精力旺盛、爱跑跳的年纪，运动乐园的互动游戏既能放电又能锻炼协调力；全程室内空调、交通方便（机场地铁直达），玩累了机场美食随便挑，一天轻松搞定",
+      location: "Changi Airport Terminal 3",
+      dateRange: "即日起至2026年7月12日",
+      cost: "多数活动免费（部分需消费兑换）",
+      duration: "约2–3小时",
+      active: true
+    },
+
+    {
+      id: "capitaland-summer-program-2026",
+      name: "CapitaLand 商场夏日玩乐计划（15 家商场）",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#8b5cf6,#ec4899)",
+      ageRange: "适合 3–12 岁全家",
+      description: "CapitaLand 旗下 15 家商场同步开跑夏日玩乐计划！从手作工作坊、互动游戏到消费换好礼，各商场主题不同，离家近的随便挑一家就能遛娃半天。活动横跨整个暑假到 7 月 25 日，凉快又划算的室内亲子去处。",
+      highlight: "7-9 岁孩子爱动手也爱集章换礼，工作坊能培养专注力和创造力；15 家商场总有一家在你家附近，室内空调、吃喝玩乐一站式，暑假打发午后超方便",
+      location: "CapitaLand 旗下 15 家商场（含 Plaza Singapura、Bugis+、IMM 等）",
+      dateRange: "即日起至2026年7月25日",
+      cost: "多数活动免费（部分凭消费参与）",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "united-square-ucamp-2026",
+      name: "United Square U-Camp 假期工作坊",
+      icon: "🔬",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#22c55e)",
+      ageRange: "适合 5–12 岁",
+      description: "「儿童商场」United Square 推出 U-Camp 假期工作坊，10 多场课程任选——科技编程、创意手作、运动体能应有尽有，专为爱动脑、爱创作、爱运动的孩子设计。暑假想给娃安排点有意义又好玩的活动，这里一站搞定。活动到 7 月 12 日。",
+      highlight: "7-9 岁是兴趣启蒙黄金期，编程、手作、体能多元课程能帮孩子发现自己的热爱；商场本身就是亲子友好的「儿童商场」，吃喝休息都方便，家长陪等也不无聊",
+      location: "United Square Shopping Mall, 101 Thomson Road",
+      dateRange: "即日起至2026年7月12日",
+      cost: "工作坊收费不一（部分免费，详见现场报名）",
+      duration: "约1–1.5小时/场",
+      active: true
+    },
+
 
     // ── 🆕 2026-06-15 每日更新新增 ──────────
 
