@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-17",
+    lastUpdated: "2026-06-18",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,69 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-18 每日更新新增 ──────────
+
+
+    {
+      id: "pst-tanjong-pagar-2026-06",
+      name: "Pizza Studio Tamaki（PST 东京网红披萨）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "人均 S$30–45",
+      description: "姐妹们！东京排队排到爆的 Pizza Studio Tamaki（PST）终于来新加坡啦，落户丹戎巴葛原 Tippling Club 旧址，工业风小店超有氛围。招牌东京那不勒斯风披萨——饼边轻盈有嚼劲，用了 30 小时发酵的面团，咸香奶酪配空运日本食材，那一口拉丝绝绝子！主打偏咸口味，配酒一流。位子不多一定要提前订位，避雷踩点高峰直接排到怀疑人生。喜欢披萨的真的别错过这家小红书顶流！",
+      tags: ["东京披萨", "那不勒斯风", "丹戎巴葛", "小红书爆款"],
+      address: "38 Tanjong Pagar Road, Singapore 088461",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍕",
+      bgGradient: "linear-gradient(135deg,#dc2626,#831843)",
+      catLabel: "意式 · 东京风披萨",
+      catDesc: "30小时发酵 · 东京网红直营",
+      ratingDesc: "小红书顶流披萨，出片又好吃",
+      active: true
+    },
+
+    {
+      id: "bouillon-gavroche-mandarin-2026-06",
+      name: "Bouillon Gavroche（巴黎平价法餐 bouillon）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-06",
+      price: "前菜约 S$8 起 / 主菜 S$20+",
+      description: "米其林背景的 Brasserie Gavroche 推出了更轻松平价的姊妹店 Bouillon Gavroche，灵感来自巴黎传统大众食堂 bouillon——好吃的法式家常菜，价格却出奇亲民，在乌节路一带简直难得。勃艮第红酒烩牛肉、油封鸭腿、焦糖布丁这些经典法餐都能轻松点，氛围随意不拘谨，第一次想试法餐又怕踩雷又怕贵的，从这里入门刚刚好。",
+      tags: ["法式料理", "平价法餐", "乌节路", "约会聚餐"],
+      address: "333A Orchard Road, #04-15 Mandarin Gallery, Singapore 238897",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🥖",
+      bgGradient: "linear-gradient(135deg,#1d4ed8,#1e3a8a)",
+      catLabel: "法式 · 平价食堂",
+      catDesc: "巴黎 bouillon 风格家常法餐",
+      ratingDesc: "乌节路难得的平价法餐入门",
+      active: true
+    },
+
+    {
+      id: "milli-sky-dining-2026-06",
+      name: "Milli Sky Dining（国家美术馆顶楼空中餐厅）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "人均 S$120++ 起",
+      description: "新加坡国家美术馆顶楼新开的高空餐厅 Milli，集结了多位重量级主厨，包括米其林一星 Labyrinth 的韩林光（LG Han）主厨。坐拥滨海湾天际线无敌夜景，餐厅、酒吧、Lounge 一应俱全，菜式融合本地风味与精致摆盘，氛围高级又出片。约会纪念日、招待客人、想犒劳自己的特别日子，来这里既有美景又有好菜，仪式感直接拉满。",
+      tags: ["高空餐厅", "天际线夜景", "约会纪念日", "国家美术馆"],
+      address: "1 St Andrew's Road, National Gallery Singapore (Rooftop), Singapore 178957",
+      badge: "new",
+      badgeText: "🆕 新店",
+      emoji: "🌆",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#1e1b4b)",
+      catLabel: "精致餐饮 · 高空景观",
+      catDesc: "米其林主厨坐镇的天台餐厅",
+      ratingDesc: "夜景与美食兼得的约会首选",
+      active: true
+    },
 
     // ── 🆕 2026-06-17 每日更新新增 ──────────
 
@@ -4083,27 +4146,6 @@ const SGLIVING_DATA = {
     },
 
 
-    {
-      id: "sukiyakijin-shaw-centre-2026-06",
-      name: "SukiyakiJIN · A5 和牛山寿喜锅",
-      categories: ["restaurant", "finedining"],
-      rating: 4.7,
-      openDate: "2026-05",
-      price: "S$45–80",
-      description: "Les Amis 集团旗下日本料理品牌全新概念！招牌「番茄山寿喜锅」一座高高耸立的 A5 和牛山伴着 chili padi 微辣番茄汤底，戏剧性十足。S$48/人起（限两人同行），乌节路 Shaw Centre 一楼，午市便当性价比超高。",
-      tags: ["新店开业", "Les Amis 集团", "A5和牛", "番茄寿喜锅"],
-      address: "Shaw Centre #01-11, 1 Scotts Road",
-      badge: "new",
-      badgeText: "✨ 新店",
-      emoji: "🍲",
-      bgGradient: "linear-gradient(135deg,#c0392b,#e67e22)",
-      catLabel: "正餐",
-      catDesc: "日式寿喜锅 / 乌节",
-      ratingDesc: "Les Amis 集团出品 · A5 和牛山寿喜锅",
-      lat: 1.3061,
-      lng: 103.8316,
-      active: true
-    },
 
     {
       id: "xhs-happy-little-lamb-2026-06",
@@ -4217,6 +4259,101 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   events: [
+
+    // ── 🆕 2026-06-18 每日更新新增 ──────────
+
+    {
+      id: "mitski-star-theatre-jul-2026",
+      name: "Mitski in Singapore",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "美国独立音乐才女首度登台 Star Theatre",
+      month: "JUL",
+      day: "21",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#db2777,#7c3aed)",
+      typeLabel: "🎤 流行演唱会",
+      typeColor: "#db2777",
+      description: "美籍日裔独立音乐才女 Mitski 带着新巡演来新加坡！《Your Best American Girl》《Nobody》《My Love Mine All Mine》这些在小红书、抖音爆红的歌曲现场听更上头，她的嗓音细腻又有爆发力，情绪一上来全场大合唱超震撼。喜欢 indie、emo、文艺氛围的姐妹一定要去。票价 S$88 起。",
+      venue: "The Star Theatre",
+      dateRange: "7月21日（周二）晚 8 点",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$88 起",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Mitski",
+      btnText: "购票",
+      sortDate: "2026-07-21",
+      active: true
+    },
+
+    {
+      id: "david-byrne-star-theatre-aug-2026",
+      name: "David Byrne · Who Is The Sky? Tour in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "07",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#0891b2,#1e3a8a)",
+      typeLabel: "🎸 摇滚演唱会",
+      typeColor: "#0891b2",
+      description: "传奇乐队 Talking Heads 灵魂人物 David Byrne 带着全新「Who Is The Sky?」巡演来新加坡！这位新浪潮摇滚教父现场充满艺术感与舞台张力，《Once in a Lifetime》《This Must Be the Place》经典必唱，喜欢复古摇滚、文艺现场的乐迷绝对值回票价。8 月 7 日 Star Theatre，票价以官方公布为准。",
+      venue: "The Star Theatre",
+      dateRange: "8月7日（周五）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以 Ticketmaster 公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=David+Byrne+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-07",
+      active: true
+    },
+
+    {
+      id: "ikon-fourever-sg-jul-2026",
+      name: "iKON FOUREVER WORLD TOUR in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "25",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#1e293b)",
+      typeLabel: "🎤 K-pop 演唱会",
+      typeColor: "#0ea5e9",
+      description: "人气韩团 iKON 带着「FOUREVER」世界巡演来新加坡开唱！《Love Scenario》《Killing Me》以及一首首应援神曲现场气氛炸裂，iKONIC 们准备好应援手幅了吗？喜欢 K-pop、想现场蹦迪打 call 的别犹豫。7 月 25 日开唱，购票认准 Ticketmaster。",
+      venue: "待官方公布",
+      dateRange: "7月25日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以 Ticketmaster 公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=iKON+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-25",
+      active: true
+    },
+
+    {
+      id: "van-gogh-inside-love-vincent-2026",
+      name: "Van Gogh Inside: Love, Vincent 梵高沉浸式特展",
+      type: "exhibition",
+      priority: "normal",
+      month: "JUN",
+      day: "18",
+      dow: "热展中",
+      dateColor: "linear-gradient(135deg,#f59e0b,#1d4ed8)",
+      typeLabel: "🎨 艺术特展",
+      typeColor: "#f59e0b",
+      description: "梵高沉浸式特展「Love, Vincent」在 Parkview Square（百汇广场）展出，200+ 幅名作通过 5 块巨型环绕屏幕扑面而来，《星空》《向日葵》《麦田》在墙面流动，配上古典乐和故事叙述，仿佛走进 19 世纪的荷兰与法国。全程约 1.5 小时，4 岁以上就能看，出片率超高，遛娃约会都合适。",
+      venue: "Parkview Square, 600 North Bridge Road",
+      dateRange: "热展中（每日 10:00–18:00，最后入场 17:00）",
+      ticketInfo: "🎫 Klook / Fever",
+      price: "门票详见 Klook / Fever",
+      priceNote: "Klook",
+      ticketUrl: "https://www.klook.com/en-SG/activity/206722-van-gogh-inside-love-vincent/",
+      btnText: "购票",
+      sortDate: "2026-06-18",
+      active: true
+    },
 
     // ── 🆕 2026-06-17 每日更新新增 ──────────
 
@@ -7373,6 +7510,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-18 每日更新新增 ──────────
+
+    {
+      id: "cat-in-the-hat-victoria-theatre-2026-06",
+      name: "《The Cat in the Hat》戴帽子的猫 亲子舞台剧",
+      icon: "🎭",
+      topGradient: "linear-gradient(90deg,#ef4444,#3b82f6)",
+      ageRange: "适合 3–10 岁全家",
+      description: "经典童书《The Cat in the Hat》搬上维多利亚剧院舞台！下雨天闷在家的两个孩子，被神秘的「戴帽子的猫」带进一场满是恶作剧、魔术和欢笑的冒险。6 月 20 日晚 7:30、6 月 21 日下午 3:30 各一场，英文演出。",
+      highlight: "7-9 岁正是爱听故事、爱看表演的年纪，舞台版把熟悉的绘本变成真人魔术与互动，能培养孩子的专注力和想象力；英文原版台词也是顺便磨耳朵的好机会，看完还能和孩子一起读原著",
+      location: "Victoria Theatre, 9 Empress Place",
+      dateRange: "2026年6月20日（晚7:30）、6月21日（下午3:30）",
+      cost: "需购票（详见 SISTIC）",
+      duration: "约1小时",
+      active: true
+    },
+
+    {
+      id: "dragon-boat-festival-2026-06",
+      name: "新加坡龙舟节 Dragon Boat Festival 2026",
+      icon: "🐉",
+      topGradient: "linear-gradient(90deg,#16a34a,#0891b2)",
+      ageRange: "适合 4 岁以上全家",
+      description: "端午氛围拉满！新加坡龙舟节 6 月 18–21 日在勿洛蓄水池、加冷河等水域开赛，鼓声阵阵、桨手齐划，岸边围观超热血。带娃来感受传统节日气氛，看龙舟竞渡、吃粽子，顺便给孩子讲讲端午由来。免费围观，户外亲水好去处。",
+      highlight: "7-9 岁孩子对竞速、鼓声和团队比赛特别上头，龙舟竞渡能直观感受「团结协作」的力量；结合端午文化讲解，让孩子在玩中了解中华传统节日，比课本生动多了；岸边免费观赛，预算友好",
+      location: "勿洛蓄水池 Bedok Reservoir、加冷河 Kallang River 等",
+      dateRange: "2026年6月18–21日",
+      cost: "免费围观",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "football-fanzone-popup-2026-06",
+      name: "城市足球嘉年华（VR 足球 + Robo Car 足球）",
+      icon: "⚽",
+      topGradient: "linear-gradient(90deg,#22c55e,#f59e0b)",
+      ageRange: "适合 5–12 岁全家",
+      description: "暑假足球热！牛车水 Chinatown Point 设有 VR 足球模拟和免费的 Robo Car 机器人足球，乌节路 Wisma Atria 还有 Nike 足球快闪店。爱踢球、爱科技的小朋友可以一边玩 VR 射门，一边操控机器人小车踢球，动静结合超带感。",
+      highlight: "7-9 岁孩子精力旺盛又爱新鲜玩意，VR 足球和机器人足球把运动和科技结合，既放电又锻炼反应和手眼协调；商场内空调凉快、免费体验为主，遛娃半天不花冤枉钱",
+      location: "Chinatown Point（牛车水）、Wisma Atria（乌节路）",
+      dateRange: "2026年6月（暑假限定）",
+      cost: "多数免费体验",
+      duration: "约1小时",
+      active: true
+    },
 
     // ── 🆕 2026-06-17 每日更新新增 ──────────
 
