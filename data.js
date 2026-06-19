@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-09
+ * 最后更新：2026-06-19
  * 版本：3.2
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-18",
+    lastUpdated: "2026-06-19",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-19 每日更新新增 ──────────
+
+    {
+      id: "nai-nai-flavor-katong-2026-06",
+      name: "Nai Nai Flavor 奶奶味道（杭帮菜首店）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "人均 S$25–40",
+      description: "想念江浙菜的姐妹看过来！杭州人气连锁「奶奶味道」海外首店开在 i12 Katong，主打地道杭帮菜——口味偏清淡鲜甜，不辣不重油，特别合长辈和孩子的胃口。招牌东坡肉（S$8.80 起）肥瘦各半、入口即化，酱香浓郁却不腻；还有用 1300 年古法做的油卜鸡蛋糕，外酥内软层层蛋香。蒸、炖、小炒为主，吃得舒服又不踩雷，一家老小聚餐很合适。",
+      tags: ["杭帮菜", "江浙菜", "东坡肉", "加东"],
+      address: "112 East Coast Road, #02-13/14, i12 Katong, Singapore 428802",
+      badge: "new",
+      badgeText: "🆕 新店开业",
+      emoji: "🥢",
+      bgGradient: "linear-gradient(135deg,#0f766e,#134e4a)",
+      catLabel: "中餐 · 杭帮菜",
+      catDesc: "杭州人气连锁海外首店",
+      ratingDesc: "清淡鲜甜，长辈孩子都爱",
+      active: true
+    },
+
+    {
+      id: "quan-hotpot-rws-2026-06",
+      name: "QUAN Hotpot 泉·火锅（圣淘沙高端火锅）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "套餐人均 S$68 起",
+      description: "姐妹们！圣淘沙名胜世界新开的 QUAN Hotpot 真的封神，氛围高级又出片，约会聚餐都绝绝子～主打「五味」概念，汤底巨多选择：新加坡叻沙椰香锅、四川麻辣锅、慢炖骨汤、滋补药膳鸡汤、泰式茉莉香米菌菇锅，强烈安利胶原药膳鸡汤，越煮越香一点不齁。食材也是高配——韩国老虎虾、带子、鲜鲍、本地农场菌菇、澳洲和牛通通有。S$68 起的套餐丰俭由人，性价比在 atas 火锅里算很可以了，避雷踩点高峰记得订位！",
+      tags: ["火锅", "圣淘沙", "和牛", "约会聚餐", "小红书爆款"],
+      address: "8 Sentosa Gateway, Hotel Michael, Level 1, Resorts World Sentosa, Singapore 098269",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#7c2d12)",
+      catLabel: "火锅 · 高端聚会",
+      catDesc: "五味汤底 · 和牛海鲜",
+      ratingDesc: "氛围高级出片，套餐高性价比",
+      active: true
+    },
+
+    {
+      id: "jiin-omakase-shaw-2026-06",
+      name: "Jiin Omakase（Les Amis 集团日料板前）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "人均 S$200+（晚市套餐）",
+      description: "Les Amis 集团新作 Jiin Omakase，把日式板前 omakase 做得既传统又不端着。坂本三贵主厨在斋藤诚 Group Head Chef 把关下，专攻当季从日本直送的顶级海鲜——招牌伊势龙虾火锅、一口气上五到六款时令刺身，鲜到掉眉毛。最打动人的是那份「おもてなし」式的细腻待客，不像一般高级日料那么拘谨，吃得放松又有仪式感。想犒劳自己或请重要的人，闭眼冲。",
+      tags: ["日料", "Omakase", "板前", "乌节路", "高级日料"],
+      address: "1 Scotts Road, Shaw Centre, #01-11, Singapore 228208",
+      badge: "finedining",
+      badgeText: "🍣 高级日料",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#1e293b,#0c4a6e)",
+      catLabel: "日料 · Omakase",
+      catDesc: "Les Amis 集团 · 日本直送海鲜",
+      ratingDesc: "传统板前，待客细腻不拘谨",
+      active: true
+    },
 
     // ── 🆕 2026-06-18 每日更新新增 ──────────
 
@@ -4260,6 +4322,78 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-19 每日更新新增 ──────────
+
+    {
+      id: "avenged-sevenfold-indoor-stadium-oct-2026",
+      name: "Avenged Sevenfold · Asia Tour 2026 in Singapore",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "金属摇滚天团暌违 11 年重返狮城",
+      month: "OCT",
+      day: "13",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#475569,#0f172a)",
+      typeLabel: "🎸 摇滚演唱会",
+      typeColor: "#475569",
+      description: "等了 11 年！美国金属摇滚天团 Avenged Sevenfold（A7X）带着 Asia Tour 2026 重返新加坡室内体育馆。《Bat Country》《Hail to the King》《Nightmare》这些经典一响起，全场嘶吼跟唱、肾上腺素直接拉满，还会首唱新作。喜欢重摇滚、金属乐的乐迷千万别错过这场久违的盛宴。10 月 13 日晚 8 点，票价 S$128 起，BookMyShow 购票。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "10月13日（周二）晚 8 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$128 起",
+      priceNote: "BookMyShow",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Avenged+Sevenfold+Singapore",
+      btnText: "购票",
+      sortDate: "2026-10-13",
+      active: true
+    },
+
+    {
+      id: "park-jihoon-sg-jul-2026",
+      name: "Park Jihoon Fan-Concert in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "11",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#1e40af)",
+      typeLabel: "🎤 K-pop 演唱会",
+      typeColor: "#0ea5e9",
+      description: "前 Wanna One 人气成员朴志训来新加坡开 fan-concert！清爽帅气的「国民初恋」本人，唱跳实力在线，和粉丝互动超宠粉，现场满满都是甜。喜欢朴志训或想感受近距离韩饭氛围的姐妹别犹豫，7 月 11 日 The Theatre at Mediacorp，SISTIC 购票。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "7月11日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "票价以 SISTIC 公布为准",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Park+Jihoon",
+      btnText: "购票",
+      sortDate: "2026-07-11",
+      active: true
+    },
+
+    {
+      id: "wave-to-earth-indoor-stadium-nov-2026",
+      name: "wave to earth · The Pieces World Tour in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "NOV",
+      day: "20",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#0d9488,#155e75)",
+      typeLabel: "🎸 独立乐队演唱会",
+      typeColor: "#0d9488",
+      description: "小红书爆火的韩国治愈系独立乐队 wave to earth 带着「The Pieces」世界巡演来新加坡啦！《seasons》《bad》《love.》这些慵懒又温柔的旋律现场听直接破防，氛围感拉满。这也是他们生涯目前最大的个唱场地，喜欢 city pop、bedroom indie、想被现场治愈的姐妹一定要去。11 月 20 日晚 8 点新加坡室内体育馆，票价 S$148–358。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "11月20日（周五）晚 8 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148–358",
+      priceNote: "Live Nation / Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=wave+to+earth+Singapore",
+      btnText: "购票",
+      sortDate: "2026-11-20",
+      active: true
+    },
+
     // ── 🆕 2026-06-18 每日更新新增 ──────────
 
     {
@@ -4352,7 +4486,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.klook.com/en-SG/activity/206722-van-gogh-inside-love-vincent/",
       btnText: "购票",
       sortDate: "2026-06-18",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-17 每日更新新增 ──────────
@@ -7511,6 +7645,68 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-06-19 每日更新新增 ──────────
+
+    {
+      id: "splashtopia-2026-06",
+      name: "Splashtopia 2026 夏日水上乐园",
+      icon: "💦",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#22d3ee)",
+      ageRange: "适合 4 岁以上全家",
+      description: "暑假就要玩水！Splashtopia 2026 以热带海岛风为主题，水枪、喷泉、滑道、亲水区一应俱全，孩子可以痛快疯跑、降温消暑，玩上大半天都不腻。新加坡天气热，带娃来一场水花四溅的冒险最解暑。",
+      highlight: "7-9 岁孩子精力旺、爱挑战，水上闯关和滑道既能放电又锻炼胆量和协调性；玩水还能让爱出汗的小朋友舒服降温，比商场遛娃更尽兴；记得带备用衣物和防晒，玩得安心",
+      location: "新加坡（详见官方场地公布）",
+      dateRange: "2026年6月（暑假限定）",
+      cost: "需购票",
+      duration: "约半天",
+      active: true
+    },
+
+    {
+      id: "summer-sports-fiesta-2026-06",
+      name: "Summer Sports Fiesta 2026（Downtown East）",
+      icon: "🏓",
+      topGradient: "linear-gradient(90deg,#16a34a,#84cc16)",
+      ageRange: "适合 5 岁以上全家",
+      description: "Downtown East 的夏日运动嘉年华 6 月 1 日到 7 月 19 日开跑！匹克球、亲水游戏、家庭趣味挑战通通有，一家人可以一起挥拍、戏水、比拼，运动量拉满又欢乐。暑假想让孩子动起来、少看屏幕，来这里准没错。",
+      highlight: "7-9 岁正是培养运动兴趣的黄金期，匹克球上手快、规则简单，全家都能玩到一起；亲水和趣味挑战让孩子在玩中锻炼协调和团队配合；活动周期长，挑个凉快时段去最舒服",
+      location: "Downtown East（巴西立）",
+      dateRange: "2026年6月1日–7月19日",
+      cost: "部分免费，部分项目收费",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "snow-city-farewell-2026-06",
+      name: "Snow City 雪城告别季（关闭前限定）",
+      icon: "❄️",
+      topGradient: "linear-gradient(90deg,#38bdf8,#818cf8)",
+      ageRange: "适合 5 岁以上全家",
+      description: "新加坡唯一的室内雪场 Snow City 将于 2026 年 9 月正式关闭，告别季推出限时优惠套餐——1 小时雪地玩乐＋碰碰车，成人 S$19、儿童 S$16。趁着关门前带娃来体验热带里的真·下雪，堆雪人、滑雪圈，留个珍贵的回忆。",
+      highlight: "7-9 岁孩子在常年炎热的新加坡难得见到真雪，零下雪场是超新鲜的感官体验；玩雪、滑雪圈能锻炼平衡与胆量；这是关闭前的最后机会，纪念意义满满，记得带厚外套（现场也有提供）",
+      location: "Snow City, 21 Jurong Town Hall Road",
+      dateRange: "2026年6月（关闭前限定，9月结业）",
+      cost: "套餐 成人S$19 / 儿童S$16",
+      duration: "约1–2小时",
+      active: true
+    },
+
+    {
+      id: "national-museum-childrens-season-2026-06",
+      name: "国家博物馆 Children\u2019s Season 儿童季",
+      icon: "🏛️",
+      topGradient: "linear-gradient(90deg,#f59e0b,#ef4444)",
+      ageRange: "适合 4–12 岁全家",
+      description: "新加坡国家博物馆「Children\u2019s Season」儿童季 5 月 30 日到 6 月 28 日举行，专为家庭打造互动展览、动手工作坊和探索游戏，让孩子在玩中认识新加坡历史与文化。室内有空调、内容寓教于乐，是暑假避暑长知识的好去处。",
+      highlight: "7-9 岁孩子正对「为什么」充满好奇，博物馆的互动展和动手工作坊把历史变得可触可玩，比课本生动太多；室内凉快、节奏自由，适合亲子慢慢逛；不少活动免费或低价，预算友好",
+      location: "National Museum of Singapore, 93 Stamford Road",
+      dateRange: "2026年5月30日–6月28日",
+      cost: "多数免费（部分工作坊需报名）",
+      duration: "约2小时",
+      active: true
+    },
+
     // ── 🆕 2026-06-18 每日更新新增 ──────────
 
     {
@@ -9542,6 +9738,92 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-06-19 每日更新新增 ──────────────────
+
+    {
+      id: "masters-of-the-universe-2026-06",
+      title: "Masters of the Universe",
+      chineseTitle: "宇宙的巨人 希曼",
+      type: "now-showing",
+      rating: 6.5,
+      releaseDate: "2026-06-05",
+      genre: "动作 / 奇幻 / 冒险",
+      language: "英语 · 中英文字幕",
+      duration: "约 125 分钟",
+      cast: "Nicholas Galitzine · Jared Leto · Idris Elba · Camila Mendes · Alison Brie",
+      director: "Travis Knight",
+      description: "童年回忆「希曼」真人电影大银幕回归！从小被送到地球长大的亚当王子，发现自己的真实身世与「力量之剑」后，化身宇宙巨人希曼，重返家乡 Eternia 对抗大反派骷髅王。视觉特效炸裂、动作场面爽快，正邪对决热血满满。喜欢超级英雄、奇幻冒险的大小朋友都能看得过瘾，适合全家一起进影院。",
+      tags: ["希曼", "真人电影", "奇幻冒险", "Mattel", "经典IP"],
+      posterEmoji: "⚔️",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#1e3a8a)",
+      badge: "hot",
+      badgeText: "🔥 正在热映",
+      ageGuide: "PG13 · 建议 10 岁以上（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Travis Knight（《久保与二弦琴》《大黄蜂》）",
+        "🌟 Nicholas Galitzine · Jared Leto · Idris Elba · Camila Mendes · Alison Brie",
+        "🎬 经典动画 IP 真人化 · 视效大片 · 正邪对决热血燃爽",
+      ],
+      active: true
+    },
+
+    {
+      id: "mandalorian-grogu-2026-05",
+      title: "The Mandalorian and Grogu",
+      chineseTitle: "曼达洛人与格鲁古",
+      type: "now-showing",
+      rating: 7.4,
+      releaseDate: "2026-05-21",
+      genre: "科幻 / 动作 / 冒险",
+      language: "英语 · 中英文字幕",
+      duration: "约 120 分钟",
+      cast: "Pedro Pascal · Sigourney Weaver · Jeremy Allen White · Jonny Coyne",
+      director: "Jon Favreau",
+      description: "《星球大战》人气剧集搬上大银幕！赏金猎人丁·贾林与超萌小绿娃格鲁古（尤达宝宝）再度搭档冒险，在帝国覆灭后的银河里与新共和国联手，对抗仍在作乱的帝国残党。史诗级太空动作＋满屏萌点，格鲁古一出场全场融化。星战迷和带娃家庭都不能错过的合家欢冒险。",
+      tags: ["星球大战", "尤达宝宝", "科幻", "迪士尼", "合家欢"],
+      posterEmoji: "🚀",
+      bgGradient: "linear-gradient(135deg,#0f172a,#334155)",
+      badge: "new",
+      badgeText: "🔥 正在热映",
+      ageGuide: "PG13 · 含少量暴力（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Jon Favreau（《钢铁侠》《狮子王》《曼达洛人》主创）",
+        "🌟 Pedro Pascal · Sigourney Weaver · Jeremy Allen White",
+        "🎬 星战剧集首登大银幕 · 格鲁古超萌 · 合家欢太空冒险",
+      ],
+      active: true
+    },
+
+    {
+      id: "paw-patrol-dino-movie-2026-08",
+      title: "Paw Patrol: The Dino Movie",
+      chineseTitle: "汪汪队立大功 恐龙电影",
+      type: "coming-soon",
+      rating: 6.8,
+      releaseDate: "2026-08-06",
+      genre: "动画 / 冒险 / 家庭",
+      language: "英语 · 中英文字幕",
+      duration: "约 90 分钟",
+      cast: "汪汪队配音阵容",
+      director: "Kallan Kagan",
+      description: "小朋友最爱的汪汪队又回来啦，这次还有恐龙！一场暴风雨把狗狗们卷到神秘的恐龙岛，他们遇到掉队的新伙伴 Rex；当 Humdinger 市长鲁莽采矿引爆了火山，汪汪队必须齐心协力展开史上最大救援，守护小岛和岛上的史前居民。节奏明快、又萌又燃，把恐龙、团队合作和解决问题融在一起，幼龄小朋友会看得超开心。",
+      tags: ["汪汪队", "恐龙", "动画", "家庭", "暑假档"],
+      posterEmoji: "🦖",
+      bgGradient: "linear-gradient(135deg,#ea580c,#15803d)",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "G/PG · 适合学龄前及小学低年级（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 「汪汪队立大功」系列电影最新作 · 恐龙岛大冒险",
+        "🌟 萌犬天团全员出动 · 新伙伴恐龙 Rex 加入",
+        "🎬 寓教于乐 · 团队合作与解决问题 · 学龄前到低年级的暑假首选",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-06-15 每日更新新增 ──────────────────
 
