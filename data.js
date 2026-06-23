@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-19
+ * 最后更新：2026-06-23
  * 版本：3.2
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-19",
+    lastUpdated: "2026-06-23",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -5482,7 +5482,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=NMIXX+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-06-20",
-      active: true
+      active: false
     },
 
     // ── 🎭 中文脱口秀 / 相声 ────────────────────────
@@ -6296,7 +6296,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/gh0626",
       btnText: "购票",
       sortDate: "2026-06-20",
-      active: true
+      active: false
     },
 
     {
@@ -7230,7 +7230,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=muque+Singapore",
       btnText: "购票",
       sortDate: "2026-06-20",
-      active: true
+      active: false
     },
 
     {
@@ -7303,7 +7303,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=5+Seconds+of+Summer+Singapore",
       btnText: "购票",
       sortDate: "2026-06-20",
-      active: true
+      active: false
     },
 
     {
@@ -7327,7 +7327,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=NMIXX+Singapore",
       btnText: "购票",
       sortDate: "2026-06-20",
-      active: true
+      active: false
     },
 
     {
@@ -7492,7 +7492,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=5+Seconds+of+Summer+Singapore",
       btnText: "购票",
       sortDate: "2026-06-20",
-      active: true
+      active: false
     },
 
     {
@@ -7585,7 +7585,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Comedy+Masala+Sasha+Frank",
       btnText: "购票",
       sortDate: "2026-06-20",
-      active: true
+      active: false
     },
 
     {
@@ -7644,6 +7644,23 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-23 每日更新新增 ──────────
+
+    {
+      id: "lau-pa-sat-worldcup-2026-06",
+      name: "Lau Pa Sat 世界杯大屏观赛（130寸巨幕）",
+      icon: "⚽",
+      topGradient: "linear-gradient(90deg,#15803d,#22c55e)",
+      ageRange: "适合 6 岁以上全家",
+      description: "四年一度的世界杯来了！历史地标老巴刹 Lau Pa Sat 架起 130 寸巨型大屏免费转播 2026 世界杯，一边撸着沙嗲、喝着饮料一边和大家一起为进球欢呼，热闹又有氛围。带孩子感受一下万人同欢的体育激情，是难忘的暑假回忆。转播期 6月12日–7月20日。",
+      highlight: "7-9 岁正是认识团队运动的好时候，看世界杯能激发孩子对足球的兴趣、理解什么叫团队配合；老巴刹美食云集，看球＋撸串氛围超棒，全家一起喊「Goal」其乐融融；选孩子不太困的早场比赛、提前到占好位子最舒服",
+      location: "Lau Pa Sat（老巴刹，18 Raffles Quay）",
+      dateRange: "2026年6月12日–7月20日（世界杯期间）",
+      cost: "免费观赛（餐饮自理）",
+      duration: "约 1.5–2 小时（按场次）",
+      active: true
+    },
 
     // ── 🆕 2026-06-19 每日更新新增 ──────────
 
@@ -9738,6 +9755,64 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-06-23 每日更新新增 ──────────────────
+
+    {
+      id: "the-invite-2026-07",
+      title: "The Invite",
+      chineseTitle: "危险邀请",
+      type: "now-showing",
+      rating: 6.5,
+      releaseDate: "2026-07-10",
+      genre: "喜剧 / 剧情",
+      language: "英语 · 中英文字幕",
+      duration: "约 105 分钟",
+      cast: "Seth Rogen · Olivia Wilde · Penélope Cruz · Edward Norton",
+      director: "Olivia Wilde",
+      description: "婚姻陷入冷战的乔和安吉拉，某天心血来潮邀请神秘的楼上邻居来家里吃晚饭，结果这顿饭一路开向意想不到的方向……A24 出品的成人黑色喜剧，台词犀利、节奏带感，几位戏骨飙戏火花四溅，笑中带刺又有点扎心。喜欢聪明、有点尴尬又上头的成人喜剧的朋友会很对味。改编自西班牙片《楼上的人》。",
+      tags: ["A24", "黑色喜剧", "成人喜剧", "Seth Rogen", "翻拍"],
+      posterEmoji: "🍷",
+      bgGradient: "linear-gradient(135deg,#7c2d12,#1c1917)",
+      badge: "new",
+      badgeText: "🔥 正在热映",
+      ageGuide: "M18 · 成人题材，不适合儿童（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Olivia Wilde（《高材生 Booksmart》好评导演，亲自出演）",
+        "🌟 Seth Rogen · Olivia Wilde · Penélope Cruz · Edward Norton",
+        "🏆 圣丹斯影展首映口碑佳 · A24 出品 · 翻拍西班牙片《楼上的人》",
+      ],
+      active: true
+    },
+
+    {
+      id: "you-only-live-twice-2026-07",
+      title: "You Only Live Twice",
+      chineseTitle: "雷霆谷（007 经典重映）",
+      type: "now-showing",
+      rating: 7.0,
+      releaseDate: "2026-07-24",
+      genre: "动作 / 冒险 / 谍战",
+      language: "英语 · 中英文字幕",
+      duration: "约 117 分钟",
+      cast: "Sean Connery · Akiko Wakabayashi · Mie Hama · Donald Pleasence",
+      director: "Lewis Gilbert",
+      description: "经典 007 系列重返大银幕！史恩·康纳莱饰演的詹姆斯·邦德这回深入日本，揭开神秘组织「幽灵党」劫持太空飞船、企图挑起大国战争的阴谋。火山基地大战、忍者特训、复古谍战美学，满满 60 年代的浪漫与硬核。老牌特工迷和想在影院重温经典邦德的影迷不要错过。",
+      tags: ["007", "James Bond", "经典重映", "谍战", "动作"],
+      posterEmoji: "🕵️",
+      bgGradient: "linear-gradient(135deg,#1e293b,#7f1d1d)",
+      badge: "hot",
+      badgeText: "🎞️ 经典重映",
+      ageGuide: "PG13 · 含动作暴力（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Lewis Gilbert（007《海底城》《最高机密》系列名导）",
+        "🌟 Sean Connery · Akiko Wakabayashi · Donald Pleasence",
+        "🎞️ 007 经典之作大银幕重映 · 日本火山基地名场面 · 复古谍战美学",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-06-19 每日更新新增 ──────────────────
 
