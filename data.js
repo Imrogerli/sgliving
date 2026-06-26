@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-23
+ * 最后更新：2026-06-27
  * 版本：3.2
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-26",
+    lastUpdated: "2026-06-27",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,48 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-27 每日更新新增 ──────────
+
+    {
+      id: "sourbombe-jewel-changi-2026-06",
+      name: "Sourbombe Artisanal Bakery（酸面种爆浆甜甜圈）",
+      categories: ["dessert"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "单个 S$5 起 · 9 件礼盒 S$44",
+      description: "姐妹们，这家在小红书被刷爆的酸面种甜甜圈真的要冲！用酸面种发酵的 bombolini 外皮蓬松不油腻，一口下去馅料疯狂爆浆，抹茶黑芝麻、草莓牛奶、薰衣草青柠马斯卡彭……9 种口味各有惊喜，颜值还超高随手出片。出自 MasterChef 新加坡 2018 亚军 Genevieve Lee 之手，甜品控买一盒 9 件回家慢慢吃绝绝子，避雷点就是热门口味常常秒空，建议早点去～",
+      tags: ["甜甜圈", "酸面种", "甜品", "Jewel", "小红书爆款"],
+      address: "78 Airport Blvd, #02-237 Jewel Changi Airport, Singapore 819666",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍩",
+      bgGradient: "linear-gradient(135deg,#ec4899,#f59e0b)",
+      catLabel: "🍩 爆浆甜甜圈",
+      catDesc: "小红书爆火酸面种 bombolini",
+      ratingDesc: "颜值口味双在线",
+      active: true
+    },
+
+    {
+      id: "xing-yue-xuan-rws-2026-06",
+      name: "星粤轩 Xing Yue Xuan（珍宝集团首家精致粤菜）",
+      categories: ["finedining"],
+      rating: 4.5,
+      openDate: "2026-06",
+      price: "人均 S$80–150",
+      description: "本地海鲜餐饮巨头珍宝集团（JUMBO）开出首家精致粤菜餐厅，落户圣淘沙名胜世界全新商场 WEAVE。主打传统粤式功夫菜：老火靓汤、鲍鱼海参干捞饭、明炉烧味样样讲究，食材和火候都见真章。环境雅致大气，适合家庭聚餐、宴请或纪念日，想吃一顿有仪式感的粤菜可以安排上。",
+      tags: ["粤菜", "精致餐饮", "圣淘沙", "靓汤", "鲍鱼"],
+      address: "8 Sentosa Gateway, WEAVE, Resorts World Sentosa, Singapore 098269",
+      badge: "finedining",
+      badgeText: "🍽️ 精致粤菜",
+      emoji: "🦞",
+      bgGradient: "linear-gradient(135deg,#7c2d12,#b45309)",
+      catLabel: "🍽️ 精致粤菜",
+      catDesc: "珍宝集团首家粤菜",
+      ratingDesc: "宴请聚餐好选择",
+      active: true
+    },
 
     // ── 🆕 2026-06-26 每日更新新增 ──────────
 
@@ -4384,6 +4426,55 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-27 每日更新新增 ──────────
+
+    {
+      id: "the-kid-laroi-perfect-world-jul-2026",
+      name: "The Kid LAROI · A Perfect World Tour in Singapore",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "Z世代顶流首唱狮城",
+      month: "JUL",
+      day: "01",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      typeLabel: "🎤 流行演唱会",
+      typeColor: "#0ea5e9",
+      description: "00 后顶流 The Kid LAROI 带着 A Perfect World Tour 首次来新加坡开唱！《STAY》《Without You》《Love Again》一首接一首全是熟悉的洗脑旋律，全场大合唱氛围拉满。7 月 1 日晚 8 点 Arena @ EXPO，仅此一场，票价 S$148 起（另有含 soundcheck Q&A 的 VIP 套票）。喜欢欧美流行的姐妹冲就完事了。",
+      venue: "Arena @ Singapore EXPO",
+      dateRange: "7月1日（周三）晚 8 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148 起",
+      priceNote: "Ticketmaster · S$148/168/188/428",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=The+Kid+Laroi+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-01",
+      active: true
+    },
+
+    {
+      id: "irene-i-will-asia-tour-jul-2026",
+      name: "IRENE (Red Velvet) Asia Tour [I-WILL] in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "04",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#e11d48,#7c2d12)",
+      typeLabel: "🎤 K-pop 个唱",
+      typeColor: "#e11d48",
+      description: "Red Velvet 队长裴珠泫首次个人亚洲巡演来新加坡！[I-WILL] 是 IRENE 单飞的舞台，颜值天花板＋舒服的现场，是粉丝近距离应援本命的好机会。7 月 4 日 The Theatre at Mediacorp，SISTIC 购票，Reveluv 们别错过。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "7月4日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "票价以官方公布为准",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Irene",
+      btnText: "购票",
+      sortDate: "2026-07-04",
+      active: true
+    },
+
     // ── 🆕 2026-06-26 每日更新新增 ──────────
 
     {
@@ -6002,7 +6093,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Kumar+Got+Balls+Singapore",
       btnText: "购票",
       sortDate: "2026-06-25",
-      active: true
+      active: false
     },
 
 
@@ -6825,7 +6916,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Disney+Esplanade",
       btnText: "购票",
       sortDate: "2026-06-26",
-      active: true
+      active: false
     },
 
     {
@@ -6966,7 +7057,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Legally+Blonde",
       btnText: "立即购票",
       sortDate: "2026-06-25",
-      active: true
+      active: false
     },
 
     {
@@ -7365,7 +7456,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Les+Miserables+Singapore",
       btnText: "购票",
       sortDate: "2026-06-25",
-      active: true
+      active: false
     },
 
     {
@@ -7461,7 +7552,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Legally+Blonde",
       btnText: "购票",
       sortDate: "2026-06-25",
-      active: true
+      active: false
     },
 
     {
@@ -7719,7 +7810,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Legally+Blonde",
       btnText: "购票",
       sortDate: "2026-06-25",
-      active: true
+      active: false
     }
     ,
 
@@ -7755,6 +7846,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-27 每日更新新增 ──────────
+
+    {
+      id: "minecraft-experience-sg-2026-07",
+      name: "The Minecraft Experience Singapore（我的世界沉浸体验展）",
+      icon: "⛏️",
+      topGradient: "linear-gradient(90deg,#16a34a,#65a30d)",
+      ageRange: "适合 6 岁以上全家",
+      description: "全球爆火的 Minecraft 真人沉浸体验来新加坡啦！孩子可以走进真实版「我的世界」——敲方块、打怪、收集资源、完成任务，每位游客还能带走一件限定款 Minecraft 披风。游戏迷孩子绝对尖叫，沉浸式互动玩上一整圈停不下来。建议提前网上购票选时段。",
+      highlight: "7-9 岁正是痴迷 Minecraft 的年纪，把屏幕里的世界搬到眼前，孩子的兴奋值直接拉满；任务式闯关需要观察、动手和动脑，玩中锻炼解决问题的能力；限定披风是专属纪念，仪式感满满，挑工作日时段人少更尽兴",
+      location: "Singapore（详见官方购票页时段）",
+      dateRange: "2026年（详见官方公布场次）",
+      cost: "需购票（按时段，详见官网）",
+      duration: "约 1.5 小时",
+      active: true
+    },
+
+    {
+      id: "exploria-mandai-2026-07",
+      name: "Exploria @ Mandai Wildlife Reserve（万态室内探索乐园）",
+      icon: "🦕",
+      topGradient: "linear-gradient(90deg,#0d9488,#22c55e)",
+      ageRange: "适合 4 岁以上全家",
+      description: "万态野生动物世界全新室内景点 Exploria，五个互动主题世界一次玩个够：和真实大小的恐龙并肩、爬进热带雨林树冠、潜入深海世界探险……声光互动＋知识满满，是下雨天遛娃的完美室内去处，凉快又长见识。",
+      highlight: "7-9 岁孩子对恐龙、海洋、雨林的好奇心最旺，五大主题世界把自然科学变成可触可玩的探险；室内空调环境，避开新加坡暴晒和午后雷阵雨；寓教于乐，玩完顺道逛万态其它园区，一天行程超充实",
+      location: "Mandai Wildlife Reserve（万态保护区）",
+      dateRange: "常设展（建议提前购票）",
+      cost: "需购票（详见万态官网）",
+      duration: "约 1.5–2 小时",
+      active: true
+    },
+
+    {
+      id: "wild-wild-wet-summer-fiesta-2026-07",
+      name: "Wild Wild Wet 夏日运动嘉年华（含新海洋主题游乐场）",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#0284c7,#06b6d4)",
+      ageRange: "适合全家（身高需达标）",
+      description: "暑假就要玩水！东海岸 Downtown East 的 Wild Wild Wet 水上乐园办起夏日运动嘉年华，还新开了一座海洋生物主题游乐场，大小水滑梯、人工造浪、漂流河玩到嗨。一家人泡一天水，放电又消暑，是新加坡暑假的快乐源泉。6 月 1 日–7 月 19 日限定活动。",
+      highlight: "7-9 岁孩子精力旺盛，玩水是最好的放电方式，新海洋主题游乐场专为这个年龄段设计；亲子一起冲滑梯、玩造浪，欢乐又增进感情；记得带泳具、防晒和换洗衣物，挑上午入场避开正午烈日",
+      location: "Wild Wild Wet, Downtown East（1 Pasir Ris Close）",
+      dateRange: "2026年6月1日–7月19日（夏日运动嘉年华）",
+      cost: "需购票（详见官网，可网购优惠票）",
+      duration: "半天–全天",
+      active: true
+    },
 
     // ── 🆕 2026-06-26 每日更新新增 ──────────
 
@@ -9914,6 +10052,36 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   movies: [
 
+    // ── 🆕 2026-06-27 每日更新新增 ──────────
+
+    {
+      id: "back-to-the-past-2026",
+      title: "Back to the Past",
+      chineseTitle: "寻秦记",
+      type: "chinese",
+      rating: 6.0,
+      releaseDate: "2026-01-01",
+      genre: "动作 / 穿越 / 古装",
+      language: "粤语·华语 / 中英文字幕",
+      duration: "约 107 分钟",
+      cast: "古天乐 · 林峰 · 宣萱 · 郭羡妮 · 苗侨伟",
+      director: "吴元甫 · 黎继强（动作指导 洪金宝）",
+      description: "经典 TVB《寻秦记》大银幕续作！古天乐回归项少龙，穿越回战国乱世卷入权谋与江湖，洪金宝操刀动作场面拳拳到肉。情怀拉满，适合追过原版剧集的港剧迷重温青春，喜欢古装动作的观众也能看得过瘾。",
+      tags: ["华语片", "港片", "穿越", "情怀", "动作"],
+      posterEmoji: "⚔️",
+      bgGradient: "linear-gradient(135deg,#78350f,#b45309)",
+      badge: "chinese",
+      badgeText: "🇨🇳 华语片",
+      ageGuide: "M18 · 建议成人观看",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 吴元甫 · 黎继强（动作指导 洪金宝《叶问》系列）",
+        "🌟 古天乐 · 林峰 · 宣萱 · 郭羡妮 · 苗侨伟（TVB 经典班底回归）",
+        "🏆 经典剧集《寻秦记》正统电影续作 · 情怀之作",
+      ],
+      active: true
+    },
+
     // ── 🆕 2026-06-23 每日更新新增 ──────────────────
 
     {
@@ -10027,7 +10195,7 @@ const SGLIVING_DATA = {
         "🌟 Pedro Pascal · Sigourney Weaver · Jeremy Allen White",
         "🎬 星战剧集首登大银幕 · 格鲁古超萌 · 合家欢太空冒险",
       ],
-      active: true
+      active: false
     },
 
     {
