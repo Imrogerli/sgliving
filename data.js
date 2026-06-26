@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-23",
+    lastUpdated: "2026-06-26",
     version: "3.2",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-26 每日更新新增 ──────────
+
+    {
+      id: "patisserie-cle-beehive-2026-06",
+      name: "Patisserie CLÉ · 蜂巢甜品「The Beehive」",
+      categories: ["dessert"],
+      rating: 4.6,
+      openDate: "2026-06",
+      price: "甜品 S$11/件 起",
+      description: "姐妹们！这家藏在 Siglap 老店里的法式甜品最近在小红书彻底火了，招牌「The Beehive」绝绝子——一颗圆滚滚的蜂蜜慕斯球，外层是蜂窝纹的柚子慕斯，里面藏着柠檬百里香荔枝蜂蜜冻和清爽柠檬海绵，一勺挖下去层次太丰富了，酸甜不腻、颜值满分，拍照随手出片。喜欢精致法甜的姐妹一定要冲，记得避开周二（闭店）。",
+      tags: ["甜品", "蜂巢蛋糕", "柚子慕斯", "Siglap", "小红书爆款"],
+      address: "79 Lucky Heights, Singapore 467627",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍯",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#fcd34d)",
+      catLabel: "🍰 法式甜品",
+      catDesc: "小红书爆火蜂巢慕斯",
+      ratingDesc: "颜值与口味双在线",
+      active: true
+    },
+
+    {
+      id: "moof-matcha-eon-shenton-2026-06",
+      name: "MOOF 抹茶专门店（Eon Shenton）",
+      categories: ["dessert"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "S$7–9/杯",
+      description: "CBD 上班族的抹茶续命新据点！6 月刚开在 Eon Shenton 安静一隅，用本地自创品牌 Mori Matcha 的抹茶粉现做。经典抹茶拿铁（S$7）香醇不苦涩，招牌黑芝麻抹茶（S$8.50）多了一层坚果焦香，超级耐喝。环境清新好拍，逛完牛车水或下班路过来一杯刚刚好，抹茶控别错过。",
+      tags: ["抹茶", "CBD", "饮品", "新店"],
+      address: "Eon Shenton, 70 Shenton Way, Singapore 079118",
+      badge: "new",
+      badgeText: "🆕 6月新店",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#15803d,#86efac)",
+      catLabel: "🍵 抹茶专门店",
+      catDesc: "CBD 抹茶新据点",
+      ratingDesc: "本地 Mori Matcha 抹茶",
+      active: true
+    },
+
+    {
+      id: "seoul-and-so-national-gallery-2026",
+      name: "Seoul & So 现代韩式牛排馆",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-03",
+      price: "人均 S$50–90",
+      description: "想吃高质量韩式烤肉的看过来！老牌 Seoul Restaurant 家族第二代在国家美术馆开出全新现代韩式牛排馆 Seoul & So，环境精致有格调，约会聚餐都合适。招牌首尔牛排骨（Seoul galbi）和光阳烤牛肉（Gwangyang bulgogi）腌得入味、肉质柔嫩，还能吃到韩牛（Hanwoo）。逛完展来一顿，仪式感拉满。",
+      tags: ["韩餐", "韩牛", "烤肉", "National Gallery"],
+      address: "1 St Andrew's Road, #05-03, National Gallery Singapore, Singapore 178957",
+      badge: "trending",
+      badgeText: "🔥 人气新店",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#7c2d12,#ea580c)",
+      catLabel: "🇰🇷 现代韩餐",
+      catDesc: "国家美术馆韩牛牛排馆",
+      ratingDesc: "Seoul 家族第二代力作",
+      active: true
+    },
 
     // ── 🆕 2026-06-19 每日更新新增 ──────────
 
@@ -4322,6 +4384,55 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-26 每日更新新增 ──────────
+
+    {
+      id: "mamamoo-4ward-indoor-stadium-jul-2026",
+      name: "MAMAMOO 2026 World Tour [4WARD] in Singapore",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "实力女团暌违回归狮城开唱",
+      month: "JUL",
+      day: "31",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#db2777,#7c2d12)",
+      typeLabel: "🎤 K-pop 演唱会",
+      typeColor: "#db2777",
+      description: "颂乐、玟星、辉人、华莎四位实力派回来啦！MAMAMOO 带着 2026 世界巡演 [4WARD] 来到新加坡室内体育馆，现场 live 唱功一向是天花板级别，《HIP》《Egotistic》《gogobebe》一首接一首全场跟唱，舞台又飒又有氛围。喜欢真唱实力女团的姐妹千万别错过，7 月 31 日开唱，Ticketmaster 购票。",
+      venue: "Singapore Indoor Stadium",
+      dateRange: "7月31日（周五）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以官方公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Mamamoo+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-31",
+      active: true
+    },
+
+    {
+      id: "the-neighbourhood-wourld-tour-jul-2026",
+      name: "The Neighbourhood · THE WOURLD TOUR in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "14",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#475569,#0f172a)",
+      typeLabel: "🎸 另类流行",
+      typeColor: "#475569",
+      description: "等了好多年！美国另类流行乐队 The Neighbourhood 首次来新加坡，带来 THE WOURLD TOUR。《Sweater Weather》前奏一响整个全场大合唱，慵懒又上头的氛围感拉满，喜欢丧丧又好听的另类摇滚/流行的乐迷必冲。7 月 14 日晚 8 点 The Star Theatre，票价 S$88 起（目前官方显示售罄，可关注 SISTIC 转售/回流票）。",
+      venue: "The Star Theatre",
+      dateRange: "7月14日（周二）晚 8 点",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$88 起",
+      priceNote: "SISTIC · 官方显示售罄",
+      ticketUrl: "https://www.sistic.com.sg/events/hood0726",
+      btnText: "购票",
+      sortDate: "2026-07-14",
+      active: true
+    },
+
     // ── 🆕 2026-06-19 每日更新新增 ──────────
 
     {
@@ -7644,6 +7755,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-26 每日更新新增 ──────────
+
+    {
+      id: "sesame-street-magical-art-marina-square-2026-06",
+      name: "Sesame Street Magical Art World（芝麻街魔幻艺术世界）",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#ef4444,#f59e0b)",
+      ageRange: "适合 3 岁以上全家",
+      description: "芝麻街首次登陆东南亚！Marina Square 中庭变身魔幻艺术世界，6 座巨型充气雕塑＋10 位全球艺术家重新演绎的大型艺术装置，还有迷宫涂鸦墙、海洋球池、迷你高尔夫等互动区，孩子可以拿粉笔在墙上尽情涂画。免费入场，逛街顺道带娃来玩超划算。6 月 5 日–28 日限定。",
+      highlight: "7-9 岁孩子正爱动手创作，迷宫涂鸦墙和艺术装置能尽情发挥想象力、激发审美；把当代艺术和熟悉的芝麻街角色结合，孩子边玩边接触艺术毫无压力；中庭免费入场、就在市区交通方便，工作日人少更好逛",
+      location: "Marina Square 中庭（6 Raffles Boulevard）",
+      dateRange: "2026年6月5日–6月28日",
+      cost: "免费入场（部分互动游戏收费）",
+      duration: "约 1–1.5 小时",
+      active: true
+    },
+
+    {
+      id: "camp-asia-multi-activity-2026",
+      name: "Camp Asia 多元活动夏令营",
+      icon: "🏕️",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#22c55e)",
+      ageRange: "适合 5–14 岁",
+      description: "暑假想让孩子充实又放电？Camp Asia 在 Stamford American 国际学校开的多元活动营，运动、艺术、科学、戏水一周一主题随便选，营费已含午餐、点心、装备和营服，省心又超值。英文环境，还能交到新朋友，是暑假托管＋成长的好选择。6 月 15 日–7 月 31 日，S$715 起/周。",
+      highlight: "7-9 岁正是培养兴趣、锻炼独立的好年纪，多元课程让孩子发现自己喜欢什么；全英文营地环境对提升口语和社交超有帮助；一周一主题灵活报名，按孩子兴趣和家庭档期自由搭配",
+      location: "Stamford American International School",
+      dateRange: "2026年6月15日–7月31日",
+      cost: "S$715 起/周（含午餐、点心、装备、营服）",
+      duration: "全日营",
+      active: true
+    },
+
+    {
+      id: "singapore-family-festival-2026",
+      name: "Singapore Family Festival 新加坡家庭节",
+      icon: "🎪",
+      topGradient: "linear-gradient(90deg,#8b5cf6,#ec4899)",
+      ageRange: "适合全家",
+      description: "全家总动员的免费嘉年华！新加坡家庭节在全岛多个地点举办，互动游戏、体育活动、亲手做的工作坊和精彩现场表演通通免费，一家人可以玩上大半天。不花钱也能过得超充实，是周末遛娃的高性价比之选。具体场次和地点以官方公布为准。",
+      highlight: "7-9 岁孩子精力旺、爱参与，体育活动和动手工作坊既能放电又长本领；全程免费、轻松无压力，全家一起玩增进感情；多地点举办，挑离家近的场次说走就走",
+      location: "全岛多个地点（详见官方公布）",
+      dateRange: "2026年（详见官方公布）",
+      cost: "免费",
+      duration: "按场次",
+      active: true
+    },
 
     // ── 🆕 2026-06-23 每日更新新增 ──────────
 
