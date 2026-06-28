@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-27
- * 版本：3.2
+ * 最后更新：2026-06-28
+ * 版本：3.3
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-27",
-    version: "3.2",
+    lastUpdated: "2026-06-28",
+    version: "3.3",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,48 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-28 每日更新新增 ──────────
+
+    {
+      id: "torikizoku-vivocity-2026-06",
+      name: "Torikizoku 鸟贵族（日本国民串烧连锁）",
+      categories: ["snack"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "串烧/小食/饮料均一价 S$3.90++ 起",
+      description: "日本街头人气串烧连锁鸟贵族开到新加坡啦，落户 VivoCity，还是全球最大门店！招牌就是「均一价」——大部分串烧、小食、甜点、无酒精饮料统统 S$3.90++，炭火现烤的鸡腿肉串、鸡软骨、月见鸡肉丸超下酒。氛围像日本居酒屋，约三五好友撸串小酌最合适，HarbourFront 地铁直达，逛完圣淘沙顺路吃一顿超方便。6 月 15 日正式开业。",
+      tags: ["日式串烧", "居酒屋", "均一价", "VivoCity", "新店"],
+      address: "1 HarbourFront Walk, #01-104/105 VivoCity, Singapore 098585",
+      badge: "new",
+      badgeText: "🆕 新店开业",
+      emoji: "🍢",
+      bgGradient: "linear-gradient(135deg,#dc2626,#f59e0b)",
+      catLabel: "🍢 日式炭火串烧",
+      catDesc: "日本国民居酒屋全球最大店",
+      ratingDesc: "均一价超划算",
+      active: true
+    },
+
+    {
+      id: "tan-jin-ji-hotpot-forum-2026-06",
+      name: "谭锦记成都火锅 Tan Jin Ji（谭鸭血同源品牌）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "人均约 S$50–70",
+      description: "姐妹们！成都来的谭锦记火锅在乌节 Forum 开起来了，是谭鸭血老火锅的同源品牌，正宗成都味儿一秒梦回川渝！招牌红汤用四川鹰嘴茶吊味，麻辣里带回甘不上头，鸳鸯锅一半微辣一半清汤照顾全家口味。雪花牛、鲜鱼片、菌菇拼盘新鲜到爆，自助蘸料台随便调，吃辣党和怕辣党都能拿捏。Lemon8 和小红书上一堆人在打卡，避雷点是饭点要排队，建议早点去或预约～",
+      tags: ["成都火锅", "川味", "鸳鸯锅", "乌节", "小红书爆款"],
+      address: "583 Orchard Rd, B1-39 to 47 Forum The Shopping Mall, Singapore 238884",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#7c2d12)",
+      catLabel: "🌶️ 正宗成都火锅",
+      catDesc: "鹰嘴茶红汤·谭鸭血同源",
+      ratingDesc: "麻辣回甘不上头",
+      active: true
+    },
 
     // ── 🆕 2026-06-27 每日更新新增 ──────────
 
@@ -5146,7 +5188,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Ungu+Wali+Singapore",
       btnText: "购票",
       sortDate: "2026-06-27",
-      active: true
+      active: false
     },
 
     {
@@ -7338,7 +7380,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=FTISLAND+Singapore",
       btnText: "购票",
       sortDate: "2026-06-27",
-      active: true
+      active: false
     },
 
     {
@@ -7646,7 +7688,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=FTISLAND+Singapore",
       btnText: "购票",
       sortDate: "2026-06-27",
-      active: true
+      active: false
     },
 
     {
@@ -7846,6 +7888,23 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-28 每日更新新增 ──────────
+
+    {
+      id: "holiday-inn-atrium-school-holiday-2026-07",
+      name: "Holiday Inn Singapore Atrium 学校假期家庭住宿计划",
+      icon: "🏨",
+      topGradient: "linear-gradient(90deg,#2563eb,#06b6d4)",
+      ageRange: "适合全家（12 岁以下儿童免费早餐）",
+      description: "暑假想给娃换个环境又不想跑太远？市区 Holiday Inn Atrium 推出学校假期家庭计划，房间配活动手册、寻宝游戏和儿童洗漱小物，两位大人入住、12 岁以下小朋友免费用早餐。市中心位置交通方便，泳池一泡、寻宝一玩，一个周末就能给孩子换换心情。活动持续到 7 月 31 日。",
+      highlight: "7-9 岁孩子精力旺盛，寻宝游戏和活动手册让住酒店也变成探索任务，玩中观察、动脑；市区位置出行方便，泳池消暑放电；周末来一晚轻量「微度假」，不折腾又有仪式感，性价比高",
+      location: "Holiday Inn Singapore Atrium（317 Outram Road）",
+      dateRange: "即日起至 2026 年 7 月 31 日（学校假期限定）",
+      cost: "需预订（详见酒店官网，含双人早餐）",
+      duration: "1–2 晚",
+      active: true
+    },
 
     // ── 🆕 2026-06-27 每日更新新增 ──────────
 
