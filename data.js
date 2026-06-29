@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-28
- * 版本：3.3
+ * 最后更新：2026-06-29
+ * 版本：3.4
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-28",
-    version: "3.3",
+    lastUpdated: "2026-06-29",
+    version: "3.4",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-29 每日更新新增 ──────────
+
+    {
+      id: "luli-tcm-tea-marina-square-2026-06",
+      name: "LULI 中药养生茶饮（中国 400+ 门店）",
+      categories: ["dessert"],
+      rating: 4.2,
+      openDate: "2026-06",
+      price: "人均 S$6–10（灵芝龙参茶 S$9.80、洛神消化茶 S$5.50）",
+      description: "姐妹们养生女孩有福了！中国超火的中药茶饮 LULI 开到 Marina Square 啦，全国 400+ 门店，主打「能喝的中药」——一整排玻璃罐装着人参、灵芝、洛神、山楂这些药材，还有正经中医师背书。招牌灵芝龙参奶茶喝起来先是人参的微苦回甘，再被鲜奶茶香裹住，喝完整个人都「补」了；怕苦的点洛神消化茶，酸酸甜甜超开胃，据说还消水肿，新加坡这么热喝它准没错。店不大但有几个座位，逛街累了进来回个血刚刚好。真·养生党狂喜，不踩雷！",
+      tags: ["中药茶饮", "养生", "人参", "Marina Square", "小红书爆款"],
+      address: "6 Raffles Boulevard, #02-184/185, Marina Square, Singapore 039594",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#7c2d12,#b91c1c)",
+      catLabel: "🍵 中药养生茶饮",
+      catDesc: "中国 400+ 门店养生茶品牌",
+      ratingDesc: "养生党狂喜",
+      active: true
+    },
+
+    {
+      id: "mr-sun-tea-scape-2026-06",
+      name: "Mr. Sun Tea 太阳生技（台湾人气手摇茶）",
+      categories: ["dessert"],
+      rating: 4.1,
+      openDate: "2026-06",
+      price: "饮品 S$5.80–7.20，灯泡鸡蛋糕 S$3.80 起",
+      description: "来自台湾、1999 年创立的老牌手摇 Mr. Sun Tea 落户 *SCAPE，Somerset、Orchard 地铁都走得到。招牌巨型珍珠奶茶冰沙挤上厚厚一层奶盖，里头有弹牙的特大仙草珍珠＋经典 QQ 珍珠，一口两种口感超满足；夏天必试 Hawaiian Summer，凤梨青柠加罗勒籽，清爽又解暑。还有少见的 0 酒精啤酒茶，绿茶配海尼根 0.0，麦香十足很特别。嘴馋再来份灯泡造型的迷你鸡蛋糕，黑糖珍珠／芝士流心都好吃，逛街顺手买一杯刚刚好。",
+      tags: ["台湾手摇", "珍珠奶茶", "巨型珍珠", "Somerset", "新店"],
+      address: "2 Orchard Link, #02-19, *SCAPE, Singapore 237978",
+      badge: "new",
+      badgeText: "🆕 新店开业",
+      emoji: "🧋",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#fb923c)",
+      catLabel: "🧋 台湾手摇茶",
+      catDesc: "27 年台湾老牌·巨型珍珠",
+      ratingDesc: "珍珠控必喝",
+      active: true
+    },
+
+    {
+      id: "shu-bakery-kovan-2026-06",
+      name: "Shu Bakery（港欧风味烘焙坊）",
+      categories: ["dessert"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "面包/挞类 S$4–6",
+      description: "藏在 Kovan 的宝藏小烘焙坊 Shu Bakery，把香港老味道和欧式酥皮技法揉在了一起。招牌开心果菠萝包外层酥香、内里松软，咬下去是熟悉的港式甜香；蛋挞、巧克力可颂、各式欧包也都现烤现卖，分量实在价格亲民。店子开在 Space@Kovan，周三到周日营业，住东北部的朋友终于不用大老远跑市区，下午来一袋当茶点最惬意。手慢无，热门款常常下午就卖光。",
+      tags: ["烘焙", "港式", "菠萝包", "Kovan", "新店"],
+      address: "9 Yio Chu Kang Road, #01-54 Space@Kovan, Singapore 545523",
+      badge: "new",
+      badgeText: "🆕 新店开业",
+      emoji: "🥐",
+      bgGradient: "linear-gradient(135deg,#b45309,#d97706)",
+      catLabel: "🥐 港欧风味烘焙",
+      catDesc: "Kovan 现烤面包小铺",
+      ratingDesc: "性价比超高",
+      active: true
+    },
 
     // ── 🆕 2026-06-28 每日更新新增 ──────────
 
@@ -4468,6 +4530,31 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-29 每日更新新增 ──────────
+
+    {
+      id: "jannabi-sweat-stardust-sg-2026-08",
+      name: "JANNABI 1st Asia Tour: Sweat & Stardust in Singapore",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "13",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#8b5cf6,#4c1d95)",
+      typeLabel: "🎸 韩国乐队",
+      typeColor: "#8b5cf6",
+      description: "韩国国民级独立乐队 JANNABI（잔나비）首次踏足新加坡！凭《for lovers who hesitate》《주저하는 연인들을 위해》《tonight》等温柔到骨子里的旋律俘获大批乐迷，复古文艺的现场氛围一开口就让人起鸡皮疙瘩。8 月 13 日晚 8 点 Capitol Theatre 仅此一场，票价 S$138 起（CAT3/CAT2/CAT1/VIP 站票），喜欢 indie、city pop、文艺现场的朋友别犹豫。",
+      venue: "Capitol Theatre",
+      dateRange: "8月13日（周四）晚 8 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$138 起",
+      priceNote: "Ticketmaster · S$138/168/218/248",
+      ticketUrl: "https://www.ticketmaster.sg/activity/detail/26sg_jannabi",
+      btnText: "购票",
+      sortDate: "2026-08-13",
+      active: true
+    },
+
     // ── 🆕 2026-06-27 每日更新新增 ──────────
 
     {
@@ -7889,6 +7976,23 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-06-29 每日更新新增 ──────────
+
+    {
+      id: "juju-world-gardens-2026-06",
+      name: "Cj Hendry's JuJu World 黄色充气乐园（滨海湾花园）",
+      icon: "🟡",
+      topGradient: "linear-gradient(90deg,#f59e0b,#facc15)",
+      ageRange: "适合 3 岁以上全家（3–12 岁儿童票）",
+      description: "纽约艺术家 Cj Hendry 继 Flower Market 后又一爆款互动展！整个 IMBA Theatre 变成一片亮黄色充气王国——巨型波波池里塞满了成千上万只小小 JuJu 公仔，可以免费带回家；还有超大充气角色、明黄色滑梯，大人小孩跳进去就停不下来。需穿袜入场，建议提前网上购票选时段，每场最长玩 90 分钟。6 月 20 日至 7 月 18 日限定。",
+      highlight: "7-9 岁孩子最爱这种「整个人扑进去」的大型互动装置，波波池、滑梯尽情放电，雨天也不怕晒；捞公仔免费带回家自带收集乐趣和惊喜感，激发探索欲；90 分钟一场节奏刚好不会累，挑工作日时段人少更尽兴，玩完还能顺道逛花园",
+      location: "IMBA Theatre, Gardens by the Bay West Lawn（Bayfront 地铁旁）",
+      dateRange: "2026年6月20日 – 7月18日（周一至四 10am–7pm，周五至日 10am–8pm）",
+      cost: "成人 S$15、儿童(3–12岁) S$10、3岁以下免费（须穿袜，现场补购 S$8/双）",
+      duration: "每场最长 90 分钟",
+      active: true
+    },
+
     // ── 🆕 2026-06-28 每日更新新增 ──────────
 
     {
@@ -10138,7 +10242,7 @@ const SGLIVING_DATA = {
         "🌟 古天乐 · 林峰 · 宣萱 · 郭羡妮 · 苗侨伟（TVB 经典班底回归）",
         "🏆 经典剧集《寻秦记》正统电影续作 · 情怀之作",
       ],
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-23 每日更新新增 ──────────────────
