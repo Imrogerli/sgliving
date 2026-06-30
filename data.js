@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-29
+ * 最后更新：2026-06-30
  * 版本：3.4
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-29",
+    lastUpdated: "2026-06-30",
     version: "3.4",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-06-30 每日更新新增 ──────────
+
+    {
+      id: "bon-broth-andre-chiang-raffles-city-2026",
+      name: "Bon Broth 名厨独享火锅（米其林星厨 André Chiang）",
+      categories: ["finedining", "restaurant"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "套餐 S$110（Premium）/ S$138（Deluxe）每位",
+      description: "想吃一顿不一样的火锅，这家可以列进愿望清单。米其林星厨 André Chiang（江振诚）在 Raffles City 三楼开的个人小锅概念店——没有蘸酱、没有油炸、没有主食，把所有讲究都压在「汤」上。八款汤底全部用纯鱼骨、牛骨、猪骨或鸡骨熬足 12–16 小时，每天现熬：招牌四川青花椒麻得高级，德式酸菜锅清爽开胃，还有北海道、娑茶（沙茶）、药膳、叻沙可选。法式高汤的细腻＋中式老火汤的滋补，一口下去就懂为什么值这个价。空间优雅只设 40 座，适合纪念日、请客、犒赏自己的特别一餐。",
+      tags: ["名厨火锅", "André Chiang", "个人小锅", "高汤", "纪念日"],
+      address: "252 North Bridge Road, #03-22B, Raffles City Shopping Centre, Singapore 179103",
+      badge: "finedining",
+      badgeText: "🍲 名厨高汤火锅",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#0f766e,#134e4a)",
+      catLabel: "🍲 精致火锅",
+      catDesc: "米其林星厨 André Chiang 个人小锅",
+      ratingDesc: "特别场合之选",
+      active: true
+    },
+
+    {
+      id: "paradise-hotpot-vivocity-2026-06",
+      name: "Paradise Hotpot 港式自助火锅（VivoCity 全岛最大店）",
+      categories: ["restaurant"],
+      rating: 4.1,
+      openDate: "2026-06",
+      price: "自助 S$19.90++ 起（Value/Premium/Luxury 三档，最高 S$52.90++）",
+      description: "姐妹们평价火锅快冲！Paradise Hotpot 在 VivoCity 顶层开了全岛最大的一家，能坐 380 人，港式个人小锅自助 S$19.90++ 起就能开吃，超过 100 种食材随便涮——肉片、丸子、菌菇、海鲜全有，还送小吃、冰淇淋和饮料无限续。九款汤底里皮蛋芫荽锅和沙嗲锅最出片，猪骨锅和川辣锅最稳。80 分钟一轮，逛完商场顺道吃一顿，划算到想给自己鼓掌。注意有 S$10/100g 的浪费费，按量拿别贪心。真·性价比天花板，不踩雷！",
+      tags: ["港式火锅", "自助", "平价", "VivoCity", "小红书爆款"],
+      address: "1 HarbourFront Walk, #03-08A, VivoCity, Singapore 098585",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#7f1d1d)",
+      catLabel: "🍲 港式自助火锅",
+      catDesc: "S$19.90++ 起 · 100+ 食材随便涮",
+      ratingDesc: "性价比天花板",
+      active: true
+    },
+
+    {
+      id: "swallow-tomato-hotpot-clarke-quay-2026-06",
+      name: "小燕子番茄火锅（Clarke Quay Central 三楼）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "人均约 S$35–45",
+      description: "番茄锅控集合！克拉码头 Central 三楼这家小燕子，靠一锅现熬番茄汤底圈粉无数——选用马来西亚、日本、罗马三种番茄按 5:1:1 熬煮，汤底酸甜浓稠挂勺，没有番茄酱的廉价味，是那种喝一口就停不下来的鲜。涮个肥牛、虾滑、宽粉，最后用汤煮碗面收尾，幸福感拉满。不能吃辣、带小朋友、或者想喝汤养胃的姐妹闭眼冲，这锅老少咸宜。位置就在地铁旁，逛完河边夜景来一锅刚刚好。",
+      tags: ["番茄火锅", "汤底现熬", "亲子友好", "Clarke Quay", "小红书爆款"],
+      address: "6 Eu Tong Sen Street, #03, Clarke Quay Central, Singapore 059817",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍅",
+      bgGradient: "linear-gradient(135deg,#dc2626,#ea580c)",
+      catLabel: "🍅 番茄养生火锅",
+      catDesc: "三种番茄 5:1:1 现熬汤底",
+      ratingDesc: "番茄控狂喜",
+      active: true
+    },
 
     // ── 🆕 2026-06-29 每日更新新增 ──────────
 
@@ -4530,6 +4592,101 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-06-30 每日更新新增 ──────────
+
+    {
+      id: "bigbang-national-stadium-sg-2026-09",
+      name: "BIGBANG in Singapore（国家体育场）",
+      type: "concert",
+      priority: "featured",
+      featuredReason: "王者归来 · 体育场级现场",
+      month: "SEP",
+      day: "11",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#facc15,#b45309)",
+      typeLabel: "🎤 K-pop 天团",
+      typeColor: "#eab308",
+      description: "VIP 们等到了！韩国传奇天团 BIGBANG 登陆新加坡国家体育场，《BANG BANG BANG》《FANTASTIC BABY》《Loser》《Last Dance》一首接一首，全是一开口就 DNA 动了的回忆杀。体育场级别的舞台和声浪，绝对是 2026 下半年最炸的一场。9 月 11 日仅此一晚，想看的别犹豫，好位置手慢无。",
+      venue: "National Stadium, Singapore Sports Hub",
+      dateRange: "9月11日（周五）晚 8 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以官方公布为准",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=BIGBANG+Singapore",
+      btnText: "购票",
+      sortDate: "2026-09-11",
+      active: true
+    },
+
+    {
+      id: "jane-zhang-chasing-tour-sg-2026-08",
+      name: "张靓颖 Jane Zhang · Chasing 世界巡演 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "29",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#db2777,#831843)",
+      typeLabel: "🎤 华语演唱会",
+      typeColor: "#db2777",
+      description: "海豚音女王张靓颖 Chasing 世界巡演来新加坡啦！《画心》《终于等到你》《我们说好的》一首首华语经典，加上她标志性的高音 live，现场起鸡皮疙瘩是常态。喜欢华语流行、想在异乡听一场中文演唱会的朋友别错过，8 月 29 日一晚专场。",
+      venue: "Singapore（场馆以官方公布为准）",
+      dateRange: "8月29日（周六）",
+      ticketInfo: "🎫 购票平台",
+      price: "票价以官方公布为准",
+      priceNote: "详见官方售票平台",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Jane+Zhang+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-29",
+      active: true
+    },
+
+    {
+      id: "cats-musical-sands-theatre-sg-2026-08",
+      name: "音乐剧《Cats 猫》新加坡站（Sands Theatre）",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "19",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#7c3aed,#3730a3)",
+      typeLabel: "🎭 经典音乐剧",
+      typeColor: "#7c3aed",
+      description: "安德鲁·劳埃德·韦伯的传奇音乐剧《Cats 猫》重返新加坡！经典名曲《Memory》一响起全场起鸡皮疙瘩，华丽的杰里科猫族群舞和舞美，无论是音乐剧老粉还是第一次入坑都会被惊艳。带爸妈、带另一半或带大点的孩子来一场仪式感满满的剧院之夜刚刚好。8 月 19 日至 9 月 6 日在金沙剧院驻演，SISTIC 购票，S$98 起。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "8月19日 – 9月6日",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$98 起",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Cats",
+      btnText: "购票",
+      sortDate: "2026-08-19",
+      active: true
+    },
+
+    {
+      id: "alex-warren-sg-2026-08",
+      name: "Alex Warren in Singapore（The Star Theatre）",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "18",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#155e75)",
+      typeLabel: "🎤 欧美流行",
+      typeColor: "#0ea5e9",
+      description: "凭《Ordinary》等单曲爆红的美国创作歌手 Alex Warren 首唱新加坡！情感浓烈的嗓音配上现场感染力，一晚限定专场。喜欢欧美抒情流行、想近距离感受走心 live 的朋友可以冲，8 月 18 日 The Star Theatre，S$108 起。",
+      venue: "The Star Theatre",
+      dateRange: "8月18日（周二）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$108 起",
+      priceNote: "Ticketmaster",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Alex+Warren+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-18",
+      active: true
+    },
+
     // ── 🆕 2026-06-29 每日更新新增 ──────────
 
     {
@@ -5009,7 +5166,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.takashimaya.com.sg/takashimaya-square/food-fiesta-2026",
       btnText: "活动详情",
       sortDate: "2026-06-29",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-14 每日更新新增 ──────────
@@ -7975,6 +8132,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-06-30 每日更新新增 ──────────
+
+    {
+      id: "fifa-worldcup-laupasat-2026-07",
+      name: "FIFA 世界杯 2026 · Lau Pa Sat 巨幕观赛（130 寸双屏）",
+      icon: "⚽",
+      topGradient: "linear-gradient(90deg,#16a34a,#15803d)",
+      ageRange: "适合全家（喜欢足球的孩子尤其推荐）",
+      description: "球迷家庭的暑假固定节目来了！老巴刹 Lau Pa Sat 在两块 130 寸超大屏上直播 FIFA 世界杯 2026，一边吃沙嗲、海南鸡饭、各式本地小吃，一边全场跟着欢呼，氛围超热闹。带孩子感受一次「全场为同一个进球尖叫」的现场感，比在家看电视带劲多了。即日起至 7 月 20 日，免费观赛，提前来占个好位置。",
+      highlight: "7-9 岁孩子正是开始迷上运动的年纪，大屏看世界杯能直观感受团队配合、规则和拼搏精神；老巴刹小吃多、气氛足，孩子吃饱看球两不误；免费入场、地铁直达（Raffles Place / Downtown），晚饭顺道安排一场亲子观赛刚刚好",
+      location: "Lau Pa Sat 老巴刹（18 Raffles Quay，Raffles Place / Downtown 地铁旁）",
+      dateRange: "即日起至 2026 年 7 月 20 日（按世界杯赛程直播）",
+      cost: "免费观赛（餐食自理）",
+      duration: "按比赛场次（约 2 小时/场）",
+      active: true
+    },
+
+    {
+      id: "gateway-kids-club-storytelling-2026-07",
+      name: "Gateway Kids Club 免费亲子故事会（Gateway Theatre）",
+      icon: "📖",
+      topGradient: "linear-gradient(90deg,#f59e0b,#d97706)",
+      ageRange: "适合 4–10 岁",
+      description: "周末想给孩子安排个安静又有营养的活动？Gateway Theatre 每周六的 Gateway Kids Club 推出免费故事会，7 月主题是「Together, We Can（齐心协力）」，由主持人带着孩子边听故事边互动，培养专注力和表达欲。完全免费、室内有冷气，雨天也不怕，是性价比超高的周末亲子时光。",
+      highlight: "7-9 岁正在从「听故事」过渡到「自己讲故事」，互动式故事会鼓励孩子开口表达、动脑思考；「齐心协力」主题潜移默化教合作与同理心；免费＋室内冷气，周六上午轻松安排，不花钱也能很充实",
+      location: "Gateway Theatre（3615 Jalan Bukit Merah）",
+      dateRange: "2026 年 7 月每周六（主题：Together, We Can）",
+      cost: "免费（建议提前留意官网报名）",
+      duration: "约 45–60 分钟",
+      active: true
+    },
+
+    {
+      id: "camp-asia-holiday-camp-2026-07",
+      name: "Camp Asia 暑期多元主题营（Stamford American 校区）",
+      icon: "🏕️",
+      topGradient: "linear-gradient(90deg,#2563eb,#0891b2)",
+      ageRange: "适合 5–12 岁（按主题分龄）",
+      description: "想让娃这个暑假学点新东西又玩得开心？Camp Asia 暑期营主题超丰富——戏剧学院、小小厨神 Super Chef、电子创客 Makerspace、创意编程、太空学员、少年医护、足球和体操都有，最受欢迎的 Multi Activity 营让孩子每天换着花样体验。6 月 15 日至 7 月 31 日在 Stamford American 国际学校开营，营费 S$715 起，可按周报名。",
+      highlight: "7-9 岁好奇心旺盛、动手能力快速发展，编程、创客、厨神这类主题正好把兴趣变成技能；多活动营每天换花样，社交和动手两不误；按周灵活报名，家长能配合假期节奏安排，玩中学的暑假更有收获",
+      location: "Stamford American International School（1 Woodleigh Lane）",
+      dateRange: "2026 年 6 月 15 日 – 7 月 31 日（可按周报名）",
+      cost: "S$715 起/周（详见官网）",
+      duration: "全日营，按周",
+      active: true
+    },
 
     // ── 🆕 2026-06-29 每日更新新增 ──────────
 
