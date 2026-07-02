@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-06-30
- * 版本：3.4
+ * 最后更新：2026-07-02
+ * 版本：3.5
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-06-30",
-    version: "3.4",
+    lastUpdated: "2026-07-02",
+    version: "3.5",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-02 每日更新新增 ──────────
+
+    {
+      id: "mensho-x-raffles-place-2026-07",
+      name: "MENSHO X 面庄（东京拉面名店 · 莱佛士坊全球首店）",
+      categories: ["restaurant", "snack"],
+      rating: 4.4,
+      openDate: "2026-07",
+      price: "拉面 S$17++ 起，全部菜品 S$22++ 以内",
+      description: "拉面控冲！被米其林点名过的东京拉面名店 Mensho Tokyo，把快节奏副牌「MENSHO X」的全球第一家开在了莱佛士坊。X 是 express 的意思——出餐快、味道却一点不将就。招牌鸡白汤（Toripaitan）用鸡骨加昆布、香菇和牛肝菌慢熬，汤头浓郁又清爽不腻；三种自制面条（拉面/沾面/拌面）配比讲究，弹牙有嚼劲。午餐时间打工人一碗解决，S$17 起吃得舒服。7 月 14–18 日开业期间，每天前 100 位加送溏心蛋。",
+      tags: ["日式拉面", "东京名店", "鸡白汤", "莱佛士坊", "快食"],
+      address: "6 Battery Road, #01-02, Raffles Place, Singapore 049909",
+      badge: "new",
+      badgeText: "🍜 东京名店新店",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#b45309,#7c2d12)",
+      catLabel: "🍜 日式拉面",
+      catDesc: "东京 Mensho Tokyo 快食副牌全球首店",
+      ratingDesc: "打工人午餐好选择",
+      active: true
+    },
+
+    {
+      id: "tiffany-blue-box-cafe-ion-2026-07",
+      name: "Tiffany Blue Box Cafe 蒂芙尼蓝盒子咖啡（ION Orchard）",
+      categories: ["finedining", "dessert"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "人均约 S$60–90（全日餐＋下午茶）",
+      description: "少女心暴击！蒂芙尼标志性的「知更鸟蛋蓝」开成了一整家咖啡馆，落户乌节路 ION Orchard，是品牌在新加坡的首家 Blue Box Cafe。菜单由三星名厨 Julien Royer（Odette 主厨）操刀，从早餐到下午茶都精致好拍，招牌蓝盒子造型甜点和司康端上桌先拍为敬。环境优雅、满屏 Tiffany 蓝，约闺蜜、庆生、纪念日仪式感直接拉满。7 月中开业，建议提前订位。",
+      tags: ["蒂芙尼", "网红咖啡", "下午茶", "Julien Royer", "打卡"],
+      address: "2 Orchard Turn, ION Orchard, Singapore 238801",
+      badge: "trending",
+      badgeText: "💙 话题新店",
+      emoji: "💙",
+      bgGradient: "linear-gradient(135deg,#0891b2,#0e7490)",
+      catLabel: "☕ 精致咖啡馆",
+      catDesc: "蒂芙尼首家蓝盒子咖啡 · Julien Royer 掌勺",
+      ratingDesc: "闺蜜庆生打卡之选",
+      active: true
+    },
+
+    {
+      id: "sugar-rush-yiman-313-somerset-2026-07",
+      name: "一鸣芬 Sugar Rush 甜品（313 Somerset · 中国甜品海外首店）",
+      categories: ["dessert"],
+      rating: 4.2,
+      openDate: "2026-07",
+      price: "人均约 S$10–18",
+      description: "姐妹们！国内爆火的中式甜品连锁「一鸣芬 Sugar Rush」终于开到新加坡啦，海外第一站就选在 313@Somerset，逛街正好顺道打卡～主打各种颜值在线的中式糖水和创意甜品，杨枝甘露、芋泥、烧仙草、龟苓膏这些熟悉的味道通通有，甜度还能调，怕齁的姐妹放心冲。价格亲民、出片率高，解馋又不心疼钱包，属于「想家的时候来一碗」的那种治愈系。绝绝子，不踩雷！",
+      tags: ["中式甜品", "糖水", "杨枝甘露", "313 Somerset", "小红书爆款"],
+      address: "313 Orchard Road, 313@Somerset, Singapore 238895",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍧",
+      bgGradient: "linear-gradient(135deg,#db2777,#9d174d)",
+      catLabel: "🍧 中式甜品",
+      catDesc: "国内爆红甜品连锁海外首店",
+      ratingDesc: "想家时的治愈系糖水",
+      active: true
+    },
 
     // ── 🆕 2026-06-30 每日更新新增 ──────────
 
@@ -8133,6 +8195,23 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-07-02 每日更新新增 ──────────
+
+    {
+      id: "movies-by-the-beach-sentosa-2026-07",
+      name: "Movies by the Beach 圣淘沙屋顶星空电影夜（Palawan Kidz City）",
+      icon: "🎬",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#1e3a8a)",
+      ageRange: "适合全家（学龄儿童尤其推荐）",
+      description: "暑假傍晚的仪式感来了！圣淘沙 Palawan Kidz City 屋顶花园每逢周六、周日晚上 7 点放映户外电影，海风一吹、星空作幕，带上野餐垫和零食就能开看，完全免费。孩子白天在沙滩玩水、晚上躺着看电影，一天玩下来充实又惬意。放映片单以家庭合家欢为主，很适合带 7-9 岁的娃来一场轻松的周末夜。",
+      highlight: "7-9 岁孩子正喜欢「和大家一起」的集体体验，露天电影的氛围比在家看新鲜有趣；先在 Palawan 沙滩玩水放电、傍晚看电影，动静结合一天不无聊；免费入场、地铁+捷运可达，带上野餐垫就是一场低成本高幸福感的亲子夜",
+      location: "Palawan Kidz City Roof Garden, Sentosa（Palawan Beach）",
+      dateRange: "2026 年 7 月每周六、周日晚 7 点（免费）",
+      cost: "免费（自带野餐垫、零食更惬意）",
+      duration: "约 1.5–2 小时/场",
+      active: true
+    },
+
     // ── 🆕 2026-06-30 每日更新新增 ──────────
 
     {
@@ -10418,6 +10497,36 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-07-02 每日更新新增 ──────────
+
+    {
+      id: "crossing-chishui-2026-07",
+      title: "Crossing",
+      chineseTitle: "四渡赤水",
+      type: "chinese",
+      rating: 6.8,
+      releaseDate: "2026-07-10",
+      genre: "战争 / 历史 / 剧情",
+      language: "华语 · 中英文字幕",
+      duration: "约 130 分钟",
+      cast: "刘烨 · 王雷 · 于适 · 王志飞",
+      director: "徐展雄",
+      description: "一部气势磅礴的战争历史大片。1934 年湘江血战之后，红军面对四十万大军的围堵，靠着「四渡赤水」的神来之笔在绝境中辗转腾挪、绝地求生。影片没有停留在宏大叙事，而是把镜头对准乱世中一位坚守誓言的老兵和一个只想活下去的孤儿，两个小人物在炮火里结下生死之情。喜欢历史战争题材、想看大场面又要有情感落点的观众会看得热血又鼻酸。",
+      tags: ["华语片", "战争", "历史", "长征", "主旋律"],
+      posterEmoji: "🎖️",
+      bgGradient: "linear-gradient(135deg,#7f1d1d,#450a0a)",
+      badge: "chinese",
+      badgeText: "🇨🇳 华语片",
+      ageGuide: "PG13 · 含战争场面（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 徐展雄（《绣春刀·修罗战场》编剧、《荞麦疯长》导演）",
+        "🌟 刘烨 · 王雷 · 于适 · 王志飞（实力派阵容）",
+        "🎖️ 长征「四渡赤水」经典战役搬上大银幕 · 大场面＋小人物双线叙事",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-06-27 每日更新新增 ──────────
 
