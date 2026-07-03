@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-07-02
- * 版本：3.5
+ * 最后更新：2026-07-03
+ * 版本：3.6
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-02",
-    version: "3.5",
+    lastUpdated: "2026-07-03",
+    version: "3.6",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,109 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-03 每日更新新增 ──────────
+
+    {
+      id: "madeleines-egg-tarts-aperia-2026-07",
+      name: "Madeleine's Original Portuguese Egg Tarts（26年老字号蛋挞回归 · Aperia Mall）",
+      categories: ["dessert", "snack"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "蛋挞约 S$2+/个，主食 S$9.90 起",
+      description: "东海岸老饕的青春回来了！1998 年在丹戎加东红极一时的葡挞老店 Madeleine's，消失近两年后以澳门茶餐厅风格咖啡馆的形式在 Aperia Mall 复活。操盘的是 22 岁 SHATEC 毕业的小伙 Zac 和姐姐，还有创始人亲自坐镇指导——招牌葡挞酥皮蛋香依旧，新菜单里的澳门免治饭（Minchee Rice，S$10.90）配 63 度温泉蛋，还有葱油天使面炖牛腩（S$9.90），十块钱出头吃到情怀和手艺，值。",
+      tags: ["葡式蛋挞", "澳门茶餐厅", "老字号回归", "Aperia Mall", "平价"],
+      address: "12 Kallang Avenue, Aperia Mall, Singapore 339511",
+      badge: "hot",
+      badgeText: "🥧 老字号回归",
+      emoji: "🥧",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#92400e)",
+      catLabel: "🥧 蛋挞甜品",
+      catDesc: "26 年历史葡挞老店以茶餐厅形式回归",
+      ratingDesc: "情怀与手艺兼得",
+      active: true
+    },
+
+    {
+      id: "freakynoods-chinatown-2026-07",
+      name: "FreakyNoods 日式意面（牛车水 · FreakyCones 新副牌）",
+      categories: ["restaurant", "snack"],
+      rating: 4.2,
+      openDate: "2026-07",
+      price: "意面 S$15.90+ 起",
+      description: "名字一个比一个皮！牛车水人气冰淇淋店 FreakyCones 开的意面副牌 7 月 1 日刚软开业，四款日式意面全部起名鬼马：Duck Buddy 是韩式 gochujang 奶油酱裹手工宽面加烤鸭片，撒海苔碎和芝麻，咸香浓郁；Beef Daddy 是蒜香黄油牛肉波隆那面，下饭（下面？）神器。S$16 左右吃到有创意又好吃的日式意面，中午 12 点到下午 6 点供应，逛牛车水顺路就能打卡。",
+      tags: ["日式意面", "牛车水", "创意料理", "平价", "新开业"],
+      address: "200 South Bridge Road, Singapore 058749",
+      badge: "new",
+      badgeText: "🍝 7月新开",
+      emoji: "🍝",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      catLabel: "🍝 创意意面",
+      catDesc: "冰淇淋人气店 FreakyCones 的意面副牌",
+      ratingDesc: "鬼马名字实在味道",
+      active: true
+    },
+
+    {
+      id: "food-republic-jewel-2026-07",
+      name: "Food Republic 大食代（星耀樟宜 · 7月3日全新回归）",
+      categories: ["restaurant", "snack"],
+      rating: 4.1,
+      openDate: "2026-07",
+      price: "人均 S$6–15",
+      description: "去星耀樟宜再也不怕吃不起了！装修近三个月的 Food Republic 今天（7 月 3 日）重新开业，以 70 年代街头饮食文化为主题，14 个档口里有 4 个米其林必比登品牌：连续 10 年必比登的 Na Na 娘惹咖喱鱼头、得奖的立兴潮州鱼圆面，还有香港爆红的爱山煲仔饭新加坡首店——焦香锅巴配腊味，一人一煲幸福感拉满。接送机、带娃看瀑布之后，来 B2 就能平价解决一餐。",
+      tags: ["美食广场", "星耀樟宜", "米其林必比登", "煲仔饭", "平价"],
+      address: "78 Airport Boulevard, #B2-238/239/240, Jewel Changi Airport, Singapore 819666",
+      badge: "new",
+      badgeText: "🍚 今日开业",
+      emoji: "🍚",
+      bgGradient: "linear-gradient(135deg,#16a34a,#14532d)",
+      catLabel: "🍚 美食广场",
+      catDesc: "14 档口含 4 个必比登品牌，8am–11pm",
+      ratingDesc: "机场平价宝藏食堂",
+      active: true
+    },
+
+    {
+      id: "kott-don-360-vivocity-2026-07",
+      name: "Kott-Don 360 韩式烤肉（VivoCity · Flower Pig 360 同门新店）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.4,
+      openDate: "2026-07",
+      price: "招牌套餐 S$75.90++ 起，韩牛套餐 S$268++",
+      description: "丹戎巴葛人气烤肉 Flower Pig 360 的兄弟店开进 VivoCity 了！洞穴风入口一秒出片，店里是韩屋木质装潢配暖光，氛围感十足。所有肉都经过 360 小时湿式熟成，还有独家花刀切法让受热更均匀——Duroc 黑猪、济州黑猪都有，这家店还独家供应韩牛（Hanwoo）。预算有限点 S$75.90++ 的招牌套餐就很满足，生牛肉拌饭（S$31++）也别错过。约会、家庭聚餐都撑得起场面。",
+      tags: ["韩式烤肉", "韩牛", "VivoCity", "熟成肉", "聚餐"],
+      address: "1 HarbourFront Walk, #02-123/124, VivoCity, Singapore 098585",
+      badge: "new",
+      badgeText: "🥩 7月新开",
+      emoji: "🥩",
+      bgGradient: "linear-gradient(135deg,#78350f,#1c1917)",
+      catLabel: "🥩 韩式烤肉",
+      catDesc: "360 小时熟成肉 + 独家韩牛，Hanok 韩屋风",
+      ratingDesc: "氛围与肉质双在线",
+      active: true
+    },
+
+    {
+      id: "jing-studio-teahouse-2026-07",
+      name: "Jing Studio 静茶室（陈旭年宅邸 · 国家古迹里喝茶）",
+      categories: ["dessert", "finedining"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "茶饮 S$7–12",
+      description: "在新加坡仅存的\u201c四大厝\u201d之一、1880 年代潮州豪宅陈旭年宅邸里喝一盏茶，是什么体验？新开的 Jing Studio 由茶艺师主理，单一庄园茶、调配茶、草本养生茶都有：Ember Road（S$12）是带蜂蜜杏干香的云南红茶，椰香普洱（S$8）把黑普洱和椰奶调在一起意外和谐，不含咖啡因的桂圆玫瑰红枣饮（S$7）很适合下午带孩子来歇脚。距多美歌地铁站步行 4 分钟，闹市里的一方安静。",
+      tags: ["中式茶馆", "国家古迹", "多美歌", "养生茶", "打卡"],
+      address: "101 Penang Road, House of Tan Yeok Nee, Singapore 238466",
+      badge: "new",
+      badgeText: "🍵 古迹茶馆",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#0f766e,#134e4a)",
+      catLabel: "🍵 中式茶馆",
+      catDesc: "潮州古宅里的现代茶室，茶艺师主理",
+      ratingDesc: "环境一绝的静心之地",
+      active: true
+    },
+
 
     // ── 🆕 2026-07-02 每日更新新增 ──────────
 
@@ -4536,7 +4639,7 @@ const SGLIVING_DATA = {
       ratingDesc: "日本第一烤鸡串连锁 · 全球最大旗舰店",
       lat: 1.2640,
       lng: 103.8222,
-      active: true
+      active: false
     },
 
 
@@ -4653,6 +4756,101 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   events: [
+
+    // ── 🆕 2026-07-03 新增 ──────────
+
+    {
+      id: "novelbright-pyramid-capitol-2026-08",
+      name: "Novelbright ASIA TOUR 2026 ～PYRAMID～ 新加坡站",
+      type: "concert",
+      priority: "featured",
+      month: "AUG",
+      day: "18",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#7c3aed,#4c1d95)",
+      typeLabel: "🎸 日系摇滚",
+      typeColor: "#7c3aed",
+      description: "日本人气摇滚乐队 Novelbright 首次登陆新加坡！主唱竹中雄大的高音穿透力在日本音乐圈出了名，《Walking with you》《ツキミソウ》都是抖音/YouTube 播放过亿的曲目。Capitol Theatre 场地不大，几乎每个位置都是近距离，喜欢日摇的朋友这场值得冲，还有含合影的 VIP 套票。",
+      venue: "Capitol Theatre",
+      dateRange: "8月18日（周二）晚 8 点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以官方公布为准（设 VIP 合影套票）",
+      priceNote: "Live Nation 主办",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_novelbright",
+      btnText: "购票",
+      sortDate: "2026-08-18",
+      active: true
+    },
+
+    {
+      id: "click-five-arena-expo-2026-08",
+      name: "The Click Five 新加坡演唱会 2026",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "29",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#0c4a6e)",
+      typeLabel: "🎤 欧美流行",
+      typeColor: "#0ea5e9",
+      description: "青春回忆杀！唱着《Just The Girl》《Jenny》陪 80、90 后长大的美国流行摇滚乐队 The Click Five 重返新加坡，8 月 29 日在 Arena @ EXPO 开唱。当年 MTV 时代的经典旋律现场大合唱，适合和老朋友一起去还青春债。",
+      venue: "Arena @ EXPO",
+      dateRange: "8月29日（周六）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "票价以官方公布为准",
+      priceNote: "详见官方售票平台",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=The+Click+Five+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-29",
+      active: true
+    },
+
+    {
+      id: "jurassic-park-in-concert-2026-08",
+      name: "《侏罗纪公园》电影交响音乐会 Jurassic Park in Concert",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "28",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#16a34a,#14532d)",
+      typeLabel: "🎬 电影交响音乐会",
+      typeColor: "#16a34a",
+      description: "大银幕完整放映 1993 年经典《侏罗纪公园》，交响乐团现场演奏 John Williams 的传世配乐——霸王龙出场那段音乐现场响起时，鸡皮疙瘩根本控制不住。S$28 起的票价非常亲民，带 7 岁以上看过恐龙片的孩子来体验\u201c电影+交响\u201d的组合刚刚好。",
+      venue: "Esplanade Concert Hall 滨海艺术中心音乐厅",
+      dateRange: "8月28日（周五）",
+      ticketInfo: "🎫 SISTIC / Esplanade",
+      price: "S$28 起",
+      priceNote: "亲子友好，票价亲民",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Jurassic%20Park",
+      btnText: "购票",
+      sortDate: "2026-08-28",
+      active: true
+    },
+
+    {
+      id: "century-square-birthday-bash-2026-07",
+      name: "Century Square 8 周年庆 Birthday Bash（巨型真人夹娃娃机）",
+      type: "event",
+      priority: "normal",
+      month: "JUL",
+      day: "03",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#f59e0b,#b45309)",
+      typeLabel: "🎪 商场嘉年华",
+      typeColor: "#f59e0b",
+      description: "淡滨尼 Century Square 8 周年庆 7 月 3 日开跑，一直嗨到 8 月 9 日！最大亮点是 7 月 27 日–8 月 2 日的 Happy-verse 游乐区：孩子可以被吊起来当\u201c真人夹娃娃机的爪子\u201d下去抓真奖品，每次必中，总奖池超过 S$25,000——iPhone 17、PS5、宝可梦卡都在里面。7 月 25 日还有生日巡游派迪士尼盲盒。",
+      venue: "Century Square, Tampines",
+      dateRange: "7月3日 – 8月9日",
+      ticketInfo: "🆓 免费入场",
+      price: "免费（部分活动需消费换取资格）",
+      priceNote: "详情见商场官网/BYKidO",
+      ticketUrl: "https://www.bykido.com/blogs/events-and-activities/century-square-8th-birthday-2026",
+      btnText: "了解详情",
+      sortDate: "2026-07-03",
+      active: true
+    },
+
 
     // ── 🆕 2026-06-30 每日更新新增 ──────────
 
@@ -4797,7 +4995,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=The+Kid+Laroi+Singapore",
       btnText: "购票",
       sortDate: "2026-07-01",
-      active: true
+      active: false
     },
 
     {
@@ -6418,7 +6616,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Kid+LAROI+Singapore+2026",
       btnText: "购票",
       sortDate: "2026-07-01",
-      active: true
+      active: false
     },
 
     {
@@ -7218,7 +7416,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=David+Hockney",
       btnText: "购票",
       sortDate: "2026-06-30",
-      active: true
+      active: false
     },
 
     {
@@ -7428,7 +7626,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=The+Kid+LAROI+Singapore",
       btnText: "立即购票",
       sortDate: "2026-07-01",
-      active: true
+      active: false
     },
 
     {
@@ -7924,7 +8122,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=The+Kid+LAROI+Singapore",
       btnText: "购票",
       sortDate: "2026-07-01",
-      active: true
+      active: false
     },
 
     {
@@ -8195,6 +8393,54 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-07-03 新增 ──────────
+
+    {
+      id: "happyverse-century-square-2026-07",
+      name: "Happy-verse 真人夹娃娃机游乐区（Century Square 8 周年庆）",
+      icon: "🕹️",
+      topGradient: "linear-gradient(90deg,#f59e0b,#dc2626)",
+      ageRange: "适合 5–12 岁（7–9 岁体验感最佳）",
+      description: "把孩子变成夹娃娃机的\u201c爪子\u201d！Century Square 8 周年庆的 Happy-verse 游乐区里，孩子被安全带吊起、降到巨型奖品池里限时抓奖，每次尝试都保证有奖——奖池总值超过 S$25,000，有每日 iPhone 17 抽奖、PS5、GV 电影票和宝可梦卡。现场还有巨型球池、充气滑梯和 JuJu 玩偶造景，拍照也好看。",
+      highlight: "7-9 岁孩子力气和胆量刚好能独立完成\u201c真人夹娃娃\u201d挑战，成就感爆棚；必中奖机制不会空手而归，避免失落大哭现场；淡滨尼地铁直达，顺路可以逛吃一整天",
+      location: "Century Square 主中庭, 2 Tampines Central 5, Singapore 529509",
+      dateRange: "2026年7月27日 – 8月2日（8周年庆 7月3日–8月9日）",
+      cost: "免费入场（抓奖资格详见商场消费条款）",
+      duration: "约 1–2 小时",
+      active: true
+    },
+
+    {
+      id: "splash-tribe-weekday-unlimited-2026-07",
+      name: "Splash Tribe 沙堡水上乐园 · 7月起工作日不限时畅玩",
+      icon: "🏖️",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#0369a1)",
+      ageRange: "适合 4–12 岁（7–9 岁玩滑道正合适）",
+      description: "圣淘沙 Palawan 海滩的亲子沙滩俱乐部 Splash Tribe 放大招：7 月 1 日起，工作日（周一至周五）入场即享不限时畅玩！沙堡主题水上乐园里有竞速滑道、巨型倒水桶和互动水枪阵，玩累了还有俯瞰 Palawan 海滩的无边泳池。暑假想遛娃放电，工作日来性价比最高、人还少。",
+      highlight: "7-9 岁孩子敢玩竞速滑道、又还享受倒水桶的刺激，正是水上乐园的黄金年龄；工作日不限时 = 玩到孩子主动喊回家，电放得干干净净；家长可以在泳池边躺平，难得的\u201c带娃也像度假\u201d体验",
+      location: "Splash Tribe, The Palawan @ Sentosa（Palawan Beach）",
+      dateRange: "2026年7月1日起 · 周一至周五（不限时畅玩）",
+      cost: "门票详见官网（工作日含不限时游玩）",
+      duration: "可玩半天至一整天",
+      active: true
+    },
+
+    {
+      id: "ndp-fireworks-weekends-2026-07",
+      name: "国庆庆典预演烟花 · 国家体育场周边周末开放观赏",
+      icon: "🎆",
+      topGradient: "linear-gradient(90deg,#dc2626,#7f1d1d)",
+      ageRange: "适合全家（7–9 岁孩子会目不转睛）",
+      description: "7 月的周末傍晚，加冷国家体育场一带会随国庆庆典（NDP 2026）预演绽放烟花！不用抢 NDP 门票，在体育场外围、加冷河畔或 Kallang Wave Mall 附近就能免费看。建议傍晚先到 Kallang Wave Mall 吃晚餐，7 点后到河边占位，烟花通常在预演尾声（约 8 点后）登场，具体以当周预演日程为准。",
+      highlight: "免费！不用门票就能看国庆级别的烟花，7-9 岁孩子的\u201c哇\u201d声不会停；顺便给孩子讲讲新加坡国庆的由来，爱国主义教育寓教于乐；地铁 Stadium 站直达，看完人多可步行到 Nicoll Highway 站错峰回家",
+      location: "National Stadium / Kallang 河畔一带（Stadium MRT）",
+      dateRange: "2026年7月各预演周末傍晚（以 NDP 官方预演日程为准，国庆日 8月9日）",
+      cost: "免费",
+      duration: "烟花约 10–15 分钟，建议连晚餐安排 2–3 小时",
+      active: true
+    },
+
+
     // ── 🆕 2026-07-02 每日更新新增 ──────────
 
     {
@@ -8354,7 +8600,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年6月5日–6月28日",
       cost: "免费入场（部分互动游戏收费）",
       duration: "约 1–1.5 小时",
-      active: true
+      active: false
     },
 
     {
@@ -8463,7 +8709,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年5月30日–6月28日",
       cost: "多数免费（部分工作坊需报名）",
       duration: "约2小时",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-18 每日更新新增 ──────────
@@ -8480,7 +8726,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年6月20日（晚7:30）、6月21日（下午3:30）",
       cost: "需购票（详见 SISTIC）",
       duration: "约1小时",
-      active: true
+      active: false
     },
 
     {
@@ -8495,7 +8741,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年6月18–21日",
       cost: "免费围观",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -8605,7 +8851,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年5月30日–6月28日（学校假期儿童季）",
       cost: "多数活动免费（部分需报名）",
       duration: "约1.5–2小时",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-14 每日更新新增 ──────────
@@ -8622,7 +8868,7 @@ const SGLIVING_DATA = {
       dateRange: "六月学校假期期间（详情见 Jewel 官网）",
       cost: "集章活动免费 / 消费满额可兑换",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
 
@@ -8640,7 +8886,7 @@ const SGLIVING_DATA = {
       dateRange: "六月学校假期期间（详情见商场官网）",
       cost: "部分项目免费 / 闯关券另购",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -8655,7 +8901,7 @@ const SGLIVING_DATA = {
       dateRange: "六月学校假期期间",
       cost: "多数互动项目免费",
       duration: "约1小时",
-      active: true
+      active: false
     },
 
     {
@@ -8719,7 +8965,7 @@ const SGLIVING_DATA = {
       dateRange: "6月14日 10:00–19:00（仅此一天）",
       cost: "儿童 S$10 起，家长免费陪同",
       duration: "半天或全天",
-      active: true
+      active: false
     },
 
     {
@@ -8885,7 +9131,7 @@ const SGLIVING_DATA = {
       dateRange: "至6月28日",
       cost: "🆓 免费",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -9340,7 +9586,7 @@ const SGLIVING_DATA = {
       dateRange: "5月30日–6月28日（学校假期）",
       cost: "S$12–25/人",
       duration: "约3–5小时",
-      active: true
+      active: false
     },
 
     {
@@ -9387,7 +9633,7 @@ const SGLIVING_DATA = {
       dateRange: "持续至 6月21日（皮卡丘指定周末出现）",
       cost: "🆓 免费入场",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -9402,7 +9648,7 @@ const SGLIVING_DATA = {
       dateRange: "6月12-14日 / 19-21日 / 26-28日",
       cost: "S$15–34（学校假期特惠）",
       duration: "1.5–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -9434,7 +9680,7 @@ const SGLIVING_DATA = {
       dateRange: "6月19–21日（首日 Vesak Day 公假）",
       cost: "S$15–35/人（家长工作坊免费）",
       duration: "约2–3小时",
-      active: true
+      active: false
     },
 
     {
@@ -9464,7 +9710,7 @@ const SGLIVING_DATA = {
       dateRange: "5月底–6月（具体日期以官网公告为准）",
       cost: "免费入场（部分体验另购）",
       duration: "2–3小时",
-      active: true
+      active: false
     },
 
     {
@@ -9479,7 +9725,7 @@ const SGLIVING_DATA = {
       dateRange: "6月1日–6月30日",
       cost: "🆓 免费（部分馆需购票）",
       duration: "可分多次完成",
-      active: true
+      active: false
     },
 
     {
@@ -9494,7 +9740,7 @@ const SGLIVING_DATA = {
       dateRange: "6月（详情请见官网；早鸟优惠至 5月6日）",
       cost: "S$30–55（早鸟价）",
       duration: "半天",
-      active: true
+      active: false
     },
 
     {
@@ -9509,7 +9755,7 @@ const SGLIVING_DATA = {
       dateRange: "6月5日–6月28日（每晚 7:30–11pm）",
       cost: "🆓 免费入场",
       duration: "2–3小时（含晚餐）",
-      active: true
+      active: false
     },
 
     {
@@ -9539,7 +9785,7 @@ const SGLIVING_DATA = {
       dateRange: "6月19日–6月21日",
       cost: "S$15–35/场",
       duration: "每场 45–90 分钟",
-      active: true
+      active: false
     }
 ,
 
@@ -9661,7 +9907,7 @@ const SGLIVING_DATA = {
       dateRange: "5月4日–6月14日（限时）",
       cost: "约S$22.90+/人",
       duration: "约1.5小时",
-      active: true
+      active: false
     },
 
     {
@@ -9676,7 +9922,7 @@ const SGLIVING_DATA = {
       dateRange: "6月12-14日、19-21日、26-28日",
       cost: "S$15起（小朋友）",
       duration: "约2-3小时",
-      active: true
+      active: false
     },
 
     {
@@ -9721,7 +9967,7 @@ const SGLIVING_DATA = {
       dateRange: "5月30日–6月28日",
       cost: "完全免费",
       duration: "2–4小时",
-      active: true
+      active: false
     },
 
     {
@@ -9736,7 +9982,7 @@ const SGLIVING_DATA = {
       dateRange: "6月12–13日",
       cost: "S$25–80（SISTIC 购票）",
       duration: "约90分钟",
-      active: true
+      active: false
     },
 
     {
@@ -10113,7 +10359,7 @@ const SGLIVING_DATA = {
       price: "S$520",
       bookingUrl: "https://www.mandai.com/en/learn-with-us.html",
       btnText: "报名营队",
-      active: true
+      active: false
     },
 
     {
@@ -10134,7 +10380,7 @@ const SGLIVING_DATA = {
       price: "免费",
       bookingUrl: "https://www.heritage.sg/childrensmuseum",
       btnText: "查看场次",
-      active: true
+      active: false
     },
 
     {
@@ -10155,7 +10401,7 @@ const SGLIVING_DATA = {
       price: "S$15",
       bookingUrl: "https://www.heritage.sg/childrensmuseum",
       btnText: "查看节目",
-      active: true
+      active: false
     },
 
     {
@@ -10176,7 +10422,7 @@ const SGLIVING_DATA = {
       price: "免费",
       bookingUrl: "https://www.nhb.gov.sg/acm/whats-on",
       btnText: "查看详情",
-      active: true
+      active: false
     },
 
     {
@@ -10197,7 +10443,7 @@ const SGLIVING_DATA = {
       price: "免费",
       bookingUrl: "https://www.ilightsingapore.gov.sg/",
       btnText: "查看地图",
-      active: true
+      active: false
     },
 
     {
@@ -10240,7 +10486,7 @@ const SGLIVING_DATA = {
       price: "查官网",
       bookingUrl: "https://www.sportsingapore.gov.sg/",
       btnText: "查看详情",
-      active: true
+      active: false
     },
 
     {
@@ -10282,7 +10528,7 @@ const SGLIVING_DATA = {
       price: "本地免费",
       bookingUrl: "https://www.nhb.gov.sg/nationalmuseum/",
       btnText: "查看详情",
-      active: true
+      active: false
     }
 ,
 
@@ -10304,7 +10550,7 @@ const SGLIVING_DATA = {
       price: "S$32 起",
       bookingUrl: "https://kiztopia.com/",
       btnText: "查看详情",
-      active: true
+      active: false
     },
 
     {
@@ -10325,7 +10571,7 @@ const SGLIVING_DATA = {
       price: "S$45 起",
       bookingUrl: "https://minecraft-experience.com/singapore/",
       btnText: "购票预订",
-      active: true
+      active: false
     },
 
     {
@@ -10346,7 +10592,7 @@ const SGLIVING_DATA = {
       price: "免费",
       bookingUrl: "https://www.gardensbythebay.com.sg/",
       btnText: "查看详情",
-      active: true
+      active: false
     },
 
     {
@@ -10361,7 +10607,7 @@ const SGLIVING_DATA = {
       dateRange: "6月1–30日（每天开放）",
       cost: "免费（12 岁以下博物馆全免）",
       duration: "可逛一整天",
-      active: true
+      active: false
     },
 
     {
@@ -10376,7 +10622,7 @@ const SGLIVING_DATA = {
       dateRange: "6月1–30日（每天开放）",
       cost: "免费（儿童季期间 12 岁以下免费）",
       duration: "约 2–3 小时",
-      active: true
+      active: false
     },
 
     {
@@ -10391,7 +10637,7 @@ const SGLIVING_DATA = {
       dateRange: "6月13–14日（周末嘉年华）+ 6月11日（核心日）",
       cost: "免费",
       duration: "可玩一整天",
-      active: true
+      active: false
     },
 
     {
@@ -10406,7 +10652,7 @@ const SGLIVING_DATA = {
       dateRange: "6月每周末（部分场次需预约）",
       cost: "免费 / 部分工作坊小额材料费",
       duration: "约 1–1.5 小时",
-      active: true
+      active: false
     },
 
     {
@@ -10421,7 +10667,7 @@ const SGLIVING_DATA = {
       dateRange: "6月1–30日（每日开放，每月最后一周一闭馆）",
       cost: "免费入场（儿童季期间）",
       duration: "约 2–4 小时",
-      active: true
+      active: false
     }
     ,
 
@@ -10723,7 +10969,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 即将上映",
       ageGuide: "PG13 · 13 岁以上（最终分级以影院为准）",
-      posterUrl: "",
+      posterUrl: "https://upload.wikimedia.org/wikipedia/en/a/ae/Kimetsu_No_Yaiba_Mugen_Jyo-hen_theatrical_poster.jpg",
       highlights: [
         "🎬 导演 外崎春雄（《鬼灭之刃》TV 动画系列总导演）",
         "🌟 花江夏树 · 鬼头明里 · 下野紘 · 松冈祯丞 · 樱井孝宏",
@@ -10839,7 +11085,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 即将上映",
       ageGuide: "PG · 全家适宜",
-      posterUrl: "",
+      posterUrl: "https://upload.wikimedia.org/wikipedia/en/c/c1/Moana_%282026_film%29_poster.jpg",
       highlights: [
         "🎬 导演 Thomas Kail（音乐剧《汉密尔顿》艾美+托尼奖得主）",
         "🌟 Catherine Laga'aia · Dwayne Johnson · Rena Owen",
@@ -11404,7 +11650,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 华语新片",
       ageGuide: "PG13 · 13 岁以上",
-      posterUrl: "",
+      posterUrl: "https://upload.wikimedia.org/wikipedia/en/9/90/The_Odyssey_%282026_film%29_poster.jpg",
       highlights: [
         "🎬 导演 陈思诚（《唐人街探案》系列《消失的她》）",
         "🌟 蒋龙 · 齐溪 · 杨超越 · 倪大红 · 蔡明",
