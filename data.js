@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-07-03
- * 版本：3.6
+ * 最后更新：2026-07-05
+ * 版本：3.7
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-03",
-    version: "3.6",
+    lastUpdated: "2026-07-05",
+    version: "3.7",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,89 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-05 每日更新新增 ──────────
+
+    {
+      id: "xhs-heytea-tampines1-2026-07",
+      name: "喜茶 HEYTEA（Tampines 1 新店 · 7月开业）",
+      categories: ["dessert", "snack"],
+      rating: 4.4,
+      openDate: "2026-07",
+      price: "饮品 S$5–9",
+      description: "姐妹们！喜茶东部新店真的来了！7 月喜茶进驻 Tampines 1，奈雪也同步在星耀樟宜开店，东部的宝子们再也不用跑乌节路排队了！招牌多肉葡萄还是那口熟悉的爆汁感，芝芝莓莓的芝士奶盖厚到挂杯，绝绝子！店里还有烘焙糕点和休息区，逛街逛累了坐下来喝一杯刚刚好。工作日下午去基本不用排队，周末人多建议小程序先下单再取，亲测不踩雷！",
+      tags: ["小红书爆款", "新式茶饮", "喜茶", "淡滨尼", "中国品牌"],
+      address: "10 Tampines Central 1, Tampines 1, Singapore 529536",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍇",
+      bgGradient: "linear-gradient(135deg,#4b5563,#111827)",
+      catLabel: "🧋 新式茶饮",
+      catDesc: "喜茶东部新店，多肉葡萄 / 芝芝莓莓",
+      ratingDesc: "东部茶饮新地标",
+      active: true
+    },
+
+    {
+      id: "thanying-amara-2026-07",
+      name: "Thanying 皇家泰餐（丹戎巴葛 Amara 酒店 · 1988年老字号焕新）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "人均 S$50–80",
+      description: "吃了三十多年还在打动人的泰国菜，新加坡真不多。1988 年创立的 Thanying 主打曼谷皇室菜谱，最近换上全新菜单：柚子沙拉 Yam Som Oh（S$20++）酸甜开胃，酿馅去骨鸡翅（S$26++）外酥里嫩，烤鸭红咖喱配黑橄榄鸡肉炒饭是老客必点组合，收尾一定要来一份装在椰壳里的椰子焦糖布丁（S$18++）。环境安静优雅，适合家庭聚餐或招待来新加坡的父母长辈，口味精致不猎奇，中国胃完全无压力。",
+      tags: ["泰国菜", "皇家泰餐", "老字号", "丹戎巴葛", "家庭聚餐"],
+      address: "165 Tanjong Pagar Road, #02-00, Amara Singapore, Singapore 088539",
+      badge: "classic",
+      badgeText: "🇹🇭 皇家泰餐",
+      emoji: "🍛",
+      bgGradient: "linear-gradient(135deg,#b45309,#7c2d12)",
+      catLabel: "🍛 泰国料理",
+      catDesc: "1988 年老字号，曼谷皇室菜谱全新菜单",
+      ratingDesc: "精致泰餐宴客首选",
+      active: true
+    },
+
+    {
+      id: "behind-clay-clarke-quay-2026-07",
+      name: "Behind Clay 隐藏餐酒馆（克拉码头 · 窑炉创意料理）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-07",
+      price: "披萨 S$26–38，人均 S$40–60",
+      description: "藏在 IL Clay 窑炉后面的\u201c店中店\u201d，酒红色调的 52 座小酒廊，晚上氛围感直接拉满。招牌是几款脑洞大开的窑烤披萨：鹅肝酱披萨（S$38）配罗望子酱，咸香里带一点东南亚式酸甜；奶油南瓜鸡肉披萨（S$26）上竟然撒了肉松和青胡椒酱，听着奇怪吃着上头。适合小两口约会或朋友小聚，吃完沿新加坡河散步消食，克拉码头夜景白送。",
+      tags: ["创意料理", "披萨", "餐酒馆", "克拉码头", "约会"],
+      address: "3D River Valley Road, #01-04, Clarke Quay, Singapore 179023",
+      badge: "new",
+      badgeText: "🍕 7月新开",
+      emoji: "🍕",
+      bgGradient: "linear-gradient(135deg,#7f1d1d,#3f1d1d)",
+      catLabel: "🍕 创意披萨",
+      catDesc: "IL Clay 副牌，鹅肝酱窑烤披萨",
+      ratingDesc: "克拉码头夜宵新据点",
+      active: true
+    },
+
+    {
+      id: "cookhouse-koufu-t2-2026-07",
+      name: "Cookhouse by Koufu（樟宜机场 T2 转机区 · 24小时食阁）",
+      categories: ["restaurant", "snack"],
+      rating: 4.0,
+      openDate: "2026-07",
+      price: "人均 S$6–15",
+      description: "红眼航班党的福音！口福在樟宜机场 T2 离境转机区开了 24 小时食阁，14 个档口全天不打烊：Shiok 海南鸡饭、米其林必比登 Na Na 咖喱鱼头、Formosa 板面、Nine Fresh 台式甜品，还有椰浆饭和印度餐，落地或候机随时来一碗热的。自助点餐机加手机扫码点单，坐着等餐送到手。注意：位于离境转机区内，需持登机牌才能进入——回国航班前的最后一顿本地味，就交给它了。",
+      tags: ["美食广场", "24小时", "樟宜机场", "平价", "转机"],
+      address: "60 Airport Boulevard, Terminal 2 Transit Area, #03-179/184, Singapore 819643",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Cookhouse+by+Koufu+Changi+Airport+Terminal+2",
+      badge: "new",
+      badgeText: "🌙 24小时营业",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      catLabel: "🍜 机场食阁",
+      catDesc: "T2 转机区 24 小时，14 档口含必比登",
+      ratingDesc: "候机深夜食堂",
+      active: true
+    },
 
     // ── 🆕 2026-07-03 每日更新新增 ──────────
 
@@ -5018,7 +5101,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Irene",
       btnText: "购票",
       sortDate: "2026-07-04",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-26 每日更新新增 ──────────
@@ -5645,7 +5728,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Xinyao+Reunion+Singapore",
       btnText: "购票",
       sortDate: "2026-07-03",
-      active: true
+      active: false
     },
 
     {
@@ -5715,7 +5798,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Madama+Butterfly",
       btnText: "购票",
       sortDate: "2026-07-02",
-      active: true
+      active: false
     },
 
 
@@ -6687,7 +6770,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=IRENE+Singapore",
       btnText: "购票",
       sortDate: "2026-07-04",
-      active: true
+      active: false
     }
     ,
 
@@ -7534,7 +7617,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=IRENE+I-WILL+Singapore",
       btnText: "购票",
       sortDate: "2026-07-04",
-      active: true
+      active: false
     },
 
     {
@@ -8146,7 +8229,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Irene+Red+Velvet+Singapore",
       btnText: "购票",
       sortDate: "2026-07-04",
-      active: true
+      active: false
     },
 
     {
@@ -8392,6 +8475,23 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-07-05 新增 ──────────
+
+    {
+      id: "seletar-mall-worldcup-festival-2026-07",
+      name: "Seletar Mall 美食节 × FIFA 世界杯免费观赛（足球主题游乐区）",
+      icon: "⚽",
+      topGradient: "linear-gradient(90deg,#16a34a,#166534)",
+      ageRange: "适合 5–12 岁（7–9 岁足球小将放电首选）",
+      description: "实龙岗北的 Seletar Mall 把招牌美食节和世界杯凑成一台戏：每晚 6 点到 11 点免费大屏转播 Mediacorp 世界杯赛事，旁边就是足球主题游乐区——射门挑战、颠球游戏、充气球场轮着玩。爸妈边看球边吃美食节小吃，孩子在游乐区踢到尽兴，一家人各得其所。不用门票、不用抢位，晚饭遛娃看球一站搞定。",
+      highlight: "7-9 岁正是踢球启蒙的年纪，射门挑战玩起来成就感满满；免费世界杯大屏 + 美食节小吃，爸爸看球妈妈逛吃、孩子放电，全家需求一次满足；晚上 6 点后去凉快不晒，SengKang 地铁/LRT 直达",
+      location: "The Seletar Mall, 33 Sengkang West Avenue, Singapore 797653",
+      dateRange: "2026年7月 · 每天 6pm–11pm（世界杯转播期间）",
+      cost: "免费入场",
+      duration: "约 2–3 小时",
+      active: true
+    },
 
     // ── 🆕 2026-07-03 新增 ──────────
 
@@ -11003,7 +11103,7 @@ const SGLIVING_DATA = {
         "🌟 Anna Faris · Regina Hall · Marlon Wayans 原班人马回归",
         "🎬 经典恶搞喜剧 IP 重启 · 把当代恐怖片一锅端式吐槽",
       ],
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-13 每日更新新增 ──────────────────
