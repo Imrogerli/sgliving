@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-05",
+    lastUpdated: "2026-07-07",
     version: "3.7",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,69 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-07 每日更新新增 ──────────
+
+    {
+      id: "sam-sam-sam-novena-2026-07",
+      name: "Sam Sam Sam 参鸡汤专门店（诺维娜 · 韩式养生新玩法）",
+      categories: ["restaurant"],
+      rating: 4.4,
+      openDate: "2026-07",
+      price: "参鸡汤 S$25–28",
+      description: "姐妹们！新加坡也有\u201c测体质点汤\u201d的参鸡汤店了！Novena Square 新开的 Sam Sam Sam 装修还原 80 年代韩国草药铺，一排排药柜随手拍都出片。入座先做个小问卷测今天的身体状态，店员再根据结果推荐六种参鸡汤之一：招牌 Vitality Tonic（S$25）糯米酿童子鸡炖到脱骨，人参红枣蒜香浓郁；熬夜党冲 Immunity Black（S$28），慢熟黑蒜汤底喝完整个人都暖了。还有手擀刀切面和粥，养生局新地标，绝绝子！",
+      tags: ["小红书爆款", "韩国料理", "参鸡汤", "养生", "诺维娜"],
+      address: "238 Thomson Road, #02-46, Novena Square, Singapore 307683",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#92400e,#451a03)",
+      catLabel: "🍲 韩式养生",
+      catDesc: "测体质推荐参鸡汤，80 年代草药铺装修",
+      ratingDesc: "养生打卡新地标",
+      active: true
+    },
+
+    {
+      id: "rolls-izakaya-club-st-2026-07",
+      name: "Rolls Izakaya 手卷吧（克拉布街 · 平价日式手卷）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "午市套餐 S$28 起 / 手卷约 S$7",
+      description: "CBD 打工人的午餐福音来了。Club Street 新开的 Rolls Izakaya 是一家 16 座环形吧台手卷店，主厨 Max 和 Raymond 都是日料老手（出身老牌 omakase 店 Hiryu），现点现卷、坐在吧台看着做。午市 S$28 六选刺身套餐、S$38 六款手卷套餐，折算一卷六块多，海苔脆、饭温热、料给得大方。不想吃卷还有 S$6.80 的三文鱼迷你丼和 S$19.80 的八种刺身散寿司，一个人快速吃顿好的很合适。",
+      tags: ["日本料理", "手卷", "CBD午餐", "吧台", "新开业"],
+      address: "8 Club Street, #01-05, Mercure Icon Singapore City Centre, Singapore 069472",
+      badge: "new",
+      badgeText: "🆕 7月新店",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#0f766e,#134e4a)",
+      catLabel: "🍣 日本料理",
+      catDesc: "环形吧台现做手卷，午市套餐 S$28",
+      ratingDesc: "CBD 高性价比日料",
+      active: true
+    },
+
+    {
+      id: "beng-hiang-shangri-la-2026-07",
+      name: "茗香菜馆 Beng Hiang（香格里拉酒店 · 老字号闽菜回归）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "人均 S$40–70",
+      description: "新加坡福建菜的活招牌回来了！1978 年创立的老字号茗香菜馆，如今在乌节路旁的香格里拉酒店重新开业。招牌菜都是闽南人从小吃到大的味道：五香卷炸得酥香、卤面浓稠挂汁、炒福建面锅气十足，还有烧腩这些酒楼手路菜。福建、闽南背景的家庭来新加坡想找\u201c家里的味道\u201d，这里比很多新派中餐馆更对胃；带长辈聚餐尤其稳。",
+      tags: ["闽菜", "福建菜", "老字号", "家庭聚餐", "乌节路"],
+      address: "22 Orange Grove Road, Shangri-La Singapore, Singapore 258350",
+      badge: "classic",
+      badgeText: "🏮 老字号回归",
+      emoji: "🥘",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#7f1d1d)",
+      catLabel: "🥘 闽菜老字号",
+      catDesc: "1978 年老店入驻香格里拉，五香卷/卤面",
+      ratingDesc: "闽南家乡味首选",
+      active: true
+    },
+
 
     // ── 🆕 2026-07-05 每日更新新增 ──────────
 
@@ -4840,6 +4903,55 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-07-07 新增 ──────────
+
+    {
+      id: "honne-capitol-2026-08",
+      name: "HONNE 十周年巡演 新加坡站",
+      type: "concert",
+      priority: "featured",
+      month: "AUG",
+      day: "13",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#db2777,#831843)",
+      typeLabel: "🎹 英伦电子灵魂",
+      typeColor: "#db2777",
+      description: "唱着《Day 1》《Warm on a Cold Night》陪无数人恋爱的英国电子灵魂二人组 HONNE，带着成军十周年纪念巡演来新加坡了！这次主打 stripped back 编制——更少的合成器、更近的距离，Capitol Theatre 千人剧院场地，几乎每个座位都能看清表情。适合和另一半来听的一场，氛围感直接拉满。",
+      venue: "Capitol Theatre",
+      dateRange: "8月13日（周四）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148 / S$188 / S$248（另收 S$6 手续费）",
+      priceNote: "十周年纪念巡演",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=HONNE+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-13",
+      active: true
+    },
+
+    {
+      id: "david-byrne-star-theatre-2026-08",
+      name: "David Byrne 新加坡演唱会 2026",
+      type: "concert",
+      priority: "normal",
+      month: "AUG",
+      day: "07",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#64748b,#1e293b)",
+      typeLabel: "🎸 传奇摇滚",
+      typeColor: "#64748b",
+      description: "Talking Heads 主脑、摇滚名人堂成员 David Byrne 登陆新加坡！从《Psycho Killer》《Once in a Lifetime》到百老汇爆款《American Utopia》，这位传奇的现场依旧是艺术品级别的编排——乐手全员无线上台、走位像剧场演出。乐迷父母辈的青春，也是年轻乐迷补课经典的机会，8 月 7 日 The Star Theatre 开唱。",
+      venue: "The Star Theatre",
+      dateRange: "8月7日（周五）",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$98 起",
+      priceNote: "详见官方售票平台",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=David+Byrne+Singapore",
+      btnText: "购票",
+      sortDate: "2026-08-07",
+      active: true
+    },
+
+
     // ── 🆕 2026-07-03 新增 ──────────
 
     {
@@ -8476,6 +8588,54 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-07-07 新增 ──────────
+
+    {
+      id: "imba-theatre-gbtb-2026-07",
+      name: "IMBA 沉浸式艺术馆（滨海湾花园 · 博特罗大展）",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#7c3aed,#312e81)",
+      ageRange: "适合 4–12 岁（7–9 岁艺术启蒙正入门）",
+      description: "滨海湾花园新地标 IMBA（Immersive Museum of Beyond Art）把艺术做成了会动的巨型投影：正在展出的哥伦比亚艺术家博特罗（Botero）特展，是全球首个三形态大展——近 130 件原作雕塑、油画加上整面墙的沉浸式投影，那些圆滚滚的胖人物和胖猫连小朋友都会看得咯咯笑。每天 9am–9pm 开放，看完还能顺路逛花穹或超级树，遛娃一整天不重样。",
+      highlight: "7-9 岁孩子对\u201c胖胖的\u201d博特罗人物零门槛，巨幕投影 + 音乐比传统美术馆有趣得多，艺术启蒙的完美第一课；室内冷气全天开放，下雨天备选方案首选；儿童票 S$22 起（3–12 岁），比很多游乐场还便宜",
+      location: "IMBA, 18 Marina Gardens Drive, #01-23, Gardens by the Bay, Singapore 018953",
+      dateRange: "每天 9am–9pm（博特罗展展期内）",
+      cost: "儿童票 S$22 起 / 成人 S$32 起（工作日）",
+      duration: "约 1.5–2.5 小时",
+      active: true
+    },
+
+    {
+      id: "palawan-kidz-city-free-movies-2026-07",
+      name: "圣淘沙 Palawan Kidz City 周末免费露天电影",
+      icon: "🎬",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#1e40af)",
+      ageRange: "适合全家（7–9 岁看家庭片刚刚好）",
+      description: "省钱遛娃天花板：圣淘沙 Palawan Kidz City 屋顶花园每周六、日晚上 7 点免费放映家庭电影！白天先在 Palawan 海滩玩水堆沙，傍晚吹着海风、铺个野餐垫等开场，看完电影再回家，一整天的行程几乎零花费（步行或海滩接驳车入岛免费）。记得自备驱蚊液和小毯子，提前半小时去占好位置。",
+      highlight: "免费露天电影的仪式感是电影院给不了的，7-9 岁孩子会记很久；白天海滩+晚上电影，放电和安静环节节奏完美；暑假遛娃预算救星，全程零门票",
+      location: "Palawan Kidz City Roof Garden, Palawan Beach, Sentosa",
+      dateRange: "每周六、周日 7pm",
+      cost: "免费",
+      duration: "约 2 小时（可搭配海滩玩一整天）",
+      active: true
+    },
+
+    {
+      id: "gateway-theatre-storytelling-2026-07",
+      name: "Gateway Theatre 周六免费儿童故事会（7月主题：Together, We Can）",
+      icon: "📖",
+      topGradient: "linear-gradient(90deg,#f59e0b,#b45309)",
+      ageRange: "适合 4–10 岁（7–9 岁可参与互动环节）",
+      description: "红山 Gateway Theatre 每周六的免费儿童故事会，7 月主题是\u201cTogether, We Can\u201d——讲的都是合作与友谊的故事。不是干巴巴念绘本：讲故事的老师会带着孩子做动作、答问题、演角色，全程英文进行，对想给孩子磨英文耳朵的家庭来说是每周一次的免费外教课。结束后在红山一带吃个午餐，半天亲子行程轻松凑齐。",
+      highlight: "7-9 岁正是英文听说进步最快的年纪，互动式英文故事会比网课有效也有趣；每周六固定档期，可以养成孩子的\u201c周末仪式感\u201d；完全免费，先到先得，建议提前 15 分钟到",
+      location: "Gateway Theatre, 3615 Jalan Bukit Merah, Singapore 159461",
+      dateRange: "2026年7月 · 每周六（具体场次见官网）",
+      cost: "免费",
+      duration: "约 45–60 分钟",
+      active: true
+    },
+
+
     // ── 🆕 2026-07-05 新增 ──────────
 
     {
@@ -10844,6 +11004,65 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   movies: [
 
+    // ── 🆕 2026-07-07 每日更新新增 ──────────
+
+    {
+      id: "the-odyssey-nolan-2026-07",
+      title: "The Odyssey",
+      chineseTitle: "奥德赛",
+      type: "coming-soon",
+      rating: 8.6,
+      releaseDate: "2026-07-16",
+      genre: "史诗 / 动作 / 冒险",
+      language: "英语 · 中英文字幕",
+      duration: "片长以影院公布为准",
+      cast: "Matt Damon · Tom Holland · Anne Hathaway · Zendaya · Robert Pattinson",
+      director: "Christopher Nolan",
+      description: "2026 年全球最受期待的电影，没有之一。诺兰把荷马史诗《奥德赛》搬上 IMAX 巨幕：特洛伊战争结束后，奥德修斯（Matt Damon 饰）踏上九死一生的返乡之路，独眼巨人、海妖塞壬、女巫喀耳刻一路相候。全片在意大利、希腊、冰岛、摩洛哥实景拍摄，还动用了从未公开过的全新 IMAX 摄影技术。看诺兰的电影一定要进影院，这部尤其是——建议直接锁 IMAX 场。",
+      tags: ["诺兰", "史诗", "IMAX", "年度巨制", "神话"],
+      posterEmoji: "⚓",
+      bgGradient: "linear-gradient(135deg,#1e3a8a,#0c1a3a)",
+      badge: "hot",
+      badgeText: "🔥 年度巨制",
+      ageGuide: "预计 PG13 · 含战争场面（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 Christopher Nolan（《奥本海默》《盗梦空间》《星际穿越》）",
+        "🌟 Matt Damon · Tom Holland · Anne Hathaway · Zendaya · Robert Pattinson（全明星阵容）",
+        "🏆 全新 IMAX 摄影技术全球首用 · 意大利/希腊/冰岛/摩洛哥实景拍摄",
+      ],
+      active: true
+    },
+
+    {
+      id: "sea-battle-of-penghu-2026-07",
+      title: "The Battle of Penghu",
+      chineseTitle: "澎湖海战",
+      type: "chinese",
+      rating: 7.0,
+      releaseDate: "2026-07-25",
+      genre: "战争 / 历史 / 剧情",
+      language: "华语 · 中英文字幕",
+      duration: "片长以影院公布为准",
+      cast: "王学圻 · 易烊千玺 · 赵丽颖 · 胡军 · 杜江",
+      director: "郑保瑞",
+      description: "暑期档华语战争大片来了。取材 1683 年澎湖海战真实历史：福建水师提督施琅（王学圻 饰）奉康熙（易烊千玺 饰）之命率军进攻澎湖，一场决定台湾归属的海上大战就此展开。导演郑保瑞刚凭《九龙城寨之围城》证明过自己拍大场面的功力，这次把战场搬到海上，冷兵器时代的舰队对决在大银幕上非常震撼。喜欢历史战争题材、想看华语电影工业顶级制作的观众值得进影院。",
+      tags: ["华语片", "战争", "历史", "海战", "暑期档"],
+      posterEmoji: "⛵",
+      bgGradient: "linear-gradient(135deg,#0c4a6e,#082f49)",
+      badge: "chinese",
+      badgeText: "🇨🇳 华语片",
+      ageGuide: "预计 PG13 · 含战争场面（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 郑保瑞（《九龙城寨之围城》《智齿》）",
+        "🌟 王学圻 · 易烊千玺 · 赵丽颖 · 胡军 · 杜江（易烊千玺首演康熙）",
+        "🏆 取材 1683 年澎湖海战真实历史 · 华语罕见大规模古代海战场面",
+      ],
+      active: true
+    },
+
+
     // ── 🆕 2026-07-02 每日更新新增 ──────────
 
     {
@@ -10989,7 +11208,7 @@ const SGLIVING_DATA = {
         "🌟 Nicholas Galitzine · Jared Leto · Idris Elba · Camila Mendes · Alison Brie",
         "🎬 经典动画 IP 真人化 · 视效大片 · 正邪对决热血燃爽",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -11333,7 +11552,7 @@ const SGLIVING_DATA = {
         "🌟 Jaafar Jackson（MJ 亲侄）· Colman Domingo · Miles Teller",
         "🏆 重现《Thriller》《Billie Jean》经典名场面 · 流行之王传记巨制",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -11361,7 +11580,7 @@ const SGLIVING_DATA = {
         "🌟 Karl Urban 饰 Johnny Cage · Lewis Tan · Hiroyuki Sanada",
         "🎬 经典格斗游戏改编 · 招牌「Fatality」终结技还原",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -11389,7 +11608,7 @@ const SGLIVING_DATA = {
         "🌟 Lizzie Freeman · Michael Kovach · Alex Rochon 原版配音",
         "🎬 全网爆红独立动画大银幕完结篇 · 脑洞与温情兼具",
       ],
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-09 每日更新新增 ──────────────────
@@ -11532,7 +11751,7 @@ const SGLIVING_DATA = {
         "🌟 柊瑠美 · 入野自由 · 夏木真理（日语原版配音）",
         "🏆 奥斯卡最佳动画长片 · 柏林金熊奖 · 25 周年重映",
       ],
-      active: true
+      active: false
     },
 
     {
