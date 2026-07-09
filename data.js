@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-07",
+    lastUpdated: "2026-07-09",
     version: "3.7",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-09 每日更新新增 ──────────
+
+    {
+      id: "sijiake-chengdu-lu-westgate-2026-07",
+      name: "思家客成都卤（Westgate · 老成都卤味 + 蒋记酸辣粉）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "卤味/酸辣粉 S$5–15",
+      description: "姐妹们！西部的川渝胃有救了！思家客在裕廊东 Westgate 新开的这家店，直接把\u201c老成都\u201d卤味档搬来了：卤鸭脖、卤鸭翅、卤豆干越嚼越香，麻辣度可选。重点是还有\u201c蒋记\u201d重庆酸辣粉——红薯粉爽滑弹牙、酸辣汤底冲鼻上头，一口回到解放碑！小红书和抖音上已经一堆博主打卡，据说下午去卤味经常售罄，想吃趁早。旁边就是超市，买完国货零食再来一碗酸辣粉，周末幸福感拉满。营业到晚上 11 点，夜宵党也友好。",
+      tags: ["小红书爆款", "成都卤味", "酸辣粉", "川渝小吃", "裕廊东"],
+      address: "3 Gateway Drive, #B2-01, Westgate, Singapore 608532",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#450a0a)",
+      catLabel: "🌶️ 川渝小吃",
+      catDesc: "老成都卤味 + 蒋记重庆酸辣粉，营业至 11pm",
+      ratingDesc: "西部川渝胃救星",
+      active: true
+    },
+
+    {
+      id: "isetan-hanabi-matsuri-waterway-2026-07",
+      name: "Isetan Hanabi Matsuri 日本美食祭（榜鹅 Waterway Point）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-07",
+      price: "小吃 S$5–20",
+      description: "不用飞日本，榜鹅就能逛一场日式屋台祭！Isetan 的 Hanabi Matsuri 美食祭回归 Waterway Point，这次的阵容很能打：Jungnammi 的\u201c蔬菜面包\u201d——把面包做成青椒、玉米、番茄的形状，切开还有对应内馅，出片率极高；大阪人气老铺 Bashodo 的蕨饼粉糯清爽；还有炭烤 oyaki 名店 Ogawa No Sho。东北的朋友遛娃顺路就能逛，注意只到 7 月 12 日，本周末是最后机会！",
+      tags: ["日本美食祭", "限时活动", "榜鹅", "亲子友好", "市集"],
+      address: "83 Punggol Central, Level 1 Village Square West Wing, Waterway Point, Singapore 828761",
+      badge: "hot",
+      badgeText: "⏰ 限时至7月12日",
+      emoji: "🎆",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7c2d12)",
+      catLabel: "🎆 日式屋台祭",
+      catDesc: "蔬菜面包 + 大阪蕨饼 + 炭烤 oyaki，7月12日截止",
+      ratingDesc: "榜鹅限时日本祭",
+      active: true
+    },
+
+    {
+      id: "mcdonalds-old-chang-kee-ndp-2026-07",
+      name: "麦当劳 × 老曾记 国庆限定联名（咖喱卜变汉堡！）",
+      categories: ["restaurant"],
+      rating: 4.0,
+      openDate: "2026-07",
+      price: "汉堡单点约 S$6–9",
+      description: "今年国庆最有\u201c新加坡魂\u201d的联名来了：麦当劳 × 老曾记（Old Chang Kee）！把国民咖喱卜的灵魂塞进汉堡——咖喱土豆鸡肉堡（Curry Potato Chicken Burger）咬下去就是熟悉的咖喱卜内馅，还有仁当牛肉堡（Rendang Beef Burger）香料味十足。全岛麦当劳门店都有售，国庆限定卖完即止。带孩子吃快餐的时候顺便讲讲咖喱卜的故事，很有本地生活仪式感的一餐。",
+      tags: ["国庆限定", "联名", "快餐", "本地风味", "全岛有售"],
+      address: "McDonald's Singapore",
+      badge: "new",
+      badgeText: "🇸🇬 国庆限定",
+      emoji: "🍔",
+      bgGradient: "linear-gradient(135deg,#dc2626,#991b1b)",
+      catLabel: "🍔 国庆联名",
+      catDesc: "咖喱卜内馅汉堡 + 仁当牛肉堡，全岛门店限时",
+      ratingDesc: "国庆话题款",
+      active: true
+    },
 
     // ── 🆕 2026-07-07 每日更新新增 ──────────
 
@@ -4903,6 +4965,31 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-07-09 新增 ──────────
+
+    {
+      id: "istana-open-house-national-day-2026-07",
+      name: "总统府开放日 Istana Open House（国庆特别场）",
+      type: "event",
+      priority: "featured",
+      month: "JUL",
+      day: "26",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      typeLabel: "🏛️ 国庆开放日",
+      typeColor: "#dc2626",
+      description: "一年只开放几次的总统府（Istana），7 月 26 日迎来国庆特别开放日！平时只能在乌节路门口打卡的百年府邸，这天可以走进大草坪野餐、看军乐队表演、逛府内花园，运气好还能参观主楼内部（需另购票）。公民和 PR 免费入场，带孩子来一次\u201c走进总统府\u201d的现场公民课，比课本生动多了。记得带防晒和水，入口在乌节路正门。",
+      venue: "The Istana, 35 Orchard Road",
+      dateRange: "7月26日（周日）8:30am–6pm",
+      ticketInfo: "🎫 公民/PR 免费",
+      price: "公民/PR 免费 · 外籍访客 S$2（主楼参观另购票）",
+      priceNote: "国庆特别开放日",
+      ticketUrl: "https://www.istana.gov.sg/Visit-Istana/Open-House",
+      btnText: "查看详情",
+      sortDate: "2026-07-26",
+      active: true
+    },
+
     // ── 🆕 2026-07-07 新增 ──────────
 
     {
@@ -7425,7 +7512,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Singapore+International+Piano+Festival",
       btnText: "购票",
       sortDate: "2026-07-02",
-      active: true
+      active: false
     },
 
     {
@@ -8587,6 +8674,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-07-09 新增 ──────────
+
+    {
+      id: "kidpreneurs-bazaar-harbourfront-2026-07",
+      name: "Singapore Kidpreneurs 小小企业家市集（港湾中心）",
+      icon: "💰",
+      topGradient: "linear-gradient(90deg,#f59e0b,#b45309)",
+      ageRange: "适合 5–14 岁（7–9 岁财商启蒙黄金期）",
+      description: "本周末（7 月 11–12 日）港湾一带有个特别的市集：60 个摊位的\u201c老板\u201d全是 5–14 岁的孩子！这些小小企业家自己设计产品、自己摆摊、自己招呼客人、自己算账收钱。带孩子去当\u201c顾客\u201d，看同龄人怎么卖东西、怎么应对讨价还价，比任何财商课都直观。免费入场，逛完还能顺路去怡丰城吃饭遛娃，周末半天行程轻松安排。",
+      highlight: "7-9 岁看到同龄人\u201c做生意\u201d会大受触动，回家大概率主动要求摆摊试试——这就是最好的启蒙；给孩子一点零花钱让 TA 自主决定买什么，练习消费决策；免费入场零成本",
+      location: "HarbourFront（怡丰城一带，具体位置见主办方公告）",
+      dateRange: "2026年7月11–12日 12pm–7pm",
+      cost: "免费入场",
+      duration: "约 1–2 小时（可搭配怡丰城行程）",
+      active: true
+    },
+
+    {
+      id: "istana-open-house-family-2026-07",
+      name: "总统府开放日亲子行（7月26日国庆特别场）",
+      icon: "🏛️",
+      topGradient: "linear-gradient(90deg,#dc2626,#7f1d1d)",
+      ageRange: "适合全家（7–9 岁公民教育现场课）",
+      description: "7 月 26 日总统府国庆特别开放日，是一年里少有的可以走进 Istana 的机会。大草坪上可以野餐、看仪仗表演，府内百年花园随便逛，主楼内部参观需另购票但很值——孩子能亲眼看到总统接见外宾的大厅。公民和 PR 免费，乌节路正门入场，逛完直接接乌节路吃饭购物，一天行程无缝衔接。",
+      highlight: "7-9 岁正在学校接触 National Education，亲眼看总统府比课本印象深十倍；大草坪空间大，孩子可以自由跑动不憋屈；一年仅开放数次，错过再等几个月",
+      location: "The Istana, 35 Orchard Road, Singapore 238823",
+      dateRange: "2026年7月26日（周日）8:30am–6pm",
+      cost: "公民/PR 免费 · 外籍 S$2",
+      duration: "约 2–3 小时",
+      active: true
+    },
+
+    {
+      id: "disney-magical-island-sentosa-2026",
+      name: "圣淘沙 × 迪士尼邮轮「奇幻海岛大冒险」",
+      icon: "🚢",
+      topGradient: "linear-gradient(90deg,#2563eb,#1e3a8a)",
+      ageRange: "适合 3–12 岁（7–9 岁迪士尼粉丝狂喜）",
+      description: "为迎接迪士尼邮轮 Disney Adventure 从新加坡启航，整个圣淘沙变成了迪士尼主题海岛！6 月 24 日至 9 月 20 日，岛上多个地点散布着迪士尼主题打卡装置、角色见面会和限定活动，跟着地图一路集章打卡，像一场全岛寻宝。大部分活动免费（入岛费照付），暑假随时去都能玩，搭配海滩、Skyline Luge 就是完整一日游。",
+      highlight: "7-9 岁孩子的体力刚好可以走完全岛打卡路线，集章机制让 TA 全程有目标感；免费为主，性价比远超主题乐园；展期到 9 月 20 日，人少的工作日去体验更佳",
+      location: "Sentosa 全岛多个地点（Beach Station 起步最方便）",
+      dateRange: "2026年6月24日 – 9月20日",
+      cost: "大部分免费（圣淘沙入岛费另计）",
+      duration: "半天至一天",
+      active: true
+    },
 
     // ── 🆕 2026-07-07 新增 ──────────
 
@@ -11004,6 +11138,64 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   movies: [
 
+    // ── 🆕 2026-07-09 每日更新新增 ──────────
+
+    {
+      id: "we-are-all-strangers-2026-08",
+      title: "We Are All Strangers",
+      chineseTitle: "我们不是陌生人",
+      type: "chinese",
+      rating: 7.3,
+      releaseDate: "2026-08-20",
+      genre: "剧情 / 家庭",
+      language: "华语 · 中英文字幕",
+      duration: "157 分钟",
+      cast: "杨雁雁 · 许家乐 · Andi Lim · Regene Lim",
+      director: "陈哲艺 Anthony Chen",
+      description: "新加坡电影史被改写了：陈哲艺的《我们不是陌生人》是首部入围柏林电影节主竞赛、角逐金熊奖的新加坡电影！这也是他\u201c成长三部曲\u201d的终章——《爸妈不在家》的母子杨雁雁、许家乐时隔十三年再度同框，许家乐从当年的小男孩演到了 21 岁的准爸爸。三个不同阶层的新加坡家庭在这座城市里交错，你会在组屋、小贩中心、外卖骑手的日常里看到自己的生活。在新加坡生活的人看这部片，会比任何观众都有共鸣。",
+      tags: ["华语片", "新加坡电影", "柏林电影节", "陈哲艺", "家庭"],
+      posterEmoji: "🏙️",
+      bgGradient: "linear-gradient(135deg,#0f766e,#134e4a)",
+      badge: "chinese",
+      badgeText: "🇸🇬 本地华语巨献",
+      ageGuide: "PG13 · 适合与大孩子同看（题材偏成人向）",
+      posterUrl: "https://image.tmdb.org/t/p/w500/abVlmOXtnCQNxIUbGLie4LywfZr.jpg",
+      highlights: [
+        "🎬 导演 陈哲艺（《爸妈不在家》金马最佳影片 ·《热带雨》）",
+        "🌟 杨雁雁 · 许家乐 · Andi Lim · Regene Lim（《爸妈不在家》母子13年后重聚）",
+        "🏆 柏林电影节金熊奖提名——新加坡电影史上首次入围主竞赛",
+      ],
+      active: true
+    },
+
+    {
+      id: "the-dog-stars-2026-08",
+      title: "The Dog Stars",
+      chineseTitle: "末世行者",
+      type: "coming-soon",
+      rating: 7.5,
+      releaseDate: "2026-08-27",
+      genre: "科幻 / 冒险 / 末世",
+      language: "英语 · 中英文字幕",
+      duration: "100 分钟",
+      cast: "Jacob Elordi · Josh Brolin · Margaret Qualley · Guy Pearce · Allison Janney",
+      director: "Ridley Scott",
+      description: "88 岁的雷德利·斯科特还在拍大片，而且这次的题材正是他的舒适区：末世科幻。改编自同名畅销小说——大疫之后的世界，一个男人带着他的狗住在科罗拉多的飞机库里，靠一架老式塞斯纳小飞机巡逻度日，直到无线电里传来一段神秘讯号。《沙丘》摄影师掌镜，Jacob Elordi 和 Josh Brolin 的组合一硬一柔，预告片里的末世空镜美得不像话。喜欢《火星救援》《我是传奇》这类\u201c孤独求生\u201d题材的观众别错过。",
+      tags: ["雷德利·斯科特", "末世", "科幻", "改编", "8月新片"],
+      posterEmoji: "✈️",
+      bgGradient: "linear-gradient(135deg,#78350f,#1c1917)",
+      badge: "new",
+      badgeText: "🎬 大师新作",
+      ageGuide: "预计 NC16（美国 R 级，最终分级以影院为准）",
+      posterUrl: "https://image.tmdb.org/t/p/w500/27dR7FF9trNhltrNWNAb89Wkkh7.jpg",
+      highlights: [
+        "🎬 导演 Ridley Scott（《异形》《银翼杀手》《火星救援》《角斗士》）",
+        "🌟 Jacob Elordi · Josh Brolin · Margaret Qualley · Guy Pearce · Allison Janney",
+        "🏆 改编 Peter Heller 畅销小说 ·《沙丘》摄影师 Erik Messerschmidt 掌镜",
+      ],
+      active: true
+    },
+
     // ── 🆕 2026-07-07 每日更新新增 ──────────
 
     {
@@ -11779,7 +11971,7 @@ const SGLIVING_DATA = {
         "🌟 梁咏琪 等华语演员",
         "📍 加拿大蒙特利尔取景 · 华语 + 法语 双语对白",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -11807,7 +11999,7 @@ const SGLIVING_DATA = {
         "🎬 好莱坞资深动作导演操刀",
         "🎬 IMAX 大银幕推荐 · 影院音响加持",
       ],
-      active: true
+      active: false
     },
 
     {
