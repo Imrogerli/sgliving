@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-09",
+    lastUpdated: "2026-07-10",
     version: "3.7",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-10 每日更新新增 ──────────
+
+    {
+      id: "gatten-sushi-ion-2026-07",
+      name: "Gatten Sushi 合点寿司（ION Orchard · 日本国民回转寿司新加坡首店）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-06",
+      price: "S$2.50–9.80/碟",
+      description: "姐妹们！乌节路又有新排队王了！日本埼玉起家、全球 270+ 家店的国民回转寿司 Gatten Sushi 开进 ION B3（原 Itacho 的位置）！虽然是回转带，但师傅就在你面前现捏现做，仪式感直接拉满。三文鱼 S$3.80、肥美三文鱼腩 S$4.80、厚切三文鱼 S$5.80，明太子蛋黄酱炙烤三文鱼绝绝子！甜虾、赤虾、带子一路吃上去，海胆也才 S$9.80 一碟，人均 30 新就能吃到扶墙出。逛街逛累了直接下 B3 开炫，工作日错峰去不用排太久，亲测周末饭点要做好等位准备～",
+      tags: ["小红书爆款", "回转寿司", "日料", "乌节路", "排队王"],
+      address: "2 Orchard Turn, #B3-20, ION Orchard, Singapore 238801",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#0e7490,#164e63)",
+      catLabel: "🍣 日式回转寿司",
+      catDesc: "日本 270+ 店国民品牌，现捏现做，S$2.50 起",
+      ratingDesc: "乌节路新排队王",
+      active: true
+    },
+
+    {
+      id: "aishan-claypot-jewel-2026-07",
+      name: "Ai Shan Claypot Express 爱山煲仔饭（Jewel 大食代 · 香港名店首登新加坡）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-07",
+      price: "煲仔饭 S$8–15",
+      description: "去星耀樟宜不用再为吃什么发愁了：装修三个月的大食代 Food Republic 7 月 3 日重开，14 个新档口里最惊喜的是香港人气煲仔饭\u201c爱山\u201d的新加坡首店！炭香扑鼻的腊味煲仔饭，锅底那层金黄焦脆的饭焦才是灵魂，用勺子刮着吃嘎嘣脆。同场还有蝉联十年米其林必比登的 Na Na 咖喱鱼头和立兴潮州鱼圆面，接送机前后来一顿，比机场里动辄几十新的餐厅实惠太多。",
+      tags: ["煲仔饭", "港式", "星耀樟宜", "米其林同场", "食阁"],
+      address: "78 Airport Boulevard, #B2-238, Food Republic, Jewel Changi Airport, Singapore 819666",
+      badge: "new",
+      badgeText: "🆕 香港名店首店",
+      emoji: "🍚",
+      bgGradient: "linear-gradient(135deg,#b45309,#78350f)",
+      catLabel: "🍚 港式煲仔饭",
+      catDesc: "香港人气品牌新加坡首店，大食代 Jewel 店内",
+      ratingDesc: "接送机干饭首选",
+      active: true
+    },
+
+    {
+      id: "breakfast-grill-guoco-2026-07",
+      name: "Breakfast Grill（Guoco Tower · 厚压三明治专门店 CBD 新店）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-07",
+      price: "三明治 S$10–20",
+      description: "在东海岸和 Lorong Kilat 攒够口碑的三明治专门店 Breakfast Grill，7 月把新店开到了丹戎巴葛 Guoco Tower，CBD 上班族的早午餐又多一个好去处。招牌是压得扎实喷香的厚压\u201cSammies\u201d：Croque Monsieur 奶酪火腿控闭眼冲，Magic Mushroom 素食也好吃，周末限定的海陆双拼 1-800-Surf-N-Turf 分量感人。工作日早 8 点开门，赶着上班抓一个带走，比咖啡店的冷三明治强太多。",
+      tags: ["三明治", "早午餐", "CBD", "丹戎巴葛", "打工人友好"],
+      address: "Guoco Tower, 7 Wallich Street, Singapore 078884",
+      badge: "new",
+      badgeText: "🆕 7月新店",
+      emoji: "🥪",
+      bgGradient: "linear-gradient(135deg,#ca8a04,#713f12)",
+      catLabel: "🥪 三明治/早午餐",
+      catDesc: "东海岸人气三明治店进驻 CBD，8am 开门",
+      ratingDesc: "CBD 早午餐新选择",
+      active: true
+    },
 
     // ── 🆕 2026-07-09 每日更新新增 ──────────
 
@@ -4829,7 +4891,7 @@ const SGLIVING_DATA = {
     // ── 2026-06 新增：日式餐厅 & 网红打卡 ──────────
 
     {
-      id: "torikizoku-vivocity-2026-06",
+      id: "torikizoku-vivocity-2026-06-original",
       name: "Torikizoku 鸟贵族 · VivoCity 全球最大店",
       categories: ["restaurant", "snack"],
       rating: 4.5,
@@ -4964,6 +5026,100 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   events: [
+
+    // ── 🆕 2026-07-10 新增 ──────────
+
+    {
+      id: "f1-exhibition-gbtb-2026-07",
+      name: "The Formula 1® Exhibition 亚洲首展（滨海湾花园）",
+      type: "exhibition",
+      priority: "featured",
+      month: "JUL",
+      day: "23",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#dc2626,#111827)",
+      typeLabel: "🏎️ F1 官方大展",
+      typeColor: "#dc2626",
+      description: "F1 官方巡回大展亚洲首站落地滨海湾花园！7 月 23 日起限定展期，能近距离看到维特尔/韦伯驾驶过的 2011 冠军赛车红牛 RB7、巴顿开过的 2003 BAR Honda 005 等传奇战车，还有沉浸式展厅、互动装置和车队独家幕后内容。9 月夜街赛前先来补一波 F1 知识，看完再去 Satay by the Bay 吃沙爹，一天安排得明明白白。",
+      venue: "Gardens by the Bay（Satay by the Bay 旁）",
+      dateRange: "7月23日起 · 限定展期",
+      ticketInfo: "🎫 官方售票",
+      price: "成人 S$49 起 · 儿童 S$29 起",
+      priceNote: "亚洲首展",
+      ticketUrl: "https://www.f1exhibition.com/",
+      btnText: "购票",
+      sortDate: "2026-07-23",
+      active: true
+    },
+
+    {
+      id: "sentosa-grillfest-siloso-2026-07",
+      name: "Sentosa GrillFest 2026 海滩烧烤美食节",
+      type: "event",
+      priority: "featured",
+      month: "JUL",
+      day: "23",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#ea580c,#7c2d12)",
+      typeLabel: "🍖 海滩美食节",
+      typeColor: "#ea580c",
+      description: "圣淘沙年度烧烤美食节回归西乐索海滩！7 月 23 日至 8 月 16 日，42 个美食摊位分布五大主题区：烤肉海鲜、韩式烧烤、日式炉端烧、台湾街头小吃、甜品一网打尽。今年首次推出海滩 omakase 八道式炉火晚宴\u201cChef's Grill\u201d（有冷气！），还能在 Indoguna 市集现挑食材现场代烤。免费入场，傍晚去吹着海风吃烤串看落日，周末遛娃聚会都合适。",
+      venue: "Siloso Beach, Sentosa",
+      dateRange: "7月23日 – 8月16日",
+      ticketInfo: "🎫 免费入场",
+      price: "免费入场 · 餐饮现场消费",
+      priceNote: "42 个美食摊位",
+      ticketUrl: "https://www.google.com/search?q=Sentosa+GrillFest+2026+Siloso+Beach",
+      btnText: "查看详情",
+      sortDate: "2026-07-23",
+      active: true
+    },
+
+    {
+      id: "slava-snowshow-sands-2026-07",
+      name: "Slava's Snowshow 白色雪秀（金沙剧院）",
+      type: "event",
+      priority: "normal",
+      month: "JUL",
+      day: "15",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      typeLabel: "🎪 殿堂级剧场",
+      typeColor: "#0ea5e9",
+      description: "风靡全球三十年的殿堂级小丑剧《Slava's Snowshow》7 月 15 日起登陆金沙剧院！全程无对白、纯视觉魔法：漫天暴风雪席卷观众席、巨型蛛网从舞台罩向全场、大气球滚进人群——每个大人都会变回小孩。俄罗斯戏剧大师 Slava Polunin 的代表作，拿奖拿到手软，大人小孩看完都嘴角上扬地走出剧场，全家出动强烈推荐。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "7月15日起（多场次）",
+      ticketInfo: "🎫 官方售票",
+      price: "S$58 – S$188",
+      priceNote: "无语言门槛，全家可看",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=Slava+Snowshow+Singapore",
+      btnText: "购票",
+      sortDate: "2026-07-15",
+      active: true
+    },
+
+    {
+      id: "gp-all-access-f1-pit-2026-07",
+      name: "Singapore GP ALL ACCESS 2.0（F1 维修大楼开放日）",
+      type: "event",
+      priority: "normal",
+      month: "JUL",
+      day: "26",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#16a34a,#14532d)",
+      typeLabel: "🏁 免费限时",
+      typeColor: "#16a34a",
+      description: "F1 新加坡站官方免费开放活动最后倒计时（7 月 26 日截止）！平时门禁森严的 F1 Pit Building 全面开放：站上真正的颁奖台、走进车手冷却室、参观赛控中心 Race Control，还能摸到 TECPRO 缓冲墙和钢制路缘石等真实赛道部件，甚至进 beIN SPORTS 解说间体验现场解说。免费但需预约登记，F1 迷和带娃家庭抓紧最后两周。",
+      venue: "F1 Pit Building, 1 Republic Boulevard",
+      dateRange: "即日起 – 7月26日",
+      ticketInfo: "🎫 免费（需登记）",
+      price: "免费入场（需预约登记）",
+      priceNote: "7月26日结束",
+      ticketUrl: "https://www.google.com/search?q=Singapore+GP+ALL+ACCESS+2.0+F1+Pit+Building",
+      btnText: "查看详情",
+      sortDate: "2026-07-26",
+      active: true
+    },
 
     // ── 🆕 2026-07-09 新增 ──────────
 
@@ -8675,6 +8831,68 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-07-10 新增 ──────────
+
+    {
+      id: "sanrio-hello-singapore-marina-square-2026-07",
+      name: "Sanrio × 新加坡国庆主题展（Marina Square）",
+      icon: "🎀",
+      topGradient: "linear-gradient(90deg,#ec4899,#be185d)",
+      ageRange: "适合全家（7–9 岁打卡拍照 + 本地文化启蒙）",
+      description: "Hello Kitty 穿上\u201c新加坡限定皮肤\u201d啦！7 月 17 日至 8 月 16 日，Marina Square 中庭把三丽鸥家族和新加坡本土元素揉在一起：组屋楼下的 void deck、经典龙头游乐场、推车冰淇淋摊、熟悉的小贩美食统统还原，孩子可以坐在\u201c组屋楼下\u201d和 Hello Kitty 合影。拍照发 Instagram 并 tag 商场账号还能免费换限量版\u201cHello Singapore\u201d贴纸。免费入场，逛新达城/滨海广场顺路就能打卡。",
+      highlight: "7-9 岁孩子边打卡边认识龙头游乐场、组屋 void deck 这些新加坡文化符号，是很好的\u201c在地文化课\u201d；免费 + 室内冷气，雨天备选方案；国庆季氛围感拉满",
+      location: "Marina Square, Foyer Atrium（中庭）",
+      dateRange: "2026年7月17日 – 8月16日",
+      cost: "免费",
+      duration: "约 30–60 分钟（可搭配商场行程）",
+      active: true
+    },
+
+    {
+      id: "chicken-little-srt-mandarin-2026-07",
+      name: "SRT 亲子音乐剧《Chicken Little》中文版",
+      icon: "🐤",
+      topGradient: "linear-gradient(90deg,#f59e0b,#d97706)",
+      ageRange: "适合 4–10 岁（7–9 岁 + 华语家庭强推）",
+      description: "新加坡专业剧团 SRT 的口碑亲子音乐剧《Chicken Little》时隔多年回归，而且先演中文版（7月22日–8月2日），英文版 8 月才开演！小鸡被砸到头以为\u201c天要塌了\u201d，一路拉上好友去报信——朗朗上口的歌曲配上滑稽角色，把\u201c勇气不是不害怕，而是和朋友一起面对\u201d讲得孩子听得懂。对在新加坡上学的中国孩子来说，看华语剧场既亲切又练听力，工作日上午还有加场。",
+      highlight: "华语演出对中文家庭零门槛，7-9 岁正好能跟上剧情又能理解\u201c面对恐惧\u201d的主题；SRT 制作水准稳定，是很好的剧场初体验；家庭套票（4 张起）85 折",
+      location: "Drama Centre Theatre, National Library Building, 100 Victoria Street",
+      dateRange: "中文版 2026年7月22日 – 8月2日（英文版 8月13–23日）",
+      cost: "S$32 起（家庭套票 4 张起 85 折）",
+      duration: "约 1 小时",
+      active: true
+    },
+
+    {
+      id: "portals-what-if-popup-cpl-2026-07",
+      name: "The Portals「What If」免费科幻快闪展（中央图书馆）",
+      icon: "🌌",
+      topGradient: "linear-gradient(90deg,#7c3aed,#4c1d95)",
+      ageRange: "适合 6–12 岁（7–9 岁科幻迷 + 爱看书的孩子）",
+      description: "世界级科幻奇幻沉浸展 The Portals 在中央公共图书馆开了个免费快闪版\u201cWhat If\u201d Pop-Up（至 7 月 31 日）！有国家图书馆管理局策划的新加坡科幻奇幻时间线、传奇作家小说封面的原版油画真迹（Frank Herbert、Samuel R. Delany），还有沉浸式拍照场景。看完顺便在图书馆借几本科幻小说回家，一个下午\u201c种草\u201d阅读兴趣。现场还藏了主展 20% 折扣码，找到就赚到。",
+      highlight: "免费 + 图书馆场景，看展和借书一站式，最适合给 7-9 岁孩子做科幻/阅读启蒙；寻找隐藏折扣码像寻宝游戏，孩子参与感强；Bugis/City Hall 地铁步行可达",
+      location: "Central Public Library（Programme Room 3）, 100 Victoria Street",
+      dateRange: "即日起至 2026年7月31日 · 10am–9pm",
+      cost: "免费",
+      duration: "约 45–60 分钟",
+      active: true
+    },
+
+    {
+      id: "ice-cream-fest-plaza-singapura-2026-07",
+      name: "Ice Cream Fest 冰淇淋嘉年华（Plaza Singapura）",
+      icon: "🍦",
+      topGradient: "linear-gradient(90deg,#f472b6,#db2777)",
+      ageRange: "适合全家（7–9 岁 DIY 环节最上头）",
+      description: "7 月 18–24 日，Plaza Singapura 户外广场变身巨型甜品乐园：Magnum、Ben & Jerry's、Wall's 三大冰淇淋品牌齐聚，15+ 种口味任选。孩子可以在 Magnum DIY 顶料吧亲手给雪糕裹脆皮加顶料，爸妈则能找回童年回忆——面包夹冰淇淋、老式冰球（ice ball）都有！现场还有互动游戏和驻唱表演，总价值超 S$43,000 的奖品等着抽。免费入场，CapitaStar 会员 7 月 13 日起输码 ICECREAM 领专属电子券。",
+      highlight: "DIY 顶料吧让 7-9 岁孩子自己动手\u201c设计\u201d雪糕，成就感满满；面包夹冰淇淋是给孩子讲爸妈童年故事的好道具；Dhoby Ghaut 地铁直达，吃完直接进商场吹冷气",
+      location: "Plaza Singapura Outdoor Plaza, 68 Orchard Road",
+      dateRange: "2026年7月18日 – 24日（18–19日为 CapitaStar 会员专场）",
+      cost: "免费入场 · 冰淇淋现场购买",
+      duration: "约 1 小时",
+      active: true
+    },
+
     // ── 🆕 2026-07-09 新增 ──────────
 
     {
@@ -11138,6 +11356,64 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   movies: [
 
+    // ── 🆕 2026-07-10 每日更新新增 ──────────
+
+    {
+      id: "kung-fu-girls-football-2026-08",
+      title: "Kung Fu Girls Football",
+      chineseTitle: "功夫女足",
+      type: "chinese",
+      rating: 7.5,
+      releaseDate: "2026-08-06",
+      genre: "喜剧 / 运动",
+      language: "华语 · 中英文字幕",
+      duration: "片长以影院信息为准",
+      cast: "张小斐 · 迪丽热巴 · 张艺兴 · 刘嘉玲（特别出演）· 佐藤健（特别出演）",
+      director: "周星驰 Stephen Chow",
+      description: "星爷回来了！《少林足球》二十五年后，周星驰亲自执导的《功夫女足》把\u201c功夫+足球\u201d的无厘头宇宙传给了一支不被看好的女足队——峨眉队出战\u201c至尊无敌杯\u201d，用传统功夫踢出逆天改命的一脚。张小斐 + 迪丽热巴 + 张艺兴的阵容自带笑点与流量，刘嘉玲、佐藤健特别出演更是彩蛋级惊喜。中国 7 月 11 日上映，新加坡由本地发行商 Encore Films 引进、8 月 6 日起全球陆续上映。当年看《少林足球》长大的人，这次可以带着孩子进影院还愿了。",
+      tags: ["华语片", "周星驰", "喜剧", "运动", "8月新片"],
+      posterEmoji: "⚽",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      badge: "chinese",
+      badgeText: "🇨🇳 星爷执导回归",
+      ageGuide: "预计 PG · 适合全家（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 周星驰（《少林足球》《功夫》《美人鱼》）",
+        "🌟 张小斐 · 迪丽热巴 · 张艺兴 · 刘嘉玲 · 佐藤健",
+        "🏆 《少林足球》25 年后\u201c功夫+足球\u201d正统回归，Encore Films 全球发行",
+      ],
+      active: true
+    },
+
+    {
+      id: "wind-up-the-movie-2026-07",
+      title: "Wind Up The Movie",
+      chineseTitle: "投出青春（Wind Up 剧场版）",
+      type: "coming-soon",
+      rating: 7.0,
+      releaseDate: "2026-07-25",
+      genre: "剧情 / 运动 / 青春",
+      language: "韩语 · 英文字幕",
+      duration: "片长以影院信息为准",
+      cast: "李帝努 Jeno · 罗渽民 Jaemin · 李钟赫 · 吴贤庆",
+      director: "金圣浩 Kim Sung-ho",
+      description: "NCT 粉丝集合！Jeno 和 Jaemin 主演的棒球青春片《Wind Up》剧场版 7 月 25 日登陆新加坡院线。Jeno 饰演投不出好球的天才投手，Jaemin 饰演突然出现、自封\u201c经纪人\u201d的转学生——一段从互看不顺眼到并肩作战的热血羁绊。导演金圣浩是 Netflix 高分剧《我是遗物整理师》的掌舵人，把青春的挫败与和解拍得细腻不狗血。追星女孩当然要冲，纯路人也能当一部清爽的夏日青春片来看。",
+      tags: ["韩国电影", "NCT", "棒球", "青春", "7月新片"],
+      posterEmoji: "⚾",
+      bgGradient: "linear-gradient(135deg,#2563eb,#1e3a8a)",
+      badge: "new",
+      badgeText: "🎬 NCT 主演",
+      ageGuide: "预计 PG13（最终分级以影院为准）",
+      posterUrl: "",
+      highlights: [
+        "🎬 导演 金圣浩（Netflix《我是遗物整理师》《坏检察官》）",
+        "🌟 李帝努 Jeno · 罗渽民 Jaemin · 李钟赫 · 吴贤庆",
+        "🎬 NCT 成员大银幕主演之作，热血棒球 × 青春成长",
+      ],
+      active: true
+    },
+
     // ── 🆕 2026-07-09 每日更新新增 ──────────
 
     {
@@ -11204,7 +11480,7 @@ const SGLIVING_DATA = {
       chineseTitle: "奥德赛",
       type: "coming-soon",
       rating: 8.6,
-      releaseDate: "2026-07-16",
+      releaseDate: "2026-07-17",
       genre: "史诗 / 动作 / 冒险",
       language: "英语 · 中英文字幕",
       duration: "片长以影院公布为准",
