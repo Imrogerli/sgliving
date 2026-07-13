@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-10",
+    lastUpdated: "2026-07-13",
     version: "3.7",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,68 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-13 每日更新新增 ──────────
+
+    {
+      id: "gangnam-story-crab-buffet-2026-07",
+      name: "Gangnam Story 江南故事韩式火锅烤肉自助（Orchard Central · 辣椒螃蟹无限吃）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2025-06",
+      price: "S$27.90++ 起/人",
+      description: "姐妹们！乌节路 S$27.90++ 就能辣椒螃蟹自助无限吃，这不是梦！小红书和 Lemon8 都刷屏的 Gangnam Story 在 Orchard Central 8 楼，韩式火锅 + 烤肉 2-in-1：辣椒蟹、黑胡椒蟹管够，虾、扇贝、生蚝、小龙虾 free flow，shabu 牛肉猪肉随便涮，饮料冰淇淋全都包。人均不到 30 新吃到扶墙出，性价比直接封神！温馨提示：螃蟹要自己动手剥，带上湿纸巾；饭点人多，建议打电话 8799 6061 订位～",
+      tags: ["小红书爆款", "自助餐", "韩式烤肉", "辣椒螃蟹", "乌节路"],
+      address: "181 Orchard Road, #08-04/05, Orchard Central, Singapore 238896",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🦀",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7c2d12)",
+      catLabel: "🦀 韩式自助火锅烤肉",
+      catDesc: "S$27.90++ 起，辣椒螃蟹 + 海鲜无限吃",
+      ratingDesc: "乌节路高性价比排队王",
+      active: true
+    },
+
+    {
+      id: "so-good-bakery-i12-katong-2026-07",
+      name: "So Good Bakery 香港饼房（i12 Katong · 港式面包）",
+      categories: ["snack"],
+      rating: 4.0,
+      openDate: "2017-01",
+      price: "S$2–6/件",
+      description: "想念香港面包房的味道？这家本地港式老字号最近被 eatbook 重新测评，给出 7.5 分的稳定发挥。柠檬奶黄包 S$2.20 是隐藏冠军，清香柠檬撞上流沙奶黄；鸡尾包 S$2、叉烧菠萝包 S$3 也都是熟悉的港味。全岛多家分店，加东 i12 这家逛完 Katong 顺路就能带一袋回家，价格亲民，当孩子的下午茶点心刚刚好。菠萝包酥皮偏少、蛋挞皮略厚，介意的姐妹避开这两样直接冲奶黄包。",
+      tags: ["港式面包", "加东", "下午茶", "平价"],
+      address: "112 East Coast Road, #01-19, i12 Katong, Singapore 428802",
+      badge: "trending",
+      badgeText: "🔥 eatbook 新测评",
+      emoji: "🥐",
+      bgGradient: "linear-gradient(135deg,#d97706,#92400e)",
+      catLabel: "🥐 港式饼房",
+      catDesc: "港味面包老字号，S$2 起",
+      ratingDesc: "eatbook 7.5/10",
+      active: true
+    },
+
+    {
+      id: "sushidan-private-omakase-2026-07",
+      name: "Sushidan 私享 Omakase 吧台（Raffles City · S$98 起 15 道）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.4,
+      openDate: "2026-07",
+      price: "S$98–238++/人",
+      description: "半年前靠 S$1.99 寿司刷屏的东京涩谷人气店 Sushidan，7 月又整新活：在主餐区后面开了一个仅 6 席的私人 Omakase 吧台。米其林星厨佐藤博之坐镇品牌，掌勺的川名主厨有 28 年江户前功力，S$98 就能吃到 15 道完整套餐——前菜、刺身、寿司、热菜、烧物、手卷到甜品一路排开。按现在动辄两三百的 omakase 行情，这个价位算是良心入门款；想升级还有 S$138 和 S$238 的季节菜单。只有 6 个位子，务必提前订。",
+      tags: ["Omakase", "日料", "City Hall", "高性价比"],
+      address: "252 North Bridge Road, #B1-44C, Raffles City Shopping Centre, Singapore 179103",
+      badge: "new",
+      badgeText: "🆕 7月新开",
+      emoji: "🍣",
+      bgGradient: "linear-gradient(135deg,#0f766e,#134e4a)",
+      catLabel: "🍣 江户前 Omakase",
+      catDesc: "6 席私人吧台，S$98 起 15 道",
+      ratingDesc: "平价 omakase 新选择",
+      active: true
+    },
 
     // ── 🆕 2026-07-10 每日更新新增 ──────────
 
@@ -5027,6 +5089,54 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-07-13 每日更新新增 ──────────
+
+    {
+      id: "sg-night-festival-2026-08",
+      name: "新加坡夜间艺术节 Singapore Night Festival 2026",
+      type: "event",
+      priority: "featured",
+      month: "AUG",
+      day: "21",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#7c3aed,#312e81)",
+      typeLabel: "🌙 夜间艺术节",
+      typeColor: "#7c3aed",
+      description: "一年一度的夜间艺术节回归！8 月 21 日至 9 月 5 日，Bras Basah.Bugis 艺术街区连续 16 个夜晚被灯光装置点亮：国家博物馆外墙投影、街头演出、互动光影装置遍布整个街区，边走边看完全免费。晚饭后带孩子从 Bencoolen 或 Bras Basah 地铁站出来慢慢逛，是暑期尾声最松弛的遛娃夜游路线。周末人多，建议工作日晚上去体验更好。",
+      venue: "Bras Basah.Bugis 艺术街区（国家博物馆一带）",
+      dateRange: "8月21日 – 9月5日 · 共16晚",
+      ticketInfo: "🆓 免费入场",
+      price: "免费",
+      priceNote: "部分特别体验需预约",
+      ticketUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/singapore-night-festival/events",
+      btnText: "查看详情",
+      sortDate: "2026-08-21",
+      active: true
+    },
+
+    {
+      id: "sco-30th-gala-2026-07",
+      name: "新加坡华乐团 SCO 30 周年演出季开幕音乐会",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "18",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#d97706,#7c2d12)",
+      typeLabel: "🎻 华乐音乐会",
+      typeColor: "#d97706",
+      description: "新加坡华乐团成立 30 周年，7 月 18 日的开幕 Gala 玩出了新花样：开演前观众先测出自己的“华乐人格”、回答趣味问题，答案会实时影响当晚曲目——像开盲盒一样听音乐会。30 周年演出季从 7 月一直排到 11 月，8 月 31 日前购票全部 7 折，S$20 起就能带孩子近距离感受二胡、琵琶、笛子的现场魅力，华语家庭的音乐启蒙首选。",
+      venue: "新加坡大会堂 SCO Concert Hall",
+      dateRange: "7月18日开幕 · 演出季至11月21日",
+      ticketInfo: "🎫 SISTIC 售票",
+      price: "S$20 起",
+      priceNote: "8月31日前购票享 7 折",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Singapore%20Chinese%20Orchestra",
+      btnText: "购票",
+      sortDate: "2026-07-18",
+      active: true
+    },
+
     // ── 🆕 2026-07-10 新增 ──────────
 
     {
@@ -5554,7 +5664,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Park+Jihoon",
       btnText: "购票",
       sortDate: "2026-07-11",
-      active: true
+      active: false
     },
 
     {
@@ -5963,7 +6073,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/stella0726",
       btnText: "购票",
       sortDate: "2026-07-11",
-      active: true
+      active: false
     },
 
     {
@@ -5986,7 +6096,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/search?q=Centimillimental+Singapore",
       btnText: "购票",
       sortDate: "2026-07-12",
-      active: true
+      active: false
     },
 
     {
@@ -6057,7 +6167,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Park+Jihoon",
       btnText: "购票",
       sortDate: "2026-07-11",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-09 每日更新新增 ──────────────────
@@ -7003,7 +7113,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/singapore-garden-festival.html",
       btnText: "了解详情",
       sortDate: "2026-07-04",
-      active: true
+      active: false
     },
 
     // ── 4月25日新增 ──────────────────────────────
@@ -8607,7 +8717,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Yang+Yoseop",
       btnText: "购票",
       sortDate: "2026-07-11",
-      active: true
+      active: false
     },
 
     {
@@ -8830,6 +8940,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-07-13 每日更新新增 ──────────
+
+    {
+      id: "sccc-singapore-tv-exhibition-2026-07",
+      name: "《狮城电视：从本土到全球》特展（新加坡华族文化中心）",
+      icon: "📺",
+      topGradient: "linear-gradient(90deg,#dc2626,#7f1d1d)",
+      ageRange: "适合全家（7–9 岁互动配音亭是练华语神器）",
+      description: "爸妈的回忆杀来了！新加坡华族文化中心携手新传媒推出免费特展，梳理本地华语电视剧从 1960 年代到今天的全部进化史：走进《双天至尊》《雾锁南洋》复刻怀旧片场，看《神雕侠侣》原版戏服，翻老电视杂志。五个互动展区里最好玩的是多媒体配音亭——孩子可以给经典剧集桥段配音，笑声不断的同时不知不觉开口讲华语。展期长达半年多，随时都能安排。",
+      highlight: "免费 + 室内冷气；配音亭让 7–9 岁孩子在玩中练华语口语；爸妈的青春回忆和孩子的好奇心在这里找到共同话题，是难得的两代人展览",
+      location: "新加坡华族文化中心 6 楼 Creative Box（Shenton Way，丹戎巴葛地铁站步行可达）",
+      dateRange: "2026年7月9日 – 2027年1月26日 · 10am–6pm",
+      cost: "免费",
+      duration: "约 1–1.5 小时",
+      active: true
+    },
+
+    {
+      id: "sam-art-carnival-2026-07",
+      name: "新加坡美术馆 SAM 艺术嘉年华（30 周年生日场）",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#1e40af)",
+      ageRange: "适合 4–12 岁（7–9 岁动手工作坊最合适）",
+      description: "SAM 30 岁生日，7 月 25 日在 Tanjong Pagar Distripark 办免费艺术嘉年华！水彩喷绘、蓝晒印相、串珠手作、戳戳绣、触感色彩卡，全是能带作品回家的动手项目；还有面部彩绘、嘉年华游戏、魔术泡泡秀和本地小小音乐人 Shayne Ko 的现场演出。当天美术馆展览也全部免费，从新开的 Cantonment 地铁站走几分钟就到，一天安排得满满当当。",
+      highlight: "全部免费；动手型艺术工作坊特别适合 7–9 岁的创作欲，做完就能带走作品成就感满满；只有一天（7月25日），记得设好提醒",
+      location: "SAM at Tanjong Pagar Distripark（Cantonment 地铁站步行可达）",
+      dateRange: "2026年7月25日（周六）10am – 5pm",
+      cost: "免费",
+      duration: "2–4 小时",
+      active: true
+    },
+
+    {
+      id: "crybaby-oceanarium-2026-07",
+      name: "CRYBABY《Cry Me an Ocean》× 新加坡海洋馆",
+      icon: "🌊",
+      topGradient: "linear-gradient(90deg,#0891b2,#164e63)",
+      ageRange: "适合全家（7–9 岁海洋科普 + IP 打卡两不误）",
+      description: "泡泡玛特人气 IP CRYBABY 把整个新加坡海洋馆变成巨型海底剧场：11 个主题拍照点让爱哭包们和真实海洋生物同框，馆外还有免费的巨型充气装置和真人大小雕塑。看完打卡点顺路把海洋馆的鲨鱼隧道、水母展区一网打尽，出口处 WEAVE 的 CRYBABY 限定周边店记得留点预算。馆外装置免费参观，馆内需要海洋馆门票。",
+      highlight: "IP 打卡和海洋科普一次满足，7–9 岁孩子既能追潮流又能认识海洋生物；暑假档期一直开放到 8 月 30 日，避开周末人少体验更好",
+      location: "Singapore Oceanarium, Resorts World Sentosa（圣淘沙名胜世界）",
+      dateRange: "2026年6月24日 – 8月30日",
+      cost: "馆外装置免费 · 馆内需海洋馆门票",
+      duration: "2–3 小时",
+      active: true
+    },
 
     // ── 🆕 2026-07-10 新增 ──────────
 
@@ -11356,6 +11513,92 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   movies: [
 
+    // ── 🆕 2026-07-13 每日更新新增 ──────────
+
+    {
+      id: "beast-mma-2026-07",
+      title: "Beast",
+      chineseTitle: "野兽（终极一战）",
+      type: "coming-soon",
+      rating: 6.8,
+      releaseDate: "2026-07-23",
+      genre: "动作 / 剧情 / 体育",
+      language: "英语",
+      duration: "片长以影院信息为准",
+      cast: "丹尼尔·麦克弗森 Daniel MacPherson · 卢克·海姆斯沃斯 Luke Hemsworth · 布伦·福斯特 Bren Foster · 罗素·克劳 Russell Crowe",
+      director: "泰勒·阿特金斯 Tyler Atkins",
+      description: "罗素·克劳亲自联合编剧并客串的 MMA 综合格斗电影，7 月 23 日由邵氏引进新加坡。退役格斗传奇 Patton James 已经隐退做了渔夫，却因兄弟身陷危机重返铁笼，在 ONE 冠军赛上迎战现役冠军打完最后一战。拳拳到肉的实战风格加上 ONE Championship 实景拍摄，格斗迷和《勇士》爱好者别错过。注意 M18 分级，这一部适合留给爸妈的“大人观影夜”。",
+      tags: ["动作", "格斗", "罗素·克劳", "7月新片"],
+      posterEmoji: "🥊",
+      bgGradient: "linear-gradient(135deg,#b91c1c,#1c1917)",
+      posterUrl: "",
+      badge: "new",
+      badgeText: "🎬 7月23日上映",
+      ageGuide: "M18 · 仅限 18 岁以上（家长自己看）",
+      highlights: [
+        "🎬 导演 泰勒·阿特金斯 Tyler Atkins",
+        "🌟 丹尼尔·麦克弗森 · 卢克·海姆斯沃斯 · 布伦·福斯特 · 罗素·克劳",
+        "🏆 罗素·克劳联合编剧并客串，ONE 冠军赛实景拍摄",
+      ],
+      active: true
+    },
+
+    {
+      id: "miss-you-zhang-ruonan-2026-07",
+      title: "Miss You",
+      chineseTitle: "想你了",
+      type: "chinese",
+      rating: 7.0,
+      releaseDate: "2026-07-24",
+      genre: "剧情 / 女性友谊",
+      language: "华语 · 英文字幕（以影院为准）",
+      duration: "片长以影院信息为准",
+      cast: "章若楠 · 金靖",
+      director: "麻赢心",
+      description: "暑期档的眼泪收割机预定。章若楠和金靖首次搭档，翻拍自英国高分原作，讲一段跨越二十多年的闺蜜情——一个负责戳你笑点，一个负责戳你泪点。没有狗血反转，就是把“陪你长大的那个人”这件事拍得扎扎实实。中国 7 月 24 日上映，新加坡引进档期以本地影院信息为准；适合闺蜜同行，也适合妈妈们的姐妹观影局。",
+      tags: ["华语片", "女性友谊", "催泪", "7月新片"],
+      posterEmoji: "💌",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#b45309)",
+      posterUrl: "",
+      badge: "chinese",
+      badgeText: "🇨🇳 华语新片",
+      ageGuide: "预计 PG（最终分级以影院为准）",
+      highlights: [
+        "🎬 导演 麻赢心（新生代华语女性题材导演）",
+        "🌟 章若楠 · 金靖 首次银幕搭档",
+        "🎬 跨越二十年的闺蜜故事，笑中带泪不狗血",
+      ],
+      active: true
+    },
+
+    {
+      id: "girl-on-edge-2026-07",
+      title: "Girl on Edge",
+      chineseTitle: "花漾少女杀人事件",
+      type: "chinese",
+      rating: 7.2,
+      releaseDate: "2026-07-18",
+      genre: "剧情 / 心理 / 悬疑",
+      language: "华语 · 英文字幕（以影院为准）",
+      duration: "片长以影院信息为准",
+      cast: "张子枫 · 马伊琍",
+      director: "周璟豪",
+      description: "片名很“悬疑”，内核其实是一部锋利的心理剧：花样滑冰赛场上的天才少女，和一位控制欲极强的母亲——张子枫和马伊琍的母女对手戏火花四溅，把原生家庭、竞技压力和青春期心理创伤一层层剥开。喜欢《黑天鹅》式竞技心理片的观众会很吃这一套。中国 7 月 18 日上映，新加坡引进档期以本地影院信息为准；更适合爸妈自己看或带大孩子观影。",
+      tags: ["华语片", "心理", "花样滑冰", "张子枫", "7月新片"],
+      posterEmoji: "⛸️",
+      bgGradient: "linear-gradient(135deg,#6d28d9,#312e81)",
+      posterUrl: "",
+      badge: "chinese",
+      badgeText: "🇨🇳 华语新片",
+      ageGuide: "预计 PG13 · 建议 13 岁以上（心理题材偏沉重）",
+      highlights: [
+        "🎬 导演 周璟豪（新锐导演长片作品）",
+        "🌟 张子枫 · 马伊琍 母女对手戏",
+        "🎬 花样滑冰竞技 × 原生家庭心理剖析，《黑天鹅》式张力",
+      ],
+      active: true
+    },
+
     // ── 🆕 2026-07-10 每日更新新增 ──────────
 
     {
@@ -11625,7 +11868,7 @@ const SGLIVING_DATA = {
       id: "you-only-live-twice-2026-07",
       title: "You Only Live Twice",
       chineseTitle: "雷霆谷（007 经典重映）",
-      type: "now-showing",
+      type: "coming-soon",
       rating: 7.0,
       releaseDate: "2026-07-24",
       genre: "动作 / 冒险 / 谍战",
@@ -11848,7 +12091,7 @@ const SGLIVING_DATA = {
         "🌟 杉田智和 · 阪口大助 · 钉宫理惠 · 中井和哉",
         "🎬 经典「吉原炎上篇」剧场版 · 热血与吐槽齐飞",
       ],
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-12 每日更新新增 ──────────────────
@@ -11885,7 +12128,7 @@ const SGLIVING_DATA = {
       id: "the-death-of-robin-hood-2026-07",
       title: "The Death of Robin Hood",
       chineseTitle: "罗宾汉之死",
-      type: "coming-soon",
+      type: "now-showing",
       rating: 7.1,
       releaseDate: "2026-07-09",
       genre: "动作 / 剧情 / 历史",
@@ -11913,7 +12156,7 @@ const SGLIVING_DATA = {
       id: "evil-dead-burn-2026-07",
       title: "Evil Dead Burn",
       chineseTitle: "鬼玩人：燃烧",
-      type: "coming-soon",
+      type: "now-showing",
       rating: 7.0,
       releaseDate: "2026-07-09",
       genre: "恐怖 / 惊悚",
@@ -12134,7 +12377,7 @@ const SGLIVING_DATA = {
         "🎬 高概念「第一次接触」科幻题材，主打思辨而非爆破",
         "🏆 暑期档话题之作 · 适合《降临》《抵达》系科幻迷",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -12162,7 +12405,7 @@ const SGLIVING_DATA = {
         "🌟 全动画呈现，会说话的农场动物群像",
         "🏆 寓言外壳下的思辨内核 · 适合亲子共看后讨论",
       ],
-      active: true
+      active: false
     },
 
 
@@ -12303,7 +12546,7 @@ const SGLIVING_DATA = {
         "🌟 谢苗 · Joe Taslim · Jeeja Yanin · Yayan Ruhian · Brian Le",
         "🏆 多伦多国际电影节首映 · 零替身实拍打斗 · 暑期动作爽片",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -12443,7 +12686,7 @@ const SGLIVING_DATA = {
         "🌟 蒋龙 · 齐溪 · 杨超越 · 倪大红 · 蔡明",
         "🏆 北京国际电影节首映 · 已获英国发行 · 喜剧外壳下的生命题材",
       ],
-      active: true
+      active: false
     },
 
     {
