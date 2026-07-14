@@ -15,7 +15,7 @@
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-13",
+    lastUpdated: "2026-07-14",
     version: "3.7",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,108 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-14 每日更新新增 ──────────
+
+    {
+      id: "blue-bottle-paragon-2026-07",
+      name: "Blue Bottle Coffee 蓝瓶咖啡（Paragon · 新加坡第二家店）",
+      categories: ["dessert"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "S$8–15/人",
+      description: "姐妹们！小红书刷屏的“咖啡界爱马仕”Blue Bottle 又开新店了！7 月 17 日第二家店落地乌节路 Paragon，这次还把在日本卖爆的比利时列日华夫饼 Liège Waffle 一起带来——外脆内软带珍珠糖颗粒，配一杯招牌 New Orleans 冰滴或手冲，下午茶氛围感直接拉满。第一家店排队排到怀疑人生的朋友，趁新店热度分流赶紧冲，工作日下午去出片率最高，蓝瓶子 logo 随手一拍就是 ins 风大片！",
+      tags: ["小红书爆款", "咖啡", "乌节路", "华夫饼", "打卡"],
+      address: "290 Orchard Road, Paragon, Singapore 238859",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "☕",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      catLabel: "☕ 精品咖啡",
+      catDesc: "7月17日开业，蓝瓶咖啡 + 列日华夫饼",
+      ratingDesc: "全球排队王精品咖啡",
+      active: true
+    },
+
+    {
+      id: "casa-mori-dempsey-2026-07",
+      name: "Casa Mori（Dempsey · 新派亚洲融合餐厅）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.2,
+      openDate: "2026-06",
+      price: "S$60–90/人",
+      description: "Dempsey 绿荫里的新惊喜：本地名厨 Willin Low（Wild Rocket 创始人，Mod-Sin 摩登新加坡菜教父）联手西班牙主厨 José Alonso（Kulto 主理人）开的融合餐厅。店名也有巧思——Casa 是西语的家，Mori 是日语的森林，室内一片温柔的原木色调。菜单主打分享式小盘菜，西班牙技法碰撞亚洲味觉记忆，适合约上三五好友每样都点一点慢慢聊。周末想找一个环境好、菜有想法的聚会地，把它排进清单。",
+      tags: ["融合菜", "Dempsey", "名厨", "聚会"],
+      address: "11 Dempsey Road, #01-17, Singapore 249673",
+      badge: "new",
+      badgeText: "✨ 6月新开业",
+      emoji: "🌲",
+      bgGradient: "linear-gradient(135deg,#16a34a,#14532d)",
+      catLabel: "🌲 新派融合餐厅",
+      catDesc: "Willin Low × José Alonso 双厨联手",
+      ratingDesc: "Dempsey 新晋话题餐厅",
+      active: true
+    },
+
+    {
+      id: "kong-madam-guoco-midtown-2026-07",
+      name: "Kong Madam 韩式嫩豆腐锅（Guoco Midtown II · 武吉士）",
+      categories: ["restaurant"],
+      rating: 4.1,
+      openDate: "2026-06",
+      price: "S$20–35/人",
+      description: "武吉士打工人午餐新答案！这家新开的韩式豆腐锅专门店背后是韩国国民主持姜虎东系的餐饮班底，主打江陵式嫩豆腐——每天店内现磨现做，豆香比普通 soontofu 明显浓一个档次。套餐配置很实在：咕嘟冒泡的石锅豆腐汤、现焖石锅饭 sotbap、免费续的大麦茶，小菜里居然还有一整条炸小鱼，锅气和仪式感都在线。天冷或下雨天来一锅，从胃暖到心，适合怕辣程度不同的全家人（可选辣度）。",
+      tags: ["韩餐", "豆腐锅", "武吉士", "午餐"],
+      address: "20 Tan Quee Lan Street, #01-02/03, Guoco Midtown II, Singapore 188107",
+      badge: "new",
+      badgeText: "✨ 新开业",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#ef4444,#7f1d1d)",
+      catLabel: "🍲 韩式豆腐锅",
+      catDesc: "江陵式现做嫩豆腐 + 石锅饭",
+      ratingDesc: "武吉士韩餐新选择",
+      active: true
+    },
+
+    {
+      id: "bae-sik-dang-tanjong-pagar-2026-07",
+      name: "Bae Sik Dang 复古韩式烤肉（丹戎巴葛 · 营业到凌晨3点）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-06",
+      price: "S$30–50/人",
+      description: "走进这家店就像走进《请回答1988》片场：1960 年代首尔复古装潢，灵感来自江南还是梨园的旧时光。招牌是 Naengsam 冷冻五花肉——零下 60°C 急冻后切成 3mm 薄片，铺在锡纸烤盘上滋滋作响，肉片边缘微卷焦香的瞬间夹起来配蒜片生菜，一口下去太满足。最难得的是每天营业到凌晨 3 点，看完演唱会、加完班想吃口热乎的，丹戎巴葛这里永远有位子等你。",
+      tags: ["韩式烤肉", "丹戎巴葛", "深夜食堂", "复古"],
+      address: "48 Tanjong Pagar Road, Singapore 088469",
+      badge: "trending",
+      badgeText: "🔥 深夜食堂",
+      emoji: "🥓",
+      bgGradient: "linear-gradient(135deg,#f97316,#7c2d12)",
+      catLabel: "🥓 复古韩式烤肉",
+      catDesc: "3mm 冷冻五花肉，开到凌晨 3 点",
+      ratingDesc: "Reply 1988 同款氛围",
+      active: true
+    },
+
+    {
+      id: "ap-cafe-raffles-hotel-2026-07",
+      name: "AP Café 爱彼咖啡厅（Raffles Hotel · 全球首家奢华腕表咖啡厅）",
+      categories: ["dessert", "finedining"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "S$15–40/人",
+      description: "腕表圈和咖啡圈同时炸锅：瑞士顶奢腕表品牌爱彼 Audemars Piguet 把全球第一家 AP Café 开进了莱佛士酒店！菜单走瑞士 × 新加坡混血路线，精致甜点和咖啡摆盘处处藏着制表元素，环境是殖民风酒店里的低调奢华。不用买得起皇家橡树，也能花一杯咖啡的钱感受 AP 的品牌美学，拍照发圈自带话题度。适合纪念日、闺蜜下午茶，或者单纯想体验一次“把咖啡喝出高定感”。",
+      tags: ["下午茶", "奢华", "Raffles Hotel", "打卡"],
+      address: "1 Beach Road, Raffles Hotel, Singapore 189673",
+      badge: "new",
+      badgeText: "✨ 全球首店",
+      emoji: "⌚",
+      bgGradient: "linear-gradient(135deg,#a16207,#422006)",
+      catLabel: "⌚ 奢华品牌咖啡厅",
+      catDesc: "Audemars Piguet 全球首家咖啡厅",
+      ratingDesc: "莱佛士酒店新晋打卡点",
+      active: true
+    },
 
     // ── 🆕 2026-07-13 每日更新新增 ──────────
 
@@ -5089,6 +5191,31 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-07-14 每日更新新增 ──────────
+
+    {
+      id: "zarina-stpi-exhibition-2026-07",
+      name: "Zarina《Directions to My House》大型版画特展（STPI）",
+      type: "exhibition",
+      priority: "normal",
+      month: "AUG",
+      day: "01",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#57534e,#1c1917)",
+      typeLabel: "🖼️ 艺术展览",
+      typeColor: "#57534e",
+      description: "只剩最后两周多！20 世纪最重要的版画艺术家之一 Zarina（1937–2020）的东南亚最大规模个展正在罗伯逊码头的 STPI 展出：50 余件作品从 12 个城市借展而来，围绕“家”与“漂泊”的主题展开，连她生前用过的木刻版和工具都一并呈现，能近距离看懂一幅版画的诞生过程。免费入场，看完沿新加坡河散步吃晚饭，是周末 City Walk 的完美一站。8 月 1 日闭幕，抓紧。",
+      venue: "STPI Creative Workshop & Gallery（41 Robertson Quay）",
+      dateRange: "即日起 – 8月1日 · 周一至周六 10am–7pm",
+      ticketInfo: "🆓 免费入场",
+      price: "免费",
+      priceNote: "闭幕在即，先睹为快",
+      ticketUrl: "https://www.stpi.com.sg/whats-on/stpi-annual-special-exhibition-zarina-directions-to-my-house",
+      btnText: "查看详情",
+      sortDate: "2026-08-01",
+      active: true
+    },
+
     // ── 🆕 2026-07-13 每日更新新增 ──────────
 
     {
@@ -8941,6 +9068,23 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-07-14 每日更新新增 ──────────
+
+    {
+      id: "sang-kancil-vr-libraries-2026-07",
+      name: "《鼠鹿 Sang Kancil 与魔法森林》免费 VR 体验（全岛 7 家图书馆巡回）",
+      icon: "🦌",
+      topGradient: "linear-gradient(90deg,#059669,#064e3b)",
+      ageRange: "适合 8 岁以上（8–9 岁刚好达标，7 岁可现场咨询）",
+      description: "免费的高科技体验来了！沉浸式工作室 Avventura 联手 Maya Dance Theatre，把东南亚经典民间故事主角——机智的鼠鹿 Sang Kancil 做成了 30 分钟的多人 VR 冒险：戴上无线 VR 头显，最多 5 人一组在魔法森林里自由走动，和虚拟角色互动闯关，主题讲的是机智、友谊和坚持。正在 Tampines、Woodlands、Clementi、HarbourFront、Toa Payoh、Bedok、Jurong 七家图书馆巡回，8 月 2 日结束。建议先上 NLB GoLibrary 预约心仪场次，walk-in 要看运气。",
+      highlight: "完全免费的正规 VR 体验在新加坡非常稀有；30 分钟时长对 8–9 岁刚刚好，东南亚民间故事背景还能顺便做文化启蒙；结束后就在图书馆借几本书，一趟行程双倍收获",
+      location: "Tampines / Woodlands / Clementi / HarbourFront / Toa Payoh / Bedok / Jurong 图书馆（巡回，场次见 GoLibrary）",
+      dateRange: "即日起 – 2026年8月2日（各馆轮流驻场）",
+      cost: "免费（建议提前在 nlb.libcal.com 预约）",
+      duration: "约 30 分钟",
+      active: true
+    },
+
     // ── 🆕 2026-07-13 每日更新新增 ──────────
 
     {
@@ -11512,6 +11656,92 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-07-14 每日更新新增 ──────────
+
+    {
+      id: "kokuho-2026-07",
+      title: "Kokuho",
+      chineseTitle: "国宝",
+      type: "coming-soon",
+      rating: 8.0,
+      releaseDate: "2026-07-23",
+      genre: "剧情 / 歌舞伎 / 史诗",
+      language: "日语 · 英文/中文字幕",
+      duration: "约 175 分钟",
+      cast: "吉泽亮 · 横浜流星 · 渡边谦 · 高畑充希 · 森七菜",
+      director: "李相日 Lee Sang-il",
+      description: "把它排进你的观影日历：这部歌舞伎题材史诗是日本影史票房最高的真人电影，还拿下奥斯卡最佳妆发提名（日本真人片首次）。故事横跨 50 年——黑帮之子在血案后被歌舞伎名门收养，用一生把自己雕琢成“人间国宝”。戛纳导演双周首映后口碑一路封神，吉泽亮的舞台戏份美到窒息。175 分钟片长值回票价，适合爸妈的深夜艺术片之约（M18，孩子就先不带了）。",
+      tags: ["日本电影", "歌舞伎", "奥斯卡提名", "7月新片"],
+      posterEmoji: "🎭",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#3b0764)",
+      posterUrl: "",
+      badge: "new",
+      badgeText: "🎬 7月23日上映",
+      ageGuide: "M18 · 仅限 18 岁以上（爸妈观影夜）",
+      highlights: [
+        "🎬 导演 李相日（《恶人》《怒》）",
+        "🌟 吉泽亮 · 横浜流星 · 渡边谦 · 高畑充希",
+        "🏆 日本影史真人片票房冠军 + 奥斯卡最佳妆发提名",
+      ],
+      active: true
+    },
+
+    {
+      id: "its-my-time-2026-07",
+      title: "It's My Time",
+      chineseTitle: "魔方小姐",
+      type: "chinese",
+      rating: 7.4,
+      releaseDate: "2026-07-23",
+      genre: "剧情 / 体育 / 励志",
+      language: "华语 · 英文字幕",
+      duration: "片长以影院信息为准",
+      cast: "杨紫琼 · 刘昊然 · 娜然 · 白客",
+      director: "白雪 Bai Xue",
+      description: "杨紫琼拿完奥斯卡后的华语银幕回归之作！她演一位 70 岁才迷上速拧魔方的阿姨赵艳红，一头扎进年轻人扎堆的竞技魔方圈，和刘昊然组成忘年搭档。导演是拍出《过春天》的白雪，监制文牧野（《我不是药神》），把“年龄不该定义人生”拍得热血又不鸡汤。适合全家一起看，尤其推荐带上家里的爷爷奶奶——看完说不定他们也想学点新东西。",
+      tags: ["华语片", "杨紫琼", "励志", "7月新片"],
+      posterEmoji: "🧩",
+      bgGradient: "linear-gradient(135deg,#dc2626,#9a3412)",
+      posterUrl: "",
+      badge: "chinese",
+      badgeText: "🇨🇳 华语新片",
+      ageGuide: "预计 PG · 适合全家（以影院分级为准）",
+      highlights: [
+        "🎬 导演 白雪（《过春天》），文牧野监制",
+        "🌟 杨紫琼 · 刘昊然 · 娜然 · 白客",
+        "🏆 杨紫琼奥斯卡后首部华语主演电影",
+      ],
+      active: true
+    },
+
+    {
+      id: "doraemon-undersea-devil-2026-07",
+      title: "Doraemon: Nobita and the New Castle of the Undersea Devil",
+      chineseTitle: "哆啦A梦：大雄与新海底鬼岩城",
+      type: "family",
+      rating: 7.9,
+      releaseDate: "2026-07-16",
+      genre: "动画 / 冒险 / 家庭",
+      language: "日语（英文/中文字幕，部分场次有配音，以影院为准）",
+      duration: "片长以影院信息为准",
+      cast: "水田山葵 · 大原惠美 · 嘉数由美 · 木村昴 · 关智一",
+      director: "矢嶋哲生 Tetsuo Yajima",
+      description: "暑假亲子观影的保底选择来了！哆啦A梦第 45 部剧场版，翻拍 1983 年的经典《海底鬼岩城》：大雄一行人用“水中巴吉车”和“适应灯”道具去海底露营，结果一路探进神秘的海底城……深海世界的画面做得美轮美奂，7–9 岁孩子看冒险，爸妈看情怀，全家都不无聊。7 月 16 日上映，正好卡在暑假中段，周末场次记得早点买票。",
+      tags: ["动画", "亲子", "哆啦A梦", "7月新片"],
+      posterEmoji: "🐳",
+      bgGradient: "linear-gradient(135deg,#0284c7,#0c4a6e)",
+      posterUrl: "",
+      badge: "family",
+      badgeText: "👨‍👩‍👧 亲子首选",
+      ageGuide: "PG · 7–9 岁刚刚好",
+      highlights: [
+        "🎬 导演 矢嶋哲生（《宝可梦：大家的物语》）",
+        "🌟 水田山葵 · 大原惠美 · 木村昴 经典声优阵容",
+        "🏆 哆啦A梦第 45 部剧场版，经典《海底鬼岩城》重制",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-07-13 每日更新新增 ──────────
 
