@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-07-05
- * 版本：3.7
+ * 最后更新：2026-07-17
+ * 版本：3.8
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-14",
-    version: "3.7",
+    lastUpdated: "2026-07-17",
+    version: "3.8",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,48 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-17 每日更新新增 ──────────
+
+    {
+      id: "yi-man-fen-somerset-2026-07",
+      name: "怡满分糖水 Yi Man Fen（313@Somerset · 中国爆款糖水铺海外首店）",
+      categories: ["dessert"],
+      rating: 4.5,
+      openDate: "2026-07",
+      price: "S$6–10/人",
+      description: "姐妹们！中国刷屏级糖水连锁“怡满分”把全球第一家海外店开到新加坡啦！招牌“满分100”现熬牛奶炖出丝滑口感，配Q弹芋圆、软糯桃胶、绵密红豆，一口下去甜而不腻，绝绝子！还有黑糯米椰奶冻、芒果系列可以选，人均$6–10就能吃到扶墙走。踩雷提醒：饭点高峰真的要排队，建议下午茶时段错峰去，拍照也更出片！",
+      tags: ["小红书爆款", "糖水", "甜品", "中国品牌", "乌节路"],
+      address: "313 Orchard Road, #B1, 313@Somerset, Singapore 238895",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍧",
+      bgGradient: "linear-gradient(135deg,#f472b6,#9d174d)",
+      catLabel: "🍧 中式糖水",
+      catDesc: "中国爆款连锁海外首店，现熬糖水",
+      ratingDesc: "小红书刷屏甜品品牌",
+      active: true
+    },
+
+    {
+      id: "3-coconut-guoco-midtown-2026-07",
+      name: "三个椰子 3 Coconut 椰子鸡火锅（Guoco Midtown · 武吉士）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "S$35–50/人",
+      description: "姐妹们！中国60多家门店的椰子鸡天花板“三个椰子”空降武吉士啦！最绝的是现开椰子直接倒进锅里，不额外加一滴水，汤底清甜到能直接喝完一整锅，鸡肉炖到脱骨还嫩得很。招牌腊味煲仔饭年销48万份不是盖的，锅底还能选微辣、菌汤等8种口味，全家老小都能找到自己那一款，怕上火的姐妹这顿绝对放心吃！",
+      tags: ["小红书爆款", "椰子鸡", "火锅", "中国品牌", "武吉士"],
+      address: "130 Beach Road, #01-13/14, Guoco Midtown, Singapore 189774",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🥥",
+      bgGradient: "linear-gradient(135deg,#22c55e,#166534)",
+      catLabel: "🥥 椰子鸡火锅",
+      catDesc: "现开椰子现熬汤底，中国连锁新加坡首店",
+      ratingDesc: "小红书博主实探力荐",
+      active: true
+    },
 
     // ── 🆕 2026-07-14 每日更新新增 ──────────
 
@@ -5191,6 +5233,100 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-07-17 每日更新新增 ──────────
+
+    {
+      id: "anuv-jain-capitol-2026-07",
+      name: "Anuv Jain 《Dastakhat》巡演 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "JUL",
+      day: "28",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#0891b2,#164e63)",
+      typeLabel: "🎤 印度独立音乐",
+      typeColor: "#0891b2",
+      description: "印度当红创作歌手 Anuv Jain 首次带着《Dastakhat》巡演来新加坡！他的嗓音干净治愈，Spotify 播放量数十亿次的《Baarishein》《Alag Aasmaan》都会现场演绎，印地语情歌爱好者和留学生群体里人气很高。Capitol Theatre 场地不大，近距离感受现场感染力，喜欢氛围系音乐的朋友别错过。",
+      venue: "Capitol Theatre",
+      dateRange: "7月28日（周二）晚8点",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "详见购票页",
+      priceNote: "巡演限定场次",
+      ticketUrl: "https://ticketmaster.sg/search?q=Anuv+Jain",
+      btnText: "购票",
+      sortDate: "2026-07-28",
+      active: true
+    },
+
+    {
+      id: "jesus-christ-superstar-mbs-2026-08",
+      name: "音乐剧《万世巨星》Jesus Christ Superstar（滨海湾金沙）",
+      type: "event",
+      priority: "featured",
+      month: "AUG",
+      day: "19",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#b91c1c,#450a0a)",
+      typeLabel: "🎭 百老汇音乐剧",
+      typeColor: "#b91c1c",
+      description: "奥利弗奖最佳音乐剧复排版《万世巨星》登陆滨海湾金沙！摇滚乐改编的经典圣经故事，恢弘编曲加上炸裂舞台设计，8月19日开演连演至9月6日，英文演出（Advisory 16，建议大孩子和成人观看）。喜欢音乐剧、想给孩子做一次剧院启蒙的家庭，这是今年下半年不容错过的大制作。",
+      venue: "Sands Theatre, Marina Bay Sands",
+      dateRange: "8月19日 – 9月6日",
+      ticketInfo: "🎫 SISTIC 售票",
+      price: "S$68–208",
+      priceNote: "动态定价，Premium Box 另计",
+      ticketUrl: "https://www.sistic.com.sg/events/jesus0926",
+      btnText: "购票",
+      sortDate: "2026-08-19",
+      active: true
+    },
+
+    {
+      id: "monet-inside-parkview-2026-07",
+      name: "《莫奈沉浸展》Monet Inside 光影艺术展",
+      type: "exhibition",
+      priority: "normal",
+      month: "SEP",
+      day: "30",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#2563eb,#1e3a8a)",
+      typeLabel: "🖼️ 沉浸艺术展",
+      typeColor: "#2563eb",
+      description: "莫奈的睡莲池搬进了 Parkview Square！360度沉浸光影剧场里播放200余幅莫奈名画，配着古典乐缓缓流动，从《日出·印象》到《睡莲》系列层层展开，很适合带孩子做一次零门槛的美术启蒙。展期长达两个半月，工作日人少体验感更好，看完还能顺便逛逛 Parkview Square 本身的装饰艺术风建筑。",
+      venue: "Parkview Square 3楼（600 North Bridge Road）",
+      dateRange: "7月15日 – 9月30日",
+      ticketInfo: "🎫 Fever 售票",
+      price: "S$24 起",
+      priceNote: "提前网上购票更划算",
+      ticketUrl: "https://feverup.com/m/188463",
+      btnText: "购票",
+      sortDate: "2026-09-30",
+      active: true
+    },
+
+    {
+      id: "makers-market-dhoby-ghaut-2026-07",
+      name: "Makers' Market @ Dhoby Ghaut 手作市集",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "30",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#ea580c,#7c2d12)",
+      typeLabel: "🛍️ 周末市集",
+      typeColor: "#ea580c",
+      description: "多美歌地铁站里藏了个天天开的手作市集！Staytion Lifestyle Centre 外聚集本地独立设计师和手作品牌，饰品、香氛、插画周边、家居小物应有尽有，免费入场，逛地铁的功夫就能顺手挖到宝。市集持续到8月底，周末带孩子从这里出发去乌节路或武吉士，中途歇脚逛市集刚刚好，不额外占用行程时间。",
+      venue: "Staytion Lifestyle Centre（多美歌地铁站内）",
+      dateRange: "即日起 – 8月30日 · 每日11am–4pm",
+      ticketInfo: "🆓 免费入场",
+      price: "免费",
+      priceNote: "无需预约，随时逛",
+      ticketUrl: "https://makersmarket.sg/",
+      btnText: "查看详情",
+      sortDate: "2026-08-30",
+      active: true
+    },
+
     // ── 🆕 2026-07-14 每日更新新增 ──────────
 
     {
@@ -9068,6 +9204,53 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-07-17 每日更新新增 ──────────
+
+    {
+      id: "journey-to-the-west-drama-2026-07",
+      name: "儿童华语话剧《西游记》Journey to the West（华语场）",
+      icon: "🐒",
+      topGradient: "linear-gradient(90deg,#f59e0b,#b45309)",
+      ageRange: "适合 6–12 岁（7–9 岁华语启蒙首选）",
+      description: "融合京剧身段、武术和古典诗词的孙悟空冒险儿童剧来了！华语场7月22日至8月2日在 Drama Centre Theatre 上演，舞台呈现取经路上斗妖降魔的经典桥段，节奏明快、互动感强，是让孩子沉浸式感受中华经典文学的好机会。",
+      highlight: "对华语家庭来说是难得的文化启蒙——孙悟空的故事孩子大多熟悉，配上京剧元素和现场表演，比看动画片更有仪式感；时长和节奏专门照顾小学中低年级孩子的专注力，全程不会坐不住",
+      location: "Drama Centre Theatre",
+      dateRange: "华语场：2026年7月22日 – 8月2日",
+      cost: "门票约 S$50 起（详见 SISTIC）",
+      duration: "约 75 分钟（含中场休息）",
+      active: true
+    },
+
+    {
+      id: "voyage-back-in-time-cmsg-2026",
+      name: "《穿越时光之旅》A Voyage Back In Time（新加坡儿童博物馆常设展）",
+      icon: "⏳",
+      topGradient: "linear-gradient(90deg,#0891b2,#164e63)",
+      ageRange: "适合 5–10 岁全家",
+      description: "新加坡儿童博物馆的常设展《穿越时光之旅》，跟着船长和机器人 WonderBot 一起穿越回百年前的新加坡，走进老街市、旧码头和传统店屋场景，动手体验古早生活方式。展期持续到2027年，随时可以安排，不用赶特定日期。",
+      highlight: "角色带领式闯关让历史不再枯燥，7-9岁孩子正好能理解“今昔对比”的概念；动手互动多于文字说明，适合还在建立阅读耐心的年纪；展览常设无闭馆压力，可以和 National Museum 其它展区拼成一天行程",
+      location: "新加坡儿童博物馆 Children's Museum Singapore（国家博物馆旁）",
+      dateRange: "常设展至 2027年",
+      cost: "含馆内门票（详见官网）",
+      duration: "约 1–1.5 小时",
+      active: true
+    },
+
+    {
+      id: "outdoor-school-holiday-camps-2026",
+      name: "Outdoor School Singapore 户外探索营（湿地/自然公园主题）",
+      icon: "🌿",
+      topGradient: "linear-gradient(90deg,#65a30d,#166534)",
+      ageRange: "适合 4–12 岁（7–9 岁参与度最高）",
+      description: "NTUC First Campus 旗下的户外探索营新增两个自然主题营队：Wetland Wanderers 带孩子走进湿地做生存挑战，Brave Squad 则一天内解锁陆地、天空和海洋三种探索项目。全程在 Binjai Park 的户外营地进行，暑假档期开放到8月初，适合平时被电子屏幕占据的孩子换个方式放电。",
+      highlight: "7-9岁孩子体力和好奇心都在线，全户外的探索式学习比坐在教室里更抓得住注意力；生存挑战类项目锻炼解决问题和团队协作能力；暑假余票不多，家长建议尽快锁定场次",
+      location: "Outdoor School Singapore（5A Binjai Park）",
+      dateRange: "2026年6月8日 – 8月5日（暑假档期）",
+      cost: "S$175 起（NTUC会员另享折扣）",
+      duration: "单日营，约 6–8 小时",
+      active: true
+    },
+
     // ── 🆕 2026-07-14 每日更新新增 ──────────
 
     {
@@ -11656,6 +11839,120 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-07-17 每日更新新增 ──────────
+
+    {
+      id: "arco-2026-07",
+      title: "Arco",
+      chineseTitle: "阿尔科",
+      type: "family",
+      rating: 7.4,
+      releaseDate: "2026-07-18",
+      genre: "动画 / 科幻 / 冒险",
+      language: "法语原声（另有英语配音版）· 中英文字幕",
+      duration: "约 88 分钟",
+      cast: "英语配音：Natalie Portman · Mark Ruffalo · America Ferrera · Will Ferrell",
+      director: "Ugo Bienvenu",
+      description: "戛纳首映、安纳西动画节最佳影片的法国动画黑马明天在新加坡开画！2075年的男孩阿尔科意外穿越回现代地球，和女孩相遇后一起踏上寻找归途的奇幻旅程。画风温柔细腻像动态水彩画，没有说教感的环保和科幻内核，娜塔莉·波特曼、马克·鲁法洛等大咖为英语版配音，7-9岁孩子和爸妈一起看完全没有理解门槛，看完还能聊聊“如果能穿越时间你想去哪里”。",
+      tags: ["动画", "法国电影", "家庭片", "科幻冒险", "7月新片"],
+      posterEmoji: "🌈",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#075985)",
+      posterUrl: "http://www.impawards.com/intl/france/2025/posters/arco.jpg",
+      badge: "new",
+      badgeText: "🎬 7月18日上映",
+      ageGuide: "预计 PG · 适合全家（7岁以上）",
+      highlights: [
+        "🎬 导演 Ugo Bienvenu（长片处女作，戛纳首映）",
+        "🌟 英语配音：Natalie Portman · Mark Ruffalo · America Ferrera · Will Ferrell",
+        "🏆 安纳西动画节最佳影片 + 欧洲电影奖最佳动画长片",
+      ],
+      active: true
+    },
+
+    {
+      id: "forgotten-island-2026-09",
+      title: "Forgotten Island",
+      chineseTitle: "遗忘岛",
+      type: "family",
+      rating: 7.0,
+      releaseDate: "2026-09-25",
+      genre: "动画 / 冒险 / 喜剧 / 奇幻",
+      language: "英语 · 中英文字幕（预计）",
+      duration: "约 100 分钟（预计）",
+      cast: "配音：H.E.R. · Liza Soberano · Dave Franco · Jenny Slate · Lea Salonga · Jo Koy",
+      director: "Joel Crawford · Januel Mercado",
+      description: "梦工厂新作把镜头对准了菲律宾民间神话！两个好朋友意外被困在一座充满魔法生物的神秘岛屿，必须齐心协力才能找到回家的路。全 PG 级别的合家欢冒险，画风绚丽、笑点密集，还悄悄埋了不少菲律宾文化彩蛋，是9月开学季后很好的周末家庭场。虽然还有段时间才上映，喜欢梦工厂动画的家庭可以先标记起来。",
+      tags: ["动画", "梦工厂", "家庭片", "菲律宾神话", "9月新片"],
+      posterEmoji: "🏝️",
+      bgGradient: "linear-gradient(135deg,#059669,#134e4a)",
+      posterUrl: "http://www.impawards.com/2026/posters/forgotten_island.jpg",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "PG · 适合全家（7岁以上首选）",
+      highlights: [
+        "🎬 导演 Joel Crawford（《穿靴子的猫2》）× Januel Mercado",
+        "🌟 配音：H.E.R. · Liza Soberano · Dave Franco · Jenny Slate · Lea Salonga",
+        "🎬 取材菲律宾民间神话，梦工厂出品合家欢冒险",
+      ],
+      active: true
+    },
+
+    {
+      id: "coyote-vs-acme-2026-08",
+      title: "Coyote vs. Acme",
+      chineseTitle: "威利狼大战阿库米",
+      type: "family",
+      rating: 7.2,
+      releaseDate: "2026-08-28",
+      genre: "真人 / 动画混合 / 喜剧 / 冒险",
+      language: "英语 · 中英文字幕",
+      duration: "约 90 分钟（预计）",
+      cast: "John Cena · Will Forte · Lana Condor · Tone Bell · Eric Bauza（配音 Wile E. Coyote）",
+      director: "Dave Green",
+      description: "经典《乐一通》IP终于要搬上大银幕！屡战屡败的 Wile E. Coyote 这次不追 Roadrunner 了，改请人类律师起诉一直坑他的 ACME 公司——真人加动画混剪的荒诞法庭喜剧，笑点密集又不失怀旧情怀。7-9岁孩子对追逐打闹的卡通桥段肯定毫无抵抗力，爸妈这代人看着经典角色重现也会会心一笑，是难得的两代人都能笑出声的合家欢。",
+      tags: ["乐一通", "动画", "家庭片", "喜剧", "8月新片"],
+      posterEmoji: "🐺",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#7c2d12)",
+      posterUrl: "http://www.impawards.com/2026/posters/coyote_v_acme.jpg",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "PG · 适合全家",
+      highlights: [
+        "🎬 导演 Dave Green",
+        "🌟 John Cena · Will Forte · Lana Condor · Eric Bauza（配音 Wile E. Coyote）",
+        "🎬 经典《乐一通》IP首次真人+动画大银幕改编",
+      ],
+      active: true
+    },
+
+    {
+      id: "practical-magic-2-2026-09",
+      title: "Practical Magic 2",
+      chineseTitle: "超异能快感2",
+      type: "coming-soon",
+      rating: 7.0,
+      releaseDate: "2026-09-10",
+      genre: "喜剧 / 剧情 / 奇幻 / 爱情",
+      language: "英语 · 中英文字幕",
+      duration: "约 105 分钟（预计）",
+      cast: "Sandra Bullock · Nicole Kidman · Dianne Wiest · Stockard Channing · Joey King · Maisie Williams",
+      director: "Susanne Bier",
+      description: "1998年的经典魔法姐妹片时隔近30年终于等到续集！桑德拉·布洛克和妮可·基德曼再次回归，Owens家族的姐妹们这次要联手对抗家族新一轮的诅咒。原班人马加上乔伊·金、梅茜·威廉姆斯两位新生代加盟，怀旧与新鲜感兼顾，适合喜欢奇幻爱情题材的成年观众和情侣，不建议带低龄孩子一起看。",
+      tags: ["奇幻", "爱情", "续集", "9月新片"],
+      posterEmoji: "🔮",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#4c1d95)",
+      posterUrl: "https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/practical_magic_2keyart.jpg",
+      badge: "new",
+      badgeText: "🆕 即将上映",
+      ageGuide: "PG-13 · 建议成人/青少年观看",
+      highlights: [
+        "🎬 导演 Susanne Bier",
+        "🌟 Sandra Bullock · Nicole Kidman · Dianne Wiest · Joey King · Maisie Williams",
+        "🏆 1998年经典《超异能快感》时隔近30年推出续集",
+      ],
+      active: true
+    },
 
     // ── 🆕 2026-07-14 每日更新新增 ──────────
 
