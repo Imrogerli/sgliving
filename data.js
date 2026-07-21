@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-07-17
- * 版本：3.8
+ * 最后更新：2026-07-21
+ * 版本：3.9
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-17",
-    version: "3.8",
+    lastUpdated: "2026-07-21",
+    version: "3.9",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,48 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-21 每日更新新增 ──────────
+
+    {
+      id: "halo-ube-matcha-tanjong-pagar-2026-07",
+      name: "HALO 芋泥抹茶专门店（丹戎巴葛 100AM 商场店）",
+      categories: ["dessert"],
+      rating: 4.4,
+      openDate: "2026-06",
+      price: "S$8–15/人",
+      description: "姐妹们！新加坡首家芋泥+抹茶专门店真的被我挖到了！紫绿两大治愈色系同框，招牌芋泥抹茶拿铁颜值口感双在线，芋泥麻薯挞外酥内绵超满足，芋泥控和抹茶控可以各自安好但又能一起拼单。价格很friendly，大部分单品十几刀内搞定，就在100AM商场楼下，逛完街顺路打卡不绕路，踩雷提醒：周末人稍多建议提前到店。",
+      tags: ["小红书爆款", "芋泥", "抹茶", "新加坡首家", "丹戎巴葛"],
+      address: "100 Tras Street, #01-05, 100AM, Singapore 079027",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍡",
+      bgGradient: "linear-gradient(135deg,#a78bfa,#166534)",
+      catLabel: "🍡 芋泥抹茶甜品",
+      catDesc: "新加坡首家芋泥+抹茶专门店",
+      ratingDesc: "紫绿双拼颜值出片",
+      active: true
+    },
+
+    {
+      id: "seoul-tofu-woodleigh-2026-07",
+      name: "Seoul Tofu 首尔豆腐锅（伍麗坊 The Woodleigh Mall）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "S$18–20/人",
+      description: "东北部的邻居们有福啦！这家新开的韩式豆腐锅每天现磨手工豆腐，绵密顺滑一口就能吃出诚意。招牌泡菜猪肉豆腐锅微辣够味，配料给得很实在；不吃辣就点原味豆腐锅，汤底清爽干净。大部分主食都在20刀以内，性价比在商场餐厅里算很能打了，带娃周末逛伍麗坊后顺路吃一顿暖胃韩餐刚刚好。",
+      tags: ["韩式豆腐锅", "东北部新店", "平价韩餐", "伍麗坊商场"],
+      address: "11 Bidadari Park Drive, #01-37, The Woodleigh Mall, Singapore 367803",
+      badge: "new",
+      badgeText: "🆕 7月新店",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#ef4444,#7f1d1d)",
+      catLabel: "🍲 韩式豆腐锅",
+      catDesc: "手工现磨豆腐锅，平价家常韩餐",
+      ratingDesc: "东北部新晋人气韩餐",
+      active: true
+    },
 
     // ── 🆕 2026-07-17 每日更新新增 ──────────
 
@@ -5233,6 +5275,100 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-07-21 每日更新新增 ──────────
+
+    {
+      id: "he-xiangning-ink-intent-ngs-2026",
+      name: "《何香凝：画就丹青凭寄意》He Xiangning: Ink and Intent（新加坡国家美术馆）",
+      type: "exhibition",
+      priority: "normal",
+      month: "AUG",
+      day: "23",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#7c3aed,#3730a3)",
+      typeLabel: "🖼️ 华人艺术大师回顾展",
+      typeColor: "#7c3aed",
+      description: "东南亚首次何香凝个人回顾展在国家美术馆举行！这位20世纪重要的中国女性水墨艺术家，一生跨越七十余年创作生涯，展览联合何香凝美术馆呈现逾50件真迹，还特别梳理了她1929年访问新加坡、联合本地华侨办慈善画展的历史渊源。现场设有互动学习站，孩子可以临摹她笔下的松、狮、虎意象，是带孩子感受中国近代艺术与新加坡渊源的好去处，双语讲解友好。",
+      venue: "新加坡国家美术馆 吴冠中展厅（National Gallery Singapore, Wu Guanzhong Gallery）",
+      dateRange: "即日起 – 8月23日",
+      ticketInfo: "🎫 含馆内门票",
+      price: "S$20 起（本地居民享优惠价）",
+      priceNote: "国家美术馆常规门票即可入场",
+      ticketUrl: "https://www.nationalgallery.sg/sg/en/exhibitions/He-Xiangning-Ink-Intent.html",
+      btnText: "详情",
+      sortDate: "2026-08-23",
+      active: true
+    },
+
+    {
+      id: "byeon-woo-seok-secret-library-star-2026-09",
+      name: "卞佑锡《The Secret Library》亚洲见面会 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "SEP",
+      day: "18",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#db2777,#831843)",
+      typeLabel: "🎤 韩星见面会",
+      typeColor: "#db2777",
+      description: "《Lovely Runner》男主角卞佑锡时隔一年再度访新！这次带着「The Secret Library」亚洲见面会巡演回归，粉丝们期待已久的近距离互动环节和舞台特别企划都会安排上。喜欢韩剧、追星的姐妹可以提前锁定票务，往期来新加坡的场次口碑都很不错。",
+      venue: "The Star Theatre",
+      dateRange: "9月18日（周五）晚7:30",
+      ticketInfo: "🎫 Ticketmaster",
+      price: "S$148–S$268",
+      priceNote: "不含服务费，分区票价",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_byeonwooseok",
+      btnText: "购票",
+      sortDate: "2026-09-18",
+      active: true
+    },
+
+    {
+      id: "makbesar-grand-market-suntec-2026-08",
+      name: "MakBesar Grand Market 清真美食零售市集",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "02",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#16a34a,#14532d)",
+      typeLabel: "🛍️ 市集嘉年华",
+      typeColor: "#16a34a",
+      description: "年内第二场MakBesar市集空降新达城会议中心，数十家摊位云集清真美食、即食小吃、冷冻食品和调味料，逛一圈就能把东南亚风味小吃一网打尽。周末带娃来觅食顺便囤货，出片也很热闹。",
+      venue: "Suntec Convention Centre",
+      dateRange: "7月31日（周五）– 8月2日（周日）",
+      ticketInfo: "🎫 免费入场",
+      price: "免费",
+      priceNote: "详情以官方页面为准",
+      ticketUrl: "https://www.suntecsingapore.com/visit-events/makbesar-grand-market",
+      btnText: "详情",
+      sortDate: "2026-08-02",
+      active: true
+    },
+
+    {
+      id: "night-at-orchard-aug-2026",
+      name: "Night at Orchard 乌节路月度夜市（8月场）",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "30",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#f59e0b,#78350f)",
+      typeLabel: "🌃 周末夜市",
+      typeColor: "#f59e0b",
+      description: "乌节路唯一的月度快闪夜市又来啦！从Wisma Atria到义安城一整段人行道摆满了20多个本地及国际独立设计师摊位，饰品、手作、生活好物应有尽有，免费入场逛吃逛吃，晚饭后带娃散步顺便挖宝很惬意。",
+      venue: "乌节路人行步道（Wisma Atria 至 Ngee Ann City 段）",
+      dateRange: "8月28日（周五）– 8月30日（周日）下午3点至晚10点",
+      ticketInfo: "🎫 免费入场",
+      price: "免费",
+      priceNote: "每月固定周末举办",
+      ticketUrl: "https://nao.sg/",
+      btnText: "详情",
+      sortDate: "2026-08-30",
+      active: true
+    },
+
     // ── 🆕 2026-07-17 每日更新新增 ──────────
 
     {
@@ -5397,7 +5533,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Singapore%20Chinese%20Orchestra",
       btnText: "购票",
       sortDate: "2026-07-18",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-07-10 新增 ──────────
@@ -5468,7 +5604,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Slava+Snowshow+Singapore",
       btnText: "购票",
       sortDate: "2026-07-15",
-      active: true
+      active: false
     },
 
     {
@@ -5659,7 +5795,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.bykido.com/blogs/events-and-activities/century-square-8th-birthday-2026",
       btnText: "了解详情",
       sortDate: "2026-07-03",
-      active: true
+      active: false
     },
 
 
@@ -5878,7 +6014,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/hood0726",
       btnText: "购票",
       sortDate: "2026-07-14",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-19 每日更新新增 ──────────
@@ -6263,7 +6399,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=My+Chemical+Romance+Singapore",
       btnText: "购票",
       sortDate: "2026-07-18",
-      active: true
+      active: false
     },
 
     {
@@ -6382,7 +6518,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/search?q=NEXZ+Singapore",
       btnText: "购票",
       sortDate: "2026-07-17",
-      active: true
+      active: false
     },
 
     {
@@ -6480,7 +6616,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Li+Jian+Singapore",
       btnText: "购票",
       sortDate: "2026-07-17",
-      active: true
+      active: false
     },
 
     {
@@ -8297,7 +8433,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Glow+Festival+Sentosa",
       btnText: "购票",
       sortDate: "2026-07-10",
-      active: true
+      active: false
     },
 
     {
@@ -8837,7 +8973,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=The+Neighbourhood+Singapore",
       btnText: "购票",
       sortDate: "2026-07-15",
-      active: true
+      active: false
     }
 ,
 
@@ -9203,6 +9339,53 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+
+    // ── 🆕 2026-07-21 每日更新新增 ──────────
+
+    {
+      id: "raf-museum-reopen-2026-07",
+      name: "新加坡空军博物馆焕新重开 Singapore Air Force Museum",
+      icon: "🛩️",
+      topGradient: "linear-gradient(90deg,#0369a1,#0c4a6e)",
+      ageRange: "适合 5–12 岁全家",
+      description: "改造重开的空军博物馆超好玩！全新沉浸式互动展区、投影地图装置、真实战机展示一应俱全，还有一座以C-130大力神运输机为造型的儿童游乐场，免费入场随时可以安排。",
+      highlight: "游乐场有滑梯、攀爬架和绳梯，让孩子玩着玩着体验「驾驶战机」的想象游戏；馆内互动任务游戏和多感官展项正对7-9岁孩子对科技/军事主题的好奇心，寓教于乐了解新加坡国防历史，免费入场省心又能耗上大半天体力",
+      location: "400 Airport Road, Singapore（近巴耶利峇空军基地）",
+      dateRange: "2026年6月17日起长期开放（周二至周日 8:30am–5:00pm，周一及公共假期休馆）",
+      cost: "免费入场",
+      duration: "约 1.5–2 小时",
+      active: true
+    },
+
+    {
+      id: "wheels-on-the-bus-musical-gateway-2026-08",
+      name: "互动儿童音乐剧《Wheels on the Bus》（Gateway Theatre）",
+      icon: "🚌",
+      topGradient: "linear-gradient(90deg,#eab308,#92400e)",
+      ageRange: "适合 2–9 岁（可带弟弟妹妹全家观看）",
+      description: "改编自经典童谣的高能量互动儿童剧，每位小朋友入场都能领到专属互动工具包，跟着演员又唱又跳全程参与，8月在武吉士Gateway Theatre空中花园上演。",
+      highlight: "虽然内容偏低龄，但现场互动、歌舞环节对7-9岁孩子依然有吸引力，是难得可以带弟弟妹妹一起看、培养表演艺术兴趣的家庭亲子时光",
+      location: "Gateway Theatre Sky Garden, Level 6",
+      dateRange: "2026年8月1日 – 8月9日",
+      cost: "成人标准票 S$25；儿童+工具包套票 S$35",
+      duration: "约 50–60 分钟",
+      active: true
+    },
+
+    {
+      id: "art-journey-ndp-workshop-2026-08",
+      name: "Art Journey 国庆主题亲子工作坊",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#ef4444,#7f1d1d)",
+      ageRange: "适合 3 岁以上全家",
+      description: "国庆档期的红白主题手作工作坊，孩子可以自己动手做新加坡马赛克杯垫、红白帆布画或爱国沙画，8月8日至10日连续开放，是国庆前给孩子做一次本地文化启蒙的好机会。",
+      highlight: "动手创作比单纯看烟火更有参与感，7-9岁孩子正好能独立完成一整幅作品，成品还能带回家当纪念；国庆主题也顺带让在新加坡生活的中国家庭孩子多了解本地节日文化",
+      location: "Art Journey（多分店，详见官网）",
+      dateRange: "2026年8月8日 – 8月10日",
+      cost: "详见官网（工作坊类型不同价格不同）",
+      duration: "约 1–1.5 小时",
+      active: true
+    },
 
     // ── 🆕 2026-07-17 每日更新新增 ──────────
 
@@ -11840,6 +12023,92 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   movies: [
 
+    // ── 🆕 2026-07-21 每日更新新增 ──────────
+
+    {
+      id: "all-wishes-come-true-2026-08",
+      title: "All Wishes Come True!",
+      chineseTitle: "八仙！",
+      type: "chinese",
+      rating: 8.3,
+      releaseDate: "2026-08-27",
+      genre: "动画 / 喜剧 / 神话",
+      language: "普通话 · 中英文字幕",
+      duration: "约 100 分钟（预计）",
+      cast: "配音阵容暂未完全公开，配音导演陈浩（《哪吒》系列配音导演）",
+      director: "牟正洋",
+      description: "2026中国暑期档现象级爆款终于要来新加坡了！改编自「八仙过海」民间传说，八个出身平凡的凡人角色（穷秀才吕洞宾等）凭借民间智慧和勇气对抗强大对手、最终修成正果，笑点密集又不失中国传统文化底蕴。豆瓣开分8.3是今年暑期档新片最高分，内地上映首日票房破26.9亿，带娃看一场热闹又有文化味的合家欢华语动画很合适。",
+      tags: ["华语动画", "民间传说", "暑期档爆款", "8月新片", "神话喜剧"],
+      posterEmoji: "🏮",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#1e1b4b)",
+      posterUrl: "https://incinemas.sg/image/movie/6916/b59bd584-c731-4b7f-b7c8-77a63eac9592.jpg",
+      badge: "hot",
+      badgeText: "🔥 暑期档华语爆款",
+      ageGuide: "预计 PG · 适合全家",
+      highlights: [
+        "🎬 导演 牟正洋（首部动画长片自编自导）",
+        "🌟 配音导演陈浩（《哪吒》系列配音导演操刀）",
+        "🏆 豆瓣开分8.3，暑期档新片最高分，内地首日票房破26.9亿",
+      ],
+      active: true
+    },
+
+    {
+      id: "shaun-the-sheep-beast-mossy-bottom-2026-09",
+      title: "Shaun the Sheep: The Beast of Mossy Bottom",
+      chineseTitle: "小羊肖恩：莫西谷的怪兽",
+      type: "family",
+      rating: 7.3,
+      releaseDate: "2026-09-18",
+      genre: "定格动画 / 喜剧 / 家庭",
+      language: "无对白（默剧式定格动画）· 中英文字幕",
+      duration: "约 85 分钟（预计）",
+      cast: "配音：Justin Fletcher · John Sparkes · Kate Harbour",
+      director: "Steve Cox · Matthew Walker",
+      description: "英国国宝级定格动画《小羊肖恩》时隔多年再出大电影！万圣节前夕，笨手笨脚的农场主搞砸了南瓜地，肖恩灵机一动变身「疯狂科学家」想办法补救，结果意外把一只怪兽引到了莫西谷森林。Aardman一贯的黏土定格质感加无对白纯视觉喜剧，语言零门槛，7-9岁孩子和爸妈都能笑出声，是万圣节前很应景的合家欢首选。",
+      tags: ["定格动画", "Aardman", "家庭片", "万圣节", "9月新片"],
+      posterEmoji: "🐑",
+      bgGradient: "linear-gradient(135deg,#84cc16,#365314)",
+      posterUrl: "",
+      badge: "new",
+      badgeText: "🆕 9月上映",
+      ageGuide: "预计 G · 适合全家（无对白零语言门槛）",
+      highlights: [
+        "🎬 导演 Steve Cox × Matthew Walker（联合执导长片首作）",
+        "🌟 Aardman出品，《小羊肖恩》系列经典定格动画延续",
+        "🎬 万圣节怪兽题材，无对白纯视觉喜剧，语言零门槛全家可看",
+      ],
+      active: true
+    },
+
+    {
+      id: "katseye-wild-hearts-2026-08",
+      title: "KATSEYE: Wild Hearts",
+      chineseTitle: "KATSEYE：狂野之心",
+      type: "coming-soon",
+      rating: 0,
+      releaseDate: "2026-08-12",
+      genre: "音乐纪录片",
+      language: "英语 · 中英文字幕",
+      duration: "约 80 分钟",
+      cast: "KATSEYE 全体成员（两届格莱美提名全球女团）",
+      director: "Nadia Hallgren",
+      description: "两届格莱美提名的全球女团KATSEYE首部院线纪录电影，在第三张EP《WILD》发行前特别登陆院线，收录大量幕后花絮、粉丝互动片段和成员深度访谈，展现团体与全球粉丝之间的羁绊。喜欢K-pop/全球女团文化的青少年和妈妈粉可以约上闺蜜一起去电影院打call。",
+      tags: ["音乐纪录片", "女团", "KATSEYE", "8月新片", "格莱美提名"],
+      posterEmoji: "🎤",
+      bgGradient: "linear-gradient(135deg,#ec4899,#701a75)",
+      posterUrl: "",
+      badge: "new",
+      badgeText: "🆕 8月12日上映",
+      ageGuide: "预计 PG · 适合青少年及以上",
+      highlights: [
+        "🎬 导演 Nadia Hallgren",
+        "🌟 KATSEYE 全体成员出镜，独家幕后花絮 + 深度访谈",
+        "🎬 配合第三张EP《WILD》发行的院线特别放映",
+      ],
+      active: true
+    },
+
     // ── 🆕 2026-07-17 每日更新新增 ──────────
 
     {
@@ -12590,7 +12859,7 @@ const SGLIVING_DATA = {
         "🌟 李思潼 · 王彦桐 · 吴少卿 · 郑润奇 · 王晓慧",
         "🏆 以世界记忆遗产「侨批」为线索 · 6月18日新马同步上映",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -12876,7 +13145,7 @@ const SGLIVING_DATA = {
         "🌟 李思潼 · 王彦桐 · 吴少卪 · 郑润奇 · 王晓慧",
         "🏆 取材世界记忆遗产「侨批」· 港澳新马文同步上映 · 华侨家庭催泪之作",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -12961,7 +13230,7 @@ const SGLIVING_DATA = {
         "🌟 Tom Hanks 汤姆·汉克斯 · Tim Allen · Joan Cusack · Keanu Reeves · Conan O'Brien · Greta Lee",
         "🏆 皮克斯回归 IP · 全球首日观看 1.4 亿次的预告片",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -13241,7 +13510,7 @@ const SGLIVING_DATA = {
         "🌟 Chiwetel Ejiofor · Renate Reinsve · Mark Duplass · Avan Jogia",
         "🏆 A24 影史票房最高作品 · 全球票房破 1.9 亿美元",
       ],
-      active: true
+      active: false
     }
 
   ]
