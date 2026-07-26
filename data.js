@@ -8,15 +8,15 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-07-21
- * 版本：3.9
+ * 最后更新：2026-07-26
+ * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-07-21",
-    version: "3.9",
+    lastUpdated: "2026-07-26",
+    version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
 
@@ -26,6 +26,90 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-07-26 每日更新新增 ──────────
+
+    {
+      id: "linkus-takashimaya-2026-07",
+      name: "LINKUS 临家（大丸百货 Takashimaya 第二分店）",
+      categories: ["restaurant"],
+      rating: 4.5,
+      openDate: "2026-07",
+      price: "S$25–45/人",
+      description: "姐妹们冲！中国美食社媒都在刷屏的厦门闽菜品牌 LINKUS 临家，在乌节路大丸百货 Takashimaya 开出新加坡第二家分店啦！7月19日至31日开业庆典期间福利拉满：任意招牌菜1for1、午晚市前15桌送佛跳墙海参汤、加入会员预付5倍餐费当次用餐直接免单。主理厨师林秋永有20多年闽菜经验，招牌泉州姜母鸭配鲍鱼和厦门经典沙茶火锅都很地道，喜欢闽南口味的家庭一定要趁开业冲一波。",
+      tags: ["小红书爆款", "闽菜", "厦门风味", "开业优惠", "第二分店"],
+      address: "391 Orchard Road, #04-22, Ngee Ann City Takashimaya Shopping Centre, Singapore 238872",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🦆",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7c2d12)",
+      catLabel: "🥘 闽南菜",
+      catDesc: "厦门网红品牌新加坡第二分店",
+      ratingDesc: "开业优惠力度超大",
+      active: true
+    },
+
+    {
+      id: "foura-gardens-2026-07",
+      name: "Foura（滨海湾花园玻璃屋健康餐厅）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-07",
+      price: "S$25–46/人",
+      description: "藏在滨海湾花园 IMBA Theatre 入口玻璃屋里的养生系新餐厅，7月9日开业，主打「蓝色养生区」饮食理念——高比例草饲蛋白、深海鱼、高多酚橄榄油，好吃又没有健康餐的寡淡感。布拉塔配烤南瓜、味噌腌银鳕鱼都是招牌，甜品用本地豆花做成意式奶冻也很有巧思。周末还有瑜伽和普拉提课程，吃完顺便运动一下心理负担全清空。",
+      tags: ["健康轻食", "滨海湾花园", "养生餐", "玻璃屋"],
+      address: "18 Marina Gardens Drive, #01-23, Singapore 018953",
+      badge: "new",
+      badgeText: "🆕 新开",
+      emoji: "🥗",
+      bgGradient: "linear-gradient(135deg,#16a34a,#166534)",
+      catLabel: "🥗 健康轻食",
+      catDesc: "滨海湾花园玻璃屋健康餐厅",
+      ratingDesc: "养生系新去处",
+      active: true
+    },
+
+    {
+      id: "jumboree-tai-seng-2026-07",
+      name: "JUMBOREE（JUMBO集团首个美食广场）",
+      categories: ["restaurant", "snack"],
+      rating: 4.4,
+      openDate: "2026-07",
+      price: "S$2–30/人",
+      description: "海鲜连锁巨头 JUMBO 集团首次跨界做美食广场！泰声街总部一整层近1.8万平方尺全空调空间，集合10多个自家品牌，全程扫码点单不用排队。招牌 Jumbo 1987 港式大排档风格现炒海鲜走净价（不加服务费），还有价格亲民的自助快餐柜台，一碗只要S$1.9–4.9，晚上偶尔有live band，下班小酌很合适。",
+      tags: ["美食广场", "JUMBO集团", "泰声街", "平价海鲜"],
+      address: "26 Tai Seng Street, #01-02, Singapore 534057",
+      badge: "new",
+      badgeText: "🆕 新开",
+      emoji: "🦐",
+      bgGradient: "linear-gradient(135deg,#f97316,#7c2d12)",
+      catLabel: "🦐 美食广场",
+      catDesc: "JUMBO集团首个美食广场概念",
+      ratingDesc: "平价海鲜大集合",
+      active: true
+    },
+
+    {
+      id: "souper-tang-raffles-city-2026-07",
+      name: "Souper Tang 顺爆膳堂（莱佛士城旗舰店）",
+      categories: ["restaurant"],
+      rating: 4.2,
+      openDate: "2026-07",
+      price: "S$15–30/人",
+      description: "马来西亚国民药膳汤连锁 Souper Tang 终于登陆新加坡！莱佛士城地下旗舰店7月29日开业，一口气带来15款招牌药膳汤，是本地药膳汤餐厅里选择最多的一家。品牌由两位中医师2009年创立，讲究「膳食」养生理念，花旗参黑鸡汤配陈年黑蒜、金汤鱼鳔炖带子都很滋补，还有50多道家常菜可以搭配，冷气房里喝碗热汤特别治愈。7月20–26日预约还能抢开业优先入场名额。",
+      tags: ["马来西亚药膳", "养生汤", "莱佛士城", "中医食疗"],
+      address: "252 North Bridge Road, #B1-37, Raffles City Shopping Centre, Singapore 179103",
+      badge: "new",
+      badgeText: "🆕 7月29日开业",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#b45309,#78350f)",
+      catLabel: "🍲 药膳汤品",
+      catDesc: "马来西亚国民药膳汤连锁",
+      ratingDesc: "养生汤品性价比高",
+      active: true
+    },
+
+
 
     // ── 🆕 2026-07-21 每日更新新增 ──────────
 
@@ -5275,6 +5359,102 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-07-26 每日更新新增 ──────────
+
+    {
+      id: "pop-toy-show-2026-08",
+      name: "POP TOY SHOW Singapore 2026 · 潮玩展",
+      type: "exhibition",
+      priority: "featured",
+      month: "AUG",
+      day: "21",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#f472b6,#a855f7)",
+      typeLabel: "🧸 潮玩展览",
+      typeColor: "#f472b6",
+      description: "POPMART 年度潮玩盛会第四届回归新加坡！今年主题「Stellar Bloom」，适逢人气IP MOLLY 20周年，现场限定发售+巨型装置打卡点一应俱全，喜欢盲盒/潮玩的孩子和大朋友都会疯狂。3天展期在滨海湾金沙会展中心，提前购票更划算。",
+      venue: "Sands Expo & Convention Centre, Marina Bay Sands",
+      dateRange: "8月21–23日（周五至周日）",
+      ticketInfo: "🎫 官网 / Trip.com",
+      price: "S$40起（现场S$45）",
+      priceNote: "Trip.com独家线上票",
+      ticketUrl: "https://poptoyshow.com.sg/",
+      btnText: "购票",
+      sortDate: "2026-08-21",
+      active: true
+    },
+
+    {
+      id: "green-house-festival-2026-08",
+      name: "GREEN-HOUSE 2026 · 新加坡最大可持续生活节",
+      type: "event",
+      priority: "normal",
+      month: "AUG",
+      day: "28",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#22c55e,#15803d)",
+      typeLabel: "🌱 可持续市集",
+      typeColor: "#22c55e",
+      description: "第五届 GREEN-HOUSE 可持续生活节回归多美歌民宅（Temasek Shophouse），100多个本地环保品牌和创意工作室齐聚，从周五晚场到周末全天开放，免费入场。带孩子逛环保市集、试手作，顺便做一次「可持续生活」的启蒙也不错。",
+      venue: "Temasek Shophouse",
+      dateRange: "8月28–30日",
+      ticketInfo: "🎫 免费入场",
+      price: "免费",
+      priceNote: "部分工作坊另收费",
+      ticketUrl: "https://www.green-house.sg/",
+      btnText: "查看详情",
+      sortDate: "2026-08-28",
+      active: true
+    },
+
+    {
+      id: "another-coffee-festival-2026-09",
+      name: "Another Coffee Festival 2026 · 精品咖啡节",
+      type: "event",
+      priority: "normal",
+      month: "SEP",
+      day: "03",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#92400e,#451a03)",
+      typeLabel: "☕ 咖啡节",
+      typeColor: "#92400e",
+      description: "新加坡首届社区精品咖啡节，4天集结来自9个国家/地区的34家精品咖啡烘焙商，主打「串摊」体验——买咖啡节套票拿可重复使用杯+品鉴代币，逐摊兑换70-80ml精品咖啡。7月8-31日超早鸟票低至S$21.6，咖啡控约上朋友很值。",
+      venue: "Guoco Tower Urban Park",
+      dateRange: "9月3–6日",
+      ticketInfo: "🎫 anothercoffee.sg",
+      price: "S$21.6起（套票）",
+      priceNote: "超早鸟票限时优惠",
+      ticketUrl: "https://www.anothercoffee.sg/",
+      btnText: "购票",
+      sortDate: "2026-09-03",
+      active: true
+    },
+
+    {
+      id: "pakho-chau-concert-2026-09",
+      name: "周柏豪 Pakho Chau《The Blooming Chapter》Fanmeet 巡演",
+      type: "concert",
+      priority: "normal",
+      month: "SEP",
+      day: "05",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#ec4899,#be185d)",
+      typeLabel: "🎤 港乐演唱会",
+      typeColor: "#ec4899",
+      description: "香港唱作人周柏豪《The Blooming Chapter》亚洲巡演新加坡站，圣淘沙名胜世界会展中心舞台开唱，《够钟》《我的宣言》《传闻》《小白》等经典金曲现场安排，粤语歌迷不要错过。",
+      venue: "Resorts World Ballroom, Sentosa",
+      dateRange: "9月5日（周六）",
+      ticketInfo: "🎫 SISTIC",
+      price: "S$98–298",
+      priceNote: "SISTIC",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Pakho+Chau",
+      btnText: "购票",
+      sortDate: "2026-09-05",
+      active: true
+    },
+
+
+
     // ── 🆕 2026-07-21 每日更新新增 ──────────
 
     {
@@ -9340,6 +9520,55 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-07-26 每日更新新增 ──────────
+
+    {
+      id: "bounce-trampoline-summer-camp-2026-08",
+      name: "Bounce 蹦床暑期夏令营",
+      icon: "🤸",
+      topGradient: "linear-gradient(90deg,#f59e0b,#b45309)",
+      ageRange: "适合 3 岁以上（7-9岁精力旺盛的孩子超适合）",
+      description: "Bounce 蹦床馆暑期营持续到8月13日，每天开场前独享整馆1小时（9-10am），不用和其他顾客抢蹦床，专业教练带着学自由式蹦床技巧，全程有人看管。",
+      highlight: "整馆独享时段既安全又能玩得尽兴，对精力旺盛坐不住的7-9岁孩子来说是绝佳的放电方式；蹦床训练还能锻炼协调性和爆发力，比闷在家里刷手机健康多了",
+      location: "Bounce Singapore（多分店，详见官网）",
+      dateRange: "即日起至2026年8月13日",
+      cost: "S$320 起",
+      duration: "多天套餐（每天含1小时专属时段）",
+      active: true
+    },
+
+    {
+      id: "power-camps-multisport-2026-08",
+      name: "Power Camps 多运动暑期夏令营",
+      icon: "⚽",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#0369a1)",
+      ageRange: "适合 4–10 岁（7-9岁正合适）",
+      description: "Power Camps 暑期营涵盖多种运动轮换体验，还安排户外教学出游和手工创作时间，动静结合不会让孩子觉得单调，8月多期可选。",
+      highlight: "一次营期能尝试好几种运动项目，帮孩子找到真正感兴趣的运动方向，避免报单一兴趣班的局限；穿插的手工创作环节也照顾到7-9岁孩子需要静态休息调整的注意力特点",
+      location: "多分店（详见官网）",
+      dateRange: "2026年8月（暑假期间，多期可选）",
+      cost: "S$400 起",
+      duration: "全天营",
+      active: true
+    },
+
+    {
+      id: "superpark-superdaycamp-2026-08",
+      name: "SuperPark SuperDayCamp 室内运动全天营",
+      icon: "🤾",
+      topGradient: "linear-gradient(90deg,#7c3aed,#4c1d95)",
+      ageRange: "适合 4–12 岁",
+      description: "SuperPark 室内运动主题营，专属设计的闯关游戏和障碍赛道，9am-3pm全天开放且含午餐，不受天气影响，暑假雨天备选好去处。",
+      highlight: "室内闯关式障碍赛对7-9岁孩子的体能协调和解决问题能力是很好的锻炼；全天营含午餐让家长可以放心安排一整天，不用担心接送衔接",
+      location: "SuperPark Singapore, Kallang Wave Mall",
+      dateRange: "2026年8月（暑假期间）",
+      cost: "详见官网（含午餐）",
+      duration: "9am–3pm（全天）",
+      active: true
+    },
+
+
+
     // ── 🆕 2026-07-21 每日更新新增 ──────────
 
     {
@@ -12022,6 +12251,94 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-07-26 每日更新新增 ──────────
+
+    {
+      id: "kung-fu-soccer-2026-08",
+      title: "Kung Fu Soccer",
+      chineseTitle: "功夫女足",
+      type: "chinese",
+      rating: 7.2,
+      releaseDate: "2026-08-06",
+      genre: "喜剧 / 运动 / 功夫",
+      language: "粤语/普通话 · 中英文字幕",
+      duration: "约 120 分钟",
+      cast: "张小斐 · 迪丽热巴 · 张艺兴 · 特别出演：刘嘉玲、佐藤健",
+      director: "周星驰",
+      description: "周星驰阔别7年再执导筒！《功夫女足》是《少林足球》的精神续作，讲述一支边缘女足队伍用「功夫」踢法逆袭夺冠的故事，把传送、抢断、射门都拍成了武打场面，星爷式无厘头幽默+燃向体育片双管齐下，情怀党和纯路人都能看得很爽。8月6日新加坡上映，适合带娃或约好友一起怀旧。",
+      tags: ["周星驰", "少林足球续作", "喜剧", "8月新片", "港片"],
+      posterEmoji: "⚽",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7c2d12)",
+      posterUrl: "https://static.mothership.sg/1/2026/07/kung-fu-soccer.jpg",
+      badge: "hot",
+      badgeText: "🔥 周星驰回归之作",
+      ageGuide: "预计 PG · 适合全家",
+      highlights: [
+        "🎬 导演 周星驰（《少林足球》精神续作，阔别影坛7年回归）",
+        "🌟 张小斐 · 迪丽热巴 · 张艺兴领衔，刘嘉玲、佐藤健特别出演",
+        "🏆 中国大陆上映后热度居暑期档前列",
+      ],
+      active: true
+    },
+
+    {
+      id: "ateez-light-the-way-2026-08",
+      title: "ATEEZ: LIGHT THE WAY IN CINEMAS",
+      chineseTitle: "ATEEZ：照亮前路 电影版",
+      type: "coming-soon",
+      rating: 0,
+      releaseDate: "2026-08-06",
+      genre: "音乐 / 演唱会电影",
+      language: "韩语 · 中英文字幕",
+      duration: "约 65 分钟",
+      cast: "ATEEZ 全员",
+      director: "Kim Ji-ae",
+      description: "人气韩团 ATEEZ 全新沉浸式演唱会电影登陆院线！收录《INCEPTION》《BOUNCY》《Ice On My Teeth》等热门曲目的电影级重制版舞台，还有从未曝光的幕后花絮。新加坡8月6日、8日两天限定上映，Shaw多家门店同步放映，粉丝可以约上闺蜜去电影院大屏追爱豆。",
+      tags: ["ATEEZ", "演唱会电影", "韩团", "限定上映"],
+      posterEmoji: "🎤",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      posterUrl: "",
+      badge: "new",
+      badgeText: "🆕 限定上映",
+      ageGuide: "预计 PG · 适合全家",
+      highlights: [
+        "🎬 导演 Kim Ji-ae（VR演唱会改编大银幕版）",
+        "🌟 ATEEZ 全员出演，收录多首热门单曲电影级重制舞台",
+        "🎬 8月6日、8日两天限定上映，附独家未公开花絮",
+      ],
+      active: true
+    },
+
+    {
+      id: "angry-birds-movie-3-2026-12",
+      title: "The Angry Birds Movie 3",
+      chineseTitle: "愤怒的小鸟大电影3",
+      type: "family",
+      rating: 0,
+      releaseDate: "2026-12-23",
+      genre: "动画 / 喜剧 / 冒险",
+      language: "英语 · 中英文字幕",
+      duration: "约 95 分钟（预计）",
+      cast: "Jason Sudeikis · Josh Gad · Rachel Bloom · Danny McBride · MrBeast",
+      director: "John Rice",
+      description: "《愤怒的小鸟》系列第三部来啦！这次 Red 要面对「最愤怒」的挑战——一边当爸爸一边拯救世界，合家欢喜剧+冒险元素齐全，还有网红 MrBeast 和 Salish Matter 加盟配音，年底圣诞档带娃看恰好合适，提前放进片单不怕错过。",
+      tags: ["愤怒的小鸟", "动画", "合家欢", "圣诞档", "MrBeast"],
+      posterEmoji: "🐦",
+      bgGradient: "linear-gradient(135deg,#ef4444,#7f1d1d)",
+      posterUrl: "http://www.impawards.com/2026/posters/angry_birds_movie_three.jpg",
+      badge: "new",
+      badgeText: "🆕 12月上映",
+      ageGuide: "预计 PG · 适合全家",
+      highlights: [
+        "🎬 导演 John Rice（前两部导演回归执导）",
+        "🌟 Jason Sudeikis · Josh Gad · Rachel Bloom · Danny McBride 原班人马回归，MrBeast客串配音",
+        "🎬 圣诞档合家欢动画，聚焦Red初为人父的爆笑冒险",
+      ],
+      active: true
+    },
+
+
 
     // ── 🆕 2026-07-21 每日更新新增 ──────────
 
