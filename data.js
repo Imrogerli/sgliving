@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-09-22
+ * 最后更新：2026-09-23
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-09-22",
+    lastUpdated: "2026-09-23",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,94 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+
+    // ── 🆕 2026-09-23 每日更新新增（美食） ──────────
+
+    {
+      id: "ojeje-raffles-city-2026-10",
+      name: "Ojeje 오제제（济州岛人气炸猪排 · 首尔 6 店首次出海 · Raffles City）",
+      categories: [
+        "restaurant"
+      ],
+      rating: 4.4,
+      openDate: "2026-10",
+      price: "S$25–45/人",
+      description: "姐妹们！首尔排队王 Ojeje 海外第一站居然选了新加坡 City Hall 的 Raffles City B1！招牌是济州岛湿式熟成猪排——里脊/腰内肉二选一，外壳薄脆不油，肉心粉嫩多汁，蘸山葵、蘸酱油 tsuyu、蘸松露盐三种吃法轮着来。别错过 kadaif 酥丝大虾和手工抹茶冷乌冬，QQ 弹牙带一点点茶香，解腻一绝。地铁直达、附近上班的姐妹午饭又多一个选择，开业初期建议避开 12–1 点高峰～",
+      tags: [
+        "韩式炸猪排",
+        "济州猪",
+        "手工乌冬",
+        "City Hall",
+        "小红书爆款"
+      ],
+      address: "252 North Bridge Road, #B1-12, Raffles City Shopping Centre, Singapore 179103",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍱",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#92400e)",
+      catLabel: "正餐",
+      catDesc: "韩式炸猪排 · 手工乌冬 / Raffles City B1",
+      ratingDesc: "济州熟成猪排 · 抹茶冷乌冬",
+      active: true
+    },
+
+    {
+      id: "casa-lola-boon-tat-2026-09",
+      name: "Casa Lola（FOC 集团新派西班牙小酒馆 · Boon Tat Street）",
+      categories: [
+        "restaurant"
+      ],
+      rating: 4.3,
+      openDate: "2026-09",
+      price: "S$45–70/人",
+      description: "如果你也是 FOC 的老粉，这家 9 月新开的姐妹店 Casa Lola 要记进清单：灵感来自巴塞罗那街角的 bodega 小酒馆，菜单走「简单但味道很足」路线。tapas 先来一份炸大蕉配牛油果奶油和是拉差蜂蜜，胆大的试烤乳猪耳配烟熏辣椒蒜泥蛋黄酱；主菜必点蒜香大虾配西班牙 Agria 土豆和溏心蛋，还有主厨 Juanjo 外婆配方的焗通心粉肉酱，家庭聚餐点一锅时令海鲜饭刚刚好。CBD 周中晚餐、周末小酌都合适，周日周一休息注意。",
+      tags: [
+        "西班牙菜",
+        "Tapas",
+        "海鲜饭",
+        "CBD",
+        "FOC 集团"
+      ],
+      address: "3 Boon Tat Street, Singapore 069612",
+      badge: "new",
+      badgeText: "🆕 9月新开",
+      emoji: "🥘",
+      bgGradient: "linear-gradient(135deg,#dc2626,#9a3412)",
+      catLabel: "正餐",
+      catDesc: "西班牙小酒馆 / Telok Ayer",
+      ratingDesc: "蒜香大虾 · 外婆配方焗通心粉",
+      active: true
+    },
+
+    {
+      id: "connors-x-cshh-tyrwhitt-2026-09",
+      name: "Chye Seng Huat Hardware × Connor's 黑啤联名菜单（限时至 11/1）",
+      categories: [
+        "snack",
+        "dessert"
+      ],
+      rating: 4.3,
+      openDate: "2026-09",
+      price: "S$15–35/人",
+      description: "Jalan Besar 的老牌咖啡馆再成华兴 CSHH 这回和 Connor's 黑啤玩了个联名：主厨把黑啤直接揉进三道菜里——Stout Stack 和牛汉堡（黑啤慢煨焦糖洋葱 + 煎蛋 + 薯条，S$30++）饿的时候一份就够；最出圈的是 Connor's Affogato（S$9.20++），浓缩咖啡 + 香草冰淇淋再淋一圈黑啤，微苦回甘很上头。周一到周五 6pm 后点主菜送半品脱黑啤，happy hour 一整杯只要 S$10++。只到 11 月 1 日，喜欢工业风老店的姐妹抓紧～",
+      tags: [
+        "咖啡馆",
+        "联名限时",
+        "Jalan Besar",
+        "黑啤",
+        "小红书爆款"
+      ],
+      address: "150 Tyrwhitt Road, Singapore 207563",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍺",
+      bgGradient: "linear-gradient(135deg,#78350f,#1c1917)",
+      catLabel: "咖啡 · 小食",
+      catDesc: "咖啡馆联名限时菜单 / Jalan Besar",
+      ratingDesc: "黑啤 Affogato · Stout Stack 汉堡",
+      active: true
+    },
+
 
     // ── 🆕 2026-09-22 每日更新新增（美食） ──────────
 
@@ -5945,6 +6033,124 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   events: [
 
+    // ── 🆕 2026-09-23 每日更新新增（活动） ──────────
+
+    {
+      id: "affordable-art-fair-sg-2026-11",
+      name: "Affordable Art Fair Singapore 2026（97 家画廊 · 全场作品 S$15,000 以下）",
+      type: "exhibition",
+      priority: "featured",
+      month: "NOV",
+      day: "26",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#ec4899,#831843)",
+      typeLabel: "🎨 艺博会",
+      typeColor: "#ec4899",
+      description: "新加坡最亲民的艺术博览会 11 月 26–29 日回到 F1 Pit Building，今年 97 家本地及海外画廊参展，所有作品定价都在 S$15,000 以下，几百新币就能把原作抱回家。现场有儿童艺术工作坊和导览，家里想添一幅画、或者想带孩子感受当代艺术氛围的家庭都值得去。门票是 3 日通票：9 月 29 日前早鸟 S$19，9 月 30 日–11 月 22 日 S$24，展期当周 S$28。",
+      venue: "F1 Pit Building, 1 Republic Boulevard, Singapore 038975",
+      dateRange: "11月26日（周四）–11月29日（周日）",
+      ticketInfo: "🎟️ 早鸟 S$19（9/29 前）/ 预售 S$24 / 现场 S$28",
+      price: "S$19 起",
+      priceNote: "3 日通票 · 儿童工作坊需另行预约",
+      ticketUrl: "https://affordableartfair.com/fairs/singapore/",
+      btnText: "官网购票",
+      sortDate: "2026-11-26",
+      active: true
+    },
+
+    {
+      id: "simple-plan-indoor-stadium-2026-11",
+      name: "Simple Plan「The Bigger Than You Think!」巡演 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "NOV",
+      day: "22",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#2563eb,#1e3a8a)",
+      typeLabel: "🎸 流行朋克",
+      typeColor: "#2563eb",
+      description: "加拿大流行朋克老炮 Simple Plan 11 月 22 日回到新加坡室内体育馆。《Welcome to My Life》《Perfect》《Addicted》一响，80/90 后的青春 DNA 直接动了。他们的现场以互动和体力著称，全场蹦跳两小时是常态。票价 S$98 起在同级别演出里很良心，适合和当年一起听摇滚的老朋友组团。",
+      venue: "Singapore Indoor Stadium, 2 Stadium Walk, Singapore 397691",
+      dateRange: "11月22日（周日）8pm",
+      ticketInfo: "🎟️ S$98 起",
+      price: "S$98 起",
+      priceNote: "SISTIC 售票",
+      ticketUrl: "https://www.sistic.com.sg/events/sp1126",
+      btnText: "SISTIC 购票",
+      sortDate: "2026-11-22",
+      active: true
+    },
+
+    {
+      id: "khalid-star-theatre-2026-11",
+      name: "Khalid「It's Always Summer Somewhere」巡演 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "NOV",
+      day: "24",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#f97316,#7c2d12)",
+      typeLabel: "🎤 R&B / 流行",
+      typeColor: "#f97316",
+      description: "格莱美提名 R&B 歌手 Khalid 11 月 24 日在 The Star Theatre 开唱。《Location》《Young Dumb & Broke》《Talk》《Love Lies》这些百亿播放的歌现场听是另一种慵懒质感。The Star 座位式场馆音响细腻，很适合他这种氛围型演出，周中晚上下班过去刚好。",
+      venue: "The Star Theatre, 1 Vista Exchange Green, Singapore 138617",
+      dateRange: "11月24日（周二）8pm",
+      ticketInfo: "🎟️ S$128 起",
+      price: "S$128 起",
+      priceNote: "Ticketmaster 售票",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_khalid",
+      btnText: "Ticketmaster 购票",
+      sortDate: "2026-11-24",
+      active: true
+    },
+
+    {
+      id: "qotsa-star-theatre-2026-12",
+      name: "Queens of the Stone Age 世界巡演 新加坡站（首次来新）",
+      type: "concert",
+      priority: "normal",
+      month: "DEC",
+      day: "02",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#7f1d1d,#1c1917)",
+      typeLabel: "🎸 摇滚",
+      typeColor: "#7f1d1d",
+      description: "美国沙漠摇滚代表 Queens of the Stone Age 成团近 30 年首次来新加坡，12 月 2 日 The Star Theatre 一夜限定。《No One Knows》《Go with the Flow》《Little Sister》加上新单曲《Easy Street》，Josh Homme 的现场以精准又狂野著称。摇滚乐迷今年年底最不该错过的一场。",
+      venue: "The Star Theatre, 1 Vista Exchange Green, Singapore 138617",
+      dateRange: "12月2日（周三）8pm",
+      ticketInfo: "🎟️ 票价见 Ticketmaster",
+      price: "详见官网",
+      priceNote: "Ticketmaster 售票",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_qotsa",
+      btnText: "Ticketmaster 购票",
+      sortDate: "2026-12-02",
+      active: true
+    },
+
+    {
+      id: "two-door-cinema-club-fort-canning-2026-12",
+      name: "Two Door Cinema Club《Tourist History》15 周年 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "DEC",
+      day: "04",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#0d9488,#134e4a)",
+      typeLabel: "🎸 独立摇滚",
+      typeColor: "#0d9488",
+      description: "北爱尔兰独立舞曲摇滚 Two Door Cinema Club 为首张专辑《Tourist History》15 周年巡演，12 月 4 日在福康宁公园草地完整演奏整张专辑——《What You Know》《Something Good Can Work》《Undercover Martyn》一首不落，再加后期热门曲。露天草地 + 微风 + 蹦迪，年底最舒服的户外音乐夜之一，记得带野餐垫早点去占位。",
+      venue: "Fort Canning Green @ Fort Canning Park, River Valley Road, Singapore 179037",
+      dateRange: "12月4日（周五）8pm",
+      ticketInfo: "🎟️ S$168 起",
+      price: "S$168 起",
+      priceNote: "SISTIC 售票 · 露天站席",
+      ticketUrl: "https://www.sistic.com.sg/events/tdcc1226",
+      btnText: "SISTIC 购票",
+      sortDate: "2026-12-04",
+      active: true
+    },
+
+
     // ── 🆕 2026-09-22 每日更新新增（活动） ──────────
 
     {
@@ -10782,6 +10988,54 @@ const SGLIVING_DATA = {
   // ════════════════════════════════════════════════
   familyActivities: [
 
+    // ── 🆕 2026-09-23 每日更新新增（亲子） ──────────
+
+    {
+      id: "lego-make-take-f1-toys-r-us-2026-10",
+      name: "LEGO Make & Take：自己拼一辆 F1 赛车带回家（Toys\"R\"Us · 免费）",
+      icon: "🏎️",
+      topGradient: "linear-gradient(90deg,#ef4444,#991b1b)",
+      ageRange: "6-12 岁（7-9 岁刚刚好）",
+      description: "F1 大奖赛季节的福利：Toys\"R\"Us 的 LEGO Make & Take 活动回归，6–12 岁孩子到店就能现场拼一辆 LEGO F1 赛车，拼完直接带走，不用消费、不用报名，每天 12pm–4pm，送完为止。10 月每个周末换一家商场：10/3–4 VivoCity，10/10–11 Parkway Parade & JEM，10/17–18 Great World，10/24–25 Suntec City。",
+      highlight: "7-9 岁正是看得懂图纸、手也够稳的年纪，一辆小赛车 20 分钟就能拼完，成就感满满；完全免费还能带回家，逛商场顺路就能做，建议 12 点开场就到，晚了容易没货",
+      location: "10/3–4 VivoCity；10/10–11 Parkway Parade & JEM；10/17–18 Great World；10/24–25 Suntec City（各店 Toys\"R\"Us）",
+      dateRange: "10月每个周末 12pm–4pm（送完即止）",
+      cost: "免费",
+      duration: "约 20–30 分钟",
+      active: true
+    },
+
+    {
+      id: "bellygom-waterway-point-2026-10",
+      name: "Bellygom 粉红熊驻场 Waterway Point（见面会 + 星星充气城堡）",
+      icon: "🐻",
+      topGradient: "linear-gradient(90deg,#f472b6,#be185d)",
+      ageRange: "3-10 岁（7-9 岁玩充气城堡最尽兴）",
+      description: "韩国顶流粉红熊 Bellygom 10 月整月接管榜鹅 Waterway Point：10/10、17、24、31 每周六 3pm、4pm 两场见面会，前 50 组家庭（每组最多 4 人）可以和熊熊近距离合照；10/19–25 一楼 Village Square 还有 Bellygom Star 充气城堡，当天同商场消费满 S$30 就能玩。现场还有联名周边和餐饮优惠。",
+      highlight: "见面会免费、充气城堡门槛低，适合周末带孩子逛商场顺便放电；7-9 岁孩子对「排队见偶像」这件事特别有仪式感，建议 2:30 前到场排队才能进前 50 组",
+      location: "Waterway Point, 83 Punggol Central, Singapore 828761（L1 Village Square）",
+      dateRange: "见面会 10月10/17/24/31日（周六）3pm & 4pm；充气城堡 10月19–25日 12:30pm–8:30pm",
+      cost: "见面会免费；充气城堡需同日消费满 S$30",
+      duration: "1–2 小时",
+      active: true
+    },
+
+    {
+      id: "cdc-neighbourhood-market-zhongshan-2026-10",
+      name: "CDC 社区市集 @ 中山公园（本地农产 · 手作 · 可持续工作坊 · 免费入场）",
+      icon: "🧺",
+      topGradient: "linear-gradient(90deg,#22c55e,#166534)",
+      ageRange: "全家（7-9 岁适合参加手作与可持续小工作坊）",
+      description: "中区社区发展理事会的流动市集 10 月 10 日（周六）3pm–7pm 开到 Balestier 的中山公园：本地农场新鲜蔬果、健康食品、手工艺品和环保产品摊位一字排开，现场还有可持续生活小工作坊、由残障人士艺术团体带来的表演。免费入场，边逛边吃，顺便让孩子认识「食物从哪里来」。后续场次：10/24 Thomson CC、12/6 Yio Chu Kang CC。",
+      highlight: "和商场市集不一样，这里能和本地农夫聊天、亲手摸到刚采的蔬菜，对 7-9 岁孩子是很好的食育机会；傍晚时段不晒，逛完可以在附近 Balestier 吃个晚饭",
+      location: "Zhongshan Park, Ah Hood Road, Singapore 329983（Balestier）",
+      dateRange: "10月10日（周六）3pm–7pm",
+      cost: "免费入场",
+      duration: "1–2 小时",
+      active: true
+    },
+
+
     // ── 🆕 2026-09-22 每日更新新增（亲子） ──────────
 
     {
@@ -13912,6 +14166,176 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+
+    // ── 🆕 2026-09-23 每日更新新增（电影） ──────────
+
+    {
+      id: "the-social-reckoning-2026-10",
+      title: "The Social Reckoning",
+      chineseTitle: "社交清算",
+      type: "coming-soon",
+      rating: 7.8,
+      releaseDate: "2026-10-08",
+      genre: "传记 / 剧情 / 法律惊悚",
+      language: "英语 · 中文字幕",
+      duration: "约 2 小时",
+      cast: "Jeremy Strong · Mikey Madison · Jeremy Allen White · Wunmi Mosaku · Bill Burr",
+      director: "Aaron Sorkin 艾伦·索金",
+      description: "《社交网络》十六年后的续篇，这次索金亲自执导：Facebook 工程师 Frances Haugen 联手《华尔街日报》记者，把社交巨头最不想公开的内部文件揭到阳光下。Jeremy Strong 版的扎克伯格「更老、不一定更聪明」，Mikey Madison 拿完奥斯卡后的首部大片。索金式密集台词 + 真实事件改编，喜欢《芝加哥七君子审判》那种节奏的观众别错过。10 月 8 日新加坡上映（Sony）。",
+      tags: [
+        "艾伦·索金",
+        "真实事件",
+        "《社交网络》续篇",
+        "10月上映"
+      ],
+      posterEmoji: "📱",
+      bgGradient: "linear-gradient(135deg,#1d4ed8,#0f172a)",
+      posterUrl: "https://www.cinema.com.my/images/movies/2026/7socialreckoning_sg00_450.jpg",
+      highlights: [
+        "🎬 导演 Aaron Sorkin（《社交网络》编剧 · 《芝加哥七君子审判》）",
+        "🌟 Jeremy Strong · Mikey Madison · Jeremy Allen White · Wunmi Mosaku · Bill Burr",
+        "🏆 《社交网络》正统续篇 · Facebook 吹哨人真实事件改编"
+      ],
+      badge: "new",
+      badgeText: "🆕 10/8 上映",
+      ageGuide: "分级待定 · 适合成人及青少年",
+      active: true
+    },
+
+    {
+      id: "whalefall-2026-10",
+      title: "Whalefall",
+      chineseTitle: "鲸落",
+      type: "coming-soon",
+      rating: 7.2,
+      releaseDate: "2026-10-15",
+      genre: "求生惊悚 / 剧情",
+      language: "英语 · 中文字幕",
+      duration: "约 1 小时 50 分钟",
+      cast: "Austin Abrams · Josh Brolin · Elisabeth Shue · Jane Levy · Emily Rudd",
+      director: "Brian Duffield 布莱恩·达菲尔德",
+      description: "改编自 Daniel Kraus 同名畅销小说：一个潜水青年为了寻找父亲的遗骸下海，却被一头抹香鲸整个吞进肚子里，氧气只剩一小时。密闭空间求生 + 父子和解双线并行，Josh Brolin 演那个「不在场却无处不在」的父亲。导演 Brian Duffield 上一部《No One Will Save You》就是靠高概念小成本封神，这次 20th Century Studios 给了大银幕预算。想在影院里屏住呼吸的话，选 IMAX。",
+      tags: [
+        "求生惊悚",
+        "小说改编",
+        "父子情",
+        "10月上映"
+      ],
+      posterEmoji: "🐋",
+      bgGradient: "linear-gradient(135deg,#0e7490,#082f49)",
+      posterUrl: "https://www.cinema.com.my/images/movies/2026/7whalefall_sg00_450.jpg",
+      highlights: [
+        "🎬 导演 Brian Duffield（《No One Will Save You》《Spontaneous》）",
+        "🌟 Austin Abrams · Josh Brolin · Elisabeth Shue · Jane Levy · Emily Rudd",
+        "🎬 Daniel Kraus 畅销小说改编 · 「被鲸鱼吞下」的一小时倒计时求生"
+      ],
+      badge: "new",
+      badgeText: "🆕 10/15 上映",
+      ageGuide: "分级待定 · 建议 13 岁以上",
+      active: true
+    },
+
+    {
+      id: "clayface-dc-2026-10",
+      title: "Clayface",
+      chineseTitle: "泥面人",
+      type: "coming-soon",
+      rating: 7,
+      releaseDate: "2026-10-22",
+      genre: "身体恐怖 / 惊悚 / 超级英雄",
+      language: "英语 · 中文字幕",
+      duration: "1 小时 48 分钟",
+      cast: "Tom Rhys Harries · Naomi Ackie · Eddie Marsan · Max Minghella · Aaron Paul",
+      director: "James Watkins 詹姆斯·瓦特金斯",
+      description: "DC 宇宙第一部 R 级身体恐怖片：哥谭街头小子 Matt Hagen 一路爬成好莱坞巨星，却被黑帮毁容，为了恢复容貌接受了一种「太有效」的实验疗法……剧本出自恐怖名导 Mike Flanagan，导演是《伊甸湖》《黑衣女人》的 James Watkins，走的是《变蝇人》式的悲剧怪物路线而非漫画爽片。喜欢《The Substance》那种「变形」恐怖感的成年观众冲，万圣节前一周上映时机刚刚好。",
+      tags: [
+        "DC 宇宙",
+        "身体恐怖",
+        "R 级",
+        "万圣节档",
+        "10月上映"
+      ],
+      posterEmoji: "🫠",
+      bgGradient: "linear-gradient(135deg,#78350f,#0c0a09)",
+      posterUrl: "https://www.cinema.com.my/images/movies/2026/7clayface_sg00_450.jpg",
+      highlights: [
+        "🎬 导演 James Watkins（《伊甸湖》《黑衣女人》）· 编剧 Mike Flanagan",
+        "🌟 Tom Rhys Harries · Naomi Ackie · Eddie Marsan · Max Minghella · Aaron Paul",
+        "🎬 DC 宇宙首部 R 级身体恐怖片 · 万圣节档期"
+      ],
+      badge: "hot",
+      badgeText: "🔥 10/22 上映",
+      ageGuide: "R 级 · 限成人",
+      active: true
+    },
+
+    {
+      id: "godzilla-minus-zero-2026-11",
+      title: "Godzilla Minus Zero",
+      chineseTitle: "哥斯拉-0.0",
+      type: "coming-soon",
+      rating: 8.3,
+      releaseDate: "2026-11-05",
+      genre: "怪兽 / 科幻 / 剧情",
+      language: "日语 · 中英文字幕",
+      duration: "约 2 小时",
+      cast: "神木隆之介 · 浜辺美波 · 山田裕贵 · 安藤樱 · 长泽雅美",
+      director: "山崎贵 Takashi Yamazaki",
+      description: "奥斯卡最佳视觉效果得主《哥斯拉-1.0》的正统续集，山崎贵继续身兼导演、编剧和特效总监。故事来到 1949 年，敕使河原一家刚从废墟里站起来，新的灾难再度降临；原班人马神木隆之介、浜辺美波全部回归，还加入了长泽雅美、国村隼。9 月 26 日纽约电影节全球首映，11 月 5 日新加坡与日本几乎同步上映。前作靠 1500 万美元预算做出好莱坞级怪兽戏，这次预算更足，务必看 IMAX。",
+      tags: [
+        "哥斯拉",
+        "山崎贵",
+        "奥斯卡特效团队",
+        "11月上映"
+      ],
+      posterEmoji: "🦖",
+      bgGradient: "linear-gradient(135deg,#1e293b,#020617)",
+      posterUrl: "https://www.cinema.com.my/images/movies/2026/7godzillaminuszero00_450.jpg",
+      highlights: [
+        "🎬 导演 山崎贵（《哥斯拉-1.0》奥斯卡最佳视觉效果 · 《永远的三丁目的夕阳》）",
+        "🌟 神木隆之介 · 浜辺美波 · 山田裕贵 · 安藤樱 · 长泽雅美",
+        "🏆 《哥斯拉-1.0》正统续集 · 2026 纽约电影节全球首映"
+      ],
+      badge: "hot",
+      badgeText: "🔥 11/5 上映",
+      ageGuide: "分级待定 · 适合 10 岁以上全家（前作 PG13）",
+      active: true
+    },
+
+    {
+      id: "ramen-teh-jff-2026-10",
+      title: "Ramen Teh",
+      chineseTitle: "情牵拉面茶",
+      type: "chinese",
+      rating: 7,
+      releaseDate: "2026-10-10",
+      genre: "剧情 / 美食 / 家庭",
+      language: "华语 · 日语 · 英语 · 中英文字幕",
+      duration: "1 小时 30 分钟",
+      cast: "斋藤工 · 松田圣子 · 李国煌 · 欧萱 · 伊原刚志",
+      director: "邱金海 Eric Khoo",
+      description: "新加坡导演邱金海的新日合拍美食片，借日本电影节（JFF）10 月 10 日重回大银幕。日本拉面店青年真人为了寻找已故母亲的根来到新加坡，从舅舅（李国煌）的肉骨茶摊到与外婆的和解，一碗「拉面肉骨茶」串起两个家庭、两种饮食文化。2018 年柏林电影节美食单元入围。片里的肉骨茶、辣椒蟹、鱼头米粉全是本地熟面孔，适合带孩子一起看，看完直接去吃肉骨茶。",
+      tags: [
+        "新加坡电影",
+        "邱金海",
+        "日本电影节",
+        "美食片",
+        "家庭"
+      ],
+      posterEmoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#ea580c,#7c2d12)",
+      posterUrl: "https://www.cinema.com.my/images/movies/2026/7ramenteh_sg00_450.jpg",
+      highlights: [
+        "🎬 导演 邱金海 Eric Khoo（《我在政府组屋的日子》《Mee Pok Man》· 新加坡电影教父）",
+        "🌟 斋藤工 · 松田圣子 · 李国煌 · 欧萱 · 伊原刚志",
+        "🏆 2018 柏林电影节美食电影单元 · JFF 2026 特别放映"
+      ],
+      badge: "new",
+      badgeText: "🎌 JFF 10/10 放映",
+      ageGuide: "PG · 适合全家",
+      active: true
+    },
+
 
     // ── 🆕 2026-09-22 每日更新新增（电影） ──────────
 
