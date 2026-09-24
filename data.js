@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-09-23
+ * 最后更新：2026-09-24
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-09-23",
+    lastUpdated: "2026-09-24",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -26,6 +26,82 @@ const SGLIVING_DATA = {
   // badge: new / hot / michelin / trending / classic / finedining
   // ════════════════════════════════════════════════
   restaurants: [
+    {
+      id: "food-opera-ion-orchard-reopen-2026-09",
+      name: "Food Opera 美食歌剧院（ION Orchard B4 翻新重开 · 19 家新档口）",
+      categories: ["snack","restaurant"],
+      rating: 4.3,
+      openDate: "2026-09",
+      price: "S$6–15/人",
+      description: "逛乌节路终于有平价又好吃的地方了！ION 地下四楼的 Food Opera 9 月 28 日翻新重开，座位扩到 600 个，19 家新档口里一半是老字号：93 年历史、第四代传人接手的明中白卤面（兴化卤面 S$6.20），港式老店 Hillman 的瓦煲菜和纸包鸡，还有米其林推荐的阿二药材汤和 MP Thai。《MasterChef 新加坡》冠军开的 Berempah Bros 也搬进来了。Toast Box 这家店第一次现场烘咖啡豆。带孩子逛街饿了，一人一档各点各的，不用排队抢座。",
+      tags: ["美食广场","老字号","米其林推荐","乌节路","亲子友好"],
+      address: "2 Orchard Turn, #B4-03/04, ION Orchard, Singapore 238801",
+      badge: "new",
+      badgeText: "🆕 9/28 重开",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      catLabel: "小吃",
+      catDesc: "老字号 + 米其林档口 / ION Orchard B4",
+      ratingDesc: "兴化卤面 · 纸包鸡 · 药材汤",
+      active: true
+    },
+    {
+      id: "omma-chicken-soup-bendemeer-2026-09",
+      name: "OMMA Chicken Soup 韩式参鸡汤（Bendemeer 熟食中心新摊）",
+      categories: ["snack"],
+      rating: 4.4,
+      openDate: "2026-09",
+      price: "S$5–10/人",
+      description: "两位前米其林星级韩餐厅主厨出来摆摊，在 Bendemeer 熟食中心开了第二家。鸡汤熬足 8 小时，不放味精、不用猪肉和猪油，汤底清甜。人参鸡汤 S$7.80 应该是全岛最便宜的一碗，胶原蛋白款 S$6.80，想吃重口选芝麻或泡菜口味。胶原蛋白粥 S$4.90，孩子早餐也合适。天气热、胃口差的时候来一碗刚好。",
+      tags: ["韩式参鸡汤","熟食中心","米其林主厨","平价"],
+      address: "29 Bendemeer Road, #01-67, Bendemeer Market & Food Centre, Singapore 330029",
+      badge: "new",
+      badgeText: "🆕 9月新开",
+      emoji: "🍲",
+      bgGradient: "linear-gradient(135deg,#fbbf24,#b45309)",
+      catLabel: "小吃",
+      catDesc: "韩式参鸡汤 / Bendemeer 熟食中心",
+      ratingDesc: "8 小时鸡汤 · S$7.80 人参鸡",
+      active: true
+    },
+    {
+      id: "xhs-chao-zha-chuan-chinatown-point-2026-09",
+      name: "潮炸串（Chinatown Point B1 · 国潮炸串 S$0.6 起）",
+      categories: ["snack"],
+      rating: 4.2,
+      openDate: "2026-09",
+      price: "S$10–15/人",
+      description: "姐妹们！牛车水终于有国内街头那种自选炸串了！Chinatown Point B1 新开的潮炸串，进门冰柜自己拿篮子挑，最便宜 S$0.6 一串，人均十几块吃到扶墙。用的是招牌草本油炸，吃多了也不容易上火～牛肉串超入味，羊肉一点不膻，年糕外脆里糯，雪花鱼串也要锁死！下午逛完牛车水来一份，配杯奶茶，就是在国内夜市的感觉！",
+      tags: ["炸串","国潮","牛车水","平价","小红书爆款"],
+      address: "133 New Bridge Road, #B1-51C, Chinatown Point, Singapore 059413",
+      badge: "hot",
+      badgeText: "📕 小红书爆款",
+      emoji: "🍢",
+      bgGradient: "linear-gradient(135deg,#ef4444,#7f1d1d)",
+      catLabel: "小吃",
+      catDesc: "国潮自选炸串 / Chinatown Point B1",
+      ratingDesc: "S$0.6 一串 · 草本油炸",
+      active: true
+    },
+    {
+      id: "rei-janice-wong-le-jardin-sentosa-2026-09",
+      name: "rei by Janice Wong（Raffles Sentosa · Le Jardin 无精制糖甜品）",
+      categories: ["dessert"],
+      rating: 4.4,
+      openDate: "2026-09",
+      price: "S$15–30/人",
+      description: "甜品艺术家 Janice Wong 的新品牌 rei，只用生蜂蜜、枫糖、椰枣和整颗水果来甜，不放精制糖，也不用赤藓糖醇这类代糖。9 月起在圣淘沙 Raffles Sentosa 的 Le Jardin 首发三款：生蜂蜜巴斯克芝士蛋糕、橄榄油柠檬香桃木蛋糕，和 100% 黑巧克力「水慕斯」挞。给控糖的爸妈，或者不想让孩子吃太多糖的家庭，是个好选择。",
+      tags: ["无精制糖","Janice Wong","圣淘沙","健康甜品"],
+      address: "Le Jardin, Raffles Sentosa Singapore, Sentosa Island, Singapore",
+      badge: "new",
+      badgeText: "🆕 9月首发",
+      emoji: "🍰",
+      bgGradient: "linear-gradient(135deg,#a3e635,#3f6212)",
+      catLabel: "甜品",
+      catDesc: "无精制糖甜品 / Raffles Sentosa",
+      ratingDesc: "蜂蜜巴斯克 · 黑巧水慕斯挞",
+      active: true
+    },
 
     // ── 🆕 2026-09-23 每日更新新增（美食） ──────────
 
@@ -6032,6 +6108,94 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   events: [
+    {
+      id: "hans-zimmer-next-level-indoor-stadium-2026-10",
+      name: "Hans Zimmer Live · The Next Level 新加坡站",
+      type: "concert",
+      priority: "featured",
+      month: "OCT",
+      day: "07",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#f59e0b,#78350f)",
+      typeLabel: "🎼 电影配乐现场",
+      typeColor: "#f59e0b",
+      description: "汉斯·季默 2019 年后第一次回新加坡！这次的 The Next Level 把交响乐和电子乐混在一起，灯光舞美更像一场 rave。《加勒比海盗》《狮子王》《黑暗骑士》《星际穿越》《沙丘》都会重新编曲现场演奏。看过这些电影的一定要去，9 岁以上爱看电影的孩子也能跟着燃。",
+      venue: "Singapore Indoor Stadium（新加坡室内体育馆）",
+      dateRange: "10月7日（周三）7pm（5:30pm 入场）",
+      ticketInfo: "🎟️ S$148–S$468 · 每单限 6 张",
+      price: "S$148 起",
+      priceNote: "SISTIC 独家发售",
+      ticketUrl: "https://www.sistic.com.sg/events/hanszimmer1026",
+      btnText: "SISTIC 购票",
+      sortDate: "2026-10-07",
+      active: true
+    },
+    {
+      id: "plave-keep-it-manic-apex-expo-2026-10",
+      name: "PLAVE World Tour [KEEP IT MANIC] 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "OCT",
+      day: "17",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#a855f7,#4c1d95)",
+      typeLabel: "🎤 K-pop 虚拟偶像",
+      typeColor: "#a855f7",
+      description: "韩国人气虚拟偶像男团 PLAVE 首次来新加坡开演唱会，场地是新开的 APEX @ EXPO。五位成员用动捕技术在大屏上实时唱跳，舞台效果很科幻。下午 3 点开场，不用熬夜，带喜欢 K-pop 的大孩子去刚好。",
+      venue: "APEX @ EXPO, Singapore Expo",
+      dateRange: "10月17日（周六）3pm",
+      ticketInfo: "🎟️ VIP S$328 / CAT1 S$278 / CAT2 S$238 / CAT3 S$198",
+      price: "S$198 起",
+      priceNote: "另收手续费",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=PLAVE+Singapore",
+      btnText: "Ticketmaster 购票",
+      sortDate: "2026-10-17",
+      active: true
+    },
+    {
+      id: "yu-dong-ran-star-theatre-2026-10",
+      name: "于冬然 2026「庆贺」巡回演唱会 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "OCT",
+      day: "19",
+      dow: "周一",
+      dateColor: "linear-gradient(135deg,#ec4899,#831843)",
+      typeLabel: "🎤 华语演唱会",
+      typeColor: "#ec4899",
+      description: "《听说你》《不要忘记我爱你》的于冬然，声音清澈治愈，抖音上一开口就爆。这次「庆贺」巡演来到星宇表演艺术中心，5000 人左右的场馆，哪个位置都看得清楚。喜欢华语新生代民谣流行的，跟闺蜜一起去刚好。",
+      venue: "The Star Theatre（星宇表演艺术中心）",
+      dateRange: "10月19日（周一）",
+      ticketInfo: "🎟️ 票价详见 SISTIC",
+      price: "以官方公布为准",
+      priceNote: "SISTIC 发售",
+      ticketUrl: "https://www.sistic.com.sg/events/ydr1026",
+      btnText: "SISTIC 购票",
+      sortDate: "2026-10-19",
+      active: true
+    },
+    {
+      id: "feng-ze-bend-the-lines-esplanade-2026-10",
+      name: "邱鋒澤 Feng Ze《Bend The Lines》演唱会 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "OCT",
+      day: "23",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#14b8a6,#134e4a)",
+      typeLabel: "🎤 华语演唱会",
+      typeColor: "#14b8a6",
+      description: "新加坡出身、台湾男团 W0lf(s) 成员邱鋒澤，这次巡演高雄、台北之后，海外第一站就回家乡新加坡。滨海艺术中心音乐厅音响很好，全场约 2 小时不中场，最便宜 S$98，是今年最容易入手的华语男歌手专场之一。",
+      venue: "Esplanade Concert Hall（滨海艺术中心音乐厅）",
+      dateRange: "10月23日（周五）7:30pm",
+      ticketInfo: "🎟️ CAT6 S$98 – CAT1 S$258",
+      price: "S$98 起",
+      priceNote: "SISTIC / BookMyShow 同步发售",
+      ticketUrl: "https://www.sistic.com.sg/events/qfz1026",
+      btnText: "SISTIC 购票",
+      sortDate: "2026-10-23",
+      active: true
+    },
 
     // ── 🆕 2026-09-23 每日更新新增（活动） ──────────
 
@@ -7461,9 +7625,9 @@ const SGLIVING_DATA = {
       dateColor: "linear-gradient(135deg,#facc15,#b45309)",
       typeLabel: "🎤 K-pop 天团",
       typeColor: "#eab308",
-      description: "VIP 们等到了！韩国传奇天团 BIGBANG 登陆新加坡国家体育场，《BANG BANG BANG》《FANTASTIC BABY》《Loser》《Last Dance》一首接一首，全是一开口就 DNA 动了的回忆杀。体育场级别的舞台和声浪，绝对是 2026 下半年最炸的一场。9 月 11 日仅此一晚，想看的别犹豫，好位置手慢无。",
+      description: "VIP 们等到了！韩国传奇天团 BIGBANG 登陆新加坡国家体育场，《BANG BANG BANG》《FANTASTIC BABY》《Loser》《Last Dance》一首接一首，全是一开口就 DNA 动了的回忆杀。体育场级别的舞台和声浪，绝对是 2026 下半年最炸的一场。10 月 17 日首场已售罄，18 日加场仍有票，想看的别犹豫。",
       venue: "National Stadium, Singapore Sports Hub",
-      dateRange: "9月11日（周五）晚 8 点",
+      dateRange: "10月17日（周六）晚 8 点（首场已售罄）",
       ticketInfo: "🎫 Ticketmaster",
       price: "票价以官方公布为准",
       priceNote: "Ticketmaster",
@@ -10363,7 +10527,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=The+Weeknd+Singapore",
       btnText: "购票",
       sortDate: "2026-09-25",
-      active: true
+      active: false
     },
 
     {
@@ -10987,6 +11151,62 @@ const SGLIVING_DATA = {
   // active: false 表示已过期
   // ════════════════════════════════════════════════
   familyActivities: [
+    {
+      id: "padel-at-the-gardens-gbtb-2026-09",
+      name: "Padel at the Gardens 滨海湾花园免费板式网球场",
+      icon: "🎾",
+      topGradient: "linear-gradient(90deg,#22c55e,#166534)",
+      ageRange: "7 岁以上（亲子双打最适合）",
+      description: "滨海湾花园新建的 Padel 板式网球场，10 月 11 日前免费预约！场地有顶棚，下雨也能打，旁边有观众座位，现场可以租球拍。Padel 规则比网球简单，四面墙可以反弹，新手很快就能打起来回。目前时段抢手，可以留意官网看有没有临时取消的空位。",
+      highlight: "7-9 岁孩子手眼协调正在快速发展，Padel 球拍短、场地小，比网球容易上手，一家四口刚好凑一场双打；免费又有顶棚，周末遛娃不怕晒",
+      location: "Gardens by the Bay, 18 Marina Gardens Drive, Singapore 018953",
+      dateRange: "即日起至 10月11日",
+      cost: "免费（需官网预约，球拍可现场租）",
+      duration: "约 1 小时",
+      active: true
+    },
+    {
+      id: "revupsg-kampung-admiralty-2026-09",
+      name: "#RevUpSG F1 观赛派对（Kampung Admiralty · 免费）",
+      icon: "🏎️",
+      topGradient: "linear-gradient(90deg,#ef4444,#7f1d1d)",
+      ageRange: "全年龄（6-10 岁最爱）",
+      description: "F1 新加坡大奖赛前的社区热身活动：大屏幕直播比赛，还有反应力小游戏、F1 小小解说员录音棚，和一系列 F1 主题互动，有机会赢奖品。9 月 25 日 12:30pm–10pm（8pm 放映）、26 日 12:30pm–9pm（7pm 放映）。",
+      highlight: "小小解说员录音棚特别适合 7-9 岁爱表现的孩子，对着赛车画面「开麦」很锻炼表达；反应力游戏考专注力，比在家刷平板有意思",
+      location: "Kampung Admiralty, 676 Woodlands Drive 71, Singapore 730676",
+      dateRange: "9月25日（周五）12:30pm–10pm；9月26日（周六）12:30pm–9pm",
+      cost: "免费",
+      duration: "2–3 小时",
+      active: true
+    },
+    {
+      id: "minds-film-festival-2026-09",
+      name: "MINDS 电影节 2026（免费放映 · 多个社区场地）",
+      icon: "🎬",
+      topGradient: "linear-gradient(90deg,#8b5cf6,#4c1d95)",
+      ageRange: "7 岁以上（需家长陪同）",
+      description: "MINDS 电影节讲的是智力障碍人士的故事。今年放映《Please Stand By》（自闭症女孩追逐编剧梦）和《Super Wang Wang》（智障青年苦练速滑参赛），现场还有互动问答、市集、入场礼物和抽奖。全部免费，分布在 SAFRA 蔡厝港、慈济人文青年中心、SAFRA 榜鹅、Our Tampines Hub。",
+      highlight: "7-9 岁正是建立同理心的关键期，看完和孩子聊聊「每个人都有自己的梦想和不容易」，比讲道理有效；影片节奏轻快、结局温暖，不会太沉重",
+      location: "SAFRA Choa Chu Kang / Tzu Chi Humanistic Youth Centre / SAFRA Punggol / Our Tampines Hub",
+      dateRange: "9月26–27日（周六、日），各场地时段不同",
+      cost: "免费（官网 mindsfilmfest.com 登记）",
+      duration: "约 2 小时",
+      active: true
+    },
+    {
+      id: "singapore-tennis-open-family-2026-09",
+      name: "新加坡网球公开赛 WTA 500 · 亲子互动区",
+      icon: "🎾",
+      topGradient: "linear-gradient(90deg,#facc15,#a16207)",
+      ageRange: "6 岁以上",
+      description: "WTA 500 级别的新加坡网球公开赛本周在加冷 OCBC Arena 进行，除了看世界级女子网球，场外还有巨型网球体验、反应力挑战、球星见面会和网球小课堂。周末 26–27 日是决赛阶段。",
+      highlight: "让 7-9 岁的孩子近距离看职业球员比赛，再去网球小课堂挥几拍，兴趣往往就是这样被点燃的；巨型网球拍拍照也很出片",
+      location: "OCBC Arena, The Kallang, 7 Stadium Drive, Singapore 397629",
+      dateRange: "9月21–27日（周末为半决赛/决赛）",
+      cost: "比赛需购票（SISTIC），部分场外活动免费",
+      duration: "半天",
+      active: true
+    },
 
     // ── 🆕 2026-09-23 每日更新新增（亲子） ──────────
 
@@ -14166,6 +14386,75 @@ const SGLIVING_DATA = {
   // active: false 表示已下映
   // ════════════════════════════════════════════════
   movies: [
+    {
+      id: "digger-inarritu-2026-10",
+      title: "Digger",
+      chineseTitle: "挖掘者",
+      type: "coming-soon",
+      rating: 7.5,
+      releaseDate: "2026-10-01",
+      genre: "黑色喜剧 / 灾难",
+      language: "英语 · 中文字幕",
+      duration: "约 2 小时 10 分钟",
+      cast: "Tom Cruise · Sandra Hüller · Jesse Plemons · John Goodman · Sophie Wilde",
+      director: "Alejandro G. Iñárritu 亚利桑德罗·冈萨雷斯·伊纳里图",
+      description: "两届奥斯卡最佳导演伊纳里图 + 汤姆·克鲁斯的第一次合作，海报写着「一场灾难级规模的喜剧」。阿汤哥演「世界上最有权势的人」，为了证明自己是人类的救世主，拼命收拾自己闯下的大祸。难得看阿汤哥不跳飞机、改演荒诞喜剧，配上《鸟人》导演的长镜头调度，喜欢《鸟人》的观众别错过。新加坡 10 月 1 日上映（华纳）。",
+      tags: ["伊纳里图","汤姆·克鲁斯","黑色喜剧","10月上映"],
+      posterEmoji: "⛏️",
+      bgGradient: "linear-gradient(135deg,#f97316,#431407)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      highlights: ["🎬 导演 Alejandro G. Iñárritu（《鸟人》《荒野猎人》· 两届奥斯卡最佳导演）","🌟 Tom Cruise · Sandra Hüller · Jesse Plemons · John Goodman · Sophie Wilde","🎬 影片特色：阿汤哥首演荒诞喜剧 · 华纳 2026 秋季大片"],
+      badge: "new",
+      badgeText: "🆕 10/1 上映",
+      ageGuide: "分级待定 · 适合成人及青少年",
+      active: true
+    },
+    {
+      id: "the-mage-pang-brothers-2026-10",
+      title: "The Mage",
+      chineseTitle: "法师",
+      type: "chinese",
+      rating: 6.6,
+      releaseDate: "2026-10-15",
+      genre: "惊悚 / 灵异 / 犯罪",
+      language: "粤语 · 华语配音版 · 中英文字幕",
+      duration: "1 小时 37 分钟",
+      cast: "何超仪 · 陈家乐 · 张继聪 · 唐宁 · 吴业坤",
+      director: "彭发 Danny Pang · 彭顺 Oxide Pang",
+      description: "拍《见鬼》的彭氏兄弟隔了 12 年重回港产恐怖片，灵异传说 + 凶杀调查 + 动作特效混在一起，在韩国富川奇幻电影节全球首映。新加坡同时上映粤语原声和华语配音两个版本，爱看港产惊悚片的可以约朋友去。有恐怖画面，不适合带孩子。",
+      tags: ["港产片","彭氏兄弟","恐怖","粤语","华语配音"],
+      posterEmoji: "🔮",
+      bgGradient: "linear-gradient(135deg,#7c3aed,#1e1b4b)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/zD7a0atafa8if3G6PLbrm8y0HXw.jpg",
+      highlights: ["🎬 导演 彭氏兄弟 Danny & Oxide Pang（《见鬼》《鬼影》）","🌟 何超仪 · 陈家乐 · 张继聪 · 唐宁 · 吴业坤","🏆 第 30 届韩国富川奇幻电影节全球首映 · 彭氏兄弟睽违 12 年恐怖新作"],
+      badge: "new",
+      badgeText: "🆕 10/15 上映",
+      ageGuide: "预计 NC16 · 不建议儿童观看",
+      active: true
+    },
+    {
+      id: "chimney-town-frozen-in-time-jff-2026-10",
+      title: "Chimney Town: Frozen in Time",
+      chineseTitle: "烟囱小镇的普佩尔：约定的时计台",
+      type: "family",
+      rating: 7.3,
+      releaseDate: "2026-10-03",
+      genre: "动画 / 奇幻 / 冒险",
+      language: "日语 · 英文字幕",
+      duration: "约 1 小时 50 分钟",
+      cast: "洼田正孝 · 永濑柚子奈 · 小芝风花 · 土屋安娜 · 山寺宏一",
+      director: "广田裕介 Yusuke Hirota",
+      description: "2020 年《烟囱小镇的普佩尔》的续集，还是 Studio 4°C 制作，画面精致得像绘本动起来。这次垃圾人普佩尔和露比奇闯进一座时间被冻结的千年要塞，讲的是约定和勇气。10 月 3 日在日本电影节（JFF）放映，PG 级，场次少，想带孩子看要早点订。",
+      tags: ["日本动画","Studio 4°C","日本电影节","亲子","续集"],
+      posterEmoji: "🕰️",
+      bgGradient: "linear-gradient(135deg,#0ea5e9,#1e1b4b)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/imLD9NBCO65hnsG0XzwVxZ2LBFU.jpg",
+      highlights: ["🎬 导演 广田裕介 Yusuke Hirota（《烟囱小镇的普佩尔》）· 原作编剧 西野亮广","🌟 洼田正孝 · 永濑柚子奈 · 小芝风花 · 土屋安娜 · 山寺宏一","🏆 2026 柏林电影节入选 · Studio 4°C 制作"],
+      badge: "new",
+      badgeText: "🎌 JFF 10/3 放映",
+      ageGuide: "PG · 适合 7 岁以上孩子",
+      active: true
+    },
 
     // ── 🆕 2026-09-23 每日更新新增（电影） ──────────
 
@@ -14672,7 +14961,7 @@ const SGLIVING_DATA = {
       tags: ["街霸", "游戏改编", "动作", "10月新片"],
       posterEmoji: "🥋",
       bgGradient: "linear-gradient(135deg,#f97316,#7f1d1d)",
-      posterUrl: "",
+      posterUrl: "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
       highlights: [
         "🎬 导演 樱井北男 Kitao Sakurai（《Bad Trip》）",
         "🌟 诺亚·琴蒂内奥 · 安德鲁·浩二 · 梁凯琳 · 杰森·莫玛 · 50 Cent",
@@ -15013,7 +15302,7 @@ const SGLIVING_DATA = {
       tags: ["动作片", "经典重拍", "8月新片", "高山惊悚"],
       posterEmoji: "🧗",
       bgGradient: "linear-gradient(135deg,#0891b2,#164e63)",
-      posterUrl: "",
+      posterUrl: "https://image.tmdb.org/t/p/w500/92cL0rfm6eK6cUU8UciorsX0Fpg.jpg",
       badge: "new",
       badgeText: "🆕 经典重启",
       ageGuide: "预计 PG13 · 建议 13 岁以上",
