@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-09-24
+ * 最后更新：2026-10-21
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-09-24",
+    lastUpdated: "2026-10-21",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -6096,8 +6096,123 @@ const SGLIVING_DATA = {
       catDesc: "正宗成都麻辣火锅 / Clarke Quay",
       ratingDesc: "小红书姐妹力推 · 牛油锅底香",
       active: true
-    }
+    },
 
+
+    {
+      id: "molly-tea-hillion-mall-2026-10",
+      name: "茉莉奶白 Molly Tea（Hillion Mall 店 · 新加坡第 3 家）",
+      categories: ["dessert"],
+      rating: 4.6,
+      openDate: "2026-10",
+      price: "S$5.2–6.5/杯",
+      description: "姐妹们！深圳出身的茉莉奶白 10 月 9 日开到 Hillion Mall 啦，住武吉班让、竹脚那一带的终于不用跑去乌节路排队了！招牌「茉莉奶白」S$5.20 清香不腻，「雪顶茉莉」S$6.50 芝士奶盖厚实，还有一款开心果茉莉椰椰 S$6.20 是新加坡限定风味。下班路过买一杯，国内老味道一秒回来～",
+      tags: ["奶茶", "国潮", "茉莉奶白", "武吉班让", "中国品牌"],
+      address: "17 Petir Road, #B1-42/43, Hillion Mall, Singapore 678278",
+      badge: "new",
+      badgeText: "🆕 10/9 开业",
+      emoji: "🧋",
+      bgGradient: "linear-gradient(135deg,#e0c3fc,#8ec5fc)",
+      catLabel: "甜品饮料",
+      catDesc: "奶茶 / 中国品牌 / Hillion Mall B1",
+      ratingDesc: "茉莉奶白 · 雪顶茉莉 · 开心果椰椰",
+      active: true
+    },
+    {
+      id: "creamie-sippies-bugis-street-2026-10",
+      name: "Creamie Sippies（Bugis Street 第 4 家 · DIY 香蕉布丁）",
+      categories: ["dessert"],
+      rating: 4.3,
+      openDate: "2026-10",
+      price: "S$4.5–6.9",
+      description: "给爱甜品的小朋友和大朋友！Bugis Street 二楼新开的香蕉布丁 DIY 吧，S$4.50 起自己选配料，两勺三种配料 S$6.90；另外有一杯 S$5.90 的草莓抹茶拿铁很适合逛街带走。逛完 Bugis 顺路吃一碗，平价又治愈。",
+      tags: ["甜品", "香蕉布丁", "抹茶", "平价", "Bugis"],
+      address: "160A Rochor Road, #02-115, Bugis Street, Singapore 188435",
+      badge: "new",
+      badgeText: "🆕 10月新开",
+      emoji: "🍮",
+      bgGradient: "linear-gradient(135deg,#fde68a,#f59e0b)",
+      catLabel: "甜品",
+      catDesc: "香蕉布丁 DIY / Bugis Street",
+      ratingDesc: "香蕉布丁碗 · 草莓抹茶拿铁",
+      active: true
+    },
+    {
+      id: "im-donut-ion-orchard-2026-10",
+      name: "I'm Donut?（东京网红生甜甜圈 · 新加坡首店 · ION Orchard）",
+      categories: ["dessert"],
+      rating: 4.4,
+      openDate: "2026-10",
+      price: "价格待公布",
+      description: "东京排队王「生甜甜圈」I'm Donut? 终于登陆新加坡首店，选在乌节路 ION Orchard 一带。质地像面包又像奶油泡芙，原味、卡士达奶油、抹茶三款最先尝。想打卡的话建议非周末午后去，开业初期很可能要排队。",
+      tags: ["甜甜圈", "日本网红", "乌节路", "首店", "打卡"],
+      address: "2 Orchard Turn, Singapore 238801 (ION Orchard)",
+      badge: "new",
+      badgeText: "🆕 新加坡首店",
+      emoji: "🍩",
+      bgGradient: "linear-gradient(135deg,#fbcfe8,#ec4899)",
+      catLabel: "甜品",
+      catDesc: "日式生甜甜圈 / 乌节路",
+      ratingDesc: "原味 · 卡士达奶油 · 抹茶",
+      active: true
+    },
+    {
+      id: "ve-la-changi-t1-2026-10",
+      name: "VE/LA（曼谷精品咖啡抹茶 · 新加坡首店 · 樟宜机场 T1）",
+      categories: ["dessert"],
+      rating: 4.2,
+      openDate: "2026-10",
+      price: "S$8.5–10/杯",
+      description: "飞机落地的第一杯可以很有仪式感：曼谷人气咖啡抹茶店 VE/LA 在樟宜 T1 入境大厅开了新加坡首店，24 小时营业！椰子烤吐司味的 Kaya Toast Latte S$10 很本地，Ube Vanilla Matcha S$9.50 颜值满分。接机、转机都顺手。",
+      tags: ["咖啡", "抹茶", "樟宜机场", "24小时", "泰国品牌"],
+      address: "60 Airport Boulevard, #01-K22, Arrival Meeting Hall West, Terminal 1, Changi Airport, Singapore 819642",
+      badge: "new",
+      badgeText: "🆕 新加坡首店",
+      emoji: "🍵",
+      bgGradient: "linear-gradient(135deg,#bbf7d0,#16a34a)",
+      catLabel: "咖啡 / 抹茶",
+      catDesc: "曼谷咖啡抹茶 / 樟宜 T1",
+      ratingDesc: "Kaya Toast Latte · Ube Vanilla Matcha",
+      active: true
+    },
+    {
+      id: "tanica-singapore-edition-2026-10",
+      name: "Tanica（The Singapore EDITION · 现代东南亚炭火料理）",
+      categories: ["restaurant", "finedining"],
+      rating: 4.5,
+      openDate: "2026-10",
+      price: "午市套餐 S$48++/人起；周日早午餐 S$98++",
+      description: "适合家庭聚餐或招待朋友的一家：EDITION 酒店新开的 Tanica，主打锅气 + Josper 炭火。招牌 72 小时酱烤和牛肋排（Iga Bakar Kicap）软到入口即化，Asam Pedas 海鲜烩饭酸辣开胃。平日三道式午餐 S$48++ 性价比不错，周日有 S$98++ 的半自助早午餐。",
+      tags: ["东南亚", "炭火", "酒店餐厅", "乌节路", "早午餐"],
+      address: "38 Cuscaden Road, The Singapore EDITION, Singapore 249731",
+      badge: "new",
+      badgeText: "🆕 10月新开",
+      emoji: "🔥",
+      bgGradient: "linear-gradient(135deg,#fb923c,#7c2d12)",
+      catLabel: "现代东南亚",
+      catDesc: "炭火 / 酒店餐厅 / Cuscaden Rd",
+      ratingDesc: "酱烤和牛肋排 · Asam Pedas 海鲜烩饭",
+      active: true
+    },
+    {
+      id: "vincenzo-capuano-pier-robertson-2026-10",
+      name: "Vincenzo Capuano（那不勒斯披萨 · The Pier at Robertson）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-10",
+      price: "午市自助 S$28++/人",
+      description: "带娃友好的意式选择！入选 2025 全球 50 大手工披萨连锁的 Vincenzo Capuano 来新加坡啦，午市 90 分钟自助 S$28++，前菜、意面、整张披萨加意式冰淇淋随便吃，pistachio 巧克力双拼冰淇淋是小朋友的最爱。",
+      tags: ["意大利菜", "披萨", "亲子友好", "自助午餐", "罗敏申"],
+      address: "80 Mohamed Sultan Road, #01-12, The Pier at Robertson, Singapore 239013",
+      badge: "new",
+      badgeText: "🆕 10月新开",
+      emoji: "🍕",
+      bgGradient: "linear-gradient(135deg,#f87171,#7f1d1d)",
+      catLabel: "意大利菜",
+      catDesc: "手工披萨 / Robertson Quay",
+      ratingDesc: "披萨自助 · 开心果冰淇淋",
+      active: true
+    },
   ],
 
 
@@ -6128,7 +6243,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/hanszimmer1026",
       btnText: "SISTIC 购票",
       sortDate: "2026-10-07",
-      active: true
+      active: false
     },
     {
       id: "plave-keep-it-manic-apex-expo-2026-10",
@@ -6150,7 +6265,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=PLAVE+Singapore",
       btnText: "Ticketmaster 购票",
       sortDate: "2026-10-17",
-      active: true
+      active: false
     },
     {
       id: "yu-dong-ran-star-theatre-2026-10",
@@ -6172,7 +6287,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/ydr1026",
       btnText: "SISTIC 购票",
       sortDate: "2026-10-19",
-      active: true
+      active: false
     },
     {
       id: "feng-ze-bend-the-lines-esplanade-2026-10",
@@ -6337,7 +6452,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.rwsentosa.com/en/play/universal-studios-singapore/halloween-horror-nights-14",
       btnText: "官网购票",
       sortDate: "2026-09-25",
-      active: true
+      active: false
     },
 
     {
@@ -6360,7 +6475,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.visitsingapore.com/whats-happening/all-happenings/festivals/deepavali/",
       btnText: "查看详情",
       sortDate: "2026-10-10",
-      active: true
+      active: false
     },
 
     {
@@ -6500,7 +6615,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://singaporegp.sg/en/tickets",
       btnText: "购票",
       sortDate: "2026-10-09",
-      active: true
+      active: false
     },
 
     {
@@ -6546,7 +6661,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.nparks.gov.sg/gardens-parks-and-nature/parks-and-nature-reserves/jurong-lake-gardens",
       btnText: "查看详情",
       sortDate: "2026-09-19",
-      active: true
+      active: false
     },
 
     {
@@ -6569,7 +6684,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/search?q=Tiffany+Young",
       btnText: "购票",
       sortDate: "2026-09-26",
-      active: true
+      active: false
     },
 
     {
@@ -6592,7 +6707,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=BIGBANG+Singapore",
       btnText: "购票",
       sortDate: "2026-10-18",
-      active: true
+      active: false
     },
 
     {
@@ -6615,7 +6730,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=NCT+127+Singapore",
       btnText: "购票",
       sortDate: "2026-10-18",
-      active: true
+      active: false
     },
 
     {
@@ -6686,7 +6801,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/mid-autumn-festival-2026.html",
       btnText: "查看详情",
       sortDate: "2026-09-12",
-      active: true
+      active: false
     },
 
     {
@@ -6732,7 +6847,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_henrymoodie",
       btnText: "购票",
       sortDate: "2026-09-30",
-      active: true
+      active: false
     },
 
     {
@@ -6942,7 +7057,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=KARD+Singapore",
       btnText: "购票",
       sortDate: "2026-09-27",
-      active: true
+      active: false
     },
 
     {
@@ -6965,7 +7080,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=The+Weeknd+Singapore",
       btnText: "购票",
       sortDate: "2026-10-02",
-      active: true
+      active: false
     },
 
     {
@@ -7249,7 +7364,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://feverup.com/m/188463",
       btnText: "购票",
       sortDate: "2026-09-30",
-      active: true
+      active: false
     },
 
     {
@@ -7634,7 +7749,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=BIGBANG+Singapore",
       btnText: "购票",
       sortDate: "2026-10-17",
-      active: true
+      active: false
     },
 
     {
@@ -7852,7 +7967,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Avenged+Sevenfold+Singapore",
       btnText: "购票",
       sortDate: "2026-10-13",
-      active: true
+      active: false
     },
 
     {
@@ -8115,7 +8230,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=ITZY+Singapore",
       btnText: "购票",
       sortDate: "2026-10-02",
-      active: true
+      active: false
     },
 
     {
@@ -8138,7 +8253,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=TWS+Singapore",
       btnText: "购票",
       sortDate: "2026-10-10",
-      active: true
+      active: false
     },
 
     {
@@ -8161,7 +8276,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Super+Junior+Singapore",
       btnText: "购票",
       sortDate: "2026-10-16",
-      active: true
+      active: false
     },
 
     {
@@ -11140,8 +11255,97 @@ const SGLIVING_DATA = {
       btnText: "购票",
       sortDate: "2026-06-13",
       active: false
-    }
+    },
 
+
+    {
+      id: "yves-esplanade-annexe-2026-11",
+      name: "Yves（I.O.I 成员）Asia & Australia Tour 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "NOV",
+      day: "04",
+      dow: "周三",
+      dateColor: "linear-gradient(135deg,#ec4899,#831843)",
+      typeLabel: "🎤 K-pop 独唱",
+      typeColor: "#ec4899",
+      description: "前 LOONA 成员 Yves 的亚澳巡演新加坡站，小剧场规格近距离看舞台。",
+      venue: "Esplanade Annexe Studio",
+      dateRange: "11月4日（周三）8pm",
+      ticketInfo: "🎟️ S$60–S$220",
+      price: "S$60 起",
+      priceNote: "Ticketmelon 售票",
+      ticketUrl: "https://www.ticketmelon.com/cultofya/yvesinsingapore",
+      btnText: "Ticketmelon 购票",
+      sortDate: "2026-11-04",
+      active: true
+    },
+    {
+      id: "yung-kai-capitol-theatre-2026-11",
+      name: "yung kai · stay with the ocean, i'll find you Asia Tour 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "NOV",
+      day: "03",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#38bdf8,#0c4a6e)",
+      typeLabel: "🎤 流行现场",
+      typeColor: "#38bdf8",
+      description: "《blue》走红的 R&B 歌手 yung kai 亚洲巡演，在 Capitol Theatre 举行，适合喜欢轻柔 R&B 的朋友。",
+      venue: "Capitol Theatre",
+      dateRange: "11月3日（周二）8pm",
+      ticketInfo: "🎟️ S$108 起",
+      price: "S$108 起",
+      priceNote: "Ticketmaster 售票",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_yungkai",
+      btnText: "Ticketmaster 购票",
+      sortDate: "2026-11-03",
+      active: true
+    },
+    {
+      id: "dan-and-phil-mediacorp-2026-12",
+      name: "Dan and Phil · Hard Launch World Tour 新加坡站",
+      type: "event",
+      priority: "normal",
+      month: "DEC",
+      day: "01",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#f59e0b,#78350f)",
+      typeLabel: "🎭 脱口秀",
+      typeColor: "#f59e0b",
+      description: "英国 YouTuber 二人组 Dan and Phil 的世界巡演新加坡站，英语现场喜剧 + 互动。",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "12月1日（周二）7:30pm",
+      ticketInfo: "🎟️ S$68–S$312",
+      price: "S$68 起",
+      priceNote: "SISTIC 售票",
+      ticketUrl: "https://www.sistic.com.sg/events/dp1226",
+      btnText: "SISTIC 购票",
+      sortDate: "2026-12-01",
+      active: true
+    },
+    {
+      id: "slowdive-fort-canning-2026-12",
+      name: "Slowdive 新加坡站 · Fort Canning Green",
+      type: "concert",
+      priority: "normal",
+      month: "DEC",
+      day: "12",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#818cf8,#312e81)",
+      typeLabel: "🎸 梦幻摇滚",
+      typeColor: "#818cf8",
+      description: "英国 shoegaze 传奇 Slowdive 在福康宁公园草地开唱，露天 + 夜晚气氛很搭。",
+      venue: "Fort Canning Green @ Fort Canning Park",
+      dateRange: "12月12日（周六）8pm",
+      ticketInfo: "🎟️ S$158",
+      price: "S$158",
+      priceNote: "SISTIC 售票",
+      ticketUrl: "https://www.sistic.com.sg/events/slowdive1226",
+      btnText: "SISTIC 购票",
+      sortDate: "2026-12-12",
+      active: true
+    },
   ],
 
 
@@ -11163,7 +11367,7 @@ const SGLIVING_DATA = {
       dateRange: "即日起至 10月11日",
       cost: "免费（需官网预约，球拍可现场租）",
       duration: "约 1 小时",
-      active: true
+      active: false
     },
     {
       id: "revupsg-kampung-admiralty-2026-09",
@@ -11177,7 +11381,7 @@ const SGLIVING_DATA = {
       dateRange: "9月25日（周五）12:30pm–10pm；9月26日（周六）12:30pm–9pm",
       cost: "免费",
       duration: "2–3 小时",
-      active: true
+      active: false
     },
     {
       id: "minds-film-festival-2026-09",
@@ -11191,7 +11395,7 @@ const SGLIVING_DATA = {
       dateRange: "9月26–27日（周六、日），各场地时段不同",
       cost: "免费（官网 mindsfilmfest.com 登记）",
       duration: "约 2 小时",
-      active: true
+      active: false
     },
     {
       id: "singapore-tennis-open-family-2026-09",
@@ -11205,7 +11409,7 @@ const SGLIVING_DATA = {
       dateRange: "9月21–27日（周末为半决赛/决赛）",
       cost: "比赛需购票（SISTIC），部分场外活动免费",
       duration: "半天",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-09-23 每日更新新增（亲子） ──────────
@@ -11252,7 +11456,7 @@ const SGLIVING_DATA = {
       dateRange: "10月10日（周六）3pm–7pm",
       cost: "免费入场",
       duration: "1–2 小时",
-      active: true
+      active: false
     },
 
 
@@ -11270,7 +11474,7 @@ const SGLIVING_DATA = {
       dateRange: "10月2日（周五，儿童节）10am–6pm；部分节目延至 10月3–4日",
       cost: "免费",
       duration: "半天至一整天",
-      active: true
+      active: false
     },
 
     {
@@ -11285,7 +11489,7 @@ const SGLIVING_DATA = {
       dateRange: "10月4日（周日）2pm–4:30pm",
       cost: "免费（需 Eventbrite 预约：eventbrite.com/e/2000485478919）",
       duration: "约 2.5 小时",
-      active: true
+      active: false
     },
 
     {
@@ -11300,7 +11504,7 @@ const SGLIVING_DATA = {
       dateRange: "10月2–4日，每天 9:00am–12:45pm",
       cost: "S$20 / 一对亲子（含包车、手工材料、礼物）",
       duration: "约 3 小时 45 分钟",
-      active: true
+      active: false
     },
 
     {
@@ -11315,7 +11519,7 @@ const SGLIVING_DATA = {
       dateRange: "10月2–4日，每天 10am–1pm / 2pm–5pm 两场",
       cost: "含在 KidsSTOP 门票内（公民/PR 儿童 S$10、成人 S$5）",
       duration: "每场 3 小时",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-09-14 每日更新新增 ──────────
@@ -11514,7 +11718,7 @@ const SGLIVING_DATA = {
       dateRange: "8月25日–9月27日",
       cost: "免费（见面会需 S$80 消费）",
       duration: "1–2 小时",
-      active: true
+      active: false
     },
 
     {
@@ -11529,7 +11733,7 @@ const SGLIVING_DATA = {
       dateRange: "9月12–27日，每晚 6–10pm",
       cost: "免费（灯笼手工与 Flower Dome 另计）",
       duration: "2–3 小时",
-      active: true
+      active: false
     },
 
     {
@@ -12196,7 +12400,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年（详见官方公布场次）",
       cost: "需购票（按时段，详见官网）",
       duration: "约 1.5 小时",
-      active: true
+      active: false
     },
 
     {
@@ -12273,7 +12477,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年（详见官方公布）",
       cost: "免费",
       duration: "按场次",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-23 每日更新新增 ──────────
@@ -12464,7 +12668,7 @@ const SGLIVING_DATA = {
       dateRange: "2026年6月–9月30日（关闭前告别季）",
       cost: "Snow Play 告别优惠：成人 S$19 / 儿童 S$16",
       duration: "约1–2小时",
-      active: true
+      active: false
     },
 
     {
@@ -12684,7 +12888,7 @@ const SGLIVING_DATA = {
       dateRange: "每周末（需提前预约）",
       cost: "S$20–30/人",
       duration: "45分钟",
-      active: true
+      active: false
     },
 
     {
@@ -12759,7 +12963,7 @@ const SGLIVING_DATA = {
       dateRange: "限时活动进行中",
       cost: "随票入场",
       duration: "约1.5小时",
-      active: true
+      active: false
     },
 
     {
@@ -12849,7 +13053,7 @@ const SGLIVING_DATA = {
       dateRange: "每周开放（建议提前预约）",
       cost: "S$15–30/人",
       duration: "约2小时",
-      active: true
+      active: false
     },
 
     {
@@ -13535,7 +13739,7 @@ const SGLIVING_DATA = {
       dateRange: "6月起开展",
       cost: "S$22-32（成人/儿童）",
       duration: "约2-3小时",
-      active: true
+      active: false
     },
 
     {
@@ -13580,7 +13784,7 @@ const SGLIVING_DATA = {
       dateRange: "每周一/六/日 20:00-20:30",
       cost: "免费",
       duration: "约1-2小时",
-      active: true
+      active: false
     },
 
     {
@@ -13595,7 +13799,7 @@ const SGLIVING_DATA = {
       dateRange: "5月20日二期正式开放",
       cost: "S$48–88（套票更优惠）",
       duration: "半天–全天",
-      active: true
+      active: false
     },
 
     {
@@ -14373,8 +14577,65 @@ const SGLIVING_DATA = {
       cost: "免费入场（儿童季 12 岁以下免费）",
       duration: "约 1.5–2.5 小时",
       active: false
-    }
+    },
 
+
+    {
+      id: "dinosaur-odyssey-trex-walkabout-2026-10",
+      name: "DINOSAUR ODYSSEY 霸王龙巡游（商场免费看）",
+      icon: "🦖",
+      topGradient: "linear-gradient(90deg,#22c55e,#14532d)",
+      ageRange: "全年龄（6-10 岁最爱）",
+      description: "真人大小的霸王龙在商场里「散步」！10 月 23–25 日：周五 Jewel 2pm/3:15pm/4:30pm；周六 Waterway Point 11:30am/12:30pm、Our Tampines Hub 3:30/4:30/5:30pm；周日 Waterway Point 11am/12pm。另有 The Bricks（周六 8:30pm，S$7）及 Choa Chu Kang CC（周日 6:15pm，S$5）收费场。",
+      highlight: "7-9 岁正是恐龙迷高峰期，近距离看霸王龙动作加上互动拍照，比博物馆更有临场感；免费场次时间短，带孩子提前 15 分钟占位",
+      location: "Jewel Changi / Waterway Point / Our Tampines Hub（见场次）",
+      dateRange: "10月23–25日",
+      cost: "免费（部分社区场次 S$5–7）",
+      duration: "约 20–30 分钟/场",
+      active: true
+    },
+    {
+      id: "dinosaur-odyssey-rws-2026-12",
+      name: "DINOSAUR ODYSSEY 恐龙秀（圣淘沙名胜世界）",
+      icon: "🦕",
+      topGradient: "linear-gradient(90deg,#16a34a,#064e3b)",
+      ageRange: "5-12 岁",
+      description: "年终假期档的大型恐龙巡游秀，12 月 3–6 日登陆 Resorts World Sentosa，是 11 月底放假后的好去处。票价官方暂未在来源页公布，建议关注主办方公告。",
+      highlight: "恐龙习性 + 大型仿真道具，适合 7-9 岁孩子边看边问问题，放假第二周去错开假期头一周的人潮",
+      location: "Resorts World Sentosa",
+      dateRange: "12月3–6日",
+      cost: "待公布",
+      duration: "约 1–2 小时",
+      active: true
+    },
+    {
+      id: "pokemon-run-30-stadium-roar-2026-11",
+      name: "Pokémon RUN 30 新加坡站（Stadium Roar, The Kallang）",
+      icon: "⚡",
+      topGradient: "linear-gradient(90deg,#facc15,#b45309)",
+      ageRange: "亲子同跑（跑程请看官网分组）",
+      description: "宝可梦主题跑步活动，11 月 7–8 日早上 7am–2pm 在 Stadium Roar 举行。价格与报名页来源页未列出，请关注官方公告确认分组与年龄限制。",
+      highlight: "宝可梦 + 运动，7-9 岁孩子最容易被说服出门跑步；全家一起完赛还能拿纪念品",
+      location: "Stadium Roar, The Kallang",
+      dateRange: "11月7–8日 7am–2pm",
+      cost: "待公布",
+      duration: "半天",
+      active: true
+    },
+    {
+      id: "qian-hu-fish-farm-2026",
+      name: "钱虎鱼场 Qian Hu Fish Farm（观赏鱼 + 喂鱼）",
+      icon: "🐠",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#0c4a6e)",
+      ageRange: "4-12 岁",
+      description: "在 Jalan Lekar 的观赏鱼场，30 分钟导览约 S$7/人，可以近距离看龙鱼、锦鲤，还能亲手喂鱼。",
+      highlight: "7-9 岁适合学认识鱼种和水族生态，半小时不累；周边顺路可以去 Sungei Buloh 湿地一起玩",
+      location: "71 Jalan Lekar, Singapore",
+      dateRange: "常设开放",
+      cost: "约 S$7/人（30 分钟）",
+      duration: "约 30–60 分钟",
+      active: true
+    },
   ],
 
 
@@ -14858,7 +15119,7 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 9/17 华语大片",
       ageGuide: "分级待公布 · 建议 8 岁以上全家观看",
-      active: true
+      active: false
     },
 
     {
@@ -14886,7 +15147,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🏆 9/17 本地佳作",
       ageGuide: "PG · 适合全家（7-9岁可看）",
-      active: true
+      active: false
     },
 
     {
@@ -14942,7 +15203,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🎉 9/17 40周年重映",
       ageGuide: "PG · 适合全家（7-9岁可看）",
-      active: true
+      active: false
     },
 
     {
@@ -15000,7 +15261,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 9/5 上映",
       ageGuide: "PG · 适合全家（7-9岁可看）",
-      active: true
+      active: false
     },
 
     {
@@ -15028,7 +15289,7 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 罗泓轸十年新作",
       ageGuide: "NC16 · 仅限 16 岁以上",
-      active: true
+      active: false
     },
 
     {
@@ -15056,7 +15317,7 @@ const SGLIVING_DATA = {
       badge: "classic",
       badgeText: "🎞️ 港片经典重映",
       ageGuide: "PG13 · 成人及青少年",
-      active: true
+      active: false
     },
 
     {
@@ -15084,7 +15345,7 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 限定一场 9/13",
       ageGuide: "NC16 · 16 岁以上",
-      active: true
+      active: false
     },
 
     {
@@ -15112,7 +15373,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 9/17 上映",
       ageGuide: "预计 M18 / NC16 · 成人向",
-      active: true
+      active: false
     },
 
     {
@@ -15255,7 +15516,7 @@ const SGLIVING_DATA = {
         "🌟 张若昀 · 白客 · 高叶 · 大鹏 · 庄达菲 · 王耀庆 · 钟汉良",
         "🎬 影片特色：把「时间循环无限流」嫁接进职场讽刺，设定比前作更大胆",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -15311,7 +15572,7 @@ const SGLIVING_DATA = {
         "🌟 Lily James · Pierce Brosnan · Nell Tiger Free · Franco Nero",
         "📍 取景地：意大利多洛米蒂山脉，悬崖戏几乎全实景拍摄",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -15339,7 +15600,7 @@ const SGLIVING_DATA = {
         "🌟 Tad 冒险系列第四部，全球累计票房破 1.5 亿美元",
         "🎬 影片特色：全程无惊吓镜头，节奏轻快，低龄友好",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -15367,7 +15628,7 @@ const SGLIVING_DATA = {
         "🌟 李小龙 · 苗可秀 · 查克·诺里斯",
         "🏆 罗马斗兽场终极对决，公认华语动作片史上最伟大打斗场面之一",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -15513,7 +15774,7 @@ const SGLIVING_DATA = {
         "🌟 配音导演陈浩（《哪吒》系列配音导演操刀）",
         "🏆 豆瓣开分8.3，暑期档新片最高分，内地首日票房破26.9亿",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -15655,7 +15916,7 @@ const SGLIVING_DATA = {
         "🌟 John Cena · Will Forte · Lana Condor · Eric Bauza（配音 Wile E. Coyote）",
         "🎬 经典《乐一通》IP首次真人+动画大银幕改编",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -15683,7 +15944,7 @@ const SGLIVING_DATA = {
         "🌟 Sandra Bullock · Nicole Kidman · Dianne Wiest · Joey King · Maisie Williams",
         "🏆 1998年经典《超异能快感》时隔近30年推出续集",
       ],
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-07-14 每日更新新增 ──────────
@@ -15971,7 +16232,7 @@ const SGLIVING_DATA = {
         "🌟 Jacob Elordi · Josh Brolin · Margaret Qualley · Guy Pearce · Allison Janney",
         "🏆 改编 Peter Heller 畅销小说 ·《沙丘》摄影师 Erik Messerschmidt 掌镜",
       ],
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-07-07 每日更新新增 ──────────
@@ -16974,8 +17235,55 @@ const SGLIVING_DATA = {
         "🏆 A24 影史票房最高作品 · 全球票房破 1.9 亿美元",
       ],
       active: false
-    }
+    },
 
+
+    {
+      id: "hexed-disney-2026-11",
+      title: "Hexed",
+      chineseTitle: "魔咒（迪士尼动画）",
+      type: "coming-soon",
+      rating: 7.0,
+      releaseDate: "2026-11-26",
+      genre: "动画 / 奇幻 / 家庭",
+      language: "英语 · 中文字幕",
+      duration: "待公布",
+      cast: "Hailee Steinfeld · Rashida Jones · Alan Tudyk · Stephen Fry",
+      director: "官方暂未公布",
+      description: "迪士尼 2026 年感恩节档奇幻动画，配音阵容整齐。适合学校放假后全家一起看，节奏轻快、适合 7-9 岁孩子。具体剧情请以官方预告为准。",
+      tags: ["迪士尼", "动画", "家庭", "11月上映"],
+      posterEmoji: "🪄",
+      bgGradient: "linear-gradient(135deg,#a78bfa,#312e81)",
+      posterUrl: "",
+      highlights: ["🎬 导演 官方暂未公布（迪士尼动画出品）", "🌟 Hailee Steinfeld · Rashida Jones · Alan Tudyk · Stephen Fry", "🎬 影片特色 迪士尼奇幻动画，年终家庭档"],
+      badge: "new",
+      badgeText: "🆕 11/26 上映",
+      ageGuide: "分级待定 · 预计适合全家",
+      active: true
+    },
+    {
+      id: "the-sandbox-sg-comedy-2026-10",
+      title: "The Sandbox",
+      chineseTitle: "沙盒（新加坡本地喜剧）",
+      type: "now-showing",
+      rating: 6.5,
+      releaseDate: "2026-10-10",
+      genre: "喜剧 / 动作",
+      language: "英语 · 华语 · 中文字幕",
+      duration: "待公布",
+      cast: "主演名单待官方公布",
+      director: "官方暂未公布",
+      description: "新加坡本土喜剧动作片，10 月 10 日已上映，想在影院里听到熟悉的新式英语和本地梗的朋友可以支持一下。评级 PG13，不适合低龄儿童。",
+      tags: ["新加坡本土", "喜剧", "PG13", "正在上映"],
+      posterEmoji: "🏖️",
+      bgGradient: "linear-gradient(135deg,#fbbf24,#b45309)",
+      posterUrl: "",
+      highlights: ["🎬 导演 官方暂未公布", "🌟 主演名单待官方公布", "🎬 影片特色 本土喜剧 + 动作场面（PG13）"],
+      badge: "hot",
+      badgeText: "🔥 本土热映",
+      ageGuide: "PG13 · 不适合低龄儿童",
+      active: true
+    },
   ]
 
 };
