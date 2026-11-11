@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-10-21
+ * 最后更新：2026-11-11
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-10-21",
+    lastUpdated: "2026-11-11",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -6213,6 +6213,206 @@ const SGLIVING_DATA = {
       ratingDesc: "披萨自助 · 开心果冰淇淋",
       active: true
     },
+    {
+      id: "xiao-jiao-tian-wisma-atria-2026-11",
+      name: "小娇天 Xiao Jiao Tian（Wisma Atria 新店）",
+      categories: ["restaurant"],
+      rating: 4.3,
+      openDate: "2026-11",
+      price: "S$25–40/人",
+      description: "想吃口味地道的川味小炒？福建起家的小娇天在新加坡开了第二家，这次落脚乌节路 Wisma Atria，之前 City Square 那家就常排队。招牌是酸辣开胃的泡椒牛蛙（S$39.90++）、酸菜鱼（S$29.90++）和糖醋里脊（S$24.90++），还有个小惊喜：自助茶水、冰淇淋、小食和白饭每位只要 S$1.50++，比之前便宜了一半。逛街逛饿了一家人来最合适。",
+      tags: ["川味", "中国品牌", "乌节路", "自助小食", "家庭聚餐"],
+      address: "435 Orchard Road, #03-32/33/34, Wisma Atria, Singapore 238877",
+      badge: "new",
+      badgeText: "🆕 新分店",
+      emoji: "🌶️",
+      bgGradient: "linear-gradient(135deg,#ef4444,#7f1d1d)",
+      catLabel: "中餐",
+      catDesc: "福建起家川味小炒 / Wisma Atria",
+      ratingDesc: "泡椒牛蛙 · 酸菜鱼 · 糖醋里脊",
+      active: true
+    },
+    {
+      id: "yee3-coconut-ion-orchard-2026-11",
+      name: "Yee3 椰子水饮品（ION Orchard B4 · 上海品牌）",
+      categories: ["dessert"],
+      rating: 4.2,
+      openDate: "2026-11",
+      price: "价格待公布",
+      description: "上海来的椰子水品牌 Yee3 十一月中旬进驻 ION 地下四楼，全球已经有 500 多家店。主打 Pistachio Cloud Coconut Water（开心果云朵椰子水），还有新推的 Coconut Frost Shake，口味有抹茶、葡萄、西瓜、芒果。想喝点不一样的奶茶之外的新选择可以关注。具体开业日期与价格建议到店前再确认。",
+      tags: ["上海品牌", "椰子水", "饮品", "ION Orchard"],
+      address: "2 Orchard Turn, #B4-70, ION Orchard, Singapore 238001",
+      badge: "new",
+      badgeText: "🆕 11月中旬开业",
+      emoji: "🥥",
+      bgGradient: "linear-gradient(135deg,#34d399,#065f46)",
+      catLabel: "饮品",
+      catDesc: "上海椰子水品牌 / ION Orchard B4",
+      ratingDesc: "开心果云朵椰子水 · 椰子冰沙",
+      active: true
+    },
+    {
+      id: "mr-cheesecake-ion-popup-2026-11",
+      name: "Mr. CHEESECAKE 快闪店（ION Orchard · 11/11–12/30）",
+      categories: ["dessert"],
+      rating: 4.4,
+      openDate: "2026-11",
+      price: "S$62–69/个",
+      description: "日本的 Mr. CHEESECAKE 来 ION 开限时快闪啦，11 月 11 日到 12 月 30 日。原味巴斯克 S$62，抹茶（用八女抹茶）和酒粕椰子都是 S$69。想买一个带去圣诞聚会的可以趁这段时间，每天 10am–10pm 营业。",
+      tags: ["日本", "巴斯克芝士蛋糕", "快闪", "限时"],
+      address: "2 Orchard Turn, #03-32/33, ION Orchard, Singapore 238801",
+      badge: "new",
+      badgeText: "⏳ 限时至 12/30",
+      emoji: "🧀",
+      bgGradient: "linear-gradient(135deg,#fbbf24,#92400e)",
+      catLabel: "甜品",
+      catDesc: "日本巴斯克芝士蛋糕快闪 / ION Orchard",
+      ratingDesc: "原味巴斯克 · 抹茶 · 酒粕椰子",
+      active: true
+    },
+    {
+      id: "ng-kuan-chilli-pan-mee-century-square-2026-11",
+      name: "Ng Kuan Chilli Pan Mee 辣椒板面（Century Square 东部首店）",
+      categories: ["snack"],
+      rating: 4.2,
+      openDate: "2026-11",
+      price: "S$6.5–10/人",
+      description: "马来西亚的辣椒板面第五家分店，也是第一家开到东部的，11 月中旬进驻 Tampines Century Square。招牌 Signature Ban Mian S$6.50，干捞版 S$6.80，加鸡/鱼/猪排 S$8.80，还有炸鱿鱼须 S$10。住东部的朋友终于不用跑远了。",
+      tags: ["马来西亚", "板面", "东部", "平价"],
+      address: "2 Tampines Central 5, #01-34, Century Square, Singapore 529509",
+      badge: "new",
+      badgeText: "🆕 11月中旬",
+      emoji: "🍜",
+      bgGradient: "linear-gradient(135deg,#f97316,#7c2d12)",
+      catLabel: "小吃",
+      catDesc: "马来西亚辣椒板面 / Tampines",
+      ratingDesc: "招牌板面 · 干捞板面 · 炸鱿鱼须",
+      active: true
+    },
+    {
+      id: "matsuya-suntec-first-sg-2026-11",
+      name: "Matsuya 松屋（新加坡首店 · Suntec City）",
+      categories: ["snack"],
+      rating: 4.1,
+      openDate: "2026-11",
+      price: "价格待公布",
+      description: "日本国民牛丼连锁松屋在新加坡开第一家店，落脚 Suntec City Tower 2 地下一层。招牌牛丼、番茄芝士牛丼、牛肉咖喱汉堡排，用点餐机自助点餐，快速又方便。上班族午餐、带孩子逛街都合适，价格以到店为准。",
+      tags: ["日本", "牛丼", "首店", "快餐"],
+      address: "3 Temasek Boulevard, #B1-125, Tower 2, Suntec City, Singapore 038983",
+      badge: "new",
+      badgeText: "🆕 新加坡首店",
+      emoji: "🍚",
+      bgGradient: "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      catLabel: "小吃",
+      catDesc: "日本牛丼连锁首店 / Suntec City",
+      ratingDesc: "牛丼 · 番茄芝士牛丼 · 咖喱汉堡排",
+      active: true
+    },
+    {
+      active: true,
+      id: "woksta-abc-brickworks-2026-11",
+      name: "Woksta（ABC Brickworks 熟食中心 · 镬炒意面）",
+      categories: [
+        "snack"
+      ],
+      rating: 4.3,
+      openDate: "2026-11",
+      price: "S$7–10/人",
+      description: "这家小摊太有意思了！主厨 Henry Yong 用炒粿条的大火镬气来炒意面，叻沙海鲜意面 S$10、咖喱炸鸡意面 S$7，镬气十足又带本地风味，价格完全是小贩中心水平。注意只做工作日午餐（周一至五 11am–2pm），想吃要趁早。",
+      tags: [
+        "小贩中心",
+        "镬炒意面",
+        "叻沙",
+        "平价"
+      ],
+      address: "6 Jalan Bukit Merah, #01-113, ABC Brickworks Market & Food Centre, Singapore 150006",
+      badge: "new",
+      badgeText: "🆕 11月新摊",
+      emoji: "🍝",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#92400e)",
+      catLabel: "小吃",
+      catDesc: "镬炒意面小贩 / Bukit Merah",
+      ratingDesc: "叻沙海鲜意面 · 咖喱炸鸡意面 · 椰香鱼意面"
+    },
+    {
+      active: true,
+      id: "maison-yoshoku-raffles-city-2026-11",
+      name: "Maison Yoshoku（Raffles City 日式洋食）",
+      categories: [
+        "restaurant"
+      ],
+      rating: 4.2,
+      openDate: "2026-11",
+      price: "S$25–45/人",
+      description: "Surrey Hills 集团新开的日式洋食馆，在 Raffles City 三楼。蛋包饭、汉堡排这类洋食之外，还有鳗鱼三吃（hitsumabushi）和一个「漂浮甜品吧」，带小朋友来很加分。逛完市中心想吃顿不出错的饭，这里很合适。",
+      tags: [
+        "日式洋食",
+        "鳗鱼饭",
+        "甜品",
+        "亲子友好"
+      ],
+      address: "252 North Bridge Road, #03-43, Raffles City Shopping Centre, Singapore 179103",
+      badge: "new",
+      badgeText: "🆕 11月新开",
+      emoji: "🍛",
+      bgGradient: "linear-gradient(135deg,#fb923c,#9a3412)",
+      catLabel: "餐厅",
+      catDesc: "日式洋食 / Raffles City",
+      ratingDesc: "鳗鱼三吃 · 洋食套餐 · 漂浮甜品吧"
+    },
+    {
+      active: true,
+      id: "rawr-cafe-jalan-besar-2026-11",
+      name: "Rawr Cafe（Jalan Besar · Wunderfolks 新店）",
+      categories: [
+        "dessert",
+        "restaurant"
+      ],
+      rating: 4.2,
+      openDate: "2026-11",
+      price: "S$15–30/人",
+      description: "Oh Wunder Cafe 同一个团队开的新咖啡馆，主打西式早午餐加新加坡元素：「新加坡早餐拿铁」S$8 喝起来像咖椰吐司，椰浆饭炸鸡汉堡 S$18 也很有创意。周末带娃去吃个 brunch，氛围轻松。",
+      tags: [
+        "咖啡馆",
+        "早午餐",
+        "本地风味"
+      ],
+      address: "134 Jalan Besar, Singapore 208852",
+      badge: "new",
+      badgeText: "🆕 11月新开",
+      emoji: "☕",
+      bgGradient: "linear-gradient(135deg,#a3e635,#3f6212)",
+      catLabel: "咖啡/甜品",
+      catDesc: "创意早午餐 / Jalan Besar",
+      ratingDesc: "新加坡早餐拿铁 · 椰浆饭炸鸡汉堡 · 软壳蟹辣椒意面"
+    },
+    {
+      active: true,
+      id: "peach-blossoms-parkroyal-reopen-2026-11",
+      name: "桃苑 Peach Blossoms（PARKROYAL COLLECTION Marina Bay 重开）",
+      categories: [
+        "restaurant",
+        "finedining"
+      ],
+      rating: 4.5,
+      openDate: "2026-11",
+      price: "S$80–150/人",
+      description: "滨海湾的老牌中餐厅桃苑翻新重开，新菜单融合潮州、闽南、客家、粤菜风味。肉骨茶风味的佛跳墙 S$98 很有新加坡特色，家常焖笋壳鱼、镬炒珍珠米也值得点。适合请长辈吃饭或家庭聚餐。",
+      tags: [
+        "中餐",
+        "潮州菜",
+        "粤菜",
+        "家庭聚餐"
+      ],
+      address: "6 Raffles Boulevard, Level 5, PARKROYAL COLLECTION Marina Bay, Singapore 039594",
+      badge: "new",
+      badgeText: "✨ 翻新重开",
+      emoji: "🥢",
+      bgGradient: "linear-gradient(135deg,#f472b6,#831843)",
+      catLabel: "中餐",
+      catDesc: "多菜系中餐 / Marina Bay",
+      ratingDesc: "肉骨茶佛跳墙 · 焖笋壳鱼 · 镬炒珍珠米"
+    },
   ],
 
 
@@ -6309,7 +6509,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/qfz1026",
       btnText: "SISTIC 购票",
       sortDate: "2026-10-23",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-09-23 每日更新新增（活动） ──────────
@@ -6498,7 +6698,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/bobby1026",
       btnText: "SISTIC 购票",
       sortDate: "2026-10-24",
-      active: true
+      active: false
     },
 
     {
@@ -6521,7 +6721,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://bookmyshow.sg/en/events/rosetopia-asia-tour-2026-in-singapore/ROSE2026",
       btnText: "BookMyShow 购票",
       sortDate: "2026-10-27",
-      active: true
+      active: false
     },
 
     {
@@ -6753,7 +6953,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Cai+Xukun+Singapore",
       btnText: "查看详情",
       sortDate: "2026-10-24",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-09-04 每日更新新增 ──────────
@@ -6870,7 +7070,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.marinabaysands.com/entertainment/shows/in-the-mood-for-love-in-concert.html",
       btnText: "购票",
       sortDate: "2026-10-24",
-      active: true
+      active: false
     },
 
     {
@@ -6893,7 +7093,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_bensonboone",
       btnText: "购票",
       sortDate: "2026-11-02",
-      active: true
+      active: false
     },
 
     {
@@ -6916,7 +7116,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_lany",
       btnText: "购票",
       sortDate: "2026-11-04",
-      active: true
+      active: false
     },
 
     {
@@ -11278,7 +11478,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmelon.com/cultofya/yvesinsingapore",
       btnText: "Ticketmelon 购票",
       sortDate: "2026-11-04",
-      active: true
+      active: false
     },
     {
       id: "yung-kai-capitol-theatre-2026-11",
@@ -11300,7 +11500,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_yungkai",
       btnText: "Ticketmaster 购票",
       sortDate: "2026-11-03",
-      active: true
+      active: false
     },
     {
       id: "dan-and-phil-mediacorp-2026-12",
@@ -11345,6 +11545,138 @@ const SGLIVING_DATA = {
       btnText: "SISTIC 购票",
       sortDate: "2026-12-12",
       active: true
+    },
+    {
+      id: "fkj-tyber-arena-expo-2026-11",
+      name: "FKJ · Tyber Tour 新加坡站",
+      type: "concert",
+      priority: "normal",
+      month: "NOV",
+      day: "29",
+      dow: "周日",
+      dateColor: "linear-gradient(135deg,#14b8a6,#134e4a)",
+      typeLabel: "🎷 电子/灵魂现场",
+      typeColor: "#14b8a6",
+      description: "法国多乐器音乐人 FKJ 带着新巡演来 Arena @ EXPO，现场一人边弹边叠音，氛围感很强，喜欢 chill 电子和灵魂乐的朋友别错过。",
+      venue: "Arena @ EXPO",
+      dateRange: "11月29日（周日）8pm–10pm",
+      ticketInfo: "🎟️ S$108 起",
+      price: "S$108 起",
+      priceNote: "Ticketmaster 售票",
+      ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_fkj",
+      btnText: "Ticketmaster 购票",
+      sortDate: "2026-11-29",
+      active: true
+    },
+    {
+      type: "event",
+      priority: "featured",
+      active: true,
+      id: "sso-christmas-concert-2026-12",
+      name: "新加坡交响乐团圣诞音乐会（胡桃夹子 + 圣诞合唱）",
+      month: "DEC",
+      day: "11",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#ef4444,#14532d)",
+      typeLabel: "🎄 圣诞音乐会",
+      typeColor: "#ef4444",
+      description: "SSO 年度圣诞音乐会：柴可夫斯基《胡桃夹子》+ Rutter《Gloria》，还有圣诞歌曲大合唱环节。5 岁以上可入场，全长约 1 小时 45 分，带孩子感受节日气氛的好选择。",
+      venue: "Esplanade Concert Hall 滨海艺术中心音乐厅",
+      dateRange: "12月11–12日（周五、六）7:30pm",
+      ticketInfo: "🎟️ S$48–228",
+      price: "S$48 起",
+      priceNote: "Esplanade 售票 · 可用 SG Culture Pass",
+      ticketUrl: "https://securetix.esplanade.com/esp/booking/SOT2650-1a",
+      btnText: "Esplanade 购票",
+      sortDate: "2026-12-11"
+    },
+    {
+      type: "event",
+      priority: "normal",
+      active: true,
+      id: "anime-festival-asia-2026-11",
+      name: "Anime Festival Asia 2026 亚洲动漫节",
+      month: "NOV",
+      day: "27",
+      dow: "周五",
+      dateColor: "linear-gradient(135deg,#ec4899,#6d28d9)",
+      typeLabel: "🎌 动漫展",
+      typeColor: "#ec4899",
+      description: "东南亚最大的动漫盛会回归新达城：周边市集、Cosplay、动漫歌手演出一网打尽，大孩子和动漫迷家长都会逛得很开心。具体嘉宾与票种以官网为准。",
+      venue: "Suntec Singapore Convention & Exhibition Centre",
+      dateRange: "11月27–29日（周五至周日）",
+      ticketInfo: "🎟️ 官网售票",
+      price: "以官网为准",
+      priceNote: "日票/演出票分开售卖",
+      ticketUrl: "https://www.google.com/search?q=Anime+Festival+Asia+Singapore+2026+tickets",
+      btnText: "查看票务",
+      sortDate: "2026-11-27"
+    },
+    {
+      type: "concert",
+      priority: "normal",
+      active: true,
+      id: "diana-krall-esplanade-2026-11",
+      name: "Diana Krall 爵士音乐会 新加坡站",
+      month: "NOV",
+      day: "24",
+      dow: "周二",
+      dateColor: "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      typeLabel: "🎷 爵士",
+      typeColor: "#0ea5e9",
+      description: "格莱美爵士天后 Diana Krall 连开两晚，钢琴 + 低沉嗓音，适合夫妻俩安排一个约会夜。",
+      venue: "Esplanade Concert Hall 滨海艺术中心音乐厅",
+      dateRange: "11月24–25日（周二、三）",
+      ticketInfo: "🎟️ 以 SISTIC 为准",
+      price: "以官方为准",
+      priceNote: "SISTIC / Esplanade",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Diana+Krall",
+      btnText: "SISTIC 搜索",
+      sortDate: "2026-11-24"
+    },
+    {
+      type: "concert",
+      priority: "normal",
+      active: true,
+      id: "wolf-alice-fort-canning-2026-12",
+      name: "Wolf Alice 新加坡站 · Fort Canning",
+      month: "DEC",
+      day: "10",
+      dow: "周四",
+      dateColor: "linear-gradient(135deg,#a855f7,#3b0764)",
+      typeLabel: "🎸 独立摇滚",
+      typeColor: "#a855f7",
+      description: "水星奖得主、英国独立摇滚乐队 Wolf Alice 在福康宁公园露天开唱，喜欢 Britpop/独立摇滚的朋友别错过。",
+      venue: "Fort Canning Park",
+      dateRange: "12月10日（周四）",
+      ticketInfo: "🎟️ 以官方为准",
+      price: "以官方为准",
+      priceNote: "请以售票平台为准",
+      ticketUrl: "https://www.sistic.com.sg/events/search?q=Wolf+Alice",
+      btnText: "SISTIC 搜索",
+      sortDate: "2026-12-10"
+    },
+    {
+      type: "concert",
+      priority: "normal",
+      active: true,
+      id: "yesung-mediacorp-2026-12",
+      name: "YESUNG（SUPER JUNIOR 艺声）新加坡演唱会",
+      month: "DEC",
+      day: "5",
+      dow: "周六",
+      dateColor: "linear-gradient(135deg,#38bdf8,#1e40af)",
+      typeLabel: "🎤 K-pop",
+      typeColor: "#38bdf8",
+      description: "SUPER JUNIOR 主唱艺声个人巡演来到新加坡，抒情 vocal 担当的现场非常稳，ELF 们冲！",
+      venue: "The Theatre at Mediacorp",
+      dateRange: "12月5日（周六）",
+      ticketInfo: "🎟️ 以官方为准",
+      price: "以官方为准",
+      priceNote: "请以售票平台为准",
+      ticketUrl: "https://www.ticketmaster.sg/search?q=YESUNG+Singapore",
+      btnText: "Ticketmaster 搜索",
+      sortDate: "2026-12-05"
     },
   ],
 
@@ -11426,7 +11758,7 @@ const SGLIVING_DATA = {
       dateRange: "10月每个周末 12pm–4pm（送完即止）",
       cost: "免费",
       duration: "约 20–30 分钟",
-      active: true
+      active: false
     },
 
     {
@@ -11441,7 +11773,7 @@ const SGLIVING_DATA = {
       dateRange: "见面会 10月10/17/24/31日（周六）3pm & 4pm；充气城堡 10月19–25日 12:30pm–8:30pm",
       cost: "见面会免费；充气城堡需同日消费满 S$30",
       duration: "1–2 小时",
-      active: true
+      active: false
     },
 
     {
@@ -11536,7 +11868,7 @@ const SGLIVING_DATA = {
       dateRange: "9月1日–11月1日，园区开放时段",
       cost: "含在 USS 门票内（成人 S$83 起 / 儿童 S$62 起）",
       duration: "全天",
-      active: true
+      active: false
     },
 
     {
@@ -11551,7 +11883,7 @@ const SGLIVING_DATA = {
       dateRange: "9月1日–11月1日",
       cost: "含在海洋馆门票内（部分工作坊另收费）",
       duration: "2–3 小时",
-      active: true
+      active: false
     },
 
     {
@@ -11566,7 +11898,7 @@ const SGLIVING_DATA = {
       dateRange: "9月1日–11月1日",
       cost: "含在 Adventure Cove 门票内",
       duration: "半天",
-      active: true
+      active: false
     },
 
     {
@@ -11673,7 +12005,7 @@ const SGLIVING_DATA = {
       dateRange: "9月10日–10月25日",
       cost: "本地居民成人 S$20 / 儿童 S$15（9/9 前早鸟 8 折，3 张以上 85 折）",
       duration: "1.5–2 小时",
-      active: true
+      active: false
     },
 
     {
@@ -14592,7 +14924,7 @@ const SGLIVING_DATA = {
       dateRange: "10月23–25日",
       cost: "免费（部分社区场次 S$5–7）",
       duration: "约 20–30 分钟/场",
-      active: true
+      active: false
     },
     {
       id: "dinosaur-odyssey-rws-2026-12",
@@ -14620,7 +14952,7 @@ const SGLIVING_DATA = {
       dateRange: "11月7–8日 7am–2pm",
       cost: "待公布",
       duration: "半天",
-      active: true
+      active: false
     },
     {
       id: "qian-hu-fish-farm-2026",
@@ -14635,6 +14967,141 @@ const SGLIVING_DATA = {
       cost: "约 S$7/人（30 分钟）",
       duration: "约 30–60 分钟",
       active: true
+    },
+    {
+      id: "coding-lab-holiday-camp-2026-12",
+      name: "Coding Lab 年终编程营（Scratch 7–9 岁班）",
+      icon: "💻",
+      topGradient: "linear-gradient(90deg,#6366f1,#312e81)",
+      ageRange: "7–18 岁（7–9 岁走 Scratch 课程）",
+      description: "年底假期的少儿编程营，多个地点开课：King Albert Park、Parkway Parade、The Seletar Mall、United Square、Tampines Changkat CC，也可以线上上。7–9 岁的 Scratch 项目涵盖音乐、AI 基础、物理和电影特效。",
+      highlight: "7–9 岁正是逻辑思维起步的时候，Scratch 用拖拽积木做作品，孩子能很快看到成果，小班教学更容易跟上",
+      location: "King Albert Park / Parkway Parade / The Seletar Mall / United Square / Tampines Changkat CC / 线上",
+      dateRange: "即日起至 12月31日",
+      cost: "S$450.44 起（官网价，请以官网为准）",
+      duration: "5×2 小时 或 5×3.5 小时 或 全天营",
+      bookingUrl: "https://www.codinglab.com.sg/our-classes/overview",
+      active: true
+    },
+    {
+      id: "foosball-lego-robotics-camp-2026-12",
+      name: "Foosball LEGO 机器人编程营（做一台抓娃娃机）",
+      icon: "🤖",
+      topGradient: "linear-gradient(90deg,#f59e0b,#78350f)",
+      ageRange: "7–12 岁",
+      description: "两天的 SPIKE Prime 机器人营，孩子要自己搭建并编程做出一台能运作的机械爪抓娃娃机。11/30–12/1 在 Sennett 校区，12/2–12/3 在 Toa Payoh 校区，每天 9am–5pm，含早餐、午餐和茶点。",
+      highlight: "7–9 岁的孩子最爱动手搭积木，又能学到编程和机械原理，最后做出会动的抓娃娃机，成就感满满",
+      location: "Singapore Federation of Chinese Clan Associations Sennett 校区 / Toa Payoh 校区",
+      dateRange: "11月30日–12月1日（Sennett）；12月2–3日（Toa Payoh）9am–5pm",
+      cost: "S$420 起（含餐）",
+      duration: "2 天",
+      bookingUrl: "https://www.shhkca.com.sg/yearendcamp2026",
+      active: true
+    },
+    {
+      id: "yeah-aquatics-camp-2026-12",
+      name: "YEAH! 年终水上营（OCBC Aquatic Centre）",
+      icon: "🏊",
+      topGradient: "linear-gradient(90deg,#0ea5e9,#0c4a6e)",
+      ageRange: "7–12 岁",
+      description: "在体育城 OCBC Aquatic Centre 举行的游泳与跳水技能营，12 月 1–12 日每周一、三、五上课，价格很亲民。",
+      highlight: "7–9 岁是学游泳打基础的好年纪，专业场馆加教练带领，假期里既运动又能提升水性",
+      location: "OCBC Aquatic Centre, Singapore Sports Hub",
+      dateRange: "12月1–12日（周一/三/五）",
+      cost: "S$54.50 起",
+      duration: "按课程场次",
+      bookingUrl: "https://docs.google.com/forms/d/e/1FAIpQLSf-9xRVxuaUJeRGxpoYr-PLsaoKUG873nBI5qALv8u5GcjWYQ/viewform",
+      active: true
+    },
+    {
+      id: "nafa-junior-art-holiday-2026-11",
+      name: "NAFA 少儿艺术假期工作坊",
+      icon: "🎨",
+      topGradient: "linear-gradient(90deg,#ec4899,#831843)",
+      ageRange: "7–10 岁班",
+      description: "南洋艺术学院的假期课程，7–10 岁有陶艺、绘画和圣诞主题等工作坊，比如黏土宝可梦、跟毕加索学立体派圣诞画。",
+      highlight: "7–9 岁孩子想象力和动手力都很强，陶艺和绘画能释放创意，圣诞主题作品还能带回家当礼物",
+      location: "NAFA Campus, 151 Bencoolen Street",
+      dateRange: "11月23日–12月18日",
+      cost: "S$357",
+      duration: "按工作坊安排",
+      bookingUrl: "https://www.nafa.edu.sg/courses/courses-for-children/vacation-courses-junior-art",
+      active: true
+    },
+    {
+      id: "money-savvy-workshop-csc-2026-12",
+      name: "Money Savvy 理财小课堂（Chinese Swimming Club）",
+      icon: "💰",
+      topGradient: "linear-gradient(90deg,#22c55e,#14532d)",
+      ageRange: "6–12 岁",
+      description: "12 月 5 日在 Chinese Swimming Club 举行的游戏式理财工作坊，通过游戏学习预算、储蓄，分清「需要」和「想要」。",
+      highlight: "7–9 岁开始有零花钱概念，通过游戏理解怎么存钱、怎么选，比说教更有效",
+      location: "Chinese Swimming Club, Activity Suite, Sports Complex Level 3",
+      dateRange: "12月5日",
+      cost: "S$65.40 起",
+      duration: "按场次",
+      bookingUrl: "https://www.chineseswimmingclub.org.sg/fitness-lifestyle/youth-and-kids/events/",
+      active: true
+    },
+    {
+      active: true,
+      id: "nafa-mandarin-storytelling-2026-11",
+      name: "NAFA 少儿华语讲故事 / 戏剧假期班",
+      icon: "🎭",
+      topGradient: "linear-gradient(90deg,#f97316,#7c2d12)",
+      ageRange: "6–8 岁（9–12 岁有相声班）",
+      description: "南洋艺术学院年终假期戏剧课，用讲故事和表演练华语表达，上午或下午半天班，两周课程。",
+      highlight: "中国家庭最关心孩子华语别丢——7–8 岁正是敢说敢演的年纪，通过戏剧练口语比背课文有趣得多；9 岁以上可以报相声班",
+      location: "NAFA Campus, 151 Bencoolen Street",
+      dateRange: "11月30日–12月11日（9am–12pm 或 1–4pm）",
+      cost: "S$357",
+      duration: "两周半天班",
+      bookingUrl: "https://www.nafa.edu.sg/courses/courses-for-children/vacation-courses-junior-drama"
+    },
+    {
+      active: true,
+      id: "activesg-children-holiday-camp-2026-11",
+      name: "ActiveSG 儿童假期田径营（裕廊湖花园）",
+      icon: "🏃",
+      topGradient: "linear-gradient(90deg,#22c55e,#166534)",
+      ageRange: "7–10 岁",
+      description: "ActiveSG 假期多项运动营，软标枪、跨栏、跑跳、跳绳轮番体验，在户外的裕廊湖花园进行。",
+      highlight: "7–9 岁精力最旺盛，假期别只窝在家里刷平板；S$60 起的价格非常亲民，还能顺便试试孩子对哪项运动有兴趣",
+      location: "Jurong Lake Gardens",
+      dateRange: "年终假期多个场次",
+      cost: "S$60 起",
+      duration: "按场次",
+      bookingUrl: "https://activesg.gov.sg/programmes?keywords=SHP"
+    },
+    {
+      active: true,
+      id: "food-bank-juniors-club-2026",
+      name: "Food Bank SG Juniors Club 小小义工",
+      icon: "🧺",
+      topGradient: "linear-gradient(90deg,#eab308,#713f12)",
+      ageRange: "5–9 岁（10–15 岁另有组别）",
+      description: "孩子们动手打包食物礼包，参与上门派送，还会和社区长者见面聊天。",
+      highlight: "年终假期很适合让 7–9 岁孩子体验「帮助别人」，比讲道理更能培养同理心，也是认识新加坡社区的好机会",
+      location: "以报名页面为准",
+      dateRange: "多个日期可选",
+      cost: "S$60",
+      duration: "半天",
+      bookingUrl: "https://www.eventbrite.com/cc/juniors-club-activity-412239"
+    },
+    {
+      active: true,
+      id: "sso-christmas-family-2026-12",
+      name: "SSO 圣诞音乐会（亲子版推荐）",
+      icon: "🎄",
+      topGradient: "linear-gradient(90deg,#ef4444,#14532d)",
+      ageRange: "5 岁以上",
+      description: "《胡桃夹子》选段 + 圣诞歌大合唱，中场休息 20 分钟，总长约 1 小时 45 分。",
+      highlight: "7–9 岁孩子能坐得住一场正式音乐会了，《胡桃夹子》旋律熟悉、还有合唱互动，是很好的古典音乐启蒙；学生有优惠票",
+      location: "Esplanade Concert Hall",
+      dateRange: "12月11–12日 7:30pm",
+      cost: "S$48 起（学生优惠另计）",
+      duration: "约 1 小时 45 分",
+      bookingUrl: "https://securetix.esplanade.com/esp/booking/SOT2650-1a"
     },
   ],
 
@@ -14668,7 +15135,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/1 上映",
       ageGuide: "分级待定 · 适合成人及青少年",
-      active: true
+      active: false
     },
     {
       id: "the-mage-pang-brothers-2026-10",
@@ -14714,7 +15181,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🎌 JFF 10/3 放映",
       ageGuide: "PG · 适合 7 岁以上孩子",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-09-23 每日更新新增（电影） ──────────
@@ -14749,7 +15216,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/8 上映",
       ageGuide: "分级待定 · 适合成人及青少年",
-      active: true
+      active: false
     },
 
     {
@@ -14883,7 +15350,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🎌 JFF 10/10 放映",
       ageGuide: "PG · 适合全家",
-      active: true
+      active: false
     },
 
 
@@ -14920,7 +15387,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/1 上映",
       ageGuide: "PG13 · 适合家庭（带长辈）",
-      active: true
+      active: false
     },
 
     {
@@ -14954,7 +15421,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🇸🇬 本地新片 10/8",
       ageGuide: "分级待定 · 适合成人与青少年",
-      active: true
+      active: false
     },
 
     {
@@ -15089,7 +15556,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/1 上映",
       ageGuide: "预计 M18 · 仅限成人",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-09-14 每日更新新增 ──────────
@@ -15175,7 +15642,7 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 9/24 IMAX 重映",
       ageGuide: "PG13 · 7-9岁需家长陪同",
-      active: true
+      active: false
     },
 
     {
@@ -15401,7 +15868,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 9/24 上映",
       ageGuide: "预计 PG13 / NC16",
-      active: true
+      active: false
     },
 
     {
@@ -15429,7 +15896,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 9/24 上映",
       ageGuide: "预计 PG13 · 青少年及以上",
-      active: true
+      active: false
     },
 
 
@@ -15802,7 +16269,7 @@ const SGLIVING_DATA = {
         "🌟 Aardman出品，《小羊肖恩》系列经典定格动画延续",
         "🎬 万圣节怪兽题材，无对白纯视觉喜剧，语言零门槛全家可看",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -15888,7 +16355,7 @@ const SGLIVING_DATA = {
         "🌟 配音：H.E.R. · Liza Soberano · Dave Franco · Jenny Slate · Lea Salonga",
         "🎬 取材菲律宾民间神话，梦工厂出品合家欢冒险",
       ],
-      active: true
+      active: false
     },
 
     {
@@ -17254,7 +17721,7 @@ const SGLIVING_DATA = {
       tags: ["迪士尼", "动画", "家庭", "11月上映"],
       posterEmoji: "🪄",
       bgGradient: "linear-gradient(135deg,#a78bfa,#312e81)",
-      posterUrl: "",
+      posterUrl: "https://image.tmdb.org/t/p/w500/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
       highlights: ["🎬 导演 官方暂未公布（迪士尼动画出品）", "🌟 Hailee Steinfeld · Rashida Jones · Alan Tudyk · Stephen Fry", "🎬 影片特色 迪士尼奇幻动画，年终家庭档"],
       badge: "new",
       badgeText: "🆕 11/26 上映",
@@ -17282,7 +17749,188 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 本土热映",
       ageGuide: "PG13 · 不适合低龄儿童",
+      active: false
+    },
+    {
+      id: "hunger-games-sunrise-on-the-reaping-2026-11",
+      title: "The Hunger Games: Sunrise on the Reaping",
+      chineseTitle: "饥饿游戏：破晓时分",
+      type: "coming-soon",
+      rating: 7.5,
+      releaseDate: "2026-11-19",
+      genre: "科幻 / 冒险",
+      language: "英语 · 中文字幕",
+      duration: "待官方公布",
+      cast: "Joseph Zada · Ralph Fiennes · Elle Fanning · Maya Hawke · Kieran Culkin",
+      director: "Francis Lawrence 弗朗西斯·劳伦斯",
+      description: "《饥饿游戏》前传，故事发生在凯特尼斯之前 24 年，年轻的海米奇被抽中参加第 50 届饥饿游戏。系列老粉绝对不能错过，没看过前作也能当独立故事看。新加坡 11 月 19 日上映，分级待定，不建议低龄儿童观看。",
+      tags: ["饥饿游戏", "前传", "科幻", "11月上映"],
+      posterEmoji: "🏹",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#7f1d1d)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/j1MNyNNgNQL6f27cb3m3uKaPKd6.jpg",
+      highlights: ["🎬 导演 Francis Lawrence（《饥饿游戏》系列）", "🌟 Joseph Zada · Ralph Fiennes · Elle Fanning · Maya Hawke · Kieran Culkin", "🎬 影片特色：第 50 届饥饿游戏前传 · 海米奇的故事"],
+      badge: "new",
+      badgeText: "🆕 11/19 上映",
+      ageGuide: "分级待定 · 不建议低龄儿童",
       active: true
+    },
+    {
+      active: true,
+      id: "demon-agent-2026-11",
+      title: "Demon Agent",
+      chineseTitle: "大唐妖探",
+      type: "chinese",
+      rating: 7.3,
+      releaseDate: "2026-11-12",
+      genre: "动画 / 喜剧 / 悬疑",
+      language: "华语",
+      duration: "117 分钟",
+      cast: "雷宋然 · 蔡海婷 · 张哲 · 王凯",
+      director: "程腾",
+      description: "国漫新作！蒸汽朋克版大唐长安，人妖共处，一个嘴硬的少年神探搭档一个心软的狼妖新捕快查奇案。画面和设定都很有新意，悬疑 + 搞笑的节奏大孩子会喜欢，父母也看得进去。新加坡分级待公布，建议出票前确认。",
+      tags: [
+        "国漫",
+        "华语",
+        "悬疑",
+        "11月上映"
+      ],
+      posterEmoji: "🐺",
+      bgGradient: "linear-gradient(135deg,#f59e0b,#7c2d12)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/fQRYOFC94VUvmjKkh3OF0bqtD81.jpg",
+      highlights: [
+        "🎬 导演 程腾（《姜子牙》联合导演）",
+        "🌟 雷宋然 · 蔡海婷 · 张哲 · 王凯（配音）",
+        "🎬 影片特色 蒸汽朋克大唐长安 · 国漫悬疑喜剧"
+      ],
+      badge: "new",
+      badgeText: "🆕 11/12 上映",
+      ageGuide: "分级待定 · 预计适合 7 岁以上"
+    },
+    {
+      active: true,
+      id: "traces-of-justice-2026-11",
+      title: "Traces of Justice",
+      chineseTitle: "神探之痕迹",
+      type: "chinese",
+      rating: 7.4,
+      releaseDate: "2026-11-12",
+      genre: "犯罪 / 剧情",
+      language: "华语",
+      duration: "140 分钟",
+      cast: "张译 · 马丽 · 陈明昊 · 王俊凯 · 李雪健",
+      director: "陈思诚",
+      description: "陈思诚导演的刑侦大片，跨越半个世纪讲一位传奇刑警破大案的故事，也映照中国公安体系的变迁。张译 + 李雪健的演技很稳，适合爸妈晚上去看。M18 级别，不适合孩子。",
+      tags: [
+        "华语",
+        "刑侦",
+        "M18",
+        "11月上映"
+      ],
+      posterEmoji: "🔍",
+      bgGradient: "linear-gradient(135deg,#64748b,#0f172a)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/jfDFyAb9DW6QczgNeieSzPOz1cT.jpg",
+      highlights: [
+        "🎬 导演 陈思诚（《唐人街探案》系列）",
+        "🌟 张译 · 马丽 · 陈明昊 · 王俊凯 · 李雪健",
+        "🎬 影片特色 跨越半个世纪的刑侦史诗"
+      ],
+      badge: "new",
+      badgeText: "🆕 11/12 上映",
+      ageGuide: "M18 · 仅限成人"
+    },
+    {
+      active: true,
+      id: "dune-part-three-2026-12",
+      title: "Dune: Part Three",
+      chineseTitle: "沙丘3",
+      type: "coming-soon",
+      rating: 8.2,
+      releaseDate: "2026-12-16",
+      genre: "科幻 / 冒险",
+      language: "英语 · 中文字幕",
+      duration: "150 分钟",
+      cast: "Timothée Chalamet · Zendaya · Florence Pugh · Jason Momoa · Robert Pattinson",
+      director: "Denis Villeneuve",
+      description: "维伦纽瓦的《沙丘》三部曲终章，保罗成为皇帝近 20 年后面对背叛与代价。前两部的视听震撼有目共睹，这部一定要上 IMAX。适合大人和青少年，低龄孩子不建议。",
+      tags: [
+        "科幻",
+        "IMAX",
+        "12月上映"
+      ],
+      posterEmoji: "🏜️",
+      bgGradient: "linear-gradient(135deg,#d97706,#451a03)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/glt0v4I89rMWstDNCaFXc5SNyO1.jpg",
+      highlights: [
+        "🎬 导演 Denis Villeneuve（《降临》《沙丘2》）",
+        "🌟 Timothée Chalamet · Zendaya · Florence Pugh · Jason Momoa · Robert Pattinson",
+        "🎬 影片特色 《沙丘》三部曲终章 · 强烈推荐 IMAX"
+      ],
+      badge: "new",
+      badgeText: "🆕 12/16 上映",
+      ageGuide: "美国 PG-13 · 新加坡分级待定"
+    },
+    {
+      active: true,
+      id: "avengers-doomsday-2026-12",
+      title: "Avengers: Doomsday",
+      chineseTitle: "复仇者联盟5：毁灭之日",
+      type: "coming-soon",
+      rating: 8,
+      releaseDate: "2026-12-17",
+      genre: "超级英雄 / 动作",
+      language: "英语 · 中文字幕",
+      duration: "165 分钟",
+      cast: "Robert Downey Jr. · Chris Evans · Chris Hemsworth · Pedro Pascal · Florence Pugh",
+      director: "Anthony Russo / Joe Russo",
+      description: "年度最受期待的漫威大片！小罗伯特·唐尼回归但这次演反派毁灭博士，多元宇宙英雄大集结。罗素兄弟操刀，《终局之战》的味道回来了。首周末票会很紧张，建议提前订。",
+      tags: [
+        "漫威",
+        "超级英雄",
+        "12月上映"
+      ],
+      posterEmoji: "🛡️",
+      bgGradient: "linear-gradient(135deg,#16a34a,#14532d)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/9jlZ59UALLLOE279HMT19rP9XQs.jpg",
+      highlights: [
+        "🎬 导演 罗素兄弟（《复仇者联盟4：终局之战》）",
+        "🌟 Robert Downey Jr. · Chris Evans · Chris Hemsworth · Pedro Pascal · Florence Pugh",
+        "🎬 影片特色 小罗伯特·唐尼化身毁灭博士 · 多元宇宙大集结"
+      ],
+      badge: "hot",
+      badgeText: "🔥 12/17 上映",
+      ageGuide: "分级待定 · 预计 PG13"
+    },
+    {
+      active: true,
+      id: "jumanji-open-world-2026-12",
+      title: "Jumanji: Open World",
+      chineseTitle: "勇敢者游戏3：失控世界",
+      type: "family",
+      rating: 7,
+      releaseDate: "2026-12-24",
+      genre: "冒险 / 喜剧",
+      language: "英语 · 中文字幕",
+      duration: "待公布",
+      cast: "Dwayne Johnson · Kevin Hart · Jack Black · Karen Gillan · Awkwafina",
+      director: "Jake Kasdan",
+      description: "圣诞档合家欢首选！原班人马回归，这次游戏冲出主机闯进现实世界。巨石强森和凯文·哈特的斗嘴照样好笑，7–9 岁孩子会看得很开心，平安夜一家人去影院正合适。",
+      tags: [
+        "合家欢",
+        "冒险",
+        "喜剧",
+        "圣诞档"
+      ],
+      posterEmoji: "🎲",
+      bgGradient: "linear-gradient(135deg,#22c55e,#713f12)",
+      posterUrl: "https://image.tmdb.org/t/p/w500/ntjF2gemedf3ZcWzARGt6cuZlnJ.jpg",
+      highlights: [
+        "🎬 导演 Jake Kasdan（《勇敢者游戏：决战丛林》）",
+        "🌟 Dwayne Johnson · Kevin Hart · Jack Black · Karen Gillan · Awkwafina",
+        "🎬 影片特色 原班人马回归 · 圣诞档合家欢"
+      ],
+      badge: "new",
+      badgeText: "🆕 12/24 上映",
+      ageGuide: "分级待定 · 预计适合全家"
     },
   ]
 
