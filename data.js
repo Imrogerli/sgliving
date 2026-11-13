@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-11-12
+ * 最后更新：2026-11-13
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-11-12",
+    lastUpdated: "2026-11-13",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -6652,6 +6652,139 @@ const SGLIVING_DATA = {
       "ratingDesc": "XL 参鸡汤锅 · 鲍鱼紫苏拌面",
       "active": true
     },
+    {
+      "id": "hi-bowl-haidilao-wilkie-edge-2026-11",
+      "name": "Hi Bowl 海底捞旗下麻辣烫（Wilkie Edge 新加坡首店）",
+      "categories": [
+        "restaurant",
+        "snack"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$12–18/人",
+      "description": "姐妹们！海底捞自己开的麻辣烫来新加坡了！！11 月 3 日 Wilkie Edge 开张，自选 100 多种食材，按重量算 S$2.98/100g，汤底免费：麻辣牛奶、金汤酸菜、番茄、东北麻辣拌都有，东北麻辣拌绝绝子！炸鲜奶 S$4.80 必点，外酥里嫩像小时候的味道。营业到凌晨 1 点，下班夜宵完美。消费满 S$10 发小红书带 #HiBowlSingapore 还送公仔，冲！",
+      "tags": [
+        "小红书爆款",
+        "麻辣烫",
+        "海底捞",
+        "中国品牌",
+        "夜宵"
+      ],
+      "address": "8 Wilkie Road, #01-22, Wilkie Edge, Singapore 228095",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🌶️",
+      "bgGradient": "linear-gradient(135deg,#fecaca,#b91c1c)",
+      "catLabel": "麻辣烫",
+      "catDesc": "海底捞出品 / Rochor",
+      "ratingDesc": "自选称重 · 炸鲜奶 · 营业至凌晨 1 点",
+      "active": true
+    },
+    {
+      "id": "ruxu-tampines-mall-2026-10",
+      "name": "RUXU 入续鸳鸯糖水铺（Tampines Mall 二店）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-10",
+      "price": "S$8–15/人",
+      "description": "广州来的新中式糖水铺入续，Funan 那家天天排队，现在东部的姐妹也有福了！Tampines Mall B1 开了二店。招牌娟姗奶大满贯 S$9.70 料超足，杨枝甘露 S$8.30 芒果给得很大方，糖度只有七成，不腻！焦糖蛋挞和开心果芝士包手慢就没，建议下午早点去。避雷提醒：抹茶芋泥偏苦，不爱苦味的姐妹慎点～",
+      "tags": [
+        "小红书爆款",
+        "糖水",
+        "广州品牌",
+        "中式甜品",
+        "低糖"
+      ],
+      "address": "4 Tampines Central 5, #B1-K2/K3, Tampines Mall, Singapore 529510",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🥭",
+      "bgGradient": "linear-gradient(135deg,#fef3c7,#d97706)",
+      "catLabel": "中式糖水",
+      "catDesc": "广州新中式糖水 / Tampines",
+      "ratingDesc": "娟姗奶大满贯 · 杨枝甘露 · 焦糖蛋挞",
+      "active": true
+    },
+    {
+      "id": "shan-li-you-jewel-changi-2026-10",
+      "name": "山里有 SHAN（Jewel 星耀樟宜 · 云南菜）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-10",
+      "price": "S$25–40/人（估）",
+      "description": "想吃云南菜的朋友终于有地方去了！山里有在 Jewel 二楼开了店，主打野生菌和食用花。网友口碑最好的是松茸松露鸡蛋饭，松露香气很冲；野山椒酸汤牛肉开胃又过瘾，荔枝咕噜肉酸甜口，小朋友也爱吃。还能 DIY 一壶云南花茶（S$1.90/位），带爸妈去机场逛完顺便吃一顿很合适。",
+      "tags": [
+        "云南菜",
+        "中国品牌",
+        "野生菌",
+        "家庭友好"
+      ],
+      "address": "78 Airport Boulevard, #02-217, Jewel Changi Airport, Singapore 819666",
+      "badge": "new",
+      "badgeText": "🆕 新开业",
+      "emoji": "🍄",
+      "bgGradient": "linear-gradient(135deg,#bbf7d0,#15803d)",
+      "catLabel": "云南菜",
+      "catDesc": "野生菌 / Jewel Changi",
+      "ratingDesc": "松露鸡蛋饭 · 酸汤牛肉 · 荔枝咕噜肉",
+      "active": true
+    },
+    {
+      "id": "yeah-gelato-jurong-point-2026-11",
+      "name": "野人先生 Yeah Gelato（Jurong Point 新店）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$8–10/杯",
+      "description": "北京来的野人先生在 Jurong Point 开新店了，还上了一波中国风新口味：陈醋味（S$9.80）听着离谱，吃起来像淡淡的焦糖，意外好吃；麻辣花生像花生酱冰淇淋带一点麻香，基本不辣；山楂味就是小时候的山楂片！西部的家庭周末逛完商场来一杯刚好。",
+      "tags": [
+        "意式冰淇淋",
+        "北京品牌",
+        "中国风口味",
+        "西部"
+      ],
+      "address": "1 Jurong West Central 2, #01-58/59, Jurong Point, Singapore 648886",
+      "badge": "new",
+      "badgeText": "🆕 新店开业",
+      "emoji": "🍨",
+      "bgGradient": "linear-gradient(135deg,#fde2e4,#a21caf)",
+      "catLabel": "冰淇淋",
+      "catDesc": "北京 Gelato / Jurong West",
+      "ratingDesc": "陈醋 · 麻辣花生 · 山楂",
+      "active": true
+    },
+    {
+      "id": "gamja-boon-tat-street-2026-10",
+      "name": "Gamja 韩式土豆排骨汤（Boon Tat Street）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-10",
+      "price": "S$16–35/人",
+      "description": "天气一凉就想喝热汤。Gamja 专做韩式土豆排骨汤（甘子汤），有白汤和传统辣汤两种，大块猪脊骨炖到脱骨，土豆吸满汤汁。午市一人份 S$15.80 起，晚上点个分享锅（S$53 起）一家人围着吃，白汤版不辣，孩子也能喝。芝士土豆沙拉也是招牌。",
+      "tags": [
+        "韩餐",
+        "排骨汤",
+        "家庭聚餐",
+        "CBD"
+      ],
+      "address": "21 Boon Tat Street, Singapore 069620",
+      "badge": "new",
+      "badgeText": "🆕 新开业",
+      "emoji": "🥘",
+      "bgGradient": "linear-gradient(135deg,#fed7aa,#c2410c)",
+      "catLabel": "韩餐",
+      "catDesc": "土豆排骨汤 / Telok Ayer",
+      "ratingDesc": "白汤甘子汤 · 分享锅 · 芝士土豆沙拉",
+      "active": true
+    },
   ],
 
 
@@ -12159,6 +12292,116 @@ const SGLIVING_DATA = {
       "btnText": "Ticketmaster 搜索",
       "active": true
     },
+    {
+      "id": "5sos-star-theatre-2026-12-03",
+      "name": "5 Seconds of Summer · EVERYONE'S A STAR! 新加坡加场",
+      "type": "concert",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "3",
+      "dow": "周四",
+      "sortDate": "2026-12-03",
+      "dateColor": "linear-gradient(135deg,#f472b6,#7c3aed)",
+      "typeLabel": "🎸 流行摇滚",
+      "typeColor": "#7c3aed",
+      "description": "11 月 16 日首场已售罄，5SOS 在 The Star Theatre 加开 12 月 3 日一场！错过首场的朋友抓紧，《Youngblood》《She Looks So Perfect》现场大合唱。",
+      "venue": "The Star Theatre, 1 Vista Exchange Green, Singapore 138617",
+      "dateRange": "12月3日（周四）",
+      "ticketInfo": "🎟️ Ticketmaster 发售中",
+      "price": "S$148 起",
+      "priceNote": "以 Ticketmaster 页面为准",
+      "ticketUrl": "https://ticketmaster.sg/activity/detail/26sg_5sos",
+      "btnText": "Ticketmaster 购票",
+      "active": true
+    },
+    {
+      "id": "enemies-with-benefits-fanmeet-2026-12",
+      "name": "泰剧《Enemies with Benefits》新加坡粉丝见面会",
+      "type": "event",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "5",
+      "dow": "周六",
+      "sortDate": "2026-12-05",
+      "dateColor": "linear-gradient(135deg,#fb7185,#be123c)",
+      "typeLabel": "💞 粉丝见面会",
+      "typeColor": "#be123c",
+      "description": "泰剧主演 Jan、JingJing、Kapook、Ciize 来新加坡开粉丝见面会，游戏互动 + 现场演唱，泰剧迷不要错过。",
+      "venue": "D'Marquee @ Downtown East, 1 Pasir Ris Close, Singapore 519599",
+      "dateRange": "12月5日（周六）",
+      "ticketInfo": "🎟️ Ticketmelon 发售中",
+      "price": "S$198 起",
+      "priceNote": "以 Ticketmelon 页面为准",
+      "ticketUrl": "https://www.ticketmelon.com/freeplay/EnemiesWithBenefitsFMSG",
+      "btnText": "Ticketmelon 购票",
+      "active": true
+    },
+    {
+      "id": "jay-chou-carnival-ii-national-stadium-2027-01",
+      "name": "周杰伦「嘉年华 II」世界巡回演唱会 新加坡站",
+      "type": "concert",
+      "priority": "featured",
+      "month": "JAN",
+      "day": "8",
+      "dow": "周五",
+      "sortDate": "2027-01-08",
+      "dateColor": "linear-gradient(135deg,#facc15,#b45309)",
+      "typeLabel": "🎤 华语天王",
+      "typeColor": "#b45309",
+      "description": "周董来了！嘉年华 II 世界巡演新加坡站在国家体育场连开三场，《晴天》《稻香》《七里香》全场大合唱，华人家庭的青春回忆，强烈建议提前蹲票。",
+      "venue": "National Stadium, 1 Stadium Drive, Singapore 397629",
+      "dateRange": "2027年1月8日（周五）8pm、9–10日 7:30pm",
+      "ticketInfo": "🎟️ Ticketmaster 售票，热门场次请留意官方公告",
+      "price": "S$238 起",
+      "priceNote": "以 Ticketmaster 页面为准",
+      "ticketUrl": "https://ticketmaster.sg/activity/detail/27sg_jaychou",
+      "btnText": "Ticketmaster 购票",
+      "active": true
+    },
+    {
+      "id": "bts-city-arirang-art-trail-national-gallery-2026-12",
+      "name": "BTS THE CITY ARIRANG × Pop after Pop 艺术路线（国家美术馆）",
+      "type": "exhibition",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "11",
+      "dow": "周五",
+      "sortDate": "2026-12-11",
+      "dateColor": "linear-gradient(135deg,#a78bfa,#4c1d95)",
+      "typeLabel": "🎨 艺术展览",
+      "typeColor": "#6d28d9",
+      "description": "配合 BTS 新加坡四场演唱会，国家美术馆推出 BTS 主题艺术路线，串联《Pop after Pop》波普大展，有导览和自助两种玩法。ARMY 演唱会前后的打卡首选。",
+      "venue": "National Gallery Singapore, 1 St Andrew's Road, Singapore 178957",
+      "dateRange": "12月11日–31日",
+      "ticketInfo": "🎟️ 11月17日起官网开售",
+      "price": "以官网为准",
+      "priceNote": "导览 / 自助两种票型",
+      "ticketUrl": "http://nationalgallery.sg/BTSTHECITYARIRANG",
+      "btnText": "官网详情",
+      "active": true
+    },
+    {
+      "id": "orchard-road-christmas-light-up-2026",
+      "name": "乌节路圣诞灯饰 Christmas on A Great Street 2026",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "13",
+      "dow": "周五",
+      "sortDate": "2026-11-13",
+      "dateColor": "linear-gradient(135deg,#22c55e,#b91c1c)",
+      "typeLabel": "🎄 节日活动",
+      "typeColor": "#15803d",
+      "description": "乌节路圣诞灯饰已经亮起，沿街有圣诞村、游戏摊位、嘉年华游乐设施和人造雪表演。免费逛，晚上带全家去拍照最有氛围。",
+      "venue": "Orchard Road（Tanglin Mall 至 Plaza Singapura 沿线）",
+      "dateRange": "即日起至 2027年1月1日",
+      "ticketInfo": "🆓 免费开放",
+      "price": "免费",
+      "priceNote": "部分游乐设施另收费",
+      "ticketUrl": "https://christmas.orchardroad.org/",
+      "btnText": "官网详情",
+      "active": true
+    },
   ],
 
 
@@ -15749,6 +15992,51 @@ const SGLIVING_DATA = {
       "duration": "约 1.5 小时",
       "bookingUrl": "https://www.nationalgallery.sg/PopAfterPop"
     },
+    {
+      "active": true,
+      "id": "sweet-christmas-village-downtown-east-2026-11",
+      "name": "Downtown East 甜蜜圣诞村 A Sweet Christmas",
+      "icon": "🍭",
+      "topGradient": "linear-gradient(90deg,#f472b6,#22c55e)",
+      "ageRange": "3–12 岁",
+      "description": "糖果主题圣诞村，免费入场，有泡泡秀、圣诞颂歌、现场音乐和砸彩罐；隔壁 Wild Wild Wet 水上乐园同步推出糖果主题漂流。",
+      "highlight": "7–9 岁孩子精力旺盛，白天去 Wild Wild Wet 玩水、傍晚逛圣诞村看泡泡秀，一天放电完毕；免费入场很省心",
+      "location": "Downtown East, 1 Pasir Ris Close, Singapore 519599",
+      "dateRange": "11月16日–12月31日（每日 10am–10pm）",
+      "cost": "圣诞村免费；Wild Wild Wet 儿童 S$21 起",
+      "duration": "半天",
+      "bookingUrl": "https://www.downtowneast.com.sg/whats-on/events/details/a-sweet-christmas"
+    },
+    {
+      "active": true,
+      "id": "luge-max-skyline-sentosa-2026-11",
+      "name": "Skyline Luge「Luge MAX」10 次滑车集章套票",
+      "icon": "🛷",
+      "topGradient": "linear-gradient(90deg,#38bdf8,#f97316)",
+      "ageRange": "6 岁以上（8 岁以下建议走 Jungle 赛道）",
+      "description": "S$49 玩 10 次，四条赛道任选，每滑一次盖一个章，集章可在 Siloso Beach 的 Coastes 兑换小零食。仅限周二至周四。",
+      "highlight": "7–9 岁正是爱刺激又能自己控制滑车的年纪，集章玩法让孩子很有成就感；7 岁宝宝建议先从平缓的 Jungle 赛道开始",
+      "location": "Skyline Luge Sentosa, 45 Siloso Beach Walk, Singapore 099003",
+      "dateRange": "即日起至 12月17日（仅周二至周四）",
+      "cost": "S$49 / 10 次",
+      "duration": "约 2 小时",
+      "bookingUrl": "https://sentosa.skylineluge.com/luge-max/"
+    },
+    {
+      "active": true,
+      "id": "changi-festive-village-pokemon-2026-11",
+      "name": "樟宜机场节日村 Changi Festive Village（宝可梦主题）",
+      "icon": "⚡",
+      "topGradient": "linear-gradient(90deg,#facc15,#ef4444)",
+      "ageRange": "4–12 岁",
+      "description": "樟宜机场 T3 节日村今年是宝可梦主题，有嘉年华游戏、人造雪表演和角色见面会，免费参观。",
+      "highlight": "宝可梦几乎是 7–9 岁孩子的必修课，见到皮卡丘会非常兴奋；室内场地不怕下雨，顺便看飞机",
+      "location": "Changi Airport Terminal 3, 65 Airport Boulevard, Singapore 819663",
+      "dateRange": "11月7日–2027年初",
+      "cost": "免费（部分游戏需消费兑换）",
+      "duration": "约 2 小时",
+      "bookingUrl": "https://www.changiairport.com/en/discover/events.html"
+    },
   ],
 
 
@@ -18736,6 +19024,198 @@ const SGLIVING_DATA = {
       "badge": "new",
       "badgeText": "🆕 11/12 上映",
       "ageGuide": "PG13 · 有惊吓场面，建议 12 岁以上",
+      "active": true
+    },
+    {
+      "id": "the-land-of-sometimes-2026-11",
+      "title": "The Land of Sometimes",
+      "chineseTitle": "幻时之境",
+      "type": "family",
+      "rating": 6.6,
+      "releaseDate": "2026-11-05",
+      "genre": "动画 / 歌舞 / 奇幻",
+      "language": "英语",
+      "duration": "94 分钟",
+      "cast": "Ewan McGregor · Helena Bonham Carter · Alisha Weir · Mel Brooks",
+      "director": "Leon Joosen",
+      "description": "圣诞档的温馨动画歌舞片，一对双胞胎捡到能许愿的怀表，闯进奇幻世界，学会「愿望也有代价」。PG 级，歌好听、画面梦幻，伊万·麦克格雷格和海伦娜·伯翰·卡特献声，7–9 岁孩子正合适，全家一起看很温暖。",
+      "tags": [
+        "动画",
+        "圣诞",
+        "PG",
+        "亲子"
+      ],
+      "posterEmoji": "⏱️",
+      "bgGradient": "linear-gradient(135deg,#a5b4fc,#be185d)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/uEZAx4Rk42hv8bfrXC9pyQPWErw.jpg",
+      "highlights": [
+        "🎬 导演 Leon Joosen（《拯救圣诞老人》联合导演）",
+        "🌟 Ewan McGregor · Helena Bonham Carter · Alisha Weir · Mel Brooks",
+        "🎄 影片特色 圣诞主题原创歌舞动画，适合全家"
+      ],
+      "badge": "hot",
+      "badgeText": "👨‍👩‍👧 亲子推荐",
+      "ageGuide": "PG · 有少量紧张场面，7 岁以上可看",
+      "active": true
+    },
+    {
+      "id": "v-kong-qiang-2026-10",
+      "title": "V",
+      "chineseTitle": "空枪",
+      "type": "chinese",
+      "rating": 7.2,
+      "releaseDate": "2026-10-29",
+      "genre": "犯罪 / 动作",
+      "language": "国语 / 粤语",
+      "duration": "160 分钟",
+      "cast": "朱一龙 · 谭建次 · 梁家辉 · 卫诗雅 · 惠英红",
+      "director": "韩延",
+      "description": "九十年代港式警匪大片的味道回来了！朱一龙演码头工人，一场大劫案后被内地和香港两位警察同时追捕，梁家辉、惠英红坐镇。韩延导演把节奏拍得很紧。M18 有暴力场面，适合爸妈约会夜看，不适合带孩子。新加坡有国语和粤语两个版本。",
+      "tags": [
+        "华语片",
+        "港式警匪",
+        "M18",
+        "正在上映"
+      ],
+      "posterEmoji": "🔫",
+      "bgGradient": "linear-gradient(135deg,#1e293b,#b45309)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/rNqQQ3hFknhKpy8OTyGfzk7FY20.jpg",
+      "highlights": [
+        "🎬 导演 韩延（《滚蛋吧！肿瘤君》《送你一朵小红花》）",
+        "🌟 朱一龙 · 谭建次 · 梁家辉 · 卫诗雅 · 惠英红",
+        "📍 影片特色 九十年代香港背景，国语 / 粤语双版本上映"
+      ],
+      "badge": "hot",
+      "badgeText": "🔥 华语热映",
+      "ageGuide": "M18 · 暴力及粗口，不适合儿童",
+      "active": true
+    },
+    {
+      "id": "further-mis-adventures-of-cliff-booth-2026-11",
+      "title": "The Further Mis-Adventures of Cliff Booth",
+      "chineseTitle": "克里夫·布斯的惊险再冒险",
+      "type": "coming-soon",
+      "rating": 7.8,
+      "releaseDate": "2026-11-25",
+      "genre": "犯罪 / 喜剧 / 剧情",
+      "language": "英语",
+      "duration": "141 分钟",
+      "cast": "Brad Pitt · Elizabeth Debicki · Scott Caan · Yahya Abdul-Mateen II · Carla Gugino",
+      "director": "David Fincher",
+      "description": "芬奇导演 + 昆汀编剧 + 布拉德·皮特，光这个组合就值回票价。皮特再演《好莱坞往事》里的替身演员克里夫，1977 年洛杉矶的江湖故事。Netflix 出品，新加坡 Shaw 安排 IMAX 场次，大银幕机会难得，影迷建议早点订。M18，大人专属。",
+      "tags": [
+        "IMAX",
+        "大导演",
+        "M18",
+        "即将上映"
+      ],
+      "posterEmoji": "🎞️",
+      "bgGradient": "linear-gradient(135deg,#f59e0b,#7c2d12)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+      "highlights": [
+        "🎬 导演 David Fincher（《搏击俱乐部》《社交网络》），昆汀·塔伦蒂诺编剧",
+        "🌟 Brad Pitt · Elizabeth Debicki · Scott Caan · Yahya Abdul-Mateen II · Carla Gugino",
+        "🎬 影片特色 《好莱坞往事》衍生续作，Shaw IMAX LASER 限定放映"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 11/25 上映",
+      "ageGuide": "M18 · 粗口及性场面，仅限成人",
+      "active": true
+    },
+    {
+      "id": "i-play-rocky-2026-12",
+      "title": "I Play Rocky",
+      "chineseTitle": "我演洛奇",
+      "type": "coming-soon",
+      "rating": 7,
+      "releaseDate": "2026-12-03",
+      "genre": "传记 / 剧情",
+      "language": "英语",
+      "duration": "129 分钟",
+      "cast": "Anthony Ippolito · AnnaSophia Robb · P.J. Byrne · Toby Kebbell · Jay Duplass",
+      "director": "Peter Farrelly",
+      "description": "史泰龙当年还是无名小卒，却坚持「不让我演洛奇就不卖剧本」——这部片讲的就是这段真实的逆袭故事。《绿皮书》导演法雷里执导，励志又好哭，适合需要打鸡血的上班族。NC16，大孩子以上。",
+      "tags": [
+        "传记",
+        "励志",
+        "NC16",
+        "即将上映"
+      ],
+      "posterEmoji": "🥊",
+      "bgGradient": "linear-gradient(135deg,#ef4444,#1e3a8a)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/xE5tY3lppZUyG7WKKThsuYHuAHr.jpg",
+      "highlights": [
+        "🎬 导演 Peter Farrelly（《绿皮书》《我为玛丽狂》）",
+        "🌟 Anthony Ippolito · AnnaSophia Robb · P.J. Byrne · Toby Kebbell · Jay Duplass",
+        "🏆 影片特色 史泰龙《洛奇》幕后真实故事改编"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 12/3 上映",
+      "ageGuide": "NC16 · 含性暗示，16 岁以上",
+      "active": true
+    },
+    {
+      "id": "bitter-christmas-almodovar-2026-12",
+      "title": "Bitter Christmas",
+      "chineseTitle": "苦涩的圣诞节",
+      "type": "coming-soon",
+      "rating": 7.3,
+      "releaseDate": "2026-12-03",
+      "genre": "剧情 / 喜剧",
+      "language": "西班牙语",
+      "duration": "111 分钟",
+      "cast": "Bárbara Lennie · Leonardo Sbaraglia · Aitana Sánchez-Gijón · Victoria Luengo · Milena Smit",
+      "director": "Pedro Almodóvar",
+      "description": "阿莫多瓦新片，一个广告导演 2004 年混乱的圣诞周末，二十年后变成另一位导演的剧本，戏里戏外互相映照。色彩浓烈、人物鲜活，文艺片爱好者的年末必看。NC16。",
+      "tags": [
+        "文艺片",
+        "大师新作",
+        "NC16",
+        "即将上映"
+      ],
+      "posterEmoji": "🎄",
+      "bgGradient": "linear-gradient(135deg,#dc2626,#065f46)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/kiPGcHX0YT49nrab76G0bqw3gHW.jpg",
+      "highlights": [
+        "🎬 导演 Pedro Almodóvar（《对她说》《痛苦与荣耀》）",
+        "🌟 Bárbara Lennie · Leonardo Sbaraglia · Aitana Sánchez-Gijón · Victoria Luengo · Milena Smit",
+        "🎬 影片特色 戏中戏结构，阿莫多瓦标志性浓烈色彩"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 12/3 上映",
+      "ageGuide": "NC16 · 成人题材，16 岁以上",
+      "active": true
+    },
+    {
+      "id": "a-talent-for-murder-2026-12",
+      "title": "A Talent for Murder",
+      "chineseTitle": "谋杀天赋",
+      "type": "coming-soon",
+      "rating": 6.9,
+      "releaseDate": "2026-12-31",
+      "genre": "惊悚 / 犯罪",
+      "language": "英语",
+      "duration": "105 分钟",
+      "cast": "Helen Mirren · Alden Ehrenreich · Olivia Cooke · Juliet Stevenson",
+      "director": "Anton Corbijn",
+      "description": "海伦·米伦演《天才雷普利》作者海史密斯本人！出版社小伙去瑞士劝她再写一本雷普利，结果说服变成了心理博弈。悬疑迷跨年夜可以安排上。M18。",
+      "tags": [
+        "心理惊悚",
+        "M18",
+        "跨年档",
+        "即将上映"
+      ],
+      "posterEmoji": "🖋️",
+      "bgGradient": "linear-gradient(135deg,#475569,#0f172a)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
+      "highlights": [
+        "🎬 导演 Anton Corbijn（《控制》《美国人》）",
+        "🌟 Helen Mirren · Alden Ehrenreich · Olivia Cooke · Juliet Stevenson",
+        "🎬 影片特色 海伦·米伦饰演悬疑作家 Patricia Highsmith"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 12/31 上映",
+      "ageGuide": "M18 · 性场面，仅限成人",
       "active": true
     },
   ]
