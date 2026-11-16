@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-11-13
+ * 最后更新：2026-11-16
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-11-13",
+    lastUpdated: "2026-11-16",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -6785,6 +6785,110 @@ const SGLIVING_DATA = {
       "ratingDesc": "白汤甘子汤 · 分享锅 · 芝士土豆沙拉",
       "active": true
     },
+    {
+      "id": "lingzhi-greens-palais-renaissance-2026-09",
+      "name": "LingZhi Greens 灵芝素食（35 年老牌素食焕新 · Palais Renaissance）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-09",
+      "price": "S$30–60/人",
+      "description": "1991 年就开业的灵芝素食换了新名字新装修，搬进乌节路 Palais Renaissance。菜式还是熟悉的中式素菜路线，但做得更精致：松露蘑菇浓汤 S$14、麻辣菌菇拼盘 S$29.8、素鹅卷 S$26，素食也能吃出大菜的满足感。带长辈初一十五吃斋、或者全家想清淡一餐，都很合适，甜品 S$6 起。",
+      "tags": [
+        "中式素食",
+        "老字号焕新",
+        "适合长辈",
+        "乌节路"
+      ],
+      "address": "390 Orchard Road, #B1-04/05 Palais Renaissance, Singapore 238871",
+      "badge": "new",
+      "badgeText": "🆕 焕新重开",
+      "emoji": "🥬",
+      "bgGradient": "linear-gradient(135deg,#84cc16,#14532d)",
+      "catLabel": "中式素食",
+      "catDesc": "35 年老牌 / 乌节路",
+      "ratingDesc": "素鹅卷 · 松露蘑菇汤",
+      "active": true
+    },
+    {
+      "id": "calendar-coffee-south-bridge-2026-11",
+      "name": "Calendar Coffee（法式吐司 & 戚风 · South Bridge Road）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$8–20/人",
+      "description": "牛车水 South Bridge Road 新开的小咖啡馆（原 September Coffee 的铺位），主打厚切法式吐司：经典款 S$8，豪华版帕尔马火腿配布里芝士和无花果 S$15。饮品很有东方味——桂花麻薯抹茶 S$9.5、焙茶味噌焦糖 S$9、烤米拿铁 S$9，逛完佛牙寺顺路坐下歇脚刚好。周一休息哦。",
+      "tags": [
+        "咖啡馆",
+        "法式吐司",
+        "桂花抹茶",
+        "牛车水"
+      ],
+      "address": "258 South Bridge Road, #01-01, Singapore 058807",
+      "badge": "new",
+      "badgeText": "🆕 11月新店",
+      "emoji": "🍞",
+      "bgGradient": "linear-gradient(135deg,#fbbf24,#92400e)",
+      "catLabel": "咖啡甜品",
+      "catDesc": "法式吐司 / 牛车水",
+      "ratingDesc": "法式吐司 · 桂花麻薯抹茶",
+      "active": true
+    },
+    {
+      "id": "reference-room-cafe-tras-street-2026-11",
+      "name": "Reference Room Cafe（蛋糕 + 古董表廊 · Tras Street）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$10–25/人",
+      "description": "很特别的一家：咖啡馆 + 蛋糕店 + 古董腕表展廊三合一。蛋糕是重点，太妃枣核桃蛋糕 S$10.5、招牌提拉米苏 S$14，咸食有日式炸鸡 S$10。环境安静有格调，在丹戎巴葛上班的姐妹下午茶首选，爸爸们还能顺便看看老表。周一休息。",
+      "tags": [
+        "蛋糕",
+        "提拉米苏",
+        "下午茶",
+        "丹戎巴葛"
+      ],
+      "address": "46 Tras Street, Singapore 078985",
+      "badge": "new",
+      "badgeText": "🆕 11月新店",
+      "emoji": "🍰",
+      "bgGradient": "linear-gradient(135deg,#a78bfa,#4c1d95)",
+      "catLabel": "咖啡甜品",
+      "catDesc": "蛋糕 / 古董表廊",
+      "ratingDesc": "提拉米苏 · 太妃枣蛋糕",
+      "active": true
+    },
+    {
+      "id": "petra-harding-road-2026-11",
+      "name": "Petra（东地中海料理 · Dempsey Harding Road）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$50–90/人",
+      "description": "Dempsey 绿荫里新开的东地中海餐厅，三拼蘸酱 mezze S$32 配热乎乎的饼一上桌就停不下来，羊腿肉丸 kofte、鸡肉沙威玛串都是 S$32，甜品一定留肚子给拉丝的 kunafah（S$24）。周末带孩子去 Dempsey 散步后吃一顿，环境松弛又好拍。周二休息。",
+      "tags": [
+        "地中海菜",
+        "Dempsey",
+        "周末聚餐",
+        "烤肉"
+      ],
+      "address": "40C Harding Road, Singapore 249548",
+      "badge": "new",
+      "badgeText": "🆕 11月新店",
+      "emoji": "🥙",
+      "bgGradient": "linear-gradient(135deg,#f97316,#7c2d12)",
+      "catLabel": "地中海菜",
+      "catDesc": "东地中海 / Dempsey",
+      "ratingDesc": "Mezze 拼盘 · Kunafah",
+      "active": true
+    },
   ],
 
 
@@ -7139,7 +7243,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/everland2026",
       btnText: "SISTIC 购票",
       sortDate: "2026-11-15",
-      active: true
+      active: false
     },
 
     {
@@ -12070,7 +12174,7 @@ const SGLIVING_DATA = {
       "priceNote": "以 Ticketmaster 页面为准",
       "ticketUrl": "https://ticketmaster.sg/activity/detail/26sg_lucy",
       "btnText": "Ticketmaster 购票",
-      "active": true
+      "active": false
     },
     {
       "id": "youngcaptain-rwcc-2026-11",
@@ -12092,7 +12196,7 @@ const SGLIVING_DATA = {
       "priceNote": "以 BookMyShow 页面为准",
       "ticketUrl": "https://bookmyshow.sg/en/events/dui-chang-youngcaptaini-am-what-i-am-shi-jie-xun-hui-yan-chang-hui-xin-jia-po-zhan/YCSG2026",
       "btnText": "BookMyShow 购票",
-      "active": true
+      "active": false
     },
     {
       "id": "takase-toya-esplanade-2026-11",
@@ -12114,7 +12218,7 @@ const SGLIVING_DATA = {
       "priceNote": "小场演出，名额有限",
       "ticketUrl": "https://bookmyshow.sg/en/events/takase-toya-sg/INFINITY",
       "btnText": "BookMyShow 购票",
-      "active": true
+      "active": false
     },
     {
       "id": "nutcracker-state-ballet-georgia-mbs-2026-11",
@@ -12400,6 +12504,94 @@ const SGLIVING_DATA = {
       "priceNote": "部分游乐设施另收费",
       "ticketUrl": "https://christmas.orchardroad.org/",
       "btnText": "官网详情",
+      "active": true
+    },
+    {
+      "id": "home-team-festival-suntec-2026-11",
+      "name": "Home Team Festival 2026（内政团队嘉年华 · 新达城）",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "20",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#2563eb,#1e3a8a)",
+      "typeLabel": "🎪 嘉年华",
+      "typeColor": "#2563eb",
+      "description": "新加坡警察、民防、移民局等内政部门联合办的大型开放嘉年华，在新达城 3–4 楼展厅举行。可以近距离看警车消防装备、玩互动体验和游戏摊位，孩子们一般玩得停不下来，是年底假期带娃的免费好去处（以官网公布为准）。",
+      "venue": "Suntec Singapore Convention Centre, L3 Concourse & L4 Halls 401–406, 1 Raffles Boulevard, Singapore 039593",
+      "dateRange": "11月20日（周五）–11月22日（周日）",
+      "ticketInfo": "🎟️ 详情及登记见官网",
+      "price": "以官网为准",
+      "priceNote": "适合全家 · 亲子友好",
+      "ticketUrl": "https://hometeamfestival26.com/",
+      "btnText": "查看官网",
+      "sortDate": "2026-11-20",
+      "active": true
+    },
+    {
+      "id": "enabling-lives-festival-2026-11",
+      "name": "Enabling Lives Festival 2026（共融生活节 · 70+ 项活动）",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "28",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#14b8a6,#134e4a)",
+      "typeLabel": "🤝 共融节",
+      "typeColor": "#14b8a6",
+      "description": "在 Enabling Village 和红山一带举办的共融主题节庆，70 多项演出、工作坊、市集和体验活动，主角是残障人士和照护者社群。很适合带孩子去感受「不一样也很好」，周末逛逛市集、看看表演，氛围温暖。",
+      "venue": "Enabling Village, 20 Lengkok Bahru, Singapore 159053 及红山一带",
+      "dateRange": "11月28日（周六）–11月29日（周日）",
+      "ticketInfo": "🎟️ 多数活动免费，部分需预约",
+      "price": "多数免费",
+      "priceNote": "部分工作坊需官网报名",
+      "ticketUrl": "https://enablinglivesfestival.sg/",
+      "btnText": "查看节目",
+      "sortDate": "2026-11-28",
+      "active": true
+    },
+    {
+      "id": "kampong-kakee-karnival-punggol-2026-11",
+      "name": "Kampong Kakee Karnival（POWER 98 甘榜嘉年华 · One Punggol）",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "28",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#f59e0b,#b45309)",
+      "typeLabel": "🎡 社区嘉年华",
+      "typeColor": "#f59e0b",
+      "description": "POWER 98FM 主办的社区嘉年华，在榜鹅 One Punggol 的 Celebration Square 和 The Plaza 两个场地，有舞台表演、游戏摊位和美食。住东北区的家庭周末顺路去凑热闹，轻松不用排长队。",
+      "venue": "One Punggol, Celebration Square & The Plaza, 1 Punggol Drive, Singapore 828629",
+      "dateRange": "11月28日（周六）–11月29日（周日）",
+      "ticketInfo": "🎟️ 详情见 One Punggol 官方 Facebook",
+      "price": "以主办方公布为准",
+      "priceNote": "社区活动 · 亲子友好",
+      "ticketUrl": "https://www.facebook.com/OnePunggol",
+      "btnText": "活动详情",
+      "sortDate": "2026-11-28",
+      "active": true
+    },
+    {
+      "id": "sacred-caves-dunhuang-acm-2026",
+      "name": "Sacred Caves：敦煌、佛教与丝绸之路特展（亚洲文明博物馆）",
+      "type": "exhibition",
+      "priority": "featured",
+      "month": "NOV",
+      "day": "16",
+      "dow": "周一",
+      "dateColor": "linear-gradient(135deg,#b45309,#451a03)",
+      "typeLabel": "🏛️ 特展",
+      "typeColor": "#b45309",
+      "description": "亚洲文明博物馆年度大展，把敦煌莫高窟的佛教艺术和丝绸之路的故事带到新加坡。中国家庭一定要带孩子去：飞天壁画、经卷、丝路贸易文物，回国前先补一堂「敦煌课」。馆内还有专为小朋友设计的集章任务，7–9 岁孩子边找边学不会无聊。",
+      "venue": "Asian Civilisations Museum, 1 Empress Place, Singapore 179555",
+      "dateRange": "即日起至 2027年3月7日",
+      "ticketInfo": "🎟️ 特展门票官网购买（新加坡公民/PR 有优惠）",
+      "price": "以官网为准",
+      "priceNote": "含儿童集章任务",
+      "ticketUrl": "https://www.nhb.gov.sg/acm/whats-on/exhibitions",
+      "btnText": "官网购票",
+      "sortDate": "2026-11-16",
       "active": true
     },
   ],
@@ -15948,7 +16140,7 @@ const SGLIVING_DATA = {
       "bookingUrl": "https://www.science.edu.sg/"
     },
     {
-      "active": true,
+      "active": false,
       "id": "defence-collective-festival-2026-11",
       "name": "Defence Collective Festival 2026 国防嘉年华",
       "icon": "✈️",
@@ -15963,7 +16155,7 @@ const SGLIVING_DATA = {
       "bookingUrl": "https://www.sdc.com.sg/"
     },
     {
-      "active": true,
+      "active": false,
       "id": "sso-family-film-favourites-2026-11",
       "name": "SSO 亲子音乐会：经典电影配乐",
       "icon": "🎻",
@@ -16037,6 +16229,81 @@ const SGLIVING_DATA = {
       "duration": "约 2 小时",
       "bookingUrl": "https://www.changiairport.com/en/discover/events.html"
     },
+    {
+      "active": true,
+      "id": "xventure-tiong-bahru-plaza-2026-11",
+      "name": "Xventure 室内冒险乐园（Tiong Bahru Plaza 新开）",
+      "icon": "🧗",
+      "topGradient": "linear-gradient(90deg,#f97316,#7c3aed)",
+      "ageRange": "4–12 岁（全年龄可玩）",
+      "description": "11 月 20 日在 Tiong Bahru Plaza 新开的室内冒险乐园，攀爬、绳索、障碍闯关等项目按难度分级，不同年龄和胆量都能找到适合的挑战。",
+      "highlight": "7–9 岁正是精力过剩、爱挑战的年纪，闯关式设计能锻炼平衡和勇气；室内有空调，下雨天也不怕",
+      "location": "Tiong Bahru Plaza, 302 Tiong Bahru Road, Singapore 168732",
+      "dateRange": "11月20日起开放",
+      "cost": "以官网票价为准",
+      "duration": "约 1.5–2 小时",
+      "bookingUrl": "https://xventurepark.com/outlets/tiong-bahru-plaza"
+    },
+    {
+      "active": true,
+      "id": "activesg-punggol-sport-centre-opening-2026-11",
+      "name": "ActiveSG 榜鹅体育中心开幕日（泳池健身房全天免费）",
+      "icon": "🏊",
+      "topGradient": "linear-gradient(90deg,#0ea5e9,#1e40af)",
+      "ageRange": "全年龄",
+      "description": "全新的 ActiveSG 榜鹅体育中心 11 月 22 日正式开幕，拥有五个泳池的大型游泳馆等设施，开幕当天泳池和健身房全天免费开放。",
+      "highlight": "带 7–9 岁孩子来试水新泳池、熟悉场馆，以后年底假期的游泳课就有了新去处；免费又近，东北区家庭别错过",
+      "location": "ActiveSG Punggol Sport Centre, 11 Sentul Crescent, Singapore",
+      "dateRange": "11月22日（周日）",
+      "cost": "免费",
+      "duration": "半天",
+      "bookingUrl": "https://www.activesgcircle.gov.sg/things-to-do/events/Official-Opening-of-ActiveSG-Punggol-Sport-Centre"
+    },
+    {
+      "active": true,
+      "id": "kampung-play-kampung-kampus-2026-12",
+      "name": "Kampung Play 废料搭建乐园（Kampung Kampus）",
+      "icon": "🪵",
+      "topGradient": "linear-gradient(90deg,#65a30d,#713f12)",
+      "ageRange": "5–12 岁",
+      "description": "Ground-Up Initiative 在万礼 Kampung Kampus 举办的开放式游戏日，孩子们用回收木料、绳子、轮胎等材料自由搭建、动手创造，回归甘榜式玩耍。",
+      "highlight": "7–9 岁孩子动手能力和想象力正旺，没有标准答案的自由搭建特别能激发创造力，也能放下屏幕在大自然里玩一整天",
+      "location": "Kampung Kampus, 11 Chencharu Close, Singapore 769287",
+      "dateRange": "12月20日（周日）",
+      "cost": "需购票（以主办方公布为准）",
+      "duration": "约 3 小时",
+      "bookingUrl": "https://www.instagram.com/p/DfWUTNZTW2m/"
+    },
+    {
+      "active": true,
+      "id": "k-wave-christmas-adventure-cove-2026-11",
+      "name": "K-Wave Christmas 韩流圣诞水上乐园（Adventure Cove）",
+      "icon": "🌊",
+      "topGradient": "linear-gradient(90deg,#06b6d4,#db2777)",
+      "ageRange": "5 岁以上",
+      "description": "圣淘沙 Adventure Cove 水上乐园的韩流主题圣诞季，滑道、漂流河配上韩流音乐和节日装饰，门票即可参与。",
+      "highlight": "7–9 岁孩子已经能玩大部分滑道，热带过圣诞最爽就是泡在水里；可与同期的环球影城圣诞、Glowcean 海洋馆连成一日游",
+      "location": "Adventure Cove Waterpark, Resorts World Sentosa, 8 Sentosa Gateway, Singapore 098269",
+      "dateRange": "11月27日–2027年1月3日",
+      "cost": "水上乐园门票",
+      "duration": "半天",
+      "bookingUrl": "https://www.rwsentosa.com/en/guide-to-fun/christmas-season-of-joy-official-guide#k-wave-christmas"
+    },
+    {
+      "active": true,
+      "id": "snoopy-popup-library-plaza-singapura-2026-11",
+      "name": "史努比快闪图书馆（Plaza Singapura）",
+      "icon": "📚",
+      "topGradient": "linear-gradient(90deg,#facc15,#dc2626)",
+      "ageRange": "4–10 岁",
+      "description": "Plaza Singapura 3 楼的史努比主题快闪图书馆，可爱布景里摆满绘本和桥梁书，逛街时带孩子坐下来读一会儿。",
+      "highlight": "7–9 岁正是从绘本过渡到桥梁书的阶段，史努比漫画短小有趣，是培养英文阅读兴趣的好入口；免费、随到随看",
+      "location": "Plaza Singapura Level 3, 68 Orchard Road, Singapore 238839",
+      "dateRange": "10月27日起（快闪，结束日期待公布）",
+      "cost": "免费",
+      "duration": "约 30–60 分钟",
+      "bookingUrl": "https://www.capitaland.com/sg/malls/plazasingapura/en.html"
+    },
   ],
 
 
@@ -16092,7 +16359,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/15 上映",
       ageGuide: "预计 NC16 · 不建议儿童观看",
-      active: true
+      active: false
     },
     {
       id: "chimney-town-frozen-in-time-jff-2026-10",
@@ -16183,7 +16450,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/15 上映",
       ageGuide: "分级待定 · 建议 13 岁以上",
-      active: true
+      active: false
     },
 
     {
@@ -16632,7 +16899,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🎬 10/16 即将上映",
       ageGuide: "分级待公布 · 建议 10 岁以上",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-09-04 每日更新新增 ──────────
@@ -19216,6 +19483,38 @@ const SGLIVING_DATA = {
       "badge": "new",
       "badgeText": "🆕 12/31 上映",
       "ageGuide": "M18 · 性场面，仅限成人",
+      "active": true
+    },
+    {
+      "id": "live-long-2026-12",
+      "title": "Live Long",
+      "chineseTitle": "活久久",
+      "type": "chinese",
+      "rating": 7,
+      "releaseDate": "2026-12-31",
+      "genre": "爱情 / 剧情",
+      "language": "华语",
+      "duration": "待公布",
+      "cast": "陈立农 · 张艺凡 · 冯绍峰 · 孙怡洲",
+      "director": "陈国辉",
+      "description": "改编自霍九九的真实故事：一个被宣告时日无多的女孩，和爱人踏上一段摇滚味十足的公路旅行。跨年档最适合情侣、夫妻一起看的催泪爱情片，带好纸巾。内地 12 月 31 日上映，新加坡档期待院线公布。",
+      "tags": [
+        "华语",
+        "爱情",
+        "真实改编",
+        "跨年档"
+      ],
+      "posterEmoji": "🎸",
+      "bgGradient": "linear-gradient(135deg,#fb7185,#4c0519)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 陈国辉（Tony Chan，跨年档爱情新作）",
+        "🌟 陈立农 · 张艺凡 · 冯绍峰 · 孙怡洲",
+        "🎬 影片特色 真实故事改编的公路摇滚爱情片"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 内地 12/31 · 新加坡待定",
+      "ageGuide": "待评级 · 建议成人观看",
       "active": true
     },
   ]
