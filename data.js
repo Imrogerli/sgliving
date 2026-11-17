@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-11-16
+ * 最后更新：2026-11-17
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-11-16",
+    lastUpdated: "2026-11-17",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -6889,6 +6889,112 @@ const SGLIVING_DATA = {
       "ratingDesc": "Mezze 拼盘 · Kunafah",
       "active": true
     },
+    {
+      "id": "hui-hotpot-race-course-road-2026",
+      "name": "张崇会火锅 HUI HOTPOT（重庆老字号 · 小印度 Race Course Road 全岛首店）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-06",
+      "price": "S$35–55/人",
+      "description": "想念正宗重庆牛油锅的朋友冲！1988 年创立的重庆老字号「张崇会」新加坡首店就在小印度 Race Course Road，牛油锅底香而不燥，招牌「滑嫩肉片」一定要点，下锅十几秒就嫩得发颤；鲜毛肚七上八下、大刀腰片脆爽、土豆丝涮着吃也很惊喜。华人圈口碑「辣过瘾还不上火」，周末和朋友约火锅局的新选择。营业时间建议出发前在店家社媒确认。",
+      "tags": [
+        "重庆火锅",
+        "中国品牌",
+        "牛油锅",
+        "华人圈热议"
+      ],
+      "address": "408 Race Course Road, Singapore 218656",
+      "badge": "hot",
+      "badgeText": "🌶️ 重庆老字号",
+      "emoji": "🍲",
+      "bgGradient": "linear-gradient(135deg,#dc2626,#7f1d1d)",
+      "catLabel": "川渝火锅",
+      "catDesc": "重庆老字号 / 小印度",
+      "ratingDesc": "滑嫩肉片 · 鲜毛肚",
+      "active": true
+    },
+    {
+      "id": "le-petit-atelier-rituel-beach-road-2026-11",
+      "name": "Le Petit Atelier by Rituel（Concourse Skyline · 法式面包小馆）",
+      "categories": [
+        "dessert",
+        "snack"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$5–15/人",
+      "description": "Rituel 的新面包小馆，牛角包 S$5、焦糖酥皮 Kouign Amann S$6，层次酥到掉渣；松露 Stracciatella 佛卡夏 S$9、玉子三明治 S$8 当早餐刚好。最推「牛角包吉事果」S$5，外脆里软孩子很爱。早上 9 点到下午 5 点，每天营业，Beach Road 一带上班族的早餐新据点。",
+      "tags": [
+        "法式面包",
+        "早餐",
+        "牛角包",
+        "Beach Road"
+      ],
+      "address": "302 Beach Road, #01-06 Concourse Skyline, Singapore 199600",
+      "badge": "new",
+      "badgeText": "🆕 11月新店",
+      "emoji": "🥐",
+      "bgGradient": "linear-gradient(135deg,#f59e0b,#78350f)",
+      "catLabel": "烘焙咖啡",
+      "catDesc": "法式面包 / 早餐",
+      "ratingDesc": "Kouign Amann · 牛角包吉事果",
+      "active": true
+    },
+    {
+      "id": "wok-and-toast-serangoon-central-2026-11",
+      "name": "Wok & Toast 街坊（实龙岗中 · 本地老味道咖啡店）",
+      "categories": [
+        "snack"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$5–12/人",
+      "description": "实龙岗一带的街坊新店，一家就能吃齐福建虾面、板面、叻沙、椰浆饭，再配一份咖椰吐司和 kopi，就是最地道的新加坡早餐。福建虾面 S$7.80 / S$11.80 镬气足、虾汤浓，干辣椒板面 S$6.80 香辣带劲。早 8 点开到下午 2:30，傍晚 5–8 点再开，带孩子吃顿便宜又对味的本地餐。",
+      "tags": [
+        "本地小吃",
+        "福建虾面",
+        "板面",
+        "咖椰吐司"
+      ],
+      "address": "263 Serangoon Central Drive, #01-43, Singapore 550263",
+      "badge": "new",
+      "badgeText": "🆕 11月新店",
+      "emoji": "🍜",
+      "bgGradient": "linear-gradient(135deg,#eab308,#92400e)",
+      "catLabel": "本地小吃",
+      "catDesc": "街坊咖啡店 / 实龙岗",
+      "ratingDesc": "福建虾面 · 干辣椒板面",
+      "active": true
+    },
+    {
+      "id": "marymount-bakehouse-thomson-ridge-2026-10",
+      "name": "Marymount Bakehouse（汤申 Thomson Ridge 二店 · 酸种面包）",
+      "categories": [
+        "dessert",
+        "snack"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-10",
+      "price": "S$8–25/人",
+      "description": "酸种面包控的新据点！Marymount Bakehouse 在 Upper Thomson 开了第二家店，主打手工酸种：酸种意面、派、佛卡夏和整条面包都有。周末去 MacRitchie 走完步道顺路买几条面包回家当早餐，刚刚好。",
+      "tags": [
+        "酸种面包",
+        "烘焙",
+        "汤申",
+        "周末早餐"
+      ],
+      "address": "9 Thomson Ridge, Singapore 574637",
+      "badge": "new",
+      "badgeText": "🆕 二店新开",
+      "emoji": "🍞",
+      "bgGradient": "linear-gradient(135deg,#d97706,#451a03)",
+      "catLabel": "烘焙咖啡",
+      "catDesc": "酸种面包 / 汤申",
+      "ratingDesc": "手工酸种 · 佛卡夏",
+      "active": true
+    },
   ],
 
 
@@ -11387,7 +11493,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.livenation.sg/event/5-seconds-of-summer-everyone-s-a-star-world-tour-singapore-tickets-edp1669851",
       btnText: "购票",
       sortDate: "2026-11-16",
-      active: true
+      active: false
     },
 
     {
@@ -12592,6 +12698,94 @@ const SGLIVING_DATA = {
       "ticketUrl": "https://www.nhb.gov.sg/acm/whats-on/exhibitions",
       "btnText": "官网购票",
       "sortDate": "2026-11-16",
+      "active": true
+    },
+    {
+      "id": "westlife-25-indoor-stadium-2027-01",
+      "name": "Westlife 25：The Anniversary World Tour 新加坡站",
+      "type": "concert",
+      "priority": "featured",
+      "month": "JAN",
+      "day": "16",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#3b82f6,#1e3a8a)",
+      "typeLabel": "🎤 演唱会",
+      "typeColor": "#3b82f6",
+      "description": "西城男孩出道 25 周年巡演！《My Love》《Seasons in the Sun》《You Raise Me Up》……80、90 后的青春 BGM 全在这一晚。两场连开，适合爸妈一起去回忆杀，大孩子也能跟着哼。",
+      "venue": "Singapore Indoor Stadium, 2 Stadium Walk, Singapore 397691",
+      "dateRange": "2027年1月16日（周六）、17日（周日）",
+      "ticketInfo": "🎟️ Ticketmaster 售票",
+      "price": "S$138 起",
+      "priceNote": "两场 · 以官方为准",
+      "ticketUrl": "https://ticketmaster.sg/activity/detail/27sg_westlife",
+      "btnText": "立即购票",
+      "sortDate": "2027-01-16",
+      "active": true
+    },
+    {
+      "id": "bestards-mediacorp-2026-12",
+      "name": "理想混蛋 Bestards 新加坡演唱会",
+      "type": "concert",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "18",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#f97316,#7c2d12)",
+      "typeLabel": "🎸 华语乐团",
+      "typeColor": "#f97316",
+      "description": "台湾人气乐团理想混蛋来新加坡了！清爽的吉他摇滚、温柔又带点叛逆的华语歌词，现场氛围感满分。喜欢华语独立乐团的朋友别错过，年底犒劳自己的好选择。",
+      "venue": "The Theatre at Mediacorp, 1 Stars Avenue, Singapore 138507",
+      "dateRange": "12月18日（周五）",
+      "ticketInfo": "🎟️ 票务详情以主办方公布为准",
+      "price": "待公布",
+      "priceNote": "建议关注 Ticketmaster",
+      "ticketUrl": "https://www.ticketmaster.sg/search?q=Bestards+Singapore",
+      "btnText": "查看票务",
+      "sortDate": "2026-12-18",
+      "active": true
+    },
+    {
+      "id": "yoko-takahashi-capitol-2026-12",
+      "name": "高桥洋子 Yoko Takahashi 新加坡演唱会（《新世纪福音战士》主题曲原唱）",
+      "type": "concert",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "19",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#a855f7,#4c1d95)",
+      "typeLabel": "🎤 日本歌手",
+      "typeColor": "#a855f7",
+      "description": "「残酷な天使のテーゼ」原唱亲临！EVA 粉的情怀天花板，高桥洋子在复古典雅的 Capitol Theatre 开唱，现场合唱那一刻绝对起鸡皮疙瘩。动漫迷爸妈可以安排一下。",
+      "venue": "Capitol Theatre, 17 Stamford Road, Singapore 178907",
+      "dateRange": "12月19日（周六）",
+      "ticketInfo": "🎟️ 票务详情以主办方公布为准",
+      "price": "待公布",
+      "priceNote": "动漫歌曲专场",
+      "ticketUrl": "https://www.sistic.com.sg/events/search?q=Yoko+Takahashi",
+      "btnText": "查看票务",
+      "sortDate": "2026-12-19",
+      "active": true
+    },
+    {
+      "id": "domi-jd-beck-esplanade-2026-12",
+      "name": "DOMi & JD BECK 爵士双人组 新加坡专场",
+      "type": "concert",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "1",
+      "dow": "周二",
+      "dateColor": "linear-gradient(135deg,#14b8a6,#134e4a)",
+      "typeLabel": "🎹 爵士",
+      "typeColor": "#14b8a6",
+      "description": "格莱美提名的天才爵士双人组，键盘 + 鼓的炫技对飙看得人目瞪口呆。Esplanade Annexe Studio 小场地近距离感受，学乐器的大孩子看了会很受启发。",
+      "venue": "Esplanade Annexe Studio, 1 Esplanade Drive, Singapore 038981",
+      "dateRange": "12月1日（周二）",
+      "ticketInfo": "🎟️ SISTIC / Esplanade 售票",
+      "price": "以官方为准",
+      "priceNote": "小场地 · 名额有限",
+      "ticketUrl": "https://www.sistic.com.sg/events/search?q=DOMi+JD+BECK",
+      "btnText": "查看票务",
+      "sortDate": "2026-12-01",
       "active": true
     },
   ],
@@ -16303,6 +16497,66 @@ const SGLIVING_DATA = {
       "cost": "免费",
       "duration": "约 30–60 分钟",
       "bookingUrl": "https://www.capitaland.com/sg/malls/plazasingapura/en.html"
+    },
+    {
+      "active": true,
+      "id": "british-council-year-end-camps-2026-11",
+      "name": "British Council 年终英语假期营",
+      "icon": "📖",
+      "topGradient": "linear-gradient(90deg,#2563eb,#dc2626)",
+      "ageRange": "学前 – 中学（分龄开班）",
+      "description": "英国文化协会年终假期营，以主题项目串起游戏、手工、小研究和公开展示，全程英文沉浸。",
+      "highlight": "7–9 岁正是英语口语和表达自信心的关键期，营里要做小研究再上台展示，比单纯上课更能逼孩子开口；分龄小班，刚来新加坡、英语还在追赶的中国孩子特别适合",
+      "location": "British Council Toa Payoh / Napier Road 校区",
+      "dateRange": "11月23日–12月18日",
+      "cost": "以官网为准",
+      "duration": "按周报名",
+      "bookingUrl": "https://www.britishcouncil.sg/english-courses/kids-teens/holiday-camps"
+    },
+    {
+      "active": true,
+      "id": "camp-asia-winter-fantasy-2026-12",
+      "name": "Camp Asia 冬季奇幻营（Multi Activity / Future City）",
+      "icon": "❄️",
+      "topGradient": "linear-gradient(90deg,#38bdf8,#6366f1)",
+      "ageRange": "3–16 岁（Multi Activity 3–8 岁）",
+      "description": "年底人气假期营，运动、艺术、STEM 与团队挑战轮番上，Future City 营还能设计自己的未来城市。",
+      "highlight": "7–9 岁孩子精力旺盛又爱动手，一天里运动 + 手工 + STEM 轮换不会腻；Future City 主题能锻炼规划和合作能力，双职工家庭年底接送也方便",
+      "location": "Australian International School / Stamford American International School",
+      "dateRange": "12月14日–2027年1月8日",
+      "cost": "以官网为准",
+      "duration": "按天或按周报名",
+      "bookingUrl": "https://www.campasia.asia/"
+    },
+    {
+      "active": true,
+      "id": "bluey-bingo-woodleigh-mall-2026-11",
+      "name": "Bluey & Bingo 见面会（The Woodleigh Mall）",
+      "icon": "🐶",
+      "topGradient": "linear-gradient(90deg,#60a5fa,#f97316)",
+      "ageRange": "3–8 岁",
+      "description": "人气动画 Bluey 和 Bingo 来商场见面啦，可以合影互动，商场同期有圣诞布置。",
+      "highlight": "7–8 岁的 Bluey 粉还在追剧，能和偶像合影超开心；单张收据消费满 S$50 即可领通行证，周末顺便采购就搞定。11月22日结束，抓紧最后一周",
+      "location": "The Woodleigh Mall, 11 Bidadari Park Drive, Singapore 367803",
+      "dateRange": "11月13日–11月22日",
+      "cost": "单张收据消费满 S$50 换领",
+      "duration": "约 30 分钟",
+      "bookingUrl": "https://www.thewoodleighmall.com/"
+    },
+    {
+      "active": true,
+      "id": "exceptional-everyday-peranakan-museum-2026-10",
+      "name": "Exceptional/Everyday 新藏品特展（土生华人博物馆）",
+      "icon": "🏺",
+      "topGradient": "linear-gradient(90deg,#ec4899,#14b8a6)",
+      "ageRange": "6 岁以上",
+      "description": "土生华人博物馆新展，展出近年新入藏的娘惹服饰、珠绣、瓷器等，馆内设 Discovery Corners 和亲子活动区。",
+      "highlight": "7–9 岁孩子可以在 Discovery Corners 动手摸、拼、找，把「峇峇娘惹」的生活变成一场寻宝游戏；对刚来新加坡的中国家庭，是了解本地华人文化的好入口",
+      "location": "Peranakan Museum, 39 Armenian Street, Singapore 179941",
+      "dateRange": "10月30日起",
+      "cost": "公民/PR 免费，其他以官网为准",
+      "duration": "约 1–1.5 小时",
+      "bookingUrl": "https://www.nhb.gov.sg/peranakanmuseum/whats-on/exhibitions"
     },
   ],
 
