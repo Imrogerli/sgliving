@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-11-17
+ * 最后更新：2026-11-18
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-11-17",
+    lastUpdated: "2026-11-18",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -6995,6 +6995,113 @@ const SGLIVING_DATA = {
       "ratingDesc": "手工酸种 · 佛卡夏",
       "active": true
     },
+    {
+      "id": "pangpang-guoco-midtown-2026-09",
+      "name": "PangPang 胖胖砂锅（浙江海盐一锅出 · Guoco Midtown II）",
+      "categories": [
+        "chinese"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-09",
+      "price": "S$15–40/人",
+      "description": "姐妹们！浙江海盐来的胖胖砂锅终于开到 Bugis 附近了 🔥 招牌蟹煲（S$78+）一上桌整锅冒泡，膏黄浸透年糕，两三个人分刚刚好；卤大肠饭（S$15.80+）软糯不腥，鸡爪（S$8.80+）也入味。一家人围着砂锅吃，就是江浙家常的味道～下班直接冲！",
+      "tags": [
+        "小红书爆款",
+        "江浙菜",
+        "中国品牌",
+        "砂锅",
+        "蟹煲"
+      ],
+      "address": "20 Tan Quee Lan Street, #01-13/14/15/16 Guoco Midtown II, Singapore 188107",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🦀",
+      "bgGradient": "linear-gradient(135deg,#ea580c,#7c2d12)",
+      "catLabel": "江浙砂锅",
+      "catDesc": "浙江海盐 / 一锅出",
+      "ratingDesc": "蟹煲 · 卤大肠",
+      "active": true
+    },
+    {
+      "id": "baos-pastry-paya-lebar-square-2026-09",
+      "name": "Bao's Pastry 鲍师傅风格中式糕点（Paya Lebar Square）",
+      "categories": [
+        "dessert",
+        "snack"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-09",
+      "price": "S$3–10/人",
+      "description": "中国胃狂喜！🥹 这家中国烘焙品牌藏在 Paya Lebar Square 的 Scarlett 超市里，小贝海苔肉松蛋糕两个才 S$3.60，可颂蛋挞 S$2.90，爆浆芝士挞 S$3.60，咬下去满嘴流心～在国内排队买的味道，在新加坡下楼就有，接孩子放学顺手带一盒，绝绝子！",
+      "tags": [
+        "小红书爆款",
+        "中式糕点",
+        "中国品牌",
+        "肉松小贝",
+        "平价"
+      ],
+      "address": "60 Paya Lebar Road, #B1-05 Paya Lebar Square, Singapore 409051",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🥮",
+      "bgGradient": "linear-gradient(135deg,#f59e0b,#78350f)",
+      "catLabel": "中式烘焙",
+      "catDesc": "肉松小贝 / 蛋挞",
+      "ratingDesc": "平价 · 国内同款",
+      "active": true
+    },
+    {
+      "id": "nomad-kitchen-taman-jurong-2026-11",
+      "name": "Nomad Kitchen（七国风味小贩档 · Taman Jurong 熟食中心）",
+      "categories": [
+        "snack"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$6–9/人",
+      "description": "想带孩子「环游世界」又不想花大钱？这个新开的小贩档把伊朗、阿富汗、意大利等七国家常菜搬进了 Taman Jurong 熟食中心。藏红花烤鸡 Saffron Jujeh（S$8）香而不辣，阿富汗鸡（S$6 起）和千层面（S$8.50）小朋友也爱。穆斯林经营，只开午市（周二至周日 10am–3pm），去晚了可能卖完。",
+      "tags": [
+        "小贩中心",
+        "中东风味",
+        "平价",
+        "西部"
+      ],
+      "address": "Yung Sheng Road, #02-109 Taman Jurong Market & Food Centre, Singapore 618499",
+      "badge": "new",
+      "badgeText": "🆕 11月新开",
+      "emoji": "🍗",
+      "bgGradient": "linear-gradient(135deg,#eab308,#713f12)",
+      "catLabel": "异国小贩",
+      "catDesc": "伊朗 / 阿富汗 / 意式",
+      "ratingDesc": "藏红花烤鸡 S$8",
+      "active": true
+    },
+    {
+      "id": "moe-moe-soft-souffle-somerset-2026-09",
+      "name": "Moe Moe' Soft Souffle 北海道牛乳舒芙蕾（Somerset）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-09",
+      "price": "S$6–14/人",
+      "description": "中国来的现烤舒芙蕾小店，北海道牛乳款 S$5.90，一碰就颤颤巍巍的，入口即化；樱花牛乳款 S$6.90 颜值很高，加一球冰淇淋（S$6.90）冷热对冲很好吃。逛完 Orchard 给孩子当下午茶，甜度不高大人也不腻。",
+      "tags": [
+        "舒芙蕾",
+        "中国品牌",
+        "下午茶",
+        "乌节路"
+      ],
+      "address": "111 Somerset Road, #01-41, Singapore 238164",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🍮",
+      "bgGradient": "linear-gradient(135deg,#fbcfe8,#be185d)",
+      "catLabel": "甜品",
+      "catDesc": "舒芙蕾 / 北海道牛乳",
+      "ratingDesc": "现烤 · 入口即化",
+      "active": true
+    },
   ],
 
 
@@ -12788,6 +12895,94 @@ const SGLIVING_DATA = {
       "sortDate": "2026-12-01",
       "active": true
     },
+    {
+      "id": "story-of-studio-ghibli-gbtb-2026-12",
+      "name": "The Story of Studio Ghibli 吉卜力世界沉浸展（东南亚首展）",
+      "type": "exhibition",
+      "priority": "featured",
+      "month": "DEC",
+      "day": "18",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#22c55e,#0f766e)",
+      "typeLabel": "🎨 沉浸展",
+      "typeColor": "#16a34a",
+      "description": "宫崎骏迷必冲！12 个吉卜力电影实景场景：8 米高的《千与千寻》油屋、龙猫、猫巴士……一圈逛下来约 60–75 分钟，大人小孩都能拍到停不下来。早鸟票 12 月 17 日前购买更划算。",
+      "venue": "The West Lawn, Gardens by the Bay, 18 Marina Gardens Drive, Singapore 018953",
+      "dateRange": "2026年12月18日 – 2027年7月4日",
+      "ticketInfo": "🎟️ Klook 早鸟票（至 12/17）",
+      "price": "S$29 起",
+      "priceNote": "无脸男代币套票 S$48",
+      "ticketUrl": "https://www.klook.com/en-SG/activity/235057-the-story-of-studio-ghibli-wonderland-singapore-southeast-asia-debut/",
+      "btnText": "购买早鸟票",
+      "sortDate": "2026-12-18",
+      "active": true
+    },
+    {
+      "id": "christmas-together-mbs-expo-2026-11",
+      "name": "Christmas Together 圣诞可持续市集（金沙会展 Hall F）",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "27",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#dc2626,#166534)",
+      "typeLabel": "🎄 圣诞市集",
+      "typeColor": "#dc2626",
+      "description": "Sustainable Markets SG 办的大型圣诞市集，免费入场：18 个主题体验、50 场表演、80 场手作工作坊，还有 7 米高的 ParkLab 攀爬游乐结构，带娃逛一下午不成问题，顺便把圣诞礼物买齐。",
+      "venue": "Marina Bay Sands Expo & Convention Centre Hall F, 10 Bayfront Avenue, Singapore 018956",
+      "dateRange": "11月27日（周五）– 11月29日（周日）",
+      "ticketInfo": "🆓 免费入场",
+      "price": "免费",
+      "priceNote": "部分工作坊另收费",
+      "ticketUrl": "https://www.google.com/search?q=Christmas+Together+Sustainable+Markets+SG+2026+Marina+Bay+Sands",
+      "btnText": "查看详情",
+      "sortDate": "2026-11-27",
+      "active": true
+    },
+    {
+      "id": "monkey-goes-west-wildrice-2026-11",
+      "name": "Wild Rice 年度合家欢音乐剧《Monkey Goes West》西游记",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "12",
+      "dow": "周四",
+      "dateColor": "linear-gradient(135deg,#f59e0b,#b91c1c)",
+      "typeLabel": "🎭 音乐剧",
+      "typeColor": "#f59e0b",
+      "description": "Wild Rice 的年终 pantomime 改编自《西游记》，孙悟空用新加坡式幽默大闹舞台，歌舞热闹又好笑。中国孩子对故事熟悉，看英文版也毫无障碍，全家年底仪式感满满。约 2.5 小时，可用 SG Culture Pass。",
+      "venue": "WILD RICE @ Funan, 107 North Bridge Road, #04-08 Funan, Singapore 179105",
+      "dateRange": "即日起至 12月27日（周二至周日）",
+      "ticketInfo": "🎟️ Wild Rice 官网售票",
+      "price": "S$50 起",
+      "priceNote": "可用 SG Culture Pass",
+      "ticketUrl": "https://www.wildrice.com.sg/event/472247-monkey-goes-west-4/",
+      "btnText": "购票",
+      "sortDate": "2026-11-18",
+      "active": true
+    },
+    {
+      "id": "one-holland-village-christmas-market-2026-12",
+      "name": "One Holland Village 周末圣诞市集",
+      "type": "event",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "4",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#16a34a,#b91c1c)",
+      "typeLabel": "🎅 市集",
+      "typeColor": "#16a34a",
+      "description": "连续两个周末的户外圣诞市集，现场有街头演出、圣诞颂歌和亲子游戏，宠物友好。逛完顺便在荷兰村吃个晚饭，轻松又有节日气氛。",
+      "venue": "One Holland Village, 7 Holland Village Way, Singapore 275748",
+      "dateRange": "12月4–6日、12月11–13日",
+      "ticketInfo": "🆓 免费入场",
+      "price": "免费",
+      "priceNote": "时间待官方公布",
+      "ticketUrl": "https://www.google.com/search?q=One+Holland+Village+Christmas+Market+2026",
+      "btnText": "查看详情",
+      "sortDate": "2026-12-04",
+      "active": true
+    },
   ],
 
 
@@ -16558,6 +16753,66 @@ const SGLIVING_DATA = {
       "duration": "约 1–1.5 小时",
       "bookingUrl": "https://www.nhb.gov.sg/peranakanmuseum/whats-on/exhibitions"
     },
+    {
+      "active": true,
+      "id": "built-to-chill-lego-kidsstop-2026-11",
+      "name": "Built To Chill 乐高环保城市搭建（科学中心 KidsSTOP）",
+      "icon": "🧱",
+      "topGradient": "linear-gradient(90deg,#0ea5e9,#facc15)",
+      "ageRange": "适合 3–8 岁",
+      "description": "科学中心 KidsSTOP 的年终活动：先在学习区了解气候变化，再到乐高搭建区动手设计能「降温」的未来城市。",
+      "highlight": "7–9 岁正是爱搭乐高、又开始问「为什么天气越来越热」的年纪，把环保知识变成动手工程挑战，孩子能讲出自己设计的道理，比看书记得牢",
+      "location": "Science Centre Singapore KidsSTOP, 21 Jurong Town Hall Road, Singapore 609433",
+      "dateRange": "11月21日 – 2027年1月3日，每日 10am–5pm",
+      "cost": "活动免费，需 KidsSTOP 门票（儿童 S$10 / 成人 S$5）",
+      "duration": "约 1–2 小时",
+      "bookingUrl": "https://tickets.science.edu.sg/pre-attraction/kidsstop-57975"
+    },
+    {
+      "active": true,
+      "id": "artventure-camp-national-gallery-2026-12",
+      "name": "ARTventure Camp「美术馆守护者」一日营（国家美术馆）",
+      "icon": "🖼️",
+      "topGradient": "linear-gradient(90deg,#a855f7,#f43f5e)",
+      "ageRange": "适合 7–12 岁",
+      "description": "国家美术馆的全天托管营：孩子化身「艺术守护者学员」，在馆里完成一个个关于艺术品的任务，并见到美术馆的守护人员。",
+      "highlight": "专门为 7 岁以上设计，任务闯关的形式让孩子主动去观察画作细节；全天 drop-off，爸妈可以安心去办事，孩子回家还能讲一堆艺术小故事",
+      "location": "National Gallery Singapore, City Hall Wing, 1 St Andrew's Road, Singapore 178957",
+      "dateRange": "12月4日、11日、18日（周五）10:30am–4:30pm",
+      "cost": "S$75/人",
+      "duration": "6 小时（托管）",
+      "bookingUrl": "https://www.nationalgallery.sg/sg/en/workshops/artventure.html"
+    },
+    {
+      "active": true,
+      "id": "swan-songs-childrens-concert-esplanade-2026-12",
+      "name": "Swan Songs 贝多芬与舒伯特 · 儿童互动音乐会（滨海艺术中心）",
+      "icon": "🎻",
+      "topGradient": "linear-gradient(90deg,#6366f1,#14b8a6)",
+      "ageRange": "适合 4–10 岁",
+      "description": "40 分钟的儿童古典音乐会，孩子可以和乐手一起互动参与，轻松认识贝多芬和舒伯特。",
+      "highlight": "只有 40 分钟，7–9 岁孩子完全坐得住；学琴的孩子能近距离看乐手演奏、跟着节奏参与，是很好的古典音乐启蒙",
+      "location": "Esplanade Recital Studio, 1 Esplanade Drive, Singapore 038981",
+      "dateRange": "12月6日（周日）10:00–10:40am",
+      "cost": "S$35 起",
+      "duration": "40 分钟",
+      "bookingUrl": "https://www.sistic.com.sg/events/swansongs1226"
+    },
+    {
+      "active": true,
+      "id": "powerpuff-we-bare-bears-suntec-2026-11",
+      "name": "飞天小女警 × 咱们裸熊 节日游乐场（Suntec City）",
+      "icon": "🐻",
+      "topGradient": "linear-gradient(90deg,#ec4899,#38bdf8)",
+      "ageRange": "适合 4–10 岁",
+      "description": "Suntec City 中庭的节日主题游乐区：巨型抓娃娃机球池、充气超级滑梯、Lava Arena 闯关、人工降雪表演，还有飞天小女警见面会。",
+      "highlight": "7–9 岁孩子最爱的「跑跳 + 闯关」组合，放电效果一流；Suntec+ App 会员可免费玩游戏，逛商场顺路就能去",
+      "location": "Suntec City Tower 1 & 2 Atrium, 3 Temasek Boulevard, Singapore 038983",
+      "dateRange": "11月12日 – 12月27日，每日 11am–9:30pm",
+      "cost": "Suntec+ 会员免费玩游戏，其余待公布",
+      "duration": "约 1 小时",
+      "bookingUrl": "https://www.google.com/search?q=Powerpuff+Girls+We+Bare+Bears+Suntec+City+2026"
+    },
   ],
 
 
@@ -16711,7 +16966,7 @@ const SGLIVING_DATA = {
       id: "clayface-dc-2026-10",
       title: "Clayface",
       chineseTitle: "泥面人",
-      type: "coming-soon",
+      type: "now-showing",
       rating: 7,
       releaseDate: "2026-10-22",
       genre: "身体恐怖 / 惊悚 / 超级英雄",
@@ -16745,7 +17000,7 @@ const SGLIVING_DATA = {
       id: "godzilla-minus-zero-2026-11",
       title: "Godzilla Minus Zero",
       chineseTitle: "哥斯拉-0.0",
-      type: "coming-soon",
+      type: "now-showing",
       rating: 8.3,
       releaseDate: "2026-11-05",
       genre: "怪兽 / 科幻 / 剧情",
@@ -19760,7 +20015,7 @@ const SGLIVING_DATA = {
       ],
       "posterEmoji": "🎸",
       "bgGradient": "linear-gradient(135deg,#fb7185,#4c0519)",
-      "posterUrl": "",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/3apeYCnkOcYabQZlygwPzP2MO26.jpg",
       "highlights": [
         "🎬 导演 陈国辉（Tony Chan，跨年档爱情新作）",
         "🌟 陈立农 · 张艺凡 · 冯绍峰 · 孙怡洲",
@@ -19769,6 +20024,134 @@ const SGLIVING_DATA = {
       "badge": "new",
       "badgeText": "🆕 内地 12/31 · 新加坡待定",
       "ageGuide": "待评级 · 建议成人观看",
+      "active": true
+    },
+    {
+      "id": "love-test-2026-11",
+      "title": "Love Test",
+      "chineseTitle": "试探",
+      "type": "chinese",
+      "rating": 6.5,
+      "releaseDate": "2026-11-21",
+      "genre": "爱情 / 悬疑",
+      "language": "华语",
+      "duration": "106 分钟",
+      "cast": "冯绍峰 · 陈雨锶 · 李梦 · 郭月 · 车晓",
+      "director": "侯逍遥",
+      "description": "一部反套路的爱情悬疑片：女主假装失踪来「测试」男友，没想到他转身就和别人同居……冯绍峰 + 李梦的组合演技在线，适合想看点刺激剧情的情侣/夫妻约会。内地 11/21 上映，新加坡档期待定。",
+      "tags": [
+        "华语",
+        "悬疑",
+        "爱情",
+        "冯绍峰"
+      ],
+      "posterEmoji": "💔",
+      "bgGradient": "linear-gradient(135deg,#be123c,#1e1b4b)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/pz0aI3dgcfsJLxJFzt4Dh5sp2Mb.jpg",
+      "highlights": [
+        "🎬 导演 侯逍遥（兼任编剧）",
+        "🌟 冯绍峰 · 陈雨锶 · 李梦 · 郭月 · 车晓",
+        "🎬 影片特色 「假失踪试爱」反转悬疑"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 内地 11/21 · 新加坡待定",
+      "ageGuide": "待评级 · 建议成人观看",
+      "active": true
+    },
+    {
+      "id": "kaohsiung-breakout-2026-12",
+      "title": "Kaohsiung Breakout",
+      "chineseTitle": "高寮大劫",
+      "type": "chinese",
+      "rating": 7,
+      "releaseDate": "2026-12-04",
+      "genre": "犯罪 / 动作",
+      "language": "华语 / 台语",
+      "duration": "待定",
+      "cast": "李铭顺 · 金士杰 · 王阳明 · 郑人硕 · 陈以文",
+      "director": "黄朝亮",
+      "description": "根据高雄监狱暴动真实事件改编：六名囚犯夺枪越狱，最终与警方爆发枪战。新加坡演员李铭顺担纲主演，本地上映机会很大。节奏紧张、硬派写实，适合爱看警匪片的爸爸们。",
+      "tags": [
+        "华语",
+        "台湾",
+        "真实改编",
+        "李铭顺"
+      ],
+      "posterEmoji": "🚨",
+      "bgGradient": "linear-gradient(135deg,#475569,#7f1d1d)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/tOrRqoeBzLp4Iy7ZDgeONb39hnl.jpg",
+      "highlights": [
+        "🎬 导演 黄朝亮（《寒单》）",
+        "🌟 李铭顺 · 金士杰 · 王阳明 · 郑人硕 · 陈以文",
+        "🎬 影片特色 改编自高雄监狱暴动真实事件"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 台湾 12/4 · 新加坡待定",
+      "ageGuide": "预计 NC16 · 不适合儿童",
+      "active": true
+    },
+    {
+      "id": "hidden-love-movie-2026-12",
+      "title": "Hidden Love",
+      "chineseTitle": "偷偷藏不住",
+      "type": "chinese",
+      "rating": 6.8,
+      "releaseDate": "2026-12-12",
+      "genre": "爱情 / 青春",
+      "language": "华语",
+      "duration": "待定",
+      "cast": "朱珞宁 · 周皓崎 · 夏浩然",
+      "director": "张裕笛",
+      "description": "竹已同名大热小说的电影版（2023 年剧版大火），桑稚暗恋哥哥室友段嘉许的故事终于上大银幕。看过剧的妈妈们可以去重温青春心动，画风甜、无压力，适合闺蜜结伴。内地 12/12 上映，新加坡档期待定。",
+      "tags": [
+        "华语",
+        "青春",
+        "小说改编",
+        "甜宠"
+      ],
+      "posterEmoji": "💗",
+      "bgGradient": "linear-gradient(135deg,#f9a8d4,#6d28d9)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/fPP5X3xlc94r5JsGBmrQYdNb9Xv.jpg",
+      "highlights": [
+        "🎬 导演 张裕笛（《倒仓》）",
+        "🌟 朱珞宁 · 周皓崎 · 夏浩然",
+        "📚 改编自竹已人气小说，2023 年同名剧集爆红"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 内地 12/12 · 新加坡待定",
+      "ageGuide": "待评级 · 青少年及以上",
+      "active": true
+    },
+    {
+      "id": "asterix-kingdom-of-nubia-2026-11",
+      "title": "Asterix: The Kingdom of Nubia",
+      "chineseTitle": "高卢英雄：努比亚王国",
+      "type": "family",
+      "rating": 6.8,
+      "releaseDate": "2026-11-22",
+      "genre": "动画 / 冒险 / 喜剧",
+      "language": "法语（英文字幕）",
+      "duration": "87 分钟",
+      "cast": "Christian Clavier · François-Xavier Demaison · Élie Semoun · Claudia Tagbo · Issa Doumbia",
+      "director": "Alexandre Heboyan",
+      "description": "法国国民漫画《高卢英雄》全新动画：魔法药水被掺了返老还童药，整个高卢村的人都变成了小孩！阿斯泰利克斯和奥贝利克斯得赶去努比亚王国找解药。画面明亮、笑点密集，7–9 岁孩子会很喜欢。11/22 在 Shaw Lido、Shaw PLQ 有法国电影节场次（法语原声 + 字幕，适合能读字幕的大孩子）。",
+      "tags": [
+        "家庭",
+        "动画",
+        "法国电影节",
+        "冒险"
+      ],
+      "posterEmoji": "🛡️",
+      "bgGradient": "linear-gradient(135deg,#facc15,#1d4ed8)",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/mxDsm7jKW1G7LNTtvp1C0ID9gN5.jpg",
+      "highlights": [
+        "🎬 导演 Alexandre Heboyan（《月亮守护者 Mune》）",
+        "🌟 Christian Clavier · François-Xavier Demaison · Élie Semoun · Claudia Tagbo",
+        "🎬 影片特色 法国「全年龄」评级，Shaw 法国电影节特别场"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 11/22 电影节场次",
+      "ageGuide": "法国全年龄 · 适合 7 岁以上（需看字幕）",
       "active": true
     },
   ]
