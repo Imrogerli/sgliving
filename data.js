@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-11-18
+ * 最后更新：2026-11-24
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-11-18",
+    lastUpdated: "2026-11-24",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -7102,6 +7102,561 @@ const SGLIVING_DATA = {
       "ratingDesc": "现烤 · 入口即化",
       "active": true
     },
+    {
+      "id": "bao-fast-foods-new-bahru-2026-11",
+      "name": "Bao Fast Foods BFF 台式炸鸡便利店（New Bahru 快闪）",
+      "categories": [
+        "snack"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$7–20/人",
+      "description": "伦敦爆红的 BAO 团队做的台式「便利店」快闪，开到 12 月 28 日就撤！招牌 Chicken Chopper 大鸡排 S$6.50，有原味酥脆、火焰酱烤、白斩风味三种；配饭盒 S$7.95，再来一杯阿里山冬瓜茶 S$5.95，孩子会抱着不撒手。还有担担面 S$6.50、牛肉杯面 S$12.50，像在台北夜市逛便利店。周二休息，周末去建议早点到。",
+      "tags": [
+        "台式炸鸡",
+        "快闪限定",
+        "亲子友好",
+        "New Bahru"
+      ],
+      "address": "46 Kim Yam Road, #01-10 New Bahru, Singapore 239351",
+      "badge": "hot",
+      "badgeText": "🔥 限时快闪至 12/28",
+      "emoji": "🍗",
+      "bgGradient": "linear-gradient(135deg,#fde047,#dc2626)",
+      "catLabel": "小吃",
+      "catDesc": "台式炸鸡 / 便当",
+      "ratingDesc": "伦敦 BAO 出品 · 鸡排大块",
+      "active": true
+    },
+    {
+      "id": "osio-tanjong-pagar-2026-11",
+      "name": "O/Sio 日式意面炭烤（Tanjong Pagar · 东京米其林推荐主厨海外首店）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$25–60/人",
+      "description": "东京米其林推荐的 Sio 团队、主厨鸟羽周作的海外首家 O/Sio，11 月在丹戎巴葛开张。意面主食 S$18.80 起，烟熏松露卡邦尼、海鲜番茄面都是招牌，再加一份炭烤安格斯牛排、脆炸甜虾一起分。口味偏日式清爽，不会太腻，带孩子吃也合适；收尾点个提拉米苏刚刚好。",
+      "tags": [
+        "日式意面",
+        "米其林主厨",
+        "丹戎巴葛",
+        "新店"
+      ],
+      "address": "38 Tanjong Pagar Road, Singapore 088461",
+      "badge": "new",
+      "badgeText": "🆕 11月新开",
+      "emoji": "🍝",
+      "bgGradient": "linear-gradient(135deg,#fef3c7,#b45309)",
+      "catLabel": "日式意面",
+      "catDesc": "意面 / 炭烤",
+      "ratingDesc": "米其林推荐主厨 · 意面 S$18.80 起",
+      "active": true
+    },
+    {
+      "id": "hunbun-balmoral-plaza-2026-11",
+      "name": "HunBun 酸种三明治（Balmoral Plaza）",
+      "categories": [
+        "snack"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$14–25/人",
+      "description": "Bukit Timah 附近的新三明治小店，酸种面包、佛卡夏和贝果夹得满满当当。Big Beef Theory 牛肉款 S$19 最扎实，Tuna Matata 金枪鱼 S$14 小朋友更容易接受，菜名都很好玩。周末早午餐带孩子来很合适，周日休息记得避开。",
+      "tags": [
+        "三明治",
+        "早午餐",
+        "Bukit Timah",
+        "新店"
+      ],
+      "address": "271 Bukit Timah Road, #01-06A Balmoral Plaza, Singapore 259708",
+      "badge": "new",
+      "badgeText": "🆕 11月新开",
+      "emoji": "🥪",
+      "bgGradient": "linear-gradient(135deg,#fed7aa,#c2410c)",
+      "catLabel": "三明治",
+      "catDesc": "酸种 / 贝果",
+      "ratingDesc": "分量大 · 菜名有梗",
+      "active": true
+    },
+    {
+      "id": "kemuri-coffee-tanjong-pagar-2026-11",
+      "name": "Kemuri Coffee Co. 日式咖啡吧（Tanjong Pagar）",
+      "categories": [
+        "snack"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$5–12/人",
+      "description": "丹戎巴葛新开的日式咖啡吧，环境安静简约。拿铁 S$6.50，抹茶 S$7，想喝浓一点就点 Premium Matcha S$9，抹茶党可以冲。工作日 9am–8pm 都开，下班后也能坐坐；周日休息。",
+      "tags": [
+        "咖啡",
+        "抹茶",
+        "丹戎巴葛",
+        "新店"
+      ],
+      "address": "52 Tanjong Pagar Road, #01-52, Singapore 088473",
+      "badge": "new",
+      "badgeText": "🆕 11月新开",
+      "emoji": "🍵",
+      "bgGradient": "linear-gradient(135deg,#d9f99d,#3f6212)",
+      "catLabel": "咖啡",
+      "catDesc": "日式咖啡 / 抹茶",
+      "ratingDesc": "抹茶浓郁 · 环境安静",
+      "active": true
+    },
+    {
+      "id": "limcha-teochew-tea-east-coast-2026-11",
+      "name": "林茶 Limcha 潮州茶饮（East Coast Road）",
+      "categories": [
+        "drinks"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$6–15/人",
+      "description": "姐妹们！东海岸这家潮州茶馆真的被种草了🍵 招牌是热的鸭屎香单丛，每单都配一个迷你潮州小茶壶，仪式感拉满！冰的龙眼潮州奶茶清爽不腻，跟连锁奶茶完全不是一个路数～店里还有闻香台，下单前可以先闻茶叶，周末还能看工夫茶表演。装修复古好拍，带爸妈来喝也超合适，绝绝子！周一周二休息别扑空哦。",
+      "tags": [
+        "小红书爆款",
+        "潮州茶",
+        "鸭屎香",
+        "东海岸",
+        "工夫茶"
+      ],
+      "address": "93 East Coast Road, #02-00, Singapore 428792",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🫖",
+      "bgGradient": "linear-gradient(135deg,#bbf7d0,#166534)",
+      "catLabel": "茶饮",
+      "catDesc": "潮州单丛 / 工夫茶",
+      "ratingDesc": "博主亲测 · 仪式感满分",
+      "active": true
+    },
+    {
+      "id": "cherry-garden-autumn-crab-menu-2026-11",
+      "name": "Cherry Garden 樱桃园 · 秋季蟹宴（文华东方 · 米其林一星）",
+      "categories": [
+        "chinese"
+      ],
+      "rating": 4.7,
+      "openDate": "2026-11",
+      "price": "S$288++/人",
+      "description": "米其林一星粤菜 Cherry Garden 的秋季限定蟹宴只做到 11 月 30 日，六道菜 S$288++。蟹粉小笼包、XO 酱炒松叶蟹、蟹黄燕窝翡翠瓜都是功夫菜，蟹味很足又不腻。想给爸妈过生日、或者纪念日想吃顿像样的粤菜，这个月是最后机会了。",
+      "tags": [
+        "米其林一星",
+        "粤菜",
+        "秋季蟹宴",
+        "限时",
+        "滨海湾"
+      ],
+      "address": "5 Raffles Avenue, Level 5, Mandarin Oriental Singapore, Singapore 039797",
+      "badge": "new",
+      "badgeText": "⏰ 蟹宴至11/30",
+      "emoji": "🦀",
+      "bgGradient": "linear-gradient(135deg,#fecaca,#9f1239)",
+      "catLabel": "粤菜",
+      "catDesc": "米其林一星 · 季节蟹宴",
+      "ratingDesc": "一星粤菜 · 功夫菜",
+      "active": true
+    },
+    {
+      "id": "lantine-rangoon-road-move-2026-11",
+      "name": "蘭亭一盞 Lantine（新中式茶饮甜品 · 搬到 Rangoon Road 更大新店）",
+      "categories": [
+        "dessert",
+        "restaurant"
+      ],
+      "rating": 4.5,
+      "openDate": "2026-11",
+      "price": "S$10–25/人",
+      "description": "姐妹们！小红书和 Lemon8 上刷屏的那家新中式茶馆蘭亭一盞搬家啦～从 103 号挪到同一条街的 133 Rangoon Road 转角大铺，位子多了终于不用排到怀疑人生！木格窗、宣纸灯笼的国风装修随手一拍就是大片，焙茶奶茶、枸杞红枣奶茶暖胃又不齁甜，舒芙蕾和芋泥麻薯是招牌必点。新店还加了正餐：干捞香料 Mee Siam、香料鸡饭都是 S$10.90，带爸妈来也有得吃。避雷提醒：周末下午还是人多，建议工作日去～",
+      "tags": [
+        "小红书爆款",
+        "新中式",
+        "甜品",
+        "茶饮",
+        "Farrer Park",
+        "拍照打卡"
+      ],
+      "address": "133 Rangoon Road, Singapore",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🍵",
+      "bgGradient": "linear-gradient(135deg,#fde68a,#b45309)",
+      "catLabel": "新中式甜品",
+      "catDesc": "国风茶馆 · 舒芙蕾 · 焙茶奶茶",
+      "ratingDesc": "博主高赞 · 出片率高",
+      "active": true
+    },
+    {
+      "id": "11-westside-asia-square-2026-11",
+      "name": "11 Westside（香港人气加州墨西哥菜 · Asia Square 新店）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$6–40/人",
+      "description": "香港中环很火的加州风墨西哥小馆开到 CBD 了。塔可 S$6 起，酥脆玉米饼配炭烤肉和莎莎酱，一口一个很过瘾；工作日午餐套餐 S$35++，在附近上班的朋友可以拉同事来换换口味。口味偏清爽，不算重辣。",
+      "tags": [
+        "香港品牌",
+        "墨西哥菜",
+        "塔可",
+        "CBD",
+        "午餐"
+      ],
+      "address": "8 Marina View, #01-05, Asia Square Tower 1, Singapore 018960",
+      "badge": "new",
+      "badgeText": "🆕 香港品牌",
+      "emoji": "🌮",
+      "bgGradient": "linear-gradient(135deg,#bbf7d0,#15803d)",
+      "catLabel": "加州墨西哥菜",
+      "catDesc": "香港人气 · 塔可",
+      "ratingDesc": "CBD 新选择",
+      "active": true
+    },
+    {
+      "id": "kiap-kiap-chicken-club-2026-11",
+      "name": "Kiap Kiap Chicken Club & Bar（韩式×本地风味炸鸡 · Bugis）",
+      "categories": [
+        "restaurant",
+        "snack"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$12–30/人",
+      "description": "Bugis 附近新开的炸鸡小酒馆，把韩式炸鸡和本地口味混搭在一起，炸鸡 S$12 起，外皮脆、里面多汁。晚上和朋友来点一盘炸鸡配啤酒很惬意；周末下午带孩子来吃也行，点不辣的原味就好。",
+      "tags": [
+        "韩式炸鸡",
+        "本地风味",
+        "Bugis",
+        "小酒馆"
+      ],
+      "address": "1 Liang Seah Street, #02-15, Singapore 189022",
+      "badge": "new",
+      "badgeText": "🆕 新开",
+      "emoji": "🍗",
+      "bgGradient": "linear-gradient(135deg,#fed7aa,#c2410c)",
+      "catLabel": "炸鸡",
+      "catDesc": "韩式 × 本地 · 小酒馆",
+      "ratingDesc": "下酒好伴",
+      "active": true
+    },
+    {
+      "id": "katsu-by-kyu-downtown-gallery-2026-11",
+      "name": "Katsu By Kyu（韩式厚切猪排 · OUE Downtown Gallery）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$35–50/人",
+      "description": "丹戎巴葛新开的韩式风格炸猪排专门店，厚切猪排低温慢炸，切开是漂亮的粉色，肉汁直流。套餐 S$35 起，配米饭、汤和小菜，分量扎实。孩子一般都爱吃炸猪排，全家来很稳。",
+      "tags": [
+        "炸猪排",
+        "韩式",
+        "丹戎巴葛",
+        "套餐"
+      ],
+      "address": "6A Shenton Way, #01-09/10, OUE Downtown Gallery, Singapore 068815",
+      "badge": "new",
+      "badgeText": "🆕 新开",
+      "emoji": "🐷",
+      "bgGradient": "linear-gradient(135deg,#fde68a,#92400e)",
+      "catLabel": "炸猪排",
+      "catDesc": "厚切 · 韩式风格",
+      "ratingDesc": "肉汁满满",
+      "active": true
+    },
+    {
+      "id": "mala-mia-changi-t3-2026-11",
+      "name": "Mala Mia 麻辣自选 & 重庆烤鱼（樟宜机场 T3 · 清真认证）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$15–40/人",
+      "description": "樟宜 T3 地下二层新开的自选麻辣烫，60 多种食材按重量算（S$2.90/100g，最少 400g），最惊喜的是麻辣奶油干拌底，香辣里带点奶香，小朋友也能接受。人多就点一条重庆麻辣烤鱼（S$39.90），四种口味可选，还有免费续的麻辣爆米花。送机接机前来一顿，比机场快餐有灵魂多了；清真认证，带穆斯林朋友也放心。",
+      "tags": [
+        "麻辣烫",
+        "重庆烤鱼",
+        "清真",
+        "樟宜机场"
+      ],
+      "address": "65 Airport Boulevard, #B2-49/50, Changi Airport Terminal 3, Singapore 819663",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🌶️",
+      "bgGradient": "linear-gradient(135deg,#fca5a5,#b91c1c)",
+      "catLabel": "川味",
+      "catDesc": "自选麻辣 / 重庆烤鱼",
+      "ratingDesc": "麻辣奶油底 · 清真友好",
+      "active": true
+    },
+    {
+      "id": "soft-order-henderson-2026-11",
+      "name": "Soft Order（亚洲风味烘焙咖啡馆 · Henderson Road）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$5–20/人",
+      "description": "新开的亚洲风味面包店，松露盐面包 S$4.80 外脆里软、黄油香到犯规，Nutella 开心果卡纳法 S$5.50 是店里的拍照担当。想吃正餐可以点豌豆 carbonara（S$16.90）。还能单买风味黄油（S$6 一种），买几个盐面包回家当早餐，孩子一口一个。",
+      "tags": [
+        "面包",
+        "盐面包",
+        "咖啡馆",
+        "Henderson"
+      ],
+      "address": "213 Henderson Road, #01-06, Singapore 159553",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🥐",
+      "bgGradient": "linear-gradient(135deg,#fef3c7,#b45309)",
+      "catLabel": "烘焙",
+      "catDesc": "盐面包 / 卡纳法",
+      "ratingDesc": "盐面包 · 黄油香",
+      "active": true
+    },
+    {
+      "id": "base-gelato-joo-chiat-2026-11",
+      "name": "Base Gelato（本地风味意式冰淇淋 · 如切）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$9–12/人",
+      "description": "如切新开的意式冰淇淋店，口味很有新加坡味：咖椰牛油吐司 S$9 一吃就笑了，像在吃冰的早餐；Joo Chiat Heritage S$10、黑森林 S$12 都不错，大人可以试朗姆葡萄奶冻。逛完如切的娘惹小店来一杯，正好消暑，孩子绝对买单。",
+      "tags": [
+        "冰淇淋",
+        "Gelato",
+        "如切",
+        "本地风味"
+      ],
+      "address": "198 Joo Chiat Road, #01-01, Singapore 427469",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🍨",
+      "bgGradient": "linear-gradient(135deg,#bbf7d0,#0f766e)",
+      "catLabel": "甜品",
+      "catDesc": "意式冰淇淋 / 咖椰吐司味",
+      "ratingDesc": "本地口味 · 有创意",
+      "active": true
+    },
+    {
+      "id": "elijah-pies-joo-chiat-2026-11",
+      "name": "Elijah Pies（如切派店 · 舒芙蕾派）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$9–25/人",
+      "description": "如切 Joo Chiat Place 的派店，甜咸都有：Nutella 派 S$9 起一块，黑松露土豆泥派 S$15 很适合当午饭，招牌舒芙蕾派 S$18 现烤蓬松，几个人分着吃最划算。也有披萨派系列（S$22–24）和无酒精特调，适合周末一家人下午去坐坐。",
+      "tags": [
+        "派",
+        "下午茶",
+        "如切",
+        "甜咸皆可"
+      ],
+      "address": "72 Joo Chiat Place, Singapore 427789",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🥧",
+      "bgGradient": "linear-gradient(135deg,#fed7aa,#9a3412)",
+      "catLabel": "烘焙",
+      "catDesc": "甜派 / 咸派",
+      "ratingDesc": "现烤 · 适合分享",
+      "active": true
+    },
+    {
+      "id": "koko-kawane-star-vista-2026-11",
+      "name": "KOKO Kawane（日本抹茶专门店 · The Star Vista）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$8–15/人",
+      "description": "抹茶控必去！星宇汇新开的日式抹茶店，招牌 Soeman 拼配 S$12.50 茶味浓、回甘明显，焙茶拿铁 S$8 对不太能喝苦的人更友好。在 Buona Vista 上班或带孩子去 Star Vista 上课的家长，课间来一杯刚好。",
+      "tags": [
+        "抹茶",
+        "焙茶",
+        "日式",
+        "Buona Vista"
+      ],
+      "address": "1 Vista Exchange Green, #01-02, The Star Vista, Singapore 138617",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🍵",
+      "bgGradient": "linear-gradient(135deg,#d9f99d,#3f6212)",
+      "catLabel": "茶饮",
+      "catDesc": "抹茶 / 焙茶",
+      "ratingDesc": "茶味浓 · 回甘",
+      "active": true
+    },
+    {
+      "id": "shao-teochew-dempsey-2026-11",
+      "name": "SHAO 燒（现代潮菜 · Dempsey 新店）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.5,
+      "openDate": "2026-11",
+      "price": "S$60–120/人",
+      "description": "爱吃潮汕菜的朋友有福了！Rangoon Road 那家常年订满的现代潮菜 SHAO 开到了 Dempsey，是集团在新加坡的第 4 家。必点招牌腌膏蟹，冰凉鲜甜、蟹膏满满；不敢吃生腌的就点炭烤膏蟹，香气更足；墨鱼汁煎北海道墨鱼也很下饭。环境比老店更宽敞，周末带长辈吃一顿家宴刚好。",
+      "tags": [
+        "潮州菜",
+        "膏蟹",
+        "海鲜",
+        "Dempsey",
+        "家庭聚餐"
+      ],
+      "address": "9 Dempsey Road, #01-09, Singapore 247697",
+      "badge": "new",
+      "badgeText": "🆕 Dempsey 新店",
+      "emoji": "🦀",
+      "bgGradient": "linear-gradient(135deg,#fdba74,#9a3412)",
+      "catLabel": "中餐",
+      "catDesc": "现代潮州菜 / 登布西山",
+      "ratingDesc": "腌膏蟹 · 炭烤膏蟹",
+      "active": true
+    },
+    {
+      "id": "ao-claymore-cloudmills-2026-11",
+      "name": "AO（日式分享小盘 · Claymore Drive）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$40–70/人",
+      "description": "Cloudmills 面包店的兄弟店，就在乌节 Orchard Towers 后面。日式口味的分享小盘很适合几个人一起点：蓝鳍金枪鱼塔塔配烤寿司饭 S$28、黑松露麻糬饭配烤鸡翅 S$22、寿喜烧和牛卷 S$28，最后一定留胃给真鲷拉面 S$28，汤头清甜。甜品豆腐冰淇淋三吃 S$16，孩子很喜欢。",
+      "tags": [
+        "日式",
+        "分享餐",
+        "乌节",
+        "拉面"
+      ],
+      "address": "1 Claymore Drive, #01-01, Singapore 229594",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🍣",
+      "bgGradient": "linear-gradient(135deg,#a5f3fc,#0e7490)",
+      "catLabel": "日料",
+      "catDesc": "日式分享小盘 / 乌节 Claymore",
+      "ratingDesc": "真鲷拉面 · 和牛卷",
+      "active": true
+    },
+    {
+      "id": "torimitsu-tanuki-raw-orchard-central-2026-11",
+      "name": "Torimitsu × Tanuki Raw（东京烧鸟联名 · 限时 3 个月）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-10",
+      "price": "S$60–80/人",
+      "description": "东京烧鸟店 Torimitsu 和 Tanuki Raw 合作的限定晚餐，10 道烧鸟 Omakase 只要 S$59.80，在乌节路算很划算了。晚上 5:30 起供应，从 10 月 28 日起只做 3 个月，大约到明年 1 月底。下班约朋友小酌、或者逛完乌节路吃顿不贵的日式晚餐都合适。",
+      "tags": [
+        "烧鸟",
+        "Omakase",
+        "限时",
+        "乌节"
+      ],
+      "address": "181 Orchard Road, #04-01, Orchard Central, Singapore 238896",
+      "badge": "trending",
+      "badgeText": "⏳ 限时联名",
+      "emoji": "🍢",
+      "bgGradient": "linear-gradient(135deg,#fcd34d,#92400e)",
+      "catLabel": "日料",
+      "catDesc": "烧鸟 Omakase / Orchard Central",
+      "ratingDesc": "10 道 S$59.80",
+      "active": true
+    },
+    {
+      "id": "xhs-age3-fried-sando-ion-2026-11",
+      "name": "Age.3（银座炸三明治 · 新加坡首店 · ION Orchard B4）",
+      "categories": [
+        "snack"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$10–20/人",
+      "description": "姐妹们！银座排队王 Age.3 炸三明治终于来新加坡了！11 月 13 日在 ION Orchard B4 开了首店，一口气上了 34 种口味，整块吐司裹面包糠炸到金黄，切开奶油、水果、炸猪排一层层爆出来，拍照绝绝子！外酥里软一点都不油，咸甜都能选。建议工作日下午去，开业初期周末排队很夸张，一人一个刚好当下午茶～",
+      "tags": [
+        "炸三明治",
+        "日本首店",
+        "ION Orchard",
+        "打卡",
+        "小红书爆款"
+      ],
+      "address": "2 Orchard Turn, #B4-64/65, ION Orchard, Singapore 238801",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🥪",
+      "bgGradient": "linear-gradient(135deg,#fde68a,#b45309)",
+      "catLabel": "小吃",
+      "catDesc": "日式炸三明治 / ION Orchard B4",
+      "ratingDesc": "34 种口味 · 外酥里软",
+      "active": true
+    },
+    {
+      "id": "tofu-g-gelato-waterway-point-2026-11",
+      "name": "TOFU G（豆腐意式冰淇淋 · Waterway Point / Suntec）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$8–10/人",
+      "description": "豆腐做的意式冰淇淋，豆香很浓，甜度比一般 gelato 低，不太爱甜的大人和孩子都能接受。一杯 S$8，加配料 +S$2。榜鹅 Waterway Point 和 Suntec City 西翼各有一家，逛商场时顺路来一杯。",
+      "tags": [
+        "豆腐",
+        "Gelato",
+        "榜鹅",
+        "低甜"
+      ],
+      "address": "83 Punggol Central, #01-53, Waterway Point, Singapore 828761",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🍦",
+      "bgGradient": "linear-gradient(135deg,#fef9c3,#a16207)",
+      "catLabel": "甜品",
+      "catDesc": "豆腐意式冰淇淋 / 榜鹅",
+      "ratingDesc": "豆香浓 · 不腻",
+      "active": true
+    },
+    {
+      "id": "dolpan-hwajoo-tanjong-pagar-2026-11",
+      "name": "Dolpan Hwajoo（釜山石板烤 · 丹戎巴葛）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$30–50/人",
+      "description": "丹戎巴葛韩国街新开的釜山石板烤，热石板端上桌滋滋作响。招牌玫瑰酱大肠鸡爪 S$46 辣中带奶香，芝士猪排骨 S$48 拉丝很夸张，两三个人分着吃刚好。目前主要做午市（11am–3pm），在附近上班的朋友可以约起来。",
+      "tags": [
+        "韩国菜",
+        "石板烤",
+        "丹戎巴葛",
+        "芝士"
+      ],
+      "address": "99 Tanjong Pagar Road, Level 1, Singapore 088520",
+      "badge": "new",
+      "badgeText": "🆕 新店",
+      "emoji": "🔥",
+      "bgGradient": "linear-gradient(135deg,#fca5a5,#991b1b)",
+      "catLabel": "韩餐",
+      "catDesc": "釜山石板烤 / 丹戎巴葛",
+      "ratingDesc": "芝士拉丝 · 热石板",
+      "active": true
+    },
   ],
 
 
@@ -7246,7 +7801,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.sistic.com.sg/events/sp1126",
       btnText: "SISTIC 购票",
       sortDate: "2026-11-22",
-      active: true
+      active: false
     },
 
     {
@@ -7433,7 +7988,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.singaporewritersfestival.com/festival-passes-tickets",
       btnText: "官网购票",
       sortDate: "2026-11-13",
-      active: true
+      active: false
     },
 
     {
@@ -8902,7 +9457,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=wave+to+earth+Singapore",
       btnText: "购票",
       sortDate: "2026-11-20",
-      active: true
+      active: false
     },
 
     // ── 🆕 2026-06-18 每日更新新增 ──────────
@@ -11273,7 +11828,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://www.ticketmaster.sg/search?q=Joji+Singapore",
       btnText: "购票",
       sortDate: "2026-11-21",
-      active: true
+      active: false
     },
 
     {
@@ -12739,7 +13294,7 @@ const SGLIVING_DATA = {
       "ticketUrl": "https://hometeamfestival26.com/",
       "btnText": "查看官网",
       "sortDate": "2026-11-20",
-      "active": true
+      "active": false
     },
     {
       "id": "enabling-lives-festival-2026-11",
@@ -12981,6 +13536,314 @@ const SGLIVING_DATA = {
       "ticketUrl": "https://www.google.com/search?q=One+Holland+Village+Christmas+Market+2026",
       "btnText": "查看详情",
       "sortDate": "2026-12-04",
+      "active": true
+    },
+    {
+      "id": "kalaa-utsavam-esplanade-2026-11",
+      "name": "Kalaa Utsavam 2026 印度艺术节（滨海艺术中心）",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "20",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#f97316,#be185d)",
+      "typeLabel": "🎭 艺术节",
+      "typeColor": "#ea580c",
+      "description": "滨海艺术中心一年一度的印度艺术节，11 月 20 日晚 6:45 在户外 Courtyard 免费开幕。之后十天有舞蹈、戏剧、音乐会，还有给 6 岁以上孩子的互动剧场和免费讲故事场次，想让孩子感受多元文化很合适。",
+      "venue": "Esplanade – Theatres on the Bay, 1 Esplanade Drive, Singapore 038981",
+      "dateRange": "11月20日（周五）– 11月29日（周日）",
+      "ticketInfo": "🆓 开幕及户外节目免费 · 部分剧场需购票",
+      "price": "免费起",
+      "priceNote": "收费节目约 S$40 起",
+      "ticketUrl": "https://www.esplanade.com/whats-on/festivals-and-series/kalaa-utsavam-indian-festival-of-arts/2026/kalaa-utsavam-opening-performance",
+      "btnText": "查看节目",
+      "sortDate": "2026-11-20",
+      "active": true
+    },
+    {
+      "id": "boutiques-sg-gifting-edition-2026-11",
+      "name": "Boutiques Singapore 圣诞礼物市集 · Gifting Edition（F1 Pit Building）",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "20",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#16a34a,#dc2626)",
+      "typeLabel": "🛍️ 市集",
+      "typeColor": "#16a34a",
+      "description": "新加坡最大的设计师品牌市集年末场，300 多个品牌，其中 90+ 是首次参展的新品牌。服饰、家居、首饰、儿童用品都有，圣诞礼物一站搞定。12 岁以下小朋友免费入场。",
+      "venue": "F1 Pit Building, 1 Republic Boulevard, Singapore 038975",
+      "dateRange": "11月20–21日 11am–9pm；11月22日 10am–6pm",
+      "ticketInfo": "🎟️ 单日票 S$8 起 · 三日通票 S$19",
+      "price": "S$8 起",
+      "priceNote": "12 岁以下免费",
+      "ticketUrl": "https://www.ticketmelon.com/boutiques-singapore/gifting-edition-2026",
+      "btnText": "购票",
+      "sortDate": "2026-11-20",
+      "active": false
+    },
+    {
+      "id": "model-car-show-scape-2026-11",
+      "name": "The Model Car Show 模型车展（*Scape）",
+      "type": "exhibition",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "21",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#0ea5e9,#1e293b)",
+      "typeLabel": "🚗 展览",
+      "typeColor": "#0284c7",
+      "description": "乌节路 *Scape 的免费模型车展，展出收藏级的各类车模。喜欢车的小男孩、小女孩都能看很久，逛完顺便在乌节路看圣诞灯饰。",
+      "venue": "*Scape, 2 Orchard Link, Singapore 237978",
+      "dateRange": "11月21日（周六）– 11月22日（周日）10am–9pm",
+      "ticketInfo": "🆓 免费入场",
+      "price": "免费",
+      "priceNote": "无需预约",
+      "ticketUrl": "https://www.instagram.com/themodelcarshowsg/",
+      "btnText": "查看详情",
+      "sortDate": "2026-11-21",
+      "active": false
+    },
+    {
+      "id": "aia-hyrox-singapore-expo-2026-11",
+      "name": "AIA HYROX Singapore 2026 健身竞速赛（含 8–15 岁 Youngstars 组）",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "26",
+      "dow": "周四",
+      "dateColor": "linear-gradient(135deg,#facc15,#111827)",
+      "typeLabel": "🏃 体育",
+      "typeColor": "#ca8a04",
+      "description": "全球很火的室内健身竞速赛：8 段 1 公里跑步，中间穿插 8 个功能训练站。28–29 日有 HYROX Youngstars 组，8–15 岁孩子可以参加，家长报名比赛、孩子去加油也很热闹。",
+      "venue": "Singapore EXPO, 1 Expo Drive, Singapore 486150",
+      "dateRange": "11月26日（周四）– 11月29日（周日）",
+      "ticketInfo": "🎟️ 参赛 / 观赛票见官网",
+      "price": "视组别而定",
+      "priceNote": "Youngstars 组 11/28–29",
+      "ticketUrl": "https://hyrox.com/event/aia-hyrox-singapore/",
+      "btnText": "报名 / 购票",
+      "sortDate": "2026-11-26",
+      "active": true
+    },
+    {
+      "id": "sienna-spiro-capitol-2027-01",
+      "name": "Sienna Spiro「My House Tour」新加坡站",
+      "type": "concert",
+      "priority": "normal",
+      "month": "JAN",
+      "day": "11",
+      "dow": "周一",
+      "dateColor": "linear-gradient(135deg,#a78bfa,#4c1d95)",
+      "typeLabel": "🎤 演唱会",
+      "typeColor": "#7c3aed",
+      "description": "英国新生代灵魂唱腔女歌手 Sienna Spiro 首次来新，在国会剧院这种小场地听现场，声音细节非常清楚。目前显示已售罄，可以留意 Ticketmaster 官方转售。",
+      "venue": "Capitol Theatre, 17 Stamford Road, Singapore 178907",
+      "dateRange": "2027年1月11日（周一）",
+      "ticketInfo": "⚠️ 已售罄 · 留意官方转售",
+      "price": "已售罄",
+      "priceNote": "Ticketmaster 官方转售",
+      "ticketUrl": "https://ticketmaster.sg/activity/detail/27sg_siennaspiro",
+      "btnText": "查看余票",
+      "sortDate": "2027-01-11",
+      "active": true
+    },
+    {
+      "id": "dongpo-life-in-poems-esplanade-2026-12",
+      "name": "沈伟舞剧《诗忆东坡》Dongpo: Life in Poems",
+      "type": "event",
+      "priority": "featured",
+      "month": "DEC",
+      "day": "4",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#fcd34d,#7c2d12)",
+      "typeLabel": "🎭 舞剧",
+      "typeColor": "#b45309",
+      "description": "编导沈伟以苏东坡 13 首诗词串起他的一生，现代舞、戏曲身段和太极融为一体，陈其钢参与作曲，现场还有古琴伴奏。80 分钟不中场休息，中文演出配英文字幕，6 岁以上可入场——带上小学的孩子一起看，比背十首诗都管用。因需求加开 12 月 5 日晚 7 点场。",
+      "venue": "Esplanade Theatre, 1 Esplanade Drive, Singapore 038981",
+      "dateRange": "12月4日（周五）8pm；12月5日（周六）2:30pm & 7pm",
+      "ticketInfo": "SISTIC / Esplanade 官网发售",
+      "price": "S$69–249",
+      "priceNote": "Cat 4 S$69 起 · 6 岁以上",
+      "ticketUrl": "https://www.sistic.com.sg/events/dongpo1226",
+      "btnText": "立即购票",
+      "sortDate": "2026-12-04",
+      "active": true
+    },
+    {
+      "id": "sake-matsuri-mbs-2026-11",
+      "name": "Sake Matsuri 2026 东南亚最大清酒节",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "28",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#fecaca,#be123c)",
+      "typeLabel": "🍶 美食节",
+      "typeColor": "#be123c",
+      "description": "今年搬到金沙会展中心 Hall C，上百款日本清酒一次喝个遍，每天分 11am–2pm 和 4pm–7pm 两个场次。适合爸爸妈妈约朋友去，18 岁以下可由大人陪同免费入场但不提供酒杯；旁边同时有 Japan HopFest 精酿啤酒节（另购票）。",
+      "venue": "Hall C, Sands Expo & Convention Centre, Marina Bay Sands, Singapore 018956",
+      "dateRange": "11月28日（周六）– 11月29日（周日）",
+      "ticketInfo": "官网发售 · 按场次购票",
+      "price": "S$60 起",
+      "priceNote": "单场 S$60 · VIP 全天 S$128",
+      "ticketUrl": "https://sakematsuri.sg/",
+      "btnText": "立即购票",
+      "sortDate": "2026-11-28",
+      "active": true
+    },
+    {
+      "id": "sj60-musubi-festival-mbs-2026-11",
+      "name": "SJ60 Musubi 新日建交60周年日本文化节",
+      "type": "event",
+      "priority": "normal",
+      "month": "NOV",
+      "day": "28",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#fbcfe8,#db2777)",
+      "typeLabel": "🎌 文化节",
+      "typeColor": "#db2777",
+      "description": "庆祝新加坡与日本建交 60 周年的大型文化节，金沙会展 D、E 馆两天内有日本美食、手作工坊、舞台表演和日本旅游展（JNTO 展馆，现场订团还送限定托特包）。4–12 岁儿童一日票只要 S$4，想规划明年日本游的家庭顺便来逛很划算。",
+      "venue": "Halls D & E, Sands Expo & Convention Centre, Marina Bay Sands, Singapore 018956",
+      "dateRange": "11月28日（周六）– 11月29日（周日）",
+      "ticketInfo": "SISTIC 发售",
+      "price": "S$4–8 起",
+      "priceNote": "儿童 S$4 · 成人 S$8 起",
+      "ticketUrl": "https://www.sistic.com.sg/events/musubi1126",
+      "btnText": "立即购票",
+      "sortDate": "2026-11-28",
+      "active": true
+    },
+    {
+      "id": "anjunabeats-warehouse-power-station-2026-12",
+      "name": "Above & Beyond presents Anjunabeats Warehouse Singapore",
+      "type": "concert",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "5",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#a5f3fc,#0e7490)",
+      "typeLabel": "🎧 电音",
+      "typeColor": "#0e7490",
+      "description": "英国电音天团 Above & Beyond 把旗下厂牌 Anjunabeats 的仓库派对搬到巴西班让旧发电站，工业风场地配 trance 和 progressive house，晚上 9 点开场。纯成人夜场活动，适合爸妈们给自己放个假。",
+      "venue": "Pasir Panjang Power Station, 27 Pasir Panjang Road, Singapore 117537",
+      "dateRange": "12月5日（周六）9pm 起",
+      "ticketInfo": "成人夜场 · 18+",
+      "price": "待查",
+      "priceNote": "以购票平台为准",
+      "ticketUrl": "https://www.ticketmaster.sg/search?q=Anjunabeats+Singapore",
+      "btnText": "查看购票",
+      "sortDate": "2026-12-05",
+      "active": true
+    },
+    {
+      "id": "boynextdoor-knock-on-indoor-stadium-2027-01",
+      "name": "BOYNEXTDOOR TOUR 'KNOCK ON Vol.2' 新加坡站",
+      "type": "concert",
+      "priority": "featured",
+      "month": "JAN",
+      "day": "23",
+      "dow": "周六",
+      "dateColor": "linear-gradient(135deg,#6366f1,#ec4899)",
+      "typeLabel": "🎤 K-pop",
+      "typeColor": "#8b5cf6",
+      "description": "HYBE 旗下男团 BOYNEXTDOOR 第二轮巡演来新加坡！舞台活力满满、歌曲轻快好入坑，是 2027 年开年第一场大型 K-pop 演出，粉丝记得盯紧开票。",
+      "venue": "Singapore Indoor Stadium, 2 Stadium Walk, Singapore 397691",
+      "dateRange": "2027年1月23日（周六）",
+      "ticketInfo": "Ticketmaster 售票",
+      "price": "待公布",
+      "priceNote": "票价及开售时间以 Ticketmaster 公告为准",
+      "ticketUrl": "https://www.ticketmaster.sg/search?q=BOYNEXTDOOR+Singapore",
+      "btnText": "查看购票",
+      "sortDate": "2027-01-23",
+      "active": true
+    },
+    {
+      "id": "bts-popup-arirang-national-gallery-2026-12",
+      "name": "BTS POP-UP: ARIRANG 快闪店（国家美术馆最高法院露台）",
+      "type": "event",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "4",
+      "dow": "周五",
+      "dateColor": "linear-gradient(135deg,#a855f7,#1e1b4b)",
+      "typeLabel": "💜 快闪",
+      "typeColor": "#7c3aed",
+      "description": "配合 BTS 12 月国家体育场演唱会，官方周边快闪店进驻国家美术馆。买不到演唱会票的 ARMY 也能来感受氛围、抢限定周边，建议工作日早点去避开排队。",
+      "venue": "Supreme Court Terrace, National Gallery Singapore, 1 St Andrew's Road, Singapore 178957",
+      "dateRange": "12月4日 – 12月31日",
+      "ticketInfo": "入场方式待公布",
+      "price": "待公布",
+      "priceNote": "可能需预约，留意官方公告",
+      "ticketUrl": "https://www.nationalgallery.sg/BTSTHECITYARIRANG",
+      "btnText": "查看详情",
+      "sortDate": "2026-12-04",
+      "active": true
+    },
+    {
+      "id": "chyi-chin-mbs-sands-live-2026-12",
+      "name": "齐秦 BELONG TO US 演唱会 2026 · 金沙 Sands Live Season",
+      "type": "concert",
+      "priority": "featured",
+      "month": "DEC",
+      "day": "27",
+      "dow": "周日",
+      "sortDate": "2026-12-27",
+      "dateColor": "linear-gradient(135deg,#f59e0b,#b91c1c)",
+      "typeLabel": "🎤 华语演唱会",
+      "typeColor": "#b91c1c",
+      "description": "「狼」来了！齐秦年底在金沙开唱，《大约在冬季》《外面的世界》《往事随风》都是爸妈辈的青春，带上家里长辈一起去听最合适。",
+      "venue": "Sands Grand Ballroom, Marina Bay Sands Expo & Convention Centre, 10 Bayfront Avenue, Singapore 018956",
+      "dateRange": "12月27日（周日）8pm",
+      "ticketInfo": "🎟️ 金沙 Sands Live Season 官网发售中",
+      "price": "S$98–258",
+      "priceNote": "VIP S$258 / A S$228 / B S$188 / C S$148 / 限视野 S$98，另加手续费",
+      "ticketUrl": "https://www.marinabaysands.com/sandsliveseason",
+      "btnText": "金沙官网购票",
+      "active": true
+    },
+    {
+      "id": "raymond-lam-mbs-sands-live-2026-12",
+      "name": "林峯 GO WITH THE FLOW 世界巡回演唱会 · 金沙跨年",
+      "type": "concert",
+      "priority": "featured",
+      "month": "DEC",
+      "day": "30",
+      "dow": "周三",
+      "sortDate": "2026-12-30",
+      "dateColor": "linear-gradient(135deg,#f59e0b,#b91c1c)",
+      "typeLabel": "🎤 华语演唱会",
+      "typeColor": "#b91c1c",
+      "description": "TVB 一哥林峯的跨年场！31 日那场唱完直接倒数迎接 2027，港剧迷和粤语歌迷别错过，《爱不疚》《我是谁》现场大合唱。",
+      "venue": "Sands Grand Ballroom, Marina Bay Sands Expo & Convention Centre, 10 Bayfront Avenue, Singapore 018956",
+      "dateRange": "12月30日、31日（周三、四）8pm",
+      "ticketInfo": "🎟️ 金沙 Sands Live Season 官网发售中",
+      "price": "S$98–258",
+      "priceNote": "VIP S$258 / A S$228 / B S$188 / C S$148 / 限视野 S$98，另加手续费",
+      "ticketUrl": "https://www.marinabaysands.com/sandsliveseason",
+      "btnText": "金沙官网购票",
+      "active": true
+    },
+    {
+      "id": "michael-wong-mbs-sands-live-2027-01",
+      "name": "光良 NEVER APART 第一次 3.0+ 世界巡回 · 金沙站",
+      "type": "concert",
+      "priority": "featured",
+      "month": "JAN",
+      "day": "2",
+      "dow": "周六",
+      "sortDate": "2027-01-02",
+      "dateColor": "linear-gradient(135deg,#f59e0b,#b91c1c)",
+      "typeLabel": "🎤 华语演唱会",
+      "typeColor": "#b91c1c",
+      "description": "新年第一场暖心演唱会！光良《童话》《第一次》《约定》一开口就回到学生时代，适合夫妻俩约会。",
+      "venue": "Sands Grand Ballroom, Marina Bay Sands Expo & Convention Centre, 10 Bayfront Avenue, Singapore 018956",
+      "dateRange": "2027年1月2日（周六）8pm",
+      "ticketInfo": "🎟️ 金沙 Sands Live Season 官网发售中",
+      "price": "S$98–258",
+      "priceNote": "VIP S$258 / A S$228 / B S$188 / C S$148 / 限视野 S$98，另加手续费",
+      "ticketUrl": "https://www.marinabaysands.com/sandsliveseason",
+      "btnText": "金沙官网购票",
       "active": true
     },
   ],
@@ -15498,7 +16361,7 @@ const SGLIVING_DATA = {
       price: "S$15起 / 单项体验",
       bookingUrl: "https://www.sentosa.com.sg/en/things-to-do/attractions/splashtopia/",
       btnText: "购票",
-      active: true
+      active: false
     },
 
     {
@@ -15515,7 +16378,7 @@ const SGLIVING_DATA = {
       price: "免费（须预约）",
       bookingUrl: "https://www.maritimegallery.gov.sg/",
       btnText: "预约",
-      active: true
+      active: false
     },
 
     {
@@ -15532,7 +16395,7 @@ const SGLIVING_DATA = {
       price: "S$280–520 / 营期",
       bookingUrl: "https://www.empire.ai/sg/kids-camp",
       btnText: "报名",
-      active: true
+      active: false
     },
 
     {
@@ -15566,7 +16429,7 @@ const SGLIVING_DATA = {
       price: "S$330+/天起",
       bookingUrl: "https://www.campasia.asia/",
       btnText: "报名",
-      active: true
+      active: false
     },
 
     {
@@ -15583,7 +16446,7 @@ const SGLIVING_DATA = {
       price: "本地居民 S$19.50/成人，儿童 S$12.50",
       bookingUrl: "https://www.marinabaysands.com/museum/exhibitions/flesh-and-bones.html",
       btnText: "购票",
-      active: true
+      active: false
     },
 
     {
@@ -15600,7 +16463,7 @@ const SGLIVING_DATA = {
       price: "S$48–128",
       bookingUrl: "https://www.sistic.com.sg/events/search?q=Disney+Esplanade",
       btnText: "购票",
-      active: true
+      active: false
     },
 
     {
@@ -15617,7 +16480,7 @@ const SGLIVING_DATA = {
       price: "S$8 起 / 小朋友（家长免费）",
       bookingUrl: "https://www.hometeamns.sg/events/june-school-holiday-with-hometeamns-2026/",
       btnText: "购票",
-      active: true
+      active: false
     },
 
     {
@@ -15651,7 +16514,7 @@ const SGLIVING_DATA = {
       price: "免费 + 部分付费工作坊",
       bookingUrl: "https://www.nhb.gov.sg/nationalmuseum/whats-on/programme/childrens-season/events",
       btnText: "查看活动",
-      active: true
+      active: false
     },
 
     {
@@ -15668,7 +16531,7 @@ const SGLIVING_DATA = {
       price: "公共空间免费 · 剧场 S$15–35",
       bookingUrl: "https://www.esplanade.com/flipside",
       btnText: "查看节目",
-      active: true
+      active: false
     },
 
     {
@@ -15702,7 +16565,7 @@ const SGLIVING_DATA = {
       price: "免费入场",
       bookingUrl: "https://www.familiesforlife.sg/",
       btnText: "查看详情",
-      active: true
+      active: false
     },
 
     {
@@ -15719,7 +16582,7 @@ const SGLIVING_DATA = {
       price: "免费入场（部分工作坊预约制）",
       bookingUrl: "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events.html",
       btnText: "查看节目表",
-      active: true
+      active: false
     },
 
     {
@@ -16634,7 +17497,7 @@ const SGLIVING_DATA = {
       "bookingUrl": "https://xventurepark.com/outlets/tiong-bahru-plaza"
     },
     {
-      "active": true,
+      "active": false,
       "id": "activesg-punggol-sport-centre-opening-2026-11",
       "name": "ActiveSG 榜鹅体育中心开幕日（泳池健身房全天免费）",
       "icon": "🏊",
@@ -16724,7 +17587,7 @@ const SGLIVING_DATA = {
       "bookingUrl": "https://www.campasia.asia/"
     },
     {
-      "active": true,
+      "active": false,
       "id": "bluey-bingo-woodleigh-mall-2026-11",
       "name": "Bluey & Bingo 见面会（The Woodleigh Mall）",
       "icon": "🐶",
@@ -16812,6 +17675,306 @@ const SGLIVING_DATA = {
       "cost": "Suntec+ 会员免费玩游戏，其余待公布",
       "duration": "约 1 小时",
       "bookingUrl": "https://www.google.com/search?q=Powerpuff+Girls+We+Bare+Bears+Suntec+City+2026"
+    },
+    {
+      "active": false,
+      "id": "grandparents-day-national-museum-2026-11",
+      "name": "祖父母节 Grandparents' Day（新加坡国家博物馆）",
+      "icon": "👵",
+      "topGradient": "linear-gradient(90deg,#f59e0b,#ec4899)",
+      "ageRange": "全年龄 · 祖孙三代",
+      "description": "国家博物馆一整天的祖孙主题活动：手作市集摊位（10am–4pm）、Whale of a Tale 鲸鱼游乐场（10am–7pm），还有一些需要报名的手作工作坊。",
+      "highlight": "7–9 岁孩子正是爱听故事的年纪，带爷爷奶奶一起来，一边逛展一边听老人讲以前的新加坡，比课本生动多了；游乐场还能放电",
+      "location": "National Museum of Singapore, 93 Stamford Road, Singapore 178897",
+      "dateRange": "11月21日（周六）10am–7pm",
+      "cost": "公民及 PR 免费入馆，多数活动免费；部分工作坊收费",
+      "duration": "约 2–3 小时",
+      "bookingUrl": "https://www.nationalmuseum.nhb.gov.sg/whats-on/programme/grandparents-day/events"
+    },
+    {
+      "active": false,
+      "id": "objectifs-junior-festival-2026-11",
+      "name": "Objectifs Junior Festival 少儿影像节",
+      "icon": "📷",
+      "topGradient": "linear-gradient(90deg,#06b6d4,#8b5cf6)",
+      "ageRange": "适合 6–14 岁",
+      "description": "专门给孩子的摄影和影像节：动手拍照、光绘、看儿童短片，周末还有孩子自己摆摊的「儿童市集」。光绘圣诞卡工作坊需购票，其余大多免费。",
+      "highlight": "7–9 岁正适合学「用镜头观察」，拿手机或相机自己拍、自己做圣诞卡，培养审美和表达力；儿童市集还能锻炼胆量",
+      "location": "Objectifs, 155 Middle Road, Singapore 188977",
+      "dateRange": "11月20日（周五）– 11月22日（周日）10:30am–5pm",
+      "cost": "大部分免费；光绘圣诞卡工作坊收费",
+      "duration": "约 2 小时",
+      "bookingUrl": "https://www.objectifs.com.sg/objectifs-junior-festival-2026/"
+    },
+    {
+      "active": false,
+      "id": "paatis-spice-kitchen-esplanade-2026-11",
+      "name": "Paati's Spice Kitchen 奶奶的香料厨房 · 亲子互动剧（滨海艺术中心）",
+      "icon": "🌶️",
+      "topGradient": "linear-gradient(90deg,#f97316,#facc15)",
+      "ageRange": "适合 6 岁以上",
+      "description": "Kalaa Utsavam 印度艺术节的亲子剧目，40 分钟英语演出，用香料、气味和故事带孩子认识印度家庭厨房。同场还有免费讲故事节目 Not Quite Murukku。",
+      "highlight": "7–9 岁孩子能闻、能看、能参与，40 分钟长度刚好不会坐不住；顺便认识新加坡多元文化里的印度饮食",
+      "location": "Esplanade – Theatres on the Bay, 1 Esplanade Drive, Singapore 038981",
+      "dateRange": "11月21–22日（周六、日）11am & 4pm",
+      "cost": "S$40 起（1 大 1 小）",
+      "duration": "约 40 分钟",
+      "bookingUrl": "https://www.esplanade.com/whats-on/festivals-and-series/kalaa-utsavam-indian-festival-of-arts/2026/paatis-spice-kitchen"
+    },
+    {
+      "active": true,
+      "id": "great-christmas-village-orchard-2026-11",
+      "name": "乌节路 Great Christmas Village 圣诞村（Ngee Ann City & Shaw House）",
+      "icon": "🎄",
+      "topGradient": "linear-gradient(90deg,#dc2626,#16a34a)",
+      "ageRange": "适合 3–12 岁",
+      "description": "乌节路圣诞季的两大圣诞村：Ngee Ann City 广场有复仇者寻宝路线、Kiztopia 嘉年华游戏和乐高圣诞老人玩具工厂；Shaw House 广场也有 Kiztopia 游戏摊位。",
+      "highlight": "7–9 岁孩子最爱复仇者寻宝和乐高搭建，玩完正好看乌节路圣诞灯饰；嘉年华游戏需买游戏卡，入场免费",
+      "location": "Ngee Ann City Civic Plaza, 391 Orchard Road, Singapore 238872",
+      "dateRange": "即日起至 2027年1月3日，每日 3pm–10pm（12 月周五六至 10:30pm）",
+      "cost": "免费入场；嘉年华游戏需购买游戏卡",
+      "duration": "约 1–2 小时",
+      "bookingUrl": "https://christmas.orchardroad.org/great-christmas-village/"
+    },
+    {
+      "active": true,
+      "id": "camp-conquer-little-rangers-2026-11",
+      "name": "Camp Conquer 户外探险营（Little Rangers Club）",
+      "icon": "🛶",
+      "topGradient": "linear-gradient(90deg,#22c55e,#0ea5e9)",
+      "ageRange": "适合 7–12 岁",
+      "description": "4 天户外营，第一天在圣淘沙：极限飞盘、激光枪战，之后有龙舟、帆船和徒步。共 4 期可选：11/23–26、11/30–12/3、12/7–10、12/14–17。",
+      "highlight": "年终假期别让孩子天天对着屏幕！7–9 岁正是体能和团队意识快速发展的阶段，龙舟、帆船这种团队项目很能锻炼合作和胆量",
+      "location": "多个场地（Day 1 圣淘沙）",
+      "dateRange": "11月23日 – 12月17日（4 期，每期 4 天，9am–5pm）",
+      "cost": "S$499 起/人",
+      "duration": "4 天",
+      "bookingUrl": "https://littlerangers.sg/newrangersholidaycamps/"
+    },
+    {
+      "active": true,
+      "id": "kallang-ice-world-skating-2026",
+      "name": "Kallang Ice World 室内溜冰场（Kallang Wave Mall）",
+      "icon": "⛸️",
+      "topGradient": "linear-gradient(90deg,#bae6fd,#6366f1)",
+      "ageRange": "适合 5 岁以上",
+      "description": "室内真冰溜冰场，每场 2 小时，提供免费的助滑架给新手，也可报名儿童溜冰课。",
+      "highlight": "7–9 岁平衡感发育快，学溜冰进步特别明显；在热带过个「冰雪假期」很有新鲜感，下雨天也不怕。记得给孩子带长袖和手套",
+      "location": "Kallang Wave Mall Level 3, 5 Stadium Walk, Singapore 397693",
+      "dateRange": "全年开放（假期场次较满，建议早场）",
+      "cost": "儿童 S$13（自带冰鞋）/ 约 S$18（含租鞋）",
+      "duration": "2 小时一场",
+      "bookingUrl": "https://www.google.com/search?q=Kallang+Ice+World+session+tickets"
+    },
+    {
+      "active": true,
+      "id": "activesg-inline-skating-camp-2026-11",
+      "name": "ActiveSG 直排轮滑营（全岛多个体育中心）",
+      "icon": "🛼",
+      "topGradient": "linear-gradient(90deg,#f97316,#facc15)",
+      "ageRange": "6–17 岁",
+      "description": "2 小时轮滑课，分初级和中级，场地包括裕廊湖花园、碧山、义顺、巴西立、武吉甘柏、金文泰等 ActiveSG 中心。",
+      "highlight": "S$50 价格亲民、离家近；7–9 岁学轮滑胆子大、上手快，两小时就能从扶墙走到自己滑，成就感满满",
+      "location": "多个 ActiveSG 体育中心",
+      "dateRange": "11–12 月年终假期多个场次",
+      "cost": "S$50 / 场",
+      "duration": "2 小时",
+      "bookingUrl": "https://www.google.com/search?q=ActiveSG+inline+skating+holiday+camp+2026"
+    },
+    {
+      "active": true,
+      "id": "js-athletics-holiday-camp-2026-11",
+      "name": "JS Athletics 两天田径假期营（Evans Road）",
+      "icon": "🏃",
+      "topGradient": "linear-gradient(90deg,#ef4444,#f59e0b)",
+      "ageRange": "5–12 岁",
+      "description": "两天田径基础营，跑步、跳跃、投掷都练，风雨无阻照常进行。",
+      "highlight": "只要 S$30，是年终假期性价比最高的运动营之一；7–9 岁孩子跑跳协调性正在快速发展，田径打基础对以后学任何运动都有帮助",
+      "location": "Evans Road（MOE Evans 运动场）",
+      "dateRange": "11–12 月多个日期",
+      "cost": "S$30 / 2 天",
+      "duration": "2 天",
+      "bookingUrl": "https://www.google.com/search?q=JS+Athletics+holiday+camp+Evans+Road+2026"
+    },
+    {
+      "active": true,
+      "id": "academia-winter-writing-programme-2026-11",
+      "name": "Academia 年终英文写作假期班（Upper Thomson / Coronation）",
+      "icon": "✏️",
+      "topGradient": "linear-gradient(90deg,#a78bfa,#6366f1)",
+      "ageRange": "小一至小六（按年级分班）",
+      "description": "2 天或 3 天的英文写作短期班：P1–2 学编故事，P3–4 练人物塑造和情感描写。",
+      "highlight": "7–9 岁（约 P2–P4）正是从「会写句子」到「会写故事」的关键期，假期补一补英文作文，开学写 composition 更有底气",
+      "location": "Upper Thomson 与 Coronation 两个中心",
+      "dateRange": "11月23日–12月18日",
+      "cost": "S$100 起",
+      "duration": "2–3 天",
+      "bookingUrl": "https://www.google.com/search?q=Academia+winter+holiday+programme+2026+Singapore"
+    },
+    {
+      "active": true,
+      "id": "monster-curry-meiji-toast-workshop-2026-11",
+      "name": "Monster Curry × Meiji 圣诞蜜糖吐司亲子工作坊",
+      "icon": "🍞",
+      "topGradient": "linear-gradient(90deg,#fbbf24,#f97316)",
+      "ageRange": "亲子（1 大 1 小）",
+      "description": "孩子用明治巧克力和各种配料装饰一整块蜜糖吐司，含饮料、小食和礼品袋，每场限 16 组。每个周末换一家商场：11/28–29 Northpoint City、12/5–6 Jurong Point、12/12–13 Suntec City、12/19–20 VivoCity。",
+      "highlight": "7–9 岁孩子手已经很稳，能自己设计造型、挤酱、摆配料，做完还能吃掉，成就感满满；1 个半小时刚好不会坐不住",
+      "location": "Northpoint City / Jurong Point / Suntec City / VivoCity 的 Monster Curry",
+      "dateRange": "11月28日–12月20日（周末，2–3:30pm 或 3:30–5pm）",
+      "cost": "S$32.90（1 大 1 小），加一个孩子 S$15.90",
+      "duration": "1.5 小时",
+      "bookingUrl": "https://www.monstercurry.com.sg/meiji-holiday-toast-workshop/"
+    },
+    {
+      "active": true,
+      "id": "snoopy-christmas-recipe-centrepoint-2026-11",
+      "name": "Snoopy 圣诞欢乐食谱（The Centrepoint）",
+      "icon": "🐶",
+      "topGradient": "linear-gradient(90deg,#fca5a5,#ef4444)",
+      "ageRange": "3–12 岁",
+      "description": "乌节路 The Centrepoint 的史努比圣诞主题活动：装饰史努比杯子蛋糕公仔、写 PEANUTS 明信片，还有角色见面会和拍照点。",
+      "highlight": "7–9 岁的孩子正是喜欢动手 DIY 又爱收集周边的年纪，装饰公仔和写明信片都能自己完成，圣诞寄给爷爷奶奶特别有意义",
+      "location": "The Centrepoint, 176 Orchard Road, Singapore 238843",
+      "dateRange": "11月13日–12月31日",
+      "cost": "部分活动需消费兑换（以商场公告为准）",
+      "duration": "1–2 小时",
+      "bookingUrl": "https://www.littledayout.com/snoopys-christmas-recipe-for-joy-the-centrepoint/"
+    },
+    {
+      "active": true,
+      "id": "little-red-dot-riding-hood-evolve-arts-2026-11",
+      "name": "儿童剧《小红（点）帽》Little Red (Dot) Riding Hood",
+      "icon": "🎭",
+      "topGradient": "linear-gradient(90deg,#f87171,#b91c1c)",
+      "ageRange": "4–10 岁",
+      "description": "Evolve Arts 把小红帽的故事搬到新加坡（Little Red Dot），加入本地元素和互动环节，年终假期连演两周。",
+      "highlight": "7–9 岁孩子已经熟悉原版童话，看到「狼外婆」变成本地版会特别有共鸣；英文台词简单，也是练听力的好机会",
+      "location": "Evolve Arts（详见订票页）",
+      "dateRange": "11月29日–12月12日",
+      "cost": "S$25",
+      "duration": "约 1 小时",
+      "bookingUrl": "https://onz.sg/events/little-red-dot-riding-hood-evolve-arts-2026"
+    },
+    {
+      "active": true,
+      "id": "santa-claus-finland-flower-dome-2026-12",
+      "name": "芬兰官方圣诞老人见面会（花穹 Flower Dome）",
+      "icon": "🎅",
+      "topGradient": "linear-gradient(90deg,#fecaca,#dc2626)",
+      "ageRange": "全年龄",
+      "description": "来自芬兰罗瓦涅米的「官方圣诞老人」12 月 5 日到滨海湾花园花穹见小朋友，配合花穹的圣诞火车展一起看。",
+      "highlight": "7–9 岁正是半信半疑圣诞老人的年纪，见到「芬兰正版」会超兴奋；可以提前让孩子写好愿望卡当面交",
+      "location": "Flower Dome, Gardens by the Bay, 18 Marina Gardens Drive, Singapore 018953",
+      "dateRange": "12月5日（周六）",
+      "cost": "免费（花穹门票另计）",
+      "duration": "1–2 小时",
+      "bookingUrl": "https://onz.sg/events/santa-claus-of-finland-flower-dome-2026"
+    },
+    {
+      "active": true,
+      "id": "get-crafty-snowflake-mosaic-gbtb-2026-11",
+      "name": "Get Crafty! 雪花马赛克杯垫手作（花穹）",
+      "icon": "❄️",
+      "topGradient": "linear-gradient(90deg,#bae6fd,#0284c7)",
+      "ageRange": "6 岁以上",
+      "description": "Happy Hands Can 在花穹澳洲花园开的周末手作摊，用彩色马赛克拼出雪花图案杯垫，做完带回家。",
+      "highlight": "拼马赛克考验耐心和对称感，7–9 岁孩子能独立完成，顺便认识几何图形；S$15 很划算，逛花穹顺手参加",
+      "location": "Australian Garden, Flower Dome, Gardens by the Bay",
+      "dateRange": "11月28日（周六）– 11月29日（周日）",
+      "cost": "S$15",
+      "duration": "约 45 分钟",
+      "bookingUrl": "https://onz.sg/events/get-crafty-snowflake-mosaic-coaster-2026"
+    },
+    {
+      "active": true,
+      "id": "glowcean-wonderland-oceanarium-2026-11",
+      "name": "Glowcean Wonderland 发光海洋圣诞（新加坡海洋馆）",
+      "icon": "🪼",
+      "topGradient": "linear-gradient(90deg,#06b6d4,#6366f1)",
+      "ageRange": "适合 4–12 岁",
+      "description": "圣城名胜世界海洋馆的圣诞特别活动，多个展区变身发光海底世界，跟着蝠鲼 Manja 完成盖章任务就能换小奖励。",
+      "highlight": "7–9 岁孩子正是爱集章、爱闯关的年纪，盖章路线让他们主动去读每个展区的海洋知识；可和环球影城圣诞、Adventure Cove 连成圣淘沙一日游",
+      "location": "Singapore Oceanarium, Resorts World Sentosa, 8 Sentosa Gateway, Singapore 098269",
+      "dateRange": "11月27日 – 2027年1月3日，每日 10am–8pm",
+      "cost": "含于海洋馆门票（以官网为准）",
+      "duration": "约 2–3 小时",
+      "bookingUrl": "https://www.rwsentosa.com/en/guide-to-fun/christmas-season-of-joy-official-guide#glowcean-wonderland"
+    },
+    {
+      "active": true,
+      "id": "paw-patrol-christmas-city-square-2026-11",
+      "name": "汪汪队立大功 PAW Patrol 圣诞救援（City Square Mall）",
+      "icon": "🐶",
+      "topGradient": "linear-gradient(90deg,#ef4444,#3b82f6)",
+      "ageRange": "适合 3–8 岁",
+      "description": "City Square Mall 的汪汪队圣诞主题活动：狗狗见面会、户外泡泡秀，还有「救援任务」压轴表演。",
+      "highlight": "汪汪队是很多孩子的童年回忆，7–8 岁的孩子带着弟弟妹妹一起去刚刚好；泡泡秀在户外，比纯室内商场活动更能放电。商场就在 Farrer Park 地铁站旁，交通方便",
+      "location": "City Square Mall, 180 Kitchener Road, Singapore 208539",
+      "dateRange": "11月13日 – 2027年1月3日",
+      "cost": "大部分免费；见面会通常需消费换领",
+      "duration": "约 1 小时",
+      "bookingUrl": "https://www.google.com/search?q=PAW+Patrol+Christmas+City+Square+Mall+2026"
+    },
+    {
+      "active": true,
+      "id": "magical-snowy-winterland-chinatown-point-2026-11",
+      "name": "Magical Snowy Winterland 牛车水圣诞飘雪（Chinatown Point）",
+      "icon": "❄️",
+      "topGradient": "linear-gradient(90deg,#bae6fd,#1d4ed8)",
+      "ageRange": "适合全年龄",
+      "description": "Chinatown Point 10 米高的圣诞树会在指定晚上「下雪」，是热带新加坡少有的免费看雪体验。",
+      "highlight": "7–9 岁孩子对「下雪」最没有抵抗力，免费又不用排长队；看完雪还能在牛车水吃晚饭、逛街，轻松的工作日晚间活动",
+      "location": "Chinatown Point, 133 New Bridge Road, Singapore 059413",
+      "dateRange": "11月29日 – 12月25日（指定晚上）",
+      "cost": "免费",
+      "duration": "约 30 分钟",
+      "bookingUrl": "https://www.google.com/search?q=Chinatown+Point+Magical+Snowy+Winterland+2026"
+    },
+    {
+      "active": true,
+      "id": "story-of-studio-ghibli-family-2026-12",
+      "name": "The Story of Studio Ghibli 吉卜力沉浸式大展（滨海湾花园）",
+      "icon": "🌳",
+      "topGradient": "linear-gradient(90deg,#86efac,#15803d)",
+      "ageRange": "适合全年龄（7–9 岁最佳）",
+      "description": "3,500 平方米、12 个吉卜力电影场景实景还原，东南亚首展，展期到 2027 年 7 月 4 日。",
+      "highlight": "7–9 岁正是看《龙猫》《魔女宅急便》的年纪，走进电影场景里拍照、找无脸男，比单纯看展有趣得多；全程约 60–75 分钟，不会累。12 月 17 日前早鸟票 S$29 起",
+      "location": "The West Lawn, Gardens by the Bay, 18 Marina Gardens Drive, Singapore 018953",
+      "dateRange": "2026年12月18日 – 2027年7月4日，每日 10am–7pm",
+      "cost": "S$29 起（早鸟至 12/17）",
+      "duration": "约 60–75 分钟",
+      "bookingUrl": "https://www.klook.com/en-SG/activity/235057-the-story-of-studio-ghibli-wonderland-singapore-southeast-asia-debut/"
+    },
+    {
+      "active": true,
+      "id": "christmas-wonderland-family-zone-gbtb-2026-11",
+      "name": "Christmas Wonderland 滨海湾花园圣诞嘉年华 · 亲子区",
+      "icon": "🎄",
+      "topGradient": "linear-gradient(90deg,#fca5a5,#15803d)",
+      "ageRange": "适合全年龄",
+      "description": "第 13 届圣诞嘉年华，30,000 平方米游乐场，有灯光隧道、飞天圣诞老人和「暴风雪时间」泡沫雪，亲子区有摊位游戏、游乐设施和手工工作坊。",
+      "highlight": "7–9 岁孩子能自己玩摊位游戏赢奖品，泡沫雪时段全场欢呼；晚上 6:30 开门，放学后去刚好，记得早点到避开人潮",
+      "location": "Supertree Grove & The Meadow, Gardens by the Bay, 18 Marina Gardens Drive, Singapore 018953",
+      "dateRange": "11月27日 – 2027年1月3日，每日 6:30pm–11pm",
+      "cost": "入场费以官网为准，游戏另计",
+      "duration": "约 2–3 小时",
+      "bookingUrl": "https://www.google.com/search?q=Christmas+Wonderland+2026+Gardens+by+the+Bay+tickets"
+    },
+    {
+      "active": true,
+      "id": "superpark-suntec-2026-11",
+      "name": "SuperPark Singapore 室内运动乐园（Suntec City）",
+      "icon": "🛝",
+      "topGradient": "linear-gradient(90deg,#fde047,#ea580c)",
+      "ageRange": "适合 3 岁以上（7–9 岁最佳）",
+      "description": "两层 34 项活动：滑梯、球池、忍者闯关赛道、蹦床、攀岩墙、空气曲棍球，雨天放电神器。",
+      "highlight": "7–9 岁孩子体力最旺，忍者赛道和攀岩墙既有挑战又安全；年终假期下雨天也不怕，大人可以在旁边休息或一起玩",
+      "location": "3 Temasek Boulevard, #02-477, Suntec City, Singapore 038983",
+      "dateRange": "全年开放（周一至四 10:30am–8pm，周五 至 9pm，周六 9am–9pm，周日 9am–8pm）",
+      "cost": "S$12.95 起（Klook 价格浮动）",
+      "duration": "约 2–3 小时",
+      "bookingUrl": "http://www.superpark.com.sg/"
     },
   ],
 
@@ -16993,7 +18156,7 @@ const SGLIVING_DATA = {
       badge: "hot",
       badgeText: "🔥 10/22 上映",
       ageGuide: "R 级 · 限成人",
-      active: true
+      active: false
     },
 
     {
@@ -17165,7 +18328,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/22 上映",
       ageGuide: "预计 PG · 适合全家（7-9岁可看）",
-      active: true
+      active: false
     },
 
     {
@@ -17199,7 +18362,7 @@ const SGLIVING_DATA = {
       badge: "new",
       badgeText: "🆕 10/22 上映",
       ageGuide: "预计 PG · 适合全家（7-9岁首选）",
-      active: true
+      active: false
     },
 
     {
@@ -19465,7 +20628,7 @@ const SGLIVING_DATA = {
       id: "hunger-games-sunrise-on-the-reaping-2026-11",
       title: "The Hunger Games: Sunrise on the Reaping",
       chineseTitle: "饥饿游戏：破晓时分",
-      type: "coming-soon",
+      type: "now-showing",
       rating: 7.5,
       releaseDate: "2026-11-19",
       genre: "科幻 / 冒险",
@@ -19480,7 +20643,7 @@ const SGLIVING_DATA = {
       posterUrl: "https://image.tmdb.org/t/p/w500/j1MNyNNgNQL6f27cb3m3uKaPKd6.jpg",
       highlights: ["🎬 导演 Francis Lawrence（《饥饿游戏》系列）", "🌟 Joseph Zada · Ralph Fiennes · Elle Fanning · Maya Hawke · Kieran Culkin", "🎬 影片特色：第 50 届饥饿游戏前传 · 海米奇的故事"],
       badge: "new",
-      badgeText: "🆕 11/19 上映",
+      badgeText: "🔥 热映中",
       ageGuide: "分级待定 · 不建议低龄儿童",
       active: true
     },
@@ -20152,6 +21315,134 @@ const SGLIVING_DATA = {
       "badge": "new",
       "badgeText": "🆕 11/22 电影节场次",
       "ageGuide": "法国全年龄 · 适合 7 岁以上（需看字幕）",
+      "active": true
+    },
+    {
+      "id": "afterpiece-hk-2026-11",
+      "title": "Afterpiece",
+      "chineseTitle": "第四幕",
+      "type": "chinese",
+      "rating": 7.2,
+      "releaseDate": "2026-11-12",
+      "genre": "剧情 / 讽刺喜剧",
+      "language": "粤语（中英字幕）",
+      "duration": "114 分钟",
+      "cast": "冯德伦 · 袁澧林 · 胡杏儿 · 周秀娜",
+      "director": "王德健 Keane T.K. Wong",
+      "description": "上海国际电影节开幕片，尔冬升监制的港产新片。讲一位沉寂十年的舞台剧导演自编自导自演新戏想翻身，戏里戏外的感情却越来越乱。冯德伦演得很放，袁澧林凭这部拿了纽约亚洲电影节新星奖。适合喜欢港片、话剧的大人看；香港 11/12 上映，新加坡档期待定，可留意 Shaw / GV / Cathay。",
+      "tags": [
+        "港片",
+        "华语",
+        "电影节佳作",
+        "成人向"
+      ],
+      "posterEmoji": "🎭",
+      "bgGradient": "linear-gradient(135deg,#7f1d1d,#f59e0b)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 王德健（长片处女作，尔冬升监制）",
+        "🌟 冯德伦 · 袁澧林 · 胡杏儿 · 周秀娜",
+        "🏆 上海国际电影节开幕片 · 袁澧林获纽约亚洲电影节 Rising Star Asia 奖"
+      ],
+      "badge": "chinese",
+      "badgeText": "🇭🇰 港片新作",
+      "ageGuide": "香港 III 级 · 不适合儿童",
+      "active": true
+    },
+    {
+      "id": "werwulf-eggers-2026-12",
+      "title": "Werwulf",
+      "chineseTitle": "狼人",
+      "type": "coming-soon",
+      "rating": 7.5,
+      "releaseDate": "2026-12-25",
+      "genre": "恐怖 / 历史",
+      "language": "英语",
+      "duration": "待公布",
+      "cast": "Aaron Taylor-Johnson · Willem Dafoe · Lily-Rose Depp",
+      "director": "Robert Eggers",
+      "description": "《女巫》《灯塔》《诺斯费拉图》导演罗伯特·艾格斯的新作，设定在 13 世纪英格兰的狼人传说。他的片子氛围感和美术考究是一绝，恐怖片爱好者圣诞档的首选。北美 12/25 上映，新加坡档期待定；明显是大人片，孩子别带。",
+      "tags": [
+        "恐怖",
+        "导演新作",
+        "圣诞档",
+        "成人向"
+      ],
+      "posterEmoji": "🐺",
+      "bgGradient": "linear-gradient(135deg,#111827,#78350f)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 Robert Eggers（《女巫》《灯塔》《诺斯费拉图》）",
+        "🌟 Aaron Taylor-Johnson · Willem Dafoe · Lily-Rose Depp",
+        "🎬 影片特色 冰岛作家 Sjón 联合编剧，13 世纪狼人民间传说"
+      ],
+      "badge": "new",
+      "badgeText": "🆕 圣诞档",
+      "ageGuide": "预计 M18 · 不适合儿童",
+      "active": true
+    },
+    {
+      "id": "sense-and-sensibility-2026",
+      "title": "Sense and Sensibility",
+      "chineseTitle": "理智与情感",
+      "type": "now-showing",
+      "rating": 7.2,
+      "releaseDate": "2026-11-20",
+      "genre": "爱情 / 古装剧情",
+      "language": "英语",
+      "duration": "待公布",
+      "cast": "Daisy Edgar-Jones · Esmé Creed-Miles · Caitríona Balfe · George MacKay · Frank Dillane",
+      "director": "Georgia Oakley",
+      "description": "简·奥斯汀经典小说的全新改编，讲达什伍德姐妹离开庄园后的爱情与成长。服装、布景都很养眼，节奏比老版更现代。适合想要一个安静周末的妈妈们和闺蜜一起看；孩子年纪还小，可能会觉得有点闷。",
+      "tags": [
+        "奥斯汀",
+        "古装",
+        "爱情",
+        "文学改编"
+      ],
+      "posterEmoji": "🌹",
+      "bgGradient": "linear-gradient(135deg,#fbcfe8,#9d174d)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 Georgia Oakley（《Blue Jean》）",
+        "🌟 Daisy Edgar-Jones · Esmé Creed-Miles · Caitríona Balfe · George MacKay · Frank Dillane",
+        "📚 影片特色 简·奥斯汀同名经典小说全新影版"
+      ],
+      "badge": "hot",
+      "badgeText": "🔥 正在上映",
+      "ageGuide": "建议 12 岁以上",
+      "active": true
+    },
+    {
+      "id": "la-bola-negra-filmhouse-2026-11",
+      "title": "La Bola Negra",
+      "chineseTitle": "黑球",
+      "type": "now-showing",
+      "rating": 7.4,
+      "releaseDate": "2026-11-22",
+      "genre": "剧情",
+      "language": "西班牙语（英文字幕）",
+      "duration": "待公布",
+      "cast": "Guitarricadelafuente · Miguel Bernardeau · Carlos González · Penélope Cruz · Glenn Close",
+      "director": "Javier Calvo · Javier Ambrossi",
+      "description": "西班牙导演组合 Los Javis 的新作，围绕诗人洛尔迦未完成的作品，串起三个不同年代男人的命运。卡司里有佩内洛普·克鲁兹和格伦·克洛斯，文艺片爱好者别错过。只在 Filmhouse 有限场次放映（11/22–12/5），属于成人向作品，不适合带孩子。",
+      "tags": [
+        "西班牙",
+        "文艺片",
+        "限定场次",
+        "Filmhouse"
+      ],
+      "posterEmoji": "🎱",
+      "bgGradient": "linear-gradient(135deg,#374151,#111827)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 Javier Calvo & Javier Ambrossi（剧集《Veneno》）",
+        "🌟 Guitarricadelafuente · Miguel Bernardeau · Carlos González · Penélope Cruz · Glenn Close",
+        "📍 影片特色 Filmhouse 限定放映 11/22–12/5"
+      ],
+      "badge": "new",
+      "badgeText": "🎞️ 限定场次",
+      "ageGuide": "成人向 · 不建议儿童观看",
       "active": true
     },
   ]
