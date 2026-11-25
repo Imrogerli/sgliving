@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-11-24
+ * 最后更新：2026-11-25
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-11-24",
+    lastUpdated: "2026-11-25",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -7657,6 +7657,113 @@ const SGLIVING_DATA = {
       "ratingDesc": "芝士拉丝 · 热石板",
       "active": true
     },
+    {
+      "id": "kindle-cafe-kandahar-2026-11",
+      "name": "Kindle Cafe（甘榜格南 · 柴火料理全日咖啡馆）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$15–35/人",
+      "description": "✍️ 11 月 24 日刚开门的新店！由 OUD 的主厨团队操刀，主打柴火烹饪，Muslim-friendly，带不同饮食习惯的朋友一起吃也不用纠结。日式牛奶面包三明治 S$12 起、意面 S$18 起，在甘榜格南逛完苏丹回教堂和 Haji Lane 正好来这里歇脚。刚开业建议工作日去，周末估计要排。",
+      "tags": [
+        "新开业",
+        "柴火料理",
+        "Muslim-friendly",
+        "甘榜格南",
+        "早午餐"
+      ],
+      "address": "48 Kandahar Street, Singapore 198899",
+      "badge": "new",
+      "badgeText": "🆕 11月新开",
+      "emoji": "🔥",
+      "bgGradient": "linear-gradient(135deg,#f97316,#7c2d12)",
+      "catLabel": "餐厅",
+      "catDesc": "柴火全日咖啡馆 / Kampong Glam",
+      "ratingDesc": "OUD 主厨团队新作",
+      "active": true
+    },
+    {
+      "id": "stamford-social-stamford-place-2026-11",
+      "name": "Stamford Social（市政区 Stamford Place · 全日小酒馆）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$30–60/人",
+      "description": "✍️ 市政区新开的全日 bistro，带娃逛完国家博物馆、福康宁公园走过来就到。可乐饼 S$10（两人份）适合当前菜分享，油甘鱼 crudo S$28 很清爽，想吃点扎实的就点 S$34 的 kedgeree 烩饭或 S$48 的肉眼牛排。环境轻松，家庭聚餐、朋友小聚都合适。",
+      "tags": [
+        "新开业",
+        "Bistro",
+        "市政区",
+        "牛排",
+        "家庭聚餐"
+      ],
+      "address": "61 Stamford Road, #01-03 Stamford Place, Singapore 178892",
+      "badge": "new",
+      "badgeText": "🆕 11月新开",
+      "emoji": "🥩",
+      "bgGradient": "linear-gradient(135deg,#a16207,#422006)",
+      "catLabel": "餐厅",
+      "catDesc": "全日 Bistro / City Hall",
+      "ratingDesc": "牛排 · 烩饭 · 分享小食",
+      "active": true
+    },
+    {
+      "id": "cudito-amoy-street-2026-11",
+      "name": "CUDITO（Amoy Street · 休闲拉美菜）",
+      "categories": [
+        "restaurant"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "价格待公布",
+      "description": "✍️ 人气餐厅 CUDO 团队（Eleven Co.）开的休闲版拉美小馆，就在丹戎巴葛 Amoy Street 一楼。想换换口味、试试拉美风味的朋友可以记下，下班约饭很方便。菜单价格还没公开，去之前建议先看看官方 IG。",
+      "tags": [
+        "新开业",
+        "拉美菜",
+        "Amoy Street",
+        "CUDO 姐妹店"
+      ],
+      "address": "52 Amoy Street, Singapore 069878",
+      "badge": "new",
+      "badgeText": "🆕 11月新开",
+      "emoji": "🌮",
+      "bgGradient": "linear-gradient(135deg,#16a34a,#14532d)",
+      "catLabel": "餐厅",
+      "catDesc": "休闲拉美菜 / Telok Ayer",
+      "ratingDesc": "CUDO 团队新作",
+      "active": true
+    },
+    {
+      "id": "yogeek-haji-lane-2026-11",
+      "name": "Yogeek（Haji Lane · 自助称重酸奶冰）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$4.50/100g",
+      "description": "✍️ Haji Lane 新开的自助蛋白酸奶冰，按重量算 S$4.50/100g，自己挑口味和配料，OG 原味和 Biscoff 是人气款。小朋友超爱这种自己动手 DIY 的形式，颜色缤纷拍照也好看。逛完彩色涂鸦墙来一杯，热天必备！",
+      "tags": [
+        "新开业",
+        "酸奶冰",
+        "Haji Lane",
+        "亲子友好",
+        "自助称重"
+      ],
+      "address": "65 Haji Lane, Singapore 189258",
+      "badge": "new",
+      "badgeText": "🆕 新开甜品",
+      "emoji": "🍦",
+      "bgGradient": "linear-gradient(135deg,#ec4899,#831843)",
+      "catLabel": "甜品",
+      "catDesc": "自助酸奶冰 / Haji Lane",
+      "ratingDesc": "每日 11am–10pm",
+      "active": true
+    },
   ],
 
 
@@ -7824,7 +7931,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_khalid",
       btnText: "Ticketmaster 购票",
       sortDate: "2026-11-24",
-      active: true
+      active: false
     },
 
     {
@@ -17976,6 +18083,36 @@ const SGLIVING_DATA = {
       "duration": "约 2–3 小时",
       "bookingUrl": "http://www.superpark.com.sg/"
     },
+    {
+      "active": true,
+      "id": "longkang-adventures-year-end-camp-2026-11",
+      "name": "Longkang Adventures 年终假期水沟捞鱼 & 野外求生营",
+      "icon": "🎣",
+      "topGradient": "linear-gradient(90deg,#34d399,#065f46)",
+      "ageRange": "适合 4–16 岁（7–9 岁很适合）",
+      "description": "新加坡本地特色的 longkang（水沟）捞鱼体验 + 野外求生课程，另有 3 天 2 夜过夜营可选。",
+      "highlight": "7–9 岁孩子最爱动手抓小鱼、认识自然，求生课程锻炼独立和团队合作；过夜营是孩子第一次离家住宿的好机会",
+      "location": "地点以报名页为准",
+      "dateRange": "2026 年终假期多个日期",
+      "cost": "S$60 起",
+      "duration": "半天 至 3天2夜",
+      "bookingUrl": "https://form.jotform.com/241188276343460"
+    },
+    {
+      "active": true,
+      "id": "activesg-beginner-squash-2026-11",
+      "name": "ActiveSG 少儿入门壁球班（年终假期）",
+      "icon": "🎾",
+      "topGradient": "linear-gradient(90deg,#60a5fa,#1e3a8a)",
+      "ageRange": "适合 7–12 岁",
+      "description": "从握拍、基本击球、发球到比赛规则，零基础入门壁球。",
+      "highlight": "7–9 岁正是手眼协调快速发展期，壁球在室内进行不怕下雨晒太阳，假期集中学几节就能和爸妈对打",
+      "location": "MOE Evans Squash Centre（Evans Road）",
+      "dateRange": "2026 年终假期多个场次",
+      "cost": "S$70",
+      "duration": "按课程安排",
+      "bookingUrl": "https://activesg.gov.sg/programmes?keywords=SHP"
+    },
   ],
 
 
@@ -21442,6 +21579,101 @@ const SGLIVING_DATA = {
       ],
       "badge": "new",
       "badgeText": "🎞️ 限定场次",
+      "ageGuide": "成人向 · 不建议儿童观看",
+      "active": true
+    },
+    {
+      "id": "house-on-the-moon-2026-11",
+      "title": "The House on the Moon",
+      "chineseTitle": "月亮上的房子",
+      "type": "chinese",
+      "rating": 7.2,
+      "releaseDate": "2026-11-18",
+      "genre": "奇幻 / 剧情",
+      "language": "以影院标注为准",
+      "duration": "待公布",
+      "cast": "Dominick Rustam · Lim Shi-An",
+      "director": "Nelson Yeo（杨修华）",
+      "description": "新加坡本土导演杨修华的新作，用后羿与嫦娥的神话做底子，拍出很有诗意的奇幻故事。它是第 37 届新加坡国际电影节的开幕片，由 Momo Film Co 制作。喜欢本地电影、想支持新加坡创作者的朋友值得一看；风格偏文艺，更适合大人。",
+      "tags": [
+        "新加坡电影",
+        "神话",
+        "SGIFF 开幕片",
+        "文艺片"
+      ],
+      "posterEmoji": "🌕",
+      "bgGradient": "linear-gradient(135deg,#1e3a8a,#0f172a)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 Nelson Yeo 杨修华（《Dreaming & Dying》）",
+        "🌟 Dominick Rustam（饰后羿）· Lim Shi-An（饰嫦娥）",
+        "🏆 第 37 届新加坡国际电影节开幕片"
+      ],
+      "badge": "new",
+      "badgeText": "🇸🇬 本土新片",
+      "ageGuide": "文艺向 · 建议大人观看",
+      "active": true
+    },
+    {
+      "id": "all-of-a-sudden-2026-11",
+      "title": "All of a Sudden",
+      "chineseTitle": "突如其来",
+      "type": "coming-soon",
+      "rating": 7.6,
+      "releaseDate": "2026-11-26",
+      "genre": "剧情",
+      "language": "法语 / 日语（英文字幕）",
+      "duration": "待公布",
+      "cast": "Virginie Efira · Tao Okamoto（冈本多绪）",
+      "director": "Ryusuke Hamaguchi（滨口龙介）",
+      "description": "《驾驶我的车》导演滨口龙介的新作，两位女主维吉妮·埃菲拉和冈本多绪共享今年戛纳影后。滨口擅长慢慢铺陈人与人之间的情感，适合想安静看一部好电影的大人。11/26 起在本地影院上映，场次不多，想看要早点订。",
+      "tags": [
+        "戛纳影后",
+        "滨口龙介",
+        "文艺片",
+        "限定场次"
+      ],
+      "posterEmoji": "🌊",
+      "bgGradient": "linear-gradient(135deg,#0891b2,#164e63)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 滨口龙介（《驾驶我的车》《偶然与想象》）",
+        "🌟 Virginie Efira · 冈本多绪",
+        "🏆 2026 戛纳电影节最佳女演员（两位主演共享）"
+      ],
+      "badge": "new",
+      "badgeText": "🏆 戛纳影后",
+      "ageGuide": "成人向 · 不建议儿童观看",
+      "active": true
+    },
+    {
+      "id": "minotaur-zvyagintsev-2026-12",
+      "title": "Minotaur",
+      "chineseTitle": "牛头人",
+      "type": "coming-soon",
+      "rating": 7.8,
+      "releaseDate": "2026-12-16",
+      "genre": "剧情",
+      "language": "俄语（英文字幕）",
+      "duration": "待公布",
+      "cast": "Dmitriy Mazurov",
+      "director": "Andrey Zvyagintsev（安德烈·萨金塞夫）",
+      "description": "《利维坦》《无爱可诉》导演萨金塞夫的新作，拿下今年戛纳评审团大奖和原创配乐奖，也是法国的奥斯卡参选片。题材沉重、节奏偏慢，适合喜欢作者电影的大人，12/16 起上映。",
+      "tags": [
+        "戛纳评审团大奖",
+        "作者电影",
+        "奥斯卡参选"
+      ],
+      "posterEmoji": "🐂",
+      "bgGradient": "linear-gradient(135deg,#57534e,#1c1917)",
+      "posterUrl": "",
+      "highlights": [
+        "🎬 导演 安德烈·萨金塞夫（《利维坦》《无爱可诉》）",
+        "🌟 Dmitriy Mazurov",
+        "🏆 2026 戛纳评审团大奖 + 原创配乐奖 · 法国奥斯卡参选片"
+      ],
+      "badge": "new",
+      "badgeText": "🏆 戛纳大奖",
       "ageGuide": "成人向 · 不建议儿童观看",
       "active": true
     },
