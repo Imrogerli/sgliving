@@ -8,14 +8,14 @@
  *   - 演唱会/活动过期后设 active: false
  *   - 每日 sg-living-daily-update 任务负责更新此文件
  *
- * 最后更新：2026-11-25
+ * 最后更新：2026-11-26
  * 版本：4.0
  */
 
 const SGLIVING_DATA = {
 
   meta: {
-    lastUpdated: "2026-11-25",
+    lastUpdated: "2026-11-26",
     version: "4.0",
     note: "数据持续累积，active:false 表示已关闭/过期"
   },
@@ -7764,6 +7764,139 @@ const SGLIVING_DATA = {
       "ratingDesc": "每日 11am–10pm",
       "active": true
     },
+    {
+      "id": "xhs-nintea-matcha-raffles-city-2026-11",
+      "name": "九十叶 Nintea.Matcha（中国爆款抹茶 · 新加坡首店 · Raffles City）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.4,
+      "openDate": "2026-11",
+      "price": "S$5–10/人",
+      "description": "姐妹们！小红书刷屏的抹茶脑袋天堂「九十叶」要落地新加坡啦！首店选在 Raffles City B1，抹茶浓度从 2.9% 到 25.9% 分 5 档可选，现点现刷，国内爆款咸奶盖抹茶、椰香抹茶、黑糖琥珀抹茶冰酪都是必点。抹茶控建议直接冲 3 档起步，苦香回甘绝绝子～开业初期肯定排长队，正式开业日期官方还没公布，记得先关注再冲！",
+      "tags": [
+        "抹茶",
+        "中国品牌",
+        "Raffles City",
+        "奶茶",
+        "小红书爆款"
+      ],
+      "address": "252 North Bridge Road, #B1-60, Raffles City Shopping Centre, Singapore 179103",
+      "badge": "hot",
+      "badgeText": "📕 小红书爆款",
+      "emoji": "🍵",
+      "bgGradient": "linear-gradient(135deg,#bbf7d0,#166534)",
+      "catLabel": "甜品饮品",
+      "catDesc": "中国抹茶品牌 / Raffles City B1",
+      "ratingDesc": "5 档浓度 · 现点现刷",
+      "active": true
+    },
+    {
+      "id": "mr-cheesecake-popup-ion-2026-11",
+      "name": "Mr. CHEESECAKE（东京网红芝士蛋糕 · 东南亚首个快闪 · ION Orchard）",
+      "categories": [
+        "dessert"
+      ],
+      "rating": 4.5,
+      "openDate": "2026-11",
+      "price": "S$62–69/个",
+      "description": "东京那家要靠线上抢的 Mr. CHEESECAKE 第一次来东南亚开快闪！ION Orchard 3 楼，只到 12 月 30 日。巴斯克芝士蛋糕原味 $62，抹茶和酒粕椰子口味 $69，入口像冰淇淋一样绵密。价格不便宜，适合圣诞聚会或者送礼，一家人分着吃刚刚好。",
+      "tags": [
+        "芝士蛋糕",
+        "日本品牌",
+        "限时快闪",
+        "ION Orchard",
+        "送礼"
+      ],
+      "address": "2 Orchard Turn, #03-32/33, ION Orchard, Singapore 238801",
+      "badge": "new",
+      "badgeText": "⏳ 限时至 12/30",
+      "emoji": "🍰",
+      "bgGradient": "linear-gradient(135deg,#fef3c7,#d97706)",
+      "catLabel": "甜品",
+      "catDesc": "日式巴斯克芝士蛋糕 / 快闪店",
+      "ratingDesc": "东京排队款 · 绵密如冰淇淋",
+      "active": true
+    },
+    {
+      "id": "tokyo-onigiri-one-raffles-place-2026-11",
+      "name": "Tokyo Onigiri（日式饭团 · One Raffles Place）",
+      "categories": [
+        "snack"
+      ],
+      "rating": 4.2,
+      "openDate": "2026-11",
+      "price": "S$5–10/人",
+      "description": "上班族的早餐救星！现包日式饭团 $4.90 起，米饭软糯有嚼劲，海苔还是脆的。推荐烤三文鱼配三文鱼子（$9.90），咸鲜爆汁。在莱佛士坊上班的朋友早上顺路买两个，比面包顶饱多了。",
+      "tags": [
+        "饭团",
+        "日式",
+        "快餐",
+        "莱佛士坊"
+      ],
+      "address": "1 Raffles Place, #B1-36, One Raffles Place, Singapore 048616",
+      "badge": "new",
+      "badgeText": "🆕 新开",
+      "emoji": "🍙",
+      "bgGradient": "linear-gradient(135deg,#e5e7eb,#374151)",
+      "catLabel": "小吃",
+      "catDesc": "日式现包饭团 / CBD",
+      "ratingDesc": "$4.90 起 · 海苔脆",
+      "active": true
+    },
+    {
+      "id": "spicy-hubby-centrepoint-2026-11",
+      "name": "Spicy Hubby（本地风味 · The Centrepoint Food Street）",
+      "categories": [
+        "local"
+      ],
+      "rating": 4.1,
+      "openDate": "2026-11",
+      "price": "S$10–15/人",
+      "description": "Orchard 想吃一顿实惠的本地菜？Centrepoint 新开的 Spicy Hubby 可以去试试。香料炸鸡炒饭 Nasi Goreng Ayam Berempah $9.90，仁当鸡饭 $12.90，香料味浓但不会辣到受不了，逛街饿了来一份很满足。",
+      "tags": [
+        "本地菜",
+        "马来风味",
+        "Orchard",
+        "平价"
+      ],
+      "address": "176 Orchard Road, #01-55/56, The Centrepoint Food Street, Singapore 238843",
+      "badge": "new",
+      "badgeText": "🆕 新开",
+      "emoji": "🍛",
+      "bgGradient": "linear-gradient(135deg,#fecaca,#b91c1c)",
+      "catLabel": "本地美食",
+      "catDesc": "马来/本地风味 / Orchard",
+      "ratingDesc": "$9.90 起 · 香料浓郁",
+      "active": true
+    },
+    {
+      "id": "shirazi-dempsey-2026-11",
+      "name": "SHIRAZI（波斯菜 · Dempsey · 穆斯林友好）",
+      "categories": [
+        "western"
+      ],
+      "rating": 4.3,
+      "openDate": "2026-11",
+      "price": "S$40–70/人",
+      "description": "想带家人尝点新鲜的？Dempsey 新开的波斯餐厅 SHIRAZI 很适合周末聚餐。炭烤拼盘有羊肉串、鸡肉串配藏红花米饭，烤得焦香多汁；伊朗国民炖菜 Ghormeh Sabzi 香草味浓，配饭一绝。环境宽敞，带小朋友也不拘束。",
+      "tags": [
+        "波斯菜",
+        "中东",
+        "Dempsey",
+        "家庭聚餐",
+        "穆斯林友好"
+      ],
+      "address": "8 Dempsey Road, #01-15, Singapore 247696",
+      "badge": "new",
+      "badgeText": "🆕 新开",
+      "emoji": "🍢",
+      "bgGradient": "linear-gradient(135deg,#fde68a,#92400e)",
+      "catLabel": "异国料理",
+      "catDesc": "波斯炭烤 / Dempsey",
+      "ratingDesc": "炭烤拼盘 · 香草炖菜",
+      "active": true
+    },
   ],
 
 
@@ -8490,7 +8623,7 @@ const SGLIVING_DATA = {
       ticketUrl: "https://ticketmaster.sg/activity/detail/26sg_gunsnroses",
       btnText: "购票",
       sortDate: "2026-11-25",
-      active: true
+      active: false
     },
 
 
@@ -12988,7 +13121,7 @@ const SGLIVING_DATA = {
     {
       type: "concert",
       priority: "normal",
-      active: true,
+      active: false,
       id: "wolf-alice-fort-canning-2026-12",
       name: "Wolf Alice 新加坡站 · Fort Canning",
       month: "DEC",
@@ -13951,6 +14084,94 @@ const SGLIVING_DATA = {
       "priceNote": "VIP S$258 / A S$228 / B S$188 / C S$148 / 限视野 S$98，另加手续费",
       "ticketUrl": "https://www.marinabaysands.com/sandsliveseason",
       "btnText": "金沙官网购票",
+      "active": true
+    },
+    {
+      "id": "singapore-comic-con-mbs-2026-12",
+      "name": "Singapore Comic Con 2026（新加坡动漫展）",
+      "type": "event",
+      "priority": "featured",
+      "month": "DEC",
+      "day": "4",
+      "dow": "周五",
+      "sortDate": "2026-12-04",
+      "dateColor": "linear-gradient(135deg,#ef4444,#7c3aed)",
+      "typeLabel": "🦸 动漫展",
+      "typeColor": "#7c3aed",
+      "description": "年度最大的漫画、影视、游戏盛会回归金沙！明星见面会、Cosplay 大赛、限定周边一网打尽，大小朋友都能逛一整天。",
+      "venue": "Marina Bay Sands Expo & Convention Centre, 10 Bayfront Avenue, Singapore 018956",
+      "dateRange": "12月4日（周五）– 12月6日（周日）",
+      "ticketInfo": "🎟️ Fever 平台发售中",
+      "price": "以官网为准",
+      "priceNote": "分单日票与多日票，明星签名/合影另购",
+      "ticketUrl": "https://feverup.com/m/704945",
+      "btnText": "Fever 购票",
+      "active": true
+    },
+    {
+      "id": "nt-live-esplanade-2026-12",
+      "name": "National Theatre Live 英国国家剧院放映季 · 滨海艺术中心",
+      "type": "event",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "3",
+      "dow": "周四",
+      "sortDate": "2026-12-03",
+      "dateColor": "linear-gradient(135deg,#0ea5e9,#1e3a8a)",
+      "typeLabel": "🎭 戏剧放映",
+      "typeColor": "#1e3a8a",
+      "description": "在大银幕上看伦敦西区顶级舞台剧！12 月 3 日以莫里哀《恨世者》开场，票价亲民，戏剧爱好者不要错过。",
+      "venue": "Singtel Waterfront Theatre, Esplanade – Theatres on the Bay, 1 Esplanade Drive, Singapore 038981",
+      "dateRange": "12月3日（周四）– 12月6日（周日）",
+      "ticketInfo": "🎟️ Esplanade 官网发售中",
+      "price": "S$28 起",
+      "priceNote": "不同剧目分场次购票",
+      "ticketUrl": "https://www.esplanade.com/whats-on/festivals-and-series/national-theatre-live",
+      "btnText": "Esplanade 购票",
+      "active": true
+    },
+    {
+      "id": "world-christmas-market-fort-canning-2026-12",
+      "name": "World Christmas Market 世界圣诞市集 · 福康宁公园",
+      "type": "event",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "10",
+      "dow": "周四",
+      "sortDate": "2026-12-10",
+      "dateColor": "linear-gradient(135deg,#16a34a,#b91c1c)",
+      "typeLabel": "🎄 圣诞市集",
+      "typeColor": "#b91c1c",
+      "description": "欧式圣诞小木屋、热红酒、烤香肠和手作礼物，福康宁公园树下逛市集超有氛围，傍晚带孩子去拍照最美。",
+      "venue": "Fort Canning Park & METT Hotel Singapore, Singapore 179620",
+      "dateRange": "12月10日（周四）– 2027年1月3日",
+      "ticketInfo": "🆓 免费入场",
+      "price": "免费",
+      "priceNote": "市集内餐饮、游乐另付",
+      "ticketUrl": "https://www.google.com/search?q=World+Christmas+Market+Fort+Canning+2026",
+      "btnText": "查看详情",
+      "active": true
+    },
+    {
+      "id": "kpop-silent-disco-oceanarium-2026-12",
+      "name": "Silent Disco: K-Pop Kraze · 新加坡海洋馆",
+      "type": "event",
+      "priority": "normal",
+      "month": "DEC",
+      "day": "4",
+      "dow": "周五",
+      "sortDate": "2026-12-04",
+      "dateColor": "linear-gradient(135deg,#ec4899,#0ea5e9)",
+      "typeLabel": "🎧 K-pop 派对",
+      "typeColor": "#ec4899",
+      "description": "戴上无线耳机，在巨型海洋展窗前跟着 K-pop 跳舞！鱼群在身边游过，这种派对体验新加坡独一份。",
+      "venue": "Singapore Oceanarium, 24 Sentosa Gateway, Sentosa, Singapore",
+      "dateRange": "12月4日（周五）8pm–11pm",
+      "ticketInfo": "🎟️ RWS 官网发售",
+      "price": "以官网为准",
+      "priceNote": "名额有限，建议提前购票",
+      "ticketUrl": "https://www.google.com/search?q=Silent+Disco+K-Pop+Kraze+Singapore+Oceanarium",
+      "btnText": "查看购票",
       "active": true
     },
   ],
@@ -18113,6 +18334,51 @@ const SGLIVING_DATA = {
       "duration": "按课程安排",
       "bookingUrl": "https://activesg.gov.sg/programmes?keywords=SHP"
     },
+    {
+      "active": true,
+      "id": "harry-potter-visions-of-magic-weave-2026-11",
+      "name": "Harry Potter: Visions of Magic 哈利·波特沉浸式魔法展",
+      "icon": "🪄",
+      "topGradient": "linear-gradient(90deg,#facc15,#7f1d1d)",
+      "ageRange": "适合 6 岁以上（7–9 岁最佳）",
+      "description": "走进霍格沃茨、禁林和魔法部，用光影互动和音效打造的沉浸式哈利·波特世界，还能选学院、领魔杖互动。",
+      "highlight": "7–9 岁正是开始读哈利·波特的年纪，现场「施咒」互动让孩子从读者变成主角，圣诞假期室内去不怕下雨",
+      "location": "WEAVE Level B1, Resorts World Sentosa, 8 Sentosa Gateway",
+      "dateRange": "2026年11月1日 – 2027年2月28日",
+      "cost": "S$49 起",
+      "duration": "约 1–1.5 小时",
+      "bookingUrl": "https://feverup.com/m/494795"
+    },
+    {
+      "active": true,
+      "id": "kpop-dance-camp-csc-2026-12",
+      "name": "K-POP 舞蹈体验营（Chinese Swimming Club）",
+      "icon": "💃",
+      "topGradient": "linear-gradient(90deg,#f472b6,#7c3aed)",
+      "ageRange": "适合 6–12 岁",
+      "description": "一天学会一支完整 K-pop 舞，老师分段教学，最后小组表演录视频。",
+      "highlight": "7–9 岁孩子模仿力强又爱表现，一天营期不累人，跳完还有成品视频可以收藏，适合追星的小朋友",
+      "location": "Chinese Swimming Club, Sports Complex Level 3, 21 Amber Road",
+      "dateRange": "12月3日（周四）",
+      "cost": "S$54.50 起",
+      "duration": "1 天",
+      "bookingUrl": "https://www.google.com/search?q=Chinese+Swimming+Club+K-POP+Dance+Camp+December+2026"
+    },
+    {
+      "active": true,
+      "id": "free-sentosa-cable-car-mornings-2026-11",
+      "name": "免费乘坐圣淘沙缆车（Sentosa Line 早间时段）",
+      "icon": "🚡",
+      "topGradient": "linear-gradient(90deg,#38bdf8,#0f766e)",
+      "ageRange": "全家适合",
+      "description": "年终假期每天早上 8:45–10:00 可免费搭乘圣淘沙线缆车，无需预约，岛内各站俯瞰海景。",
+      "highlight": "7–9 岁孩子最爱坐缆车，早上凉快人少，坐完直接去海边或 SEA 海洋馆，省下一笔门票钱",
+      "location": "Singapore Cable Car · Sentosa Line（Imbiah / Siloso Point 站）",
+      "dateRange": "11月21日 – 12月20日，每日 8:45am–10am",
+      "cost": "免费",
+      "duration": "约 30 分钟",
+      "bookingUrl": "https://www.mountfaberleisure.com/"
+    },
   ],
 
 
@@ -21475,7 +21741,7 @@ const SGLIVING_DATA = {
       ],
       "posterEmoji": "🎭",
       "bgGradient": "linear-gradient(135deg,#7f1d1d,#f59e0b)",
-      "posterUrl": "",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/jqANwuyiYisecvQmMgZyOOxAfqO.jpg",
       "highlights": [
         "🎬 导演 王德健（长片处女作，尔冬升监制）",
         "🌟 冯德伦 · 袁澧林 · 胡杏儿 · 周秀娜",
@@ -21539,7 +21805,7 @@ const SGLIVING_DATA = {
       ],
       "posterEmoji": "🌹",
       "bgGradient": "linear-gradient(135deg,#fbcfe8,#9d174d)",
-      "posterUrl": "",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
       "highlights": [
         "🎬 导演 Georgia Oakley（《Blue Jean》）",
         "🌟 Daisy Edgar-Jones · Esmé Creed-Miles · Caitríona Balfe · George MacKay · Frank Dillane",
@@ -21571,7 +21837,7 @@ const SGLIVING_DATA = {
       ],
       "posterEmoji": "🎱",
       "bgGradient": "linear-gradient(135deg,#374151,#111827)",
-      "posterUrl": "",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/7HwFQTMghL6HOvzEnXYUvyuZXeh.jpg",
       "highlights": [
         "🎬 导演 Javier Calvo & Javier Ambrossi（剧集《Veneno》）",
         "🌟 Guitarricadelafuente · Miguel Bernardeau · Carlos González · Penélope Cruz · Glenn Close",
@@ -21666,7 +21932,7 @@ const SGLIVING_DATA = {
       ],
       "posterEmoji": "🐂",
       "bgGradient": "linear-gradient(135deg,#57534e,#1c1917)",
-      "posterUrl": "",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/bM37B5CuMWrPyGPpNsKzTGict4Q.jpg",
       "highlights": [
         "🎬 导演 安德烈·萨金塞夫（《利维坦》《无爱可诉》）",
         "🌟 Dmitriy Mazurov",
